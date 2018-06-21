@@ -1,0 +1,3 @@
+﻿# ffxiv-simulator
+
+
