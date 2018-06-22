@@ -29,6 +29,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="app.js" />
+    <Compile Include="initial\ast.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="initial\party.js">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="rotation\ast.js">
       <SubType>Code</SubType>
     </Compile>
@@ -38,10 +44,15 @@
     <Compile Include="setting.js">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="skill\ast.js">
+      <SubType>Code</SubType>
+    </Compile>
     <Content Include="package.json" />
     <Content Include="README.md" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="initial\" />
+    <Folder Include="skill\" />
     <Folder Include="rotation\" />
   </ItemGroup>
   <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->

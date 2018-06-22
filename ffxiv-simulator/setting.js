@@ -17,13 +17,13 @@
 
         var simulate = {
             duration: 24000,	// 模拟木桩时间，单位10毫秒 (秒数x100)
-            times: 10,			// 模拟次数
-            expectMode: true,	// 期望值模式
-            battleLog: false,	// 输出战斗记录，开启情况下只能进行单次模拟
+            times: 1,			// 模拟次数
+            expectMode: false,	// 期望值模式
+            battleLog: true,	// 输出战斗记录，开启情况下只能进行单次模拟
             partyBuff: false    // 团队辅助buff
         };
 
-        var opener = ['Cleric Stance', 'Potion', 'Combust II'];
+        var opener = ['Cleric Stance', 'Potion', 'Combust II', 'Malefic III'];
 
         simulate.times = (simulate.battleLog === true) ? 1 : simulate.times;  // 输出战斗记录时仅进行单次模拟
 
