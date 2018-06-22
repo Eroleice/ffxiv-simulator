@@ -130,7 +130,7 @@ class Fight {
             if (this.player.dot[k].duration > 0) {
                 this.statistic.push({
                     'time': this.setting.simulate.duration - this.battle.time,
-                    'damage_source': k + ' Tick',
+                    'damage_source': k + ' DOT',
                     'damage_type': 'DOT Damage',
                     'damage': this.player.dot[k].damagePool[0].damage,
                     'crit': this.player.dot[k].damagePool[0].crit,
