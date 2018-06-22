@@ -147,24 +147,7 @@ module.exports = {
     'run': function (data) {
         var fight = new Fight(data);    // 建立新的战斗模型
         fight.start();                  // 模拟开始
-        if (fight.setting.simulate.battleLog) {
-            var totalDamage = 0;
-            for (var i = 0; i < fight.statistic.length; i++) {
-                var t = Math.floor(fight.statistic[i].time / 6000) + ':' + (fight.statistic[i].time % 6000) / 100;
-                var m = '';
-                if (fight.statistic[i].crit) {
-                    m += '!';
-                }
-                if (fight.statistic[i].dh) {
-                    m += '!';
-                }
-                console.log('[' + (fight.statistic[i].time / 100).toFixed(2) + '] ' + fight.statistic[i].damage_source + ' => ' + fight.statistic[i].damage + m);
-                totalDamage += fight.statistic[i].damage;
-            }
+        return fight.statistic;
 
-            console.log('模拟DPS为： '+Math.floor(totalDamage/240));
-
-
-        }
     }
 };

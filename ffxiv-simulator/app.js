@@ -1,10 +1,30 @@
 const sim = require('./sim.js');
 const set = require('./setting.js');
 
-var log = [], dps = [], sum = 0;
+var log = [], dps = [], sum = 0, totalDamage = 0;
 var input = set.set();
 
-sim.run(input);
+var data = sim.run(input);
+
+if (input.simulate.battleLog) {
+
+    var totalDamage = 0;
+    for (var i = 0; i < data.length; i++) {
+        var t = Math.floor(data[i].time / 6000) + ':' + (data[i].time % 6000) / 100;
+        var m = '';
+        if (data[i].crit) {
+            m += '!';
+        }
+        if (data[i].dh) {
+            m += '!';
+        }
+        console.log('[' + (data[i].time / 100).toFixed(2) + '] ' + data[i].damage_source + ' => ' + data[i].damage + m);
+        totalDamage += data[i].damage;
+
+    }
+
+    console.log('Average DPS: ' + (100 * totalDamage / input.simulate.duration).toFixed(2));
+}
 
 
 
