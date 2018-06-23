@@ -38,14 +38,18 @@ class Fight {
         // 统计参数，不会修改
         this.statistic = [];
         // 配置文件
-        this.rotation = require(this.initRotation(data.job));
-        this.initialJob = require(this.initJob(data.job));
+        this.rotation = require('./rotation/' + data.job + '.js');
+        this.initialJob = require('./initial/' + data.job + '.js');
+        this.jobSkill = require('./skill/' + data.job + '.js');
         this.initialParty = require('./initial/party.js');
     }
 
     start() {
 
+        // 职业信息初始化
         this.player = this.initialJob.init(this.player);
+
+        // 团辅信息初始化
         if (this.setting.simulate.partyBuff) {
             this.player = this.initialParty.init(this.player);
         }
@@ -64,7 +68,6 @@ class Fight {
                 this.dotHit();
             }
 
-
             this.tick(); // 所有时间结算，进入下一次循环验算
             
         }
@@ -78,16 +81,6 @@ class Fight {
         this.battle = data.battle;
         this.statistic = data.statistic;
 
-    }
-
-    // 读取输出循环配置文件
-    initRotation(job) {
-        return './rotation/' + job + '.js';
-    }
-
-    // 读取职业初始化配置文件
-    initJob(job) {
-        return './initial/' + job + '.js';
     }
 
     // 所有时间-1毫秒
@@ -128,15 +121,9 @@ class Fight {
     dotHit() {
         for (var k in this.player.dot) {
             if (this.player.dot[k].duration > 0) {
-                this.statistic.push({
-                    'time': this.setting.simulate.duration - this.battle.time,
-                    'damage_source': k + ' DOT',
-                    'damage_type': 'DOT Damage',
-                    'damage': this.player.dot[k].damagePool[0].damage,
-                    'crit': this.player.dot[k].damagePool[0].crit,
-                    'dh': this.player.dot[k].damagePool[0].dh
-                });
-                this.player.dot[k].damagePool.shift();
+
+                this.updateFight(this.jobSkill.dot(this, k, this.player.dot[k].damageBase));
+
             }
             
         }
@@ -145,7 +132,7 @@ class Fight {
 
 module.exports = {
     'run': function (data) {
-        var fight = new Fight(data);    // 建立新的战斗模型
+        var fight = new Fight(data);    // 建立新的战斗类
         fight.start();                  // 模拟开始
         return fight.statistic;
 

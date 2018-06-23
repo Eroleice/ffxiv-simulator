@@ -1,8 +1,4 @@
-﻿/**
- * 如果您想要修改循环设定文件，请参考文档修改：
- * 请勿修改以下代码直至xxx行
- * */
-var potionEffect = 165;         // 4.3药水效果
+﻿var potionEffect = 165;         // 4.3药水效果
 var jobTrial = 1.3;             // 占星职业被动+30%伤害
 var jobK = 33;                  // 占星职业K值：http://bbs.nga.cn/read.php?tid=12543882
 var animationBlock = 67;        // 技能动作僵直默认0.67秒
@@ -101,6 +97,46 @@ class skill {
         return Math.floor(Math.floor(Math.floor(Math.floor(Math.floor(damageBase * critMod) * dhMod) * resistanceMod) * floatMod) * jobTrial);
     }
 
+    // dot快照基础伤害计算公式
+    dotDamageSnapshoot(potency) {
+        // 药水检测
+        if (this.isBuff('potion')) {
+            this.player.status.ap = this.setting.player.ap + potionEffect;
+        } else {
+            this.player.status.ap = this.setting.player.ap;
+        }
+        // buff检测 && buff强化系数叠乘
+        var m = this.multiplier({
+            'trick_attack': 1.1,            // 忍者被刺
+            'cleric_stance': 1.05,          // 治疗战姿
+            'foe_requiem': 1.03             // 诗人魔人歌
+        });
+        // 伤害公式mod计算
+        var apMod = Math.floor(100 * (this.player.status.ap - 58.4) / 233.6) / 100;
+        var wdMod = (this.player.status.wd + jobK) / 100;
+        var detMod = 1 + Math.floor(1000 * (this.player.status.det - 292) * 0.13 / 2170) / 1000;
+        var tenMod = 1 + Math.floor(1000 * (this.player.status.ten - 364) * 0.1 / 2170) / 1000;
+        var damageBase = Math.floor(Math.floor(Math.floor(Math.floor(Math.floor(potency * wdMod) * apMod) * detMod) * tenMod) * m);
+        return damageBase;
+    }
+
+    // dot伤害计算公式
+    dotDamageCalculate(damageBase,dotName) {
+        var critMod = this.criticalHitModifier();
+        var dhMod = this.directHitModifier();
+        var resistanceMod = (this.isBuff('resistance')) ? 0.9 : 1;
+        var floatMod = this.damageFloat();
+        var dotDamage = Math.floor(Math.floor(Math.floor(Math.floor(Math.floor(damageBase * critMod) * dhMod) * resistanceMod) * floatMod) * jobTrial);
+        this.statistic.push({
+            'time': this.setting.simulate.duration - this.battle.time,
+            'damage_source': dotName + ' DOT',
+            'damage_type': 'DOT tick',
+            'damage': dotDamage,
+            'crit': this.isCrit,
+            'dh': this.isDirectHit
+        });
+    }
+
     // buff加成 (加法)
     additive(arr) {
         var a = 0;
@@ -179,15 +215,7 @@ class skill {
         this.player.engage = true;
         var dMod = this.dotMod();
         this.player.dot.combust_II.duration = 3000;
-        this.player.dot.combust_II.damagePool = [];
-        for (var i = 0; i < 10; i++) {
-            var dotTick = {
-                'damage': Math.floor(this.skillDamageCalculate(potency) * dMod),
-                'crit': this.isCrit,
-                'dh': this.isDirectHit
-            }
-            this.player.dot.combust_II.damagePool.push(dotTick);
-        }
+        this.player.dot.combust_II.damageBase = this.dotDamageSnapshoot(potency);
         this.statistic.push({
             'time': this.setting.simulate.duration - this.battle.time,
             'damage_source': 'Combust II',
@@ -241,6 +269,13 @@ function floor(num, d) {
 
 module.exports = {
     'action': function (data) {
-        return new skill(data); 
+        return new skill(data);  // 返回skill类
+    },
+    'dot': function (data,dotName,baseDamage) {
+
+        var dotProcess = new skill(data);
+        dotProcess.dotDamageCalculate(baseDamage, dotName);
+        return dotProcess; // 返回skill类
+
     }
 };
