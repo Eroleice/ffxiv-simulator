@@ -2,10 +2,15 @@
 
     'init': function (data) {
 
+        // 导入占星职业参数
+        data.jobTrial = 1.3;
+        data.jobK = 33;
+        data.skillList = ['malefic_iii','combust_ii'];
+
         // DOT池初始化
-        data.dot.combust_II = {
-            'duration': 0,
-            'damageBase': 0
+        data.dot.combust_ii = {
+            'time': 0,
+            'damage': 0
         };
 
         // buff初始化

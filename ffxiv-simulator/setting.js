@@ -20,12 +20,13 @@
             times: 1,			        // 模拟次数
             expectMode: false,	        // 期望值模式
             battleLog: true,	        // 输出战斗记录，开启情况下只能进行单次模拟
-            partyBuff: false,           // 团队辅助buff
+            partyBuff: true,            // 团队辅助buff
+            partyMember: ['brd','mch','nin','drg','smn','sch'],     // 队伍内其他职业构成
             autoAttack: false,          // 自动攻击
-            pet: false,                 // 宠物 (如果职业没有宠物请填写false，否则会报错)
+            pet: false                  // 宠物 (如果职业没有宠物请填写false，否则会报错)
         };
 
-        var opener = ['Cleric Stance', 'Potion', 'Combust II', 'Malefic III'];
+        var opener = ['cleric_stance', 'potion', 'combust_ii', 'malefic_iii'];
 
         simulate.times = (simulate.battleLog === true) ? 1 : simulate.times;  // 输出战斗记录时仅进行单次模拟
 
