@@ -1,7 +1,7 @@
 [
     {
         "time":0,
-        "event":"cast",
+        "event":"Cast",
         "name":"Cleric Stance",
         "duration":0,
         "resource":{
@@ -17,7 +17,7 @@
     },
     {
         "time":67,
-        "event":"cast",
+        "event":"Cast",
         "name":"Potion",
         "duration":0,
         "resource":{
@@ -39,11 +39,11 @@
     },
     {
         "time":134,
-        "event":"cast",
+        "event":"Cast",
         "name":"Combust II",
         "duration":0,
         "resource":{
-            "mp":20000,
+            "mp":19400,
             "tp":1000
         }
     },
@@ -74,11 +74,11 @@
     },
     {
         "time":369,
-        "event":"cast",
+        "event":"Cast",
         "name":"Malefic III",
         "duration":235,
         "resource":{
-            "mp":20000,
+            "mp":19200,
             "tp":1000
         }
     },
@@ -98,17 +98,17 @@
         "time":450,
         "event":"DOT Tick",
         "name":"combust_ii",
-        "damage":1618,
+        "damage":2167,
         "crit":false,
-        "dh":false
+        "dh":true
     },
     {
         "time":604,
-        "event":"cast",
+        "event":"Cast",
         "name":"Malefic III",
         "duration":235,
         "resource":{
-            "mp":20000,
+            "mp":19000,
             "tp":1000
         }
     },
@@ -124,17 +124,17 @@
         "time":750,
         "event":"DOT Tick",
         "name":"combust_ii",
-        "damage":1568,
+        "damage":1601,
         "crit":false,
         "dh":false
     },
     {
         "time":839,
-        "event":"cast",
+        "event":"Cast",
         "name":"Malefic III",
         "duration":235,
         "resource":{
-            "mp":20000,
+            "mp":18800,
             "tp":1000
         }
     },
@@ -156,17 +156,17 @@
         "time":1050,
         "event":"DOT Tick",
         "name":"combust_ii",
-        "damage":1684,
+        "damage":1667,
         "crit":false,
         "dh":false
     },
     {
         "time":1074,
-        "event":"cast",
+        "event":"Cast",
         "name":"Malefic III",
         "duration":235,
         "resource":{
-            "mp":20000,
+            "mp":18600,
             "tp":1000
         }
     },
@@ -180,17 +180,17 @@
         "time":1134,
         "event":"Damage",
         "name":"Malefic III",
-        "damage":11268,
+        "damage":10293,
         "crit":true,
         "dh":false
     },
     {
         "time":1309,
-        "event":"cast",
+        "event":"Cast",
         "name":"Malefic III",
         "duration":235,
         "resource":{
-            "mp":20000,
+            "mp":18000,
             "tp":1000
         }
     },
@@ -206,9 +206,9 @@
         "time":1369,
         "event":"Damage",
         "name":"Malefic III",
-        "damage":15642,
+        "damage":11918,
         "crit":true,
-        "dh":true
+        "dh":false
     },
     {
         "time":1500,
@@ -218,11 +218,11 @@
     },
     {
         "time":1544,
-        "event":"cast",
+        "event":"Cast",
         "name":"Malefic III",
         "duration":235,
         "resource":{
-            "mp":20000,
+            "mp":17800,
             "tp":1000
         }
     },
@@ -230,7 +230,7 @@
         "time":1604,
         "event":"Damage",
         "name":"Malefic III",
-        "damage":8315,
+        "damage":8233,
         "crit":false,
         "dh":false
     },
@@ -238,17 +238,17 @@
         "time":1650,
         "event":"DOT Tick",
         "name":"combust_ii",
-        "damage":2317,
-        "crit":true,
-        "dh":false
+        "damage":2126,
+        "crit":false,
+        "dh":true
     },
     {
         "time":1779,
-        "event":"cast",
+        "event":"Cast",
         "name":"Malefic III",
         "duration":235,
         "resource":{
-            "mp":20000,
+            "mp":17600,
             "tp":1000
         }
     },
@@ -256,25 +256,25 @@
         "time":1839,
         "event":"Damage",
         "name":"Malefic III",
-        "damage":10314,
-        "crit":true,
+        "damage":6911,
+        "crit":false,
         "dh":false
     },
     {
         "time":1950,
         "event":"DOT Tick",
         "name":"combust_ii",
-        "damage":1585,
-        "crit":false,
+        "damage":2462,
+        "crit":true,
         "dh":false
     },
     {
         "time":2014,
-        "event":"cast",
+        "event":"Cast",
         "name":"Malefic III",
         "duration":235,
         "resource":{
-            "mp":20000,
+            "mp":17400,
             "tp":1000
         }
     },
@@ -282,17 +282,17 @@
         "time":2074,
         "event":"Damage",
         "name":"Malefic III",
-        "damage":12761,
+        "damage":10840,
         "crit":true,
-        "dh":true
+        "dh":false
     },
     {
         "time":2249,
-        "event":"cast",
+        "event":"Cast",
         "name":"Malefic III",
         "duration":235,
         "resource":{
-            "mp":20000,
+            "mp":16800,
             "tp":1000
         }
     },
@@ -300,7 +300,7 @@
         "time":2250,
         "event":"DOT Tick",
         "name":"combust_ii",
-        "damage":1684,
+        "damage":1634,
         "crit":false,
         "dh":false
     },
@@ -308,17 +308,17 @@
         "time":2309,
         "event":"Damage",
         "name":"Malefic III",
-        "damage":7055,
+        "damage":7270,
         "crit":false,
         "dh":false
     },
     {
         "time":2484,
-        "event":"cast",
+        "event":"Cast",
         "name":"Malefic III",
         "duration":235,
         "resource":{
-            "mp":20000,
+            "mp":16600,
             "tp":1000
         }
     },
@@ -326,25 +326,25 @@
         "time":2544,
         "event":"Damage",
         "name":"Malefic III",
-        "damage":9823,
-        "crit":true,
+        "damage":6650,
+        "crit":false,
         "dh":false
     },
     {
         "time":2550,
         "event":"DOT Tick",
         "name":"combust_ii",
-        "damage":2535,
-        "crit":true,
+        "damage":1734,
+        "crit":false,
         "dh":false
     },
     {
         "time":2719,
-        "event":"cast",
+        "event":"Cast",
         "name":"Malefic III",
         "duration":235,
         "resource":{
-            "mp":20000,
+            "mp":16400,
             "tp":1000
         }
     },
@@ -352,7 +352,7 @@
         "time":2779,
         "event":"Damage",
         "name":"Malefic III",
-        "damage":6295,
+        "damage":6482,
         "crit":false,
         "dh":false
     },
@@ -360,17 +360,17 @@
         "time":2850,
         "event":"DOT Tick",
         "name":"combust_ii",
-        "damage":1701,
+        "damage":1667,
         "crit":false,
         "dh":false
     },
     {
         "time":2954,
-        "event":"cast",
+        "event":"Cast",
         "name":"Malefic III",
         "duration":235,
         "resource":{
-            "mp":20000,
+            "mp":16200,
             "tp":1000
         }
     },
@@ -378,7 +378,7 @@
         "time":3014,
         "event":"Damage",
         "name":"Malefic III",
-        "damage":5935,
+        "damage":5875,
         "crit":false,
         "dh":false
     },
@@ -386,17 +386,17 @@
         "time":3150,
         "event":"DOT Tick",
         "name":"combust_ii",
-        "damage":1618,
-        "crit":false,
+        "damage":2486,
+        "crit":true,
         "dh":false
     },
     {
         "time":3189,
-        "event":"cast",
+        "event":"Cast",
         "name":"Combust II",
         "duration":0,
         "resource":{
-            "mp":20000,
+            "mp":16000,
             "tp":1000
         }
     },
@@ -416,12 +416,28 @@
         "duration":3000
     },
     {
+        "time":3256,
+        "event":"Cast",
+        "name":"Lucid Dreaming",
+        "duration":0,
+        "resource":{
+            "mp":16000,
+            "tp":1000
+        }
+    },
+    {
+        "time":3323,
+        "event":"Buff Apply",
+        "name":"Lucid Dreaming",
+        "duration":2100
+    },
+    {
         "time":3424,
-        "event":"cast",
+        "event":"Cast",
         "name":"Malefic III",
         "duration":235,
         "resource":{
-            "mp":20000,
+            "mp":15400,
             "tp":1000
         }
     },
@@ -429,17 +445,17 @@
         "time":3450,
         "event":"DOT Tick",
         "name":"combust_ii",
-        "damage":1314,
+        "damage":1340,
         "crit":false,
         "dh":false
     },
     {
         "time":3659,
-        "event":"cast",
+        "event":"Cast",
         "name":"Malefic III",
         "duration":235,
         "resource":{
-            "mp":20000,
+            "mp":16160,
             "tp":1000
         }
     },
@@ -447,7 +463,7 @@
         "time":3719,
         "event":"Damage",
         "name":"Malefic III",
-        "damage":5461,
+        "damage":5142,
         "crit":false,
         "dh":false
     },
@@ -455,17 +471,17 @@
         "time":3750,
         "event":"DOT Tick",
         "name":"combust_ii",
-        "damage":1340,
+        "damage":1353,
         "crit":false,
         "dh":false
     },
     {
         "time":3894,
-        "event":"cast",
+        "event":"Cast",
         "name":"Malefic III",
         "duration":235,
         "resource":{
-            "mp":20000,
+            "mp":16920,
             "tp":1000
         }
     },
@@ -473,7 +489,7 @@
         "time":3954,
         "event":"Damage",
         "name":"Malefic III",
-        "damage":5302,
+        "damage":5461,
         "crit":false,
         "dh":false
     },
@@ -481,17 +497,17 @@
         "time":4050,
         "event":"DOT Tick",
         "name":"combust_ii",
-        "damage":1366,
+        "damage":1274,
         "crit":false,
         "dh":false
     },
     {
         "time":4129,
-        "event":"cast",
+        "event":"Cast",
         "name":"Malefic III",
         "duration":235,
         "resource":{
-            "mp":20000,
+            "mp":17680,
             "tp":1000
         }
     },
@@ -499,25 +515,25 @@
         "time":4189,
         "event":"Damage",
         "name":"Malefic III",
-        "damage":5089,
-        "crit":false,
+        "damage":7829,
+        "crit":true,
         "dh":false
     },
     {
         "time":4350,
         "event":"DOT Tick",
         "name":"combust_ii",
-        "damage":1380,
+        "damage":1314,
         "crit":false,
         "dh":false
     },
     {
         "time":4364,
-        "event":"cast",
+        "event":"Cast",
         "name":"Malefic III",
         "duration":235,
         "resource":{
-            "mp":20000,
+            "mp":18440,
             "tp":1000
         }
     },
@@ -525,17 +541,17 @@
         "time":4424,
         "event":"Damage",
         "name":"Malefic III",
-        "damage":5302,
+        "damage":5408,
         "crit":false,
         "dh":false
     },
     {
         "time":4599,
-        "event":"cast",
+        "event":"Cast",
         "name":"Malefic III",
         "duration":235,
         "resource":{
-            "mp":20000,
+            "mp":17840,
             "tp":1000
         }
     },
@@ -543,7 +559,7 @@
         "time":4650,
         "event":"DOT Tick",
         "name":"combust_ii",
-        "damage":1301,
+        "damage":1380,
         "crit":false,
         "dh":false
     },
@@ -551,17 +567,17 @@
         "time":4659,
         "event":"Damage",
         "name":"Malefic III",
-        "damage":7829,
-        "crit":true,
+        "damage":5461,
+        "crit":false,
         "dh":false
     },
     {
         "time":4834,
-        "event":"cast",
+        "event":"Cast",
         "name":"Malefic III",
         "duration":235,
         "resource":{
-            "mp":20000,
+            "mp":18600,
             "tp":1000
         }
     },
@@ -577,17 +593,17 @@
         "time":4950,
         "event":"DOT Tick",
         "name":"combust_ii",
-        "damage":1883,
+        "damage":1998,
         "crit":true,
         "dh":false
     },
     {
         "time":5069,
-        "event":"cast",
+        "event":"Cast",
         "name":"Malefic III",
         "duration":235,
         "resource":{
-            "mp":20000,
+            "mp":19360,
             "tp":1000
         }
     },
@@ -595,7 +611,7 @@
         "time":5129,
         "event":"Damage",
         "name":"Malefic III",
-        "damage":5195,
+        "damage":5089,
         "crit":false,
         "dh":false
     },
@@ -603,17 +619,17 @@
         "time":5250,
         "event":"DOT Tick",
         "name":"combust_ii",
-        "damage":1327,
+        "damage":1314,
         "crit":false,
         "dh":false
     },
     {
         "time":5304,
-        "event":"cast",
+        "event":"Cast",
         "name":"Malefic III",
         "duration":235,
         "resource":{
-            "mp":20000,
+            "mp":20120,
             "tp":1000
         }
     },
@@ -621,17 +637,17 @@
         "time":5364,
         "event":"Damage",
         "name":"Malefic III",
-        "damage":5248,
+        "damage":5355,
         "crit":false,
         "dh":false
     },
     {
         "time":5539,
-        "event":"cast",
+        "event":"Cast",
         "name":"Malefic III",
         "duration":235,
         "resource":{
-            "mp":20000,
+            "mp":19520,
             "tp":1000
         }
     },
@@ -639,7 +655,7 @@
         "time":5550,
         "event":"DOT Tick",
         "name":"combust_ii",
-        "damage":1288,
+        "damage":1366,
         "crit":false,
         "dh":false
     },
@@ -647,17 +663,17 @@
         "time":5599,
         "event":"Damage",
         "name":"Malefic III",
-        "damage":5514,
+        "damage":5567,
         "crit":false,
         "dh":false
     },
     {
         "time":5774,
-        "event":"cast",
+        "event":"Cast",
         "name":"Malefic III",
         "duration":235,
         "resource":{
-            "mp":20000,
+            "mp":19320,
             "tp":1000
         }
     },
@@ -673,17 +689,17 @@
         "time":5850,
         "event":"DOT Tick",
         "name":"combust_ii",
-        "damage":1380,
+        "damage":1274,
         "crit":false,
         "dh":false
     },
     {
         "time":6009,
-        "event":"cast",
+        "event":"Cast",
         "name":"Malefic III",
         "duration":235,
         "resource":{
-            "mp":20000,
+            "mp":19120,
             "tp":1000
         }
     },
@@ -691,7 +707,7 @@
         "time":6069,
         "event":"Damage",
         "name":"Malefic III",
-        "damage":5142,
+        "damage":5514,
         "crit":false,
         "dh":false
     },
@@ -699,8 +715,8 @@
         "time":6150,
         "event":"DOT Tick",
         "name":"combust_ii",
-        "damage":1353,
-        "crit":false,
+        "damage":1864,
+        "crit":true,
         "dh":false
     },
     {
@@ -711,11 +727,11 @@
     },
     {
         "time":6244,
-        "event":"cast",
+        "event":"Cast",
         "name":"Combust II",
         "duration":0,
         "resource":{
-            "mp":20000,
+            "mp":18920,
             "tp":1000
         }
     },
@@ -723,7 +739,7 @@
         "time":6304,
         "event":"Damage",
         "name":"Malefic III",
-        "damage":5408,
+        "damage":5248,
         "crit":false,
         "dh":false
     },
@@ -738,27 +754,27 @@
         "time":6450,
         "event":"DOT Tick",
         "name":"combust_ii",
-        "damage":1361,
+        "damage":1403,
         "crit":false,
         "dh":false
     },
     {
         "time":6479,
-        "event":"cast",
+        "event":"Cast",
         "name":"Malefic III",
         "duration":235,
         "resource":{
-            "mp":20000,
+            "mp":18720,
             "tp":1000
         }
     },
     {
         "time":6714,
-        "event":"cast",
+        "event":"Cast",
         "name":"Malefic III",
         "duration":235,
         "resource":{
-            "mp":20000,
+            "mp":18120,
             "tp":1000
         }
     },
@@ -766,7 +782,7 @@
         "time":6750,
         "event":"DOT Tick",
         "name":"combust_ii",
-        "damage":1375,
+        "damage":1445,
         "crit":false,
         "dh":false
     },
@@ -774,17 +790,17 @@
         "time":6774,
         "event":"Damage",
         "name":"Malefic III",
-        "damage":6122,
+        "damage":5714,
         "crit":false,
         "dh":false
     },
     {
         "time":6949,
-        "event":"cast",
+        "event":"Cast",
         "name":"Malefic III",
         "duration":235,
         "resource":{
-            "mp":20000,
+            "mp":17920,
             "tp":1000
         }
     },
@@ -800,7 +816,7 @@
         "time":7050,
         "event":"DOT Tick",
         "name":"combust_ii",
-        "damage":1417,
+        "damage":1333,
         "crit":false,
         "dh":false
     },
@@ -812,11 +828,11 @@
     },
     {
         "time":7184,
-        "event":"cast",
+        "event":"Cast",
         "name":"Malefic III",
         "duration":235,
         "resource":{
-            "mp":20000,
+            "mp":17720,
             "tp":1000
         }
     },
@@ -824,25 +840,25 @@
         "time":7244,
         "event":"Damage",
         "name":"Malefic III",
-        "damage":6094,
-        "crit":false,
+        "damage":9566,
+        "crit":true,
         "dh":false
     },
     {
         "time":7350,
         "event":"DOT Tick",
         "name":"combust_ii",
-        "damage":1431,
+        "damage":1473,
         "crit":false,
         "dh":false
     },
     {
         "time":7419,
-        "event":"cast",
+        "event":"Cast",
         "name":"Malefic III",
         "duration":235,
         "resource":{
-            "mp":20000,
+            "mp":17520,
             "tp":1000
         }
     },
@@ -850,25 +866,25 @@
         "time":7479,
         "event":"Damage",
         "name":"Malefic III",
-        "damage":6094,
-        "crit":false,
+        "damage":9003,
+        "crit":true,
         "dh":false
     },
     {
         "time":7650,
         "event":"DOT Tick",
         "name":"combust_ii",
-        "damage":1389,
+        "damage":1403,
         "crit":false,
         "dh":false
     },
     {
         "time":7654,
-        "event":"cast",
+        "event":"Cast",
         "name":"Malefic III",
         "duration":235,
         "resource":{
-            "mp":20000,
+            "mp":17320,
             "tp":1000
         }
     },
@@ -876,17 +892,17 @@
         "time":7714,
         "event":"Damage",
         "name":"Malefic III",
-        "damage":9003,
-        "crit":true,
+        "damage":6158,
+        "crit":false,
         "dh":false
     },
     {
         "time":7889,
-        "event":"cast",
+        "event":"Cast",
         "name":"Malefic III",
         "duration":235,
         "resource":{
-            "mp":20000,
+            "mp":16720,
             "tp":1000
         }
     },
@@ -894,25 +910,25 @@
         "time":7949,
         "event":"Damage",
         "name":"Malefic III",
-        "damage":6005,
-        "crit":false,
+        "damage":8610,
+        "crit":true,
         "dh":false
     },
     {
         "time":7950,
         "event":"DOT Tick",
         "name":"combust_ii",
-        "damage":1949,
-        "crit":true,
+        "damage":1445,
+        "crit":false,
         "dh":false
     },
     {
         "time":8124,
-        "event":"cast",
+        "event":"Cast",
         "name":"Malefic III",
         "duration":235,
         "resource":{
-            "mp":20000,
+            "mp":16520,
             "tp":1000
         }
     },
@@ -920,8 +936,8 @@
         "time":8184,
         "event":"Damage",
         "name":"Malefic III",
-        "damage":5772,
-        "crit":false,
+        "damage":8951,
+        "crit":true,
         "dh":false
     },
     {
@@ -934,11 +950,11 @@
     },
     {
         "time":8359,
-        "event":"cast",
+        "event":"Cast",
         "name":"Malefic III",
         "duration":235,
         "resource":{
-            "mp":20000,
+            "mp":16320,
             "tp":1000
         }
     },
@@ -946,7 +962,7 @@
         "time":8419,
         "event":"Damage",
         "name":"Malefic III",
-        "damage":5889,
+        "damage":6122,
         "crit":false,
         "dh":false
     },
@@ -954,17 +970,17 @@
         "time":8550,
         "event":"DOT Tick",
         "name":"combust_ii",
-        "damage":1375,
+        "damage":1431,
         "crit":false,
         "dh":false
     },
     {
         "time":8594,
-        "event":"cast",
+        "event":"Cast",
         "name":"Malefic III",
         "duration":235,
         "resource":{
-            "mp":20000,
+            "mp":16120,
             "tp":1000
         }
     },
@@ -972,17 +988,17 @@
         "time":8654,
         "event":"Damage",
         "name":"Malefic III",
-        "damage":5597,
+        "damage":6122,
         "crit":false,
         "dh":false
     },
     {
         "time":8829,
-        "event":"cast",
+        "event":"Cast",
         "name":"Malefic III",
         "duration":235,
         "resource":{
-            "mp":20000,
+            "mp":15520,
             "tp":1000
         }
     },
@@ -990,7 +1006,7 @@
         "time":8850,
         "event":"DOT Tick",
         "name":"combust_ii",
-        "damage":1473,
+        "damage":1333,
         "crit":false,
         "dh":false
     },
@@ -998,17 +1014,17 @@
         "time":8889,
         "event":"Damage",
         "name":"Malefic III",
-        "damage":5567,
+        "damage":5302,
         "crit":false,
         "dh":false
     },
     {
         "time":9064,
-        "event":"cast",
+        "event":"Cast",
         "name":"Malefic III",
         "duration":235,
         "resource":{
-            "mp":20000,
+            "mp":15320,
             "tp":1000
         }
     },
@@ -1016,7 +1032,7 @@
         "time":9124,
         "event":"Damage",
         "name":"Malefic III",
-        "damage":5036,
+        "damage":5408,
         "crit":false,
         "dh":false
     },
@@ -1024,17 +1040,17 @@
         "time":9150,
         "event":"DOT Tick",
         "name":"combust_ii",
-        "damage":1417,
+        "damage":1361,
         "crit":false,
         "dh":false
     },
     {
         "time":9299,
-        "event":"cast",
+        "event":"Cast",
         "name":"Combust II",
         "duration":0,
         "resource":{
-            "mp":20000,
+            "mp":15120,
             "tp":1000
         }
     },
@@ -1042,7 +1058,7 @@
         "time":9359,
         "event":"Damage",
         "name":"Malefic III",
-        "damage":5248,
+        "damage":5302,
         "crit":false,
         "dh":false
     },
@@ -1055,11 +1071,11 @@
     },
     {
         "time":9366,
-        "event":"cast",
+        "event":"Cast",
         "name":"Cleric Stance",
         "duration":0,
         "resource":{
-            "mp":20000,
+            "mp":15120,
             "tp":1000
         }
     },
@@ -1073,17 +1089,17 @@
         "time":9450,
         "event":"DOT Tick",
         "name":"combust_ii",
-        "damage":1302,
-        "crit":false,
+        "damage":1848,
+        "crit":true,
         "dh":false
     },
     {
         "time":9534,
-        "event":"cast",
+        "event":"Cast",
         "name":"Malefic III",
         "duration":235,
         "resource":{
-            "mp":20000,
+            "mp":14920,
             "tp":1000
         }
     },
@@ -1091,17 +1107,17 @@
         "time":9750,
         "event":"DOT Tick",
         "name":"combust_ii",
-        "damage":1328,
+        "damage":1277,
         "crit":false,
         "dh":false
     },
     {
         "time":9769,
-        "event":"cast",
+        "event":"Cast",
         "name":"Malefic III",
         "duration":235,
         "resource":{
-            "mp":20000,
+            "mp":14720,
             "tp":1000
         }
     },
@@ -1109,17 +1125,17 @@
         "time":9829,
         "event":"Damage",
         "name":"Malefic III",
-        "damage":5732,
+        "damage":5677,
         "crit":false,
         "dh":false
     },
     {
         "time":10004,
-        "event":"cast",
+        "event":"Cast",
         "name":"Malefic III",
         "duration":235,
         "resource":{
-            "mp":20000,
+            "mp":14120,
             "tp":1000
         }
     },
@@ -1135,17 +1151,17 @@
         "time":10064,
         "event":"Damage",
         "name":"Malefic III",
-        "damage":5732,
+        "damage":5677,
         "crit":false,
         "dh":false
     },
     {
         "time":10239,
-        "event":"cast",
+        "event":"Cast",
         "name":"Malefic III",
         "duration":235,
         "resource":{
-            "mp":20000,
+            "mp":13920,
             "tp":1000
         }
     },
@@ -1153,7 +1169,7 @@
         "time":10299,
         "event":"Damage",
         "name":"Malefic III",
-        "damage":5343,
+        "damage":5399,
         "crit":false,
         "dh":false
     },
@@ -1161,17 +1177,17 @@
         "time":10350,
         "event":"DOT Tick",
         "name":"combust_ii",
-        "damage":1264,
+        "damage":1315,
         "crit":false,
         "dh":false
     },
     {
         "time":10474,
-        "event":"cast",
+        "event":"Cast",
         "name":"Malefic III",
         "duration":235,
         "resource":{
-            "mp":20000,
+            "mp":13720,
             "tp":1000
         }
     },
@@ -1179,7 +1195,7 @@
         "time":10534,
         "event":"Damage",
         "name":"Malefic III",
-        "damage":5454,
+        "damage":5343,
         "crit":false,
         "dh":false
     },
@@ -1187,17 +1203,17 @@
         "time":10650,
         "event":"DOT Tick",
         "name":"combust_ii",
-        "damage":1302,
+        "damage":1290,
         "crit":false,
         "dh":false
     },
     {
         "time":10709,
-        "event":"cast",
+        "event":"Cast",
         "name":"Malefic III",
         "duration":235,
         "resource":{
-            "mp":20000,
+            "mp":13520,
             "tp":1000
         }
     },
@@ -1205,17 +1221,17 @@
         "time":10769,
         "event":"Damage",
         "name":"Malefic III",
-        "damage":5399,
+        "damage":5566,
         "crit":false,
         "dh":false
     },
     {
         "time":10944,
-        "event":"cast",
+        "event":"Cast",
         "name":"Malefic III",
         "duration":235,
         "resource":{
-            "mp":20000,
+            "mp":12920,
             "tp":1000
         }
     },
@@ -1223,7 +1239,7 @@
         "time":10950,
         "event":"DOT Tick",
         "name":"combust_ii",
-        "damage":1302,
+        "damage":1264,
         "crit":false,
         "dh":false
     },
@@ -1231,17 +1247,17 @@
         "time":11004,
         "event":"Damage",
         "name":"Malefic III",
-        "damage":5454,
+        "damage":5287,
         "crit":false,
         "dh":false
     },
     {
         "time":11179,
-        "event":"cast",
+        "event":"Cast",
         "name":"Malefic III",
         "duration":235,
         "resource":{
-            "mp":20000,
+            "mp":12720,
             "tp":1000
         }
     },
@@ -1249,7 +1265,7 @@
         "time":11239,
         "event":"Damage",
         "name":"Malefic III",
-        "damage":5302,
+        "damage":5142,
         "crit":false,
         "dh":false
     },
@@ -1257,17 +1273,17 @@
         "time":11250,
         "event":"DOT Tick",
         "name":"combust_ii",
-        "damage":1277,
+        "damage":1251,
         "crit":false,
         "dh":false
     },
     {
         "time":11414,
-        "event":"cast",
+        "event":"Cast",
         "name":"Malefic III",
         "duration":235,
         "resource":{
-            "mp":20000,
+            "mp":12520,
             "tp":1000
         }
     },
@@ -1275,7 +1291,7 @@
         "time":11474,
         "event":"Damage",
         "name":"Malefic III",
-        "damage":5089,
+        "damage":5302,
         "crit":false,
         "dh":false
     },
@@ -1283,17 +1299,17 @@
         "time":11550,
         "event":"DOT Tick",
         "name":"combust_ii",
-        "damage":1226,
+        "damage":1277,
         "crit":false,
         "dh":false
     },
     {
         "time":11649,
-        "event":"cast",
+        "event":"Cast",
         "name":"Malefic III",
         "duration":235,
         "resource":{
-            "mp":20000,
+            "mp":12320,
             "tp":1000
         }
     },
@@ -1301,7 +1317,7 @@
         "time":11709,
         "event":"Damage",
         "name":"Malefic III",
-        "damage":7441,
+        "damage":7906,
         "crit":true,
         "dh":false
     },
@@ -1309,17 +1325,17 @@
         "time":11850,
         "event":"DOT Tick",
         "name":"combust_ii",
-        "damage":1328,
+        "damage":1213,
         "crit":false,
         "dh":false
     },
     {
         "time":11884,
-        "event":"cast",
+        "event":"Cast",
         "name":"Malefic III",
         "duration":235,
         "resource":{
-            "mp":20000,
+            "mp":12120,
             "tp":1000
         }
     },
@@ -1327,7 +1343,7 @@
         "time":11944,
         "event":"Damage",
         "name":"Malefic III",
-        "damage":5302,
+        "damage":5355,
         "crit":false,
         "dh":false
     },
@@ -1339,11 +1355,11 @@
     },
     {
         "time":12119,
-        "event":"cast",
+        "event":"Cast",
         "name":"Malefic III",
         "duration":235,
         "resource":{
-            "mp":20000,
+            "mp":11520,
             "tp":1000
         }
     },
@@ -1351,7 +1367,7 @@
         "time":12150,
         "event":"DOT Tick",
         "name":"combust_ii",
-        "damage":1238,
+        "damage":1341,
         "crit":false,
         "dh":false
     },
@@ -1359,7 +1375,7 @@
         "time":12179,
         "event":"Damage",
         "name":"Malefic III",
-        "damage":5514,
+        "damage":5089,
         "crit":false,
         "dh":false
     },
@@ -1371,11 +1387,11 @@
     },
     {
         "time":12354,
-        "event":"cast",
+        "event":"Cast",
         "name":"Combust II",
         "duration":0,
         "resource":{
-            "mp":20000,
+            "mp":11320,
             "tp":1000
         }
     },
@@ -1389,7 +1405,7 @@
         "time":12414,
         "event":"Damage",
         "name":"Malefic III",
-        "damage":6307,
+        "damage":5940,
         "crit":false,
         "dh":false
     },
@@ -1404,17 +1420,17 @@
         "time":12450,
         "event":"DOT Tick",
         "name":"combust_ii",
-        "damage":1610,
+        "damage":1533,
         "crit":false,
         "dh":false
     },
     {
         "time":12589,
-        "event":"cast",
+        "event":"Cast",
         "name":"Malefic III",
         "duration":235,
         "resource":{
-            "mp":20000,
+            "mp":11120,
             "tp":1000
         }
     },
@@ -1422,17 +1438,17 @@
         "time":12750,
         "event":"DOT Tick",
         "name":"combust_ii",
-        "damage":1548,
+        "damage":1502,
         "crit":false,
         "dh":false
     },
     {
         "time":12824,
-        "event":"cast",
+        "event":"Cast",
         "name":"Malefic III",
         "duration":235,
         "resource":{
-            "mp":20000,
+            "mp":10920,
             "tp":1000
         }
     },
@@ -1440,7 +1456,7 @@
         "time":12884,
         "event":"Damage",
         "name":"Malefic III",
-        "damage":6557,
+        "damage":6493,
         "crit":false,
         "dh":false
     },
@@ -1454,17 +1470,17 @@
         "time":13050,
         "event":"DOT Tick",
         "name":"combust_ii",
-        "damage":1626,
-        "crit":false,
+        "damage":2286,
+        "crit":true,
         "dh":false
     },
     {
         "time":13059,
-        "event":"cast",
+        "event":"Cast",
         "name":"Malefic III",
         "duration":235,
         "resource":{
-            "mp":20000,
+            "mp":10720,
             "tp":1000
         }
     },
@@ -1478,17 +1494,17 @@
         "time":13119,
         "event":"Damage",
         "name":"Malefic III",
-        "damage":6171,
-        "crit":false,
+        "damage":9023,
+        "crit":true,
         "dh":false
     },
     {
         "time":13294,
-        "event":"cast",
+        "event":"Cast",
         "name":"Malefic III",
         "duration":235,
         "resource":{
-            "mp":20000,
+            "mp":10120,
             "tp":1000
         }
     },
@@ -1496,15 +1512,15 @@
         "time":13350,
         "event":"DOT Tick",
         "name":"combust_ii",
-        "damage":2150,
-        "crit":true,
+        "damage":1564,
+        "crit":false,
         "dh":false
     },
     {
         "time":13354,
         "event":"Damage",
         "name":"Malefic III",
-        "damage":6790,
+        "damage":7143,
         "crit":false,
         "dh":false
     },
@@ -1516,11 +1532,11 @@
     },
     {
         "time":13529,
-        "event":"cast",
+        "event":"Cast",
         "name":"Malefic III",
         "duration":235,
         "resource":{
-            "mp":20000,
+            "mp":9920,
             "tp":1000
         }
     },
@@ -1528,7 +1544,7 @@
         "time":13589,
         "event":"Damage",
         "name":"Malefic III",
-        "damage":7073,
+        "damage":7002,
         "crit":false,
         "dh":false
     },
@@ -1542,11 +1558,11 @@
     },
     {
         "time":13764,
-        "event":"cast",
+        "event":"Cast",
         "name":"Malefic III",
         "duration":235,
         "resource":{
-            "mp":20000,
+            "mp":9720,
             "tp":1000
         }
     },
@@ -1554,7 +1570,7 @@
         "time":13824,
         "event":"Damage",
         "name":"Malefic III",
-        "damage":6230,
+        "damage":6295,
         "crit":false,
         "dh":false
     },
@@ -1562,17 +1578,17 @@
         "time":13950,
         "event":"DOT Tick",
         "name":"combust_ii",
-        "damage":1610,
-        "crit":false,
+        "damage":2173,
+        "crit":true,
         "dh":false
     },
     {
         "time":13999,
-        "event":"cast",
+        "event":"Cast",
         "name":"Malefic III",
         "duration":235,
         "resource":{
-            "mp":20000,
+            "mp":9520,
             "tp":1000
         }
     },
@@ -1586,11 +1602,11 @@
     },
     {
         "time":14234,
-        "event":"cast",
+        "event":"Cast",
         "name":"Malefic III",
         "duration":235,
         "resource":{
-            "mp":20000,
+            "mp":8920,
             "tp":1000
         }
     },
@@ -1598,7 +1614,7 @@
         "time":14250,
         "event":"DOT Tick",
         "name":"combust_ii",
-        "damage":1548,
+        "damage":1502,
         "crit":false,
         "dh":false
     },
@@ -1606,17 +1622,17 @@
         "time":14294,
         "event":"Damage",
         "name":"Malefic III",
-        "damage":6295,
+        "damage":6230,
         "crit":false,
         "dh":false
     },
     {
         "time":14469,
-        "event":"cast",
+        "event":"Cast",
         "name":"Malefic III",
         "duration":235,
         "resource":{
-            "mp":20000,
+            "mp":8720,
             "tp":1000
         }
     },
@@ -1624,7 +1640,7 @@
         "time":14529,
         "event":"Damage",
         "name":"Malefic III",
-        "damage":6370,
+        "damage":6308,
         "crit":false,
         "dh":false
     },
@@ -1632,17 +1648,17 @@
         "time":14550,
         "event":"DOT Tick",
         "name":"combust_ii",
-        "damage":1517,
+        "damage":1579,
         "crit":false,
         "dh":false
     },
     {
         "time":14704,
-        "event":"cast",
+        "event":"Cast",
         "name":"Malefic III",
         "duration":235,
         "resource":{
-            "mp":20000,
+            "mp":8520,
             "tp":1000
         }
     },
@@ -1650,7 +1666,7 @@
         "time":14764,
         "event":"Damage",
         "name":"Malefic III",
-        "damage":5564,
+        "damage":5905,
         "crit":false,
         "dh":false
     },
@@ -1658,17 +1674,17 @@
         "time":14850,
         "event":"DOT Tick",
         "name":"combust_ii",
-        "damage":1626,
-        "crit":false,
+        "damage":2150,
+        "crit":true,
         "dh":false
     },
     {
         "time":14939,
-        "event":"cast",
+        "event":"Cast",
         "name":"Malefic III",
         "duration":235,
         "resource":{
-            "mp":20000,
+            "mp":8320,
             "tp":1000
         }
     },
@@ -1676,25 +1692,25 @@
         "time":14999,
         "event":"Damage",
         "name":"Malefic III",
-        "damage":8633,
-        "crit":true,
+        "damage":5621,
+        "crit":false,
         "dh":false
     },
     {
         "time":15150,
         "event":"DOT Tick",
         "name":"combust_ii",
-        "damage":1517,
+        "damage":1626,
         "crit":false,
         "dh":false
     },
     {
         "time":15174,
-        "event":"cast",
+        "event":"Cast",
         "name":"Malefic III",
         "duration":235,
         "resource":{
-            "mp":20000,
+            "mp":8120,
             "tp":1000
         }
     },
@@ -1708,11 +1724,11 @@
     },
     {
         "time":15409,
-        "event":"cast",
+        "event":"Cast",
         "name":"Combust II",
         "duration":0,
         "resource":{
-            "mp":20000,
+            "mp":7520,
             "tp":1000
         }
     },
@@ -1720,7 +1736,7 @@
         "time":15469,
         "event":"Damage",
         "name":"Malefic III",
-        "damage":5355,
+        "damage":5036,
         "crit":false,
         "dh":false
     },
@@ -1732,12 +1748,28 @@
         "duration":3000
     },
     {
+        "time":15476,
+        "event":"Cast",
+        "name":"Lucid Dreaming",
+        "duration":0,
+        "resource":{
+            "mp":7920,
+            "tp":1000
+        }
+    },
+    {
+        "time":15543,
+        "event":"Buff Apply",
+        "name":"Lucid Dreaming",
+        "duration":2100
+    },
+    {
         "time":15644,
-        "event":"cast",
+        "event":"Cast",
         "name":"Malefic III",
         "duration":235,
         "resource":{
-            "mp":20000,
+            "mp":7320,
             "tp":1000
         }
     },
@@ -1745,17 +1777,17 @@
         "time":15750,
         "event":"DOT Tick",
         "name":"combust_ii",
-        "damage":1811,
-        "crit":true,
+        "damage":1264,
+        "crit":false,
         "dh":false
     },
     {
         "time":15879,
-        "event":"cast",
+        "event":"Cast",
         "name":"Malefic III",
         "duration":235,
         "resource":{
-            "mp":20000,
+            "mp":8080,
             "tp":1000
         }
     },
@@ -1763,25 +1795,25 @@
         "time":15939,
         "event":"Damage",
         "name":"Malefic III",
-        "damage":5567,
-        "crit":false,
+        "damage":7674,
+        "crit":true,
         "dh":false
     },
     {
         "time":16050,
         "event":"DOT Tick",
         "name":"combust_ii",
-        "damage":1238,
-        "crit":false,
+        "damage":1886,
+        "crit":true,
         "dh":false
     },
     {
         "time":16114,
-        "event":"cast",
+        "event":"Cast",
         "name":"Malefic III",
         "duration":235,
         "resource":{
-            "mp":20000,
+            "mp":8840,
             "tp":1000
         }
     },
@@ -1789,17 +1821,17 @@
         "time":16174,
         "event":"Damage",
         "name":"Malefic III",
-        "damage":5248,
+        "damage":5089,
         "crit":false,
         "dh":false
     },
     {
         "time":16349,
-        "event":"cast",
+        "event":"Cast",
         "name":"Malefic III",
         "duration":235,
         "resource":{
-            "mp":20000,
+            "mp":8240,
             "tp":1000
         }
     },
@@ -1807,7 +1839,7 @@
         "time":16350,
         "event":"DOT Tick",
         "name":"combust_ii",
-        "damage":1213,
+        "damage":1238,
         "crit":false,
         "dh":false
     },
@@ -1815,17 +1847,17 @@
         "time":16409,
         "event":"Damage",
         "name":"Malefic III",
-        "damage":5089,
-        "crit":false,
+        "damage":7906,
+        "crit":true,
         "dh":false
     },
     {
         "time":16584,
-        "event":"cast",
+        "event":"Cast",
         "name":"Malefic III",
         "duration":235,
         "resource":{
-            "mp":20000,
+            "mp":9000,
             "tp":1000
         }
     },
@@ -1833,25 +1865,25 @@
         "time":16644,
         "event":"Damage",
         "name":"Malefic III",
-        "damage":7441,
-        "crit":true,
+        "damage":5408,
+        "crit":false,
         "dh":false
     },
     {
         "time":16650,
         "event":"DOT Tick",
         "name":"combust_ii",
-        "damage":1213,
+        "damage":1302,
         "crit":false,
         "dh":false
     },
     {
         "time":16819,
-        "event":"cast",
+        "event":"Cast",
         "name":"Malefic III",
         "duration":235,
         "resource":{
-            "mp":20000,
+            "mp":9760,
             "tp":1000
         }
     },
@@ -1867,17 +1899,17 @@
         "time":16950,
         "event":"DOT Tick",
         "name":"combust_ii",
-        "damage":1315,
+        "damage":1341,
         "crit":false,
         "dh":false
     },
     {
         "time":17054,
-        "event":"cast",
+        "event":"Cast",
         "name":"Malefic III",
         "duration":235,
         "resource":{
-            "mp":20000,
+            "mp":10520,
             "tp":1000
         }
     },
@@ -1885,7 +1917,7 @@
         "time":17114,
         "event":"Damage",
         "name":"Malefic III",
-        "damage":5195,
+        "damage":5408,
         "crit":false,
         "dh":false
     },
@@ -1893,17 +1925,17 @@
         "time":17250,
         "event":"DOT Tick",
         "name":"combust_ii",
-        "damage":1923,
-        "crit":true,
+        "damage":1315,
+        "crit":false,
         "dh":false
     },
     {
         "time":17289,
-        "event":"cast",
+        "event":"Cast",
         "name":"Malefic III",
         "duration":235,
         "resource":{
-            "mp":20000,
+            "mp":11280,
             "tp":1000
         }
     },
@@ -1911,17 +1943,17 @@
         "time":17349,
         "event":"Damage",
         "name":"Malefic III",
-        "damage":7441,
-        "crit":true,
+        "damage":5036,
+        "crit":false,
         "dh":false
     },
     {
         "time":17524,
-        "event":"cast",
+        "event":"Cast",
         "name":"Malefic III",
         "duration":235,
         "resource":{
-            "mp":20000,
+            "mp":10680,
             "tp":1000
         }
     },
@@ -1929,7 +1961,7 @@
         "time":17550,
         "event":"DOT Tick",
         "name":"combust_ii",
-        "damage":1226,
+        "damage":1290,
         "crit":false,
         "dh":false
     },
@@ -1937,17 +1969,17 @@
         "time":17584,
         "event":"Damage",
         "name":"Malefic III",
-        "damage":5195,
-        "crit":false,
+        "damage":7518,
+        "crit":true,
         "dh":false
     },
     {
         "time":17759,
-        "event":"cast",
+        "event":"Cast",
         "name":"Malefic III",
         "duration":235,
         "resource":{
-            "mp":20000,
+            "mp":11440,
             "tp":1000
         }
     },
@@ -1955,25 +1987,25 @@
         "time":17819,
         "event":"Damage",
         "name":"Malefic III",
-        "damage":5355,
-        "crit":false,
+        "damage":7518,
+        "crit":true,
         "dh":false
     },
     {
         "time":17850,
         "event":"DOT Tick",
         "name":"combust_ii",
-        "damage":1315,
+        "damage":1341,
         "crit":false,
         "dh":false
     },
     {
         "time":17994,
-        "event":"cast",
+        "event":"Cast",
         "name":"Malefic III",
         "duration":235,
         "resource":{
-            "mp":20000,
+            "mp":11240,
             "tp":1000
         }
     },
@@ -1981,7 +2013,7 @@
         "time":18054,
         "event":"Damage",
         "name":"Malefic III",
-        "damage":5461,
+        "damage":5514,
         "crit":false,
         "dh":false
     },
@@ -1989,7 +2021,7 @@
         "time":18150,
         "event":"DOT Tick",
         "name":"combust_ii",
-        "damage":1238,
+        "damage":1328,
         "crit":false,
         "dh":false
     },
@@ -2001,11 +2033,11 @@
     },
     {
         "time":18229,
-        "event":"cast",
+        "event":"Cast",
         "name":"Malefic III",
         "duration":235,
         "resource":{
-            "mp":20000,
+            "mp":11040,
             "tp":1000
         }
     },
@@ -2013,7 +2045,7 @@
         "time":18289,
         "event":"Damage",
         "name":"Malefic III",
-        "damage":5355,
+        "damage":5248,
         "crit":false,
         "dh":false
     },
@@ -2039,17 +2071,17 @@
         "time":18450,
         "event":"DOT Tick",
         "name":"combust_ii",
-        "damage":1867,
+        "damage":2357,
         "crit":true,
-        "dh":false
+        "dh":true
     },
     {
         "time":18464,
-        "event":"cast",
+        "event":"Cast",
         "name":"Combust II",
         "duration":0,
         "resource":{
-            "mp":20000,
+            "mp":10840,
             "tp":1000
         }
     },
@@ -2057,7 +2089,7 @@
         "time":18524,
         "event":"Damage",
         "name":"Malefic III",
-        "damage":8870,
+        "damage":8518,
         "crit":true,
         "dh":false
     },
@@ -2070,11 +2102,11 @@
     },
     {
         "time":18531,
-        "event":"cast",
+        "event":"Cast",
         "name":"Cleric Stance",
         "duration":0,
         "resource":{
-            "mp":20000,
+            "mp":10840,
             "tp":1000
         }
     },
@@ -2086,11 +2118,11 @@
     },
     {
         "time":18699,
-        "event":"cast",
+        "event":"Cast",
         "name":"Malefic III",
         "duration":235,
         "resource":{
-            "mp":20000,
+            "mp":10240,
             "tp":1000
         }
     },
@@ -2098,17 +2130,17 @@
         "time":18750,
         "event":"DOT Tick",
         "name":"combust_ii",
-        "damage":2136,
+        "damage":2094,
         "crit":true,
         "dh":false
     },
     {
         "time":18934,
-        "event":"cast",
+        "event":"Cast",
         "name":"Malefic III",
         "duration":235,
         "resource":{
-            "mp":20000,
+            "mp":10040,
             "tp":1000
         }
     },
@@ -2116,7 +2148,7 @@
         "time":18994,
         "event":"Damage",
         "name":"Malefic III",
-        "damage":6180,
+        "damage":6243,
         "crit":false,
         "dh":false
     },
@@ -2136,11 +2168,11 @@
     },
     {
         "time":19169,
-        "event":"cast",
+        "event":"Cast",
         "name":"Malefic III",
         "duration":235,
         "resource":{
-            "mp":20000,
+            "mp":9840,
             "tp":1000
         }
     },
@@ -2148,25 +2180,25 @@
         "time":19229,
         "event":"Damage",
         "name":"Malefic III",
-        "damage":7284,
-        "crit":false,
+        "damage":9940,
+        "crit":true,
         "dh":false
     },
     {
         "time":19350,
         "event":"DOT Tick",
         "name":"combust_ii",
-        "damage":1389,
+        "damage":1790,
         "crit":false,
-        "dh":false
+        "dh":true
     },
     {
         "time":19404,
-        "event":"cast",
+        "event":"Cast",
         "name":"Malefic III",
         "duration":235,
         "resource":{
-            "mp":20000,
+            "mp":9640,
             "tp":1000
         }
     },
@@ -2174,17 +2206,17 @@
         "time":19464,
         "event":"Damage",
         "name":"Malefic III",
-        "damage":8759,
+        "damage":6729,
         "crit":false,
-        "dh":true
+        "dh":false
     },
     {
         "time":19639,
-        "event":"cast",
+        "event":"Cast",
         "name":"Malefic III",
         "duration":235,
         "resource":{
-            "mp":20000,
+            "mp":9040,
             "tp":1000
         }
     },
@@ -2192,25 +2224,25 @@
         "time":19650,
         "event":"DOT Tick",
         "name":"combust_ii",
-        "damage":2670,
+        "damage":2178,
         "crit":true,
-        "dh":true
+        "dh":false
     },
     {
         "time":19699,
         "event":"Damage",
         "name":"Malefic III",
-        "damage":7215,
-        "crit":false,
-        "dh":false
+        "damage":12932,
+        "crit":true,
+        "dh":true
     },
     {
         "time":19874,
-        "event":"cast",
+        "event":"Cast",
         "name":"Malefic III",
         "duration":235,
         "resource":{
-            "mp":20000,
+            "mp":8840,
             "tp":1000
         }
     },
@@ -2218,25 +2250,25 @@
         "time":19934,
         "event":"Damage",
         "name":"Malefic III",
-        "damage":6496,
-        "crit":false,
+        "damage":8944,
+        "crit":true,
         "dh":false
     },
     {
         "time":19950,
         "event":"DOT Tick",
         "name":"combust_ii",
-        "damage":1446,
+        "damage":1403,
         "crit":false,
         "dh":false
     },
     {
         "time":20109,
-        "event":"cast",
+        "event":"Cast",
         "name":"Malefic III",
         "duration":235,
         "resource":{
-            "mp":20000,
+            "mp":8640,
             "tp":1000
         }
     },
@@ -2244,7 +2276,7 @@
         "time":20169,
         "event":"Damage",
         "name":"Malefic III",
-        "damage":6054,
+        "damage":6243,
         "crit":false,
         "dh":false
     },
@@ -2252,17 +2284,17 @@
         "time":20250,
         "event":"DOT Tick",
         "name":"combust_ii",
-        "damage":1374,
+        "damage":1446,
         "crit":false,
         "dh":false
     },
     {
         "time":20344,
-        "event":"cast",
+        "event":"Cast",
         "name":"Malefic III",
         "duration":235,
         "resource":{
-            "mp":20000,
+            "mp":8440,
             "tp":1000
         }
     },
@@ -2270,9 +2302,9 @@
         "time":20404,
         "event":"Damage",
         "name":"Malefic III",
-        "damage":8957,
+        "damage":10428,
         "crit":true,
-        "dh":false
+        "dh":true
     },
     {
         "time":20550,
@@ -2284,11 +2316,11 @@
     },
     {
         "time":20579,
-        "event":"cast",
+        "event":"Cast",
         "name":"Malefic III",
         "duration":235,
         "resource":{
-            "mp":20000,
+            "mp":8240,
             "tp":1000
         }
     },
@@ -2296,17 +2328,17 @@
         "time":20639,
         "event":"Damage",
         "name":"Malefic III",
-        "damage":6247,
+        "damage":6187,
         "crit":false,
         "dh":false
     },
     {
         "time":20814,
-        "event":"cast",
+        "event":"Cast",
         "name":"Malefic III",
         "duration":235,
         "resource":{
-            "mp":20000,
+            "mp":7640,
             "tp":1000
         }
     },
@@ -2314,7 +2346,7 @@
         "time":20850,
         "event":"DOT Tick",
         "name":"combust_ii",
-        "damage":1432,
+        "damage":1403,
         "crit":false,
         "dh":false
     },
@@ -2322,17 +2354,17 @@
         "time":20874,
         "event":"Damage",
         "name":"Malefic III",
-        "damage":5679,
+        "damage":5351,
         "crit":false,
         "dh":false
     },
     {
         "time":21049,
-        "event":"cast",
+        "event":"Cast",
         "name":"Malefic III",
         "duration":235,
         "resource":{
-            "mp":20000,
+            "mp":7440,
             "tp":1000
         }
     },
@@ -2340,7 +2372,7 @@
         "time":21109,
         "event":"Damage",
         "name":"Malefic III",
-        "damage":5351,
+        "damage":5515,
         "crit":false,
         "dh":false
     },
@@ -2348,17 +2380,17 @@
         "time":21150,
         "event":"DOT Tick",
         "name":"combust_ii",
-        "damage":1490,
+        "damage":1374,
         "crit":false,
         "dh":false
     },
     {
         "time":21284,
-        "event":"cast",
+        "event":"Cast",
         "name":"Malefic III",
         "duration":235,
         "resource":{
-            "mp":20000,
+            "mp":7240,
             "tp":1000
         }
     },
@@ -2366,7 +2398,7 @@
         "time":21344,
         "event":"Damage",
         "name":"Malefic III",
-        "damage":5734,
+        "damage":5679,
         "crit":false,
         "dh":false
     },
@@ -2374,17 +2406,17 @@
         "time":21450,
         "event":"DOT Tick",
         "name":"combust_ii",
-        "damage":1446,
-        "crit":false,
+        "damage":2094,
+        "crit":true,
         "dh":false
     },
     {
         "time":21519,
-        "event":"cast",
+        "event":"Cast",
         "name":"Combust II",
         "duration":0,
         "resource":{
-            "mp":20000,
+            "mp":7040,
             "tp":1000
         }
     },
@@ -2392,7 +2424,7 @@
         "time":21579,
         "event":"Damage",
         "name":"Malefic III",
-        "damage":5187,
+        "damage":5242,
         "crit":false,
         "dh":false
     },
@@ -2407,27 +2439,27 @@
         "time":21750,
         "event":"DOT Tick",
         "name":"combust_ii",
-        "damage":1288,
+        "damage":1366,
         "crit":false,
         "dh":false
     },
     {
         "time":21754,
-        "event":"cast",
+        "event":"Cast",
         "name":"Malefic III",
         "duration":235,
         "resource":{
-            "mp":20000,
+            "mp":6840,
             "tp":1000
         }
     },
     {
         "time":21989,
-        "event":"cast",
+        "event":"Cast",
         "name":"Malefic III",
         "duration":235,
         "resource":{
-            "mp":20000,
+            "mp":6240,
             "tp":1000
         }
     },
@@ -2435,25 +2467,25 @@
         "time":22049,
         "event":"Damage",
         "name":"Malefic III",
-        "damage":7984,
-        "crit":true,
+        "damage":5514,
+        "crit":false,
         "dh":false
     },
     {
         "time":22050,
         "event":"DOT Tick",
         "name":"combust_ii",
-        "damage":1261,
+        "damage":1314,
         "crit":false,
         "dh":false
     },
     {
         "time":22224,
-        "event":"cast",
+        "event":"Cast",
         "name":"Malefic III",
         "duration":235,
         "resource":{
-            "mp":20000,
+            "mp":6040,
             "tp":1000
         }
     },
@@ -2469,17 +2501,17 @@
         "time":22350,
         "event":"DOT Tick",
         "name":"combust_ii",
-        "damage":1366,
+        "damage":1301,
         "crit":false,
         "dh":false
     },
     {
         "time":22459,
-        "event":"cast",
+        "event":"Cast",
         "name":"Malefic III",
         "duration":235,
         "resource":{
-            "mp":20000,
+            "mp":5840,
             "tp":1000
         }
     },
@@ -2487,25 +2519,25 @@
         "time":22519,
         "event":"Damage",
         "name":"Malefic III",
-        "damage":5461,
-        "crit":false,
+        "damage":7596,
+        "crit":true,
         "dh":false
     },
     {
         "time":22650,
         "event":"DOT Tick",
         "name":"combust_ii",
-        "damage":1261,
+        "damage":1327,
         "crit":false,
         "dh":false
     },
     {
         "time":22694,
-        "event":"cast",
+        "event":"Cast",
         "name":"Malefic III",
         "duration":235,
         "resource":{
-            "mp":20000,
+            "mp":5640,
             "tp":1000
         }
     },
@@ -2513,17 +2545,17 @@
         "time":22754,
         "event":"Damage",
         "name":"Malefic III",
-        "damage":5514,
+        "damage":5248,
         "crit":false,
         "dh":false
     },
     {
         "time":22929,
-        "event":"cast",
+        "event":"Cast",
         "name":"Malefic III",
         "duration":235,
         "resource":{
-            "mp":20000,
+            "mp":5040,
             "tp":1000
         }
     },
@@ -2531,25 +2563,25 @@
         "time":22950,
         "event":"DOT Tick",
         "name":"combust_ii",
-        "damage":1979,
-        "crit":true,
+        "damage":1261,
+        "crit":false,
         "dh":false
     },
     {
         "time":22989,
         "event":"Damage",
         "name":"Malefic III",
-        "damage":5355,
+        "damage":5142,
         "crit":false,
         "dh":false
     },
     {
         "time":23164,
-        "event":"cast",
+        "event":"Cast",
         "name":"Malefic III",
         "duration":235,
         "resource":{
-            "mp":20000,
+            "mp":4840,
             "tp":1000
         }
     },
@@ -2557,7 +2589,7 @@
         "time":23224,
         "event":"Damage",
         "name":"Malefic III",
-        "damage":5355,
+        "damage":5567,
         "crit":false,
         "dh":false
     },
@@ -2565,17 +2597,17 @@
         "time":23250,
         "event":"DOT Tick",
         "name":"combust_ii",
-        "damage":1883,
-        "crit":true,
+        "damage":1327,
+        "crit":false,
         "dh":false
     },
     {
         "time":23399,
-        "event":"cast",
+        "event":"Cast",
         "name":"Malefic III",
         "duration":235,
         "resource":{
-            "mp":20000,
+            "mp":4640,
             "tp":1000
         }
     },
@@ -2583,7 +2615,7 @@
         "time":23459,
         "event":"Damage",
         "name":"Malefic III",
-        "damage":5355,
+        "damage":5514,
         "crit":false,
         "dh":false
     },
@@ -2591,17 +2623,17 @@
         "time":23550,
         "event":"DOT Tick",
         "name":"combust_ii",
-        "damage":1301,
+        "damage":1314,
         "crit":false,
         "dh":false
     },
     {
         "time":23634,
-        "event":"cast",
+        "event":"Cast",
         "name":"Malefic III",
         "duration":235,
         "resource":{
-            "mp":20000,
+            "mp":4440,
             "tp":1000
         }
     },
@@ -2609,25 +2641,25 @@
         "time":23694,
         "event":"Damage",
         "name":"Malefic III",
-        "damage":7906,
-        "crit":true,
+        "damage":5461,
+        "crit":false,
         "dh":false
     },
     {
         "time":23850,
         "event":"DOT Tick",
         "name":"combust_ii",
-        "damage":1274,
+        "damage":1366,
         "crit":false,
         "dh":false
     },
     {
         "time":23869,
-        "event":"cast",
+        "event":"Cast",
         "name":"Malefic III",
         "duration":235,
         "resource":{
-            "mp":20000,
+            "mp":4240,
             "tp":1000
         }
     },
@@ -2635,7 +2667,7 @@
         "time":23929,
         "event":"Damage",
         "name":"Malefic III",
-        "damage":5408,
+        "damage":5195,
         "crit":false,
         "dh":false
     }

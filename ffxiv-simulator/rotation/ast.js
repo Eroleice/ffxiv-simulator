@@ -22,6 +22,8 @@ module.exports = {
             return 'potion';
         } else if (data.player.cd.cleric_stance <= 0) {
             return 'cleric_stance';
+        } else if (data.player.cd.lucid_dreaming <= 0) {
+            return 'lucid_dreaming';
         } else {
             return 'snooze';
         }

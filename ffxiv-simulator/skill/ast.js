@@ -1,6 +1,7 @@
 ﻿var potionEffect = 165;         // 4.3药水效果
 var animationBlock = 67;        // 技能动作僵直默认0.67秒
 const calculate = require('../calculate.js');
+const deepcopy = require('deepcopy');
 
 class skill {
 
@@ -33,19 +34,20 @@ class skill {
      * */
     malefic_iii() {
         this.player.casting = 'malefic_iii';
-        //this.player.resource.mp -= 1080;
+        this.player.resource.mp -= 600;
         this.player.tick.animation = animationBlock;
         this.player.tick.gcd = this.calculateGCD();
         this.player.tick.cast = this.calculateGCD();
         this.log.push({
             'time': this.setting.simulate.duration - this.battle.time,
-            'event': 'cast',
+            'event': 'Cast',
             'name': 'Malefic III',
             'duration': this.player.tick.cast,
-            'resource': this.player.resource
+            'resource': deepcopy(this.player.resource)
         });
     }
     combust_ii() {
+        this.player.resource.mp -= 600;
         this.player.tick.animation = animationBlock;
         this.player.tick.gcd = this.calculateGCD();
         this.battle.skillEffectQue.push({
@@ -54,10 +56,10 @@ class skill {
         });
         this.log.push({
             'time': this.setting.simulate.duration - this.battle.time,
-            'event': 'cast',
+            'event': 'Cast',
             'name': 'Combust II',
             'duration': 0,
-            'resource': this.player.resource
+            'resource': deepcopy(this.player.resource)
         });
     }
     potion() {
@@ -69,10 +71,10 @@ class skill {
         });
         this.log.push({
             'time': this.setting.simulate.duration - this.battle.time,
-            'event': 'cast',
+            'event': 'Cast',
             'name': 'Potion',
             'duration': 0,
-            'resource': this.player.resource
+            'resource': deepcopy(this.player.resource)
         });
     }
     cleric_stance() {
@@ -84,10 +86,25 @@ class skill {
         });
         this.log.push({
             'time': this.setting.simulate.duration - this.battle.time,
-            'event': 'cast',
+            'event': 'Cast',
             'name': 'Cleric Stance',
             'duration': 0,
-            'resource': this.player.resource
+            'resource': deepcopy(this.player.resource)
+        });
+    }
+    lucid_dreaming() {
+        this.player.tick.animation = animationBlock;
+        this.player.cd.lucid_dreaming = 12000;
+        this.battle.skillEffectQue.push({
+            'time': 67,
+            'name': 'lucid_dreaming'
+        });
+        this.log.push({
+            'time': this.setting.simulate.duration - this.battle.time,
+            'event': 'Cast',
+            'name': 'Lucid Dreaming',
+            'duration': 0,
+            'resource': deepcopy(this.player.resource)
         });
     }
 
@@ -148,6 +165,15 @@ class effect {
             'duration': 1500
         });
     }
+    lucid_dreaming() {
+        this.player.buff.lucid_dreaming = 2100;
+        this.log.push({
+            'time': this.setting.simulate.duration - this.battle.time,
+            'event': 'Buff Apply',
+            'name': 'Lucid Dreaming',
+            'duration': 2100
+        });
+    }
 
 }
 
@@ -196,6 +222,8 @@ module.exports = {
             s.potion();
         } else if (name == 'cleric_stance') {
             s.cleric_stance();
+        } else if (name == 'lucid_dreaming') {
+            s.lucid_dreaming();
         }
         return s;
     },
@@ -209,6 +237,8 @@ module.exports = {
             e.potion();
         } else if (name == 'cleric_stance') {
             e.cleric_stance();
+        } else if (name == 'lucid_dreaming') {
+            e.lucid_dreaming();
         }
         return e;
     }

@@ -66,6 +66,12 @@ class Fight {
         
         while (this.battle.time > 0) {
 
+            // 如果有DOT就结算 && 回蓝结算
+            if (this.battle.time % 300 == 150) {
+                this.dotHit();
+                this.manaRegen();
+            }
+
             // 如果有团辅就判定
             if (this.setting.simulate.partyBuff) {
                 this.isPartyBuff();
@@ -130,11 +136,6 @@ class Fight {
                     this.update(this.jobSkill.cast(this,this.battle.abilityPriority));
                 }
 
-            }
-
-            // 如果有DOT就结算
-            if (this.battle.time % 300 == 150) {
-                this.dotHit();
             }
 
             this.tick(); // 所有时间结算，进入下一次循环验算
@@ -287,6 +288,22 @@ class Fight {
 
     canAbility() {
         if (this.player.tick.cast <= 0 && this.player.tick.animation <= 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    manaRegen() {
+        this.player.resource.mp = Math.floor(this.player.resource.mp + this.setting.player.mp * 0.02);
+        if (this.isBuff('lucid_dreaming')) {
+            this.player.resource.mp += 960;
+        }
+    }
+
+    // buff检测
+    isBuff(name) {
+        if (typeof this.player.buff[name] !== 'undefined' && this.player.buff[name] > 0) {
             return true;
         } else {
             return false;

@@ -16,10 +16,12 @@
         // buff初始化
         data.buff.potion = 0;
         data.buff.cleric_stance = 0;
+        data.buff.lucid_dreaming = 0;
 
         // cd初始化
         data.cd.potion = 0;
         data.cd.cleric_stance = 0;
+        data.cd.lucid_dreaming = 0;
 
         return data;
 
