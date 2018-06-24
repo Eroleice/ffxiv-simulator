@@ -5,64 +5,34 @@ const fs = require('fs');
 var log = [], dps = [], sum = 0, totalDamage = 0;
 var input = set.set();
 
-var data = sim.run(input);
-
-console.log('DPS: ' + data.dps);
-
-var json = JSON.stringify(data.log,null,4);
-fs.writeFile('Battle Log.json', json, 'utf8', function () {
-    console.log('Battle Log.json complete!');
-});
-
-/*
 if (input.simulate.battleLog) {
-
-    var totalDamage = 0;
-    for (var i = 0; i < data.length; i++) {
-
-        var t = Math.floor(data[i].time / 6000) + ':' + (data[i].time % 6000) / 100;
-        var d = '';
-        if (typeof data[i].damage == 'number') {
-            totalDamage += data[i].damage;
-            d = data[i].damage;
-        } else if (data[i].type == 'Casting') {
-            d = 'start casing ...';
-        }
-        var m = '';
-        if (data[i].crit) {
-            m += '(c)';
-        }
-        if (data[i].dh) {
-            m += '(d)';
-        }
-        console.log('[' + (data[i].time / 100).toFixed(2) + '] ' + data[i].source + ' => ' + d + m);
-
+    // ?????? Battle Log.json
+    var data = sim.run(input);
+    console.log('DPS: ' + data.dps);
+    var json = JSON.stringify(data.log, null, 4);
+    fs.writeFile('Battle Log.json', json, 'utf8', function () {
+        console.log('Battle Log.json complete!');
+    });
+} else {
+    // ????????
+    var statistic = [];
+    var totalDps = 0;
+    var startTime = Date.parse(new Date()) / 1000;
+    console.log('Simulating ...');
+    for (var i = 0; i < input.simulate.times; i++) {
+        var data = sim.run(input);
+        statistic.push(data.dps);
+        totalDps += data.dps;
     }
+    var endTime = Date.parse(new Date()) / 1000;
+    console.log('Simulate of ' + input.job + ' finished, ' + input.simulate.times + ' times in total! Total time used: ' + Math.floor(endTime - startTime) + ' seconds!');
+    console.log('Max dps: ' + Math.max.apply(Math, statistic));
+    console.log('Min dps: ' + Math.min.apply(Math, statistic));
+    console.log('Average dps: ' + Math.floor(100 * totalDps / input.simulate.times) / 100);
 
-    console.log('Average DPS: ' + (100 * totalDamage / input.simulate.duration).toFixed(2));
 }
 
 
-
-
-/*
-for (var i = 0; i < input['sim_set']['times']; i++) {
-    var fight = sim.run();               // ??????
-    log.push(fight);                     // ????
-    dps.push(fight.dps);                 // DPS??
-    sum += fight.dps;                    // ???DPS??
-}
-
-var max = 'Max dps: ' + Math.max.apply(Math, dps);
-var min = 'Min dps: ' + Math.min.apply(Math, dps);
-var avg = 'Avg dps: ' + Number(sum / fight.length).toFixed(2);
-
-console.log(max);
-console.log(min);
-console.log(avg);
-console.log('???????' + fight.length);
-
-*/
 
 Array.prototype.max = function () {
     return Math.max.apply(null, this);

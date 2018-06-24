@@ -74,7 +74,7 @@
         "time": 50,
         "event": "Damage",
         "name": "Aero III",
-        "damage": 1322,
+        "damage": 1416,
         "crit": false,
         "dh": false,
         "buff": [
@@ -114,7 +114,7 @@
         "time": 118,
         "event": "Damage",
         "name": "Aero II",
-        "damage": 1388,
+        "damage": 1374,
         "crit": false,
         "dh": false,
         "buff": [
@@ -143,8 +143,8 @@
         "time": 150,
         "event": "DOT Tick",
         "name": "aero_ii",
-        "damage": 2239,
-        "crit": true,
+        "damage": 1562,
+        "crit": false,
         "dh": false,
         "buff": [
             "presence_of_mind",
@@ -158,7 +158,7 @@
         "time": 150,
         "event": "DOT Tick",
         "name": "aero_iii",
-        "damage": 1162,
+        "damage": 1093,
         "crit": false,
         "dh": false,
         "buff": [
@@ -172,7 +172,7 @@
         "time": 185,
         "event": "Damage",
         "name": "Assize",
-        "damage": 8508,
+        "damage": 8593,
         "crit": false,
         "dh": false,
         "buff": [
@@ -237,9 +237,9 @@
         "time": 450,
         "event": "DOT Tick",
         "name": "aero_ii",
-        "damage": 1426,
+        "damage": 1839,
         "crit": false,
-        "dh": false,
+        "dh": true,
         "buff": [
             "presence_of_mind",
             "potion",
@@ -252,7 +252,7 @@
         "time": 450,
         "event": "DOT Tick",
         "name": "aero_iii",
-        "damage": 1128,
+        "damage": 1162,
         "crit": false,
         "dh": false,
         "buff": [
@@ -266,7 +266,7 @@
         "time": 493,
         "event": "Damage",
         "name": "Stone IV",
-        "damage": 7871,
+        "damage": 7951,
         "crit": false,
         "dh": false,
         "buff": [
@@ -294,8 +294,8 @@
         "time": 681,
         "event": "Damage",
         "name": "Stone IV",
-        "damage": 8602,
-        "crit": false,
+        "damage": 12823,
+        "crit": true,
         "dh": false,
         "buff": [
             "presence_of_mind",
@@ -314,7 +314,7 @@
         "time": 750,
         "event": "DOT Tick",
         "name": "aero_ii",
-        "damage": 2086,
+        "damage": 2239,
         "crit": true,
         "dh": false,
         "buff": [
@@ -329,8 +329,8 @@
         "time": 750,
         "event": "DOT Tick",
         "name": "aero_iii",
-        "damage": 1173,
-        "crit": false,
+        "damage": 1749,
+        "crit": true,
         "dh": false,
         "buff": [
             "presence_of_mind",
@@ -389,8 +389,8 @@
         "time": 1050,
         "event": "DOT Tick",
         "name": "aero_ii",
-        "damage": 2108,
-        "crit": true,
+        "damage": 1562,
+        "crit": false,
         "dh": false,
         "buff": [
             "presence_of_mind",
@@ -404,8 +404,8 @@
         "time": 1050,
         "event": "DOT Tick",
         "name": "aero_iii",
-        "damage": 1749,
-        "crit": true,
+        "damage": 1139,
+        "crit": false,
         "dh": false,
         "buff": [
             "presence_of_mind",
@@ -418,8 +418,8 @@
         "time": 1057,
         "event": "Damage",
         "name": "Stone IV",
-        "damage": 12207,
-        "crit": true,
+        "damage": 8855,
+        "crit": false,
         "dh": false,
         "buff": [
             "presence_of_mind",
@@ -455,8 +455,8 @@
         "time": 1245,
         "event": "Damage",
         "name": "Stone IV",
-        "damage": 13971,
-        "crit": true,
+        "damage": 9092,
+        "crit": false,
         "dh": false,
         "buff": [
             "presence_of_mind",
@@ -477,7 +477,7 @@
         "time": 1350,
         "event": "DOT Tick",
         "name": "aero_ii",
-        "damage": 1456,
+        "damage": 1547,
         "crit": false,
         "dh": false,
         "buff": [
@@ -492,8 +492,8 @@
         "time": 1350,
         "event": "DOT Tick",
         "name": "aero_iii",
-        "damage": 1116,
-        "crit": false,
+        "damage": 1665,
+        "crit": true,
         "dh": false,
         "buff": [
             "presence_of_mind",
@@ -516,8 +516,8 @@
         "time": 1433,
         "event": "Damage",
         "name": "Stone IV",
-        "damage": 12401,
-        "crit": true,
+        "damage": 8394,
+        "crit": false,
         "dh": false,
         "buff": [
             "potion",
@@ -552,8 +552,8 @@
         "time": 1650,
         "event": "DOT Tick",
         "name": "aero_ii",
-        "damage": 1577,
-        "crit": false,
+        "damage": 2195,
+        "crit": true,
         "dh": false,
         "buff": [
             "presence_of_mind",
@@ -567,9 +567,9 @@
         "time": 1650,
         "event": "DOT Tick",
         "name": "aero_iii",
-        "damage": 2040,
+        "damage": 1599,
         "crit": true,
-        "dh": true,
+        "dh": false,
         "buff": [
             "presence_of_mind",
             "potion",
@@ -581,8 +581,8 @@
         "time": 1668,
         "event": "Damage",
         "name": "Stone IV",
-        "damage": 9372,
-        "crit": false,
+        "damage": 12516,
+        "crit": true,
         "dh": false,
         "buff": [
             "potion",
@@ -612,7 +612,7 @@
         "time": 1903,
         "event": "Damage",
         "name": "Stone IV",
-        "damage": 11978,
+        "damage": 11379,
         "crit": true,
         "dh": false,
         "buff": [
@@ -642,7 +642,7 @@
         "time": 1904,
         "event": "Damage",
         "name": "Aero II",
-        "damage": 2298,
+        "damage": 2442,
         "crit": true,
         "dh": false,
         "buff": [
@@ -681,9 +681,9 @@
         "time": 1950,
         "event": "DOT Tick",
         "name": "aero_ii",
-        "damage": 2235,
+        "damage": 1666,
         "crit": false,
-        "dh": true,
+        "dh": false,
         "buff": [
             "potion",
             "battle_litany",
@@ -701,7 +701,7 @@
         "time": 1950,
         "event": "DOT Tick",
         "name": "aero_iii",
-        "damage": 1682,
+        "damage": 1715,
         "crit": true,
         "dh": false,
         "buff": [
@@ -731,9 +731,9 @@
         "time": 2250,
         "event": "DOT Tick",
         "name": "aero_ii",
-        "damage": 2170,
+        "damage": 1736,
         "crit": false,
-        "dh": true,
+        "dh": false,
         "buff": [
             "potion",
             "battle_litany",
@@ -751,9 +751,9 @@
         "time": 2250,
         "event": "DOT Tick",
         "name": "aero_iii",
-        "damage": 1699,
+        "damage": 2019,
         "crit": true,
-        "dh": false,
+        "dh": true,
         "buff": [
             "presence_of_mind",
             "potion",
@@ -775,8 +775,8 @@
         "time": 2373,
         "event": "Damage",
         "name": "Stone IV",
-        "damage": 10138,
-        "crit": false,
+        "damage": 14822,
+        "crit": true,
         "dh": true,
         "buff": [
             "potion",
@@ -812,7 +812,7 @@
         "time": 2541,
         "event": "Damage",
         "name": "Aero III",
-        "damage": 1544,
+        "damage": 1591,
         "crit": false,
         "dh": false,
         "buff": [
@@ -839,7 +839,7 @@
         "time": 2550,
         "event": "DOT Tick",
         "name": "aero_ii",
-        "damage": 1684,
+        "damage": 1718,
         "crit": false,
         "dh": false,
         "buff": [
@@ -859,7 +859,7 @@
         "time": 2550,
         "event": "DOT Tick",
         "name": "aero_iii",
-        "damage": 1250,
+        "damage": 1303,
         "crit": false,
         "dh": false,
         "buff": [
@@ -886,8 +886,8 @@
         "time": 2843,
         "event": "Damage",
         "name": "Stone IV",
-        "damage": 9956,
-        "crit": true,
+        "damage": 7448,
+        "crit": false,
         "dh": false,
         "buff": [
             "potion",
@@ -902,7 +902,7 @@
         "time": 2850,
         "event": "DOT Tick",
         "name": "aero_ii",
-        "damage": 1736,
+        "damage": 1649,
         "crit": false,
         "dh": false,
         "buff": [
@@ -922,7 +922,7 @@
         "time": 2850,
         "event": "DOT Tick",
         "name": "aero_iii",
-        "damage": 1356,
+        "damage": 1382,
         "crit": false,
         "dh": false,
         "buff": [
@@ -963,7 +963,7 @@
         "time": 3150,
         "event": "DOT Tick",
         "name": "aero_ii",
-        "damage": 1736,
+        "damage": 1805,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1010,8 +1010,8 @@
         "time": 3313,
         "event": "Damage",
         "name": "Stone IV",
-        "damage": 6463,
-        "crit": false,
+        "damage": 8722,
+        "crit": true,
         "dh": false,
         "buff": [
             "lucid_dreaming",
@@ -1023,7 +1023,7 @@
         "time": 3450,
         "event": "DOT Tick",
         "name": "aero_ii",
-        "damage": 1823,
+        "damage": 1649,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1043,7 +1043,7 @@
         "time": 3450,
         "event": "DOT Tick",
         "name": "aero_iii",
-        "damage": 1943,
+        "damage": 1886,
         "crit": true,
         "dh": false,
         "buff": [
@@ -1070,7 +1070,7 @@
         "time": 3548,
         "event": "Damage",
         "name": "Stone IV",
-        "damage": 8904,
+        "damage": 8813,
         "crit": true,
         "dh": false,
         "buff": [
@@ -1093,8 +1093,8 @@
         "time": 3750,
         "event": "DOT Tick",
         "name": "aero_iii",
-        "damage": 1329,
-        "crit": false,
+        "damage": 1943,
+        "crit": true,
         "dh": false,
         "buff": [
             "potion",
@@ -1110,8 +1110,8 @@
         "time": 3783,
         "event": "Damage",
         "name": "Stone IV",
-        "damage": 9174,
-        "crit": true,
+        "damage": 6275,
+        "crit": false,
         "dh": false,
         "buff": [
             "lucid_dreaming",
@@ -1122,7 +1122,7 @@
         "time": 3784,
         "event": "Damage",
         "name": "Aero II",
-        "damage": 1265,
+        "damage": 1229,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1155,7 +1155,7 @@
         "time": 4050,
         "event": "DOT Tick",
         "name": "aero_ii",
-        "damage": 1315,
+        "damage": 1251,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1194,8 +1194,8 @@
         "time": 4253,
         "event": "Damage",
         "name": "Stone IV",
-        "damage": 8733,
-        "crit": true,
+        "damage": 5852,
+        "crit": false,
         "dh": false,
         "buff": [
             "bard_aura"
@@ -1205,7 +1205,7 @@
         "time": 4350,
         "event": "DOT Tick",
         "name": "aero_ii",
-        "damage": 1251,
+        "damage": 1264,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1217,7 +1217,7 @@
         "time": 4350,
         "event": "DOT Tick",
         "name": "aero_iii",
-        "damage": 1250,
+        "damage": 1382,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1244,7 +1244,7 @@
         "time": 4488,
         "event": "Damage",
         "name": "Stone IV",
-        "damage": 5913,
+        "damage": 5852,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1267,8 +1267,8 @@
         "time": 4650,
         "event": "DOT Tick",
         "name": "aero_iii",
-        "damage": 1342,
-        "crit": false,
+        "damage": 1963,
+        "crit": true,
         "dh": false,
         "buff": [
             "potion",
@@ -1294,7 +1294,7 @@
         "time": 4723,
         "event": "Damage",
         "name": "Stone IV",
-        "damage": 5732,
+        "damage": 6215,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1315,8 +1315,8 @@
         "time": 4950,
         "event": "DOT Tick",
         "name": "aero_ii",
-        "damage": 1960,
-        "crit": true,
+        "damage": 1277,
+        "crit": false,
         "dh": false,
         "buff": [
             "lucid_dreaming",
@@ -1327,7 +1327,7 @@
         "time": 4958,
         "event": "Damage",
         "name": "Stone IV",
-        "damage": 6094,
+        "damage": 5913,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1348,7 +1348,7 @@
         "time": 5126,
         "event": "Damage",
         "name": "Aero III",
-        "damage": 1205,
+        "damage": 1253,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1369,7 +1369,7 @@
         "time": 5250,
         "event": "DOT Tick",
         "name": "aero_ii",
-        "damage": 1341,
+        "damage": 1328,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1381,7 +1381,7 @@
         "time": 5250,
         "event": "DOT Tick",
         "name": "aero_iii",
-        "damage": 987,
+        "damage": 1027,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1402,7 +1402,7 @@
         "time": 5428,
         "event": "Damage",
         "name": "Stone IV",
-        "damage": 5732,
+        "damage": 6094,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1413,7 +1413,7 @@
         "time": 5550,
         "event": "DOT Tick",
         "name": "aero_ii",
-        "damage": 1302,
+        "damage": 1213,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1425,7 +1425,7 @@
         "time": 5550,
         "event": "DOT Tick",
         "name": "aero_iii",
-        "damage": 1413,
+        "damage": 1517,
         "crit": true,
         "dh": false,
         "buff": [
@@ -1446,7 +1446,7 @@
         "time": 5663,
         "event": "Damage",
         "name": "Stone IV",
-        "damage": 5792,
+        "damage": 6034,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1488,8 +1488,8 @@
         "time": 5850,
         "event": "DOT Tick",
         "name": "aero_ii",
-        "damage": 1213,
-        "crit": false,
+        "damage": 1792,
+        "crit": true,
         "dh": false,
         "buff": [
             "bard_aura"
@@ -1499,7 +1499,7 @@
         "time": 5850,
         "event": "DOT Tick",
         "name": "aero_iii",
-        "damage": 1048,
+        "damage": 997,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1520,18 +1520,7 @@
         "time": 6133,
         "event": "Damage",
         "name": "Stone IV",
-        "damage": 6034,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 6150,
-        "event": "DOT Tick",
-        "name": "aero_ii",
-        "damage": 1904,
+        "damage": 8909,
         "crit": true,
         "dh": false,
         "buff": [
@@ -1541,8 +1530,19 @@
     {
         "time": 6150,
         "event": "DOT Tick",
+        "name": "aero_ii",
+        "damage": 1264,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 6150,
+        "event": "DOT Tick",
         "name": "aero_iii",
-        "damage": 987,
+        "damage": 966,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1569,8 +1569,8 @@
         "time": 6368,
         "event": "Damage",
         "name": "Stone IV",
-        "damage": 6968,
-        "crit": false,
+        "damage": 9897,
+        "crit": true,
         "dh": false,
         "buff": [
             "bard_aura",
@@ -1581,7 +1581,7 @@
         "time": 6450,
         "event": "DOT Tick",
         "name": "aero_ii",
-        "damage": 1238,
+        "damage": 1302,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1592,7 +1592,7 @@
         "time": 6450,
         "event": "DOT Tick",
         "name": "aero_iii",
-        "damage": 1048,
+        "damage": 976,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1613,8 +1613,8 @@
         "time": 6603,
         "event": "Damage",
         "name": "Stone IV",
-        "damage": 6305,
-        "crit": false,
+        "damage": 10091,
+        "crit": true,
         "dh": false,
         "buff": [
             "bard_aura",
@@ -1625,7 +1625,7 @@
         "time": 6750,
         "event": "DOT Tick",
         "name": "aero_ii",
-        "damage": 1341,
+        "damage": 1251,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1636,7 +1636,7 @@
         "time": 6750,
         "event": "DOT Tick",
         "name": "aero_iii",
-        "damage": 966,
+        "damage": 1068,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1657,7 +1657,7 @@
         "time": 6838,
         "event": "Damage",
         "name": "Stone IV",
-        "damage": 6570,
+        "damage": 6703,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1679,7 +1679,7 @@
         "time": 7050,
         "event": "DOT Tick",
         "name": "aero_ii",
-        "damage": 1213,
+        "damage": 1341,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1690,7 +1690,7 @@
         "time": 7050,
         "event": "DOT Tick",
         "name": "aero_iii",
-        "damage": 1058,
+        "damage": 987,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1729,7 +1729,7 @@
         "time": 7308,
         "event": "Damage",
         "name": "Stone IV",
-        "damage": 7373,
+        "damage": 7154,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1742,8 +1742,8 @@
         "time": 7350,
         "event": "DOT Tick",
         "name": "aero_ii",
-        "damage": 1251,
-        "crit": false,
+        "damage": 1904,
+        "crit": true,
         "dh": false,
         "buff": [
             "bard_aura"
@@ -1753,7 +1753,7 @@
         "time": 7350,
         "event": "DOT Tick",
         "name": "aero_iii",
-        "damage": 966,
+        "damage": 1048,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1774,7 +1774,7 @@
         "time": 7543,
         "event": "Damage",
         "name": "Stone IV",
-        "damage": 6935,
+        "damage": 7519,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1799,7 +1799,7 @@
         "time": 7711,
         "event": "Damage",
         "name": "Aero III",
-        "damage": 1427,
+        "damage": 1500,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1832,7 +1832,7 @@
         "time": 7779,
         "event": "Damage",
         "name": "Aero II",
-        "damage": 1297,
+        "damage": 1284,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1855,7 +1855,7 @@
         "time": 7846,
         "event": "Damage",
         "name": "Assize",
-        "damage": 8284,
+        "damage": 8364,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1877,7 +1877,7 @@
         "time": 7950,
         "event": "DOT Tick",
         "name": "aero_ii",
-        "damage": 1473,
+        "damage": 1445,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1889,8 +1889,8 @@
         "time": 7950,
         "event": "DOT Tick",
         "name": "aero_iii",
-        "damage": 1818,
-        "crit": true,
+        "damage": 1194,
+        "crit": false,
         "dh": false,
         "buff": [
             "bard_aura",
@@ -1912,7 +1912,7 @@
         "time": 8248,
         "event": "Damage",
         "name": "Stone IV",
-        "damage": 6437,
+        "damage": 6902,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1936,7 +1936,7 @@
         "time": 8250,
         "event": "DOT Tick",
         "name": "aero_iii",
-        "damage": 1231,
+        "damage": 1244,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1959,7 +1959,7 @@
         "time": 8483,
         "event": "Damage",
         "name": "Stone IV",
-        "damage": 6504,
+        "damage": 6968,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1971,7 +1971,7 @@
         "time": 8550,
         "event": "DOT Tick",
         "name": "aero_ii",
-        "damage": 1389,
+        "damage": 1403,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1983,8 +1983,8 @@
         "time": 8550,
         "event": "DOT Tick",
         "name": "aero_iii",
-        "damage": 1231,
-        "crit": false,
+        "damage": 1854,
+        "crit": true,
         "dh": false,
         "buff": [
             "bard_aura",
@@ -2006,7 +2006,7 @@
         "time": 8718,
         "event": "Damage",
         "name": "Stone IV",
-        "damage": 6034,
+        "damage": 5852,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2017,7 +2017,7 @@
         "time": 8850,
         "event": "DOT Tick",
         "name": "aero_ii",
-        "damage": 1431,
+        "damage": 1445,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2029,8 +2029,8 @@
         "time": 8850,
         "event": "DOT Tick",
         "name": "aero_iii",
-        "damage": 1244,
-        "crit": false,
+        "damage": 1854,
+        "crit": true,
         "dh": false,
         "buff": [
             "bard_aura",
@@ -2052,7 +2052,7 @@
         "time": 8953,
         "event": "Damage",
         "name": "Stone IV",
-        "damage": 6034,
+        "damage": 6215,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2073,7 +2073,7 @@
         "time": 9150,
         "event": "DOT Tick",
         "name": "aero_ii",
-        "damage": 1459,
+        "damage": 1403,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2085,7 +2085,7 @@
         "time": 9150,
         "event": "DOT Tick",
         "name": "aero_iii",
-        "damage": 1194,
+        "damage": 1207,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2098,8 +2098,8 @@
         "time": 9188,
         "event": "Damage",
         "name": "Stone IV",
-        "damage": 5973,
-        "crit": false,
+        "damage": 8909,
+        "crit": true,
         "dh": false,
         "buff": [
             "bard_aura"
@@ -2119,8 +2119,8 @@
         "time": 9423,
         "event": "Damage",
         "name": "Stone IV",
-        "damage": 9086,
-        "crit": true,
+        "damage": 6094,
+        "crit": false,
         "dh": false,
         "buff": [
             "bard_aura"
@@ -2130,8 +2130,8 @@
         "time": 9450,
         "event": "DOT Tick",
         "name": "aero_ii",
-        "damage": 1990,
-        "crit": true,
+        "damage": 1375,
+        "crit": false,
         "dh": false,
         "buff": [
             "bard_aura",
@@ -2142,7 +2142,7 @@
         "time": 9450,
         "event": "DOT Tick",
         "name": "aero_iii",
-        "damage": 1280,
+        "damage": 1293,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2165,7 +2165,7 @@
         "time": 9658,
         "event": "Damage",
         "name": "Stone IV",
-        "damage": 6215,
+        "damage": 6094,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2186,8 +2186,8 @@
         "time": 9659,
         "event": "Damage",
         "name": "Aero II",
-        "damage": 1241,
-        "crit": false,
+        "damage": 1691,
+        "crit": true,
         "dh": false,
         "buff": [
             "bard_aura"
@@ -2213,7 +2213,7 @@
         "time": 9750,
         "event": "DOT Tick",
         "name": "aero_ii",
-        "damage": 1341,
+        "damage": 1315,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2224,7 +2224,7 @@
         "time": 9750,
         "event": "DOT Tick",
         "name": "aero_iii",
-        "damage": 1207,
+        "damage": 1182,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2247,7 +2247,7 @@
         "time": 10050,
         "event": "DOT Tick",
         "name": "aero_ii",
-        "damage": 1328,
+        "damage": 1302,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2258,7 +2258,7 @@
         "time": 10050,
         "event": "DOT Tick",
         "name": "aero_iii",
-        "damage": 1194,
+        "damage": 1170,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2281,7 +2281,7 @@
         "time": 10128,
         "event": "Damage",
         "name": "Stone IV",
-        "damage": 6589,
+        "damage": 6145,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2304,7 +2304,7 @@
         "time": 10296,
         "event": "Damage",
         "name": "Aero III",
-        "damage": 1327,
+        "damage": 1238,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2326,7 +2326,7 @@
         "time": 10350,
         "event": "DOT Tick",
         "name": "aero_ii",
-        "damage": 1213,
+        "damage": 1226,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2337,7 +2337,7 @@
         "time": 10350,
         "event": "DOT Tick",
         "name": "aero_iii",
-        "damage": 1088,
+        "damage": 1110,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2359,7 +2359,7 @@
         "time": 10598,
         "event": "Damage",
         "name": "Stone IV",
-        "damage": 6399,
+        "damage": 6652,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2371,7 +2371,7 @@
         "time": 10650,
         "event": "DOT Tick",
         "name": "aero_ii",
-        "damage": 1226,
+        "damage": 1341,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2382,7 +2382,7 @@
         "time": 10650,
         "event": "DOT Tick",
         "name": "aero_iii",
-        "damage": 1067,
+        "damage": 1120,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2404,7 +2404,7 @@
         "time": 10833,
         "event": "Damage",
         "name": "Stone IV",
-        "damage": 6589,
+        "damage": 6336,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2416,7 +2416,7 @@
         "time": 10950,
         "event": "DOT Tick",
         "name": "aero_ii",
-        "damage": 1251,
+        "damage": 1328,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2427,8 +2427,8 @@
         "time": 10950,
         "event": "DOT Tick",
         "name": "aero_iii",
-        "damage": 1088,
-        "crit": false,
+        "damage": 1544,
+        "crit": true,
         "dh": false,
         "buff": [
             "cleric_stance",
@@ -2449,7 +2449,7 @@
         "time": 11068,
         "event": "Damage",
         "name": "Stone IV",
-        "damage": 6209,
+        "damage": 6399,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2482,8 +2482,8 @@
         "time": 11250,
         "event": "DOT Tick",
         "name": "aero_iii",
-        "damage": 1067,
-        "crit": false,
+        "damage": 1622,
+        "crit": true,
         "dh": false,
         "buff": [
             "cleric_stance",
@@ -2494,7 +2494,7 @@
         "time": 11303,
         "event": "Damage",
         "name": "Stone IV",
-        "damage": 6082,
+        "damage": 6652,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2516,7 +2516,7 @@
         "time": 11538,
         "event": "Damage",
         "name": "Stone IV",
-        "damage": 6034,
+        "damage": 5792,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2527,7 +2527,7 @@
         "time": 11539,
         "event": "Damage",
         "name": "Aero II",
-        "damage": 1205,
+        "damage": 1156,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2548,7 +2548,7 @@
         "time": 11550,
         "event": "DOT Tick",
         "name": "aero_ii",
-        "damage": 1213,
+        "damage": 1302,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2592,7 +2592,7 @@
         "time": 11850,
         "event": "DOT Tick",
         "name": "aero_iii",
-        "damage": 1056,
+        "damage": 1035,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2614,7 +2614,7 @@
         "time": 12008,
         "event": "Damage",
         "name": "Stone IV",
-        "damage": 6094,
+        "damage": 5913,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2631,7 +2631,7 @@
         "time": 12150,
         "event": "DOT Tick",
         "name": "aero_ii",
-        "damage": 1277,
+        "damage": 1341,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2642,7 +2642,7 @@
         "time": 12150,
         "event": "DOT Tick",
         "name": "aero_iii",
-        "damage": 1024,
+        "damage": 1110,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2670,8 +2670,8 @@
         "time": 12243,
         "event": "Damage",
         "name": "Stone IV",
-        "damage": 6272,
-        "crit": false,
+        "damage": 9170,
+        "crit": true,
         "dh": false,
         "buff": [
             "bard_aura",
@@ -2698,7 +2698,7 @@
         "time": 12450,
         "event": "DOT Tick",
         "name": "aero_ii",
-        "damage": 1341,
+        "damage": 1302,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2709,7 +2709,7 @@
         "time": 12450,
         "event": "DOT Tick",
         "name": "aero_iii",
-        "damage": 1014,
+        "damage": 1067,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2721,7 +2721,7 @@
         "time": 12478,
         "event": "Damage",
         "name": "Stone IV",
-        "damage": 6829,
+        "damage": 7038,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2744,7 +2744,7 @@
         "time": 12713,
         "event": "Damage",
         "name": "Stone IV",
-        "damage": 7390,
+        "damage": 6951,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2758,7 +2758,7 @@
         "time": 12750,
         "event": "DOT Tick",
         "name": "aero_ii",
-        "damage": 1341,
+        "damage": 1226,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2782,7 +2782,7 @@
         "time": 12881,
         "event": "Damage",
         "name": "Aero III",
-        "damage": 1461,
+        "damage": 1417,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2812,7 +2812,7 @@
         "time": 13050,
         "event": "DOT Tick",
         "name": "aero_ii",
-        "damage": 1290,
+        "damage": 1226,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2823,7 +2823,7 @@
         "time": 13050,
         "event": "DOT Tick",
         "name": "aero_iii",
-        "damage": 1233,
+        "damage": 1209,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2853,7 +2853,7 @@
         "time": 13183,
         "event": "Damage",
         "name": "Stone IV",
-        "damage": 7097,
+        "damage": 7243,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2868,7 +2868,7 @@
         "time": 13350,
         "event": "DOT Tick",
         "name": "aero_iii",
-        "damage": 1196,
+        "damage": 1258,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2892,7 +2892,7 @@
         "time": 13418,
         "event": "Damage",
         "name": "Stone IV",
-        "damage": 8049,
+        "damage": 8129,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2908,7 +2908,7 @@
         "time": 13419,
         "event": "Damage",
         "name": "Aero II",
-        "damage": 1557,
+        "damage": 1589,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2955,8 +2955,8 @@
         "time": 13650,
         "event": "DOT Tick",
         "name": "aero_ii",
-        "damage": 2588,
-        "crit": true,
+        "damage": 1617,
+        "crit": false,
         "dh": false,
         "buff": [
             "dragon_sight",
@@ -2971,7 +2971,7 @@
         "time": 13650,
         "event": "DOT Tick",
         "name": "aero_iii",
-        "damage": 1209,
+        "damage": 1283,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2995,7 +2995,7 @@
         "time": 13888,
         "event": "Damage",
         "name": "Stone IV",
-        "damage": 7687,
+        "damage": 7837,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3011,7 +3011,7 @@
         "time": 13950,
         "event": "DOT Tick",
         "name": "aero_ii",
-        "damage": 2613,
+        "damage": 2364,
         "crit": true,
         "dh": false,
         "buff": [
@@ -3027,7 +3027,7 @@
         "time": 13950,
         "event": "DOT Tick",
         "name": "aero_iii",
-        "damage": 1894,
+        "damage": 1821,
         "crit": true,
         "dh": false,
         "buff": [
@@ -3051,7 +3051,7 @@
         "time": 14123,
         "event": "Damage",
         "name": "Stone IV",
-        "damage": 7837,
+        "damage": 7762,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3067,7 +3067,7 @@
         "time": 14250,
         "event": "DOT Tick",
         "name": "aero_ii",
-        "damage": 1753,
+        "damage": 1787,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3083,8 +3083,8 @@
         "time": 14250,
         "event": "DOT Tick",
         "name": "aero_iii",
-        "damage": 1172,
-        "crit": false,
+        "damage": 1767,
+        "crit": true,
         "dh": false,
         "buff": [
             "dragon_sight",
@@ -3107,8 +3107,8 @@
         "time": 14358,
         "event": "Damage",
         "name": "Stone IV",
-        "damage": 11348,
-        "crit": true,
+        "damage": 7240,
+        "crit": false,
         "dh": false,
         "buff": [
             "dragon_sight",
@@ -3133,7 +3133,7 @@
         "time": 14550,
         "event": "DOT Tick",
         "name": "aero_ii",
-        "damage": 1770,
+        "damage": 1736,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3149,7 +3149,7 @@
         "time": 14550,
         "event": "DOT Tick",
         "name": "aero_iii",
-        "damage": 1221,
+        "damage": 1184,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3163,7 +3163,7 @@
         "time": 14593,
         "event": "Damage",
         "name": "Stone IV",
-        "damage": 7392,
+        "damage": 6965,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3187,7 +3187,7 @@
         "time": 14828,
         "event": "Damage",
         "name": "Stone IV",
-        "damage": 6720,
+        "damage": 6526,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3200,7 +3200,7 @@
         "time": 14850,
         "event": "DOT Tick",
         "name": "aero_ii",
-        "damage": 1668,
+        "damage": 1787,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3216,7 +3216,7 @@
         "time": 14850,
         "event": "DOT Tick",
         "name": "aero_iii",
-        "damage": 1172,
+        "damage": 1246,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3240,7 +3240,7 @@
         "time": 15063,
         "event": "Damage",
         "name": "Stone IV",
-        "damage": 6215,
+        "damage": 6277,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3252,7 +3252,7 @@
         "time": 15150,
         "event": "DOT Tick",
         "name": "aero_ii",
-        "damage": 1685,
+        "damage": 1668,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3268,8 +3268,8 @@
         "time": 15150,
         "event": "DOT Tick",
         "name": "aero_iii",
-        "damage": 1894,
-        "crit": true,
+        "damage": 1196,
+        "crit": false,
         "dh": false,
         "buff": [
             "dragon_sight",
@@ -3292,7 +3292,7 @@
         "time": 15298,
         "event": "Damage",
         "name": "Stone IV",
-        "damage": 5792,
+        "damage": 6335,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3313,7 +3313,7 @@
         "time": 15450,
         "event": "DOT Tick",
         "name": "aero_iii",
-        "damage": 1048,
+        "damage": 1037,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3324,7 +3324,7 @@
         "time": 15466,
         "event": "Damage",
         "name": "Aero III",
-        "damage": 1168,
+        "damage": 1205,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3355,7 +3355,7 @@
         "time": 15534,
         "event": "Damage",
         "name": "Aero II",
-        "damage": 1253,
+        "damage": 1180,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3402,7 +3402,7 @@
         "time": 15668,
         "event": "Damage",
         "name": "Assize",
-        "damage": 6879,
+        "damage": 6952,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3430,7 +3430,7 @@
         "time": 15750,
         "event": "DOT Tick",
         "name": "aero_ii",
-        "damage": 1277,
+        "damage": 1264,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3441,8 +3441,8 @@
         "time": 15750,
         "event": "DOT Tick",
         "name": "aero_iii",
-        "damage": 1058,
-        "crit": false,
+        "damage": 1443,
+        "crit": true,
         "dh": false,
         "buff": [
             "bard_aura"
@@ -3462,7 +3462,7 @@
         "time": 15989,
         "event": "Damage",
         "name": "Stone IV",
-        "damage": 6215,
+        "damage": 5852,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3475,7 +3475,7 @@
         "time": 16050,
         "event": "DOT Tick",
         "name": "aero_ii",
-        "damage": 1251,
+        "damage": 1315,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3486,7 +3486,7 @@
         "time": 16050,
         "event": "DOT Tick",
         "name": "aero_iii",
-        "damage": 1027,
+        "damage": 1017,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3507,7 +3507,7 @@
         "time": 16177,
         "event": "Damage",
         "name": "Stone IV",
-        "damage": 6335,
+        "damage": 5732,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3530,8 +3530,8 @@
         "time": 16350,
         "event": "DOT Tick",
         "name": "aero_ii",
-        "damage": 1251,
-        "crit": false,
+        "damage": 1811,
+        "crit": true,
         "dh": false,
         "buff": [
             "bard_aura"
@@ -3541,7 +3541,7 @@
         "time": 16350,
         "event": "DOT Tick",
         "name": "aero_iii",
-        "damage": 1007,
+        "damage": 987,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3552,7 +3552,7 @@
         "time": 16365,
         "event": "Damage",
         "name": "Stone IV",
-        "damage": 6094,
+        "damage": 6275,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3575,8 +3575,8 @@
         "time": 16553,
         "event": "Damage",
         "name": "Stone IV",
-        "damage": 8733,
-        "crit": true,
+        "damage": 6094,
+        "crit": false,
         "dh": false,
         "buff": [
             "presence_of_mind",
@@ -3588,7 +3588,7 @@
         "time": 16650,
         "event": "DOT Tick",
         "name": "aero_ii",
-        "damage": 1341,
+        "damage": 1302,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3599,7 +3599,7 @@
         "time": 16650,
         "event": "DOT Tick",
         "name": "aero_iii",
-        "damage": 1007,
+        "damage": 1058,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3620,7 +3620,7 @@
         "time": 16741,
         "event": "Damage",
         "name": "Stone IV",
-        "damage": 5852,
+        "damage": 6215,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3643,7 +3643,7 @@
         "time": 16929,
         "event": "Damage",
         "name": "Stone IV",
-        "damage": 6215,
+        "damage": 5792,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3656,8 +3656,8 @@
         "time": 16950,
         "event": "DOT Tick",
         "name": "aero_ii",
-        "damage": 1774,
-        "crit": true,
+        "damage": 1328,
+        "crit": false,
         "dh": false,
         "buff": [
             "bard_aura"
@@ -3688,7 +3688,7 @@
         "time": 17117,
         "event": "Damage",
         "name": "Stone IV",
-        "damage": 5852,
+        "damage": 5973,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3711,8 +3711,8 @@
         "time": 17250,
         "event": "DOT Tick",
         "name": "aero_ii",
-        "damage": 1264,
-        "crit": false,
+        "damage": 1774,
+        "crit": true,
         "dh": false,
         "buff": [
             "bard_aura"
@@ -3722,7 +3722,7 @@
         "time": 17250,
         "event": "DOT Tick",
         "name": "aero_iii",
-        "damage": 1058,
+        "damage": 1037,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3733,8 +3733,8 @@
         "time": 17305,
         "event": "Damage",
         "name": "Stone IV",
-        "damage": 9174,
-        "crit": true,
+        "damage": 6215,
+        "crit": false,
         "dh": false,
         "buff": [
             "lucid_dreaming",
@@ -3745,7 +3745,7 @@
         "time": 17306,
         "event": "Damage",
         "name": "Aero II",
-        "damage": 1144,
+        "damage": 1241,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3778,7 +3778,7 @@
         "time": 17550,
         "event": "DOT Tick",
         "name": "aero_ii",
-        "damage": 1830,
+        "damage": 1923,
         "crit": true,
         "dh": false,
         "buff": [
@@ -3790,7 +3790,7 @@
         "time": 17550,
         "event": "DOT Tick",
         "name": "aero_iii",
-        "damage": 1027,
+        "damage": 1007,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3811,7 +3811,7 @@
         "time": 17775,
         "event": "Damage",
         "name": "Stone IV",
-        "damage": 5913,
+        "damage": 6215,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3823,7 +3823,7 @@
         "time": 17850,
         "event": "DOT Tick",
         "name": "aero_ii",
-        "damage": 1277,
+        "damage": 1238,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3845,7 +3845,7 @@
         "time": 17943,
         "event": "Damage",
         "name": "Aero III",
-        "damage": 1241,
+        "damage": 1253,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3866,7 +3866,7 @@
         "time": 18150,
         "event": "DOT Tick",
         "name": "aero_ii",
-        "damage": 1264,
+        "damage": 1328,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3878,8 +3878,8 @@
         "time": 18150,
         "event": "DOT Tick",
         "name": "aero_iii",
-        "damage": 1037,
-        "crit": false,
+        "damage": 1443,
+        "crit": true,
         "dh": false,
         "buff": [
             "bard_aura"
@@ -3905,7 +3905,7 @@
         "time": 18245,
         "event": "Damage",
         "name": "Stone IV",
-        "damage": 6154,
+        "damage": 5913,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3944,8 +3944,8 @@
         "time": 18450,
         "event": "DOT Tick",
         "name": "aero_ii",
-        "damage": 1341,
-        "crit": false,
+        "damage": 1867,
+        "crit": true,
         "dh": false,
         "buff": [
             "lucid_dreaming",
@@ -3956,8 +3956,8 @@
         "time": 18450,
         "event": "DOT Tick",
         "name": "aero_iii",
-        "damage": 966,
-        "crit": false,
+        "damage": 1532,
+        "crit": true,
         "dh": false,
         "buff": [
             "bard_aura"
@@ -3991,7 +3991,7 @@
         "time": 18715,
         "event": "Damage",
         "name": "Stone IV",
-        "damage": 9494,
+        "damage": 9894,
         "crit": true,
         "dh": false,
         "buff": [
@@ -4006,7 +4006,7 @@
         "time": 18750,
         "event": "DOT Tick",
         "name": "aero_ii",
-        "damage": 1277,
+        "damage": 1341,
         "crit": false,
         "dh": false,
         "buff": [
@@ -4018,8 +4018,8 @@
         "time": 18750,
         "event": "DOT Tick",
         "name": "aero_iii",
-        "damage": 1517,
-        "crit": true,
+        "damage": 1007,
+        "crit": false,
         "dh": false,
         "buff": [
             "bard_aura"
@@ -4039,9 +4039,9 @@
         "time": 18950,
         "event": "Damage",
         "name": "Stone IV",
-        "damage": 10394,
-        "crit": true,
-        "dh": false,
+        "damage": 8459,
+        "crit": false,
+        "dh": true,
         "buff": [
             "battle_litany",
             "battle_voice",
@@ -4054,7 +4054,7 @@
         "time": 19050,
         "event": "DOT Tick",
         "name": "aero_ii",
-        "damage": 1341,
+        "damage": 1226,
         "crit": false,
         "dh": false,
         "buff": [
@@ -4066,8 +4066,8 @@
         "time": 19050,
         "event": "DOT Tick",
         "name": "aero_iii",
-        "damage": 1413,
-        "crit": true,
+        "damage": 1058,
+        "crit": false,
         "dh": false,
         "buff": [
             "bard_aura"
@@ -4093,9 +4093,9 @@
         "time": 19185,
         "event": "Damage",
         "name": "Stone IV",
-        "damage": 8972,
-        "crit": false,
-        "dh": true,
+        "damage": 9594,
+        "crit": true,
+        "dh": false,
         "buff": [
             "battle_litany",
             "battle_voice",
@@ -4155,7 +4155,7 @@
         "time": 19350,
         "event": "DOT Tick",
         "name": "aero_ii",
-        "damage": 1543,
+        "damage": 1638,
         "crit": false,
         "dh": false,
         "buff": [
@@ -4171,8 +4171,8 @@
         "time": 19350,
         "event": "DOT Tick",
         "name": "aero_iii",
-        "damage": 997,
-        "crit": false,
+        "damage": 1517,
+        "crit": true,
         "dh": false,
         "buff": [
             "bard_aura"
@@ -4218,7 +4218,7 @@
         "time": 19650,
         "event": "DOT Tick",
         "name": "aero_iii",
-        "damage": 1058,
+        "damage": 1017,
         "crit": false,
         "dh": false,
         "buff": [
@@ -4229,7 +4229,7 @@
         "time": 19655,
         "event": "Damage",
         "name": "Stone IV",
-        "damage": 8290,
+        "damage": 7501,
         "crit": false,
         "dh": false,
         "buff": [
@@ -4256,9 +4256,9 @@
         "time": 19890,
         "event": "Damage",
         "name": "Stone IV",
-        "damage": 7249,
+        "damage": 9241,
         "crit": false,
-        "dh": false,
+        "dh": true,
         "buff": [
             "cleric_stance",
             "battle_litany",
@@ -4272,9 +4272,9 @@
         "time": 19950,
         "event": "DOT Tick",
         "name": "aero_ii",
-        "damage": 2349,
-        "crit": true,
-        "dh": false,
+        "damage": 1968,
+        "crit": false,
+        "dh": true,
         "buff": [
             "battle_litany",
             "battle_voice",
@@ -4288,9 +4288,9 @@
         "time": 19950,
         "event": "DOT Tick",
         "name": "aero_iii",
-        "damage": 1246,
+        "damage": 976,
         "crit": false,
-        "dh": true,
+        "dh": false,
         "buff": [
             "bard_aura"
         ]
@@ -4309,9 +4309,9 @@
         "time": 20125,
         "event": "Damage",
         "name": "Stone IV",
-        "damage": 8972,
+        "damage": 7034,
         "crit": false,
-        "dh": true,
+        "dh": false,
         "buff": [
             "cleric_stance",
             "battle_litany",
@@ -4325,9 +4325,9 @@
         "time": 20250,
         "event": "DOT Tick",
         "name": "aero_ii",
-        "damage": 3023,
-        "crit": true,
-        "dh": true,
+        "damage": 1670,
+        "crit": false,
+        "dh": false,
         "buff": [
             "battle_litany",
             "battle_voice",
@@ -4341,7 +4341,7 @@
         "time": 20250,
         "event": "DOT Tick",
         "name": "aero_iii",
-        "damage": 1068,
+        "damage": 1007,
         "crit": false,
         "dh": false,
         "buff": [
@@ -4362,8 +4362,8 @@
         "time": 20360,
         "event": "Damage",
         "name": "Stone IV",
-        "damage": 6962,
-        "crit": false,
+        "damage": 10179,
+        "crit": true,
         "dh": false,
         "buff": [
             "cleric_stance",
@@ -4391,7 +4391,7 @@
         "time": 20528,
         "event": "Damage",
         "name": "Aero III",
-        "damage": 1417,
+        "damage": 1403,
         "crit": false,
         "dh": false,
         "buff": [
@@ -4415,7 +4415,7 @@
         "time": 20550,
         "event": "DOT Tick",
         "name": "aero_ii",
-        "damage": 1654,
+        "damage": 1670,
         "crit": false,
         "dh": false,
         "buff": [
@@ -4431,7 +4431,7 @@
         "time": 20550,
         "event": "DOT Tick",
         "name": "aero_iii",
-        "damage": 1210,
+        "damage": 1186,
         "crit": false,
         "dh": false,
         "buff": [
@@ -4455,7 +4455,7 @@
         "time": 20830,
         "event": "Damage",
         "name": "Stone IV",
-        "damage": 6526,
+        "damage": 6721,
         "crit": false,
         "dh": false,
         "buff": [
@@ -4468,8 +4468,8 @@
         "time": 20850,
         "event": "DOT Tick",
         "name": "aero_ii",
-        "damage": 2233,
-        "crit": true,
+        "damage": 1527,
+        "crit": false,
         "dh": false,
         "buff": [
             "battle_litany",
@@ -4484,8 +4484,8 @@
         "time": 20850,
         "event": "DOT Tick",
         "name": "aero_iii",
-        "damage": 1149,
-        "crit": false,
+        "damage": 1787,
+        "crit": true,
         "dh": false,
         "buff": [
             "cleric_stance",
@@ -4508,7 +4508,7 @@
         "time": 21065,
         "event": "Damage",
         "name": "Stone IV",
-        "damage": 5904,
+        "damage": 5966,
         "crit": false,
         "dh": false,
         "buff": [
@@ -4543,7 +4543,7 @@
         "time": 21150,
         "event": "DOT Tick",
         "name": "aero_ii",
-        "damage": 1274,
+        "damage": 1261,
         "crit": false,
         "dh": false,
         "buff": [
@@ -4555,7 +4555,7 @@
         "time": 21150,
         "event": "DOT Tick",
         "name": "aero_iii",
-        "damage": 1246,
+        "damage": 1162,
         "crit": false,
         "dh": false,
         "buff": [
@@ -4579,7 +4579,7 @@
         "time": 21450,
         "event": "DOT Tick",
         "name": "aero_ii",
-        "damage": 1998,
+        "damage": 1864,
         "crit": true,
         "dh": false,
         "buff": [
@@ -4615,7 +4615,7 @@
         "time": 21535,
         "event": "Damage",
         "name": "Stone IV",
-        "damage": 6401,
+        "damage": 6215,
         "crit": false,
         "dh": false,
         "buff": [
@@ -4637,7 +4637,7 @@
         "time": 21750,
         "event": "DOT Tick",
         "name": "aero_ii",
-        "damage": 1314,
+        "damage": 1353,
         "crit": false,
         "dh": false,
         "buff": [
@@ -4649,7 +4649,7 @@
         "time": 21750,
         "event": "DOT Tick",
         "name": "aero_iii",
-        "damage": 1210,
+        "damage": 1186,
         "crit": false,
         "dh": false,
         "buff": [
@@ -4663,7 +4663,7 @@
         "time": 21770,
         "event": "Damage",
         "name": "Stone IV",
-        "damage": 5973,
+        "damage": 6154,
         "crit": false,
         "dh": false,
         "buff": [
@@ -4684,7 +4684,7 @@
         "time": 22005,
         "event": "Damage",
         "name": "Stone IV",
-        "damage": 5913,
+        "damage": 6335,
         "crit": false,
         "dh": false,
         "buff": [
@@ -4695,7 +4695,7 @@
         "time": 22050,
         "event": "DOT Tick",
         "name": "aero_ii",
-        "damage": 1366,
+        "damage": 1274,
         "crit": false,
         "dh": false,
         "buff": [
@@ -4707,7 +4707,7 @@
         "time": 22050,
         "event": "DOT Tick",
         "name": "aero_iii",
-        "damage": 1174,
+        "damage": 1210,
         "crit": false,
         "dh": false,
         "buff": [
@@ -4731,7 +4731,7 @@
         "time": 22240,
         "event": "Damage",
         "name": "Stone IV",
-        "damage": 5973,
+        "damage": 5732,
         "crit": false,
         "dh": false,
         "buff": [
@@ -4742,7 +4742,7 @@
         "time": 22350,
         "event": "DOT Tick",
         "name": "aero_ii",
-        "damage": 1353,
+        "damage": 1274,
         "crit": false,
         "dh": false,
         "buff": [
@@ -4754,7 +4754,7 @@
         "time": 22350,
         "event": "DOT Tick",
         "name": "aero_iii",
-        "damage": 1222,
+        "damage": 1258,
         "crit": false,
         "dh": false,
         "buff": [
@@ -4778,7 +4778,7 @@
         "time": 22475,
         "event": "Damage",
         "name": "Stone IV",
-        "damage": 6154,
+        "damage": 5732,
         "crit": false,
         "dh": false,
         "buff": [
@@ -4799,7 +4799,7 @@
         "time": 22650,
         "event": "DOT Tick",
         "name": "aero_ii",
-        "damage": 1301,
+        "damage": 1327,
         "crit": false,
         "dh": false,
         "buff": [
@@ -4811,7 +4811,7 @@
         "time": 22650,
         "event": "DOT Tick",
         "name": "aero_iii",
-        "damage": 1186,
+        "damage": 1246,
         "crit": false,
         "dh": false,
         "buff": [
@@ -4825,7 +4825,7 @@
         "time": 22710,
         "event": "Damage",
         "name": "Stone IV",
-        "damage": 5913,
+        "damage": 5852,
         "crit": false,
         "dh": false,
         "buff": [
@@ -4846,7 +4846,7 @@
         "time": 22945,
         "event": "Damage",
         "name": "Stone IV",
-        "damage": 5973,
+        "damage": 5792,
         "crit": false,
         "dh": false,
         "buff": [
@@ -4867,7 +4867,7 @@
         "time": 23180,
         "event": "Damage",
         "name": "Stone IV",
-        "damage": 6154,
+        "damage": 6275,
         "crit": false,
         "dh": false,
         "buff": [
@@ -4888,8 +4888,8 @@
         "time": 23415,
         "event": "Damage",
         "name": "Stone IV",
-        "damage": 8557,
-        "crit": true,
+        "damage": 6335,
+        "crit": false,
         "dh": false,
         "buff": [
             "bard_aura"
@@ -4909,7 +4909,7 @@
         "time": 23650,
         "event": "Damage",
         "name": "Stone IV",
-        "damage": 8909,
+        "damage": 8733,
         "crit": true,
         "dh": false,
         "buff": [
@@ -4930,8 +4930,8 @@
         "time": 23885,
         "event": "Damage",
         "name": "Stone IV",
-        "damage": 8645,
-        "crit": true,
+        "damage": 6034,
+        "crit": false,
         "dh": false,
         "buff": [
             "bard_aura"

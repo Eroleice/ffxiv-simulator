@@ -17,9 +17,9 @@
 
         var simulate = {
             duration: 24000,	        // 模拟木桩时间，单位10毫秒 (秒数x100)
-            times: 1,			        // 模拟次数
+            times: 1000,			    // 模拟次数
             expectMode: false,	        // 期望值模式
-            battleLog: true,	        // 输出战斗记录，开启情况下只能进行单次模拟
+            battleLog: false,	        // 输出战斗记录，开启情况下只能进行单次模拟
             partyBuff: true,            // 团队辅助buff
             partyMember: ['brd','mch','nin','drg','smn','sch'],     // 队伍内其他职业构成
             autoAttack: false,          // 自动攻击
