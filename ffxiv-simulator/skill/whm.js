@@ -15,9 +15,33 @@ class skill {
 
     // GCD计算
     calculateGCD() {
-        var baseGCD = Math.floor(100 * (Math.floor(1000 * 2.5 * (1 - Math.floor(130 * (this.player.status.ss - 364) / 2170) / 1000)) / 1000));
-        var m = (this.isBuff('feys_wind')) ? (1 - 0.03) : 1;
-        return Math.floor(baseGCD * m);
+        var m = this.speedMod();
+        return Math.floor(100 * (Math.floor(1000 * m * 2.5 * (1 - Math.floor(130 * (this.player.status.ss - 364) / 2170) / 1000)) / 1000));
+    }
+
+    // 速度buff计算
+    speedMod() {
+        var mod = this.multiplier({
+            'presence_of_mind': 0.8,
+            'greased_lightning_i': 0.95,
+            'greased_lightning_ii': 0.9,
+            'greased_lightning_iii': 0.85,
+            'huton': 0.85,
+            'ley_lines': 0.85
+        });
+        mod = (this.isBuff('feys_wind')) ? (mod - 0.03) : mod;
+        return mod;
+    }
+
+    // buff加成 (乘法)
+    multiplier(arr) {
+        var m = 1;
+        for (var k in arr) {
+            if (this.isBuff(k)) {
+                m *= arr[k];
+            }
+        }
+        return m;
     }
 
     // buff检测
