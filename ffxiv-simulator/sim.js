@@ -195,7 +195,8 @@ class Fight {
             'name': data.name,
             'damage': data.damage,
             'crit': data.crit,
-            'dh': data.dh
+            'dh': data.dh,
+            'buff': data.buff
         });
         this.battle.totalDamage += data.damage;
     }
@@ -213,7 +214,8 @@ class Fight {
                     'name': k,
                     'damage': dotData.damage,
                     'crit': dotData.crit,
-                    'dh': dotData.dh
+                    'dh': dotData.dh,
+                    'buff': this.player.dot[k].buff
                 });
                 this.battle.totalDamage += dotData.damage;
             }

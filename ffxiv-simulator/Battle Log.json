@@ -57,8 +57,15 @@
         "time": 201,
         "event": "DOT Apply",
         "name": "Combust II",
-        "base_damage": 1558,
-        "duration": 3000
+        "base_damage": 1651.48,
+        "duration": 3000,
+        "buff": [
+            "potion",
+            "cleric_stance",
+            "bard_aura",
+            "contagion",
+            "hypercharge"
+        ]
     },
     {
         "time": 300,
@@ -98,9 +105,16 @@
         "time": 450,
         "event": "DOT Tick",
         "name": "combust_ii",
-        "damage": 1568,
-        "crit": false,
-        "dh": false
+        "damage": 2366,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "potion",
+            "cleric_stance",
+            "bard_aura",
+            "contagion",
+            "hypercharge"
+        ]
     },
     {
         "time": 604,
@@ -116,17 +130,35 @@
         "time": 664,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 11376,
-        "crit": true,
-        "dh": false
+        "damage": 7633,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "potion",
+            "cleric_stance",
+            "battle_litany",
+            "dragon_sight",
+            "battle_voice",
+            "foe_requiem",
+            "bard_aura",
+            "contagion",
+            "hypercharge"
+        ]
     },
     {
         "time": 750,
         "event": "DOT Tick",
         "name": "combust_ii",
-        "damage": 1601,
+        "damage": 1684,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "potion",
+            "cleric_stance",
+            "bard_aura",
+            "contagion",
+            "hypercharge"
+        ]
     },
     {
         "time": 839,
@@ -142,9 +174,20 @@
         "time": 899,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 8893,
+        "damage": 7781,
         "crit": false,
-        "dh": true
+        "dh": false,
+        "buff": [
+            "potion",
+            "cleric_stance",
+            "battle_litany",
+            "dragon_sight",
+            "battle_voice",
+            "foe_requiem",
+            "bard_aura",
+            "contagion",
+            "hypercharge"
+        ]
     },
     {
         "time": 900,
@@ -156,9 +199,16 @@
         "time": 1050,
         "event": "DOT Tick",
         "name": "combust_ii",
-        "damage": 2366,
-        "crit": true,
-        "dh": false
+        "damage": 2105,
+        "crit": false,
+        "dh": true,
+        "buff": [
+            "potion",
+            "cleric_stance",
+            "bard_aura",
+            "contagion",
+            "hypercharge"
+        ]
     },
     {
         "time": 1074,
@@ -180,9 +230,21 @@
         "time": 1134,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 7559,
+        "damage": 7411,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "potion",
+            "cleric_stance",
+            "battle_litany",
+            "dragon_sight",
+            "chain_strategem",
+            "battle_voice",
+            "foe_requiem",
+            "bard_aura",
+            "contagion",
+            "hypercharge"
+        ]
     },
     {
         "time": 1309,
@@ -198,17 +260,37 @@
         "time": 1350,
         "event": "DOT Tick",
         "name": "combust_ii",
-        "damage": 2293,
-        "crit": true,
-        "dh": false
+        "damage": 1634,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "potion",
+            "cleric_stance",
+            "bard_aura",
+            "contagion",
+            "hypercharge"
+        ]
     },
     {
         "time": 1369,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 8396,
+        "damage": 8070,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "potion",
+            "cleric_stance",
+            "battle_litany",
+            "dragon_sight",
+            "chain_strategem",
+            "battle_voice",
+            "foe_requiem",
+            "bard_aura",
+            "trick_attack",
+            "contagion",
+            "hypercharge"
+        ]
     },
     {
         "time": 1500,
@@ -232,15 +314,35 @@
         "name": "Malefic III",
         "damage": 7907,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "potion",
+            "cleric_stance",
+            "battle_litany",
+            "dragon_sight",
+            "chain_strategem",
+            "battle_voice",
+            "foe_requiem",
+            "bard_aura",
+            "trick_attack",
+            "contagion",
+            "hypercharge"
+        ]
     },
     {
         "time": 1650,
         "event": "DOT Tick",
         "name": "combust_ii",
-        "damage": 1568,
+        "damage": 1618,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "potion",
+            "cleric_stance",
+            "bard_aura",
+            "contagion",
+            "hypercharge"
+        ]
     },
     {
         "time": 1779,
@@ -256,17 +358,36 @@
         "time": 1839,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 10945,
-        "crit": true,
-        "dh": false
+        "damage": 7270,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "potion",
+            "battle_litany",
+            "dragon_sight",
+            "chain_strategem",
+            "battle_voice",
+            "foe_requiem",
+            "bard_aura",
+            "trick_attack",
+            "hypercharge",
+            "devotion"
+        ]
     },
     {
         "time": 1950,
         "event": "DOT Tick",
         "name": "combust_ii",
-        "damage": 2438,
+        "damage": 2317,
         "crit": true,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "potion",
+            "cleric_stance",
+            "bard_aura",
+            "contagion",
+            "hypercharge"
+        ]
     },
     {
         "time": 2014,
@@ -282,9 +403,21 @@
         "time": 2074,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 7414,
+        "damage": 7558,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "potion",
+            "battle_litany",
+            "dragon_sight",
+            "chain_strategem",
+            "battle_voice",
+            "foe_requiem",
+            "bard_aura",
+            "trick_attack",
+            "hypercharge",
+            "devotion"
+        ]
     },
     {
         "time": 2249,
@@ -300,17 +433,36 @@
         "time": 2250,
         "event": "DOT Tick",
         "name": "combust_ii",
-        "damage": 2366,
+        "damage": 2438,
         "crit": true,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "potion",
+            "cleric_stance",
+            "bard_aura",
+            "contagion",
+            "hypercharge"
+        ]
     },
     {
         "time": 2309,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 10103,
-        "crit": true,
-        "dh": false
+        "damage": 8818,
+        "crit": false,
+        "dh": true,
+        "buff": [
+            "potion",
+            "battle_litany",
+            "dragon_sight",
+            "chain_strategem",
+            "battle_voice",
+            "foe_requiem",
+            "bard_aura",
+            "trick_attack",
+            "hypercharge",
+            "devotion"
+        ]
     },
     {
         "time": 2484,
@@ -326,17 +478,32 @@
         "time": 2544,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 6924,
-        "crit": false,
-        "dh": false
+        "damage": 10524,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "potion",
+            "foe_requiem",
+            "bard_aura",
+            "trick_attack",
+            "hypercharge",
+            "devotion"
+        ]
     },
     {
         "time": 2550,
         "event": "DOT Tick",
         "name": "combust_ii",
-        "damage": 1568,
+        "damage": 1701,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "potion",
+            "cleric_stance",
+            "bard_aura",
+            "contagion",
+            "hypercharge"
+        ]
     },
     {
         "time": 2719,
@@ -352,17 +519,31 @@
         "time": 2779,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 6108,
+        "damage": 5983,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "potion",
+            "foe_requiem",
+            "bard_aura",
+            "hypercharge",
+            "devotion"
+        ]
     },
     {
         "time": 2850,
         "event": "DOT Tick",
         "name": "combust_ii",
-        "damage": 1601,
+        "damage": 1684,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "potion",
+            "cleric_stance",
+            "bard_aura",
+            "contagion",
+            "hypercharge"
+        ]
     },
     {
         "time": 2954,
@@ -378,17 +559,30 @@
         "time": 3014,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 5935,
+        "damage": 5875,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "potion",
+            "foe_requiem",
+            "bard_aura",
+            "devotion"
+        ]
     },
     {
         "time": 3150,
         "event": "DOT Tick",
         "name": "combust_ii",
-        "damage": 1734,
+        "damage": 1568,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "potion",
+            "cleric_stance",
+            "bard_aura",
+            "contagion",
+            "hypercharge"
+        ]
     },
     {
         "time": 3189,
@@ -404,16 +598,24 @@
         "time": 3249,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 5461,
+        "damage": 5297,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "foe_requiem",
+            "bard_aura"
+        ]
     },
     {
         "time": 3256,
         "event": "DOT Apply",
         "name": "Combust II",
-        "base_damage": 1240,
-        "duration": 3000
+        "base_damage": 1314.4,
+        "duration": 3000,
+        "buff": [
+            "foe_requiem",
+            "bard_aura"
+        ]
     },
     {
         "time": 3256,
@@ -445,9 +647,13 @@
         "time": 3450,
         "event": "DOT Tick",
         "name": "combust_ii",
-        "damage": 1327,
+        "damage": 1314,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "foe_requiem",
+            "bard_aura"
+        ]
     },
     {
         "time": 3659,
@@ -463,17 +669,25 @@
         "time": 3719,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 5036,
+        "damage": 5567,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "lucid_dreaming",
+            "bard_aura"
+        ]
     },
     {
         "time": 3750,
         "event": "DOT Tick",
         "name": "combust_ii",
-        "damage": 1380,
+        "damage": 1366,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "foe_requiem",
+            "bard_aura"
+        ]
     },
     {
         "time": 3894,
@@ -491,15 +705,23 @@
         "name": "Malefic III",
         "damage": 5089,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "lucid_dreaming",
+            "bard_aura"
+        ]
     },
     {
         "time": 4050,
         "event": "DOT Tick",
         "name": "combust_ii",
-        "damage": 1274,
+        "damage": 1301,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "foe_requiem",
+            "bard_aura"
+        ]
     },
     {
         "time": 4129,
@@ -515,17 +737,25 @@
         "time": 4189,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 7751,
-        "crit": true,
-        "dh": false
+        "damage": 5514,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "lucid_dreaming",
+            "bard_aura"
+        ]
     },
     {
         "time": 4350,
         "event": "DOT Tick",
         "name": "combust_ii",
-        "damage": 1301,
+        "damage": 1288,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "foe_requiem",
+            "bard_aura"
+        ]
     },
     {
         "time": 4364,
@@ -541,9 +771,13 @@
         "time": 4424,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 5461,
+        "damage": 5514,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "lucid_dreaming",
+            "bard_aura"
+        ]
     },
     {
         "time": 4599,
@@ -559,17 +793,25 @@
         "time": 4650,
         "event": "DOT Tick",
         "name": "combust_ii",
-        "damage": 1301,
+        "damage": 1327,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "foe_requiem",
+            "bard_aura"
+        ]
     },
     {
         "time": 4659,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 5408,
+        "damage": 5248,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "lucid_dreaming",
+            "bard_aura"
+        ]
     },
     {
         "time": 4834,
@@ -585,9 +827,13 @@
         "time": 4894,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 5195,
+        "damage": 5089,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "lucid_dreaming",
+            "bard_aura"
+        ]
     },
     {
         "time": 4950,
@@ -595,7 +841,11 @@
         "name": "combust_ii",
         "damage": 1314,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "foe_requiem",
+            "bard_aura"
+        ]
     },
     {
         "time": 5069,
@@ -611,17 +861,25 @@
         "time": 5129,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 5302,
+        "damage": 5142,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "lucid_dreaming",
+            "bard_aura"
+        ]
     },
     {
         "time": 5250,
         "event": "DOT Tick",
         "name": "combust_ii",
-        "damage": 1288,
+        "damage": 1314,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "foe_requiem",
+            "bard_aura"
+        ]
     },
     {
         "time": 5304,
@@ -637,9 +895,13 @@
         "time": 5364,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 5195,
+        "damage": 5461,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "lucid_dreaming",
+            "bard_aura"
+        ]
     },
     {
         "time": 5539,
@@ -655,17 +917,24 @@
         "time": 5550,
         "event": "DOT Tick",
         "name": "combust_ii",
-        "damage": 1301,
+        "damage": 1248,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "foe_requiem",
+            "bard_aura"
+        ]
     },
     {
         "time": 5599,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 5089,
+        "damage": 5408,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
     },
     {
         "time": 5774,
@@ -681,9 +950,12 @@
         "time": 5834,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 5302,
+        "damage": 5461,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
     },
     {
         "time": 5850,
@@ -691,7 +963,11 @@
         "name": "combust_ii",
         "damage": 1314,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "foe_requiem",
+            "bard_aura"
+        ]
     },
     {
         "time": 6009,
@@ -707,17 +983,24 @@
         "time": 6069,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 7674,
-        "crit": true,
-        "dh": false
+        "damage": 5089,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
     },
     {
         "time": 6150,
         "event": "DOT Tick",
         "name": "combust_ii",
-        "damage": 1288,
+        "damage": 1314,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "foe_requiem",
+            "bard_aura"
+        ]
     },
     {
         "time": 6200,
@@ -739,24 +1022,35 @@
         "time": 6304,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 5461,
+        "damage": 5089,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
     },
     {
         "time": 6311,
         "event": "DOT Apply",
         "name": "Combust II",
-        "base_damage": 1324,
-        "duration": 3000
+        "base_damage": 1403.44,
+        "duration": 3000,
+        "buff": [
+            "bard_aura",
+            "contagion"
+        ]
     },
     {
         "time": 6450,
         "event": "DOT Tick",
         "name": "combust_ii",
-        "damage": 1333,
-        "crit": false,
-        "dh": false
+        "damage": 2031,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "bard_aura",
+            "contagion"
+        ]
     },
     {
         "time": 6479,
@@ -782,17 +1076,25 @@
         "time": 6750,
         "event": "DOT Tick",
         "name": "combust_ii",
-        "damage": 1347,
-        "crit": false,
-        "dh": false
+        "damage": 1949,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "bard_aura",
+            "contagion"
+        ]
     },
     {
         "time": 6774,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 6122,
+        "damage": 5539,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "bard_aura",
+            "contagion"
+        ]
     },
     {
         "time": 6949,
@@ -808,17 +1110,25 @@
         "time": 7009,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 5947,
+        "damage": 5714,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "bard_aura",
+            "contagion"
+        ]
     },
     {
         "time": 7050,
         "event": "DOT Tick",
         "name": "combust_ii",
-        "damage": 1333,
+        "damage": 1431,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "bard_aura",
+            "contagion"
+        ]
     },
     {
         "time": 7100,
@@ -840,17 +1150,26 @@
         "time": 7244,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 9660,
-        "crit": true,
-        "dh": false
+        "damage": 6286,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura",
+            "trick_attack",
+            "contagion"
+        ]
     },
     {
         "time": 7350,
         "event": "DOT Tick",
         "name": "combust_ii",
-        "damage": 1417,
+        "damage": 1473,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "bard_aura",
+            "contagion"
+        ]
     },
     {
         "time": 7419,
@@ -866,17 +1185,26 @@
         "time": 7479,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 6158,
+        "damage": 6543,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "bard_aura",
+            "trick_attack",
+            "contagion"
+        ]
     },
     {
         "time": 7650,
         "event": "DOT Tick",
         "name": "combust_ii",
-        "damage": 1333,
+        "damage": 1375,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "bard_aura",
+            "contagion"
+        ]
     },
     {
         "time": 7654,
@@ -892,9 +1220,14 @@
         "time": 7714,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 6671,
+        "damage": 6543,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "bard_aura",
+            "trick_attack",
+            "contagion"
+        ]
     },
     {
         "time": 7889,
@@ -910,17 +1243,25 @@
         "time": 7949,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 6005,
+        "damage": 5947,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "bard_aura",
+            "trick_attack"
+        ]
     },
     {
         "time": 7950,
         "event": "DOT Tick",
         "name": "combust_ii",
-        "damage": 2031,
-        "crit": true,
-        "dh": false
+        "damage": 1347,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura",
+            "contagion"
+        ]
     },
     {
         "time": 8124,
@@ -936,17 +1277,25 @@
         "time": 8184,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 5772,
+        "damage": 5889,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "bard_aura",
+            "trick_attack"
+        ]
     },
     {
         "time": 8250,
         "event": "DOT Tick",
         "name": "combust_ii",
-        "damage": 1459,
+        "damage": 1389,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "bard_aura",
+            "contagion"
+        ]
     },
     {
         "time": 8359,
@@ -964,15 +1313,23 @@
         "name": "Malefic III",
         "damage": 5656,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "bard_aura",
+            "trick_attack"
+        ]
     },
     {
         "time": 8550,
         "event": "DOT Tick",
         "name": "combust_ii",
-        "damage": 1403,
+        "damage": 1389,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "bard_aura",
+            "contagion"
+        ]
     },
     {
         "time": 8594,
@@ -988,9 +1345,13 @@
         "time": 8654,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 6005,
+        "damage": 5597,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "bard_aura",
+            "trick_attack"
+        ]
     },
     {
         "time": 8829,
@@ -1006,17 +1367,24 @@
         "time": 8850,
         "event": "DOT Tick",
         "name": "combust_ii",
-        "damage": 1445,
+        "damage": 1417,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "bard_aura",
+            "contagion"
+        ]
     },
     {
         "time": 8889,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 5089,
+        "damage": 5567,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
     },
     {
         "time": 9064,
@@ -1032,17 +1400,24 @@
         "time": 9124,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 5408,
-        "crit": false,
-        "dh": false
+        "damage": 7906,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
     },
     {
         "time": 9150,
         "event": "DOT Tick",
         "name": "combust_ii",
-        "damage": 1417,
+        "damage": 1347,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "bard_aura",
+            "contagion"
+        ]
     },
     {
         "time": 9299,
@@ -1058,16 +1433,22 @@
         "time": 9359,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 7441,
-        "crit": true,
-        "dh": false
+        "damage": 5195,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
     },
     {
         "time": 9366,
         "event": "DOT Apply",
         "name": "Combust II",
-        "base_damage": 1205,
-        "duration": 3000
+        "base_damage": 1277.3,
+        "duration": 3000,
+        "buff": [
+            "bard_aura"
+        ]
     },
     {
         "time": 9366,
@@ -1089,9 +1470,12 @@
         "time": 9450,
         "event": "DOT Tick",
         "name": "combust_ii",
-        "damage": 1290,
-        "crit": false,
-        "dh": false
+        "damage": 1886,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
     },
     {
         "time": 9534,
@@ -1107,9 +1491,12 @@
         "time": 9750,
         "event": "DOT Tick",
         "name": "combust_ii",
-        "damage": 1238,
+        "damage": 1226,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
     },
     {
         "time": 9769,
@@ -1125,9 +1512,13 @@
         "time": 9829,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 5566,
+        "damage": 5510,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "cleric_stance",
+            "bard_aura"
+        ]
     },
     {
         "time": 10004,
@@ -1143,17 +1534,24 @@
         "time": 10050,
         "event": "DOT Tick",
         "name": "combust_ii",
-        "damage": 1264,
+        "damage": 1251,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
     },
     {
         "time": 10064,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 7811,
-        "crit": true,
-        "dh": false
+        "damage": 5788,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "cleric_stance",
+            "bard_aura"
+        ]
     },
     {
         "time": 10239,
@@ -1169,17 +1567,24 @@
         "time": 10299,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 8381,
-        "crit": true,
-        "dh": false
+        "damage": 5621,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "cleric_stance",
+            "bard_aura"
+        ]
     },
     {
         "time": 10350,
         "event": "DOT Tick",
         "name": "combust_ii",
-        "damage": 1213,
+        "damage": 1290,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
     },
     {
         "time": 10474,
@@ -1197,15 +1602,22 @@
         "name": "Malefic III",
         "damage": 5788,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "cleric_stance",
+            "bard_aura"
+        ]
     },
     {
         "time": 10650,
         "event": "DOT Tick",
         "name": "combust_ii",
-        "damage": 1226,
+        "damage": 1264,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
     },
     {
         "time": 10709,
@@ -1221,9 +1633,13 @@
         "time": 10769,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 5454,
-        "crit": false,
-        "dh": false
+        "damage": 8300,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "cleric_stance",
+            "bard_aura"
+        ]
     },
     {
         "time": 10944,
@@ -1239,17 +1655,24 @@
         "time": 10950,
         "event": "DOT Tick",
         "name": "combust_ii",
-        "damage": 1251,
+        "damage": 1264,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
     },
     {
         "time": 11004,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 5343,
+        "damage": 5732,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "cleric_stance",
+            "bard_aura"
+        ]
     },
     {
         "time": 11179,
@@ -1265,17 +1688,23 @@
         "time": 11239,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 5567,
+        "damage": 5514,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
     },
     {
         "time": 11250,
         "event": "DOT Tick",
         "name": "combust_ii",
-        "damage": 1226,
+        "damage": 1315,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
     },
     {
         "time": 11414,
@@ -1291,17 +1720,23 @@
         "time": 11474,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 6892,
+        "damage": 5461,
         "crit": false,
-        "dh": true
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
     },
     {
         "time": 11550,
         "event": "DOT Tick",
         "name": "combust_ii",
-        "damage": 1811,
-        "crit": true,
-        "dh": false
+        "damage": 1226,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
     },
     {
         "time": 11649,
@@ -1317,17 +1752,23 @@
         "time": 11709,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 7441,
-        "crit": true,
-        "dh": false
+        "damage": 5036,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
     },
     {
         "time": 11850,
         "event": "DOT Tick",
         "name": "combust_ii",
-        "damage": 1226,
+        "damage": 1213,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
     },
     {
         "time": 11884,
@@ -1343,9 +1784,12 @@
         "time": 11944,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 5195,
+        "damage": 5567,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
     },
     {
         "time": 12100,
@@ -1367,17 +1811,23 @@
         "time": 12150,
         "event": "DOT Tick",
         "name": "combust_ii",
-        "damage": 1774,
-        "crit": true,
-        "dh": false
+        "damage": 1213,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
     },
     {
         "time": 12179,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 5567,
+        "damage": 5195,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
     },
     {
         "time": 12200,
@@ -1405,24 +1855,41 @@
         "time": 12414,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 5879,
+        "damage": 6185,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "bard_aura",
+            "contagion",
+            "hypercharge"
+        ]
     },
     {
         "time": 12421,
         "event": "DOT Apply",
         "name": "Combust II",
-        "base_damage": 1461,
-        "duration": 3000
+        "base_damage": 1548.66,
+        "duration": 3000,
+        "buff": [
+            "dragon_sight",
+            "bard_aura",
+            "contagion",
+            "hypercharge"
+        ]
     },
     {
         "time": 12450,
         "event": "DOT Tick",
         "name": "combust_ii",
-        "damage": 1548,
-        "crit": false,
-        "dh": false
+        "damage": 2332,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "dragon_sight",
+            "bard_aura",
+            "contagion",
+            "hypercharge"
+        ]
     },
     {
         "time": 12589,
@@ -1438,9 +1905,15 @@
         "time": 12750,
         "event": "DOT Tick",
         "name": "combust_ii",
-        "damage": 2264,
-        "crit": true,
-        "dh": false
+        "damage": 1548,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "dragon_sight",
+            "bard_aura",
+            "contagion",
+            "hypercharge"
+        ]
     },
     {
         "time": 12824,
@@ -1456,9 +1929,15 @@
         "time": 12884,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 6750,
+        "damage": 6493,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "dragon_sight",
+            "bard_aura",
+            "contagion",
+            "hypercharge"
+        ]
     },
     {
         "time": 12900,
@@ -1470,9 +1949,15 @@
         "time": 13050,
         "event": "DOT Tick",
         "name": "combust_ii",
-        "damage": 2150,
-        "crit": true,
-        "dh": false
+        "damage": 1595,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "dragon_sight",
+            "bard_aura",
+            "contagion",
+            "hypercharge"
+        ]
     },
     {
         "time": 13059,
@@ -1494,9 +1979,16 @@
         "time": 13119,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 6686,
+        "damage": 6493,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "dragon_sight",
+            "chain_strategem",
+            "bard_aura",
+            "contagion",
+            "hypercharge"
+        ]
     },
     {
         "time": 13294,
@@ -1512,17 +2004,31 @@
         "time": 13350,
         "event": "DOT Tick",
         "name": "combust_ii",
-        "damage": 1595,
-        "crit": false,
-        "dh": false
+        "damage": 2264,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "dragon_sight",
+            "bard_aura",
+            "contagion",
+            "hypercharge"
+        ]
     },
     {
         "time": 13354,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 6790,
-        "crit": false,
-        "dh": false
+        "damage": 9823,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "dragon_sight",
+            "chain_strategem",
+            "bard_aura",
+            "trick_attack",
+            "contagion",
+            "hypercharge"
+        ]
     },
     {
         "time": 13500,
@@ -1544,17 +2050,31 @@
         "time": 13589,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 7002,
+        "damage": 6931,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "dragon_sight",
+            "chain_strategem",
+            "bard_aura",
+            "trick_attack",
+            "contagion",
+            "hypercharge"
+        ]
     },
     {
         "time": 13650,
         "event": "DOT Tick",
         "name": "combust_ii",
-        "damage": 1533,
+        "damage": 1486,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "dragon_sight",
+            "bard_aura",
+            "contagion",
+            "hypercharge"
+        ]
     },
     {
         "time": 13764,
@@ -1570,17 +2090,31 @@
         "time": 13824,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 9779,
-        "crit": true,
-        "dh": false
+        "damage": 6689,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "dragon_sight",
+            "chain_strategem",
+            "bard_aura",
+            "trick_attack",
+            "hypercharge",
+            "devotion"
+        ]
     },
     {
         "time": 13950,
         "event": "DOT Tick",
         "name": "combust_ii",
-        "damage": 1471,
-        "crit": false,
-        "dh": false
+        "damage": 2218,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "dragon_sight",
+            "bard_aura",
+            "contagion",
+            "hypercharge"
+        ]
     },
     {
         "time": 13999,
@@ -1596,9 +2130,17 @@
         "time": 14059,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 9683,
+        "damage": 9108,
         "crit": true,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "dragon_sight",
+            "chain_strategem",
+            "bard_aura",
+            "trick_attack",
+            "hypercharge",
+            "devotion"
+        ]
     },
     {
         "time": 14234,
@@ -1614,17 +2156,31 @@
         "time": 14250,
         "event": "DOT Tick",
         "name": "combust_ii",
-        "damage": 1579,
+        "damage": 1548,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "dragon_sight",
+            "bard_aura",
+            "contagion",
+            "hypercharge"
+        ]
     },
     {
         "time": 14294,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 9779,
-        "crit": true,
-        "dh": false
+        "damage": 6885,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "dragon_sight",
+            "chain_strategem",
+            "bard_aura",
+            "trick_attack",
+            "hypercharge",
+            "devotion"
+        ]
     },
     {
         "time": 14469,
@@ -1640,17 +2196,29 @@
         "time": 14529,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 9496,
-        "crit": true,
-        "dh": false
+        "damage": 6183,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura",
+            "trick_attack",
+            "hypercharge",
+            "devotion"
+        ]
     },
     {
         "time": 14550,
         "event": "DOT Tick",
         "name": "combust_ii",
-        "damage": 1533,
+        "damage": 1564,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "dragon_sight",
+            "bard_aura",
+            "contagion",
+            "hypercharge"
+        ]
     },
     {
         "time": 14704,
@@ -1666,17 +2234,28 @@
         "time": 14764,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 5678,
+        "damage": 5450,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "bard_aura",
+            "hypercharge",
+            "devotion"
+        ]
     },
     {
         "time": 14850,
         "event": "DOT Tick",
         "name": "combust_ii",
-        "damage": 1595,
+        "damage": 1564,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "dragon_sight",
+            "bard_aura",
+            "contagion",
+            "hypercharge"
+        ]
     },
     {
         "time": 14939,
@@ -1692,17 +2271,28 @@
         "time": 14999,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 8633,
-        "crit": true,
-        "dh": false
+        "damage": 5734,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura",
+            "hypercharge",
+            "devotion"
+        ]
     },
     {
         "time": 15150,
         "event": "DOT Tick",
         "name": "combust_ii",
-        "damage": 1533,
+        "damage": 1579,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "dragon_sight",
+            "bard_aura",
+            "contagion",
+            "hypercharge"
+        ]
     },
     {
         "time": 15174,
@@ -1718,9 +2308,12 @@
         "time": 15234,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 7363,
-        "crit": true,
-        "dh": false
+        "damage": 5408,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
     },
     {
         "time": 15409,
@@ -1736,16 +2329,22 @@
         "time": 15469,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 5514,
+        "damage": 5248,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
     },
     {
         "time": 15476,
         "event": "DOT Apply",
         "name": "Combust II",
-        "base_damage": 1205,
-        "duration": 3000
+        "base_damage": 1277.3,
+        "duration": 3000,
+        "buff": [
+            "bard_aura"
+        ]
     },
     {
         "time": 15476,
@@ -1777,9 +2376,12 @@
         "time": 15750,
         "event": "DOT Tick",
         "name": "combust_ii",
-        "damage": 1238,
-        "crit": false,
-        "dh": false
+        "damage": 1923,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
     },
     {
         "time": 15879,
@@ -1795,17 +2397,24 @@
         "time": 15939,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 5302,
+        "damage": 5514,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "lucid_dreaming",
+            "bard_aura"
+        ]
     },
     {
         "time": 16050,
         "event": "DOT Tick",
         "name": "combust_ii",
-        "damage": 1904,
-        "crit": true,
-        "dh": false
+        "damage": 1328,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
     },
     {
         "time": 16114,
@@ -1821,9 +2430,13 @@
         "time": 16174,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 5248,
+        "damage": 5461,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "lucid_dreaming",
+            "bard_aura"
+        ]
     },
     {
         "time": 16349,
@@ -1839,17 +2452,24 @@
         "time": 16350,
         "event": "DOT Tick",
         "name": "combust_ii",
-        "damage": 1251,
+        "damage": 1277,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
     },
     {
         "time": 16409,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 5302,
+        "damage": 5355,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "lucid_dreaming",
+            "bard_aura"
+        ]
     },
     {
         "time": 16584,
@@ -1865,17 +2485,24 @@
         "time": 16644,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 5302,
+        "damage": 5195,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "lucid_dreaming",
+            "bard_aura"
+        ]
     },
     {
         "time": 16650,
         "event": "DOT Tick",
         "name": "combust_ii",
-        "damage": 1251,
+        "damage": 1277,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
     },
     {
         "time": 16819,
@@ -1891,17 +2518,24 @@
         "time": 16879,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 5408,
+        "damage": 5036,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "lucid_dreaming",
+            "bard_aura"
+        ]
     },
     {
         "time": 16950,
         "event": "DOT Tick",
         "name": "combust_ii",
-        "damage": 1290,
+        "damage": 1251,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
     },
     {
         "time": 17054,
@@ -1917,9 +2551,13 @@
         "time": 17114,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 5408,
+        "damage": 5036,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "lucid_dreaming",
+            "bard_aura"
+        ]
     },
     {
         "time": 17250,
@@ -1927,7 +2565,10 @@
         "name": "combust_ii",
         "damage": 1251,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
     },
     {
         "time": 17289,
@@ -1943,9 +2584,13 @@
         "time": 17349,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 5302,
+        "damage": 5195,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "lucid_dreaming",
+            "bard_aura"
+        ]
     },
     {
         "time": 17524,
@@ -1961,17 +2606,24 @@
         "time": 17550,
         "event": "DOT Tick",
         "name": "combust_ii",
-        "damage": 1792,
-        "crit": true,
-        "dh": false
+        "damage": 1302,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
     },
     {
         "time": 17584,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 5195,
+        "damage": 5461,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "lucid_dreaming",
+            "bard_aura"
+        ]
     },
     {
         "time": 17759,
@@ -1987,17 +2639,23 @@
         "time": 17819,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 5089,
+        "damage": 5036,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
     },
     {
         "time": 17850,
         "event": "DOT Tick",
         "name": "combust_ii",
-        "damage": 1341,
+        "damage": 1238,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
     },
     {
         "time": 17994,
@@ -2013,17 +2671,23 @@
         "time": 18054,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 5461,
+        "damage": 5195,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
     },
     {
         "time": 18150,
         "event": "DOT Tick",
         "name": "combust_ii",
-        "damage": 1328,
+        "damage": 1341,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
     },
     {
         "time": 18200,
@@ -2045,9 +2709,12 @@
         "time": 18289,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 5408,
+        "damage": 5355,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
     },
     {
         "time": 18300,
@@ -2071,9 +2738,12 @@
         "time": 18450,
         "event": "DOT Tick",
         "name": "combust_ii",
-        "damage": 1277,
+        "damage": 1251,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
     },
     {
         "time": 18464,
@@ -2089,16 +2759,30 @@
         "time": 18524,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 5946,
-        "crit": false,
-        "dh": false
+        "damage": 11087,
+        "crit": true,
+        "dh": true,
+        "buff": [
+            "battle_litany",
+            "battle_voice",
+            "foe_requiem",
+            "bard_aura",
+            "contagion"
+        ]
     },
     {
         "time": 18531,
         "event": "DOT Apply",
         "name": "Combust II",
-        "base_damage": 1365,
-        "duration": 3000
+        "base_damage": 1446.9,
+        "duration": 3000,
+        "buff": [
+            "battle_litany",
+            "battle_voice",
+            "foe_requiem",
+            "bard_aura",
+            "contagion"
+        ]
     },
     {
         "time": 18531,
@@ -2130,9 +2814,16 @@
         "time": 18750,
         "event": "DOT Tick",
         "name": "combust_ii",
-        "damage": 1389,
+        "damage": 1417,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "battle_litany",
+            "battle_voice",
+            "foe_requiem",
+            "bard_aura",
+            "contagion"
+        ]
     },
     {
         "time": 18934,
@@ -2148,17 +2839,32 @@
         "time": 18994,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 6054,
-        "crit": false,
-        "dh": false
+        "damage": 9220,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "cleric_stance",
+            "battle_litany",
+            "battle_voice",
+            "foe_requiem",
+            "bard_aura",
+            "contagion"
+        ]
     },
     {
         "time": 19050,
         "event": "DOT Tick",
         "name": "combust_ii",
-        "damage": 2136,
-        "crit": true,
-        "dh": false
+        "damage": 1403,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "battle_litany",
+            "battle_voice",
+            "foe_requiem",
+            "bard_aura",
+            "contagion"
+        ]
     },
     {
         "time": 19100,
@@ -2180,17 +2886,33 @@
         "time": 19229,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 12932,
-        "crit": true,
-        "dh": true
+        "damage": 7076,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "cleric_stance",
+            "battle_litany",
+            "battle_voice",
+            "foe_requiem",
+            "bard_aura",
+            "trick_attack",
+            "contagion"
+        ]
     },
     {
         "time": 19350,
         "event": "DOT Tick",
         "name": "combust_ii",
-        "damage": 1808,
-        "crit": false,
-        "dh": true
+        "damage": 2136,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "battle_litany",
+            "battle_voice",
+            "foe_requiem",
+            "bard_aura",
+            "contagion"
+        ]
     },
     {
         "time": 19404,
@@ -2206,9 +2928,18 @@
         "time": 19464,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 6729,
-        "crit": false,
-        "dh": false
+        "damage": 12172,
+        "crit": true,
+        "dh": true,
+        "buff": [
+            "cleric_stance",
+            "battle_litany",
+            "battle_voice",
+            "foe_requiem",
+            "bard_aura",
+            "trick_attack",
+            "contagion"
+        ]
     },
     {
         "time": 19639,
@@ -2224,17 +2955,33 @@
         "time": 19650,
         "event": "DOT Tick",
         "name": "combust_ii",
-        "damage": 2221,
-        "crit": true,
-        "dh": false
+        "damage": 1374,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "battle_litany",
+            "battle_voice",
+            "foe_requiem",
+            "bard_aura",
+            "contagion"
+        ]
     },
     {
         "time": 19699,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 7076,
-        "crit": false,
-        "dh": false
+        "damage": 10650,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "cleric_stance",
+            "battle_litany",
+            "battle_voice",
+            "foe_requiem",
+            "bard_aura",
+            "trick_attack",
+            "contagion"
+        ]
     },
     {
         "time": 19874,
@@ -2250,17 +2997,32 @@
         "time": 19934,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 6307,
-        "crit": false,
-        "dh": false
+        "damage": 8852,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "cleric_stance",
+            "battle_litany",
+            "battle_voice",
+            "foe_requiem",
+            "bard_aura",
+            "trick_attack"
+        ]
     },
     {
         "time": 19950,
         "event": "DOT Tick",
         "name": "combust_ii",
-        "damage": 1862,
+        "damage": 1754,
         "crit": false,
-        "dh": true
+        "dh": true,
+        "buff": [
+            "battle_litany",
+            "battle_voice",
+            "foe_requiem",
+            "bard_aura",
+            "contagion"
+        ]
     },
     {
         "time": 20109,
@@ -2276,17 +3038,32 @@
         "time": 20169,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 9497,
-        "crit": true,
-        "dh": false
+        "damage": 6117,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "cleric_stance",
+            "battle_litany",
+            "battle_voice",
+            "foe_requiem",
+            "bard_aura",
+            "trick_attack"
+        ]
     },
     {
         "time": 20250,
         "event": "DOT Tick",
         "name": "combust_ii",
-        "damage": 2115,
-        "crit": true,
-        "dh": false
+        "damage": 1403,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "battle_litany",
+            "battle_voice",
+            "foe_requiem",
+            "bard_aura",
+            "contagion"
+        ]
     },
     {
         "time": 20344,
@@ -2302,17 +3079,31 @@
         "time": 20404,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 6187,
+        "damage": 6307,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "battle_litany",
+            "battle_voice",
+            "foe_requiem",
+            "bard_aura",
+            "trick_attack"
+        ]
     },
     {
         "time": 20550,
         "event": "DOT Tick",
         "name": "combust_ii",
-        "damage": 1374,
+        "damage": 1403,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "battle_litany",
+            "battle_voice",
+            "foe_requiem",
+            "bard_aura",
+            "contagion"
+        ]
     },
     {
         "time": 20579,
@@ -2328,9 +3119,14 @@
         "time": 20639,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 6007,
+        "damage": 6127,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "foe_requiem",
+            "bard_aura",
+            "trick_attack"
+        ]
     },
     {
         "time": 20814,
@@ -2346,9 +3142,16 @@
         "time": 20850,
         "event": "DOT Tick",
         "name": "combust_ii",
-        "damage": 1446,
+        "damage": 1432,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "battle_litany",
+            "battle_voice",
+            "foe_requiem",
+            "bard_aura",
+            "contagion"
+        ]
     },
     {
         "time": 20874,
@@ -2356,7 +3159,11 @@
         "name": "Malefic III",
         "damage": 5624,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "foe_requiem",
+            "bard_aura"
+        ]
     },
     {
         "time": 21049,
@@ -2372,17 +3179,28 @@
         "time": 21109,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 5734,
+        "damage": 5679,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "foe_requiem",
+            "bard_aura"
+        ]
     },
     {
         "time": 21150,
         "event": "DOT Tick",
         "name": "combust_ii",
-        "damage": 1446,
-        "crit": false,
-        "dh": false
+        "damage": 2199,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "battle_litany",
+            "battle_voice",
+            "foe_requiem",
+            "bard_aura",
+            "contagion"
+        ]
     },
     {
         "time": 21284,
@@ -2398,17 +3216,28 @@
         "time": 21344,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 5351,
+        "damage": 5297,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "foe_requiem",
+            "bard_aura"
+        ]
     },
     {
         "time": 21450,
         "event": "DOT Tick",
         "name": "combust_ii",
-        "damage": 1519,
+        "damage": 1403,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "battle_litany",
+            "battle_voice",
+            "foe_requiem",
+            "bard_aura",
+            "contagion"
+        ]
     },
     {
         "time": 21519,
@@ -2424,24 +3253,36 @@
         "time": 21579,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 5624,
+        "damage": 5570,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "foe_requiem",
+            "bard_aura"
+        ]
     },
     {
         "time": 21586,
         "event": "DOT Apply",
         "name": "Combust II",
-        "base_damage": 1240,
-        "duration": 3000
+        "base_damage": 1314.4,
+        "duration": 3000,
+        "buff": [
+            "foe_requiem",
+            "bard_aura"
+        ]
     },
     {
         "time": 21750,
         "event": "DOT Tick",
         "name": "combust_ii",
-        "damage": 1248,
+        "damage": 1314,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "foe_requiem",
+            "bard_aura"
+        ]
     },
     {
         "time": 21754,
@@ -2467,17 +3308,24 @@
         "time": 22049,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 7363,
-        "crit": true,
-        "dh": false
+        "damage": 5142,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
     },
     {
         "time": 22050,
         "event": "DOT Tick",
         "name": "combust_ii",
-        "damage": 1288,
+        "damage": 1301,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "foe_requiem",
+            "bard_aura"
+        ]
     },
     {
         "time": 22224,
@@ -2493,17 +3341,24 @@
         "time": 22284,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 5461,
+        "damage": 5514,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
     },
     {
         "time": 22350,
         "event": "DOT Tick",
         "name": "combust_ii",
-        "damage": 1366,
-        "crit": false,
-        "dh": false
+        "damage": 1940,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "foe_requiem",
+            "bard_aura"
+        ]
     },
     {
         "time": 22459,
@@ -2519,17 +3374,24 @@
         "time": 22519,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 5248,
+        "damage": 5302,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
     },
     {
         "time": 22650,
         "event": "DOT Tick",
         "name": "combust_ii",
-        "damage": 1327,
+        "damage": 1353,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "foe_requiem",
+            "bard_aura"
+        ]
     },
     {
         "time": 22694,
@@ -2545,9 +3407,12 @@
         "time": 22754,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 5195,
+        "damage": 5142,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
     },
     {
         "time": 22929,
@@ -2563,17 +3428,24 @@
         "time": 22950,
         "event": "DOT Tick",
         "name": "combust_ii",
-        "damage": 1979,
-        "crit": true,
-        "dh": false
+        "damage": 1301,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "foe_requiem",
+            "bard_aura"
+        ]
     },
     {
         "time": 22989,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 5514,
+        "damage": 5142,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
     },
     {
         "time": 23164,
@@ -2589,17 +3461,24 @@
         "time": 23224,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 5248,
-        "crit": false,
-        "dh": false
+        "damage": 7363,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
     },
     {
         "time": 23250,
         "event": "DOT Tick",
         "name": "combust_ii",
-        "damage": 1314,
+        "damage": 1366,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "foe_requiem",
+            "bard_aura"
+        ]
     },
     {
         "time": 23399,
@@ -2615,17 +3494,24 @@
         "time": 23459,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 8139,
-        "crit": true,
-        "dh": false
+        "damage": 5302,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
     },
     {
         "time": 23550,
         "event": "DOT Tick",
         "name": "combust_ii",
-        "damage": 1825,
-        "crit": true,
-        "dh": false
+        "damage": 1274,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "foe_requiem",
+            "bard_aura"
+        ]
     },
     {
         "time": 23634,
@@ -2641,17 +3527,24 @@
         "time": 23694,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 5514,
+        "damage": 6958,
         "crit": false,
-        "dh": false
+        "dh": true,
+        "buff": [
+            "bard_aura"
+        ]
     },
     {
         "time": 23850,
         "event": "DOT Tick",
         "name": "combust_ii",
-        "damage": 1327,
+        "damage": 1288,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "foe_requiem",
+            "bard_aura"
+        ]
     },
     {
         "time": 23869,
@@ -2667,8 +3560,11 @@
         "time": 23929,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 5408,
+        "damage": 5248,
         "crit": false,
-        "dh": false
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
     }
 ]

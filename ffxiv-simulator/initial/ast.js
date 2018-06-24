@@ -10,7 +10,8 @@
         // DOT池初始化
         data.dot.combust_ii = {
             'time': 0,
-            'damage': 0
+            'damage': 0,
+            'buff': []
         };
 
         // buff初始化

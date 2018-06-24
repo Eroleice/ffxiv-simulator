@@ -50,6 +50,9 @@
     <Compile Include="skill\ast.js">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="skill\whm.js">
+      <SubType>Code</SubType>
+    </Compile>
     <Content Include="package.json" />
     <Content Include="README.md" />
   </ItemGroup>

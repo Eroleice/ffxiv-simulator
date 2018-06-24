@@ -125,7 +125,7 @@ class effect {
      * */
     malefic_iii() {
         var potency = 220;
-        var damage = calculate.damageCalculate(this,potency);
+        var damage = calculate.damageCalculate(this, potency);
         this.battle.damageQue.push({
             'time': 50 + 60,
             'name': 'Malefic III',
@@ -137,7 +137,7 @@ class effect {
     }
     combust_ii() {
         var potency = 50;
-        var damage = calculate.dotBaseDamageCalculate(this,potency);
+        var damage = calculate.dotBaseDamageCalculate(this, potency);
         this.player.dot.combust_ii.time = 3000;
         this.player.dot.combust_ii.damage = damage;
         this.player.dot.combust_ii.buff = this.whatBuff();
