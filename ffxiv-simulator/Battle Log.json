@@ -2,38 +2,6 @@
     {
         "time": 0,
         "event": "Cast",
-        "name": "Cleric Stance",
-        "duration": 0,
-        "resource": {
-            "mp": 20000,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 0,
-        "event": "Buff Apply",
-        "name": "Cleric Stance",
-        "duration": 1500
-    },
-    {
-        "time": 0,
-        "event": "Cast",
-        "name": "Presence of Mind",
-        "duration": 0,
-        "resource": {
-            "mp": 20000,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 0,
-        "event": "Buff Apply",
-        "name": "Presence of Mind",
-        "duration": 1500
-    },
-    {
-        "time": 0,
-        "event": "Cast",
         "name": "Potion",
         "duration": 0,
         "resource": {
@@ -50,49 +18,73 @@
     {
         "time": 0,
         "event": "Cast",
-        "name": "Aero III",
-        "duration": 188,
+        "name": "Cleric Stance",
+        "duration": 0,
         "resource": {
-            "mp": 19280,
+            "mp": 20000,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 0,
+        "event": "Buff Apply",
+        "name": "Cleric Stance",
+        "duration": 1500
+    },
+    {
+        "time": 0,
+        "event": "Cast",
+        "name": "Miasma",
+        "duration": 235,
+        "resource": {
+            "mp": 19400,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 0,
+        "event": "Cast",
+        "name": "Bio II",
+        "duration": 0,
+        "resource": {
+            "mp": 18680,
             "tp": 1000
         }
     },
     {
         "time": 0,
         "event": "DOT Apply",
-        "name": "Aero III",
-        "base_damage": 1139.5,
-        "duration": 2400,
+        "name": "Bio II",
+        "base_damage": 985.8000000000001,
+        "duration": 1800,
         "buff": [
-            "presence_of_mind",
             "potion",
             "cleric_stance",
             "bard_aura"
         ]
     },
     {
-        "time": 50,
-        "event": "Damage",
-        "name": "Aero III",
-        "damage": 1416,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "presence_of_mind",
-            "potion",
-            "cleric_stance",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 50,
+        "time": 0,
         "event": "Cast",
-        "name": "Aero II",
+        "name": "Energy Drain",
         "duration": 0,
         "resource": {
             "mp": 18680,
             "tp": 1000
         }
+    },
+    {
+        "time": 68,
+        "event": "Damage",
+        "name": "Energy Drain",
+        "damage": 5861,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "potion",
+            "cleric_stance",
+            "bard_aura"
+        ]
     },
     {
         "time": 100,
@@ -101,87 +93,27 @@
         "duration": 2800
     },
     {
-        "time": 117,
-        "event": "Cast",
-        "name": "Assize",
-        "duration": 0,
-        "resource": {
-            "mp": 18680,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 118,
-        "event": "Damage",
-        "name": "Aero II",
-        "damage": 1374,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "presence_of_mind",
-            "potion",
-            "cleric_stance",
-            "bard_aura",
-            "hypercharge"
-        ]
-    },
-    {
-        "time": 118,
-        "event": "DOT Apply",
-        "name": "Aero II",
-        "base_damage": 1502.02,
-        "duration": 1800,
-        "buff": [
-            "presence_of_mind",
-            "potion",
-            "cleric_stance",
-            "bard_aura",
-            "hypercharge"
-        ]
-    },
-    {
         "time": 150,
         "event": "DOT Tick",
-        "name": "aero_ii",
-        "damage": 1562,
+        "name": "bio_ii",
+        "damage": 985,
         "crit": false,
         "dh": false,
         "buff": [
-            "presence_of_mind",
-            "potion",
-            "cleric_stance",
-            "bard_aura",
-            "hypercharge"
-        ]
-    },
-    {
-        "time": 150,
-        "event": "DOT Tick",
-        "name": "aero_iii",
-        "damage": 1093,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "presence_of_mind",
             "potion",
             "cleric_stance",
             "bard_aura"
         ]
     },
     {
-        "time": 185,
-        "event": "Damage",
-        "name": "Assize",
-        "damage": 8593,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "presence_of_mind",
-            "potion",
-            "cleric_stance",
-            "bard_aura",
-            "hypercharge"
-        ]
+        "time": 168,
+        "event": "Cast",
+        "name": "Miasma II",
+        "duration": 0,
+        "resource": {
+            "mp": 18320,
+            "tp": 1000
+        }
     },
     {
         "time": 200,
@@ -190,14 +122,43 @@
         "duration": 1500
     },
     {
-        "time": 238,
+        "time": 235,
         "event": "Cast",
-        "name": "Stone IV",
-        "duration": 188,
+        "name": "Energy Drain",
+        "duration": 0,
         "resource": {
-            "mp": 19400,
+            "mp": 18320,
             "tp": 1000
         }
+    },
+    {
+        "time": 236,
+        "event": "Damage",
+        "name": "Miasma II",
+        "damage": 3026,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "potion",
+            "cleric_stance",
+            "bard_aura",
+            "contagion",
+            "hypercharge"
+        ]
+    },
+    {
+        "time": 236,
+        "event": "DOT Apply",
+        "name": "Miasma II",
+        "base_damage": 824.6800000000001,
+        "duration": 1200,
+        "buff": [
+            "potion",
+            "cleric_stance",
+            "bard_aura",
+            "contagion",
+            "hypercharge"
+        ]
     },
     {
         "time": 300,
@@ -212,6 +173,23 @@
         "duration": 3300
     },
     {
+        "time": 303,
+        "event": "Damage",
+        "name": "Energy Drain",
+        "damage": 5011,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "potion",
+            "cleric_stance",
+            "battle_litany",
+            "foe_requiem",
+            "bard_aura",
+            "contagion",
+            "hypercharge"
+        ]
+    },
+    {
         "time": 400,
         "event": "Party Buff Apply",
         "name": "Dragon Sight",
@@ -224,210 +202,306 @@
         "duration": 2000
     },
     {
-        "time": 426,
+        "time": 403,
         "event": "Cast",
-        "name": "Stone IV",
-        "duration": 188,
+        "name": "Miasma II",
+        "duration": 0,
         "resource": {
-            "mp": 18800,
+            "mp": 17840,
             "tp": 1000
         }
     },
     {
         "time": 450,
         "event": "DOT Tick",
-        "name": "aero_ii",
-        "damage": 1839,
+        "name": "bio_ii",
+        "damage": 946,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "potion",
+            "cleric_stance",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 450,
+        "event": "DOT Tick",
+        "name": "miasma_ii",
+        "damage": 849,
+        "crit": false,
+        "dh": false,
+        "buff": []
+    },
+    {
+        "time": 470,
+        "event": "Cast",
+        "name": "Chain Strategem",
+        "duration": 0,
+        "resource": {
+            "mp": 18240,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 471,
+        "event": "Damage",
+        "name": "Miasma II",
+        "damage": 3339,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "potion",
+            "cleric_stance",
+            "battle_litany",
+            "dragon_sight",
+            "battle_voice",
+            "foe_requiem",
+            "bard_aura",
+            "contagion",
+            "hypercharge"
+        ]
+    },
+    {
+        "time": 471,
+        "event": "DOT Apply",
+        "name": "Miasma II",
+        "base_damage": 891.46,
+        "duration": 1200,
+        "buff": [
+            "potion",
+            "cleric_stance",
+            "battle_litany",
+            "dragon_sight",
+            "battle_voice",
+            "foe_requiem",
+            "bard_aura",
+            "contagion",
+            "hypercharge"
+        ]
+    },
+    {
+        "time": 537,
+        "event": "Buff Apply",
+        "name": "Chain Strategem",
+        "duration": 1500
+    },
+    {
+        "time": 537,
+        "event": "Cast",
+        "name": "Shadow Flare",
+        "duration": 0,
+        "resource": {
+            "mp": 18240,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 604,
+        "event": "DOT Apply",
+        "name": "Shadow Flare",
+        "base_damage": 1787.16,
+        "duration": 1500,
+        "buff": [
+            "chain_strategem",
+            "potion",
+            "cleric_stance",
+            "battle_litany",
+            "dragon_sight",
+            "battle_voice",
+            "foe_requiem",
+            "bard_aura",
+            "contagion",
+            "hypercharge"
+        ]
+    },
+    {
+        "time": 605,
+        "event": "Cast",
+        "name": "Energy Drain",
+        "duration": 0,
+        "resource": {
+            "mp": 18240,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 672,
+        "event": "Cast",
+        "name": "Aether Flow",
+        "duration": 0,
+        "resource": {
+            "mp": 19440,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 673,
+        "event": "Damage",
+        "name": "Energy Drain",
+        "damage": 4806,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "chain_strategem",
+            "potion",
+            "cleric_stance",
+            "battle_litany",
+            "dragon_sight",
+            "battle_voice",
+            "foe_requiem",
+            "bard_aura",
+            "contagion",
+            "hypercharge"
+        ]
+    },
+    {
+        "time": 739,
+        "event": "Cast",
+        "name": "Broil II",
+        "duration": 235,
+        "resource": {
+            "mp": 19280,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 750,
+        "event": "DOT Tick",
+        "name": "bio_ii",
+        "damage": 995,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "potion",
+            "cleric_stance",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 750,
+        "event": "DOT Tick",
+        "name": "miasma_ii",
+        "damage": 873,
+        "crit": false,
+        "dh": false,
+        "buff": []
+    },
+    {
+        "time": 750,
+        "event": "DOT Tick",
+        "name": "shadow_flare",
+        "damage": 1822,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "chain_strategem",
+            "potion",
+            "cleric_stance",
+            "battle_litany",
+            "dragon_sight",
+            "battle_voice",
+            "foe_requiem",
+            "bard_aura",
+            "contagion",
+            "hypercharge"
+        ]
+    },
+    {
+        "time": 974,
+        "event": "Damage",
+        "name": "Broil II",
+        "damage": 9591,
         "crit": false,
         "dh": true,
         "buff": [
-            "presence_of_mind",
-            "potion",
-            "cleric_stance",
-            "bard_aura",
-            "hypercharge"
-        ]
-    },
-    {
-        "time": 450,
-        "event": "DOT Tick",
-        "name": "aero_iii",
-        "damage": 1162,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "presence_of_mind",
-            "potion",
-            "cleric_stance",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 493,
-        "event": "Damage",
-        "name": "Stone IV",
-        "damage": 7951,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "presence_of_mind",
-            "potion",
-            "cleric_stance",
-            "battle_litany",
-            "foe_requiem",
-            "bard_aura",
-            "contagion",
-            "hypercharge"
-        ]
-    },
-    {
-        "time": 614,
-        "event": "Cast",
-        "name": "Stone IV",
-        "duration": 188,
-        "resource": {
-            "mp": 18600,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 681,
-        "event": "Damage",
-        "name": "Stone IV",
-        "damage": 12823,
-        "crit": true,
-        "dh": false,
-        "buff": [
-            "presence_of_mind",
-            "potion",
-            "cleric_stance",
-            "battle_litany",
-            "dragon_sight",
-            "battle_voice",
-            "foe_requiem",
-            "bard_aura",
-            "contagion",
-            "hypercharge"
-        ]
-    },
-    {
-        "time": 750,
-        "event": "DOT Tick",
-        "name": "aero_ii",
-        "damage": 2239,
-        "crit": true,
-        "dh": false,
-        "buff": [
-            "presence_of_mind",
-            "potion",
-            "cleric_stance",
-            "bard_aura",
-            "hypercharge"
-        ]
-    },
-    {
-        "time": 750,
-        "event": "DOT Tick",
-        "name": "aero_iii",
-        "damage": 1749,
-        "crit": true,
-        "dh": false,
-        "buff": [
-            "presence_of_mind",
-            "potion",
-            "cleric_stance",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 802,
-        "event": "Cast",
-        "name": "Stone IV",
-        "duration": 188,
-        "resource": {
-            "mp": 18400,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 869,
-        "event": "Damage",
-        "name": "Stone IV",
-        "damage": 8012,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "presence_of_mind",
-            "potion",
-            "cleric_stance",
-            "battle_litany",
-            "dragon_sight",
-            "battle_voice",
-            "foe_requiem",
-            "bard_aura",
-            "contagion",
-            "hypercharge"
-        ]
-    },
-    {
-        "time": 900,
-        "event": "Party Buff Apply",
-        "name": "Chain Strategem",
-        "duration": 2000
-    },
-    {
-        "time": 990,
-        "event": "Cast",
-        "name": "Stone IV",
-        "duration": 188,
-        "resource": {
-            "mp": 17800,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 1050,
-        "event": "DOT Tick",
-        "name": "aero_ii",
-        "damage": 1562,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "presence_of_mind",
-            "potion",
-            "cleric_stance",
-            "bard_aura",
-            "hypercharge"
-        ]
-    },
-    {
-        "time": 1050,
-        "event": "DOT Tick",
-        "name": "aero_iii",
-        "damage": 1139,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "presence_of_mind",
-            "potion",
-            "cleric_stance",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 1057,
-        "event": "Damage",
-        "name": "Stone IV",
-        "damage": 8855,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "presence_of_mind",
-            "potion",
-            "cleric_stance",
-            "battle_litany",
-            "dragon_sight",
             "chain_strategem",
+            "potion",
+            "cleric_stance",
+            "battle_litany",
+            "dragon_sight",
+            "battle_voice",
+            "foe_requiem",
+            "bard_aura",
+            "contagion",
+            "hypercharge"
+        ]
+    },
+    {
+        "time": 974,
+        "event": "Cast",
+        "name": "Energy Drain",
+        "duration": 0,
+        "resource": {
+            "mp": 19680,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 1041,
+        "event": "Cast",
+        "name": "Broil II",
+        "duration": 235,
+        "resource": {
+            "mp": 19280,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 1042,
+        "event": "Damage",
+        "name": "Energy Drain",
+        "damage": 7396,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "chain_strategem",
+            "potion",
+            "cleric_stance",
+            "battle_litany",
+            "dragon_sight",
+            "battle_voice",
+            "foe_requiem",
+            "bard_aura",
+            "contagion",
+            "hypercharge"
+        ]
+    },
+    {
+        "time": 1050,
+        "event": "DOT Tick",
+        "name": "bio_ii",
+        "damage": 975,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "potion",
+            "cleric_stance",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 1050,
+        "event": "DOT Tick",
+        "name": "miasma_ii",
+        "damage": 1661,
+        "crit": true,
+        "dh": true,
+        "buff": []
+    },
+    {
+        "time": 1050,
+        "event": "DOT Tick",
+        "name": "shadow_flare",
+        "damage": 3429,
+        "crit": true,
+        "dh": true,
+        "buff": [
+            "chain_strategem",
+            "potion",
+            "cleric_stance",
+            "battle_litany",
+            "dragon_sight",
             "battle_voice",
             "foe_requiem",
             "bard_aura",
@@ -442,29 +516,17 @@
         "duration": 1500
     },
     {
-        "time": 1178,
-        "event": "Cast",
-        "name": "Stone IV",
-        "duration": 188,
-        "resource": {
-            "mp": 17600,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 1245,
+        "time": 1276,
         "event": "Damage",
-        "name": "Stone IV",
-        "damage": 9092,
+        "name": "Broil II",
+        "damage": 7796,
         "crit": false,
         "dh": false,
         "buff": [
-            "presence_of_mind",
+            "chain_strategem",
             "potion",
-            "cleric_stance",
             "battle_litany",
             "dragon_sight",
-            "chain_strategem",
             "battle_voice",
             "foe_requiem",
             "bard_aura",
@@ -474,60 +536,53 @@
         ]
     },
     {
-        "time": 1350,
-        "event": "DOT Tick",
-        "name": "aero_ii",
-        "damage": 1547,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "presence_of_mind",
-            "potion",
-            "cleric_stance",
-            "bard_aura",
-            "hypercharge"
-        ]
+        "time": 1276,
+        "event": "Cast",
+        "name": "Broil II",
+        "duration": 235,
+        "resource": {
+            "mp": 18960,
+            "tp": 1000
+        }
     },
     {
         "time": 1350,
         "event": "DOT Tick",
-        "name": "aero_iii",
-        "damage": 1665,
+        "name": "bio_ii",
+        "damage": 1470,
         "crit": true,
         "dh": false,
         "buff": [
-            "presence_of_mind",
             "potion",
             "cleric_stance",
             "bard_aura"
         ]
     },
     {
-        "time": 1366,
-        "event": "Cast",
-        "name": "Stone IV",
-        "duration": 235,
-        "resource": {
-            "mp": 17400,
-            "tp": 1000
-        }
+        "time": 1350,
+        "event": "DOT Tick",
+        "name": "miasma_ii",
+        "damage": 1368,
+        "crit": true,
+        "dh": false,
+        "buff": []
     },
     {
-        "time": 1433,
-        "event": "Damage",
-        "name": "Stone IV",
-        "damage": 8394,
+        "time": 1350,
+        "event": "DOT Tick",
+        "name": "shadow_flare",
+        "damage": 1769,
         "crit": false,
         "dh": false,
         "buff": [
+            "chain_strategem",
             "potion",
+            "cleric_stance",
             "battle_litany",
             "dragon_sight",
-            "chain_strategem",
             "battle_voice",
             "foe_requiem",
             "bard_aura",
-            "trick_attack",
             "contagion",
             "hypercharge"
         ]
@@ -539,56 +594,57 @@
         "duration": 1500
     },
     {
-        "time": 1601,
-        "event": "Cast",
-        "name": "Stone IV",
-        "duration": 235,
-        "resource": {
-            "mp": 16800,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 1650,
-        "event": "DOT Tick",
-        "name": "aero_ii",
-        "damage": 2195,
-        "crit": true,
+        "time": 1511,
+        "event": "Damage",
+        "name": "Broil II",
+        "damage": 8527,
+        "crit": false,
         "dh": false,
         "buff": [
-            "presence_of_mind",
+            "chain_strategem",
             "potion",
-            "cleric_stance",
+            "battle_litany",
+            "dragon_sight",
+            "battle_voice",
+            "foe_requiem",
             "bard_aura",
+            "trick_attack",
+            "contagion",
             "hypercharge"
         ]
     },
     {
-        "time": 1650,
-        "event": "DOT Tick",
-        "name": "aero_iii",
-        "damage": 1599,
-        "crit": true,
-        "dh": false,
-        "buff": [
-            "presence_of_mind",
-            "potion",
-            "cleric_stance",
-            "bard_aura"
-        ]
+        "time": 1511,
+        "event": "Cast",
+        "name": "Miasma II",
+        "duration": 0,
+        "resource": {
+            "mp": 17680,
+            "tp": 1000
+        }
     },
     {
-        "time": 1668,
+        "time": 1578,
+        "event": "Cast",
+        "name": "Energy Drain",
+        "duration": 0,
+        "resource": {
+            "mp": 17680,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 1579,
         "event": "Damage",
-        "name": "Stone IV",
-        "damage": 12516,
-        "crit": true,
+        "name": "Miasma II",
+        "damage": 3748,
+        "crit": false,
         "dh": false,
         "buff": [
+            "chain_strategem",
             "potion",
             "battle_litany",
             "dragon_sight",
-            "chain_strategem",
             "battle_voice",
             "foe_requiem",
             "bard_aura",
@@ -599,361 +655,422 @@
         ]
     },
     {
-        "time": 1836,
-        "event": "Cast",
-        "name": "Aero II",
-        "duration": 0,
-        "resource": {
-            "mp": 16600,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 1903,
-        "event": "Damage",
-        "name": "Stone IV",
-        "damage": 11379,
-        "crit": true,
-        "dh": false,
-        "buff": [
-            "potion",
-            "battle_litany",
-            "dragon_sight",
-            "chain_strategem",
-            "battle_voice",
-            "foe_requiem",
-            "bard_aura",
-            "trick_attack",
-            "hypercharge",
-            "devotion"
-        ]
-    },
-    {
-        "time": 1903,
-        "event": "Cast",
-        "name": "Lucid Dreaming",
-        "duration": 0,
-        "resource": {
-            "mp": 16600,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 1904,
-        "event": "Damage",
-        "name": "Aero II",
-        "damage": 2442,
-        "crit": true,
-        "dh": false,
-        "buff": [
-            "potion",
-            "battle_litany",
-            "dragon_sight",
-            "chain_strategem",
-            "battle_voice",
-            "foe_requiem",
-            "bard_aura",
-            "trick_attack",
-            "hypercharge",
-            "devotion"
-        ]
-    },
-    {
-        "time": 1904,
+        "time": 1579,
         "event": "DOT Apply",
-        "name": "Aero II",
-        "base_damage": 1736.2800000000002,
-        "duration": 1800,
+        "name": "Miasma II",
+        "base_damage": 952.94,
+        "duration": 1200,
         "buff": [
+            "chain_strategem",
             "potion",
             "battle_litany",
             "dragon_sight",
-            "chain_strategem",
             "battle_voice",
             "foe_requiem",
             "bard_aura",
             "trick_attack",
+            "contagion",
             "hypercharge",
             "devotion"
         ]
     },
     {
-        "time": 1950,
-        "event": "DOT Tick",
-        "name": "aero_ii",
-        "damage": 1666,
+        "time": 1646,
+        "event": "Damage",
+        "name": "Energy Drain",
+        "damage": 5514,
         "crit": false,
         "dh": false,
         "buff": [
+            "chain_strategem",
             "potion",
             "battle_litany",
             "dragon_sight",
-            "chain_strategem",
             "battle_voice",
             "foe_requiem",
             "bard_aura",
             "trick_attack",
+            "contagion",
             "hypercharge",
             "devotion"
         ]
     },
     {
-        "time": 1950,
+        "time": 1650,
         "event": "DOT Tick",
-        "name": "aero_iii",
-        "damage": 1715,
-        "crit": true,
-        "dh": false,
+        "name": "bio_ii",
+        "damage": 1170,
+        "crit": false,
+        "dh": true,
         "buff": [
-            "presence_of_mind",
             "potion",
             "cleric_stance",
             "bard_aura"
         ]
     },
     {
-        "time": 1970,
+        "time": 1650,
+        "event": "DOT Tick",
+        "name": "miasma_ii",
+        "damage": 1379,
+        "crit": true,
+        "dh": false,
+        "buff": []
+    },
+    {
+        "time": 1650,
+        "event": "DOT Tick",
+        "name": "shadow_flare",
+        "damage": 1858,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "chain_strategem",
+            "potion",
+            "cleric_stance",
+            "battle_litany",
+            "dragon_sight",
+            "battle_voice",
+            "foe_requiem",
+            "bard_aura",
+            "contagion",
+            "hypercharge"
+        ]
+    },
+    {
+        "time": 1746,
+        "event": "Cast",
+        "name": "Broil II",
+        "duration": 235,
+        "resource": {
+            "mp": 18560,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 1950,
+        "event": "DOT Tick",
+        "name": "bio_ii",
+        "damage": 975,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "potion",
+            "cleric_stance",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 1950,
+        "event": "DOT Tick",
+        "name": "miasma_ii",
+        "damage": 924,
+        "crit": false,
+        "dh": false,
+        "buff": []
+    },
+    {
+        "time": 1950,
+        "event": "DOT Tick",
+        "name": "shadow_flare",
+        "damage": 2508,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "chain_strategem",
+            "potion",
+            "cleric_stance",
+            "battle_litany",
+            "dragon_sight",
+            "battle_voice",
+            "foe_requiem",
+            "bard_aura",
+            "contagion",
+            "hypercharge"
+        ]
+    },
+    {
+        "time": 1981,
+        "event": "Damage",
+        "name": "Broil II",
+        "damage": 11559,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "chain_strategem",
+            "potion",
+            "battle_litany",
+            "dragon_sight",
+            "battle_voice",
+            "foe_requiem",
+            "bard_aura",
+            "trick_attack",
+            "hypercharge",
+            "devotion"
+        ]
+    },
+    {
+        "time": 1981,
+        "event": "Cast",
+        "name": "Miasma II",
+        "duration": 0,
+        "resource": {
+            "mp": 17280,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 2048,
+        "event": "Cast",
+        "name": "Energy Drain",
+        "duration": 0,
+        "resource": {
+            "mp": 17280,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 2049,
+        "event": "Damage",
+        "name": "Miasma II",
+        "damage": 4886,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "potion",
+            "battle_litany",
+            "dragon_sight",
+            "battle_voice",
+            "foe_requiem",
+            "bard_aura",
+            "trick_attack",
+            "hypercharge",
+            "devotion"
+        ]
+    },
+    {
+        "time": 2049,
+        "event": "DOT Apply",
+        "name": "Miasma II",
+        "base_damage": 866.0200000000001,
+        "duration": 1200,
+        "buff": [
+            "potion",
+            "battle_litany",
+            "dragon_sight",
+            "battle_voice",
+            "foe_requiem",
+            "bard_aura",
+            "trick_attack",
+            "hypercharge",
+            "devotion"
+        ]
+    },
+    {
+        "time": 2116,
+        "event": "Damage",
+        "name": "Energy Drain",
+        "damage": 6898,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "potion",
+            "battle_litany",
+            "dragon_sight",
+            "battle_voice",
+            "foe_requiem",
+            "bard_aura",
+            "trick_attack",
+            "hypercharge",
+            "devotion"
+        ]
+    },
+    {
+        "time": 2216,
+        "event": "Cast",
+        "name": "Broil II",
+        "duration": 235,
+        "resource": {
+            "mp": 17760,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 2250,
+        "event": "DOT Tick",
+        "name": "bio_ii",
+        "damage": 1244,
+        "crit": false,
+        "dh": true,
+        "buff": [
+            "potion",
+            "cleric_stance",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 2250,
+        "event": "DOT Tick",
+        "name": "miasma_ii",
+        "damage": 1291,
+        "crit": true,
+        "dh": false,
+        "buff": []
+    },
+    {
+        "time": 2451,
+        "event": "Damage",
+        "name": "Broil II",
+        "damage": 7243,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "potion",
+            "foe_requiem",
+            "bard_aura",
+            "trick_attack",
+            "hypercharge",
+            "devotion"
+        ]
+    },
+    {
+        "time": 2451,
+        "event": "Cast",
+        "name": "Broil II",
+        "duration": 235,
+        "resource": {
+            "mp": 17440,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 2550,
+        "event": "DOT Tick",
+        "name": "bio_ii",
+        "damage": 985,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "potion",
+            "cleric_stance",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 2550,
+        "event": "DOT Tick",
+        "name": "miasma_ii",
+        "damage": 900,
+        "crit": false,
+        "dh": false,
+        "buff": []
+    },
+    {
+        "time": 2686,
+        "event": "Damage",
+        "name": "Broil II",
+        "damage": 6057,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "foe_requiem",
+            "bard_aura",
+            "hypercharge",
+            "devotion"
+        ]
+    },
+    {
+        "time": 2686,
+        "event": "Cast",
+        "name": "Broil II",
+        "duration": 235,
+        "resource": {
+            "mp": 17120,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 2850,
+        "event": "DOT Tick",
+        "name": "bio_ii",
+        "damage": 1484,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "potion",
+            "cleric_stance",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 2850,
+        "event": "DOT Tick",
+        "name": "miasma_ii",
+        "damage": 857,
+        "crit": false,
+        "dh": false,
+        "buff": []
+    },
+    {
+        "time": 2921,
+        "event": "Damage",
+        "name": "Broil II",
+        "damage": 6302,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "foe_requiem",
+            "bard_aura",
+            "hypercharge",
+            "devotion"
+        ]
+    },
+    {
+        "time": 2921,
+        "event": "Cast",
+        "name": "Bio II",
+        "duration": 0,
+        "resource": {
+            "mp": 16800,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 2988,
+        "event": "DOT Apply",
+        "name": "Bio II",
+        "base_damage": 926.44,
+        "duration": 1800,
+        "buff": [
+            "foe_requiem",
+            "bard_aura",
+            "devotion"
+        ]
+    },
+    {
+        "time": 2988,
+        "event": "Cast",
+        "name": "Lucid Dreaming",
+        "duration": 0,
+        "resource": {
+            "mp": 16800,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 3055,
         "event": "Buff Apply",
         "name": "Lucid Dreaming",
         "duration": 2100
     },
     {
-        "time": 2071,
-        "event": "Cast",
-        "name": "Stone IV",
-        "duration": 235,
-        "resource": {
-            "mp": 16400,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 2250,
+        "time": 3150,
         "event": "DOT Tick",
-        "name": "aero_ii",
-        "damage": 1736,
+        "name": "bio_ii",
+        "damage": 935,
         "crit": false,
         "dh": false,
         "buff": [
-            "potion",
-            "battle_litany",
-            "dragon_sight",
-            "chain_strategem",
-            "battle_voice",
-            "foe_requiem",
-            "bard_aura",
-            "trick_attack",
-            "hypercharge",
-            "devotion"
-        ]
-    },
-    {
-        "time": 2250,
-        "event": "DOT Tick",
-        "name": "aero_iii",
-        "damage": 2019,
-        "crit": true,
-        "dh": true,
-        "buff": [
-            "presence_of_mind",
-            "potion",
-            "cleric_stance",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 2306,
-        "event": "Cast",
-        "name": "Aero III",
-        "duration": 235,
-        "resource": {
-            "mp": 17040,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 2373,
-        "event": "Damage",
-        "name": "Stone IV",
-        "damage": 14822,
-        "crit": true,
-        "dh": true,
-        "buff": [
-            "potion",
-            "lucid_dreaming",
-            "battle_litany",
-            "dragon_sight",
-            "chain_strategem",
-            "battle_voice",
-            "foe_requiem",
-            "bard_aura",
-            "trick_attack",
-            "hypercharge",
-            "devotion"
-        ]
-    },
-    {
-        "time": 2491,
-        "event": "DOT Apply",
-        "name": "Aero III",
-        "base_damage": 1316.52,
-        "duration": 2400,
-        "buff": [
-            "potion",
-            "lucid_dreaming",
-            "foe_requiem",
-            "bard_aura",
-            "trick_attack",
-            "hypercharge",
-            "devotion"
-        ]
-    },
-    {
-        "time": 2541,
-        "event": "Damage",
-        "name": "Aero III",
-        "damage": 1591,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "potion",
-            "lucid_dreaming",
-            "foe_requiem",
-            "bard_aura",
-            "trick_attack",
-            "hypercharge",
-            "devotion"
-        ]
-    },
-    {
-        "time": 2541,
-        "event": "Cast",
-        "name": "Stone IV",
-        "duration": 235,
-        "resource": {
-            "mp": 16440,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 2550,
-        "event": "DOT Tick",
-        "name": "aero_ii",
-        "damage": 1718,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "potion",
-            "battle_litany",
-            "dragon_sight",
-            "chain_strategem",
-            "battle_voice",
-            "foe_requiem",
-            "bard_aura",
-            "trick_attack",
-            "hypercharge",
-            "devotion"
-        ]
-    },
-    {
-        "time": 2550,
-        "event": "DOT Tick",
-        "name": "aero_iii",
-        "damage": 1303,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "potion",
-            "lucid_dreaming",
-            "foe_requiem",
-            "bard_aura",
-            "trick_attack",
-            "hypercharge",
-            "devotion"
-        ]
-    },
-    {
-        "time": 2776,
-        "event": "Cast",
-        "name": "Stone IV",
-        "duration": 235,
-        "resource": {
-            "mp": 17200,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 2843,
-        "event": "Damage",
-        "name": "Stone IV",
-        "damage": 7448,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "potion",
-            "lucid_dreaming",
-            "foe_requiem",
-            "bard_aura",
-            "hypercharge",
-            "devotion"
-        ]
-    },
-    {
-        "time": 2850,
-        "event": "DOT Tick",
-        "name": "aero_ii",
-        "damage": 1649,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "potion",
-            "battle_litany",
-            "dragon_sight",
-            "chain_strategem",
-            "battle_voice",
-            "foe_requiem",
-            "bard_aura",
-            "trick_attack",
-            "hypercharge",
-            "devotion"
-        ]
-    },
-    {
-        "time": 2850,
-        "event": "DOT Tick",
-        "name": "aero_iii",
-        "damage": 1382,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "potion",
-            "lucid_dreaming",
-            "foe_requiem",
-            "bard_aura",
-            "trick_attack",
-            "hypercharge",
-            "devotion"
-        ]
-    },
-    {
-        "time": 3011,
-        "event": "Cast",
-        "name": "Stone IV",
-        "duration": 235,
-        "resource": {
-            "mp": 17960,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 3078,
-        "event": "Damage",
-        "name": "Stone IV",
-        "damage": 6211,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "lucid_dreaming",
             "foe_requiem",
             "bard_aura",
             "devotion"
@@ -962,56 +1079,28 @@
     {
         "time": 3150,
         "event": "DOT Tick",
-        "name": "aero_ii",
-        "damage": 1805,
+        "name": "miasma_ii",
+        "damage": 831,
         "crit": false,
         "dh": false,
-        "buff": [
-            "potion",
-            "battle_litany",
-            "dragon_sight",
-            "chain_strategem",
-            "battle_voice",
-            "foe_requiem",
-            "bard_aura",
-            "trick_attack",
-            "hypercharge",
-            "devotion"
-        ]
+        "buff": []
     },
     {
-        "time": 3150,
-        "event": "DOT Tick",
-        "name": "aero_iii",
-        "damage": 1369,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "potion",
-            "lucid_dreaming",
-            "foe_requiem",
-            "bard_aura",
-            "trick_attack",
-            "hypercharge",
-            "devotion"
-        ]
-    },
-    {
-        "time": 3246,
+        "time": 3156,
         "event": "Cast",
-        "name": "Stone IV",
+        "name": "Broil II",
         "duration": 235,
         "resource": {
-            "mp": 18720,
+            "mp": 17440,
             "tp": 1000
         }
     },
     {
-        "time": 3313,
+        "time": 3391,
         "event": "Damage",
-        "name": "Stone IV",
-        "damage": 8722,
-        "crit": true,
+        "name": "Broil II",
+        "damage": 5827,
+        "crit": false,
         "dh": false,
         "buff": [
             "lucid_dreaming",
@@ -1020,58 +1109,34 @@
         ]
     },
     {
-        "time": 3450,
-        "event": "DOT Tick",
-        "name": "aero_ii",
-        "damage": 1649,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "potion",
-            "battle_litany",
-            "dragon_sight",
-            "chain_strategem",
-            "battle_voice",
-            "foe_requiem",
-            "bard_aura",
-            "trick_attack",
-            "hypercharge",
-            "devotion"
-        ]
-    },
-    {
-        "time": 3450,
-        "event": "DOT Tick",
-        "name": "aero_iii",
-        "damage": 1886,
-        "crit": true,
-        "dh": false,
-        "buff": [
-            "potion",
-            "lucid_dreaming",
-            "foe_requiem",
-            "bard_aura",
-            "trick_attack",
-            "hypercharge",
-            "devotion"
-        ]
-    },
-    {
-        "time": 3481,
+        "time": 3391,
         "event": "Cast",
-        "name": "Stone IV",
+        "name": "Broil II",
         "duration": 235,
         "resource": {
-            "mp": 19400,
+            "mp": 16720,
             "tp": 1000
         }
     },
     {
-        "time": 3548,
-        "event": "Damage",
-        "name": "Stone IV",
-        "damage": 8813,
+        "time": 3450,
+        "event": "DOT Tick",
+        "name": "bio_ii",
+        "damage": 1354,
         "crit": true,
+        "dh": false,
+        "buff": [
+            "foe_requiem",
+            "bard_aura",
+            "devotion"
+        ]
+    },
+    {
+        "time": 3626,
+        "event": "Damage",
+        "name": "Broil II",
+        "damage": 5941,
+        "crit": false,
         "dh": false,
         "buff": [
             "lucid_dreaming",
@@ -1080,37 +1145,33 @@
         ]
     },
     {
-        "time": 3716,
+        "time": 3626,
         "event": "Cast",
-        "name": "Aero II",
-        "duration": 0,
+        "name": "Broil II",
+        "duration": 235,
         "resource": {
-            "mp": 18800,
+            "mp": 17360,
             "tp": 1000
         }
     },
     {
         "time": 3750,
         "event": "DOT Tick",
-        "name": "aero_iii",
-        "damage": 1943,
-        "crit": true,
+        "name": "bio_ii",
+        "damage": 972,
+        "crit": false,
         "dh": false,
         "buff": [
-            "potion",
-            "lucid_dreaming",
             "foe_requiem",
             "bard_aura",
-            "trick_attack",
-            "hypercharge",
             "devotion"
         ]
     },
     {
-        "time": 3783,
+        "time": 3861,
         "event": "Damage",
-        "name": "Stone IV",
-        "damage": 6275,
+        "name": "Broil II",
+        "damage": 5547,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1119,43 +1180,33 @@
         ]
     },
     {
-        "time": 3784,
-        "event": "Damage",
-        "name": "Aero II",
-        "damage": 1229,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "lucid_dreaming",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 3784,
-        "event": "DOT Apply",
-        "name": "Aero II",
-        "base_damage": 1277.3,
-        "duration": 1800,
-        "buff": [
-            "lucid_dreaming",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 3951,
+        "time": 3861,
         "event": "Cast",
-        "name": "Stone IV",
+        "name": "Broil II",
         "duration": 235,
         "resource": {
-            "mp": 19400,
+            "mp": 18000,
             "tp": 1000
         }
     },
     {
         "time": 4050,
         "event": "DOT Tick",
-        "name": "aero_ii",
-        "damage": 1251,
+        "name": "bio_ii",
+        "damage": 907,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "foe_requiem",
+            "bard_aura",
+            "devotion"
+        ]
+    },
+    {
+        "time": 4096,
+        "event": "Damage",
+        "name": "Broil II",
+        "damage": 5325,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1164,48 +1215,20 @@
         ]
     },
     {
-        "time": 4050,
-        "event": "DOT Tick",
-        "name": "aero_iii",
-        "damage": 1369,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "potion",
-            "lucid_dreaming",
-            "foe_requiem",
-            "bard_aura",
-            "trick_attack",
-            "hypercharge",
-            "devotion"
-        ]
-    },
-    {
-        "time": 4186,
+        "time": 4096,
         "event": "Cast",
-        "name": "Stone IV",
+        "name": "Broil II",
         "duration": 235,
         "resource": {
-            "mp": 19400,
+            "mp": 18640,
             "tp": 1000
         }
     },
     {
-        "time": 4253,
+        "time": 4331,
         "event": "Damage",
-        "name": "Stone IV",
-        "damage": 5852,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 4350,
-        "event": "DOT Tick",
-        "name": "aero_ii",
-        "damage": 1264,
+        "name": "Broil II",
+        "damage": 5269,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1214,26 +1237,79 @@
         ]
     },
     {
+        "time": 4331,
+        "event": "Cast",
+        "name": "Broil II",
+        "duration": 235,
+        "resource": {
+            "mp": 17920,
+            "tp": 1000
+        }
+    },
+    {
         "time": 4350,
         "event": "DOT Tick",
-        "name": "aero_iii",
-        "damage": 1382,
+        "name": "bio_ii",
+        "damage": 898,
         "crit": false,
         "dh": false,
         "buff": [
-            "potion",
-            "lucid_dreaming",
             "foe_requiem",
             "bard_aura",
-            "trick_attack",
-            "hypercharge",
             "devotion"
         ]
     },
     {
-        "time": 4421,
+        "time": 4566,
+        "event": "Damage",
+        "name": "Broil II",
+        "damage": 5547,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "lucid_dreaming",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 4566,
         "event": "Cast",
-        "name": "Stone IV",
+        "name": "Broil II",
+        "duration": 235,
+        "resource": {
+            "mp": 18560,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 4650,
+        "event": "DOT Tick",
+        "name": "bio_ii",
+        "damage": 935,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "foe_requiem",
+            "bard_aura",
+            "devotion"
+        ]
+    },
+    {
+        "time": 4801,
+        "event": "Damage",
+        "name": "Broil II",
+        "damage": 5491,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "lucid_dreaming",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 4801,
+        "event": "Cast",
+        "name": "Broil II",
         "duration": 235,
         "resource": {
             "mp": 19200,
@@ -1241,81 +1317,23 @@
         }
     },
     {
-        "time": 4488,
-        "event": "Damage",
-        "name": "Stone IV",
-        "damage": 5852,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 4650,
+        "time": 4950,
         "event": "DOT Tick",
-        "name": "aero_ii",
-        "damage": 1960,
+        "name": "bio_ii",
+        "damage": 1313,
         "crit": true,
         "dh": false,
         "buff": [
-            "lucid_dreaming",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 4650,
-        "event": "DOT Tick",
-        "name": "aero_iii",
-        "damage": 1963,
-        "crit": true,
-        "dh": false,
-        "buff": [
-            "potion",
-            "lucid_dreaming",
             "foe_requiem",
             "bard_aura",
-            "trick_attack",
-            "hypercharge",
             "devotion"
         ]
     },
     {
-        "time": 4656,
-        "event": "Cast",
-        "name": "Stone IV",
-        "duration": 235,
-        "resource": {
-            "mp": 19000,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 4723,
+        "time": 5036,
         "event": "Damage",
-        "name": "Stone IV",
-        "damage": 6215,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 4891,
-        "event": "Cast",
-        "name": "Aero III",
-        "duration": 235,
-        "resource": {
-            "mp": 18280,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 4950,
-        "event": "DOT Tick",
-        "name": "aero_ii",
-        "damage": 1277,
+        "name": "Broil II",
+        "damage": 5824,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1324,85 +1342,54 @@
         ]
     },
     {
-        "time": 4958,
-        "event": "Damage",
-        "name": "Stone IV",
-        "damage": 5913,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 5076,
-        "event": "DOT Apply",
-        "name": "Aero III",
-        "base_damage": 1017.6,
-        "duration": 2400,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 5126,
-        "event": "Damage",
-        "name": "Aero III",
-        "damage": 1253,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 5126,
+        "time": 5036,
         "event": "Cast",
-        "name": "Stone IV",
+        "name": "Broil II",
         "duration": 235,
         "resource": {
-            "mp": 18080,
+            "mp": 19280,
             "tp": 1000
         }
     },
     {
         "time": 5250,
         "event": "DOT Tick",
-        "name": "aero_ii",
-        "damage": 1328,
+        "name": "bio_ii",
+        "damage": 926,
         "crit": false,
         "dh": false,
         "buff": [
-            "lucid_dreaming",
+            "foe_requiem",
+            "bard_aura",
+            "devotion"
+        ]
+    },
+    {
+        "time": 5271,
+        "event": "Damage",
+        "name": "Broil II",
+        "damage": 5491,
+        "crit": false,
+        "dh": false,
+        "buff": [
             "bard_aura"
         ]
     },
     {
-        "time": 5250,
-        "event": "DOT Tick",
-        "name": "aero_iii",
-        "damage": 1027,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 5361,
+        "time": 5271,
         "event": "Cast",
-        "name": "Stone IV",
+        "name": "Broil II",
         "duration": 235,
         "resource": {
-            "mp": 17880,
+            "mp": 18960,
             "tp": 1000
         }
     },
     {
-        "time": 5428,
+        "time": 5506,
         "event": "Damage",
-        "name": "Stone IV",
-        "damage": 6094,
+        "name": "Broil II",
+        "damage": 5768,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1410,43 +1397,67 @@
         ]
     },
     {
-        "time": 5550,
-        "event": "DOT Tick",
-        "name": "aero_ii",
-        "damage": 1213,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "lucid_dreaming",
-            "bard_aura"
-        ]
+        "time": 5506,
+        "event": "Cast",
+        "name": "Broil II",
+        "duration": 235,
+        "resource": {
+            "mp": 18240,
+            "tp": 1000
+        }
     },
     {
         "time": 5550,
         "event": "DOT Tick",
-        "name": "aero_iii",
-        "damage": 1517,
+        "name": "bio_ii",
+        "damage": 1340,
         "crit": true,
         "dh": false,
         "buff": [
+            "foe_requiem",
+            "bard_aura",
+            "devotion"
+        ]
+    },
+    {
+        "time": 5741,
+        "event": "Damage",
+        "name": "Broil II",
+        "damage": 5380,
+        "crit": false,
+        "dh": false,
+        "buff": [
             "bard_aura"
         ]
     },
     {
-        "time": 5596,
+        "time": 5741,
         "event": "Cast",
-        "name": "Aero II",
-        "duration": 0,
+        "name": "Broil II",
+        "duration": 235,
         "resource": {
-            "mp": 17680,
+            "mp": 17920,
             "tp": 1000
         }
     },
     {
-        "time": 5663,
+        "time": 5850,
+        "event": "DOT Tick",
+        "name": "bio_ii",
+        "damage": 880,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "foe_requiem",
+            "bard_aura",
+            "devotion"
+        ]
+    },
+    {
+        "time": 5976,
         "event": "Damage",
-        "name": "Stone IV",
-        "damage": 6034,
+        "name": "Broil II",
+        "damage": 5657,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1454,95 +1465,30 @@
         ]
     },
     {
-        "time": 5664,
-        "event": "Damage",
-        "name": "Aero II",
-        "damage": 1217,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
+        "time": 5976,
+        "event": "Cast",
+        "name": "Bio II",
+        "duration": 0,
+        "resource": {
+            "mp": 17600,
+            "tp": 1000
+        }
     },
     {
-        "time": 5664,
+        "time": 6043,
         "event": "DOT Apply",
-        "name": "Aero II",
-        "base_damage": 1277.3,
+        "name": "Bio II",
+        "base_damage": 882.98,
         "duration": 1800,
         "buff": [
             "bard_aura"
         ]
     },
     {
-        "time": 5831,
-        "event": "Cast",
-        "name": "Stone IV",
-        "duration": 235,
-        "resource": {
-            "mp": 17080,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 5850,
-        "event": "DOT Tick",
-        "name": "aero_ii",
-        "damage": 1792,
-        "crit": true,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 5850,
-        "event": "DOT Tick",
-        "name": "aero_iii",
-        "damage": 997,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 6066,
-        "event": "Cast",
-        "name": "Stone IV",
-        "duration": 235,
-        "resource": {
-            "mp": 16880,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 6133,
-        "event": "Damage",
-        "name": "Stone IV",
-        "damage": 8909,
-        "crit": true,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
         "time": 6150,
         "event": "DOT Tick",
-        "name": "aero_ii",
-        "damage": 1264,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 6150,
-        "event": "DOT Tick",
-        "name": "aero_iii",
-        "damage": 966,
+        "name": "bio_ii",
+        "damage": 927,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1556,32 +1502,42 @@
         "duration": 1500
     },
     {
-        "time": 6301,
+        "time": 6211,
         "event": "Cast",
-        "name": "Stone IV",
+        "name": "Broil II",
         "duration": 235,
         "resource": {
-            "mp": 16680,
+            "mp": 17280,
             "tp": 1000
         }
     },
     {
-        "time": 6368,
+        "time": 6446,
         "event": "Damage",
-        "name": "Stone IV",
-        "damage": 9897,
-        "crit": true,
+        "name": "Broil II",
+        "damage": 6039,
+        "crit": false,
         "dh": false,
         "buff": [
             "bard_aura",
             "contagion"
         ]
+    },
+    {
+        "time": 6446,
+        "event": "Cast",
+        "name": "Broil II",
+        "duration": 235,
+        "resource": {
+            "mp": 16560,
+            "tp": 1000
+        }
     },
     {
         "time": 6450,
         "event": "DOT Tick",
-        "name": "aero_ii",
-        "damage": 1302,
+        "name": "bio_ii",
+        "damage": 927,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1589,75 +1545,10 @@
         ]
     },
     {
-        "time": 6450,
-        "event": "DOT Tick",
-        "name": "aero_iii",
-        "damage": 976,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 6536,
-        "event": "Cast",
-        "name": "Stone IV",
-        "duration": 235,
-        "resource": {
-            "mp": 16480,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 6603,
+        "time": 6681,
         "event": "Damage",
-        "name": "Stone IV",
-        "damage": 10091,
-        "crit": true,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "contagion"
-        ]
-    },
-    {
-        "time": 6750,
-        "event": "DOT Tick",
-        "name": "aero_ii",
-        "damage": 1251,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 6750,
-        "event": "DOT Tick",
-        "name": "aero_iii",
-        "damage": 1068,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 6771,
-        "event": "Cast",
-        "name": "Stone IV",
-        "duration": 235,
-        "resource": {
-            "mp": 16280,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 6838,
-        "event": "Damage",
-        "name": "Stone IV",
-        "damage": 6703,
+        "name": "Broil II",
+        "damage": 5978,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1666,47 +1557,57 @@
         ]
     },
     {
-        "time": 7006,
+        "time": 6681,
         "event": "Cast",
-        "name": "Stone IV",
+        "name": "Broil II",
         "duration": 235,
         "resource": {
-            "mp": 15680,
+            "mp": 16240,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 6750,
+        "event": "DOT Tick",
+        "name": "bio_ii",
+        "damage": 856,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 6916,
+        "event": "Damage",
+        "name": "Broil II",
+        "damage": 6222,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura",
+            "contagion"
+        ]
+    },
+    {
+        "time": 6916,
+        "event": "Cast",
+        "name": "Broil II",
+        "duration": 235,
+        "resource": {
+            "mp": 15920,
             "tp": 1000
         }
     },
     {
         "time": 7050,
         "event": "DOT Tick",
-        "name": "aero_ii",
-        "damage": 1341,
+        "name": "bio_ii",
+        "damage": 918,
         "crit": false,
         "dh": false,
         "buff": [
             "bard_aura"
-        ]
-    },
-    {
-        "time": 7050,
-        "event": "DOT Tick",
-        "name": "aero_iii",
-        "damage": 987,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 7073,
-        "event": "Damage",
-        "name": "Stone IV",
-        "damage": 6504,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "contagion"
         ]
     },
     {
@@ -1716,20 +1617,10 @@
         "duration": 1500
     },
     {
-        "time": 7241,
-        "event": "Cast",
-        "name": "Stone IV",
-        "duration": 235,
-        "resource": {
-            "mp": 15480,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 7308,
+        "time": 7151,
         "event": "Damage",
-        "name": "Stone IV",
-        "damage": 7154,
+        "name": "Broil II",
+        "damage": 6845,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1737,23 +1628,22 @@
             "trick_attack",
             "contagion"
         ]
+    },
+    {
+        "time": 7151,
+        "event": "Cast",
+        "name": "Broil II",
+        "duration": 235,
+        "resource": {
+            "mp": 15600,
+            "tp": 1000
+        }
     },
     {
         "time": 7350,
         "event": "DOT Tick",
-        "name": "aero_ii",
-        "damage": 1904,
-        "crit": true,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 7350,
-        "event": "DOT Tick",
-        "name": "aero_iii",
-        "damage": 1048,
+        "name": "bio_ii",
+        "damage": 927,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1761,20 +1651,33 @@
         ]
     },
     {
-        "time": 7476,
+        "time": 7386,
+        "event": "Damage",
+        "name": "Broil II",
+        "damage": 6442,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura",
+            "trick_attack",
+            "contagion"
+        ]
+    },
+    {
+        "time": 7386,
         "event": "Cast",
-        "name": "Aero III",
+        "name": "Broil II",
         "duration": 235,
         "resource": {
-            "mp": 15160,
+            "mp": 15280,
             "tp": 1000
         }
     },
     {
-        "time": 7543,
+        "time": 7621,
         "event": "Damage",
-        "name": "Stone IV",
-        "damage": 7519,
+        "name": "Broil II",
+        "damage": 7046,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1784,388 +1687,20 @@
         ]
     },
     {
-        "time": 7661,
-        "event": "DOT Apply",
-        "name": "Aero III",
-        "base_damage": 1231.72,
-        "duration": 2400,
-        "buff": [
-            "bard_aura",
-            "trick_attack",
-            "contagion"
-        ]
-    },
-    {
-        "time": 7711,
-        "event": "Damage",
-        "name": "Aero III",
-        "damage": 1500,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "trick_attack",
-            "contagion"
-        ]
-    },
-    {
-        "time": 7711,
+        "time": 7621,
         "event": "Cast",
-        "name": "Aero II",
-        "duration": 0,
-        "resource": {
-            "mp": 14960,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 7778,
-        "event": "Cast",
-        "name": "Assize",
-        "duration": 0,
-        "resource": {
-            "mp": 14960,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 7779,
-        "event": "Damage",
-        "name": "Aero II",
-        "damage": 1284,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "trick_attack"
-        ]
-    },
-    {
-        "time": 7779,
-        "event": "DOT Apply",
-        "name": "Aero II",
-        "base_damage": 1403.44,
-        "duration": 1800,
-        "buff": [
-            "bard_aura",
-            "trick_attack"
-        ]
-    },
-    {
-        "time": 7846,
-        "event": "Damage",
-        "name": "Assize",
-        "damage": 8364,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "trick_attack"
-        ]
-    },
-    {
-        "time": 7946,
-        "event": "Cast",
-        "name": "Stone IV",
+        "name": "Broil II",
         "duration": 235,
-        "resource": {
-            "mp": 16360,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 7950,
-        "event": "DOT Tick",
-        "name": "aero_ii",
-        "damage": 1445,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "trick_attack"
-        ]
-    },
-    {
-        "time": 7950,
-        "event": "DOT Tick",
-        "name": "aero_iii",
-        "damage": 1194,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "trick_attack",
-            "contagion"
-        ]
-    },
-    {
-        "time": 8181,
-        "event": "Cast",
-        "name": "Stone IV",
-        "duration": 235,
-        "resource": {
-            "mp": 16160,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 8248,
-        "event": "Damage",
-        "name": "Stone IV",
-        "damage": 6902,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "trick_attack"
-        ]
-    },
-    {
-        "time": 8250,
-        "event": "DOT Tick",
-        "name": "aero_ii",
-        "damage": 1445,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "trick_attack"
-        ]
-    },
-    {
-        "time": 8250,
-        "event": "DOT Tick",
-        "name": "aero_iii",
-        "damage": 1244,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "trick_attack",
-            "contagion"
-        ]
-    },
-    {
-        "time": 8416,
-        "event": "Cast",
-        "name": "Stone IV",
-        "duration": 235,
-        "resource": {
-            "mp": 15960,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 8483,
-        "event": "Damage",
-        "name": "Stone IV",
-        "damage": 6968,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "trick_attack"
-        ]
-    },
-    {
-        "time": 8550,
-        "event": "DOT Tick",
-        "name": "aero_ii",
-        "damage": 1403,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "trick_attack"
-        ]
-    },
-    {
-        "time": 8550,
-        "event": "DOT Tick",
-        "name": "aero_iii",
-        "damage": 1854,
-        "crit": true,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "trick_attack",
-            "contagion"
-        ]
-    },
-    {
-        "time": 8651,
-        "event": "Cast",
-        "name": "Stone IV",
-        "duration": 235,
-        "resource": {
-            "mp": 15760,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 8718,
-        "event": "Damage",
-        "name": "Stone IV",
-        "damage": 5852,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 8850,
-        "event": "DOT Tick",
-        "name": "aero_ii",
-        "damage": 1445,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "trick_attack"
-        ]
-    },
-    {
-        "time": 8850,
-        "event": "DOT Tick",
-        "name": "aero_iii",
-        "damage": 1854,
-        "crit": true,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "trick_attack",
-            "contagion"
-        ]
-    },
-    {
-        "time": 8886,
-        "event": "Cast",
-        "name": "Stone IV",
-        "duration": 235,
-        "resource": {
-            "mp": 15560,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 8953,
-        "event": "Damage",
-        "name": "Stone IV",
-        "damage": 6215,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 9121,
-        "event": "Cast",
-        "name": "Stone IV",
-        "duration": 235,
-        "resource": {
-            "mp": 14960,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 9150,
-        "event": "DOT Tick",
-        "name": "aero_ii",
-        "damage": 1403,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "trick_attack"
-        ]
-    },
-    {
-        "time": 9150,
-        "event": "DOT Tick",
-        "name": "aero_iii",
-        "damage": 1207,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "trick_attack",
-            "contagion"
-        ]
-    },
-    {
-        "time": 9188,
-        "event": "Damage",
-        "name": "Stone IV",
-        "damage": 8909,
-        "crit": true,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 9356,
-        "event": "Cast",
-        "name": "Stone IV",
-        "duration": 235,
-        "resource": {
-            "mp": 14760,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 9423,
-        "event": "Damage",
-        "name": "Stone IV",
-        "damage": 6094,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 9450,
-        "event": "DOT Tick",
-        "name": "aero_ii",
-        "damage": 1375,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "trick_attack"
-        ]
-    },
-    {
-        "time": 9450,
-        "event": "DOT Tick",
-        "name": "aero_iii",
-        "damage": 1293,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "trick_attack",
-            "contagion"
-        ]
-    },
-    {
-        "time": 9591,
-        "event": "Cast",
-        "name": "Aero II",
-        "duration": 0,
         "resource": {
             "mp": 14560,
             "tp": 1000
         }
     },
     {
-        "time": 9658,
-        "event": "Damage",
-        "name": "Stone IV",
-        "damage": 6094,
+        "time": 7650,
+        "event": "DOT Tick",
+        "name": "bio_ii",
+        "damage": 927,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2173,115 +1708,251 @@
         ]
     },
     {
-        "time": 9658,
+        "time": 7856,
+        "event": "Damage",
+        "name": "Broil II",
+        "damage": 5795,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura",
+            "trick_attack"
+        ]
+    },
+    {
+        "time": 7856,
+        "event": "Cast",
+        "name": "Broil II",
+        "duration": 235,
+        "resource": {
+            "mp": 14240,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 7950,
+        "event": "DOT Tick",
+        "name": "bio_ii",
+        "damage": 918,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 8091,
+        "event": "Damage",
+        "name": "Broil II",
+        "damage": 6039,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura",
+            "trick_attack"
+        ]
+    },
+    {
+        "time": 8091,
+        "event": "Cast",
+        "name": "Broil II",
+        "duration": 235,
+        "resource": {
+            "mp": 13920,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 8250,
+        "event": "DOT Tick",
+        "name": "bio_ii",
+        "damage": 891,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 8326,
+        "event": "Damage",
+        "name": "Broil II",
+        "damage": 9185,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "bard_aura",
+            "trick_attack"
+        ]
+    },
+    {
+        "time": 8326,
+        "event": "Cast",
+        "name": "Broil II",
+        "duration": 235,
+        "resource": {
+            "mp": 13600,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 8550,
+        "event": "DOT Tick",
+        "name": "bio_ii",
+        "damage": 856,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 8561,
+        "event": "Damage",
+        "name": "Broil II",
+        "damage": 9096,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "bard_aura",
+            "trick_attack"
+        ]
+    },
+    {
+        "time": 8561,
+        "event": "Cast",
+        "name": "Broil II",
+        "duration": 235,
+        "resource": {
+            "mp": 13280,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 8796,
+        "event": "Damage",
+        "name": "Broil II",
+        "damage": 8028,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 8796,
+        "event": "Cast",
+        "name": "Broil II",
+        "duration": 235,
+        "resource": {
+            "mp": 12560,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 8850,
+        "event": "DOT Tick",
+        "name": "bio_ii",
+        "damage": 856,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 9031,
+        "event": "Damage",
+        "name": "Broil II",
+        "damage": 5824,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 9031,
+        "event": "Cast",
+        "name": "Bio II",
+        "duration": 0,
+        "resource": {
+            "mp": 12240,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 9098,
+        "event": "DOT Apply",
+        "name": "Bio II",
+        "base_damage": 882.98,
+        "duration": 1800,
+        "buff": [
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 9098,
         "event": "Cast",
         "name": "Cleric Stance",
         "duration": 0,
         "resource": {
-            "mp": 14560,
+            "mp": 12240,
             "tp": 1000
         }
     },
     {
-        "time": 9659,
-        "event": "Damage",
-        "name": "Aero II",
-        "damage": 1691,
-        "crit": true,
+        "time": 9150,
+        "event": "DOT Tick",
+        "name": "bio_ii",
+        "damage": 918,
+        "crit": false,
         "dh": false,
         "buff": [
             "bard_aura"
         ]
     },
     {
-        "time": 9659,
-        "event": "DOT Apply",
-        "name": "Aero II",
-        "base_damage": 1277.3,
-        "duration": 1800,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 9725,
+        "time": 9165,
         "event": "Buff Apply",
         "name": "Cleric Stance",
         "duration": 1500
     },
     {
-        "time": 9750,
-        "event": "DOT Tick",
-        "name": "aero_ii",
-        "damage": 1315,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 9750,
-        "event": "DOT Tick",
-        "name": "aero_iii",
-        "damage": 1182,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "trick_attack",
-            "contagion"
-        ]
-    },
-    {
-        "time": 9826,
+        "time": 9165,
         "event": "Cast",
-        "name": "Stone IV",
-        "duration": 235,
+        "name": "Aether Flow",
+        "duration": 0,
         "resource": {
-            "mp": 14360,
+            "mp": 12640,
             "tp": 1000
         }
     },
     {
-        "time": 10050,
-        "event": "DOT Tick",
-        "name": "aero_ii",
-        "damage": 1302,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 10050,
-        "event": "DOT Tick",
-        "name": "aero_iii",
-        "damage": 1170,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "trick_attack",
-            "contagion"
-        ]
-    },
-    {
-        "time": 10061,
+        "time": 9232,
         "event": "Cast",
-        "name": "Aero III",
-        "duration": 235,
+        "name": "Energy Drain",
+        "duration": 0,
         "resource": {
-            "mp": 14040,
+            "mp": 14640,
             "tp": 1000
         }
     },
     {
-        "time": 10128,
+        "time": 9299,
+        "event": "Cast",
+        "name": "Broil II",
+        "duration": 235,
+        "resource": {
+            "mp": 15120,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 9300,
         "event": "Damage",
-        "name": "Stone IV",
-        "damage": 6145,
+        "name": "Energy Drain",
+        "damage": 3610,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2290,54 +1961,86 @@
         ]
     },
     {
-        "time": 10246,
+        "time": 9450,
+        "event": "DOT Tick",
+        "name": "bio_ii",
+        "damage": 900,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 9534,
+        "event": "Damage",
+        "name": "Broil II",
+        "damage": 8940,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "cleric_stance",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 9534,
+        "event": "Cast",
+        "name": "Miasma II",
+        "duration": 0,
+        "resource": {
+            "mp": 13840,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 9601,
+        "event": "Cast",
+        "name": "Energy Drain",
+        "duration": 0,
+        "resource": {
+            "mp": 13840,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 9602,
+        "event": "Damage",
+        "name": "Miasma II",
+        "damage": 2582,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "cleric_stance",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 9602,
         "event": "DOT Apply",
-        "name": "Aero III",
-        "base_damage": 1067.42,
-        "duration": 2400,
+        "name": "Miasma II",
+        "base_damage": 668.86,
+        "duration": 1200,
         "buff": [
             "cleric_stance",
             "bard_aura"
         ]
     },
     {
-        "time": 10296,
-        "event": "Damage",
-        "name": "Aero III",
-        "damage": 1238,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "cleric_stance",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 10296,
+        "time": 9668,
         "event": "Cast",
-        "name": "Stone IV",
-        "duration": 235,
+        "name": "Shadow Flare",
+        "duration": 0,
         "resource": {
-            "mp": 13440,
+            "mp": 15040,
             "tp": 1000
         }
     },
     {
-        "time": 10350,
-        "event": "DOT Tick",
-        "name": "aero_ii",
-        "damage": 1226,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 10350,
-        "event": "DOT Tick",
-        "name": "aero_iii",
-        "damage": 1110,
+        "time": 9669,
+        "event": "Damage",
+        "name": "Energy Drain",
+        "damage": 3839,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2346,20 +2049,63 @@
         ]
     },
     {
-        "time": 10531,
+        "time": 9735,
+        "event": "DOT Apply",
+        "name": "Shadow Flare",
+        "base_damage": 1339.8400000000001,
+        "duration": 1500,
+        "buff": [
+            "cleric_stance",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 9750,
+        "event": "DOT Tick",
+        "name": "bio_ii",
+        "damage": 838,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 9750,
+        "event": "DOT Tick",
+        "name": "miasma_ii",
+        "damage": 682,
+        "crit": false,
+        "dh": false,
+        "buff": []
+    },
+    {
+        "time": 9750,
+        "event": "DOT Tick",
+        "name": "shadow_flare",
+        "damage": 1366,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "cleric_stance",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 9769,
         "event": "Cast",
-        "name": "Stone IV",
+        "name": "Broil II",
         "duration": 235,
         "resource": {
-            "mp": 13240,
+            "mp": 14720,
             "tp": 1000
         }
     },
     {
-        "time": 10598,
+        "time": 10004,
         "event": "Damage",
-        "name": "Stone IV",
-        "damage": 6652,
+        "name": "Broil II",
+        "damage": 6056,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2368,43 +2114,40 @@
         ]
     },
     {
-        "time": 10650,
-        "event": "DOT Tick",
-        "name": "aero_ii",
-        "damage": 1341,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 10650,
-        "event": "DOT Tick",
-        "name": "aero_iii",
-        "damage": 1120,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "cleric_stance",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 10766,
+        "time": 10004,
         "event": "Cast",
-        "name": "Stone IV",
-        "duration": 235,
+        "name": "Miasma II",
+        "duration": 0,
         "resource": {
             "mp": 13040,
             "tp": 1000
         }
     },
     {
-        "time": 10833,
-        "event": "Damage",
-        "name": "Stone IV",
-        "damage": 6336,
+        "time": 10050,
+        "event": "DOT Tick",
+        "name": "bio_ii",
+        "damage": 847,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 10050,
+        "event": "DOT Tick",
+        "name": "miasma_ii",
+        "damage": 662,
+        "crit": false,
+        "dh": false,
+        "buff": []
+    },
+    {
+        "time": 10050,
+        "event": "DOT Tick",
+        "name": "shadow_flare",
+        "damage": 1326,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2413,21 +2156,20 @@
         ]
     },
     {
-        "time": 10950,
-        "event": "DOT Tick",
-        "name": "aero_ii",
-        "damage": 1328,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
+        "time": 10071,
+        "event": "Cast",
+        "name": "Energy Drain",
+        "duration": 0,
+        "resource": {
+            "mp": 13440,
+            "tp": 1000
+        }
     },
     {
-        "time": 10950,
-        "event": "DOT Tick",
-        "name": "aero_iii",
-        "damage": 1544,
+        "time": 10072,
+        "event": "Damage",
+        "name": "Miasma II",
+        "damage": 3775,
         "crit": true,
         "dh": false,
         "buff": [
@@ -2436,20 +2178,21 @@
         ]
     },
     {
-        "time": 11001,
-        "event": "Cast",
-        "name": "Stone IV",
-        "duration": 235,
-        "resource": {
-            "mp": 12840,
-            "tp": 1000
-        }
+        "time": 10072,
+        "event": "DOT Apply",
+        "name": "Miasma II",
+        "base_damage": 668.86,
+        "duration": 1200,
+        "buff": [
+            "cleric_stance",
+            "bard_aura"
+        ]
     },
     {
-        "time": 11068,
+        "time": 10139,
         "event": "Damage",
-        "name": "Stone IV",
-        "damage": 6399,
+        "name": "Energy Drain",
+        "damage": 3991,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2458,9 +2201,191 @@
         ]
     },
     {
-        "time": 11236,
+        "time": 10239,
         "event": "Cast",
-        "name": "Stone IV",
+        "name": "Broil II",
+        "duration": 235,
+        "resource": {
+            "mp": 13920,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 10350,
+        "event": "DOT Tick",
+        "name": "bio_ii",
+        "damage": 900,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 10350,
+        "event": "DOT Tick",
+        "name": "miasma_ii",
+        "damage": 702,
+        "crit": false,
+        "dh": false,
+        "buff": []
+    },
+    {
+        "time": 10350,
+        "event": "DOT Tick",
+        "name": "shadow_flare",
+        "damage": 1380,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "cleric_stance",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 10474,
+        "event": "Damage",
+        "name": "Broil II",
+        "damage": 5591,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "cleric_stance",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 10474,
+        "event": "Cast",
+        "name": "Broil II",
+        "duration": 235,
+        "resource": {
+            "mp": 13600,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 10650,
+        "event": "DOT Tick",
+        "name": "bio_ii",
+        "damage": 909,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 10650,
+        "event": "DOT Tick",
+        "name": "miasma_ii",
+        "damage": 675,
+        "crit": false,
+        "dh": false,
+        "buff": []
+    },
+    {
+        "time": 10650,
+        "event": "DOT Tick",
+        "name": "shadow_flare",
+        "damage": 1272,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "cleric_stance",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 10709,
+        "event": "Damage",
+        "name": "Broil II",
+        "damage": 5532,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "cleric_stance",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 10709,
+        "event": "Cast",
+        "name": "Broil II",
+        "duration": 235,
+        "resource": {
+            "mp": 13280,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 10944,
+        "event": "Damage",
+        "name": "Broil II",
+        "damage": 5491,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 10944,
+        "event": "Cast",
+        "name": "Broil II",
+        "duration": 235,
+        "resource": {
+            "mp": 12560,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 10950,
+        "event": "DOT Tick",
+        "name": "bio_ii",
+        "damage": 856,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 10950,
+        "event": "DOT Tick",
+        "name": "miasma_ii",
+        "damage": 642,
+        "crit": false,
+        "dh": false,
+        "buff": []
+    },
+    {
+        "time": 10950,
+        "event": "DOT Tick",
+        "name": "shadow_flare",
+        "damage": 1326,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "cleric_stance",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 11179,
+        "event": "Damage",
+        "name": "Broil II",
+        "damage": 5713,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 11179,
+        "event": "Cast",
+        "name": "Broil II",
         "duration": 235,
         "resource": {
             "mp": 12240,
@@ -2470,8 +2395,8 @@
     {
         "time": 11250,
         "event": "DOT Tick",
-        "name": "aero_ii",
-        "damage": 1867,
+        "name": "bio_ii",
+        "damage": 1265,
         "crit": true,
         "dh": false,
         "buff": [
@@ -2481,107 +2406,70 @@
     {
         "time": 11250,
         "event": "DOT Tick",
-        "name": "aero_iii",
-        "damage": 1622,
+        "name": "miasma_ii",
+        "damage": 655,
+        "crit": false,
+        "dh": false,
+        "buff": []
+    },
+    {
+        "time": 11414,
+        "event": "Damage",
+        "name": "Broil II",
+        "damage": 5713,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 11414,
+        "event": "Cast",
+        "name": "Broil II",
+        "duration": 235,
+        "resource": {
+            "mp": 11920,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 11550,
+        "event": "DOT Tick",
+        "name": "bio_ii",
+        "damage": 1278,
         "crit": true,
         "dh": false,
         "buff": [
-            "cleric_stance",
             "bard_aura"
         ]
     },
     {
-        "time": 11303,
+        "time": 11649,
         "event": "Damage",
-        "name": "Stone IV",
-        "damage": 6652,
+        "name": "Broil II",
+        "damage": 5602,
         "crit": false,
         "dh": false,
         "buff": [
-            "cleric_stance",
             "bard_aura"
         ]
     },
     {
-        "time": 11471,
+        "time": 11649,
         "event": "Cast",
-        "name": "Aero II",
-        "duration": 0,
-        "resource": {
-            "mp": 12040,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 11538,
-        "event": "Damage",
-        "name": "Stone IV",
-        "damage": 5792,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 11539,
-        "event": "Damage",
-        "name": "Aero II",
-        "damage": 1156,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 11539,
-        "event": "DOT Apply",
-        "name": "Aero II",
-        "base_damage": 1277.3,
-        "duration": 1800,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 11550,
-        "event": "DOT Tick",
-        "name": "aero_ii",
-        "damage": 1302,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 11550,
-        "event": "DOT Tick",
-        "name": "aero_iii",
-        "damage": 1088,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "cleric_stance",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 11706,
-        "event": "Cast",
-        "name": "Stone IV",
+        "name": "Broil II",
         "duration": 235,
         "resource": {
-            "mp": 11840,
+            "mp": 11600,
             "tp": 1000
         }
     },
     {
         "time": 11850,
         "event": "DOT Tick",
-        "name": "aero_ii",
-        "damage": 1277,
+        "name": "bio_ii",
+        "damage": 847,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2589,37 +2477,25 @@
         ]
     },
     {
-        "time": 11850,
-        "event": "DOT Tick",
-        "name": "aero_iii",
-        "damage": 1035,
+        "time": 11884,
+        "event": "Damage",
+        "name": "Broil II",
+        "damage": 5657,
         "crit": false,
         "dh": false,
         "buff": [
-            "cleric_stance",
             "bard_aura"
         ]
     },
     {
-        "time": 11941,
+        "time": 11884,
         "event": "Cast",
-        "name": "Stone IV",
+        "name": "Broil II",
         "duration": 235,
         "resource": {
-            "mp": 11640,
+            "mp": 11280,
             "tp": 1000
         }
-    },
-    {
-        "time": 12008,
-        "event": "Damage",
-        "name": "Stone IV",
-        "damage": 5913,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
     },
     {
         "time": 12100,
@@ -2628,10 +2504,10 @@
         "duration": 2800
     },
     {
-        "time": 12150,
-        "event": "DOT Tick",
-        "name": "aero_ii",
-        "damage": 1341,
+        "time": 12119,
+        "event": "Damage",
+        "name": "Broil II",
+        "damage": 5380,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2639,26 +2515,25 @@
         ]
     },
     {
-        "time": 12150,
-        "event": "DOT Tick",
-        "name": "aero_iii",
-        "damage": 1110,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "cleric_stance",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 12176,
+        "time": 12119,
         "event": "Cast",
-        "name": "Stone IV",
-        "duration": 235,
+        "name": "Bio II",
+        "duration": 0,
         "resource": {
-            "mp": 11440,
+            "mp": 10560,
             "tp": 1000
         }
+    },
+    {
+        "time": 12186,
+        "event": "DOT Apply",
+        "name": "Bio II",
+        "base_damage": 926.44,
+        "duration": 1800,
+        "buff": [
+            "bard_aura",
+            "hypercharge"
+        ]
     },
     {
         "time": 12200,
@@ -2667,16 +2542,14 @@
         "duration": 1500
     },
     {
-        "time": 12243,
-        "event": "Damage",
-        "name": "Stone IV",
-        "damage": 9170,
-        "crit": true,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "hypercharge"
-        ]
+        "time": 12354,
+        "event": "Cast",
+        "name": "Broil II",
+        "duration": 235,
+        "resource": {
+            "mp": 10240,
+            "tp": 1000
+        }
     },
     {
         "time": 12400,
@@ -2685,66 +2558,22 @@
         "duration": 2000
     },
     {
-        "time": 12411,
-        "event": "Cast",
-        "name": "Stone IV",
-        "duration": 235,
-        "resource": {
-            "mp": 10840,
-            "tp": 1000
-        }
-    },
-    {
         "time": 12450,
         "event": "DOT Tick",
-        "name": "aero_ii",
-        "damage": 1302,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 12450,
-        "event": "DOT Tick",
-        "name": "aero_iii",
-        "damage": 1067,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "cleric_stance",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 12478,
-        "event": "Damage",
-        "name": "Stone IV",
-        "damage": 7038,
+        "name": "bio_ii",
+        "damage": 935,
         "crit": false,
         "dh": false,
         "buff": [
             "bard_aura",
-            "contagion",
             "hypercharge"
         ]
     },
     {
-        "time": 12646,
-        "event": "Cast",
-        "name": "Aero III",
-        "duration": 235,
-        "resource": {
-            "mp": 10520,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 12713,
+        "time": 12589,
         "event": "Damage",
-        "name": "Stone IV",
-        "damage": 6951,
+        "name": "Broil II",
+        "damage": 7062,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2753,36 +2582,34 @@
             "contagion",
             "hypercharge"
         ]
+    },
+    {
+        "time": 12589,
+        "event": "Cast",
+        "name": "Broil II",
+        "duration": 235,
+        "resource": {
+            "mp": 9920,
+            "tp": 1000
+        }
     },
     {
         "time": 12750,
         "event": "DOT Tick",
-        "name": "aero_ii",
-        "damage": 1226,
+        "name": "bio_ii",
+        "damage": 889,
         "crit": false,
         "dh": false,
         "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 12831,
-        "event": "DOT Apply",
-        "name": "Aero III",
-        "base_damage": 1233.8400000000001,
-        "duration": 2400,
-        "buff": [
-            "dragon_sight",
             "bard_aura",
-            "contagion",
             "hypercharge"
         ]
     },
     {
-        "time": 12881,
+        "time": 12824,
         "event": "Damage",
-        "name": "Aero III",
-        "damage": 1417,
+        "name": "Broil II",
+        "damage": 6793,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2793,37 +2620,32 @@
         ]
     },
     {
-        "time": 12881,
+        "time": 12824,
         "event": "Cast",
-        "name": "Stone IV",
+        "name": "Broil II",
         "duration": 235,
         "resource": {
-            "mp": 10320,
+            "mp": 9600,
             "tp": 1000
         }
     },
     {
-        "time": 12900,
-        "event": "Party Buff Apply",
-        "name": "Chain Strategem",
-        "duration": 2000
-    },
-    {
         "time": 13050,
         "event": "DOT Tick",
-        "name": "aero_ii",
-        "damage": 1226,
+        "name": "bio_ii",
+        "damage": 917,
         "crit": false,
         "dh": false,
         "buff": [
-            "bard_aura"
+            "bard_aura",
+            "hypercharge"
         ]
     },
     {
-        "time": 13050,
-        "event": "DOT Tick",
-        "name": "aero_iii",
-        "damage": 1209,
+        "time": 13059,
+        "event": "Damage",
+        "name": "Broil II",
+        "damage": 6456,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2832,6 +2654,16 @@
             "contagion",
             "hypercharge"
         ]
+    },
+    {
+        "time": 13059,
+        "event": "Cast",
+        "name": "Broil II",
+        "duration": 235,
+        "resource": {
+            "mp": 9280,
+            "tp": 1000
+        }
     },
     {
         "time": 13100,
@@ -2840,98 +2672,39 @@
         "duration": 1500
     },
     {
-        "time": 13116,
-        "event": "Cast",
-        "name": "Stone IV",
-        "duration": 235,
-        "resource": {
-            "mp": 10120,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 13183,
+        "time": 13294,
         "event": "Damage",
-        "name": "Stone IV",
-        "damage": 7243,
+        "name": "Broil II",
+        "damage": 7399,
         "crit": false,
         "dh": false,
         "buff": [
             "dragon_sight",
-            "chain_strategem",
             "bard_aura",
+            "trick_attack",
             "contagion",
             "hypercharge"
         ]
+    },
+    {
+        "time": 13294,
+        "event": "Cast",
+        "name": "Broil II",
+        "duration": 235,
+        "resource": {
+            "mp": 8560,
+            "tp": 1000
+        }
     },
     {
         "time": 13350,
         "event": "DOT Tick",
-        "name": "aero_iii",
-        "damage": 1258,
+        "name": "bio_ii",
+        "damage": 889,
         "crit": false,
         "dh": false,
         "buff": [
-            "dragon_sight",
             "bard_aura",
-            "contagion",
-            "hypercharge"
-        ]
-    },
-    {
-        "time": 13351,
-        "event": "Cast",
-        "name": "Aero II",
-        "duration": 0,
-        "resource": {
-            "mp": 9920,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 13418,
-        "event": "Damage",
-        "name": "Stone IV",
-        "damage": 8129,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "dragon_sight",
-            "chain_strategem",
-            "bard_aura",
-            "trick_attack",
-            "contagion",
-            "hypercharge"
-        ]
-    },
-    {
-        "time": 13419,
-        "event": "Damage",
-        "name": "Aero II",
-        "damage": 1589,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "dragon_sight",
-            "chain_strategem",
-            "bard_aura",
-            "trick_attack",
-            "contagion",
-            "hypercharge"
-        ]
-    },
-    {
-        "time": 13419,
-        "event": "DOT Apply",
-        "name": "Aero II",
-        "base_damage": 1702.3600000000001,
-        "duration": 1800,
-        "buff": [
-            "dragon_sight",
-            "chain_strategem",
-            "bard_aura",
-            "trick_attack",
-            "contagion",
             "hypercharge"
         ]
     },
@@ -2942,65 +2715,51 @@
         "duration": 1500
     },
     {
-        "time": 13586,
+        "time": 13529,
+        "event": "Damage",
+        "name": "Broil II",
+        "damage": 11250,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "dragon_sight",
+            "bard_aura",
+            "trick_attack",
+            "contagion",
+            "hypercharge"
+        ]
+    },
+    {
+        "time": 13529,
         "event": "Cast",
-        "name": "Stone IV",
+        "name": "Broil II",
         "duration": 235,
         "resource": {
-            "mp": 9320,
+            "mp": 8240,
             "tp": 1000
         }
     },
     {
         "time": 13650,
         "event": "DOT Tick",
-        "name": "aero_ii",
-        "damage": 1617,
+        "name": "bio_ii",
+        "damage": 944,
         "crit": false,
         "dh": false,
         "buff": [
-            "dragon_sight",
-            "chain_strategem",
             "bard_aura",
-            "trick_attack",
-            "contagion",
             "hypercharge"
         ]
     },
     {
-        "time": 13650,
-        "event": "DOT Tick",
-        "name": "aero_iii",
-        "damage": 1283,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "dragon_sight",
-            "bard_aura",
-            "contagion",
-            "hypercharge"
-        ]
-    },
-    {
-        "time": 13821,
-        "event": "Cast",
-        "name": "Stone IV",
-        "duration": 235,
-        "resource": {
-            "mp": 9120,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 13888,
+        "time": 13764,
         "event": "Damage",
-        "name": "Stone IV",
-        "damage": 7837,
+        "name": "Broil II",
+        "damage": 6723,
         "crit": false,
         "dh": false,
         "buff": [
             "dragon_sight",
-            "chain_strategem",
             "bard_aura",
             "trick_attack",
             "hypercharge",
@@ -3008,175 +2767,9 @@
         ]
     },
     {
-        "time": 13950,
-        "event": "DOT Tick",
-        "name": "aero_ii",
-        "damage": 2364,
-        "crit": true,
-        "dh": false,
-        "buff": [
-            "dragon_sight",
-            "chain_strategem",
-            "bard_aura",
-            "trick_attack",
-            "contagion",
-            "hypercharge"
-        ]
-    },
-    {
-        "time": 13950,
-        "event": "DOT Tick",
-        "name": "aero_iii",
-        "damage": 1821,
-        "crit": true,
-        "dh": false,
-        "buff": [
-            "dragon_sight",
-            "bard_aura",
-            "contagion",
-            "hypercharge"
-        ]
-    },
-    {
-        "time": 14056,
+        "time": 13764,
         "event": "Cast",
-        "name": "Stone IV",
-        "duration": 235,
-        "resource": {
-            "mp": 8920,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 14123,
-        "event": "Damage",
-        "name": "Stone IV",
-        "damage": 7762,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "dragon_sight",
-            "chain_strategem",
-            "bard_aura",
-            "trick_attack",
-            "hypercharge",
-            "devotion"
-        ]
-    },
-    {
-        "time": 14250,
-        "event": "DOT Tick",
-        "name": "aero_ii",
-        "damage": 1787,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "dragon_sight",
-            "chain_strategem",
-            "bard_aura",
-            "trick_attack",
-            "contagion",
-            "hypercharge"
-        ]
-    },
-    {
-        "time": 14250,
-        "event": "DOT Tick",
-        "name": "aero_iii",
-        "damage": 1767,
-        "crit": true,
-        "dh": false,
-        "buff": [
-            "dragon_sight",
-            "bard_aura",
-            "contagion",
-            "hypercharge"
-        ]
-    },
-    {
-        "time": 14291,
-        "event": "Cast",
-        "name": "Stone IV",
-        "duration": 235,
-        "resource": {
-            "mp": 8720,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 14358,
-        "event": "Damage",
-        "name": "Stone IV",
-        "damage": 7240,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "dragon_sight",
-            "chain_strategem",
-            "bard_aura",
-            "trick_attack",
-            "hypercharge",
-            "devotion"
-        ]
-    },
-    {
-        "time": 14526,
-        "event": "Cast",
-        "name": "Stone IV",
-        "duration": 235,
-        "resource": {
-            "mp": 8120,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 14550,
-        "event": "DOT Tick",
-        "name": "aero_ii",
-        "damage": 1736,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "dragon_sight",
-            "chain_strategem",
-            "bard_aura",
-            "trick_attack",
-            "contagion",
-            "hypercharge"
-        ]
-    },
-    {
-        "time": 14550,
-        "event": "DOT Tick",
-        "name": "aero_iii",
-        "damage": 1184,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "dragon_sight",
-            "bard_aura",
-            "contagion",
-            "hypercharge"
-        ]
-    },
-    {
-        "time": 14593,
-        "event": "Damage",
-        "name": "Stone IV",
-        "damage": 6965,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "trick_attack",
-            "hypercharge",
-            "devotion"
-        ]
-    },
-    {
-        "time": 14761,
-        "event": "Cast",
-        "name": "Stone IV",
+        "name": "Broil II",
         "duration": 235,
         "resource": {
             "mp": 7920,
@@ -3184,10 +2777,120 @@
         }
     },
     {
-        "time": 14828,
+        "time": 13950,
+        "event": "DOT Tick",
+        "name": "bio_ii",
+        "damage": 880,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura",
+            "hypercharge"
+        ]
+    },
+    {
+        "time": 13999,
         "event": "Damage",
-        "name": "Stone IV",
-        "damage": 6526,
+        "name": "Broil II",
+        "damage": 10331,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "dragon_sight",
+            "bard_aura",
+            "trick_attack",
+            "hypercharge",
+            "devotion"
+        ]
+    },
+    {
+        "time": 13999,
+        "event": "Cast",
+        "name": "Broil II",
+        "duration": 235,
+        "resource": {
+            "mp": 7600,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 14234,
+        "event": "Damage",
+        "name": "Broil II",
+        "damage": 7066,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "dragon_sight",
+            "bard_aura",
+            "trick_attack",
+            "hypercharge",
+            "devotion"
+        ]
+    },
+    {
+        "time": 14234,
+        "event": "Cast",
+        "name": "Broil II",
+        "duration": 235,
+        "resource": {
+            "mp": 6880,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 14250,
+        "event": "DOT Tick",
+        "name": "bio_ii",
+        "damage": 972,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura",
+            "hypercharge"
+        ]
+    },
+    {
+        "time": 14469,
+        "event": "Damage",
+        "name": "Broil II",
+        "damage": 6598,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura",
+            "trick_attack",
+            "hypercharge",
+            "devotion"
+        ]
+    },
+    {
+        "time": 14469,
+        "event": "Cast",
+        "name": "Broil II",
+        "duration": 235,
+        "resource": {
+            "mp": 6560,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 14550,
+        "event": "DOT Tick",
+        "name": "bio_ii",
+        "damage": 917,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura",
+            "hypercharge"
+        ]
+    },
+    {
+        "time": 14704,
+        "event": "Damage",
+        "name": "Broil II",
+        "damage": 5642,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3197,703 +2900,724 @@
         ]
     },
     {
-        "time": 14850,
-        "event": "DOT Tick",
-        "name": "aero_ii",
-        "damage": 1787,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "dragon_sight",
-            "chain_strategem",
-            "bard_aura",
-            "trick_attack",
-            "contagion",
-            "hypercharge"
-        ]
-    },
-    {
-        "time": 14850,
-        "event": "DOT Tick",
-        "name": "aero_iii",
-        "damage": 1246,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "dragon_sight",
-            "bard_aura",
-            "contagion",
-            "hypercharge"
-        ]
-    },
-    {
-        "time": 14996,
+        "time": 14704,
         "event": "Cast",
-        "name": "Stone IV",
+        "name": "Broil II",
         "duration": 235,
         "resource": {
-            "mp": 7720,
+            "mp": 6240,
             "tp": 1000
         }
     },
     {
-        "time": 15063,
-        "event": "Damage",
-        "name": "Stone IV",
-        "damage": 6277,
+        "time": 14850,
+        "event": "DOT Tick",
+        "name": "bio_ii",
+        "damage": 926,
         "crit": false,
         "dh": false,
         "buff": [
             "bard_aura",
+            "hypercharge"
+        ]
+    },
+    {
+        "time": 14939,
+        "event": "Damage",
+        "name": "Broil II",
+        "damage": 5939,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura",
+            "hypercharge",
             "devotion"
         ]
     },
     {
-        "time": 15150,
-        "event": "DOT Tick",
-        "name": "aero_ii",
-        "damage": 1668,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "dragon_sight",
-            "chain_strategem",
-            "bard_aura",
-            "trick_attack",
-            "contagion",
-            "hypercharge"
-        ]
-    },
-    {
-        "time": 15150,
-        "event": "DOT Tick",
-        "name": "aero_iii",
-        "damage": 1196,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "dragon_sight",
-            "bard_aura",
-            "contagion",
-            "hypercharge"
-        ]
-    },
-    {
-        "time": 15231,
+        "time": 14939,
         "event": "Cast",
-        "name": "Aero III",
+        "name": "Broil II",
         "duration": 235,
         "resource": {
-            "mp": 7400,
+            "mp": 5920,
             "tp": 1000
         }
     },
     {
-        "time": 15298,
-        "event": "Damage",
-        "name": "Stone IV",
-        "damage": 6335,
+        "time": 15150,
+        "event": "DOT Tick",
+        "name": "bio_ii",
+        "damage": 889,
         "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura",
+            "hypercharge"
+        ]
+    },
+    {
+        "time": 15174,
+        "event": "Damage",
+        "name": "Broil II",
+        "damage": 7785,
+        "crit": true,
         "dh": false,
         "buff": [
             "bard_aura"
         ]
     },
     {
-        "time": 15416,
+        "time": 15174,
+        "event": "Cast",
+        "name": "Bio II",
+        "duration": 0,
+        "resource": {
+            "mp": 5600,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 15241,
         "event": "DOT Apply",
-        "name": "Aero III",
-        "base_damage": 1017.6,
-        "duration": 2400,
+        "name": "Bio II",
+        "base_damage": 882.98,
+        "duration": 1800,
         "buff": [
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 15241,
+        "event": "Cast",
+        "name": "Chain Strategem",
+        "duration": 0,
+        "resource": {
+            "mp": 5600,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 15308,
+        "event": "Buff Apply",
+        "name": "Chain Strategem",
+        "duration": 1500
+    },
+    {
+        "time": 15308,
+        "event": "Cast",
+        "name": "Aether Flow",
+        "duration": 0,
+        "resource": {
+            "mp": 5600,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 15375,
+        "event": "Cast",
+        "name": "Energy Drain",
+        "duration": 0,
+        "resource": {
+            "mp": 7600,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 15442,
+        "event": "Cast",
+        "name": "Broil II",
+        "duration": 235,
+        "resource": {
+            "mp": 8080,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 15443,
+        "event": "Damage",
+        "name": "Energy Drain",
+        "damage": 5504,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "chain_strategem",
             "bard_aura"
         ]
     },
     {
         "time": 15450,
         "event": "DOT Tick",
-        "name": "aero_iii",
-        "damage": 1037,
-        "crit": false,
+        "name": "bio_ii",
+        "damage": 1239,
+        "crit": true,
         "dh": false,
         "buff": [
             "bard_aura"
         ]
     },
     {
-        "time": 15466,
+        "time": 15677,
         "event": "Damage",
-        "name": "Aero III",
-        "damage": 1205,
+        "name": "Broil II",
+        "damage": 5325,
         "crit": false,
         "dh": false,
         "buff": [
+            "chain_strategem",
             "bard_aura"
         ]
     },
     {
-        "time": 15466,
+        "time": 15677,
         "event": "Cast",
-        "name": "Aero II",
+        "name": "Miasma II",
         "duration": 0,
         "resource": {
-            "mp": 7200,
+            "mp": 6800,
             "tp": 1000
         }
     },
     {
-        "time": 15533,
+        "time": 15744,
         "event": "Cast",
-        "name": "Presence of Mind",
+        "name": "Energy Drain",
         "duration": 0,
         "resource": {
-            "mp": 7200,
+            "mp": 6800,
             "tp": 1000
         }
     },
     {
-        "time": 15534,
+        "time": 15745,
         "event": "Damage",
-        "name": "Aero II",
-        "damage": 1180,
-        "crit": false,
+        "name": "Miasma II",
+        "damage": 3596,
+        "crit": true,
         "dh": false,
         "buff": [
+            "chain_strategem",
             "bard_aura"
         ]
     },
     {
-        "time": 15534,
+        "time": 15745,
         "event": "DOT Apply",
-        "name": "Aero II",
-        "base_damage": 1277.3,
-        "duration": 1800,
+        "name": "Miasma II",
+        "base_damage": 637.0600000000001,
+        "duration": 1200,
+        "buff": [
+            "chain_strategem",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 15750,
+        "event": "DOT Tick",
+        "name": "bio_ii",
+        "damage": 856,
+        "crit": false,
+        "dh": false,
         "buff": [
             "bard_aura"
         ]
     },
     {
-        "time": 15600,
-        "event": "Buff Apply",
-        "name": "Presence of Mind",
-        "duration": 1500
+        "time": 15750,
+        "event": "DOT Tick",
+        "name": "miasma_ii",
+        "damage": 894,
+        "crit": true,
+        "dh": false,
+        "buff": []
     },
     {
-        "time": 15600,
+        "time": 15811,
         "event": "Cast",
-        "name": "Assize",
+        "name": "Shadow Flare",
         "duration": 0,
         "resource": {
-            "mp": 7200,
+            "mp": 8400,
             "tp": 1000
         }
     },
     {
-        "time": 15667,
+        "time": 15812,
+        "event": "Damage",
+        "name": "Energy Drain",
+        "damage": 3547,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "chain_strategem",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 15878,
+        "event": "DOT Apply",
+        "name": "Shadow Flare",
+        "base_damage": 1277.3,
+        "duration": 1500,
+        "buff": [
+            "chain_strategem",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 15878,
         "event": "Cast",
         "name": "Lucid Dreaming",
         "duration": 0,
+        "resource": {
+            "mp": 8400,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 15945,
+        "event": "Buff Apply",
+        "name": "Lucid Dreaming",
+        "duration": 2100
+    },
+    {
+        "time": 15945,
+        "event": "Cast",
+        "name": "Broil II",
+        "duration": 235,
+        "resource": {
+            "mp": 7680,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 16050,
+        "event": "DOT Tick",
+        "name": "bio_ii",
+        "damage": 1290,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 16050,
+        "event": "DOT Tick",
+        "name": "miasma_ii",
+        "damage": 643,
+        "crit": false,
+        "dh": false,
+        "buff": []
+    },
+    {
+        "time": 16050,
+        "event": "DOT Tick",
+        "name": "shadow_flare",
+        "damage": 1238,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "chain_strategem",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 16180,
+        "event": "Damage",
+        "name": "Broil II",
+        "damage": 5325,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "chain_strategem",
+            "lucid_dreaming",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 16180,
+        "event": "Cast",
+        "name": "Miasma II",
+        "duration": 0,
+        "resource": {
+            "mp": 7360,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 16247,
+        "event": "Cast",
+        "name": "Energy Drain",
+        "duration": 0,
+        "resource": {
+            "mp": 7360,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 16248,
+        "event": "Damage",
+        "name": "Miasma II",
+        "damage": 2436,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "chain_strategem",
+            "lucid_dreaming",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 16248,
+        "event": "DOT Apply",
+        "name": "Miasma II",
+        "base_damage": 637.0600000000001,
+        "duration": 1200,
+        "buff": [
+            "chain_strategem",
+            "lucid_dreaming",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 16315,
+        "event": "Damage",
+        "name": "Energy Drain",
+        "damage": 5133,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "chain_strategem",
+            "lucid_dreaming",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 16350,
+        "event": "DOT Tick",
+        "name": "bio_ii",
+        "damage": 1265,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 16350,
+        "event": "DOT Tick",
+        "name": "miasma_ii",
+        "damage": 649,
+        "crit": false,
+        "dh": false,
+        "buff": []
+    },
+    {
+        "time": 16350,
+        "event": "DOT Tick",
+        "name": "shadow_flare",
+        "damage": 1886,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "chain_strategem",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 16415,
+        "event": "Cast",
+        "name": "Broil II",
+        "duration": 235,
         "resource": {
             "mp": 9200,
             "tp": 1000
         }
     },
     {
-        "time": 15668,
-        "event": "Damage",
-        "name": "Assize",
-        "damage": 6952,
+        "time": 16650,
+        "event": "DOT Tick",
+        "name": "bio_ii",
+        "damage": 847,
         "crit": false,
         "dh": false,
         "buff": [
-            "presence_of_mind",
             "bard_aura"
         ]
     },
     {
-        "time": 15734,
-        "event": "Buff Apply",
-        "name": "Lucid Dreaming",
-        "duration": 2100
-    },
-    {
-        "time": 15734,
-        "event": "Cast",
-        "name": "Stone IV",
-        "duration": 188,
-        "resource": {
-            "mp": 8600,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 15750,
+        "time": 16650,
         "event": "DOT Tick",
-        "name": "aero_ii",
+        "name": "miasma_ii",
+        "damage": 959,
+        "crit": true,
+        "dh": false,
+        "buff": []
+    },
+    {
+        "time": 16650,
+        "event": "DOT Tick",
+        "name": "shadow_flare",
         "damage": 1264,
         "crit": false,
         "dh": false,
         "buff": [
+            "chain_strategem",
             "bard_aura"
         ]
     },
     {
-        "time": 15750,
-        "event": "DOT Tick",
-        "name": "aero_iii",
-        "damage": 1443,
+        "time": 16650,
+        "event": "Damage",
+        "name": "Broil II",
+        "damage": 7785,
         "crit": true,
         "dh": false,
         "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 15922,
-        "event": "Cast",
-        "name": "Stone IV",
-        "duration": 188,
-        "resource": {
-            "mp": 9360,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 15989,
-        "event": "Damage",
-        "name": "Stone IV",
-        "damage": 5852,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "presence_of_mind",
+            "chain_strategem",
             "lucid_dreaming",
             "bard_aura"
         ]
     },
     {
-        "time": 16050,
-        "event": "DOT Tick",
-        "name": "aero_ii",
-        "damage": 1315,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 16050,
-        "event": "DOT Tick",
-        "name": "aero_iii",
-        "damage": 1017,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 16110,
+        "time": 16650,
         "event": "Cast",
-        "name": "Stone IV",
-        "duration": 188,
+        "name": "Broil II",
+        "duration": 235,
         "resource": {
-            "mp": 10120,
+            "mp": 9840,
             "tp": 1000
         }
     },
     {
-        "time": 16177,
+        "time": 16885,
         "event": "Damage",
-        "name": "Stone IV",
-        "damage": 5732,
+        "name": "Broil II",
+        "damage": 5436,
         "crit": false,
         "dh": false,
         "buff": [
-            "presence_of_mind",
             "lucid_dreaming",
             "bard_aura"
         ]
     },
     {
-        "time": 16298,
+        "time": 16885,
         "event": "Cast",
-        "name": "Stone IV",
-        "duration": 188,
+        "name": "Broil II",
+        "duration": 235,
         "resource": {
-            "mp": 9520,
+            "mp": 9120,
             "tp": 1000
         }
     },
     {
-        "time": 16350,
+        "time": 16950,
         "event": "DOT Tick",
-        "name": "aero_ii",
+        "name": "bio_ii",
+        "damage": 882,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 16950,
+        "event": "DOT Tick",
+        "name": "miasma_ii",
+        "damage": 617,
+        "crit": false,
+        "dh": false,
+        "buff": []
+    },
+    {
+        "time": 16950,
+        "event": "DOT Tick",
+        "name": "shadow_flare",
+        "damage": 1264,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "chain_strategem",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 17120,
+        "event": "Damage",
+        "name": "Broil II",
+        "damage": 5657,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "lucid_dreaming",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 17120,
+        "event": "Cast",
+        "name": "Broil II",
+        "duration": 235,
+        "resource": {
+            "mp": 9760,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 17250,
+        "event": "DOT Tick",
+        "name": "bio_ii",
+        "damage": 838,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 17250,
+        "event": "DOT Tick",
+        "name": "miasma_ii",
+        "damage": 662,
+        "crit": false,
+        "dh": false,
+        "buff": []
+    },
+    {
+        "time": 17250,
+        "event": "DOT Tick",
+        "name": "shadow_flare",
         "damage": 1811,
         "crit": true,
         "dh": false,
         "buff": [
+            "chain_strategem",
             "bard_aura"
         ]
     },
     {
-        "time": 16350,
-        "event": "DOT Tick",
-        "name": "aero_iii",
-        "damage": 987,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 16365,
+        "time": 17355,
         "event": "Damage",
-        "name": "Stone IV",
-        "damage": 6275,
+        "name": "Broil II",
+        "damage": 5547,
         "crit": false,
         "dh": false,
         "buff": [
-            "presence_of_mind",
             "lucid_dreaming",
             "bard_aura"
         ]
     },
     {
-        "time": 16486,
+        "time": 17355,
         "event": "Cast",
-        "name": "Stone IV",
-        "duration": 188,
+        "name": "Broil II",
+        "duration": 235,
         "resource": {
-            "mp": 10280,
+            "mp": 10400,
             "tp": 1000
         }
     },
     {
-        "time": 16553,
-        "event": "Damage",
-        "name": "Stone IV",
-        "damage": 6094,
+        "time": 17550,
+        "event": "DOT Tick",
+        "name": "bio_ii",
+        "damage": 847,
         "crit": false,
         "dh": false,
         "buff": [
-            "presence_of_mind",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 17590,
+        "event": "Damage",
+        "name": "Broil II",
+        "damage": 5547,
+        "crit": false,
+        "dh": false,
+        "buff": [
             "lucid_dreaming",
             "bard_aura"
         ]
     },
     {
-        "time": 16650,
-        "event": "DOT Tick",
-        "name": "aero_ii",
-        "damage": 1302,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 16650,
-        "event": "DOT Tick",
-        "name": "aero_iii",
-        "damage": 1058,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 16674,
+        "time": 17590,
         "event": "Cast",
-        "name": "Stone IV",
-        "duration": 188,
+        "name": "Broil II",
+        "duration": 235,
         "resource": {
             "mp": 11040,
             "tp": 1000
         }
     },
     {
-        "time": 16741,
+        "time": 17825,
         "event": "Damage",
-        "name": "Stone IV",
-        "damage": 6215,
+        "name": "Broil II",
+        "damage": 5491,
         "crit": false,
         "dh": false,
         "buff": [
-            "presence_of_mind",
             "lucid_dreaming",
             "bard_aura"
         ]
     },
     {
-        "time": 16862,
+        "time": 17825,
         "event": "Cast",
-        "name": "Stone IV",
-        "duration": 188,
-        "resource": {
-            "mp": 10440,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 16929,
-        "event": "Damage",
-        "name": "Stone IV",
-        "damage": 5792,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "presence_of_mind",
-            "lucid_dreaming",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 16950,
-        "event": "DOT Tick",
-        "name": "aero_ii",
-        "damage": 1328,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 16950,
-        "event": "DOT Tick",
-        "name": "aero_iii",
-        "damage": 1058,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 17050,
-        "event": "Cast",
-        "name": "Stone IV",
-        "duration": 188,
-        "resource": {
-            "mp": 11200,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 17117,
-        "event": "Damage",
-        "name": "Stone IV",
-        "damage": 5973,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "presence_of_mind",
-            "lucid_dreaming",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 17238,
-        "event": "Cast",
-        "name": "Aero II",
-        "duration": 0,
-        "resource": {
-            "mp": 10600,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 17250,
-        "event": "DOT Tick",
-        "name": "aero_ii",
-        "damage": 1774,
-        "crit": true,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 17250,
-        "event": "DOT Tick",
-        "name": "aero_iii",
-        "damage": 1037,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 17305,
-        "event": "Damage",
-        "name": "Stone IV",
-        "damage": 6215,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "lucid_dreaming",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 17306,
-        "event": "Damage",
-        "name": "Aero II",
-        "damage": 1241,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "lucid_dreaming",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 17306,
-        "event": "DOT Apply",
-        "name": "Aero II",
-        "base_damage": 1277.3,
-        "duration": 1800,
-        "buff": [
-            "lucid_dreaming",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 17473,
-        "event": "Cast",
-        "name": "Stone IV",
+        "name": "Broil II",
         "duration": 235,
         "resource": {
-            "mp": 11360,
+            "mp": 10320,
             "tp": 1000
         }
-    },
-    {
-        "time": 17550,
-        "event": "DOT Tick",
-        "name": "aero_ii",
-        "damage": 1923,
-        "crit": true,
-        "dh": false,
-        "buff": [
-            "lucid_dreaming",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 17550,
-        "event": "DOT Tick",
-        "name": "aero_iii",
-        "damage": 1007,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 17708,
-        "event": "Cast",
-        "name": "Aero III",
-        "duration": 235,
-        "resource": {
-            "mp": 12000,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 17775,
-        "event": "Damage",
-        "name": "Stone IV",
-        "damage": 6215,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "lucid_dreaming",
-            "bard_aura"
-        ]
     },
     {
         "time": 17850,
         "event": "DOT Tick",
-        "name": "aero_ii",
-        "damage": 1238,
+        "name": "bio_ii",
+        "damage": 865,
         "crit": false,
         "dh": false,
         "buff": [
-            "lucid_dreaming",
             "bard_aura"
         ]
     },
     {
-        "time": 17893,
-        "event": "DOT Apply",
-        "name": "Aero III",
-        "base_damage": 1017.6,
-        "duration": 2400,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 17943,
+        "time": 18060,
         "event": "Damage",
-        "name": "Aero III",
-        "damage": 1253,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 17943,
-        "event": "Cast",
-        "name": "Stone IV",
-        "duration": 235,
-        "resource": {
-            "mp": 11800,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 18150,
-        "event": "DOT Tick",
-        "name": "aero_ii",
-        "damage": 1328,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "lucid_dreaming",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 18150,
-        "event": "DOT Tick",
-        "name": "aero_iii",
-        "damage": 1443,
+        "name": "Broil II",
+        "damage": 8353,
         "crit": true,
         "dh": false,
         "buff": [
+            "lucid_dreaming",
             "bard_aura"
         ]
     },
     {
-        "time": 18178,
+        "time": 18060,
         "event": "Cast",
-        "name": "Stone IV",
+        "name": "Broil II",
         "duration": 235,
         "resource": {
-            "mp": 11600,
+            "mp": 10960,
             "tp": 1000
         }
+    },
+    {
+        "time": 18150,
+        "event": "DOT Tick",
+        "name": "bio_ii",
+        "damage": 847,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
     },
     {
         "time": 18200,
@@ -3902,15 +3626,26 @@
         "duration": 1500
     },
     {
-        "time": 18245,
+        "time": 18295,
         "event": "Damage",
-        "name": "Stone IV",
-        "damage": 5913,
+        "name": "Broil II",
+        "damage": 6039,
         "crit": false,
         "dh": false,
         "buff": [
-            "bard_aura"
+            "bard_aura",
+            "contagion"
         ]
+    },
+    {
+        "time": 18295,
+        "event": "Cast",
+        "name": "Bio II",
+        "duration": 0,
+        "resource": {
+            "mp": 10640,
+            "tp": 1000
+        }
     },
     {
         "time": 18300,
@@ -3925,49 +3660,45 @@
         "duration": 3300
     },
     {
+        "time": 18362,
+        "event": "DOT Apply",
+        "name": "Bio II",
+        "base_damage": 999.58,
+        "duration": 1800,
+        "buff": [
+            "battle_litany",
+            "foe_requiem",
+            "bard_aura",
+            "contagion"
+        ]
+    },
+    {
+        "time": 18362,
+        "event": "Cast",
+        "name": "Cleric Stance",
+        "duration": 0,
+        "resource": {
+            "mp": 10640,
+            "tp": 1000
+        }
+    },
+    {
         "time": 18400,
         "event": "Party Buff Apply",
         "name": "Battle Voice",
         "duration": 2000
     },
     {
-        "time": 18413,
-        "event": "Cast",
-        "name": "Stone IV",
-        "duration": 235,
-        "resource": {
-            "mp": 11000,
-            "tp": 1000
-        }
+        "time": 18429,
+        "event": "Buff Apply",
+        "name": "Cleric Stance",
+        "duration": 1500
     },
     {
         "time": 18450,
         "event": "DOT Tick",
-        "name": "aero_ii",
-        "damage": 1867,
-        "crit": true,
-        "dh": false,
-        "buff": [
-            "lucid_dreaming",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 18450,
-        "event": "DOT Tick",
-        "name": "aero_iii",
-        "damage": 1532,
-        "crit": true,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 18480,
-        "event": "Damage",
-        "name": "Stone IV",
-        "damage": 6836,
+        "name": "bio_ii",
+        "damage": 959,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3978,72 +3709,39 @@
         ]
     },
     {
-        "time": 18648,
+        "time": 18530,
         "event": "Cast",
-        "name": "Stone IV",
+        "name": "Broil II",
         "duration": 235,
         "resource": {
-            "mp": 10800,
+            "mp": 10320,
             "tp": 1000
         }
     },
     {
-        "time": 18715,
-        "event": "Damage",
-        "name": "Stone IV",
-        "damage": 9894,
+        "time": 18750,
+        "event": "DOT Tick",
+        "name": "bio_ii",
+        "damage": 1918,
         "crit": true,
-        "dh": false,
-        "buff": [
-            "battle_litany",
-            "battle_voice",
-            "foe_requiem",
-            "bard_aura",
-            "contagion"
-        ]
-    },
-    {
-        "time": 18750,
-        "event": "DOT Tick",
-        "name": "aero_ii",
-        "damage": 1341,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "lucid_dreaming",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 18750,
-        "event": "DOT Tick",
-        "name": "aero_iii",
-        "damage": 1007,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 18883,
-        "event": "Cast",
-        "name": "Stone IV",
-        "duration": 235,
-        "resource": {
-            "mp": 10600,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 18950,
-        "event": "Damage",
-        "name": "Stone IV",
-        "damage": 8459,
-        "crit": false,
         "dh": true,
         "buff": [
             "battle_litany",
+            "foe_requiem",
+            "bard_aura",
+            "contagion"
+        ]
+    },
+    {
+        "time": 18765,
+        "event": "Damage",
+        "name": "Broil II",
+        "damage": 6532,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "cleric_stance",
+            "battle_litany",
             "battle_voice",
             "foe_requiem",
             "bard_aura",
@@ -4051,26 +3749,53 @@
         ]
     },
     {
-        "time": 19050,
-        "event": "DOT Tick",
-        "name": "aero_ii",
-        "damage": 1226,
+        "time": 18765,
+        "event": "Cast",
+        "name": "Broil II",
+        "duration": 235,
+        "resource": {
+            "mp": 10000,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 19000,
+        "event": "Damage",
+        "name": "Broil II",
+        "damage": 8165,
         "crit": false,
-        "dh": false,
+        "dh": true,
         "buff": [
-            "lucid_dreaming",
-            "bard_aura"
+            "cleric_stance",
+            "battle_litany",
+            "battle_voice",
+            "foe_requiem",
+            "bard_aura",
+            "contagion"
         ]
+    },
+    {
+        "time": 19000,
+        "event": "Cast",
+        "name": "Broil II",
+        "duration": 235,
+        "resource": {
+            "mp": 9280,
+            "tp": 1000
+        }
     },
     {
         "time": 19050,
         "event": "DOT Tick",
-        "name": "aero_iii",
-        "damage": 1058,
+        "name": "bio_ii",
+        "damage": 999,
         "crit": false,
         "dh": false,
         "buff": [
-            "bard_aura"
+            "battle_litany",
+            "foe_requiem",
+            "bard_aura",
+            "contagion"
         ]
     },
     {
@@ -4080,183 +3805,10 @@
         "duration": 1500
     },
     {
-        "time": 19118,
-        "event": "Cast",
-        "name": "Aero II",
-        "duration": 0,
-        "resource": {
-            "mp": 10400,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 19185,
+        "time": 19235,
         "event": "Damage",
-        "name": "Stone IV",
-        "damage": 9594,
-        "crit": true,
-        "dh": false,
-        "buff": [
-            "battle_litany",
-            "battle_voice",
-            "foe_requiem",
-            "bard_aura",
-            "contagion"
-        ]
-    },
-    {
-        "time": 19185,
-        "event": "Cast",
-        "name": "Cleric Stance",
-        "duration": 0,
-        "resource": {
-            "mp": 10400,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 19186,
-        "event": "Damage",
-        "name": "Aero II",
-        "damage": 1501,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "battle_litany",
-            "battle_voice",
-            "foe_requiem",
-            "bard_aura",
-            "trick_attack",
-            "contagion"
-        ]
-    },
-    {
-        "time": 19186,
-        "event": "DOT Apply",
-        "name": "Aero II",
-        "base_damage": 1591.0600000000002,
-        "duration": 1800,
-        "buff": [
-            "battle_litany",
-            "battle_voice",
-            "foe_requiem",
-            "bard_aura",
-            "trick_attack",
-            "contagion"
-        ]
-    },
-    {
-        "time": 19252,
-        "event": "Buff Apply",
-        "name": "Cleric Stance",
-        "duration": 1500
-    },
-    {
-        "time": 19350,
-        "event": "DOT Tick",
-        "name": "aero_ii",
-        "damage": 1638,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "battle_litany",
-            "battle_voice",
-            "foe_requiem",
-            "bard_aura",
-            "trick_attack",
-            "contagion"
-        ]
-    },
-    {
-        "time": 19350,
-        "event": "DOT Tick",
-        "name": "aero_iii",
-        "damage": 1517,
-        "crit": true,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 19353,
-        "event": "Cast",
-        "name": "Stone IV",
-        "duration": 235,
-        "resource": {
-            "mp": 10200,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 19588,
-        "event": "Cast",
-        "name": "Stone IV",
-        "duration": 235,
-        "resource": {
-            "mp": 9600,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 19650,
-        "event": "DOT Tick",
-        "name": "aero_ii",
-        "damage": 1575,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "battle_litany",
-            "battle_voice",
-            "foe_requiem",
-            "bard_aura",
-            "trick_attack",
-            "contagion"
-        ]
-    },
-    {
-        "time": 19650,
-        "event": "DOT Tick",
-        "name": "aero_iii",
-        "damage": 1017,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 19655,
-        "event": "Damage",
-        "name": "Stone IV",
-        "damage": 7501,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "cleric_stance",
-            "battle_litany",
-            "battle_voice",
-            "foe_requiem",
-            "bard_aura",
-            "trick_attack",
-            "contagion"
-        ]
-    },
-    {
-        "time": 19823,
-        "event": "Cast",
-        "name": "Stone IV",
-        "duration": 235,
-        "resource": {
-            "mp": 9400,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 19890,
-        "event": "Damage",
-        "name": "Stone IV",
-        "damage": 9241,
+        "name": "Broil II",
+        "damage": 9524,
         "crit": false,
         "dh": true,
         "buff": [
@@ -4265,108 +3817,150 @@
             "battle_voice",
             "foe_requiem",
             "bard_aura",
-            "trick_attack"
+            "trick_attack",
+            "contagion"
         ]
     },
     {
-        "time": 19950,
+        "time": 19235,
+        "event": "Cast",
+        "name": "Broil II",
+        "duration": 235,
+        "resource": {
+            "mp": 8960,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 19350,
         "event": "DOT Tick",
-        "name": "aero_ii",
-        "damage": 1968,
+        "name": "bio_ii",
+        "damage": 1236,
         "crit": false,
         "dh": true,
         "buff": [
             "battle_litany",
+            "foe_requiem",
+            "bard_aura",
+            "contagion"
+        ]
+    },
+    {
+        "time": 19470,
+        "event": "Damage",
+        "name": "Broil II",
+        "damage": 10185,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "cleric_stance",
+            "battle_litany",
             "battle_voice",
             "foe_requiem",
             "bard_aura",
             "trick_attack",
             "contagion"
         ]
+    },
+    {
+        "time": 19470,
+        "event": "Cast",
+        "name": "Broil II",
+        "duration": 235,
+        "resource": {
+            "mp": 8640,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 19650,
+        "event": "DOT Tick",
+        "name": "bio_ii",
+        "damage": 1039,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "battle_litany",
+            "foe_requiem",
+            "bard_aura",
+            "contagion"
+        ]
+    },
+    {
+        "time": 19705,
+        "event": "Damage",
+        "name": "Broil II",
+        "damage": 9434,
+        "crit": false,
+        "dh": true,
+        "buff": [
+            "cleric_stance",
+            "battle_litany",
+            "battle_voice",
+            "foe_requiem",
+            "bard_aura",
+            "trick_attack",
+            "contagion"
+        ]
+    },
+    {
+        "time": 19705,
+        "event": "Cast",
+        "name": "Broil II",
+        "duration": 235,
+        "resource": {
+            "mp": 8320,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 19940,
+        "event": "Damage",
+        "name": "Broil II",
+        "damage": 6927,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "cleric_stance",
+            "battle_litany",
+            "battle_voice",
+            "foe_requiem",
+            "bard_aura",
+            "trick_attack"
+        ]
+    },
+    {
+        "time": 19940,
+        "event": "Cast",
+        "name": "Broil II",
+        "duration": 235,
+        "resource": {
+            "mp": 7600,
+            "tp": 1000
+        }
     },
     {
         "time": 19950,
         "event": "DOT Tick",
-        "name": "aero_iii",
-        "damage": 976,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 20058,
-        "event": "Cast",
-        "name": "Stone IV",
-        "duration": 235,
-        "resource": {
-            "mp": 9200,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 20125,
-        "event": "Damage",
-        "name": "Stone IV",
-        "damage": 7034,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "cleric_stance",
-            "battle_litany",
-            "battle_voice",
-            "foe_requiem",
-            "bard_aura",
-            "trick_attack"
-        ]
-    },
-    {
-        "time": 20250,
-        "event": "DOT Tick",
-        "name": "aero_ii",
-        "damage": 1670,
-        "crit": false,
+        "name": "bio_ii",
+        "damage": 1519,
+        "crit": true,
         "dh": false,
         "buff": [
             "battle_litany",
-            "battle_voice",
             "foe_requiem",
             "bard_aura",
-            "trick_attack",
             "contagion"
         ]
     },
     {
-        "time": 20250,
-        "event": "DOT Tick",
-        "name": "aero_iii",
-        "damage": 1007,
+        "time": 20175,
+        "event": "Damage",
+        "name": "Broil II",
+        "damage": 6535,
         "crit": false,
         "dh": false,
         "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 20293,
-        "event": "Cast",
-        "name": "Aero III",
-        "duration": 235,
-        "resource": {
-            "mp": 8880,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 20360,
-        "event": "Damage",
-        "name": "Stone IV",
-        "damage": 10179,
-        "crit": true,
-        "dh": false,
-        "buff": [
-            "cleric_stance",
             "battle_litany",
             "battle_voice",
             "foe_requiem",
@@ -4375,164 +3969,189 @@
         ]
     },
     {
-        "time": 20478,
-        "event": "DOT Apply",
-        "name": "Aero III",
-        "base_damage": 1210.52,
-        "duration": 2400,
-        "buff": [
-            "cleric_stance",
-            "foe_requiem",
-            "bard_aura",
-            "trick_attack"
-        ]
+        "time": 20175,
+        "event": "Cast",
+        "name": "Broil II",
+        "duration": 235,
+        "resource": {
+            "mp": 7280,
+            "tp": 1000
+        }
     },
     {
-        "time": 20528,
-        "event": "Damage",
-        "name": "Aero III",
-        "damage": 1403,
+        "time": 20250,
+        "event": "DOT Tick",
+        "name": "bio_ii",
+        "damage": 999,
         "crit": false,
         "dh": false,
         "buff": [
-            "cleric_stance",
+            "battle_litany",
+            "foe_requiem",
+            "bard_aura",
+            "contagion"
+        ]
+    },
+    {
+        "time": 20410,
+        "event": "Damage",
+        "name": "Broil II",
+        "damage": 6221,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "battle_voice",
             "foe_requiem",
             "bard_aura",
             "trick_attack"
         ]
     },
     {
-        "time": 20528,
+        "time": 20410,
         "event": "Cast",
-        "name": "Stone IV",
+        "name": "Broil II",
         "duration": 235,
         "resource": {
-            "mp": 8280,
+            "mp": 6960,
             "tp": 1000
         }
     },
     {
         "time": 20550,
         "event": "DOT Tick",
-        "name": "aero_ii",
-        "damage": 1670,
+        "name": "bio_ii",
+        "damage": 999,
         "crit": false,
         "dh": false,
         "buff": [
             "battle_litany",
-            "battle_voice",
             "foe_requiem",
             "bard_aura",
-            "trick_attack",
             "contagion"
         ]
     },
     {
-        "time": 20550,
-        "event": "DOT Tick",
-        "name": "aero_iii",
-        "damage": 1186,
+        "time": 20645,
+        "event": "Damage",
+        "name": "Broil II",
+        "damage": 6346,
         "crit": false,
         "dh": false,
         "buff": [
-            "cleric_stance",
             "foe_requiem",
             "bard_aura",
             "trick_attack"
         ]
     },
     {
-        "time": 20763,
+        "time": 20645,
         "event": "Cast",
-        "name": "Stone IV",
+        "name": "Broil II",
         "duration": 235,
         "resource": {
-            "mp": 8080,
+            "mp": 6640,
             "tp": 1000
         }
     },
     {
-        "time": 20830,
+        "time": 20850,
+        "event": "DOT Tick",
+        "name": "bio_ii",
+        "damage": 1505,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "battle_litany",
+            "foe_requiem",
+            "bard_aura",
+            "contagion"
+        ]
+    },
+    {
+        "time": 20880,
         "event": "Damage",
-        "name": "Stone IV",
-        "damage": 6721,
+        "name": "Broil II",
+        "damage": 5827,
         "crit": false,
         "dh": false,
         "buff": [
-            "cleric_stance",
             "foe_requiem",
             "bard_aura"
         ]
     },
     {
-        "time": 20850,
+        "time": 20880,
+        "event": "Cast",
+        "name": "Broil II",
+        "duration": 235,
+        "resource": {
+            "mp": 6320,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 21115,
+        "event": "Damage",
+        "name": "Broil II",
+        "damage": 5484,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "foe_requiem",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 21115,
+        "event": "Cast",
+        "name": "Broil II",
+        "duration": 235,
+        "resource": {
+            "mp": 5600,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 21150,
         "event": "DOT Tick",
-        "name": "aero_ii",
-        "damage": 1527,
+        "name": "bio_ii",
+        "damage": 959,
         "crit": false,
         "dh": false,
         "buff": [
             "battle_litany",
-            "battle_voice",
             "foe_requiem",
             "bard_aura",
-            "trick_attack",
             "contagion"
         ]
     },
     {
-        "time": 20850,
-        "event": "DOT Tick",
-        "name": "aero_iii",
-        "damage": 1787,
-        "crit": true,
+        "time": 21350,
+        "event": "Damage",
+        "name": "Broil II",
+        "damage": 5655,
+        "crit": false,
         "dh": false,
         "buff": [
-            "cleric_stance",
             "foe_requiem",
-            "bard_aura",
-            "trick_attack"
+            "bard_aura"
         ]
     },
     {
-        "time": 20998,
+        "time": 21350,
         "event": "Cast",
-        "name": "Aero II",
+        "name": "Bio II",
         "duration": 0,
         "resource": {
-            "mp": 7880,
+            "mp": 5280,
             "tp": 1000
         }
     },
     {
-        "time": 21065,
-        "event": "Damage",
-        "name": "Stone IV",
-        "damage": 5966,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "foe_requiem",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 21066,
-        "event": "Damage",
-        "name": "Aero II",
-        "damage": 1240,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "foe_requiem",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 21066,
+        "time": 21417,
         "event": "DOT Apply",
-        "name": "Aero II",
-        "base_damage": 1314.4,
+        "name": "Bio II",
+        "base_damage": 909.48,
         "duration": 1800,
         "buff": [
             "foe_requiem",
@@ -4540,10 +4159,20 @@
         ]
     },
     {
-        "time": 21150,
+        "time": 21417,
+        "event": "Cast",
+        "name": "Aether Flow",
+        "duration": 0,
+        "resource": {
+            "mp": 5280,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 21450,
         "event": "DOT Tick",
-        "name": "aero_ii",
-        "damage": 1261,
+        "name": "bio_ii",
+        "damage": 936,
         "crit": false,
         "dh": false,
         "buff": [
@@ -4552,34 +4181,20 @@
         ]
     },
     {
-        "time": 21150,
-        "event": "DOT Tick",
-        "name": "aero_iii",
-        "damage": 1162,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "cleric_stance",
-            "foe_requiem",
-            "bard_aura",
-            "trick_attack"
-        ]
-    },
-    {
-        "time": 21233,
+        "time": 21484,
         "event": "Cast",
-        "name": "Stone IV",
-        "duration": 235,
+        "name": "Energy Drain",
+        "duration": 0,
         "resource": {
             "mp": 7680,
             "tp": 1000
         }
     },
     {
-        "time": 21450,
-        "event": "DOT Tick",
-        "name": "aero_ii",
-        "damage": 1864,
+        "time": 21552,
+        "event": "Damage",
+        "name": "Energy Drain",
+        "damage": 5668,
         "crit": true,
         "dh": false,
         "buff": [
@@ -4588,34 +4203,20 @@
         ]
     },
     {
-        "time": 21450,
-        "event": "DOT Tick",
-        "name": "aero_iii",
-        "damage": 1162,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "cleric_stance",
-            "foe_requiem",
-            "bard_aura",
-            "trick_attack"
-        ]
-    },
-    {
-        "time": 21468,
+        "time": 21585,
         "event": "Cast",
-        "name": "Stone IV",
+        "name": "Broil II",
         "duration": 235,
         "resource": {
-            "mp": 7480,
+            "mp": 8160,
             "tp": 1000
         }
     },
     {
-        "time": 21535,
-        "event": "Damage",
-        "name": "Stone IV",
-        "damage": 6215,
+        "time": 21750,
+        "event": "DOT Tick",
+        "name": "bio_ii",
+        "damage": 945,
         "crit": false,
         "dh": false,
         "buff": [
@@ -4624,67 +4225,41 @@
         ]
     },
     {
-        "time": 21703,
+        "time": 21820,
+        "event": "Damage",
+        "name": "Broil II",
+        "damage": 5380,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 21820,
         "event": "Cast",
-        "name": "Stone IV",
-        "duration": 235,
+        "name": "Miasma II",
+        "duration": 0,
         "resource": {
             "mp": 6880,
             "tp": 1000
         }
     },
     {
-        "time": 21750,
-        "event": "DOT Tick",
-        "name": "aero_ii",
-        "damage": 1353,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "foe_requiem",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 21750,
-        "event": "DOT Tick",
-        "name": "aero_iii",
-        "damage": 1186,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "cleric_stance",
-            "foe_requiem",
-            "bard_aura",
-            "trick_attack"
-        ]
-    },
-    {
-        "time": 21770,
-        "event": "Damage",
-        "name": "Stone IV",
-        "damage": 6154,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 21938,
+        "time": 21887,
         "event": "Cast",
-        "name": "Stone IV",
-        "duration": 235,
+        "name": "Energy Drain",
+        "duration": 0,
         "resource": {
-            "mp": 6680,
+            "mp": 6880,
             "tp": 1000
         }
     },
     {
-        "time": 22005,
+        "time": 21888,
         "event": "Damage",
-        "name": "Stone IV",
-        "damage": 6335,
+        "name": "Miasma II",
+        "damage": 2387,
         "crit": false,
         "dh": false,
         "buff": [
@@ -4692,46 +4267,156 @@
         ]
     },
     {
-        "time": 22050,
-        "event": "DOT Tick",
-        "name": "aero_ii",
-        "damage": 1274,
-        "crit": false,
-        "dh": false,
+        "time": 21888,
+        "event": "DOT Apply",
+        "name": "Miasma II",
+        "base_damage": 637.0600000000001,
+        "duration": 1200,
         "buff": [
-            "foe_requiem",
             "bard_aura"
         ]
     },
     {
-        "time": 22050,
-        "event": "DOT Tick",
-        "name": "aero_iii",
-        "damage": 1210,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "cleric_stance",
-            "foe_requiem",
-            "bard_aura",
-            "trick_attack"
-        ]
-    },
-    {
-        "time": 22173,
+        "time": 21954,
         "event": "Cast",
-        "name": "Stone IV",
+        "name": "Shadow Flare",
+        "duration": 0,
+        "resource": {
+            "mp": 8080,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 21955,
+        "event": "Damage",
+        "name": "Energy Drain",
+        "damage": 3511,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 22021,
+        "event": "DOT Apply",
+        "name": "Shadow Flare",
+        "base_damage": 1277.3,
+        "duration": 1500,
+        "buff": [
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 22050,
+        "event": "DOT Tick",
+        "name": "bio_ii",
+        "damage": 927,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "foe_requiem",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 22050,
+        "event": "DOT Tick",
+        "name": "miasma_ii",
+        "damage": 649,
+        "crit": false,
+        "dh": false,
+        "buff": []
+    },
+    {
+        "time": 22050,
+        "event": "DOT Tick",
+        "name": "shadow_flare",
+        "damage": 1213,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 22055,
+        "event": "Cast",
+        "name": "Broil II",
         "duration": 235,
+        "resource": {
+            "mp": 7760,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 22290,
+        "event": "Damage",
+        "name": "Broil II",
+        "damage": 5768,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 22290,
+        "event": "Cast",
+        "name": "Miasma II",
+        "duration": 0,
+        "resource": {
+            "mp": 6080,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 22350,
+        "event": "DOT Tick",
+        "name": "bio_ii",
+        "damage": 945,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "foe_requiem",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 22350,
+        "event": "DOT Tick",
+        "name": "miasma_ii",
+        "damage": 668,
+        "crit": false,
+        "dh": false,
+        "buff": []
+    },
+    {
+        "time": 22350,
+        "event": "DOT Tick",
+        "name": "shadow_flare",
+        "damage": 1213,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 22357,
+        "event": "Cast",
+        "name": "Energy Drain",
+        "duration": 0,
         "resource": {
             "mp": 6480,
             "tp": 1000
         }
     },
     {
-        "time": 22240,
+        "time": 22358,
         "event": "Damage",
-        "name": "Stone IV",
-        "damage": 5732,
+        "name": "Miasma II",
+        "damage": 2387,
         "crit": false,
         "dh": false,
         "buff": [
@@ -4739,67 +4424,41 @@
         ]
     },
     {
-        "time": 22350,
-        "event": "DOT Tick",
-        "name": "aero_ii",
-        "damage": 1274,
-        "crit": false,
-        "dh": false,
+        "time": 22358,
+        "event": "DOT Apply",
+        "name": "Miasma II",
+        "base_damage": 637.0600000000001,
+        "duration": 1200,
         "buff": [
-            "foe_requiem",
             "bard_aura"
         ]
     },
     {
-        "time": 22350,
-        "event": "DOT Tick",
-        "name": "aero_iii",
-        "damage": 1258,
-        "crit": false,
+        "time": 22425,
+        "event": "Damage",
+        "name": "Energy Drain",
+        "damage": 5557,
+        "crit": true,
         "dh": false,
         "buff": [
-            "cleric_stance",
-            "foe_requiem",
-            "bard_aura",
-            "trick_attack"
+            "bard_aura"
         ]
     },
     {
-        "time": 22408,
+        "time": 22525,
         "event": "Cast",
-        "name": "Stone IV",
+        "name": "Broil II",
         "duration": 235,
         "resource": {
-            "mp": 6280,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 22475,
-        "event": "Damage",
-        "name": "Stone IV",
-        "damage": 5732,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 22643,
-        "event": "Cast",
-        "name": "Stone IV",
-        "duration": 235,
-        "resource": {
-            "mp": 5680,
+            "mp": 6960,
             "tp": 1000
         }
     },
     {
         "time": 22650,
         "event": "DOT Tick",
-        "name": "aero_ii",
-        "damage": 1327,
+        "name": "bio_ii",
+        "damage": 936,
         "crit": false,
         "dh": false,
         "buff": [
@@ -4810,22 +4469,17 @@
     {
         "time": 22650,
         "event": "DOT Tick",
-        "name": "aero_iii",
-        "damage": 1246,
+        "name": "miasma_ii",
+        "damage": 637,
         "crit": false,
         "dh": false,
-        "buff": [
-            "cleric_stance",
-            "foe_requiem",
-            "bard_aura",
-            "trick_attack"
-        ]
+        "buff": []
     },
     {
-        "time": 22710,
-        "event": "Damage",
-        "name": "Stone IV",
-        "damage": 5852,
+        "time": 22650,
+        "event": "DOT Tick",
+        "name": "shadow_flare",
+        "damage": 1328,
         "crit": false,
         "dh": false,
         "buff": [
@@ -4833,20 +4487,52 @@
         ]
     },
     {
-        "time": 22878,
+        "time": 22760,
+        "event": "Damage",
+        "name": "Broil II",
+        "damage": 5657,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 22760,
         "event": "Cast",
-        "name": "Stone IV",
+        "name": "Broil II",
         "duration": 235,
         "resource": {
-            "mp": 5480,
+            "mp": 6640,
             "tp": 1000
         }
     },
     {
-        "time": 22945,
-        "event": "Damage",
-        "name": "Stone IV",
-        "damage": 5792,
+        "time": 22950,
+        "event": "DOT Tick",
+        "name": "bio_ii",
+        "damage": 927,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "foe_requiem",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 22950,
+        "event": "DOT Tick",
+        "name": "miasma_ii",
+        "damage": 643,
+        "crit": false,
+        "dh": false,
+        "buff": []
+    },
+    {
+        "time": 22950,
+        "event": "DOT Tick",
+        "name": "shadow_flare",
+        "damage": 1251,
         "crit": false,
         "dh": false,
         "buff": [
@@ -4854,9 +4540,94 @@
         ]
     },
     {
-        "time": 23113,
+        "time": 22995,
+        "event": "Damage",
+        "name": "Broil II",
+        "damage": 5436,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 22995,
         "event": "Cast",
-        "name": "Stone IV",
+        "name": "Broil II",
+        "duration": 235,
+        "resource": {
+            "mp": 6320,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 23230,
+        "event": "Damage",
+        "name": "Broil II",
+        "damage": 5491,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 23230,
+        "event": "Cast",
+        "name": "Broil II",
+        "duration": 235,
+        "resource": {
+            "mp": 5600,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 23250,
+        "event": "DOT Tick",
+        "name": "bio_ii",
+        "damage": 909,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "foe_requiem",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 23250,
+        "event": "DOT Tick",
+        "name": "miasma_ii",
+        "damage": 624,
+        "crit": false,
+        "dh": false,
+        "buff": []
+    },
+    {
+        "time": 23250,
+        "event": "DOT Tick",
+        "name": "shadow_flare",
+        "damage": 1302,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 23465,
+        "event": "Damage",
+        "name": "Broil II",
+        "damage": 8434,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 23465,
+        "event": "Cast",
+        "name": "Broil II",
         "duration": 235,
         "resource": {
             "mp": 5280,
@@ -4864,52 +4635,31 @@
         }
     },
     {
-        "time": 23180,
-        "event": "Damage",
-        "name": "Stone IV",
-        "damage": 6275,
+        "time": 23550,
+        "event": "DOT Tick",
+        "name": "bio_ii",
+        "damage": 954,
         "crit": false,
         "dh": false,
         "buff": [
+            "foe_requiem",
             "bard_aura"
         ]
     },
     {
-        "time": 23348,
-        "event": "Cast",
-        "name": "Stone IV",
-        "duration": 235,
-        "resource": {
-            "mp": 5080,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 23415,
-        "event": "Damage",
-        "name": "Stone IV",
-        "damage": 6335,
+        "time": 23550,
+        "event": "DOT Tick",
+        "name": "miasma_ii",
+        "damage": 656,
         "crit": false,
         "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
+        "buff": []
     },
     {
-        "time": 23583,
-        "event": "Cast",
-        "name": "Stone IV",
-        "duration": 235,
-        "resource": {
-            "mp": 4880,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 23650,
+        "time": 23700,
         "event": "Damage",
-        "name": "Stone IV",
-        "damage": 8733,
+        "name": "Broil II",
+        "damage": 7866,
         "crit": true,
         "dh": false,
         "buff": [
@@ -4917,24 +4667,46 @@
         ]
     },
     {
-        "time": 23818,
+        "time": 23700,
         "event": "Cast",
-        "name": "Stone IV",
+        "name": "Broil II",
         "duration": 235,
         "resource": {
-            "mp": 4280,
+            "mp": 4960,
             "tp": 1000
         }
     },
     {
-        "time": 23885,
+        "time": 23850,
+        "event": "DOT Tick",
+        "name": "bio_ii",
+        "damage": 873,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "foe_requiem",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 23935,
         "event": "Damage",
-        "name": "Stone IV",
-        "damage": 6034,
+        "name": "Broil II",
+        "damage": 5602,
         "crit": false,
         "dh": false,
         "buff": [
             "bard_aura"
         ]
+    },
+    {
+        "time": 23935,
+        "event": "Cast",
+        "name": "Broil II",
+        "duration": 235,
+        "resource": {
+            "mp": 4640,
+            "tp": 1000
+        }
     }
 ]

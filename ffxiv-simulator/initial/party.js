@@ -6,6 +6,7 @@
         data.buff.battle_litany = 0;
         data.buff.dragon_sight = 0;
         data.buff.chain_strategem = 0;
+        data.buff.fey_wind = 0;
         data.buff.battle_voice = 0;
         data.buff.foe_requiem = 0;
         data.buff.bard_aura = 0;

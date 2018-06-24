@@ -244,6 +244,11 @@ class Fight {
             this.player.buff.chain_strategem = 1500;
             this.partyBuffLog('Chain Strategem', 2000);
         }
+        // 学者连环计
+        if (this.setting.simulate.partyMember.indexOf('sch') !== -1 && (this.setting.simulate.duration - this.battle.time) % 6000 == 100) {
+            this.player.buff.fey_wind = 1500;
+            this.partyBuffLog('Fey Wind', 2000);
+        }
         // 诗人战斗之声
         if (this.setting.simulate.partyMember.indexOf('brd') !== -1 && this.setting.job !== 'brd' && (this.setting.simulate.duration - this.battle.time) % 18000 == 400) {
             this.player.buff.battle_voice = 2000;

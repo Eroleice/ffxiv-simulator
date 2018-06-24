@@ -56,38 +56,8 @@ class skill {
     /** 
      * 下面是技能释放代码
      * */
-    stone_iv() {
-        this.player.casting = 'stone_iv';
-        this.player.resource.mp -= 600;
-        this.player.tick.animation = animationBlock;
-        this.player.tick.gcd = this.calculateGCD();
-        this.player.tick.cast = this.calculateGCD();
-        this.log.push({
-            'time': this.setting.simulate.duration - this.battle.time,
-            'event': 'Cast',
-            'name': 'Stone IV',
-            'duration': deepcopy(this.player.tick.cast),
-            'resource': deepcopy(this.player.resource)
-        });
-    }
-    aero_ii() {
-        this.player.resource.mp -= 600;
-        this.player.tick.animation = animationBlock;
-        this.player.tick.gcd = this.calculateGCD();
-        this.battle.skillEffectQue.push({
-            'time': 67,
-            'name': 'aero_ii'
-        });
-        this.log.push({
-            'time': this.setting.simulate.duration - this.battle.time,
-            'event': 'Cast',
-            'name': 'Aero II',
-            'duration': 0,
-            'resource': deepcopy(this.player.resource)
-        });
-    }
-    aero_iii() {
-        this.player.casting = 'aero_iii';
+    broil_ii() {
+        this.player.casting = 'broil_ii';
         this.player.resource.mp -= 720;
         this.player.tick.animation = animationBlock;
         this.player.tick.gcd = this.calculateGCD();
@@ -95,37 +65,130 @@ class skill {
         this.log.push({
             'time': this.setting.simulate.duration - this.battle.time,
             'event': 'Cast',
-            'name': 'Aero III',
+            'name': 'Broil II',
             'duration': deepcopy(this.player.tick.cast),
             'resource': deepcopy(this.player.resource)
         });
     }
-    assize() {
+    bio_ii() {
+        this.player.resource.mp -= 720;
         this.player.tick.animation = animationBlock;
-        this.player.cd.assize = 6000;
+        this.player.tick.gcd = this.calculateGCD();
         this.battle.skillEffectQue.push({
             'time': 67,
-            'name': 'assize'
+            'name': 'bio_ii'
         });
         this.log.push({
             'time': this.setting.simulate.duration - this.battle.time,
             'event': 'Cast',
-            'name': 'Assize',
+            'name': 'Bio II',
             'duration': 0,
             'resource': deepcopy(this.player.resource)
         });
     }
-    presence_of_mind() {
+    ruin_ii() {
+        this.player.resource.mp -= 480;
         this.player.tick.animation = animationBlock;
-        this.player.cd.presence_of_mind = 15000;
+        this.player.tick.gcd = this.calculateGCD();
         this.battle.skillEffectQue.push({
             'time': 67,
-            'name': 'presence_of_mind'
+            'name': 'ruin_ii'
         });
         this.log.push({
             'time': this.setting.simulate.duration - this.battle.time,
             'event': 'Cast',
-            'name': 'Presence of Mind',
+            'name': 'Ruin II',
+            'duration': 0,
+            'resource': deepcopy(this.player.resource)
+        });
+    }
+    miasma() {
+        this.player.casting = 'Miasma';
+        this.player.resource.mp -= 600;
+        this.player.tick.animation = animationBlock;
+        this.player.tick.gcd = this.calculateGCD();
+        this.player.tick.cast = this.calculateGCD();
+        this.log.push({
+            'time': this.setting.simulate.duration - this.battle.time,
+            'event': 'Cast',
+            'name': 'Miasma',
+            'duration': deepcopy(this.player.tick.cast),
+            'resource': deepcopy(this.player.resource)
+        });
+    }
+    miasma_ii() {
+        this.player.resource.mp -= 1680;
+        this.player.tick.animation = animationBlock;
+        this.player.tick.gcd = this.calculateGCD();
+        this.battle.skillEffectQue.push({
+            'time': 67,
+            'name': 'miasma_ii'
+        });
+        this.log.push({
+            'time': this.setting.simulate.duration - this.battle.time,
+            'event': 'Cast',
+            'name': 'Miasma II',
+            'duration': 0,
+            'resource': deepcopy(this.player.resource)
+        });
+    }
+    shadow_flare() {
+        this.player.tick.animation = animationBlock;
+        this.player.cd.shadow_flare = 6000;
+        this.battle.skillEffectQue.push({
+            'time': 67,
+            'name': 'shadow_flare'
+        });
+        this.log.push({
+            'time': this.setting.simulate.duration - this.battle.time,
+            'event': 'Cast',
+            'name': 'Shadow Flare',
+            'duration': 0,
+            'resource': deepcopy(this.player.resource)
+        });
+    }
+    aetherflow() {
+        this.player.tick.animation = animationBlock;
+        this.player.cd.aetherflow = 6000;
+        this.battle.skillEffectQue.push({
+            'time': 67,
+            'name': 'aetherflow'
+        });
+        this.log.push({
+            'time': this.setting.simulate.duration - this.battle.time,
+            'event': 'Cast',
+            'name': 'Aether Flow',
+            'duration': 0,
+            'resource': deepcopy(this.player.resource)
+        });
+    }
+    energy_drain() {
+        this.player.tick.animation = animationBlock;
+        this.player.job.aetherflow -= 1;
+        this.player.cd.energy_drain = 300;
+        this.battle.skillEffectQue.push({
+            'time': 67,
+            'name': 'energy_drain'
+        });
+        this.log.push({
+            'time': this.setting.simulate.duration - this.battle.time,
+            'event': 'Cast',
+            'name': 'Energy Drain',
+            'duration': 0,
+            'resource': deepcopy(this.player.resource)
+        });
+    }
+    chain_strategem() {
+        this.player.tick.animation = animationBlock;
+        this.player.cd.chain_strategem = 12000;
+        this.battle.skillEffectQue.push({
+            'time': 67,
+            'name': 'chain_strategem'
+        });
+        this.log.push({
+            'time': this.setting.simulate.duration - this.battle.time,
+            'event': 'Cast',
+            'name': 'Chain Strategem',
             'duration': 0,
             'resource': deepcopy(this.player.resource)
         });
@@ -191,101 +254,149 @@ class effect {
     /** 
      * 下面是技能生效代码
      * */
-    stone_iv() {
-        var potency = 250;
+    broil_ii() {
+        var potency = 230;
         var damage = calculate.damageCalculate(this, potency);
         this.battle.damageQue.push({
             'time': 50,
-            'name': 'Stone IV',
+            'name': 'Broil II',
             'damage': damage.damage,
             'crit': damage.crit,
             'dh': damage.dh,
             'buff': this.whatBuff()
         });
     }
-    aero_ii() {
-        var potency = 50;
-        var damage = calculate.damageCalculate(this, potency);
-        this.battle.skillEffectQue.push({
-            'time': 0,
-            'name': 'aero_ii_dot'
-        });
-        this.battle.damageQue.push({
-            'time': 0,
-            'name': 'Aero II',
-            'damage': damage.damage,
-            'crit': damage.crit,
-            'dh': damage.dh,
-            'buff': this.whatBuff()
-        });
-    }
-    aero_ii_dot() {
+    bio_ii() {
         this.player.engage = true;
-        var potency = 50;
+        var potency = 35;
         var damage = calculate.dotBaseDamageCalculate(this, potency);
-        this.player.dot.aero_ii.time = 1800;
-        this.player.dot.aero_ii.damage = damage;
-        this.player.dot.aero_ii.buff = this.whatBuff();
+        this.player.dot.bio_ii.time = 3000;
+        this.player.dot.bio_ii.damage = damage;
+        this.player.dot.bio_ii.buff = this.whatBuff();
         this.log.push({
             'time': this.setting.simulate.duration - this.battle.time,
             'event': 'DOT Apply',
-            'name': 'Aero II',
+            'name': 'Bio II',
             'base_damage': damage,
             'duration': 1800,
             'buff': this.whatBuff()
         });
     }
-    aero_iii() {
-        var potency = 50;
+    ruin_ii() {
+        var potency = 100;
         var damage = calculate.damageCalculate(this, potency);
-        this.battle.skillEffectQue.push({
-            'time': 0,
-            'name': 'aero_iii_dot'
-        });
         this.battle.damageQue.push({
-            'time': 50,
-            'name': 'Aero III',
+            'time': 0,
+            'name': 'Ruin II',
             'damage': damage.damage,
             'crit': damage.crit,
             'dh': damage.dh,
             'buff': this.whatBuff()
         });
     }
-    aero_iii_dot() {
+    miasma() {
+        var potency = 20;
+        var damage = calculate.damageCalculate(this, potency);
+        this.battle.skillEffectQue.push({
+            'time': 0,
+            'name': 'miasma_dot'
+        });
+        this.battle.damageQue.push({
+            'time': 50,
+            'name': 'Miasma',
+            'damage': damage.damage,
+            'crit': damage.crit,
+            'dh': damage.dh,
+            'buff': this.whatBuff()
+        });
+    }
+    miasma_dot() {
         this.player.engage = true;
-        var potency = 40;
+        var potency = 35;
         var damage = calculate.dotBaseDamageCalculate(this, potency);
-        this.player.dot.aero_iii.time = 2400;
-        this.player.dot.aero_iii.damage = damage;
-        this.player.dot.aero_iii.buff = this.whatBuff();
+        this.player.dot.miasma.time = 2400;
+        this.player.dot.miasma.damage = damage;
+        this.player.dot.miasma.buff = this.whatBuff();
         this.log.push({
             'time': this.setting.simulate.duration - this.battle.time,
             'event': 'DOT Apply',
-            'name': 'Aero III',
+            'name': 'Miasma',
             'base_damage': damage,
             'duration': 2400,
             'buff': this.whatBuff()
         });
     }
-    assize() {
-        this.player.resource.mp = Math.min(this.setting.player.mp,this.player.resource.mp + 0.1 * this.setting.player.mp);
-        var potency = 300;
+    miasma_ii() {
+        var potency = 100;
         var damage = calculate.damageCalculate(this, potency);
+        this.battle.skillEffectQue.push({
+            'time': 0,
+            'name': 'miasma_ii_dot'
+        });
         this.battle.damageQue.push({
             'time': 0,
-            'name': 'Assize',
+            'name': 'Miasma II',
             'damage': damage.damage,
             'crit': damage.crit,
             'dh': damage.dh,
             'buff': this.whatBuff()
         });
     }
-    presence_of_mind() {
-        this.player.buff.presence_of_mind = 1500;
+    miasma_ii_dot() {
+        this.player.engage = true;
+        var potency = 25;
+        var damage = calculate.dotBaseDamageCalculate(this, potency);
+        this.player.dot.miasma_ii.time = 1200;
+        this.player.dot.miasma_ii.damage = damage;
+        this.player.dot.miasma.buff = this.whatBuff();
+        this.log.push({
+            'time': this.setting.simulate.duration - this.battle.time,
+            'event': 'DOT Apply',
+            'name': 'Miasma II',
+            'base_damage': damage,
+            'duration': 1200,
+            'buff': this.whatBuff()
+        });
+    }
+    shadow_flare() {
+        this.player.engage = true;
+        var potency = 50;
+        var damage = calculate.dotBaseDamageCalculate(this, potency);
+        this.player.dot.shadow_flare.time = 1500;
+        this.player.dot.shadow_flare.damage = damage;
+        this.player.dot.shadow_flare.buff = this.whatBuff();
+        this.log.push({
+            'time': this.setting.simulate.duration - this.battle.time,
+            'event': 'DOT Apply',
+            'name': 'Shadow Flare',
+            'base_damage': damage,
+            'duration': 1500,
+            'buff': this.whatBuff()
+        });
+    }
+    aetherflow() {
+        this.player.job.aetherflow = 3;
+        this.player.resource.mp = Math.min(this.setting.player.mp , this.player.resource.mp + this.setting.player.mp * 0.1);
+    }
+    energy_drain() {
+        this.player.resource.mp = Math.min(this.setting.player.mp, this.player.resource.mp + 1200);
+        var potency = 150;
+        var damage = calculate.damageCalculate(this, potency);
+        this.battle.damageQue.push({
+            'time': 0,
+            'name': 'Energy Drain',
+            'damage': damage.damage,
+            'crit': damage.crit,
+            'dh': damage.dh,
+            'buff': this.whatBuff()
+        });
+    }
+    chain_strategem() {
+        this.player.buff.chain_strategem = 1500;
         this.log.push({
             'time': this.setting.simulate.duration - this.battle.time,
             'event': 'Buff Apply',
-            'name': 'Presence of Mind',
+            'name': 'Chain Strategem',
             'duration': 1500
         });
     }
@@ -374,16 +485,24 @@ module.exports = {
     },
     'cast': function (data, name) {
         var s = new skill(data);
-        if (name == 'stone_iv') {
-            s.stone_iv();
-        } else if (name == 'aero_ii') {
-            s.aero_ii();
-        } else if (name == 'aero_iii') {
-            s.aero_iii();
-        } else if (name == 'assize') {
-            s.assize();
-        } else if (name == 'presence_of_mind') {
-            s.presence_of_mind();
+        if (name == 'broil_ii') {
+            s.broil_ii();
+        } else if (name == 'bio_ii') {
+            s.bio_ii();
+        } else if (name == 'miasma') {
+            s.miasma();
+        } else if (name == 'miasma_ii') {
+            s.miasma_ii();
+        } else if (name == 'shadow_flare') {
+            s.shadow_flare();
+        } else if (name == 'energy_drain') {
+            s.energy_drain();
+        } else if (name == 'aetherflow') {
+            s.aetherflow();
+        } else if (name == 'chain_strategem') {
+            s.chain_strategem();
+        } else if (name == 'ruin_ii') {
+            s.ruin_ii();
         } else if (name == 'potion') {
             s.potion();
         } else if (name == 'cleric_stance') {
@@ -395,20 +514,28 @@ module.exports = {
     },
     'effect': function (data, name) {
         var e = new effect(data);
-        if (name == 'stone_iv') {
-            e.stone_iv();
-        } else if (name == 'aero_ii') {
-            e.aero_ii();
-        } else if (name == 'aero_ii_dot') {
-            e.aero_ii_dot();
-        } else if (name == 'aero_iii') {
-            e.aero_iii();
-        } else if (name == 'aero_iii_dot') {
-            e.aero_iii_dot();
-        } else if (name == 'assize') {
-            e.assize();
-        } else if (name == 'presence_of_mind') {
-            e.presence_of_mind();
+        if (name == 'broil_ii') {
+            e.broil_ii();
+        } else if (name == 'bio_ii') {
+            e.bio_ii();
+        } else if (name == 'miasma') {
+            e.miasma();
+        } else if (name == 'miasma_dot') {
+            e.miasma_dot();
+        } else if (name == 'miasma_ii_dot') {
+            e.miasma_ii_dot();
+        } else if (name == 'miasma_ii') {
+            e.miasma_ii();
+        } else if (name == 'shadow_flare') {
+            e.shadow_flare();
+        } else if (name == 'energy_drain') {
+            e.energy_drain();
+        } else if (name == 'aetherflow') {
+            e.aetherflow();
+        } else if (name == 'chain_strategem') {
+            e.chain_strategem();
+        } else if (name == 'ruin_ii') {
+            e.ruin_ii();
         } else if (name == 'potion') {
             e.potion();
         } else if (name == 'cleric_stance') {

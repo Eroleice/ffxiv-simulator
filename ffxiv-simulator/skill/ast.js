@@ -29,7 +29,7 @@ class skill {
             'huton': 0.85,
             'ley_lines': 0.85
         });
-        mod = (this.isBuff('feys_wind')) ? (mod - 0.03) : mod;
+        mod = (this.isBuff('fey_wind')) ? (mod - 0.03) : mod;
         return mod;
     }
 
