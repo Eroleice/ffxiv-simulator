@@ -38,10 +38,11 @@ class Fight {
         this.battle = {
             'opener': deepcopy(data.opener),                     // 开场队列
             'time': deepcopy(data.simulate.duration),            // 战斗计时
-            'skillPriority': '',
-            'abilityPriority': '',
-            'damageQue': [],
-            'skillEffectQue': [],
+            'skillPriority': '',                                 // 技能最高优先级
+            'abilityPriority': '',                               // 能力最高优先级
+            'damageQue': [],                                     // 伤害时间轴
+            'skillEffectQue': [],                                // 技能效果时间轴
+            'totalDamage': 0                                     // 战斗总伤害
         };
 
         // 统计参数，不会修改
@@ -196,6 +197,7 @@ class Fight {
             'crit': data.crit,
             'dh': data.dh
         });
+        this.battle.totalDamage += data.damage;
     }
 
     // dot伤害
@@ -213,7 +215,7 @@ class Fight {
                     'crit': dotData.crit,
                     'dh': dotData.dh
                 });
-
+                this.battle.totalDamage += dotData.damage;
             }
             
         }
@@ -326,7 +328,10 @@ module.exports = {
 
         var fight = new Fight(data);    // 建立新的战斗类
         fight.start();                  // 模拟开始
-        return fight.log;               // 返回statisic object
+        return {
+            'dps': Math.floor(fight.battle.totalDamage / (fight.setting.simulate.duration / 100)),
+            'log': fight.log
+        }; 
 
     }
 };

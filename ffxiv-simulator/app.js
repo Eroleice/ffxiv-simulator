@@ -7,19 +7,9 @@ var input = set.set();
 
 var data = sim.run(input);
 
-//console.log(data);
+console.log('DPS: ' + data.dps);
 
-var totalDamage = 0;
-
-for (var i = 0; i < data.length; i++) {
-    if (typeof data[i].damage == 'number') {
-        totalDamage += data[i].damage;
-    }
-}
-
-console.log('DPS: ' + Math.floor( totalDamage / 240));
-
-var json = JSON.stringify(data,null,4);
+var json = JSON.stringify(data.log,null,4);
 fs.writeFile('Battle Log.json', json, 'utf8', function () {
     console.log('Battle Log.json complete!');
 });
