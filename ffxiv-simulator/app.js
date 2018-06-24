@@ -19,7 +19,7 @@ for (var i = 0; i < data.length; i++) {
 
 console.log('DPS: ' + Math.floor( totalDamage / 240));
 
-var json = JSON.stringify(data);
+var json = JSON.stringify(data,null,4);
 fs.writeFile('Battle Log.json', json, 'utf8', function () {
     console.log('Battle Log.json complete!');
 });

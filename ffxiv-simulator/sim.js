@@ -294,10 +294,11 @@ class Fight {
         }
     }
 
+    // 回蓝机制
     manaRegen() {
-        this.player.resource.mp = Math.floor(this.player.resource.mp + this.setting.player.mp * 0.02);
+        this.player.resource.mp = Math.min(Math.floor(this.player.resource.mp + this.setting.player.mp * 0.02),this.setting.player.mp);
         if (this.isBuff('lucid_dreaming')) {
-            this.player.resource.mp += 960;
+            this.player.resource.mp = Math.min(this.player.resource.mp+960,this.setting.player.mp);
         }
     }
 

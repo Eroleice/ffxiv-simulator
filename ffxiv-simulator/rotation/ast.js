@@ -22,7 +22,7 @@ module.exports = {
             return 'potion';
         } else if (data.player.cd.cleric_stance <= 0) {
             return 'cleric_stance';
-        } else if (data.player.cd.lucid_dreaming <= 0) {
+        } else if (data.player.cd.lucid_dreaming <= 0 && data.player.resource.mp <= data.setting.player.mp * 0.9) {
             return 'lucid_dreaming';
         } else {
             return 'snooze';
