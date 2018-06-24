@@ -38,7 +38,13 @@
     <Compile Include="initial\party.js">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="initial\whm.js">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="rotation\ast.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="rotation\whm.js">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="sim.js">

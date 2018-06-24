@@ -56,8 +56,8 @@ class skill {
     /** 
      * 下面是技能释放代码
      * */
-    malefic_iii() {
-        this.player.casting = 'malefic_iii';
+    stone_iv() {
+        this.player.casting = 'stone_iv';
         this.player.resource.mp -= 600;
         this.player.tick.animation = animationBlock;
         this.player.tick.gcd = this.calculateGCD();
@@ -65,23 +65,67 @@ class skill {
         this.log.push({
             'time': this.setting.simulate.duration - this.battle.time,
             'event': 'Cast',
-            'name': 'Malefic III',
-            'duration': this.player.tick.cast,
+            'name': 'Stone IV',
+            'duration': deepcopy(this.player.tick.cast),
             'resource': deepcopy(this.player.resource)
         });
     }
-    combust_ii() {
+    aero_ii() {
         this.player.resource.mp -= 600;
         this.player.tick.animation = animationBlock;
         this.player.tick.gcd = this.calculateGCD();
         this.battle.skillEffectQue.push({
             'time': 67,
-            'name': 'combust_ii'
+            'name': 'aero_ii'
         });
         this.log.push({
             'time': this.setting.simulate.duration - this.battle.time,
             'event': 'Cast',
-            'name': 'Combust II',
+            'name': 'Aero II',
+            'duration': 0,
+            'resource': deepcopy(this.player.resource)
+        });
+    }
+    aero_iii() {
+        this.player.casting = 'aero_iii';
+        this.player.resource.mp -= 720;
+        this.player.tick.animation = animationBlock;
+        this.player.tick.gcd = this.calculateGCD();
+        this.player.tick.cast = this.calculateGCD();
+        this.log.push({
+            'time': this.setting.simulate.duration - this.battle.time,
+            'event': 'Cast',
+            'name': 'Aero III',
+            'duration': deepcopy(this.player.tick.cast),
+            'resource': deepcopy(this.player.resource)
+        });
+    }
+    assize() {
+        this.player.tick.animation = animationBlock;
+        this.player.cd.assize = 6000;
+        this.battle.skillEffectQue.push({
+            'time': 67,
+            'name': 'assize'
+        });
+        this.log.push({
+            'time': this.setting.simulate.duration - this.battle.time,
+            'event': 'Cast',
+            'name': 'Assize',
+            'duration': 0,
+            'resource': deepcopy(this.player.resource)
+        });
+    }
+    presence_of_mind() {
+        this.player.tick.animation = animationBlock;
+        this.player.cd.presence_of_mind = 15000;
+        this.battle.skillEffectQue.push({
+            'time': 67,
+            'name': 'presence_of_mind'
+        });
+        this.log.push({
+            'time': this.setting.simulate.duration - this.battle.time,
+            'event': 'Cast',
+            'name': 'Presence of Mind',
             'duration': 0,
             'resource': deepcopy(this.player.resource)
         });
@@ -147,31 +191,102 @@ class effect {
     /** 
      * 下面是技能生效代码
      * */
-    malefic_iii() {
-        var potency = 220;
+    stone_iv() {
+        var potency = 250;
         var damage = calculate.damageCalculate(this, potency);
         this.battle.damageQue.push({
-            'time': 50 + 60,
-            'name': 'Malefic III',
+            'time': 50 + 67,
+            'name': 'Stone IV',
             'damage': damage.damage,
             'crit': damage.crit,
             'dh': damage.dh,
             'buff': this.whatBuff()
         });
     }
-    combust_ii() {
+    aero_ii() {
+        var potency = 50;
+        var damage = calculate.damageCalculate(this, potency);
+        this.battle.skillEffectQue.push({
+            'time': 0,
+            'name': 'aero_ii_dot'
+        });
+        this.battle.damageQue.push({
+            'time': 0,
+            'name': 'Aero II',
+            'damage': damage.damage,
+            'crit': damage.crit,
+            'dh': damage.dh,
+            'buff': this.whatBuff()
+        });
+    }
+    aero_ii_dot() {
+        this.player.engage = true;
         var potency = 50;
         var damage = calculate.dotBaseDamageCalculate(this, potency);
-        this.player.dot.combust_ii.time = 3000;
-        this.player.dot.combust_ii.damage = damage;
-        this.player.dot.combust_ii.buff = this.whatBuff();
+        this.player.dot.aero_ii.time = 1800;
+        this.player.dot.aero_ii.damage = damage;
+        this.player.dot.aero_ii.buff = this.whatBuff();
         this.log.push({
             'time': this.setting.simulate.duration - this.battle.time,
             'event': 'DOT Apply',
-            'name': 'Combust II',
+            'name': 'Aero II',
             'base_damage': damage,
-            'duration': 3000,
+            'duration': 1800,
             'buff': this.whatBuff()
+        });
+    }
+    aero_iii() {
+        var potency = 50;
+        var damage = calculate.damageCalculate(this, potency);
+        this.battle.skillEffectQue.push({
+            'time': 0,
+            'name': 'aero_iii_dot'
+        });
+        this.battle.damageQue.push({
+            'time': 50,
+            'name': 'Aero III',
+            'damage': damage.damage,
+            'crit': damage.crit,
+            'dh': damage.dh,
+            'buff': this.whatBuff()
+        });
+    }
+    aero_iii_dot() {
+        this.player.engage = true;
+        var potency = 40;
+        var damage = calculate.dotBaseDamageCalculate(this, potency);
+        this.player.dot.aero_iii.time = 2400;
+        this.player.dot.aero_iii.damage = damage;
+        this.player.dot.aero_iii.buff = this.whatBuff();
+        this.log.push({
+            'time': this.setting.simulate.duration - this.battle.time,
+            'event': 'DOT Apply',
+            'name': 'Aero III',
+            'base_damage': damage,
+            'duration': 2400,
+            'buff': this.whatBuff()
+        });
+    }
+    assize() {
+        this.player.resource.mp = Math.min(this.setting.player.mp,this.player.resource.mp + 0.1 * this.setting.player.mp);
+        var potency = 300;
+        var damage = calculate.damageCalculate(this, potency);
+        this.battle.damageQue.push({
+            'time': 0,
+            'name': 'Assize',
+            'damage': damage.damage,
+            'crit': damage.crit,
+            'dh': damage.dh,
+            'buff': this.whatBuff()
+        });
+    }
+    presence_of_mind() {
+        this.player.buff.presence_of_mind = 1500;
+        this.log.push({
+            'time': this.setting.simulate.duration - this.battle.time,
+            'event': 'Buff Apply',
+            'name': 'Presence of Mind',
+            'duration': 1500
         });
     }
     potion() {
@@ -259,10 +374,16 @@ module.exports = {
     },
     'cast': function (data, name) {
         var s = new skill(data);
-        if (name == 'malefic_iii') {
-            s.malefic_iii();
-        } else if (name == 'combust_ii') {
-            s.combust_ii();
+        if (name == 'stone_iv') {
+            s.stone_iv();
+        } else if (name == 'aero_ii') {
+            s.aero_ii();
+        } else if (name == 'aero_iii') {
+            s.aero_iii();
+        } else if (name == 'assize') {
+            s.assize();
+        } else if (name == 'presence_of_mind') {
+            s.presence_of_mind();
         } else if (name == 'potion') {
             s.potion();
         } else if (name == 'cleric_stance') {
@@ -274,10 +395,20 @@ module.exports = {
     },
     'effect': function (data, name) {
         var e = new effect(data);
-        if (name == 'malefic_iii') {
-            e.malefic_iii();
-        } else if (name == 'combust_ii') {
-            e.combust_ii();
+        if (name == 'stone_iv') {
+            e.stone_iv();
+        } else if (name == 'aero_ii') {
+            e.aero_ii();
+        } else if (name == 'aero_ii_dot') {
+            e.aero_ii_dot();
+        } else if (name == 'aero_iii') {
+            e.aero_iii();
+        } else if (name == 'aero_iii_dot') {
+            e.aero_iii_dot();
+        } else if (name == 'assize') {
+            e.assize();
+        } else if (name == 'presence_of_mind') {
+            e.presence_of_mind();
         } else if (name == 'potion') {
             e.potion();
         } else if (name == 'cleric_stance') {

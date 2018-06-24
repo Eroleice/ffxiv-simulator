@@ -73,6 +73,17 @@ class Fight {
                 this.manaRegen();
             }
 
+            // 如果伤害判定触发，进行计算
+            for (var i = 0; i < this.battle.damageQue.length; i++) {
+                if (this.battle.damageQue[i].time <= 0) {
+
+                    /* 伤害计入统计 */
+                    this.damageApply(this.battle.damageQue[i]);
+                    this.battle.damageQue.shift();
+
+                }
+            }
+
             // 如果有团辅就判定
             if (this.setting.simulate.partyBuff) {
                 this.isPartyBuff();
@@ -85,17 +96,6 @@ class Fight {
             if (this.player.casting !== '' && this.player.tick.cast <= 50) {
                 this.update(this.jobSkill.effect(this, this.player.casting));
                 this.player.casting = '';
-            }
-
-            // 如果伤害判定触发，进行计算
-            for (var i = 0; i < this.battle.damageQue.length; i++) {
-                if (this.battle.damageQue[i].time <= 0) {
-
-                    /* 伤害计入统计 */
-                    this.damageApply(this.battle.damageQue[i]);
-                    this.battle.damageQue.shift();
-
-                }
             }
 
             // 如果技能效果触发，进行计算
@@ -140,6 +140,8 @@ class Fight {
             }
 
             this.tick(); // 所有时间结算，进入下一次循环验算
+
+            this.isEngage(); // 如果没有进入战斗，重置战斗时间
             
         }
 
@@ -189,6 +191,7 @@ class Fight {
 
     // 伤害记录
     damageApply(data) {
+        this.player.engage = true;
         this.log.push({
             'time': this.setting.simulate.duration - this.battle.time,
             'event': 'Damage',
@@ -322,6 +325,12 @@ class Fight {
             'name': name,
             'duration': duration
         });
+    }
+
+    isEngage(){
+        if (!this.player.engage) {
+            this.battle.time = this.setting.simulate.duration;
+        }
     }
 }
 

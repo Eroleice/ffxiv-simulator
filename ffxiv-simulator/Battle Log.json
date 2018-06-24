@@ -10,18 +10,87 @@
         }
     },
     {
-        "time": 67,
+        "time": 0,
         "event": "Buff Apply",
         "name": "Cleric Stance",
         "duration": 1500
     },
     {
-        "time": 67,
+        "time": 0,
+        "event": "Cast",
+        "name": "Presence of Mind",
+        "duration": 0,
+        "resource": {
+            "mp": 20000,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 0,
+        "event": "Buff Apply",
+        "name": "Presence of Mind",
+        "duration": 1500
+    },
+    {
+        "time": 0,
         "event": "Cast",
         "name": "Potion",
         "duration": 0,
         "resource": {
             "mp": 20000,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 0,
+        "event": "Buff Apply",
+        "name": "Potion",
+        "duration": 3000
+    },
+    {
+        "time": 0,
+        "event": "Cast",
+        "name": "Aero III",
+        "duration": 188,
+        "resource": {
+            "mp": 19280,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 0,
+        "event": "DOT Apply",
+        "name": "Aero III",
+        "base_damage": 1139.5,
+        "duration": 2400,
+        "buff": [
+            "presence_of_mind",
+            "potion",
+            "cleric_stance",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 50,
+        "event": "Damage",
+        "name": "Aero III",
+        "damage": 1322,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "presence_of_mind",
+            "potion",
+            "cleric_stance",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 50,
+        "event": "Cast",
+        "name": "Aero II",
+        "duration": 0,
+        "resource": {
+            "mp": 18680,
             "tp": 1000
         }
     },
@@ -32,20 +101,87 @@
         "duration": 2800
     },
     {
-        "time": 134,
-        "event": "Buff Apply",
-        "name": "Potion",
-        "duration": 3000
-    },
-    {
-        "time": 134,
+        "time": 117,
         "event": "Cast",
-        "name": "Combust II",
+        "name": "Assize",
         "duration": 0,
         "resource": {
-            "mp": 19400,
+            "mp": 18680,
             "tp": 1000
         }
+    },
+    {
+        "time": 118,
+        "event": "Damage",
+        "name": "Aero II",
+        "damage": 1388,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "presence_of_mind",
+            "potion",
+            "cleric_stance",
+            "bard_aura",
+            "hypercharge"
+        ]
+    },
+    {
+        "time": 118,
+        "event": "DOT Apply",
+        "name": "Aero II",
+        "base_damage": 1502.02,
+        "duration": 1800,
+        "buff": [
+            "presence_of_mind",
+            "potion",
+            "cleric_stance",
+            "bard_aura",
+            "hypercharge"
+        ]
+    },
+    {
+        "time": 150,
+        "event": "DOT Tick",
+        "name": "aero_ii",
+        "damage": 2239,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "presence_of_mind",
+            "potion",
+            "cleric_stance",
+            "bard_aura",
+            "hypercharge"
+        ]
+    },
+    {
+        "time": 150,
+        "event": "DOT Tick",
+        "name": "aero_iii",
+        "damage": 1162,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "presence_of_mind",
+            "potion",
+            "cleric_stance",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 185,
+        "event": "Damage",
+        "name": "Assize",
+        "damage": 8508,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "presence_of_mind",
+            "potion",
+            "cleric_stance",
+            "bard_aura",
+            "hypercharge"
+        ]
     },
     {
         "time": 200,
@@ -54,18 +190,14 @@
         "duration": 1500
     },
     {
-        "time": 201,
-        "event": "DOT Apply",
-        "name": "Combust II",
-        "base_damage": 1651.48,
-        "duration": 3000,
-        "buff": [
-            "potion",
-            "cleric_stance",
-            "bard_aura",
-            "contagion",
-            "hypercharge"
-        ]
+        "time": 238,
+        "event": "Cast",
+        "name": "Stone IV",
+        "duration": 188,
+        "resource": {
+            "mp": 19400,
+            "tp": 1000
+        }
     },
     {
         "time": 300,
@@ -80,16 +212,6 @@
         "duration": 3300
     },
     {
-        "time": 369,
-        "event": "Cast",
-        "name": "Malefic III",
-        "duration": 235,
-        "resource": {
-            "mp": 19200,
-            "tp": 1000
-        }
-    },
-    {
         "time": 400,
         "event": "Party Buff Apply",
         "name": "Dragon Sight",
@@ -102,38 +224,81 @@
         "duration": 2000
     },
     {
+        "time": 426,
+        "event": "Cast",
+        "name": "Stone IV",
+        "duration": 188,
+        "resource": {
+            "mp": 18800,
+            "tp": 1000
+        }
+    },
+    {
         "time": 450,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 2023,
+        "name": "aero_ii",
+        "damage": 1426,
         "crit": false,
-        "dh": true,
+        "dh": false,
         "buff": [
+            "presence_of_mind",
             "potion",
             "cleric_stance",
+            "bard_aura",
+            "hypercharge"
+        ]
+    },
+    {
+        "time": 450,
+        "event": "DOT Tick",
+        "name": "aero_iii",
+        "damage": 1128,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "presence_of_mind",
+            "potion",
+            "cleric_stance",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 493,
+        "event": "Damage",
+        "name": "Stone IV",
+        "damage": 7871,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "presence_of_mind",
+            "potion",
+            "cleric_stance",
+            "battle_litany",
+            "foe_requiem",
             "bard_aura",
             "contagion",
             "hypercharge"
         ]
     },
     {
-        "time": 604,
+        "time": 614,
         "event": "Cast",
-        "name": "Malefic III",
-        "duration": 235,
+        "name": "Stone IV",
+        "duration": 188,
         "resource": {
-            "mp": 19000,
+            "mp": 18600,
             "tp": 1000
         }
     },
     {
-        "time": 664,
+        "time": 681,
         "event": "Damage",
-        "name": "Malefic III",
-        "damage": 7707,
+        "name": "Stone IV",
+        "damage": 8602,
         "crit": false,
         "dh": false,
         "buff": [
+            "presence_of_mind",
             "potion",
             "cleric_stance",
             "battle_litany",
@@ -148,36 +313,51 @@
     {
         "time": 750,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1961,
-        "crit": false,
-        "dh": true,
+        "name": "aero_ii",
+        "damage": 2086,
+        "crit": true,
+        "dh": false,
         "buff": [
+            "presence_of_mind",
             "potion",
             "cleric_stance",
             "bard_aura",
-            "contagion",
             "hypercharge"
         ]
     },
     {
-        "time": 839,
+        "time": 750,
+        "event": "DOT Tick",
+        "name": "aero_iii",
+        "damage": 1173,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "presence_of_mind",
+            "potion",
+            "cleric_stance",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 802,
         "event": "Cast",
-        "name": "Malefic III",
-        "duration": 235,
+        "name": "Stone IV",
+        "duration": 188,
         "resource": {
-            "mp": 18800,
+            "mp": 18400,
             "tp": 1000
         }
     },
     {
-        "time": 899,
+        "time": 869,
         "event": "Damage",
-        "name": "Malefic III",
-        "damage": 11376,
-        "crit": true,
+        "name": "Stone IV",
+        "damage": 8012,
+        "crit": false,
         "dh": false,
         "buff": [
+            "presence_of_mind",
             "potion",
             "cleric_stance",
             "battle_litany",
@@ -196,44 +376,53 @@
         "duration": 2000
     },
     {
-        "time": 1050,
-        "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1651,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "potion",
-            "cleric_stance",
-            "bard_aura",
-            "contagion",
-            "hypercharge"
-        ]
-    },
-    {
-        "time": 1074,
+        "time": 990,
         "event": "Cast",
-        "name": "Malefic III",
-        "duration": 235,
+        "name": "Stone IV",
+        "duration": 188,
         "resource": {
-            "mp": 18600,
+            "mp": 17800,
             "tp": 1000
         }
     },
     {
-        "time": 1100,
-        "event": "Party Buff Apply",
-        "name": "Trick Attack",
-        "duration": 1500
-    },
-    {
-        "time": 1134,
-        "event": "Damage",
-        "name": "Malefic III",
-        "damage": 11376,
+        "time": 1050,
+        "event": "DOT Tick",
+        "name": "aero_ii",
+        "damage": 2108,
         "crit": true,
         "dh": false,
         "buff": [
+            "presence_of_mind",
+            "potion",
+            "cleric_stance",
+            "bard_aura",
+            "hypercharge"
+        ]
+    },
+    {
+        "time": 1050,
+        "event": "DOT Tick",
+        "name": "aero_iii",
+        "damage": 1749,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "presence_of_mind",
+            "potion",
+            "cleric_stance",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 1057,
+        "event": "Damage",
+        "name": "Stone IV",
+        "damage": 12207,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "presence_of_mind",
             "potion",
             "cleric_stance",
             "battle_litany",
@@ -247,40 +436,91 @@
         ]
     },
     {
-        "time": 1309,
+        "time": 1100,
+        "event": "Party Buff Apply",
+        "name": "Trick Attack",
+        "duration": 1500
+    },
+    {
+        "time": 1178,
         "event": "Cast",
-        "name": "Malefic III",
-        "duration": 235,
+        "name": "Stone IV",
+        "duration": 188,
         "resource": {
-            "mp": 18000,
+            "mp": 17600,
             "tp": 1000
         }
     },
     {
-        "time": 1350,
-        "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1651,
-        "crit": false,
+        "time": 1245,
+        "event": "Damage",
+        "name": "Stone IV",
+        "damage": 13971,
+        "crit": true,
         "dh": false,
         "buff": [
+            "presence_of_mind",
             "potion",
             "cleric_stance",
+            "battle_litany",
+            "dragon_sight",
+            "chain_strategem",
+            "battle_voice",
+            "foe_requiem",
             "bard_aura",
+            "trick_attack",
             "contagion",
             "hypercharge"
         ]
     },
     {
-        "time": 1369,
+        "time": 1350,
+        "event": "DOT Tick",
+        "name": "aero_ii",
+        "damage": 1456,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "presence_of_mind",
+            "potion",
+            "cleric_stance",
+            "bard_aura",
+            "hypercharge"
+        ]
+    },
+    {
+        "time": 1350,
+        "event": "DOT Tick",
+        "name": "aero_iii",
+        "damage": 1116,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "presence_of_mind",
+            "potion",
+            "cleric_stance",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 1366,
+        "event": "Cast",
+        "name": "Stone IV",
+        "duration": 235,
+        "resource": {
+            "mp": 17400,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 1433,
         "event": "Damage",
-        "name": "Malefic III",
-        "damage": 11679,
+        "name": "Stone IV",
+        "damage": 12401,
         "crit": true,
         "dh": false,
         "buff": [
             "potion",
-            "cleric_stance",
             "battle_litany",
             "dragon_sight",
             "chain_strategem",
@@ -299,25 +539,53 @@
         "duration": 1500
     },
     {
-        "time": 1544,
+        "time": 1601,
         "event": "Cast",
-        "name": "Malefic III",
+        "name": "Stone IV",
         "duration": 235,
         "resource": {
-            "mp": 17800,
+            "mp": 16800,
             "tp": 1000
         }
     },
     {
-        "time": 1604,
+        "time": 1650,
+        "event": "DOT Tick",
+        "name": "aero_ii",
+        "damage": 1577,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "presence_of_mind",
+            "potion",
+            "cleric_stance",
+            "bard_aura",
+            "hypercharge"
+        ]
+    },
+    {
+        "time": 1650,
+        "event": "DOT Tick",
+        "name": "aero_iii",
+        "damage": 2040,
+        "crit": true,
+        "dh": true,
+        "buff": [
+            "presence_of_mind",
+            "potion",
+            "cleric_stance",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 1668,
         "event": "Damage",
-        "name": "Malefic III",
-        "damage": 8152,
+        "name": "Stone IV",
+        "damage": 9372,
         "crit": false,
         "dh": false,
         "buff": [
             "potion",
-            "cleric_stance",
             "battle_litany",
             "dragon_sight",
             "chain_strategem",
@@ -326,41 +594,76 @@
             "bard_aura",
             "trick_attack",
             "contagion",
-            "hypercharge"
+            "hypercharge",
+            "devotion"
         ]
     },
     {
-        "time": 1650,
-        "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1734,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "potion",
-            "cleric_stance",
-            "bard_aura",
-            "contagion",
-            "hypercharge"
-        ]
-    },
-    {
-        "time": 1779,
+        "time": 1836,
         "event": "Cast",
-        "name": "Malefic III",
-        "duration": 235,
+        "name": "Aero II",
+        "duration": 0,
         "resource": {
-            "mp": 17600,
+            "mp": 16600,
             "tp": 1000
         }
     },
     {
-        "time": 1839,
+        "time": 1903,
         "event": "Damage",
-        "name": "Malefic III",
-        "damage": 7486,
-        "crit": false,
+        "name": "Stone IV",
+        "damage": 11978,
+        "crit": true,
         "dh": false,
+        "buff": [
+            "potion",
+            "battle_litany",
+            "dragon_sight",
+            "chain_strategem",
+            "battle_voice",
+            "foe_requiem",
+            "bard_aura",
+            "trick_attack",
+            "hypercharge",
+            "devotion"
+        ]
+    },
+    {
+        "time": 1903,
+        "event": "Cast",
+        "name": "Lucid Dreaming",
+        "duration": 0,
+        "resource": {
+            "mp": 16600,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 1904,
+        "event": "Damage",
+        "name": "Aero II",
+        "damage": 2298,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "potion",
+            "battle_litany",
+            "dragon_sight",
+            "chain_strategem",
+            "battle_voice",
+            "foe_requiem",
+            "bard_aura",
+            "trick_attack",
+            "hypercharge",
+            "devotion"
+        ]
+    },
+    {
+        "time": 1904,
+        "event": "DOT Apply",
+        "name": "Aero II",
+        "base_damage": 1736.2800000000002,
+        "duration": 1800,
         "buff": [
             "potion",
             "battle_litany",
@@ -377,34 +680,9 @@
     {
         "time": 1950,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 3018,
-        "crit": true,
-        "dh": true,
-        "buff": [
-            "potion",
-            "cleric_stance",
-            "bard_aura",
-            "contagion",
-            "hypercharge"
-        ]
-    },
-    {
-        "time": 2014,
-        "event": "Cast",
-        "name": "Malefic III",
-        "duration": 235,
-        "resource": {
-            "mp": 17400,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 2074,
-        "event": "Damage",
-        "name": "Malefic III",
-        "damage": 13550,
-        "crit": true,
+        "name": "aero_ii",
+        "damage": 2235,
+        "crit": false,
         "dh": true,
         "buff": [
             "potion",
@@ -420,37 +698,42 @@
         ]
     },
     {
-        "time": 2249,
+        "time": 1950,
+        "event": "DOT Tick",
+        "name": "aero_iii",
+        "damage": 1682,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "presence_of_mind",
+            "potion",
+            "cleric_stance",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 1970,
+        "event": "Buff Apply",
+        "name": "Lucid Dreaming",
+        "duration": 2100
+    },
+    {
+        "time": 2071,
         "event": "Cast",
-        "name": "Malefic III",
+        "name": "Stone IV",
         "duration": 235,
         "resource": {
-            "mp": 16800,
+            "mp": 16400,
             "tp": 1000
         }
     },
     {
         "time": 2250,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 2462,
-        "crit": true,
-        "dh": false,
-        "buff": [
-            "potion",
-            "cleric_stance",
-            "bard_aura",
-            "contagion",
-            "hypercharge"
-        ]
-    },
-    {
-        "time": 2309,
-        "event": "Damage",
-        "name": "Malefic III",
-        "damage": 6839,
+        "name": "aero_ii",
+        "damage": 2170,
         "crit": false,
-        "dh": false,
+        "dh": true,
         "buff": [
             "potion",
             "battle_litany",
@@ -465,24 +748,106 @@
         ]
     },
     {
-        "time": 2484,
+        "time": 2250,
+        "event": "DOT Tick",
+        "name": "aero_iii",
+        "damage": 1699,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "presence_of_mind",
+            "potion",
+            "cleric_stance",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 2306,
         "event": "Cast",
-        "name": "Malefic III",
+        "name": "Aero III",
         "duration": 235,
         "resource": {
-            "mp": 16600,
+            "mp": 17040,
             "tp": 1000
         }
     },
     {
-        "time": 2544,
+        "time": 2373,
         "event": "Damage",
-        "name": "Malefic III",
-        "damage": 6787,
+        "name": "Stone IV",
+        "damage": 10138,
+        "crit": false,
+        "dh": true,
+        "buff": [
+            "potion",
+            "lucid_dreaming",
+            "battle_litany",
+            "dragon_sight",
+            "chain_strategem",
+            "battle_voice",
+            "foe_requiem",
+            "bard_aura",
+            "trick_attack",
+            "hypercharge",
+            "devotion"
+        ]
+    },
+    {
+        "time": 2491,
+        "event": "DOT Apply",
+        "name": "Aero III",
+        "base_damage": 1316.52,
+        "duration": 2400,
+        "buff": [
+            "potion",
+            "lucid_dreaming",
+            "foe_requiem",
+            "bard_aura",
+            "trick_attack",
+            "hypercharge",
+            "devotion"
+        ]
+    },
+    {
+        "time": 2541,
+        "event": "Damage",
+        "name": "Aero III",
+        "damage": 1544,
         "crit": false,
         "dh": false,
         "buff": [
             "potion",
+            "lucid_dreaming",
+            "foe_requiem",
+            "bard_aura",
+            "trick_attack",
+            "hypercharge",
+            "devotion"
+        ]
+    },
+    {
+        "time": 2541,
+        "event": "Cast",
+        "name": "Stone IV",
+        "duration": 235,
+        "resource": {
+            "mp": 16440,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 2550,
+        "event": "DOT Tick",
+        "name": "aero_ii",
+        "damage": 1684,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "potion",
+            "battle_litany",
+            "dragon_sight",
+            "chain_strategem",
+            "battle_voice",
             "foe_requiem",
             "bard_aura",
             "trick_attack",
@@ -493,37 +858,40 @@
     {
         "time": 2550,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 2366,
-        "crit": true,
-        "dh": false,
-        "buff": [
-            "potion",
-            "cleric_stance",
-            "bard_aura",
-            "contagion",
-            "hypercharge"
-        ]
-    },
-    {
-        "time": 2719,
-        "event": "Cast",
-        "name": "Malefic III",
-        "duration": 235,
-        "resource": {
-            "mp": 16400,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 2779,
-        "event": "Damage",
-        "name": "Malefic III",
-        "damage": 6295,
+        "name": "aero_iii",
+        "damage": 1250,
         "crit": false,
         "dh": false,
         "buff": [
             "potion",
+            "lucid_dreaming",
+            "foe_requiem",
+            "bard_aura",
+            "trick_attack",
+            "hypercharge",
+            "devotion"
+        ]
+    },
+    {
+        "time": 2776,
+        "event": "Cast",
+        "name": "Stone IV",
+        "duration": 235,
+        "resource": {
+            "mp": 17200,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 2843,
+        "event": "Damage",
+        "name": "Stone IV",
+        "damage": 9956,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "potion",
+            "lucid_dreaming",
             "foe_requiem",
             "bard_aura",
             "hypercharge",
@@ -533,37 +901,59 @@
     {
         "time": 2850,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1568,
+        "name": "aero_ii",
+        "damage": 1736,
         "crit": false,
         "dh": false,
         "buff": [
             "potion",
-            "cleric_stance",
+            "battle_litany",
+            "dragon_sight",
+            "chain_strategem",
+            "battle_voice",
+            "foe_requiem",
             "bard_aura",
-            "contagion",
-            "hypercharge"
+            "trick_attack",
+            "hypercharge",
+            "devotion"
         ]
     },
     {
-        "time": 2954,
+        "time": 2850,
+        "event": "DOT Tick",
+        "name": "aero_iii",
+        "damage": 1356,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "potion",
+            "lucid_dreaming",
+            "foe_requiem",
+            "bard_aura",
+            "trick_attack",
+            "hypercharge",
+            "devotion"
+        ]
+    },
+    {
+        "time": 3011,
         "event": "Cast",
-        "name": "Malefic III",
+        "name": "Stone IV",
         "duration": 235,
         "resource": {
-            "mp": 16200,
+            "mp": 17960,
             "tp": 1000
         }
     },
     {
-        "time": 3014,
+        "time": 3078,
         "event": "Damage",
-        "name": "Malefic III",
-        "damage": 5816,
+        "name": "Stone IV",
+        "damage": 6211,
         "crit": false,
         "dh": false,
         "buff": [
-            "potion",
+            "lucid_dreaming",
             "foe_requiem",
             "bard_aura",
             "devotion"
@@ -572,104 +962,167 @@
     {
         "time": 3150,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1701,
+        "name": "aero_ii",
+        "damage": 1736,
         "crit": false,
         "dh": false,
         "buff": [
             "potion",
-            "cleric_stance",
+            "battle_litany",
+            "dragon_sight",
+            "chain_strategem",
+            "battle_voice",
+            "foe_requiem",
             "bard_aura",
-            "contagion",
-            "hypercharge"
+            "trick_attack",
+            "hypercharge",
+            "devotion"
         ]
     },
     {
-        "time": 3189,
-        "event": "Cast",
-        "name": "Combust II",
-        "duration": 0,
-        "resource": {
-            "mp": 16000,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 3249,
-        "event": "Damage",
-        "name": "Malefic III",
-        "damage": 5297,
+        "time": 3150,
+        "event": "DOT Tick",
+        "name": "aero_iii",
+        "damage": 1369,
         "crit": false,
         "dh": false,
         "buff": [
+            "potion",
+            "lucid_dreaming",
             "foe_requiem",
-            "bard_aura"
+            "bard_aura",
+            "trick_attack",
+            "hypercharge",
+            "devotion"
         ]
     },
     {
-        "time": 3256,
-        "event": "DOT Apply",
-        "name": "Combust II",
-        "base_damage": 1314.4,
-        "duration": 3000,
-        "buff": [
-            "foe_requiem",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 3256,
+        "time": 3246,
         "event": "Cast",
-        "name": "Lucid Dreaming",
-        "duration": 0,
-        "resource": {
-            "mp": 16000,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 3323,
-        "event": "Buff Apply",
-        "name": "Lucid Dreaming",
-        "duration": 2100
-    },
-    {
-        "time": 3424,
-        "event": "Cast",
-        "name": "Malefic III",
+        "name": "Stone IV",
         "duration": 235,
         "resource": {
-            "mp": 15400,
+            "mp": 18720,
             "tp": 1000
         }
+    },
+    {
+        "time": 3313,
+        "event": "Damage",
+        "name": "Stone IV",
+        "damage": 6463,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "lucid_dreaming",
+            "foe_requiem",
+            "bard_aura"
+        ]
     },
     {
         "time": 3450,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1261,
+        "name": "aero_ii",
+        "damage": 1823,
         "crit": false,
         "dh": false,
         "buff": [
+            "potion",
+            "battle_litany",
+            "dragon_sight",
+            "chain_strategem",
+            "battle_voice",
+            "foe_requiem",
+            "bard_aura",
+            "trick_attack",
+            "hypercharge",
+            "devotion"
+        ]
+    },
+    {
+        "time": 3450,
+        "event": "DOT Tick",
+        "name": "aero_iii",
+        "damage": 1943,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "potion",
+            "lucid_dreaming",
+            "foe_requiem",
+            "bard_aura",
+            "trick_attack",
+            "hypercharge",
+            "devotion"
+        ]
+    },
+    {
+        "time": 3481,
+        "event": "Cast",
+        "name": "Stone IV",
+        "duration": 235,
+        "resource": {
+            "mp": 19400,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 3548,
+        "event": "Damage",
+        "name": "Stone IV",
+        "damage": 8904,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "lucid_dreaming",
             "foe_requiem",
             "bard_aura"
         ]
     },
     {
-        "time": 3659,
+        "time": 3716,
         "event": "Cast",
-        "name": "Malefic III",
-        "duration": 235,
+        "name": "Aero II",
+        "duration": 0,
         "resource": {
-            "mp": 16160,
+            "mp": 18800,
             "tp": 1000
         }
     },
     {
-        "time": 3719,
+        "time": 3750,
+        "event": "DOT Tick",
+        "name": "aero_iii",
+        "damage": 1329,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "potion",
+            "lucid_dreaming",
+            "foe_requiem",
+            "bard_aura",
+            "trick_attack",
+            "hypercharge",
+            "devotion"
+        ]
+    },
+    {
+        "time": 3783,
         "event": "Damage",
-        "name": "Malefic III",
-        "damage": 5514,
+        "name": "Stone IV",
+        "damage": 9174,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "lucid_dreaming",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 3784,
+        "event": "Damage",
+        "name": "Aero II",
+        "damage": 1265,
         "crit": false,
         "dh": false,
         "buff": [
@@ -678,32 +1131,31 @@
         ]
     },
     {
-        "time": 3750,
-        "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1314,
-        "crit": false,
-        "dh": false,
+        "time": 3784,
+        "event": "DOT Apply",
+        "name": "Aero II",
+        "base_damage": 1277.3,
+        "duration": 1800,
         "buff": [
-            "foe_requiem",
+            "lucid_dreaming",
             "bard_aura"
         ]
     },
     {
-        "time": 3894,
+        "time": 3951,
         "event": "Cast",
-        "name": "Malefic III",
+        "name": "Stone IV",
         "duration": 235,
         "resource": {
-            "mp": 16920,
+            "mp": 19400,
             "tp": 1000
         }
     },
     {
-        "time": 3954,
-        "event": "Damage",
-        "name": "Malefic III",
-        "damage": 5567,
+        "time": 4050,
+        "event": "DOT Tick",
+        "name": "aero_ii",
+        "damage": 1315,
         "crit": false,
         "dh": false,
         "buff": [
@@ -714,31 +1166,47 @@
     {
         "time": 4050,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1314,
+        "name": "aero_iii",
+        "damage": 1369,
         "crit": false,
         "dh": false,
         "buff": [
+            "potion",
+            "lucid_dreaming",
             "foe_requiem",
-            "bard_aura"
+            "bard_aura",
+            "trick_attack",
+            "hypercharge",
+            "devotion"
         ]
     },
     {
-        "time": 4129,
+        "time": 4186,
         "event": "Cast",
-        "name": "Malefic III",
+        "name": "Stone IV",
         "duration": 235,
         "resource": {
-            "mp": 17680,
+            "mp": 19400,
             "tp": 1000
         }
     },
     {
-        "time": 4189,
+        "time": 4253,
         "event": "Damage",
-        "name": "Malefic III",
-        "damage": 8139,
+        "name": "Stone IV",
+        "damage": 8733,
         "crit": true,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 4350,
+        "event": "DOT Tick",
+        "name": "aero_ii",
+        "damage": 1251,
+        "crit": false,
         "dh": false,
         "buff": [
             "lucid_dreaming",
@@ -748,65 +1216,47 @@
     {
         "time": 4350,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1248,
+        "name": "aero_iii",
+        "damage": 1250,
         "crit": false,
         "dh": false,
         "buff": [
-            "foe_requiem",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 4364,
-        "event": "Cast",
-        "name": "Malefic III",
-        "duration": 235,
-        "resource": {
-            "mp": 18440,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 4424,
-        "event": "Damage",
-        "name": "Malefic III",
-        "damage": 5461,
-        "crit": false,
-        "dh": false,
-        "buff": [
+            "potion",
             "lucid_dreaming",
-            "bard_aura"
+            "foe_requiem",
+            "bard_aura",
+            "trick_attack",
+            "hypercharge",
+            "devotion"
         ]
     },
     {
-        "time": 4599,
+        "time": 4421,
         "event": "Cast",
-        "name": "Malefic III",
+        "name": "Stone IV",
         "duration": 235,
         "resource": {
-            "mp": 17840,
+            "mp": 19200,
             "tp": 1000
         }
+    },
+    {
+        "time": 4488,
+        "event": "Damage",
+        "name": "Stone IV",
+        "damage": 5913,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
     },
     {
         "time": 4650,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1301,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "foe_requiem",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 4659,
-        "event": "Damage",
-        "name": "Malefic III",
-        "damage": 5514,
-        "crit": false,
+        "name": "aero_ii",
+        "damage": 1960,
+        "crit": true,
         "dh": false,
         "buff": [
             "lucid_dreaming",
@@ -814,54 +1264,112 @@
         ]
     },
     {
-        "time": 4834,
+        "time": 4650,
+        "event": "DOT Tick",
+        "name": "aero_iii",
+        "damage": 1342,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "potion",
+            "lucid_dreaming",
+            "foe_requiem",
+            "bard_aura",
+            "trick_attack",
+            "hypercharge",
+            "devotion"
+        ]
+    },
+    {
+        "time": 4656,
         "event": "Cast",
-        "name": "Malefic III",
+        "name": "Stone IV",
         "duration": 235,
         "resource": {
-            "mp": 18600,
+            "mp": 19000,
             "tp": 1000
         }
     },
     {
-        "time": 4894,
+        "time": 4723,
         "event": "Damage",
-        "name": "Malefic III",
-        "damage": 5142,
+        "name": "Stone IV",
+        "damage": 5732,
         "crit": false,
         "dh": false,
         "buff": [
-            "lucid_dreaming",
             "bard_aura"
         ]
+    },
+    {
+        "time": 4891,
+        "event": "Cast",
+        "name": "Aero III",
+        "duration": 235,
+        "resource": {
+            "mp": 18280,
+            "tp": 1000
+        }
     },
     {
         "time": 4950,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1327,
-        "crit": false,
+        "name": "aero_ii",
+        "damage": 1960,
+        "crit": true,
         "dh": false,
         "buff": [
-            "foe_requiem",
+            "lucid_dreaming",
             "bard_aura"
         ]
     },
     {
-        "time": 5069,
+        "time": 4958,
+        "event": "Damage",
+        "name": "Stone IV",
+        "damage": 6094,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 5076,
+        "event": "DOT Apply",
+        "name": "Aero III",
+        "base_damage": 1017.6,
+        "duration": 2400,
+        "buff": [
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 5126,
+        "event": "Damage",
+        "name": "Aero III",
+        "damage": 1205,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 5126,
         "event": "Cast",
-        "name": "Malefic III",
+        "name": "Stone IV",
         "duration": 235,
         "resource": {
-            "mp": 19360,
+            "mp": 18080,
             "tp": 1000
         }
     },
     {
-        "time": 5129,
-        "event": "Damage",
-        "name": "Malefic III",
-        "damage": 5567,
+        "time": 5250,
+        "event": "DOT Tick",
+        "name": "aero_ii",
+        "damage": 1341,
         "crit": false,
         "dh": false,
         "buff": [
@@ -872,30 +1380,40 @@
     {
         "time": 5250,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1261,
+        "name": "aero_iii",
+        "damage": 987,
         "crit": false,
         "dh": false,
         "buff": [
-            "foe_requiem",
             "bard_aura"
         ]
     },
     {
-        "time": 5304,
+        "time": 5361,
         "event": "Cast",
-        "name": "Malefic III",
+        "name": "Stone IV",
         "duration": 235,
         "resource": {
-            "mp": 19400,
+            "mp": 17880,
             "tp": 1000
         }
     },
     {
-        "time": 5364,
+        "time": 5428,
         "event": "Damage",
-        "name": "Malefic III",
-        "damage": 5036,
+        "name": "Stone IV",
+        "damage": 5732,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 5550,
+        "event": "DOT Tick",
+        "name": "aero_ii",
+        "damage": 1302,
         "crit": false,
         "dh": false,
         "buff": [
@@ -904,53 +1422,73 @@
         ]
     },
     {
-        "time": 5539,
-        "event": "Cast",
-        "name": "Malefic III",
-        "duration": 235,
-        "resource": {
-            "mp": 18800,
-            "tp": 1000
-        }
-    },
-    {
         "time": 5550,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1288,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "foe_requiem",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 5599,
-        "event": "Damage",
-        "name": "Malefic III",
-        "damage": 5514,
-        "crit": false,
+        "name": "aero_iii",
+        "damage": 1413,
+        "crit": true,
         "dh": false,
         "buff": [
             "bard_aura"
         ]
     },
     {
-        "time": 5774,
+        "time": 5596,
         "event": "Cast",
-        "name": "Malefic III",
-        "duration": 235,
+        "name": "Aero II",
+        "duration": 0,
         "resource": {
-            "mp": 18600,
+            "mp": 17680,
             "tp": 1000
         }
     },
     {
-        "time": 5834,
+        "time": 5663,
         "event": "Damage",
-        "name": "Malefic III",
-        "damage": 5036,
+        "name": "Stone IV",
+        "damage": 5792,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 5664,
+        "event": "Damage",
+        "name": "Aero II",
+        "damage": 1217,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 5664,
+        "event": "DOT Apply",
+        "name": "Aero II",
+        "base_damage": 1277.3,
+        "duration": 1800,
+        "buff": [
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 5831,
+        "event": "Cast",
+        "name": "Stone IV",
+        "duration": 235,
+        "resource": {
+            "mp": 17080,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 5850,
+        "event": "DOT Tick",
+        "name": "aero_ii",
+        "damage": 1213,
         "crit": false,
         "dh": false,
         "buff": [
@@ -960,30 +1498,29 @@
     {
         "time": 5850,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1380,
+        "name": "aero_iii",
+        "damage": 1048,
         "crit": false,
         "dh": false,
         "buff": [
-            "foe_requiem",
             "bard_aura"
         ]
     },
     {
-        "time": 6009,
+        "time": 6066,
         "event": "Cast",
-        "name": "Malefic III",
+        "name": "Stone IV",
         "duration": 235,
         "resource": {
-            "mp": 18400,
+            "mp": 16880,
             "tp": 1000
         }
     },
     {
-        "time": 6069,
+        "time": 6133,
         "event": "Damage",
-        "name": "Malefic III",
-        "damage": 5461,
+        "name": "Stone IV",
+        "damage": 6034,
         "crit": false,
         "dh": false,
         "buff": [
@@ -993,12 +1530,22 @@
     {
         "time": 6150,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1314,
+        "name": "aero_ii",
+        "damage": 1904,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 6150,
+        "event": "DOT Tick",
+        "name": "aero_iii",
+        "damage": 987,
         "crit": false,
         "dh": false,
         "buff": [
-            "foe_requiem",
             "bard_aura"
         ]
     },
@@ -1009,32 +1556,22 @@
         "duration": 1500
     },
     {
-        "time": 6244,
+        "time": 6301,
         "event": "Cast",
-        "name": "Combust II",
-        "duration": 0,
+        "name": "Stone IV",
+        "duration": 235,
         "resource": {
-            "mp": 18200,
+            "mp": 16680,
             "tp": 1000
         }
     },
     {
-        "time": 6304,
+        "time": 6368,
         "event": "Damage",
-        "name": "Malefic III",
-        "damage": 5567,
+        "name": "Stone IV",
+        "damage": 6968,
         "crit": false,
         "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 6311,
-        "event": "DOT Apply",
-        "name": "Combust II",
-        "base_damage": 1403.44,
-        "duration": 3000,
         "buff": [
             "bard_aura",
             "contagion"
@@ -1043,86 +1580,128 @@
     {
         "time": 6450,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1361,
+        "name": "aero_ii",
+        "damage": 1238,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 6450,
+        "event": "DOT Tick",
+        "name": "aero_iii",
+        "damage": 1048,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 6536,
+        "event": "Cast",
+        "name": "Stone IV",
+        "duration": 235,
+        "resource": {
+            "mp": 16480,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 6603,
+        "event": "Damage",
+        "name": "Stone IV",
+        "damage": 6305,
         "crit": false,
         "dh": false,
         "buff": [
             "bard_aura",
             "contagion"
         ]
-    },
-    {
-        "time": 6479,
-        "event": "Cast",
-        "name": "Malefic III",
-        "duration": 235,
-        "resource": {
-            "mp": 18000,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 6714,
-        "event": "Cast",
-        "name": "Malefic III",
-        "duration": 235,
-        "resource": {
-            "mp": 17400,
-            "tp": 1000
-        }
     },
     {
         "time": 6750,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1375,
+        "name": "aero_ii",
+        "damage": 1341,
         "crit": false,
         "dh": false,
         "buff": [
-            "bard_aura",
-            "contagion"
+            "bard_aura"
         ]
     },
     {
-        "time": 6774,
-        "event": "Damage",
-        "name": "Malefic III",
-        "damage": 5714,
+        "time": 6750,
+        "event": "DOT Tick",
+        "name": "aero_iii",
+        "damage": 966,
         "crit": false,
         "dh": false,
         "buff": [
-            "bard_aura",
-            "contagion"
+            "bard_aura"
         ]
     },
     {
-        "time": 6949,
+        "time": 6771,
         "event": "Cast",
-        "name": "Malefic III",
+        "name": "Stone IV",
         "duration": 235,
         "resource": {
-            "mp": 17200,
+            "mp": 16280,
             "tp": 1000
         }
     },
     {
-        "time": 7009,
+        "time": 6838,
         "event": "Damage",
-        "name": "Malefic III",
-        "damage": 5539,
+        "name": "Stone IV",
+        "damage": 6570,
         "crit": false,
         "dh": false,
         "buff": [
             "bard_aura",
             "contagion"
+        ]
+    },
+    {
+        "time": 7006,
+        "event": "Cast",
+        "name": "Stone IV",
+        "duration": 235,
+        "resource": {
+            "mp": 15680,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 7050,
+        "event": "DOT Tick",
+        "name": "aero_ii",
+        "damage": 1213,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura"
         ]
     },
     {
         "time": 7050,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1403,
+        "name": "aero_iii",
+        "damage": 1058,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 7073,
+        "event": "Damage",
+        "name": "Stone IV",
+        "damage": 6504,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1137,21 +1716,21 @@
         "duration": 1500
     },
     {
-        "time": 7184,
+        "time": 7241,
         "event": "Cast",
-        "name": "Malefic III",
+        "name": "Stone IV",
         "duration": 235,
         "resource": {
-            "mp": 17000,
+            "mp": 15480,
             "tp": 1000
         }
     },
     {
-        "time": 7244,
+        "time": 7308,
         "event": "Damage",
-        "name": "Malefic III",
-        "damage": 9378,
-        "crit": true,
+        "name": "Stone IV",
+        "damage": 7373,
+        "crit": false,
         "dh": false,
         "buff": [
             "bard_aura",
@@ -1162,65 +1741,40 @@
     {
         "time": 7350,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1459,
+        "name": "aero_ii",
+        "damage": 1251,
         "crit": false,
         "dh": false,
         "buff": [
-            "bard_aura",
-            "contagion"
+            "bard_aura"
         ]
     },
     {
-        "time": 7419,
-        "event": "Cast",
-        "name": "Malefic III",
-        "duration": 235,
-        "resource": {
-            "mp": 16800,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 7479,
-        "event": "Damage",
-        "name": "Malefic III",
-        "damage": 9566,
-        "crit": true,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "trick_attack",
-            "contagion"
-        ]
-    },
-    {
-        "time": 7650,
+        "time": 7350,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1473,
+        "name": "aero_iii",
+        "damage": 966,
         "crit": false,
         "dh": false,
         "buff": [
-            "bard_aura",
-            "contagion"
+            "bard_aura"
         ]
     },
     {
-        "time": 7654,
+        "time": 7476,
         "event": "Cast",
-        "name": "Malefic III",
+        "name": "Aero III",
         "duration": 235,
         "resource": {
-            "mp": 16600,
+            "mp": 15160,
             "tp": 1000
         }
     },
     {
-        "time": 7714,
+        "time": 7543,
         "event": "Damage",
-        "name": "Malefic III",
-        "damage": 6350,
+        "name": "Stone IV",
+        "damage": 6935,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1230,20 +1784,100 @@
         ]
     },
     {
-        "time": 7889,
+        "time": 7661,
+        "event": "DOT Apply",
+        "name": "Aero III",
+        "base_damage": 1231.72,
+        "duration": 2400,
+        "buff": [
+            "bard_aura",
+            "trick_attack",
+            "contagion"
+        ]
+    },
+    {
+        "time": 7711,
+        "event": "Damage",
+        "name": "Aero III",
+        "damage": 1427,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura",
+            "trick_attack",
+            "contagion"
+        ]
+    },
+    {
+        "time": 7711,
         "event": "Cast",
-        "name": "Malefic III",
-        "duration": 235,
+        "name": "Aero II",
+        "duration": 0,
         "resource": {
-            "mp": 16000,
+            "mp": 14960,
             "tp": 1000
         }
     },
     {
-        "time": 7949,
+        "time": 7778,
+        "event": "Cast",
+        "name": "Assize",
+        "duration": 0,
+        "resource": {
+            "mp": 14960,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 7779,
         "event": "Damage",
-        "name": "Malefic III",
-        "damage": 5714,
+        "name": "Aero II",
+        "damage": 1297,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura",
+            "trick_attack"
+        ]
+    },
+    {
+        "time": 7779,
+        "event": "DOT Apply",
+        "name": "Aero II",
+        "base_damage": 1403.44,
+        "duration": 1800,
+        "buff": [
+            "bard_aura",
+            "trick_attack"
+        ]
+    },
+    {
+        "time": 7846,
+        "event": "Damage",
+        "name": "Assize",
+        "damage": 8284,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura",
+            "trick_attack"
+        ]
+    },
+    {
+        "time": 7946,
+        "event": "Cast",
+        "name": "Stone IV",
+        "duration": 235,
+        "resource": {
+            "mp": 16360,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 7950,
+        "event": "DOT Tick",
+        "name": "aero_ii",
+        "damage": 1473,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1254,30 +1888,31 @@
     {
         "time": 7950,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1459,
-        "crit": false,
+        "name": "aero_iii",
+        "damage": 1818,
+        "crit": true,
         "dh": false,
         "buff": [
             "bard_aura",
+            "trick_attack",
             "contagion"
         ]
     },
     {
-        "time": 8124,
+        "time": 8181,
         "event": "Cast",
-        "name": "Malefic III",
+        "name": "Stone IV",
         "duration": 235,
         "resource": {
-            "mp": 15800,
+            "mp": 16160,
             "tp": 1000
         }
     },
     {
-        "time": 8184,
+        "time": 8248,
         "event": "Damage",
-        "name": "Malefic III",
-        "damage": 5772,
+        "name": "Stone IV",
+        "damage": 6437,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1288,31 +1923,44 @@
     {
         "time": 8250,
         "event": "DOT Tick",
-        "name": "combust_ii",
+        "name": "aero_ii",
         "damage": 1445,
         "crit": false,
         "dh": false,
         "buff": [
             "bard_aura",
+            "trick_attack"
+        ]
+    },
+    {
+        "time": 8250,
+        "event": "DOT Tick",
+        "name": "aero_iii",
+        "damage": 1231,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura",
+            "trick_attack",
             "contagion"
         ]
     },
     {
-        "time": 8359,
+        "time": 8416,
         "event": "Cast",
-        "name": "Malefic III",
+        "name": "Stone IV",
         "duration": 235,
         "resource": {
-            "mp": 15600,
+            "mp": 15960,
             "tp": 1000
         }
     },
     {
-        "time": 8419,
+        "time": 8483,
         "event": "Damage",
-        "name": "Malefic III",
-        "damage": 8098,
-        "crit": true,
+        "name": "Stone IV",
+        "damage": 6504,
+        "crit": false,
         "dh": false,
         "buff": [
             "bard_aura",
@@ -1322,30 +1970,8 @@
     {
         "time": 8550,
         "event": "DOT Tick",
-        "name": "combust_ii",
+        "name": "aero_ii",
         "damage": 1389,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "contagion"
-        ]
-    },
-    {
-        "time": 8594,
-        "event": "Cast",
-        "name": "Malefic III",
-        "duration": 235,
-        "resource": {
-            "mp": 15400,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 8654,
-        "event": "Damage",
-        "name": "Malefic III",
-        "damage": 6005,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1354,53 +1980,33 @@
         ]
     },
     {
-        "time": 8829,
-        "event": "Cast",
-        "name": "Malefic III",
-        "duration": 235,
-        "resource": {
-            "mp": 14800,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 8850,
+        "time": 8550,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1417,
+        "name": "aero_iii",
+        "damage": 1231,
         "crit": false,
         "dh": false,
         "buff": [
             "bard_aura",
+            "trick_attack",
             "contagion"
         ]
     },
     {
-        "time": 8889,
-        "event": "Damage",
-        "name": "Malefic III",
-        "damage": 5408,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 9064,
+        "time": 8651,
         "event": "Cast",
-        "name": "Malefic III",
+        "name": "Stone IV",
         "duration": 235,
         "resource": {
-            "mp": 14600,
+            "mp": 15760,
             "tp": 1000
         }
     },
     {
-        "time": 9124,
+        "time": 8718,
         "event": "Damage",
-        "name": "Malefic III",
-        "damage": 5302,
+        "name": "Stone IV",
+        "damage": 6034,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1408,32 +2014,112 @@
         ]
     },
     {
+        "time": 8850,
+        "event": "DOT Tick",
+        "name": "aero_ii",
+        "damage": 1431,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura",
+            "trick_attack"
+        ]
+    },
+    {
+        "time": 8850,
+        "event": "DOT Tick",
+        "name": "aero_iii",
+        "damage": 1244,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura",
+            "trick_attack",
+            "contagion"
+        ]
+    },
+    {
+        "time": 8886,
+        "event": "Cast",
+        "name": "Stone IV",
+        "duration": 235,
+        "resource": {
+            "mp": 15560,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 8953,
+        "event": "Damage",
+        "name": "Stone IV",
+        "damage": 6034,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 9121,
+        "event": "Cast",
+        "name": "Stone IV",
+        "duration": 235,
+        "resource": {
+            "mp": 14960,
+            "tp": 1000
+        }
+    },
+    {
         "time": 9150,
         "event": "DOT Tick",
-        "name": "combust_ii",
+        "name": "aero_ii",
         "damage": 1459,
         "crit": false,
         "dh": false,
         "buff": [
             "bard_aura",
+            "trick_attack"
+        ]
+    },
+    {
+        "time": 9150,
+        "event": "DOT Tick",
+        "name": "aero_iii",
+        "damage": 1194,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura",
+            "trick_attack",
             "contagion"
         ]
     },
     {
-        "time": 9299,
+        "time": 9188,
+        "event": "Damage",
+        "name": "Stone IV",
+        "damage": 5973,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 9356,
         "event": "Cast",
-        "name": "Combust II",
-        "duration": 0,
+        "name": "Stone IV",
+        "duration": 235,
         "resource": {
-            "mp": 14400,
+            "mp": 14760,
             "tp": 1000
         }
     },
     {
-        "time": 9359,
+        "time": 9423,
         "event": "Damage",
-        "name": "Malefic III",
-        "damage": 7518,
+        "name": "Stone IV",
+        "damage": 9086,
         "crit": true,
         "dh": false,
         "buff": [
@@ -1441,100 +2127,127 @@
         ]
     },
     {
-        "time": 9366,
-        "event": "DOT Apply",
-        "name": "Combust II",
-        "base_damage": 1277.3,
-        "duration": 3000,
+        "time": 9450,
+        "event": "DOT Tick",
+        "name": "aero_ii",
+        "damage": 1990,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "bard_aura",
+            "trick_attack"
+        ]
+    },
+    {
+        "time": 9450,
+        "event": "DOT Tick",
+        "name": "aero_iii",
+        "damage": 1280,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura",
+            "trick_attack",
+            "contagion"
+        ]
+    },
+    {
+        "time": 9591,
+        "event": "Cast",
+        "name": "Aero II",
+        "duration": 0,
+        "resource": {
+            "mp": 14560,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 9658,
+        "event": "Damage",
+        "name": "Stone IV",
+        "damage": 6215,
+        "crit": false,
+        "dh": false,
         "buff": [
             "bard_aura"
         ]
     },
     {
-        "time": 9366,
+        "time": 9658,
         "event": "Cast",
         "name": "Cleric Stance",
         "duration": 0,
         "resource": {
-            "mp": 14400,
+            "mp": 14560,
             "tp": 1000
         }
     },
     {
-        "time": 9433,
+        "time": 9659,
+        "event": "Damage",
+        "name": "Aero II",
+        "damage": 1241,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 9659,
+        "event": "DOT Apply",
+        "name": "Aero II",
+        "base_damage": 1277.3,
+        "duration": 1800,
+        "buff": [
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 9725,
         "event": "Buff Apply",
         "name": "Cleric Stance",
         "duration": 1500
     },
     {
-        "time": 9450,
+        "time": 9750,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1290,
+        "name": "aero_ii",
+        "damage": 1341,
         "crit": false,
         "dh": false,
         "buff": [
             "bard_aura"
         ]
-    },
-    {
-        "time": 9534,
-        "event": "Cast",
-        "name": "Malefic III",
-        "duration": 235,
-        "resource": {
-            "mp": 14200,
-            "tp": 1000
-        }
     },
     {
         "time": 9750,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1302,
+        "name": "aero_iii",
+        "damage": 1207,
         "crit": false,
         "dh": false,
         "buff": [
-            "bard_aura"
+            "bard_aura",
+            "trick_attack",
+            "contagion"
         ]
     },
     {
-        "time": 9769,
+        "time": 9826,
         "event": "Cast",
-        "name": "Malefic III",
+        "name": "Stone IV",
         "duration": 235,
         "resource": {
-            "mp": 14000,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 9829,
-        "event": "Damage",
-        "name": "Malefic III",
-        "damage": 5677,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "cleric_stance",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 10004,
-        "event": "Cast",
-        "name": "Malefic III",
-        "duration": 235,
-        "resource": {
-            "mp": 13400,
+            "mp": 14360,
             "tp": 1000
         }
     },
     {
         "time": 10050,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1238,
+        "name": "aero_ii",
+        "damage": 1328,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1542,65 +2255,111 @@
         ]
     },
     {
-        "time": 10064,
-        "event": "Damage",
-        "name": "Malefic III",
-        "damage": 5566,
+        "time": 10050,
+        "event": "DOT Tick",
+        "name": "aero_iii",
+        "damage": 1194,
         "crit": false,
         "dh": false,
         "buff": [
-            "cleric_stance",
-            "bard_aura"
+            "bard_aura",
+            "trick_attack",
+            "contagion"
         ]
     },
     {
-        "time": 10239,
+        "time": 10061,
         "event": "Cast",
-        "name": "Malefic III",
+        "name": "Aero III",
         "duration": 235,
         "resource": {
-            "mp": 13200,
+            "mp": 14040,
             "tp": 1000
         }
     },
     {
-        "time": 10299,
+        "time": 10128,
         "event": "Damage",
-        "name": "Malefic III",
-        "damage": 5510,
+        "name": "Stone IV",
+        "damage": 6589,
         "crit": false,
         "dh": false,
         "buff": [
             "cleric_stance",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 10246,
+        "event": "DOT Apply",
+        "name": "Aero III",
+        "base_damage": 1067.42,
+        "duration": 2400,
+        "buff": [
+            "cleric_stance",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 10296,
+        "event": "Damage",
+        "name": "Aero III",
+        "damage": 1327,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "cleric_stance",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 10296,
+        "event": "Cast",
+        "name": "Stone IV",
+        "duration": 235,
+        "resource": {
+            "mp": 13440,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 10350,
+        "event": "DOT Tick",
+        "name": "aero_ii",
+        "damage": 1213,
+        "crit": false,
+        "dh": false,
+        "buff": [
             "bard_aura"
         ]
     },
     {
         "time": 10350,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1811,
-        "crit": true,
+        "name": "aero_iii",
+        "damage": 1088,
+        "crit": false,
         "dh": false,
         "buff": [
+            "cleric_stance",
             "bard_aura"
         ]
     },
     {
-        "time": 10474,
+        "time": 10531,
         "event": "Cast",
-        "name": "Malefic III",
+        "name": "Stone IV",
         "duration": 235,
         "resource": {
-            "mp": 13000,
+            "mp": 13240,
             "tp": 1000
         }
     },
     {
-        "time": 10534,
+        "time": 10598,
         "event": "Damage",
-        "name": "Malefic III",
-        "damage": 5788,
+        "name": "Stone IV",
+        "damage": 6399,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1611,8 +2370,8 @@
     {
         "time": 10650,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1277,
+        "name": "aero_ii",
+        "damage": 1226,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1620,20 +2379,10 @@
         ]
     },
     {
-        "time": 10709,
-        "event": "Cast",
-        "name": "Malefic III",
-        "duration": 235,
-        "resource": {
-            "mp": 12800,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 10769,
-        "event": "Damage",
-        "name": "Malefic III",
-        "damage": 5621,
+        "time": 10650,
+        "event": "DOT Tick",
+        "name": "aero_iii",
+        "damage": 1067,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1642,20 +2391,32 @@
         ]
     },
     {
-        "time": 10944,
+        "time": 10766,
         "event": "Cast",
-        "name": "Malefic III",
+        "name": "Stone IV",
         "duration": 235,
         "resource": {
-            "mp": 12200,
+            "mp": 13040,
             "tp": 1000
         }
+    },
+    {
+        "time": 10833,
+        "event": "Damage",
+        "name": "Stone IV",
+        "damage": 6589,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "cleric_stance",
+            "bard_aura"
+        ]
     },
     {
         "time": 10950,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1213,
+        "name": "aero_ii",
+        "damage": 1251,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1663,10 +2424,10 @@
         ]
     },
     {
-        "time": 11004,
-        "event": "Damage",
-        "name": "Malefic III",
-        "damage": 5621,
+        "time": 10950,
+        "event": "DOT Tick",
+        "name": "aero_iii",
+        "damage": 1088,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1675,21 +2436,43 @@
         ]
     },
     {
-        "time": 11179,
+        "time": 11001,
         "event": "Cast",
-        "name": "Malefic III",
+        "name": "Stone IV",
         "duration": 235,
         "resource": {
-            "mp": 12000,
+            "mp": 12840,
             "tp": 1000
         }
     },
     {
-        "time": 11239,
+        "time": 11068,
         "event": "Damage",
-        "name": "Malefic III",
-        "damage": 5142,
+        "name": "Stone IV",
+        "damage": 6209,
         "crit": false,
+        "dh": false,
+        "buff": [
+            "cleric_stance",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 11236,
+        "event": "Cast",
+        "name": "Stone IV",
+        "duration": 235,
+        "resource": {
+            "mp": 12240,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 11250,
+        "event": "DOT Tick",
+        "name": "aero_ii",
+        "damage": 1867,
+        "crit": true,
         "dh": false,
         "buff": [
             "bard_aura"
@@ -1698,8 +2481,42 @@
     {
         "time": 11250,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1238,
+        "name": "aero_iii",
+        "damage": 1067,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "cleric_stance",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 11303,
+        "event": "Damage",
+        "name": "Stone IV",
+        "damage": 6082,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "cleric_stance",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 11471,
+        "event": "Cast",
+        "name": "Aero II",
+        "duration": 0,
+        "resource": {
+            "mp": 12040,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 11538,
+        "event": "Damage",
+        "name": "Stone IV",
+        "damage": 6034,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1707,20 +2524,31 @@
         ]
     },
     {
-        "time": 11414,
-        "event": "Cast",
-        "name": "Malefic III",
-        "duration": 235,
-        "resource": {
-            "mp": 11800,
-            "tp": 1000
-        }
+        "time": 11539,
+        "event": "Damage",
+        "name": "Aero II",
+        "damage": 1205,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
     },
     {
-        "time": 11474,
-        "event": "Damage",
-        "name": "Malefic III",
-        "damage": 5408,
+        "time": 11539,
+        "event": "DOT Apply",
+        "name": "Aero II",
+        "base_damage": 1277.3,
+        "duration": 1800,
+        "buff": [
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 11550,
+        "event": "DOT Tick",
+        "name": "aero_ii",
+        "damage": 1213,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1730,29 +2558,30 @@
     {
         "time": 11550,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1290,
+        "name": "aero_iii",
+        "damage": 1088,
         "crit": false,
         "dh": false,
         "buff": [
+            "cleric_stance",
             "bard_aura"
         ]
     },
     {
-        "time": 11649,
+        "time": 11706,
         "event": "Cast",
-        "name": "Malefic III",
+        "name": "Stone IV",
         "duration": 235,
         "resource": {
-            "mp": 11600,
+            "mp": 11840,
             "tp": 1000
         }
     },
     {
-        "time": 11709,
-        "event": "Damage",
-        "name": "Malefic III",
-        "damage": 5355,
+        "time": 11850,
+        "event": "DOT Tick",
+        "name": "aero_ii",
+        "damage": 1277,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1762,29 +2591,30 @@
     {
         "time": 11850,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1238,
+        "name": "aero_iii",
+        "damage": 1056,
         "crit": false,
         "dh": false,
         "buff": [
+            "cleric_stance",
             "bard_aura"
         ]
     },
     {
-        "time": 11884,
+        "time": 11941,
         "event": "Cast",
-        "name": "Malefic III",
+        "name": "Stone IV",
         "duration": 235,
         "resource": {
-            "mp": 11400,
+            "mp": 11640,
             "tp": 1000
         }
     },
     {
-        "time": 11944,
+        "time": 12008,
         "event": "Damage",
-        "name": "Malefic III",
-        "damage": 5142,
+        "name": "Stone IV",
+        "damage": 6094,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1798,36 +2628,37 @@
         "duration": 2800
     },
     {
-        "time": 12119,
-        "event": "Cast",
-        "name": "Malefic III",
-        "duration": 235,
-        "resource": {
-            "mp": 10800,
-            "tp": 1000
-        }
+        "time": 12150,
+        "event": "DOT Tick",
+        "name": "aero_ii",
+        "damage": 1277,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
     },
     {
         "time": 12150,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1226,
+        "name": "aero_iii",
+        "damage": 1024,
         "crit": false,
         "dh": false,
         "buff": [
+            "cleric_stance",
             "bard_aura"
         ]
     },
     {
-        "time": 12179,
-        "event": "Damage",
-        "name": "Malefic III",
-        "damage": 5302,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
+        "time": 12176,
+        "event": "Cast",
+        "name": "Stone IV",
+        "duration": 235,
+        "resource": {
+            "mp": 11440,
+            "tp": 1000
+        }
     },
     {
         "time": 12200,
@@ -1836,14 +2667,16 @@
         "duration": 1500
     },
     {
-        "time": 12354,
-        "event": "Cast",
-        "name": "Combust II",
-        "duration": 0,
-        "resource": {
-            "mp": 10600,
-            "tp": 1000
-        }
+        "time": 12243,
+        "event": "Damage",
+        "name": "Stone IV",
+        "damage": 6272,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura",
+            "hypercharge"
+        ]
     },
     {
         "time": 12400,
@@ -1852,36 +2685,66 @@
         "duration": 2000
     },
     {
-        "time": 12414,
-        "event": "Damage",
-        "name": "Malefic III",
-        "damage": 6185,
+        "time": 12411,
+        "event": "Cast",
+        "name": "Stone IV",
+        "duration": 235,
+        "resource": {
+            "mp": 10840,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 12450,
+        "event": "DOT Tick",
+        "name": "aero_ii",
+        "damage": 1341,
         "crit": false,
         "dh": false,
         "buff": [
-            "bard_aura",
-            "contagion",
-            "hypercharge"
-        ]
-    },
-    {
-        "time": 12421,
-        "event": "DOT Apply",
-        "name": "Combust II",
-        "base_damage": 1548.66,
-        "duration": 3000,
-        "buff": [
-            "dragon_sight",
-            "bard_aura",
-            "contagion",
-            "hypercharge"
+            "bard_aura"
         ]
     },
     {
         "time": 12450,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1548,
+        "name": "aero_iii",
+        "damage": 1014,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "cleric_stance",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 12478,
+        "event": "Damage",
+        "name": "Stone IV",
+        "damage": 6829,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura",
+            "contagion",
+            "hypercharge"
+        ]
+    },
+    {
+        "time": 12646,
+        "event": "Cast",
+        "name": "Aero III",
+        "duration": 235,
+        "resource": {
+            "mp": 10520,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 12713,
+        "event": "Damage",
+        "name": "Stone IV",
+        "damage": 7390,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1890,22 +2753,36 @@
             "contagion",
             "hypercharge"
         ]
-    },
-    {
-        "time": 12589,
-        "event": "Cast",
-        "name": "Malefic III",
-        "duration": 235,
-        "resource": {
-            "mp": 10400,
-            "tp": 1000
-        }
     },
     {
         "time": 12750,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1610,
+        "name": "aero_ii",
+        "damage": 1341,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 12831,
+        "event": "DOT Apply",
+        "name": "Aero III",
+        "base_damage": 1233.8400000000001,
+        "duration": 2400,
+        "buff": [
+            "dragon_sight",
+            "bard_aura",
+            "contagion",
+            "hypercharge"
+        ]
+    },
+    {
+        "time": 12881,
+        "event": "Damage",
+        "name": "Aero III",
+        "damage": 1461,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1916,28 +2793,14 @@
         ]
     },
     {
-        "time": 12824,
+        "time": 12881,
         "event": "Cast",
-        "name": "Malefic III",
+        "name": "Stone IV",
         "duration": 235,
         "resource": {
-            "mp": 10200,
+            "mp": 10320,
             "tp": 1000
         }
-    },
-    {
-        "time": 12884,
-        "event": "Damage",
-        "name": "Malefic III",
-        "damage": 6429,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "dragon_sight",
-            "bard_aura",
-            "contagion",
-            "hypercharge"
-        ]
     },
     {
         "time": 12900,
@@ -1948,8 +2811,19 @@
     {
         "time": 13050,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1610,
+        "name": "aero_ii",
+        "damage": 1290,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 13050,
+        "event": "DOT Tick",
+        "name": "aero_iii",
+        "damage": 1233,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1960,26 +2834,26 @@
         ]
     },
     {
-        "time": 13059,
-        "event": "Cast",
-        "name": "Malefic III",
-        "duration": 235,
-        "resource": {
-            "mp": 10000,
-            "tp": 1000
-        }
-    },
-    {
         "time": 13100,
         "event": "Party Buff Apply",
         "name": "Trick Attack",
         "duration": 1500
     },
     {
-        "time": 13119,
+        "time": 13116,
+        "event": "Cast",
+        "name": "Stone IV",
+        "duration": 235,
+        "resource": {
+            "mp": 10120,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 13183,
         "event": "Damage",
-        "name": "Malefic III",
-        "damage": 6300,
+        "name": "Stone IV",
+        "damage": 7097,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1991,20 +2865,10 @@
         ]
     },
     {
-        "time": 13294,
-        "event": "Cast",
-        "name": "Malefic III",
-        "duration": 235,
-        "resource": {
-            "mp": 9400,
-            "tp": 1000
-        }
-    },
-    {
         "time": 13350,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1564,
+        "name": "aero_iii",
+        "damage": 1196,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2015,12 +2879,53 @@
         ]
     },
     {
-        "time": 13354,
+        "time": 13351,
+        "event": "Cast",
+        "name": "Aero II",
+        "duration": 0,
+        "resource": {
+            "mp": 9920,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 13418,
         "event": "Damage",
-        "name": "Malefic III",
-        "damage": 10857,
-        "crit": true,
+        "name": "Stone IV",
+        "damage": 8049,
+        "crit": false,
         "dh": false,
+        "buff": [
+            "dragon_sight",
+            "chain_strategem",
+            "bard_aura",
+            "trick_attack",
+            "contagion",
+            "hypercharge"
+        ]
+    },
+    {
+        "time": 13419,
+        "event": "Damage",
+        "name": "Aero II",
+        "damage": 1557,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "dragon_sight",
+            "chain_strategem",
+            "bard_aura",
+            "trick_attack",
+            "contagion",
+            "hypercharge"
+        ]
+    },
+    {
+        "time": 13419,
+        "event": "DOT Apply",
+        "name": "Aero II",
+        "base_damage": 1702.3600000000001,
+        "duration": 1800,
         "buff": [
             "dragon_sight",
             "chain_strategem",
@@ -2037,20 +2942,20 @@
         "duration": 1500
     },
     {
-        "time": 13529,
+        "time": 13586,
         "event": "Cast",
-        "name": "Malefic III",
+        "name": "Stone IV",
         "duration": 235,
         "resource": {
-            "mp": 9200,
+            "mp": 9320,
             "tp": 1000
         }
     },
     {
-        "time": 13589,
-        "event": "Damage",
-        "name": "Malefic III",
-        "damage": 10237,
+        "time": 13650,
+        "event": "DOT Tick",
+        "name": "aero_ii",
+        "damage": 2588,
         "crit": true,
         "dh": false,
         "buff": [
@@ -2065,8 +2970,8 @@
     {
         "time": 13650,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1610,
+        "name": "aero_iii",
+        "damage": 1209,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2077,21 +2982,21 @@
         ]
     },
     {
-        "time": 13764,
+        "time": 13821,
         "event": "Cast",
-        "name": "Malefic III",
+        "name": "Stone IV",
         "duration": 235,
         "resource": {
-            "mp": 9000,
+            "mp": 9120,
             "tp": 1000
         }
     },
     {
-        "time": 13824,
+        "time": 13888,
         "event": "Damage",
-        "name": "Malefic III",
-        "damage": 9875,
-        "crit": true,
+        "name": "Stone IV",
+        "damage": 7687,
+        "crit": false,
         "dh": false,
         "buff": [
             "dragon_sight",
@@ -2105,58 +3010,24 @@
     {
         "time": 13950,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1610,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "dragon_sight",
-            "bard_aura",
-            "contagion",
-            "hypercharge"
-        ]
-    },
-    {
-        "time": 13999,
-        "event": "Cast",
-        "name": "Malefic III",
-        "duration": 235,
-        "resource": {
-            "mp": 8800,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 14059,
-        "event": "Damage",
-        "name": "Malefic III",
-        "damage": 6295,
-        "crit": false,
+        "name": "aero_ii",
+        "damage": 2613,
+        "crit": true,
         "dh": false,
         "buff": [
             "dragon_sight",
             "chain_strategem",
             "bard_aura",
             "trick_attack",
-            "hypercharge",
-            "devotion"
+            "contagion",
+            "hypercharge"
         ]
     },
     {
-        "time": 14234,
-        "event": "Cast",
-        "name": "Malefic III",
-        "duration": 235,
-        "resource": {
-            "mp": 8200,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 14250,
+        "time": 13950,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 2354,
+        "name": "aero_iii",
+        "damage": 1894,
         "crit": true,
         "dh": false,
         "buff": [
@@ -2167,10 +3038,20 @@
         ]
     },
     {
-        "time": 14294,
+        "time": 14056,
+        "event": "Cast",
+        "name": "Stone IV",
+        "duration": 235,
+        "resource": {
+            "mp": 8920,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 14123,
         "event": "Damage",
-        "name": "Malefic III",
-        "damage": 6426,
+        "name": "Stone IV",
+        "damage": 7837,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2183,34 +3064,26 @@
         ]
     },
     {
-        "time": 14469,
-        "event": "Cast",
-        "name": "Malefic III",
-        "duration": 235,
-        "resource": {
-            "mp": 8000,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 14529,
-        "event": "Damage",
-        "name": "Malefic III",
-        "damage": 5933,
+        "time": 14250,
+        "event": "DOT Tick",
+        "name": "aero_ii",
+        "damage": 1753,
         "crit": false,
         "dh": false,
         "buff": [
+            "dragon_sight",
+            "chain_strategem",
             "bard_aura",
             "trick_attack",
-            "hypercharge",
-            "devotion"
+            "contagion",
+            "hypercharge"
         ]
     },
     {
-        "time": 14550,
+        "time": 14250,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1471,
+        "name": "aero_iii",
+        "damage": 1172,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2221,20 +3094,100 @@
         ]
     },
     {
-        "time": 14704,
+        "time": 14291,
         "event": "Cast",
-        "name": "Malefic III",
+        "name": "Stone IV",
         "duration": 235,
         "resource": {
-            "mp": 7800,
+            "mp": 8720,
             "tp": 1000
         }
     },
     {
-        "time": 14764,
+        "time": 14358,
         "event": "Damage",
-        "name": "Malefic III",
-        "damage": 5734,
+        "name": "Stone IV",
+        "damage": 11348,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "dragon_sight",
+            "chain_strategem",
+            "bard_aura",
+            "trick_attack",
+            "hypercharge",
+            "devotion"
+        ]
+    },
+    {
+        "time": 14526,
+        "event": "Cast",
+        "name": "Stone IV",
+        "duration": 235,
+        "resource": {
+            "mp": 8120,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 14550,
+        "event": "DOT Tick",
+        "name": "aero_ii",
+        "damage": 1770,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "dragon_sight",
+            "chain_strategem",
+            "bard_aura",
+            "trick_attack",
+            "contagion",
+            "hypercharge"
+        ]
+    },
+    {
+        "time": 14550,
+        "event": "DOT Tick",
+        "name": "aero_iii",
+        "damage": 1221,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "dragon_sight",
+            "bard_aura",
+            "contagion",
+            "hypercharge"
+        ]
+    },
+    {
+        "time": 14593,
+        "event": "Damage",
+        "name": "Stone IV",
+        "damage": 7392,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura",
+            "trick_attack",
+            "hypercharge",
+            "devotion"
+        ]
+    },
+    {
+        "time": 14761,
+        "event": "Cast",
+        "name": "Stone IV",
+        "duration": 235,
+        "resource": {
+            "mp": 7920,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 14828,
+        "event": "Damage",
+        "name": "Stone IV",
+        "damage": 6720,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2246,8 +3199,24 @@
     {
         "time": 14850,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1533,
+        "name": "aero_ii",
+        "damage": 1668,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "dragon_sight",
+            "chain_strategem",
+            "bard_aura",
+            "trick_attack",
+            "contagion",
+            "hypercharge"
+        ]
+    },
+    {
+        "time": 14850,
+        "event": "DOT Tick",
+        "name": "aero_iii",
+        "damage": 1172,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2258,34 +3227,49 @@
         ]
     },
     {
-        "time": 14939,
+        "time": 14996,
         "event": "Cast",
-        "name": "Malefic III",
+        "name": "Stone IV",
         "duration": 235,
         "resource": {
-            "mp": 7600,
+            "mp": 7720,
             "tp": 1000
         }
     },
     {
-        "time": 14999,
+        "time": 15063,
         "event": "Damage",
-        "name": "Malefic III",
-        "damage": 5791,
+        "name": "Stone IV",
+        "damage": 6215,
         "crit": false,
         "dh": false,
         "buff": [
             "bard_aura",
-            "hypercharge",
             "devotion"
         ]
     },
     {
         "time": 15150,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1502,
+        "name": "aero_ii",
+        "damage": 1685,
         "crit": false,
+        "dh": false,
+        "buff": [
+            "dragon_sight",
+            "chain_strategem",
+            "bard_aura",
+            "trick_attack",
+            "contagion",
+            "hypercharge"
+        ]
+    },
+    {
+        "time": 15150,
+        "event": "DOT Tick",
+        "name": "aero_iii",
+        "damage": 1894,
+        "crit": true,
         "dh": false,
         "buff": [
             "dragon_sight",
@@ -2295,9 +3279,9 @@
         ]
     },
     {
-        "time": 15174,
+        "time": 15231,
         "event": "Cast",
-        "name": "Malefic III",
+        "name": "Aero III",
         "duration": 235,
         "resource": {
             "mp": 7400,
@@ -2305,10 +3289,10 @@
         }
     },
     {
-        "time": 15234,
+        "time": 15298,
         "event": "Damage",
-        "name": "Malefic III",
-        "damage": 5461,
+        "name": "Stone IV",
+        "damage": 5792,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2316,40 +3300,41 @@
         ]
     },
     {
-        "time": 15409,
-        "event": "Cast",
-        "name": "Combust II",
-        "duration": 0,
-        "resource": {
-            "mp": 6800,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 15469,
-        "event": "Damage",
-        "name": "Malefic III",
-        "damage": 5036,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 15476,
+        "time": 15416,
         "event": "DOT Apply",
-        "name": "Combust II",
-        "base_damage": 1277.3,
-        "duration": 3000,
+        "name": "Aero III",
+        "base_damage": 1017.6,
+        "duration": 2400,
         "buff": [
             "bard_aura"
         ]
     },
     {
-        "time": 15476,
+        "time": 15450,
+        "event": "DOT Tick",
+        "name": "aero_iii",
+        "damage": 1048,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 15466,
+        "event": "Damage",
+        "name": "Aero III",
+        "damage": 1168,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 15466,
         "event": "Cast",
-        "name": "Lucid Dreaming",
+        "name": "Aero II",
         "duration": 0,
         "resource": {
             "mp": 7200,
@@ -2357,58 +3342,94 @@
         }
     },
     {
-        "time": 15543,
+        "time": 15533,
+        "event": "Cast",
+        "name": "Presence of Mind",
+        "duration": 0,
+        "resource": {
+            "mp": 7200,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 15534,
+        "event": "Damage",
+        "name": "Aero II",
+        "damage": 1253,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 15534,
+        "event": "DOT Apply",
+        "name": "Aero II",
+        "base_damage": 1277.3,
+        "duration": 1800,
+        "buff": [
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 15600,
+        "event": "Buff Apply",
+        "name": "Presence of Mind",
+        "duration": 1500
+    },
+    {
+        "time": 15600,
+        "event": "Cast",
+        "name": "Assize",
+        "duration": 0,
+        "resource": {
+            "mp": 7200,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 15667,
+        "event": "Cast",
+        "name": "Lucid Dreaming",
+        "duration": 0,
+        "resource": {
+            "mp": 9200,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 15668,
+        "event": "Damage",
+        "name": "Assize",
+        "damage": 6879,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "presence_of_mind",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 15734,
         "event": "Buff Apply",
         "name": "Lucid Dreaming",
         "duration": 2100
     },
     {
-        "time": 15644,
+        "time": 15734,
         "event": "Cast",
-        "name": "Malefic III",
-        "duration": 235,
+        "name": "Stone IV",
+        "duration": 188,
         "resource": {
-            "mp": 6600,
+            "mp": 8600,
             "tp": 1000
         }
     },
     {
         "time": 15750,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1251,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 15879,
-        "event": "Cast",
-        "name": "Malefic III",
-        "duration": 235,
-        "resource": {
-            "mp": 7360,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 15939,
-        "event": "Damage",
-        "name": "Malefic III",
-        "damage": 5302,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "lucid_dreaming",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 16050,
-        "event": "DOT Tick",
-        "name": "combust_ii",
+        "name": "aero_ii",
         "damage": 1277,
         "crit": false,
         "dh": false,
@@ -2417,41 +3438,156 @@
         ]
     },
     {
-        "time": 16114,
+        "time": 15750,
+        "event": "DOT Tick",
+        "name": "aero_iii",
+        "damage": 1058,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 15922,
         "event": "Cast",
-        "name": "Malefic III",
-        "duration": 235,
+        "name": "Stone IV",
+        "duration": 188,
         "resource": {
-            "mp": 8120,
+            "mp": 9360,
             "tp": 1000
         }
     },
     {
-        "time": 16174,
+        "time": 15989,
         "event": "Damage",
-        "name": "Malefic III",
-        "damage": 5355,
+        "name": "Stone IV",
+        "damage": 6215,
         "crit": false,
         "dh": false,
         "buff": [
+            "presence_of_mind",
             "lucid_dreaming",
             "bard_aura"
         ]
     },
     {
-        "time": 16349,
+        "time": 16050,
+        "event": "DOT Tick",
+        "name": "aero_ii",
+        "damage": 1251,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 16050,
+        "event": "DOT Tick",
+        "name": "aero_iii",
+        "damage": 1027,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 16110,
         "event": "Cast",
-        "name": "Malefic III",
-        "duration": 235,
+        "name": "Stone IV",
+        "duration": 188,
         "resource": {
-            "mp": 7520,
+            "mp": 10120,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 16177,
+        "event": "Damage",
+        "name": "Stone IV",
+        "damage": 6335,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "presence_of_mind",
+            "lucid_dreaming",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 16298,
+        "event": "Cast",
+        "name": "Stone IV",
+        "duration": 188,
+        "resource": {
+            "mp": 9520,
             "tp": 1000
         }
     },
     {
         "time": 16350,
         "event": "DOT Tick",
-        "name": "combust_ii",
+        "name": "aero_ii",
+        "damage": 1251,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 16350,
+        "event": "DOT Tick",
+        "name": "aero_iii",
+        "damage": 1007,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 16365,
+        "event": "Damage",
+        "name": "Stone IV",
+        "damage": 6094,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "presence_of_mind",
+            "lucid_dreaming",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 16486,
+        "event": "Cast",
+        "name": "Stone IV",
+        "duration": 188,
+        "resource": {
+            "mp": 10280,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 16553,
+        "event": "Damage",
+        "name": "Stone IV",
+        "damage": 8733,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "presence_of_mind",
+            "lucid_dreaming",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 16650,
+        "event": "DOT Tick",
+        "name": "aero_ii",
         "damage": 1341,
         "crit": false,
         "dh": false,
@@ -2460,44 +3596,10 @@
         ]
     },
     {
-        "time": 16409,
-        "event": "Damage",
-        "name": "Malefic III",
-        "damage": 5089,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "lucid_dreaming",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 16584,
-        "event": "Cast",
-        "name": "Malefic III",
-        "duration": 235,
-        "resource": {
-            "mp": 8280,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 16644,
-        "event": "Damage",
-        "name": "Malefic III",
-        "damage": 5302,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "lucid_dreaming",
-            "bard_aura"
-        ]
-    },
-    {
         "time": 16650,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1328,
+        "name": "aero_iii",
+        "damage": 1007,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2505,23 +3607,47 @@
         ]
     },
     {
-        "time": 16819,
+        "time": 16674,
         "event": "Cast",
-        "name": "Malefic III",
-        "duration": 235,
+        "name": "Stone IV",
+        "duration": 188,
         "resource": {
-            "mp": 9040,
+            "mp": 11040,
             "tp": 1000
         }
     },
     {
-        "time": 16879,
+        "time": 16741,
         "event": "Damage",
-        "name": "Malefic III",
-        "damage": 5355,
+        "name": "Stone IV",
+        "damage": 5852,
         "crit": false,
         "dh": false,
         "buff": [
+            "presence_of_mind",
+            "lucid_dreaming",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 16862,
+        "event": "Cast",
+        "name": "Stone IV",
+        "duration": 188,
+        "resource": {
+            "mp": 10440,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 16929,
+        "event": "Damage",
+        "name": "Stone IV",
+        "damage": 6215,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "presence_of_mind",
             "lucid_dreaming",
             "bard_aura"
         ]
@@ -2529,8 +3655,19 @@
     {
         "time": 16950,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1251,
+        "name": "aero_ii",
+        "damage": 1774,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 16950,
+        "event": "DOT Tick",
+        "name": "aero_iii",
+        "damage": 1058,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2538,31 +3675,42 @@
         ]
     },
     {
-        "time": 17054,
+        "time": 17050,
         "event": "Cast",
-        "name": "Malefic III",
-        "duration": 235,
+        "name": "Stone IV",
+        "duration": 188,
         "resource": {
-            "mp": 9800,
+            "mp": 11200,
             "tp": 1000
         }
     },
     {
-        "time": 17114,
+        "time": 17117,
         "event": "Damage",
-        "name": "Malefic III",
-        "damage": 7751,
-        "crit": true,
+        "name": "Stone IV",
+        "damage": 5852,
+        "crit": false,
         "dh": false,
         "buff": [
+            "presence_of_mind",
             "lucid_dreaming",
             "bard_aura"
         ]
     },
     {
+        "time": 17238,
+        "event": "Cast",
+        "name": "Aero II",
+        "duration": 0,
+        "resource": {
+            "mp": 10600,
+            "tp": 1000
+        }
+    },
+    {
         "time": 17250,
         "event": "DOT Tick",
-        "name": "combust_ii",
+        "name": "aero_ii",
         "damage": 1264,
         "crit": false,
         "dh": false,
@@ -2571,20 +3719,33 @@
         ]
     },
     {
-        "time": 17289,
-        "event": "Cast",
-        "name": "Malefic III",
-        "duration": 235,
-        "resource": {
-            "mp": 10560,
-            "tp": 1000
-        }
+        "time": 17250,
+        "event": "DOT Tick",
+        "name": "aero_iii",
+        "damage": 1058,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
     },
     {
-        "time": 17349,
+        "time": 17305,
         "event": "Damage",
-        "name": "Malefic III",
-        "damage": 5302,
+        "name": "Stone IV",
+        "damage": 9174,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "lucid_dreaming",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 17306,
+        "event": "Damage",
+        "name": "Aero II",
+        "damage": 1144,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2593,20 +3754,43 @@
         ]
     },
     {
-        "time": 17524,
+        "time": 17306,
+        "event": "DOT Apply",
+        "name": "Aero II",
+        "base_damage": 1277.3,
+        "duration": 1800,
+        "buff": [
+            "lucid_dreaming",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 17473,
         "event": "Cast",
-        "name": "Malefic III",
+        "name": "Stone IV",
         "duration": 235,
         "resource": {
-            "mp": 9960,
+            "mp": 11360,
             "tp": 1000
         }
     },
     {
         "time": 17550,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1315,
+        "name": "aero_ii",
+        "damage": 1830,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "lucid_dreaming",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 17550,
+        "event": "DOT Tick",
+        "name": "aero_iii",
+        "damage": 1027,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2614,10 +3798,20 @@
         ]
     },
     {
-        "time": 17584,
+        "time": 17708,
+        "event": "Cast",
+        "name": "Aero III",
+        "duration": 235,
+        "resource": {
+            "mp": 12000,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 17775,
         "event": "Damage",
-        "name": "Malefic III",
-        "damage": 5461,
+        "name": "Stone IV",
+        "damage": 5913,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2626,31 +3820,32 @@
         ]
     },
     {
-        "time": 17759,
-        "event": "Cast",
-        "name": "Malefic III",
-        "duration": 235,
-        "resource": {
-            "mp": 10720,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 17819,
-        "event": "Damage",
-        "name": "Malefic III",
-        "damage": 5195,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
         "time": 17850,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1213,
+        "name": "aero_ii",
+        "damage": 1277,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "lucid_dreaming",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 17893,
+        "event": "DOT Apply",
+        "name": "Aero III",
+        "base_damage": 1017.6,
+        "duration": 2400,
+        "buff": [
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 17943,
+        "event": "Damage",
+        "name": "Aero III",
+        "damage": 1241,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2658,36 +3853,47 @@
         ]
     },
     {
-        "time": 17994,
+        "time": 17943,
         "event": "Cast",
-        "name": "Malefic III",
+        "name": "Stone IV",
         "duration": 235,
         "resource": {
-            "mp": 10520,
+            "mp": 11800,
             "tp": 1000
         }
     },
     {
-        "time": 18054,
-        "event": "Damage",
-        "name": "Malefic III",
-        "damage": 5408,
+        "time": 18150,
+        "event": "DOT Tick",
+        "name": "aero_ii",
+        "damage": 1264,
         "crit": false,
         "dh": false,
         "buff": [
+            "lucid_dreaming",
             "bard_aura"
         ]
     },
     {
         "time": 18150,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1277,
+        "name": "aero_iii",
+        "damage": 1037,
         "crit": false,
         "dh": false,
         "buff": [
             "bard_aura"
         ]
+    },
+    {
+        "time": 18178,
+        "event": "Cast",
+        "name": "Stone IV",
+        "duration": 235,
+        "resource": {
+            "mp": 11600,
+            "tp": 1000
+        }
     },
     {
         "time": 18200,
@@ -2696,20 +3902,10 @@
         "duration": 1500
     },
     {
-        "time": 18229,
-        "event": "Cast",
-        "name": "Malefic III",
-        "duration": 235,
-        "resource": {
-            "mp": 10320,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 18289,
+        "time": 18245,
         "event": "Damage",
-        "name": "Malefic III",
-        "damage": 5248,
+        "name": "Stone IV",
+        "damage": 6154,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2735,10 +3931,94 @@
         "duration": 2000
     },
     {
+        "time": 18413,
+        "event": "Cast",
+        "name": "Stone IV",
+        "duration": 235,
+        "resource": {
+            "mp": 11000,
+            "tp": 1000
+        }
+    },
+    {
         "time": 18450,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1811,
+        "name": "aero_ii",
+        "damage": 1341,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "lucid_dreaming",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 18450,
+        "event": "DOT Tick",
+        "name": "aero_iii",
+        "damage": 966,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 18480,
+        "event": "Damage",
+        "name": "Stone IV",
+        "damage": 6836,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "battle_litany",
+            "foe_requiem",
+            "bard_aura",
+            "contagion"
+        ]
+    },
+    {
+        "time": 18648,
+        "event": "Cast",
+        "name": "Stone IV",
+        "duration": 235,
+        "resource": {
+            "mp": 10800,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 18715,
+        "event": "Damage",
+        "name": "Stone IV",
+        "damage": 9494,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "battle_litany",
+            "battle_voice",
+            "foe_requiem",
+            "bard_aura",
+            "contagion"
+        ]
+    },
+    {
+        "time": 18750,
+        "event": "DOT Tick",
+        "name": "aero_ii",
+        "damage": 1277,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "lucid_dreaming",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 18750,
+        "event": "DOT Tick",
+        "name": "aero_iii",
+        "damage": 1517,
         "crit": true,
         "dh": false,
         "buff": [
@@ -2746,104 +4026,23 @@
         ]
     },
     {
-        "time": 18464,
+        "time": 18883,
         "event": "Cast",
-        "name": "Combust II",
-        "duration": 0,
-        "resource": {
-            "mp": 10120,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 18524,
-        "event": "Damage",
-        "name": "Malefic III",
-        "damage": 5946,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "battle_litany",
-            "battle_voice",
-            "foe_requiem",
-            "bard_aura",
-            "contagion"
-        ]
-    },
-    {
-        "time": 18531,
-        "event": "DOT Apply",
-        "name": "Combust II",
-        "base_damage": 1446.9,
-        "duration": 3000,
-        "buff": [
-            "battle_litany",
-            "battle_voice",
-            "foe_requiem",
-            "bard_aura",
-            "contagion"
-        ]
-    },
-    {
-        "time": 18531,
-        "event": "Cast",
-        "name": "Cleric Stance",
-        "duration": 0,
-        "resource": {
-            "mp": 10120,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 18598,
-        "event": "Buff Apply",
-        "name": "Cleric Stance",
-        "duration": 1500
-    },
-    {
-        "time": 18699,
-        "event": "Cast",
-        "name": "Malefic III",
+        "name": "Stone IV",
         "duration": 235,
         "resource": {
-            "mp": 9520,
+            "mp": 10600,
             "tp": 1000
         }
     },
     {
-        "time": 18750,
-        "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1475,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "battle_litany",
-            "battle_voice",
-            "foe_requiem",
-            "bard_aura",
-            "contagion"
-        ]
-    },
-    {
-        "time": 18934,
-        "event": "Cast",
-        "name": "Malefic III",
-        "duration": 235,
-        "resource": {
-            "mp": 9320,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 18994,
+        "time": 18950,
         "event": "Damage",
-        "name": "Malefic III",
-        "damage": 6307,
-        "crit": false,
+        "name": "Stone IV",
+        "damage": 10394,
+        "crit": true,
         "dh": false,
         "buff": [
-            "cleric_stance",
             "battle_litany",
             "battle_voice",
             "foe_requiem",
@@ -2854,16 +4053,24 @@
     {
         "time": 19050,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1504,
+        "name": "aero_ii",
+        "damage": 1341,
         "crit": false,
         "dh": false,
         "buff": [
-            "battle_litany",
-            "battle_voice",
-            "foe_requiem",
-            "bard_aura",
-            "contagion"
+            "lucid_dreaming",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 19050,
+        "event": "DOT Tick",
+        "name": "aero_iii",
+        "damage": 1413,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "bard_aura"
         ]
     },
     {
@@ -2873,24 +4080,85 @@
         "duration": 1500
     },
     {
-        "time": 19169,
+        "time": 19118,
         "event": "Cast",
-        "name": "Malefic III",
-        "duration": 235,
+        "name": "Aero II",
+        "duration": 0,
         "resource": {
-            "mp": 9120,
+            "mp": 10400,
             "tp": 1000
         }
     },
     {
-        "time": 19229,
+        "time": 19185,
         "event": "Damage",
-        "name": "Malefic III",
-        "damage": 7284,
+        "name": "Stone IV",
+        "damage": 8972,
+        "crit": false,
+        "dh": true,
+        "buff": [
+            "battle_litany",
+            "battle_voice",
+            "foe_requiem",
+            "bard_aura",
+            "contagion"
+        ]
+    },
+    {
+        "time": 19185,
+        "event": "Cast",
+        "name": "Cleric Stance",
+        "duration": 0,
+        "resource": {
+            "mp": 10400,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 19186,
+        "event": "Damage",
+        "name": "Aero II",
+        "damage": 1501,
         "crit": false,
         "dh": false,
         "buff": [
-            "cleric_stance",
+            "battle_litany",
+            "battle_voice",
+            "foe_requiem",
+            "bard_aura",
+            "trick_attack",
+            "contagion"
+        ]
+    },
+    {
+        "time": 19186,
+        "event": "DOT Apply",
+        "name": "Aero II",
+        "base_damage": 1591.0600000000002,
+        "duration": 1800,
+        "buff": [
+            "battle_litany",
+            "battle_voice",
+            "foe_requiem",
+            "bard_aura",
+            "trick_attack",
+            "contagion"
+        ]
+    },
+    {
+        "time": 19252,
+        "event": "Buff Apply",
+        "name": "Cleric Stance",
+        "duration": 1500
+    },
+    {
+        "time": 19350,
+        "event": "DOT Tick",
+        "name": "aero_ii",
+        "damage": 1543,
+        "crit": false,
+        "dh": false,
+        "buff": [
             "battle_litany",
             "battle_voice",
             "foe_requiem",
@@ -2902,60 +4170,39 @@
     {
         "time": 19350,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1754,
+        "name": "aero_iii",
+        "damage": 997,
         "crit": false,
-        "dh": true,
+        "dh": false,
         "buff": [
-            "battle_litany",
-            "battle_voice",
-            "foe_requiem",
-            "bard_aura",
-            "contagion"
+            "bard_aura"
         ]
     },
     {
-        "time": 19404,
+        "time": 19353,
         "event": "Cast",
-        "name": "Malefic III",
+        "name": "Stone IV",
         "duration": 235,
         "resource": {
-            "mp": 8920,
+            "mp": 10200,
             "tp": 1000
         }
     },
     {
-        "time": 19464,
-        "event": "Damage",
-        "name": "Malefic III",
-        "damage": 8585,
-        "crit": false,
-        "dh": true,
-        "buff": [
-            "cleric_stance",
-            "battle_litany",
-            "battle_voice",
-            "foe_requiem",
-            "bard_aura",
-            "trick_attack",
-            "contagion"
-        ]
-    },
-    {
-        "time": 19639,
+        "time": 19588,
         "event": "Cast",
-        "name": "Malefic III",
+        "name": "Stone IV",
         "duration": 235,
         "resource": {
-            "mp": 8320,
+            "mp": 9600,
             "tp": 1000
         }
     },
     {
         "time": 19650,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1403,
+        "name": "aero_ii",
+        "damage": 1575,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2963,14 +4210,26 @@
             "battle_voice",
             "foe_requiem",
             "bard_aura",
+            "trick_attack",
             "contagion"
         ]
     },
     {
-        "time": 19699,
+        "time": 19650,
+        "event": "DOT Tick",
+        "name": "aero_iii",
+        "damage": 1058,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 19655,
         "event": "Damage",
-        "name": "Malefic III",
-        "damage": 6938,
+        "name": "Stone IV",
+        "damage": 8290,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2984,20 +4243,20 @@
         ]
     },
     {
-        "time": 19874,
+        "time": 19823,
         "event": "Cast",
-        "name": "Malefic III",
+        "name": "Stone IV",
         "duration": 235,
         "resource": {
-            "mp": 8120,
+            "mp": 9400,
             "tp": 1000
         }
     },
     {
-        "time": 19934,
+        "time": 19890,
         "event": "Damage",
-        "name": "Malefic III",
-        "damage": 6117,
+        "name": "Stone IV",
+        "damage": 7249,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3012,8 +4271,8 @@
     {
         "time": 19950,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 2221,
+        "name": "aero_ii",
+        "damage": 2349,
         "crit": true,
         "dh": false,
         "buff": [
@@ -3021,26 +4280,38 @@
             "battle_voice",
             "foe_requiem",
             "bard_aura",
+            "trick_attack",
             "contagion"
         ]
     },
     {
-        "time": 20109,
+        "time": 19950,
+        "event": "DOT Tick",
+        "name": "aero_iii",
+        "damage": 1246,
+        "crit": false,
+        "dh": true,
+        "buff": [
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 20058,
         "event": "Cast",
-        "name": "Malefic III",
+        "name": "Stone IV",
         "duration": 235,
         "resource": {
-            "mp": 7920,
+            "mp": 9200,
             "tp": 1000
         }
     },
     {
-        "time": 20169,
+        "time": 20125,
         "event": "Damage",
-        "name": "Malefic III",
-        "damage": 6054,
+        "name": "Stone IV",
+        "damage": 8972,
         "crit": false,
-        "dh": false,
+        "dh": true,
         "buff": [
             "cleric_stance",
             "battle_litany",
@@ -3053,111 +4324,191 @@
     {
         "time": 20250,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1519,
-        "crit": false,
-        "dh": false,
+        "name": "aero_ii",
+        "damage": 3023,
+        "crit": true,
+        "dh": true,
         "buff": [
             "battle_litany",
             "battle_voice",
             "foe_requiem",
             "bard_aura",
+            "trick_attack",
             "contagion"
         ]
     },
     {
-        "time": 20344,
+        "time": 20250,
+        "event": "DOT Tick",
+        "name": "aero_iii",
+        "damage": 1068,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 20293,
         "event": "Cast",
-        "name": "Malefic III",
+        "name": "Aero III",
         "duration": 235,
         "resource": {
-            "mp": 7720,
+            "mp": 8880,
             "tp": 1000
         }
     },
     {
-        "time": 20404,
+        "time": 20360,
         "event": "Damage",
-        "name": "Malefic III",
-        "damage": 5766,
+        "name": "Stone IV",
+        "damage": 6962,
         "crit": false,
         "dh": false,
         "buff": [
+            "cleric_stance",
             "battle_litany",
             "battle_voice",
             "foe_requiem",
             "bard_aura",
             "trick_attack"
+        ]
+    },
+    {
+        "time": 20478,
+        "event": "DOT Apply",
+        "name": "Aero III",
+        "base_damage": 1210.52,
+        "duration": 2400,
+        "buff": [
+            "cleric_stance",
+            "foe_requiem",
+            "bard_aura",
+            "trick_attack"
+        ]
+    },
+    {
+        "time": 20528,
+        "event": "Damage",
+        "name": "Aero III",
+        "damage": 1417,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "cleric_stance",
+            "foe_requiem",
+            "bard_aura",
+            "trick_attack"
+        ]
+    },
+    {
+        "time": 20528,
+        "event": "Cast",
+        "name": "Stone IV",
+        "duration": 235,
+        "resource": {
+            "mp": 8280,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 20550,
+        "event": "DOT Tick",
+        "name": "aero_ii",
+        "damage": 1654,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "battle_litany",
+            "battle_voice",
+            "foe_requiem",
+            "bard_aura",
+            "trick_attack",
+            "contagion"
         ]
     },
     {
         "time": 20550,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1374,
+        "name": "aero_iii",
+        "damage": 1210,
         "crit": false,
         "dh": false,
         "buff": [
-            "battle_litany",
-            "battle_voice",
-            "foe_requiem",
-            "bard_aura",
-            "contagion"
-        ]
-    },
-    {
-        "time": 20579,
-        "event": "Cast",
-        "name": "Malefic III",
-        "duration": 235,
-        "resource": {
-            "mp": 7520,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 20639,
-        "event": "Damage",
-        "name": "Malefic III",
-        "damage": 8694,
-        "crit": true,
-        "dh": false,
-        "buff": [
+            "cleric_stance",
             "foe_requiem",
             "bard_aura",
             "trick_attack"
         ]
     },
     {
-        "time": 20814,
+        "time": 20763,
         "event": "Cast",
-        "name": "Malefic III",
+        "name": "Stone IV",
         "duration": 235,
         "resource": {
-            "mp": 6920,
+            "mp": 8080,
             "tp": 1000
         }
     },
     {
+        "time": 20830,
+        "event": "Damage",
+        "name": "Stone IV",
+        "damage": 6526,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "cleric_stance",
+            "foe_requiem",
+            "bard_aura"
+        ]
+    },
+    {
         "time": 20850,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1475,
-        "crit": false,
+        "name": "aero_ii",
+        "damage": 2233,
+        "crit": true,
         "dh": false,
         "buff": [
             "battle_litany",
             "battle_voice",
             "foe_requiem",
             "bard_aura",
+            "trick_attack",
             "contagion"
         ]
     },
     {
-        "time": 20874,
+        "time": 20850,
+        "event": "DOT Tick",
+        "name": "aero_iii",
+        "damage": 1149,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "cleric_stance",
+            "foe_requiem",
+            "bard_aura",
+            "trick_attack"
+        ]
+    },
+    {
+        "time": 20998,
+        "event": "Cast",
+        "name": "Aero II",
+        "duration": 0,
+        "resource": {
+            "mp": 7880,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 21065,
         "event": "Damage",
-        "name": "Malefic III",
-        "damage": 5515,
+        "name": "Stone IV",
+        "damage": 5904,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3166,20 +4517,33 @@
         ]
     },
     {
-        "time": 21049,
-        "event": "Cast",
-        "name": "Malefic III",
-        "duration": 235,
-        "resource": {
-            "mp": 6720,
-            "tp": 1000
-        }
+        "time": 21066,
+        "event": "Damage",
+        "name": "Aero II",
+        "damage": 1240,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "foe_requiem",
+            "bard_aura"
+        ]
     },
     {
-        "time": 21109,
-        "event": "Damage",
-        "name": "Malefic III",
-        "damage": 5461,
+        "time": 21066,
+        "event": "DOT Apply",
+        "name": "Aero II",
+        "base_damage": 1314.4,
+        "duration": 1800,
+        "buff": [
+            "foe_requiem",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 21150,
+        "event": "DOT Tick",
+        "name": "aero_ii",
+        "damage": 1274,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3190,34 +4554,33 @@
     {
         "time": 21150,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1461,
+        "name": "aero_iii",
+        "damage": 1246,
         "crit": false,
         "dh": false,
         "buff": [
-            "battle_litany",
-            "battle_voice",
+            "cleric_stance",
             "foe_requiem",
             "bard_aura",
-            "contagion"
+            "trick_attack"
         ]
     },
     {
-        "time": 21284,
+        "time": 21233,
         "event": "Cast",
-        "name": "Malefic III",
+        "name": "Stone IV",
         "duration": 235,
         "resource": {
-            "mp": 6520,
+            "mp": 7680,
             "tp": 1000
         }
     },
     {
-        "time": 21344,
-        "event": "Damage",
-        "name": "Malefic III",
-        "damage": 5351,
-        "crit": false,
+        "time": 21450,
+        "event": "DOT Tick",
+        "name": "aero_ii",
+        "damage": 1998,
+        "crit": true,
         "dh": false,
         "buff": [
             "foe_requiem",
@@ -3227,33 +4590,32 @@
     {
         "time": 21450,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1519,
+        "name": "aero_iii",
+        "damage": 1162,
         "crit": false,
         "dh": false,
         "buff": [
-            "battle_litany",
-            "battle_voice",
+            "cleric_stance",
             "foe_requiem",
             "bard_aura",
-            "contagion"
+            "trick_attack"
         ]
     },
     {
-        "time": 21519,
+        "time": 21468,
         "event": "Cast",
-        "name": "Combust II",
-        "duration": 0,
+        "name": "Stone IV",
+        "duration": 235,
         "resource": {
-            "mp": 6320,
+            "mp": 7480,
             "tp": 1000
         }
     },
     {
-        "time": 21579,
+        "time": 21535,
         "event": "Damage",
-        "name": "Malefic III",
-        "damage": 5734,
+        "name": "Stone IV",
+        "damage": 6401,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3262,20 +4624,19 @@
         ]
     },
     {
-        "time": 21586,
-        "event": "DOT Apply",
-        "name": "Combust II",
-        "base_damage": 1314.4,
-        "duration": 3000,
-        "buff": [
-            "foe_requiem",
-            "bard_aura"
-        ]
+        "time": 21703,
+        "event": "Cast",
+        "name": "Stone IV",
+        "duration": 235,
+        "resource": {
+            "mp": 6880,
+            "tp": 1000
+        }
     },
     {
         "time": 21750,
         "event": "DOT Tick",
-        "name": "combust_ii",
+        "name": "aero_ii",
         "damage": 1314,
         "crit": false,
         "dh": false,
@@ -3285,30 +4646,45 @@
         ]
     },
     {
-        "time": 21754,
-        "event": "Cast",
-        "name": "Malefic III",
-        "duration": 235,
-        "resource": {
-            "mp": 6120,
-            "tp": 1000
-        }
+        "time": 21750,
+        "event": "DOT Tick",
+        "name": "aero_iii",
+        "damage": 1210,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "cleric_stance",
+            "foe_requiem",
+            "bard_aura",
+            "trick_attack"
+        ]
     },
     {
-        "time": 21989,
-        "event": "Cast",
-        "name": "Malefic III",
-        "duration": 235,
-        "resource": {
-            "mp": 5520,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 22049,
+        "time": 21770,
         "event": "Damage",
-        "name": "Malefic III",
-        "damage": 5248,
+        "name": "Stone IV",
+        "damage": 5973,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 21938,
+        "event": "Cast",
+        "name": "Stone IV",
+        "duration": 235,
+        "resource": {
+            "mp": 6680,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 22005,
+        "event": "Damage",
+        "name": "Stone IV",
+        "damage": 5913,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3318,8 +4694,8 @@
     {
         "time": 22050,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1327,
+        "name": "aero_ii",
+        "damage": 1366,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3328,20 +4704,34 @@
         ]
     },
     {
-        "time": 22224,
+        "time": 22050,
+        "event": "DOT Tick",
+        "name": "aero_iii",
+        "damage": 1174,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "cleric_stance",
+            "foe_requiem",
+            "bard_aura",
+            "trick_attack"
+        ]
+    },
+    {
+        "time": 22173,
         "event": "Cast",
-        "name": "Malefic III",
+        "name": "Stone IV",
         "duration": 235,
         "resource": {
-            "mp": 5320,
+            "mp": 6480,
             "tp": 1000
         }
     },
     {
-        "time": 22284,
+        "time": 22240,
         "event": "Damage",
-        "name": "Malefic III",
-        "damage": 5514,
+        "name": "Stone IV",
+        "damage": 5973,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3351,8 +4741,8 @@
     {
         "time": 22350,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1314,
+        "name": "aero_ii",
+        "damage": 1353,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3361,117 +4751,54 @@
         ]
     },
     {
-        "time": 22459,
+        "time": 22350,
+        "event": "DOT Tick",
+        "name": "aero_iii",
+        "damage": 1222,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "cleric_stance",
+            "foe_requiem",
+            "bard_aura",
+            "trick_attack"
+        ]
+    },
+    {
+        "time": 22408,
         "event": "Cast",
-        "name": "Malefic III",
+        "name": "Stone IV",
         "duration": 235,
         "resource": {
-            "mp": 5120,
+            "mp": 6280,
             "tp": 1000
         }
     },
     {
-        "time": 22519,
+        "time": 22475,
         "event": "Damage",
-        "name": "Malefic III",
-        "damage": 5248,
+        "name": "Stone IV",
+        "damage": 6154,
         "crit": false,
         "dh": false,
         "buff": [
             "bard_aura"
         ]
+    },
+    {
+        "time": 22643,
+        "event": "Cast",
+        "name": "Stone IV",
+        "duration": 235,
+        "resource": {
+            "mp": 5680,
+            "tp": 1000
+        }
     },
     {
         "time": 22650,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1288,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "foe_requiem",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 22694,
-        "event": "Cast",
-        "name": "Malefic III",
-        "duration": 235,
-        "resource": {
-            "mp": 4920,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 22754,
-        "event": "Damage",
-        "name": "Malefic III",
-        "damage": 5036,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 22929,
-        "event": "Cast",
-        "name": "Malefic III",
-        "duration": 235,
-        "resource": {
-            "mp": 4320,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 22950,
-        "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1380,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "foe_requiem",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 22989,
-        "event": "Damage",
-        "name": "Malefic III",
-        "damage": 7984,
-        "crit": true,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 23164,
-        "event": "Cast",
-        "name": "Malefic III",
-        "duration": 235,
-        "resource": {
-            "mp": 4120,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 23224,
-        "event": "Damage",
-        "name": "Malefic III",
-        "damage": 5355,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 23250,
-        "event": "DOT Tick",
-        "name": "combust_ii",
+        "name": "aero_ii",
         "damage": 1301,
         "crit": false,
         "dh": false,
@@ -3481,53 +4808,87 @@
         ]
     },
     {
-        "time": 23399,
-        "event": "Cast",
-        "name": "Malefic III",
-        "duration": 235,
-        "resource": {
-            "mp": 3920,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 23459,
-        "event": "Damage",
-        "name": "Malefic III",
-        "damage": 5355,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 23550,
+        "time": 22650,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1327,
+        "name": "aero_iii",
+        "damage": 1186,
         "crit": false,
         "dh": false,
         "buff": [
+            "cleric_stance",
             "foe_requiem",
+            "bard_aura",
+            "trick_attack"
+        ]
+    },
+    {
+        "time": 22710,
+        "event": "Damage",
+        "name": "Stone IV",
+        "damage": 5913,
+        "crit": false,
+        "dh": false,
+        "buff": [
             "bard_aura"
         ]
     },
     {
-        "time": 23634,
+        "time": 22878,
         "event": "Cast",
-        "name": "Malefic III",
+        "name": "Stone IV",
         "duration": 235,
         "resource": {
-            "mp": 3720,
+            "mp": 5480,
             "tp": 1000
         }
     },
     {
-        "time": 23694,
+        "time": 22945,
         "event": "Damage",
-        "name": "Malefic III",
-        "damage": 8061,
+        "name": "Stone IV",
+        "damage": 5973,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 23113,
+        "event": "Cast",
+        "name": "Stone IV",
+        "duration": 235,
+        "resource": {
+            "mp": 5280,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 23180,
+        "event": "Damage",
+        "name": "Stone IV",
+        "damage": 6154,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 23348,
+        "event": "Cast",
+        "name": "Stone IV",
+        "duration": 235,
+        "resource": {
+            "mp": 5080,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 23415,
+        "event": "Damage",
+        "name": "Stone IV",
+        "damage": 8557,
         "crit": true,
         "dh": false,
         "buff": [
@@ -3535,33 +4896,42 @@
         ]
     },
     {
-        "time": 23850,
-        "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1288,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "foe_requiem",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 23869,
+        "time": 23583,
         "event": "Cast",
-        "name": "Malefic III",
+        "name": "Stone IV",
         "duration": 235,
         "resource": {
-            "mp": 3520,
+            "mp": 4880,
             "tp": 1000
         }
     },
     {
-        "time": 23929,
+        "time": 23650,
         "event": "Damage",
-        "name": "Malefic III",
-        "damage": 5195,
-        "crit": false,
+        "name": "Stone IV",
+        "damage": 8909,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 23818,
+        "event": "Cast",
+        "name": "Stone IV",
+        "duration": 235,
+        "resource": {
+            "mp": 4280,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 23885,
+        "event": "Damage",
+        "name": "Stone IV",
+        "damage": 8645,
+        "crit": true,
         "dh": false,
         "buff": [
             "bard_aura"

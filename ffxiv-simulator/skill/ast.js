@@ -66,7 +66,7 @@ class skill {
             'time': this.setting.simulate.duration - this.battle.time,
             'event': 'Cast',
             'name': 'Malefic III',
-            'duration': this.player.tick.cast,
+            'duration': deepcopy(this.player.tick.cast),
             'resource': deepcopy(this.player.resource)
         });
     }
@@ -151,7 +151,7 @@ class effect {
         var potency = 220;
         var damage = calculate.damageCalculate(this,potency);
         this.battle.damageQue.push({
-            'time': 50 + 60,
+            'time': 50,
             'name': 'Malefic III',
             'damage': damage.damage,
             'crit': damage.crit,
@@ -160,6 +160,7 @@ class effect {
         });
     }
     combust_ii() {
+        this.player.engage = true;
         var potency = 50;
         var damage = calculate.dotBaseDamageCalculate(this,potency);
         this.player.dot.combust_ii.time = 3000;

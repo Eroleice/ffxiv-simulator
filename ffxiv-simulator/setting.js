@@ -2,7 +2,7 @@
 
     set: function () {
 
-        var job = 'ast';		        // 职业
+        var job = 'whm';		        // 职业
 
         var status = {
             'wd': 135,			        // 武器性能
@@ -26,7 +26,8 @@
             pet: false                  // 宠物 (如果职业没有宠物请填写false，否则会报错)
         };
 
-        var opener = ['cleric_stance', 'potion', 'combust_ii', 'malefic_iii'];
+        // var opener = ['cleric_stance', 'potion', 'malefic_iii', 'malefic_iii'];     // 占星
+        var opener = ['cleric_stance', 'presence_of_mind', 'potion', 'aero_iii', 'aero_ii']; // 白魔
 
         simulate.times = (simulate.battleLog === true) ? 1 : simulate.times;  // 输出战斗记录时仅进行单次模拟
 
