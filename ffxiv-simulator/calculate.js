@@ -149,6 +149,7 @@ module.exports = {
 
         var c = new calculate(data);
         c.baseDamage(potency);
+        c.dotMod();
         return c.damage;
 
     },
@@ -159,7 +160,6 @@ module.exports = {
         c.damage = baseDamage;
         c.critMod();
         c.dhMod();
-        c.dotMod();
         c.damageFloat();
         return {
             'damage': Math.floor(c.damage),
