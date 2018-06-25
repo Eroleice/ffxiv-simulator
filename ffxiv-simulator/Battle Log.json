@@ -3,6 +3,7 @@
         "time": 0,
         "event": "Cast",
         "name": "Cleric Stance",
+        "translate": "战姿",
         "duration": 0,
         "resource": {
             "mp": 20000,
@@ -13,12 +14,14 @@
         "time": 0,
         "event": "Buff Apply",
         "name": "Cleric Stance",
+        "translate": "战姿",
         "duration": 1500
     },
     {
         "time": 0,
         "event": "Cast",
         "name": "Potion",
+        "translate": "爆发药",
         "duration": 0,
         "resource": {
             "mp": 20000,
@@ -29,12 +32,14 @@
         "time": 0,
         "event": "Buff Apply",
         "name": "Potion",
+        "translate": "爆发药",
         "duration": 3000
     },
     {
         "time": 0,
         "event": "Cast",
         "name": "Combust II",
+        "translate": "灾星",
         "duration": 0,
         "resource": {
             "mp": 19400,
@@ -45,7 +50,8 @@
         "time": 0,
         "event": "DOT Apply",
         "name": "Combust II",
-        "base_damage": 1431,
+        "translate": "灾星",
+        "base_damage": [],
         "duration": 3000,
         "buff": [
             "potion",
@@ -57,7 +63,8 @@
         "time": 1,
         "event": "Damage",
         "name": "Auto Attack",
-        "damage": 107,
+        "translate": "自动攻击",
+        "damage": 102,
         "crit": false,
         "dh": false,
         "buff": [
@@ -70,13 +77,15 @@
         "time": 100,
         "event": "Party Buff Apply",
         "name": "Hypercharge",
+        "translate": "超荷",
         "duration": 2800
     },
     {
         "time": 150,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1388,
+        "name": "Combust II",
+        "translate": "灾星",
+        "damage": 1416,
         "crit": false,
         "dh": false,
         "buff": [
@@ -89,6 +98,7 @@
         "time": 168,
         "event": "Cast",
         "name": "Malefic III",
+        "translate": "祸星",
         "duration": 235,
         "resource": {
             "mp": 19200,
@@ -99,25 +109,29 @@
         "time": 200,
         "event": "Party Buff Apply",
         "name": "Contagion",
+        "translate": "歪风",
         "duration": 1500
     },
     {
         "time": 300,
         "event": "Party Buff Apply",
         "name": "Battle Litany",
+        "translate": "战斗连祷",
         "duration": 2000
     },
     {
         "time": 300,
         "event": "Party Buff Apply",
         "name": "Foe Requiem",
+        "translate": "魔人歌",
         "duration": 3300
     },
     {
         "time": 354,
         "event": "Damage",
         "name": "Auto Attack",
-        "damage": 117,
+        "translate": "自动攻击",
+        "damage": 114,
         "crit": false,
         "dh": false,
         "buff": [
@@ -134,20 +148,23 @@
         "time": 400,
         "event": "Party Buff Apply",
         "name": "Dragon Sight",
+        "translate": "龙视",
         "duration": 2000
     },
     {
         "time": 400,
         "event": "Party Buff Apply",
         "name": "Battle Voice",
+        "translate": "战斗之声",
         "duration": 2000
     },
     {
         "time": 403,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 10523,
-        "crit": true,
+        "translate": "祸星",
+        "damage": 7057,
+        "crit": false,
         "dh": false,
         "buff": [
             "potion",
@@ -163,6 +180,7 @@
         "time": 403,
         "event": "Cast",
         "name": "Malefic III",
+        "translate": "祸星",
         "duration": 235,
         "resource": {
             "mp": 18600,
@@ -172,9 +190,10 @@
     {
         "time": 450,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 2092,
-        "crit": true,
+        "name": "Combust II",
+        "translate": "灾星",
+        "damage": 1473,
+        "crit": false,
         "dh": false,
         "buff": [
             "potion",
@@ -186,6 +205,72 @@
         "time": 638,
         "event": "Damage",
         "name": "Malefic III",
+        "translate": "祸星",
+        "damage": 7188,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "potion",
+            "cleric_stance",
+            "battle_litany",
+            "dragon_sight",
+            "battle_voice",
+            "foe_requiem",
+            "bard_aura",
+            "contagion",
+            "hypercharge"
+        ]
+    },
+    {
+        "time": 638,
+        "event": "Cast",
+        "name": "Malefic III",
+        "translate": "祸星",
+        "duration": 235,
+        "resource": {
+            "mp": 18400,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 750,
+        "event": "DOT Tick",
+        "name": "Combust II",
+        "translate": "灾星",
+        "damage": 1473,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "potion",
+            "cleric_stance",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 824,
+        "event": "Damage",
+        "name": "Auto Attack",
+        "translate": "自动攻击",
+        "damage": 117,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "potion",
+            "cleric_stance",
+            "battle_litany",
+            "dragon_sight",
+            "battle_voice",
+            "foe_requiem",
+            "bard_aura",
+            "contagion",
+            "hypercharge"
+        ]
+    },
+    {
+        "time": 873,
+        "event": "Damage",
+        "name": "Malefic III",
+        "translate": "祸星",
         "damage": 7485,
         "crit": false,
         "dh": false,
@@ -202,70 +287,10 @@
         ]
     },
     {
-        "time": 638,
-        "event": "Cast",
-        "name": "Malefic III",
-        "duration": 235,
-        "resource": {
-            "mp": 18400,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 750,
-        "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1473,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "potion",
-            "cleric_stance",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 824,
-        "event": "Damage",
-        "name": "Auto Attack",
-        "damage": 123,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "potion",
-            "cleric_stance",
-            "battle_litany",
-            "dragon_sight",
-            "battle_voice",
-            "foe_requiem",
-            "bard_aura",
-            "contagion",
-            "hypercharge"
-        ]
-    },
-    {
-        "time": 873,
-        "event": "Damage",
-        "name": "Malefic III",
-        "damage": 13949,
-        "crit": true,
-        "dh": true,
-        "buff": [
-            "potion",
-            "cleric_stance",
-            "battle_litany",
-            "dragon_sight",
-            "battle_voice",
-            "foe_requiem",
-            "bard_aura",
-            "contagion",
-            "hypercharge"
-        ]
-    },
-    {
         "time": 873,
         "event": "Cast",
         "name": "Malefic III",
+        "translate": "祸星",
         "duration": 235,
         "resource": {
             "mp": 18200,
@@ -275,8 +300,9 @@
     {
         "time": 1050,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1431,
+        "name": "Combust II",
+        "translate": "灾星",
+        "damage": 1445,
         "crit": false,
         "dh": false,
         "buff": [
@@ -289,14 +315,16 @@
         "time": 1100,
         "event": "Party Buff Apply",
         "name": "Trick Attack",
+        "translate": "背刺",
         "duration": 1500
     },
     {
         "time": 1108,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 7262,
-        "crit": false,
+        "translate": "祸星",
+        "damage": 11051,
+        "crit": true,
         "dh": false,
         "buff": [
             "potion",
@@ -314,6 +342,7 @@
         "time": 1108,
         "event": "Cast",
         "name": "Malefic III",
+        "translate": "祸星",
         "duration": 235,
         "resource": {
             "mp": 18000,
@@ -324,7 +353,8 @@
         "time": 1294,
         "event": "Damage",
         "name": "Auto Attack",
-        "damage": 126,
+        "translate": "自动攻击",
+        "damage": 132,
         "crit": false,
         "dh": false,
         "buff": [
@@ -344,9 +374,10 @@
         "time": 1343,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 10495,
+        "translate": "祸星",
+        "damage": 8396,
         "crit": false,
-        "dh": true,
+        "dh": false,
         "buff": [
             "potion",
             "cleric_stance",
@@ -364,6 +395,7 @@
         "time": 1343,
         "event": "Cast",
         "name": "Malefic III",
+        "translate": "祸星",
         "duration": 235,
         "resource": {
             "mp": 17400,
@@ -373,8 +405,9 @@
     {
         "time": 1350,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1445,
+        "name": "Combust II",
+        "translate": "灾星",
+        "damage": 1402,
         "crit": false,
         "dh": false,
         "buff": [
@@ -387,14 +420,16 @@
         "time": 1500,
         "event": "Party Buff Apply",
         "name": "Devotion",
+        "translate": "灵兽加护",
         "duration": 1500
     },
     {
         "time": 1578,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 12040,
-        "crit": true,
+        "translate": "祸星",
+        "damage": 7998,
+        "crit": false,
         "dh": false,
         "buff": [
             "potion",
@@ -413,6 +448,7 @@
         "time": 1578,
         "event": "Cast",
         "name": "Malefic III",
+        "translate": "祸星",
         "duration": 235,
         "resource": {
             "mp": 17200,
@@ -422,8 +458,9 @@
     {
         "time": 1650,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1473,
+        "name": "Combust II",
+        "translate": "灾星",
+        "damage": 1359,
         "crit": false,
         "dh": false,
         "buff": [
@@ -436,9 +473,10 @@
         "time": 1764,
         "event": "Damage",
         "name": "Auto Attack",
-        "damage": 129,
+        "translate": "自动攻击",
+        "damage": 155,
         "crit": false,
-        "dh": false,
+        "dh": true,
         "buff": [
             "potion",
             "battle_litany",
@@ -455,6 +493,7 @@
         "time": 1813,
         "event": "Damage",
         "name": "Malefic III",
+        "translate": "祸星",
         "damage": 7127,
         "crit": false,
         "dh": false,
@@ -474,6 +513,7 @@
         "time": 1813,
         "event": "Cast",
         "name": "Malefic III",
+        "translate": "祸星",
         "duration": 235,
         "resource": {
             "mp": 17000,
@@ -483,8 +523,9 @@
     {
         "time": 1950,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1402,
+        "name": "Combust II",
+        "translate": "灾星",
+        "damage": 1373,
         "crit": false,
         "dh": false,
         "buff": [
@@ -497,9 +538,10 @@
         "time": 2048,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 9268,
-        "crit": false,
-        "dh": true,
+        "translate": "祸星",
+        "damage": 10209,
+        "crit": true,
+        "dh": false,
         "buff": [
             "potion",
             "battle_litany",
@@ -516,6 +558,7 @@
         "time": 2048,
         "event": "Cast",
         "name": "Malefic III",
+        "translate": "祸星",
         "duration": 235,
         "resource": {
             "mp": 16800,
@@ -526,8 +569,9 @@
         "time": 2234,
         "event": "Damage",
         "name": "Auto Attack",
-        "damage": 189,
-        "crit": true,
+        "translate": "自动攻击",
+        "damage": 131,
+        "crit": false,
         "dh": false,
         "buff": [
             "potion",
@@ -544,8 +588,9 @@
     {
         "time": 2250,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1431,
+        "name": "Combust II",
+        "translate": "灾星",
+        "damage": 1416,
         "crit": false,
         "dh": false,
         "buff": [
@@ -558,7 +603,8 @@
         "time": 2283,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 9998,
+        "translate": "祸星",
+        "damage": 10840,
         "crit": true,
         "dh": false,
         "buff": [
@@ -577,6 +623,7 @@
         "time": 2283,
         "event": "Cast",
         "name": "Malefic III",
+        "translate": "祸星",
         "duration": 235,
         "resource": {
             "mp": 16600,
@@ -587,7 +634,8 @@
         "time": 2518,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 6581,
+        "translate": "祸星",
+        "damage": 6924,
         "crit": false,
         "dh": false,
         "buff": [
@@ -603,6 +651,7 @@
         "time": 2518,
         "event": "Cast",
         "name": "Malefic III",
+        "translate": "祸星",
         "duration": 235,
         "resource": {
             "mp": 16000,
@@ -612,8 +661,9 @@
     {
         "time": 2550,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1416,
+        "name": "Combust II",
+        "translate": "灾星",
+        "damage": 1373,
         "crit": false,
         "dh": false,
         "buff": [
@@ -626,7 +676,8 @@
         "time": 2704,
         "event": "Damage",
         "name": "Auto Attack",
-        "damage": 113,
+        "translate": "自动攻击",
+        "damage": 112,
         "crit": false,
         "dh": false,
         "buff": [
@@ -641,7 +692,8 @@
         "time": 2753,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 6419,
+        "translate": "祸星",
+        "damage": 6108,
         "crit": false,
         "dh": false,
         "buff": [
@@ -656,6 +708,7 @@
         "time": 2753,
         "event": "Cast",
         "name": "Malefic III",
+        "translate": "祸星",
         "duration": 235,
         "resource": {
             "mp": 15800,
@@ -665,8 +718,9 @@
     {
         "time": 2850,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1431,
+        "name": "Combust II",
+        "translate": "灾星",
+        "damage": 1473,
         "crit": false,
         "dh": false,
         "buff": [
@@ -679,8 +733,9 @@
         "time": 2988,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 5347,
-        "crit": false,
+        "translate": "祸星",
+        "damage": 7817,
+        "crit": true,
         "dh": false,
         "buff": [
             "foe_requiem",
@@ -692,6 +747,7 @@
         "time": 2988,
         "event": "Cast",
         "name": "Combust II",
+        "translate": "灾星",
         "duration": 0,
         "resource": {
             "mp": 15600,
@@ -702,7 +758,8 @@
         "time": 3024,
         "event": "Damage",
         "name": "Auto Attack",
-        "damage": 98,
+        "translate": "自动攻击",
+        "damage": 106,
         "crit": false,
         "dh": false,
         "buff": [
@@ -714,7 +771,8 @@
         "time": 3055,
         "event": "DOT Apply",
         "name": "Combust II",
-        "base_damage": 1315.46,
+        "translate": "灾星",
+        "base_damage": [],
         "duration": 3000,
         "buff": [
             "foe_requiem",
@@ -725,6 +783,7 @@
         "time": 3055,
         "event": "Cast",
         "name": "Lucid Dreaming",
+        "translate": "醒梦",
         "duration": 0,
         "resource": {
             "mp": 15600,
@@ -735,14 +794,16 @@
         "time": 3122,
         "event": "Buff Apply",
         "name": "Lucid Dreaming",
+        "translate": "醒梦",
         "duration": 2100
     },
     {
         "time": 3150,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1961,
-        "crit": true,
+        "name": "Combust II",
+        "translate": "灾星",
+        "damage": 1354,
+        "crit": false,
         "dh": false,
         "buff": [
             "foe_requiem",
@@ -753,6 +814,7 @@
         "time": 3223,
         "event": "Cast",
         "name": "Malefic III",
+        "translate": "祸星",
         "duration": 235,
         "resource": {
             "mp": 16360,
@@ -763,8 +825,9 @@
         "time": 3409,
         "event": "Damage",
         "name": "Auto Attack",
-        "damage": 157,
-        "crit": true,
+        "translate": "自动攻击",
+        "damage": 100,
+        "crit": false,
         "dh": false,
         "buff": [
             "lucid_dreaming",
@@ -775,9 +838,10 @@
     {
         "time": 3450,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1942,
-        "crit": true,
+        "name": "Combust II",
+        "translate": "灾星",
+        "damage": 1315,
+        "crit": false,
         "dh": false,
         "buff": [
             "foe_requiem",
@@ -788,6 +852,7 @@
         "time": 3458,
         "event": "Damage",
         "name": "Malefic III",
+        "translate": "祸星",
         "damage": 5570,
         "crit": false,
         "dh": false,
@@ -801,6 +866,7 @@
         "time": 3458,
         "event": "Cast",
         "name": "Malefic III",
+        "translate": "祸星",
         "duration": 235,
         "resource": {
             "mp": 17120,
@@ -811,8 +877,9 @@
         "time": 3693,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 7674,
-        "crit": true,
+        "translate": "祸星",
+        "damage": 5408,
+        "crit": false,
         "dh": false,
         "buff": [
             "lucid_dreaming",
@@ -823,6 +890,7 @@
         "time": 3693,
         "event": "Cast",
         "name": "Malefic III",
+        "translate": "祸星",
         "duration": 235,
         "resource": {
             "mp": 16520,
@@ -832,8 +900,9 @@
     {
         "time": 3750,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1328,
+        "name": "Combust II",
+        "translate": "灾星",
+        "damage": 1368,
         "crit": false,
         "dh": false,
         "buff": [
@@ -845,6 +914,7 @@
         "time": 3879,
         "event": "Damage",
         "name": "Auto Attack",
+        "translate": "自动攻击",
         "damage": 105,
         "crit": false,
         "dh": false,
@@ -857,7 +927,8 @@
         "time": 3928,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 5567,
+        "translate": "祸星",
+        "damage": 5302,
         "crit": false,
         "dh": false,
         "buff": [
@@ -869,6 +940,7 @@
         "time": 3928,
         "event": "Cast",
         "name": "Malefic III",
+        "translate": "祸星",
         "duration": 235,
         "resource": {
             "mp": 17280,
@@ -878,8 +950,9 @@
     {
         "time": 4050,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1289,
+        "name": "Combust II",
+        "translate": "灾星",
+        "damage": 1328,
         "crit": false,
         "dh": false,
         "buff": [
@@ -891,7 +964,8 @@
         "time": 4163,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 5408,
+        "translate": "祸星",
+        "damage": 5142,
         "crit": false,
         "dh": false,
         "buff": [
@@ -903,6 +977,7 @@
         "time": 4163,
         "event": "Cast",
         "name": "Malefic III",
+        "translate": "祸星",
         "duration": 235,
         "resource": {
             "mp": 18040,
@@ -913,6 +988,7 @@
         "time": 4349,
         "event": "Damage",
         "name": "Auto Attack",
+        "translate": "自动攻击",
         "damage": 102,
         "crit": false,
         "dh": false,
@@ -924,8 +1000,9 @@
     {
         "time": 4350,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1289,
+        "name": "Combust II",
+        "translate": "灾星",
+        "damage": 1302,
         "crit": false,
         "dh": false,
         "buff": [
@@ -937,7 +1014,8 @@
         "time": 4398,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 5355,
+        "translate": "祸星",
+        "damage": 5142,
         "crit": false,
         "dh": false,
         "buff": [
@@ -949,6 +1027,7 @@
         "time": 4398,
         "event": "Cast",
         "name": "Malefic III",
+        "translate": "祸星",
         "duration": 235,
         "resource": {
             "mp": 18800,
@@ -959,7 +1038,8 @@
         "time": 4633,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 5195,
+        "translate": "祸星",
+        "damage": 5142,
         "crit": false,
         "dh": false,
         "buff": [
@@ -971,6 +1051,7 @@
         "time": 4633,
         "event": "Cast",
         "name": "Malefic III",
+        "translate": "祸星",
         "duration": 235,
         "resource": {
             "mp": 18200,
@@ -980,8 +1061,9 @@
     {
         "time": 4650,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1328,
+        "name": "Combust II",
+        "translate": "灾星",
+        "damage": 1289,
         "crit": false,
         "dh": false,
         "buff": [
@@ -993,7 +1075,8 @@
         "time": 4819,
         "event": "Damage",
         "name": "Auto Attack",
-        "damage": 104,
+        "translate": "自动攻击",
+        "damage": 106,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1005,7 +1088,8 @@
         "time": 4868,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 5142,
+        "translate": "祸星",
+        "damage": 5461,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1017,6 +1101,7 @@
         "time": 4868,
         "event": "Cast",
         "name": "Malefic III",
+        "translate": "祸星",
         "duration": 235,
         "resource": {
             "mp": 18960,
@@ -1026,8 +1111,9 @@
     {
         "time": 4950,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1315,
+        "name": "Combust II",
+        "translate": "灾星",
+        "damage": 1302,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1039,7 +1125,8 @@
         "time": 5103,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 5408,
+        "translate": "祸星",
+        "damage": 5355,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1051,6 +1138,7 @@
         "time": 5103,
         "event": "Cast",
         "name": "Malefic III",
+        "translate": "祸星",
         "duration": 235,
         "resource": {
             "mp": 19400,
@@ -1060,8 +1148,9 @@
     {
         "time": 5250,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1341,
+        "name": "Combust II",
+        "translate": "灾星",
+        "damage": 1275,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1073,7 +1162,8 @@
         "time": 5289,
         "event": "Damage",
         "name": "Auto Attack",
-        "damage": 102,
+        "translate": "自动攻击",
+        "damage": 99,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1084,7 +1174,8 @@
         "time": 5338,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 5036,
+        "translate": "祸星",
+        "damage": 5355,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1095,6 +1186,7 @@
         "time": 5338,
         "event": "Cast",
         "name": "Malefic III",
+        "translate": "祸星",
         "duration": 235,
         "resource": {
             "mp": 19200,
@@ -1104,8 +1196,9 @@
     {
         "time": 5550,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1354,
+        "name": "Combust II",
+        "translate": "灾星",
+        "damage": 1275,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1117,7 +1210,8 @@
         "time": 5573,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 5142,
+        "translate": "祸星",
+        "damage": 5248,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1128,6 +1222,7 @@
         "time": 5573,
         "event": "Cast",
         "name": "Malefic III",
+        "translate": "祸星",
         "duration": 235,
         "resource": {
             "mp": 19000,
@@ -1138,8 +1233,9 @@
         "time": 5759,
         "event": "Damage",
         "name": "Auto Attack",
-        "damage": 98,
-        "crit": false,
+        "translate": "自动攻击",
+        "damage": 148,
+        "crit": true,
         "dh": false,
         "buff": [
             "bard_aura"
@@ -1149,8 +1245,9 @@
         "time": 5808,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 5195,
-        "crit": false,
+        "translate": "祸星",
+        "damage": 7518,
+        "crit": true,
         "dh": false,
         "buff": [
             "bard_aura"
@@ -1160,6 +1257,7 @@
         "time": 5808,
         "event": "Cast",
         "name": "Malefic III",
+        "translate": "祸星",
         "duration": 235,
         "resource": {
             "mp": 18400,
@@ -1169,8 +1267,9 @@
     {
         "time": 5850,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1368,
+        "name": "Combust II",
+        "translate": "灾星",
+        "damage": 1262,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1182,7 +1281,8 @@
         "time": 6043,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 5408,
+        "translate": "祸星",
+        "damage": 5142,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1193,6 +1293,7 @@
         "time": 6043,
         "event": "Cast",
         "name": "Combust II",
+        "translate": "灾星",
         "duration": 0,
         "resource": {
             "mp": 18200,
@@ -1203,7 +1304,8 @@
         "time": 6079,
         "event": "Damage",
         "name": "Auto Attack",
-        "damage": 100,
+        "translate": "自动攻击",
+        "damage": 103,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1214,7 +1316,8 @@
         "time": 6110,
         "event": "DOT Apply",
         "name": "Combust II",
-        "base_damage": 1278.3600000000001,
+        "translate": "灾星",
+        "base_damage": [],
         "duration": 3000,
         "buff": [
             "bard_aura"
@@ -1223,8 +1326,9 @@
     {
         "time": 6150,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1291,
+        "name": "Combust II",
+        "translate": "灾星",
+        "damage": 1214,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1235,12 +1339,14 @@
         "time": 6200,
         "event": "Party Buff Apply",
         "name": "Contagion",
+        "translate": "歪风",
         "duration": 1500
     },
     {
         "time": 6278,
         "event": "Cast",
         "name": "Malefic III",
+        "translate": "祸星",
         "duration": 235,
         "resource": {
             "mp": 18000,
@@ -1250,9 +1356,10 @@
     {
         "time": 6450,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1868,
-        "crit": true,
+        "name": "Combust II",
+        "translate": "灾星",
+        "damage": 1291,
+        "crit": false,
         "dh": false,
         "buff": [
             "bard_aura"
@@ -1262,8 +1369,9 @@
         "time": 6464,
         "event": "Damage",
         "name": "Auto Attack",
-        "damage": 104,
-        "crit": false,
+        "translate": "自动攻击",
+        "damage": 147,
+        "crit": true,
         "dh": false,
         "buff": [
             "bard_aura",
@@ -1274,6 +1382,7 @@
         "time": 6513,
         "event": "Damage",
         "name": "Malefic III",
+        "translate": "祸星",
         "damage": 5889,
         "crit": false,
         "dh": false,
@@ -1286,6 +1395,7 @@
         "time": 6513,
         "event": "Cast",
         "name": "Malefic III",
+        "translate": "祸星",
         "duration": 235,
         "resource": {
             "mp": 17800,
@@ -1296,8 +1406,9 @@
         "time": 6748,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 5772,
-        "crit": false,
+        "translate": "祸星",
+        "damage": 8524,
+        "crit": true,
         "dh": false,
         "buff": [
             "bard_aura",
@@ -1308,6 +1419,7 @@
         "time": 6748,
         "event": "Cast",
         "name": "Malefic III",
+        "translate": "祸星",
         "duration": 235,
         "resource": {
             "mp": 17200,
@@ -1317,8 +1429,9 @@
     {
         "time": 6750,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1329,
+        "name": "Combust II",
+        "translate": "灾星",
+        "damage": 1278,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1329,7 +1442,8 @@
         "time": 6934,
         "event": "Damage",
         "name": "Auto Attack",
-        "damage": 102,
+        "translate": "自动攻击",
+        "damage": 96,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1341,7 +1455,8 @@
         "time": 6983,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 5947,
+        "translate": "祸星",
+        "damage": 5772,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1353,6 +1468,7 @@
         "time": 6983,
         "event": "Cast",
         "name": "Malefic III",
+        "translate": "祸星",
         "duration": 235,
         "resource": {
             "mp": 17000,
@@ -1362,8 +1478,9 @@
     {
         "time": 7050,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1278,
+        "name": "Combust II",
+        "translate": "灾星",
+        "damage": 1214,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1374,13 +1491,15 @@
         "time": 7100,
         "event": "Party Buff Apply",
         "name": "Trick Attack",
+        "translate": "背刺",
         "duration": 1500
     },
     {
         "time": 7218,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 6735,
+        "translate": "祸星",
+        "damage": 6607,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1393,6 +1512,7 @@
         "time": 7218,
         "event": "Cast",
         "name": "Malefic III",
+        "translate": "祸星",
         "duration": 235,
         "resource": {
             "mp": 16800,
@@ -1402,8 +1522,9 @@
     {
         "time": 7350,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1329,
+        "name": "Combust II",
+        "translate": "灾星",
+        "damage": 1214,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1414,8 +1535,9 @@
         "time": 7404,
         "event": "Damage",
         "name": "Auto Attack",
-        "damage": 113,
-        "crit": false,
+        "translate": "自动攻击",
+        "damage": 156,
+        "crit": true,
         "dh": false,
         "buff": [
             "bard_aura",
@@ -1427,6 +1549,7 @@
         "time": 7453,
         "event": "Damage",
         "name": "Malefic III",
+        "translate": "祸星",
         "damage": 6415,
         "crit": false,
         "dh": false,
@@ -1440,6 +1563,7 @@
         "time": 7453,
         "event": "Cast",
         "name": "Malefic III",
+        "translate": "祸星",
         "duration": 235,
         "resource": {
             "mp": 16600,
@@ -1449,8 +1573,9 @@
     {
         "time": 7650,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1265,
+        "name": "Combust II",
+        "translate": "灾星",
+        "damage": 1303,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1461,8 +1586,9 @@
         "time": 7688,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 9191,
-        "crit": true,
+        "translate": "祸星",
+        "damage": 6158,
+        "crit": false,
         "dh": false,
         "buff": [
             "bard_aura",
@@ -1474,6 +1600,7 @@
         "time": 7688,
         "event": "Cast",
         "name": "Malefic III",
+        "translate": "祸星",
         "duration": 235,
         "resource": {
             "mp": 16400,
@@ -1484,7 +1611,8 @@
         "time": 7874,
         "event": "Damage",
         "name": "Auto Attack",
-        "damage": 106,
+        "translate": "自动攻击",
+        "damage": 107,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1496,39 +1624,7 @@
         "time": 7923,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 8183,
-        "crit": true,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "trick_attack"
-        ]
-    },
-    {
-        "time": 7923,
-        "event": "Cast",
-        "name": "Malefic III",
-        "duration": 235,
-        "resource": {
-            "mp": 15800,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 7950,
-        "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1240,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 8158,
-        "event": "Damage",
-        "name": "Malefic III",
+        "translate": "祸星",
         "damage": 5772,
         "crit": false,
         "dh": false,
@@ -1538,9 +1634,46 @@
         ]
     },
     {
+        "time": 7923,
+        "event": "Cast",
+        "name": "Malefic III",
+        "translate": "祸星",
+        "duration": 235,
+        "resource": {
+            "mp": 15800,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 7950,
+        "event": "DOT Tick",
+        "name": "Combust II",
+        "translate": "灾星",
+        "damage": 1812,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 8158,
+        "event": "Damage",
+        "name": "Malefic III",
+        "translate": "祸星",
+        "damage": 5947,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura",
+            "trick_attack"
+        ]
+    },
+    {
         "time": 8158,
         "event": "Cast",
         "name": "Malefic III",
+        "translate": "祸星",
         "duration": 235,
         "resource": {
             "mp": 15600,
@@ -1550,8 +1683,9 @@
     {
         "time": 8250,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1214,
+        "name": "Combust II",
+        "translate": "灾星",
+        "damage": 1303,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1562,7 +1696,8 @@
         "time": 8344,
         "event": "Damage",
         "name": "Auto Attack",
-        "damage": 105,
+        "translate": "自动攻击",
+        "damage": 113,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1574,7 +1709,8 @@
         "time": 8393,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 5597,
+        "translate": "祸星",
+        "damage": 6122,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1586,6 +1722,7 @@
         "time": 8393,
         "event": "Cast",
         "name": "Malefic III",
+        "translate": "祸星",
         "duration": 235,
         "resource": {
             "mp": 15400,
@@ -1595,8 +1732,9 @@
     {
         "time": 8550,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1278,
+        "name": "Combust II",
+        "translate": "灾星",
+        "damage": 1265,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1607,7 +1745,8 @@
         "time": 8628,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 5889,
+        "translate": "祸星",
+        "damage": 5714,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1619,6 +1758,7 @@
         "time": 8628,
         "event": "Cast",
         "name": "Malefic III",
+        "translate": "祸星",
         "duration": 235,
         "resource": {
             "mp": 15200,
@@ -1629,7 +1769,8 @@
         "time": 8814,
         "event": "Damage",
         "name": "Auto Attack",
-        "damage": 102,
+        "translate": "自动攻击",
+        "damage": 96,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1639,9 +1780,10 @@
     {
         "time": 8850,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1227,
-        "crit": false,
+        "name": "Combust II",
+        "translate": "灾星",
+        "damage": 1868,
+        "crit": true,
         "dh": false,
         "buff": [
             "bard_aura"
@@ -1651,7 +1793,8 @@
         "time": 8863,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 5514,
+        "translate": "祸星",
+        "damage": 5195,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1662,6 +1805,7 @@
         "time": 8863,
         "event": "Cast",
         "name": "Malefic III",
+        "translate": "祸星",
         "duration": 235,
         "resource": {
             "mp": 15000,
@@ -1672,8 +1816,9 @@
         "time": 9098,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 7984,
-        "crit": true,
+        "translate": "祸星",
+        "damage": 5248,
+        "crit": false,
         "dh": false,
         "buff": [
             "bard_aura"
@@ -1683,6 +1828,7 @@
         "time": 9098,
         "event": "Cast",
         "name": "Combust II",
+        "translate": "灾星",
         "duration": 0,
         "resource": {
             "mp": 14400,
@@ -1693,8 +1839,9 @@
         "time": 9134,
         "event": "Damage",
         "name": "Auto Attack",
-        "damage": 106,
-        "crit": false,
+        "translate": "自动攻击",
+        "damage": 144,
+        "crit": true,
         "dh": false,
         "buff": [
             "bard_aura"
@@ -1704,7 +1851,8 @@
         "time": 9165,
         "event": "DOT Apply",
         "name": "Combust II",
-        "base_damage": 1278.3600000000001,
+        "translate": "灾星",
+        "base_damage": [],
         "duration": 3000,
         "buff": [
             "bard_aura"
@@ -1714,6 +1862,7 @@
         "time": 9165,
         "event": "Cast",
         "name": "Cleric Stance",
+        "translate": "战姿",
         "duration": 0,
         "resource": {
             "mp": 14800,
@@ -1724,12 +1873,14 @@
         "time": 9232,
         "event": "Buff Apply",
         "name": "Cleric Stance",
+        "translate": "战姿",
         "duration": 1500
     },
     {
         "time": 9333,
         "event": "Cast",
         "name": "Malefic III",
+        "translate": "祸星",
         "duration": 235,
         "resource": {
             "mp": 14200,
@@ -1739,9 +1890,10 @@
     {
         "time": 9450,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1227,
-        "crit": false,
+        "name": "Combust II",
+        "translate": "灾星",
+        "damage": 1943,
+        "crit": true,
         "dh": false,
         "buff": [
             "bard_aura"
@@ -1751,7 +1903,8 @@
         "time": 9519,
         "event": "Damage",
         "name": "Auto Attack",
-        "damage": 106,
+        "translate": "自动攻击",
+        "damage": 109,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1763,7 +1916,8 @@
         "time": 9568,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 5566,
+        "translate": "祸星",
+        "damage": 5343,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1775,6 +1929,7 @@
         "time": 9568,
         "event": "Cast",
         "name": "Malefic III",
+        "translate": "祸星",
         "duration": 235,
         "resource": {
             "mp": 14000,
@@ -1784,8 +1939,9 @@
     {
         "time": 9750,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1214,
+        "name": "Combust II",
+        "translate": "灾星",
+        "damage": 1291,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1796,7 +1952,8 @@
         "time": 9803,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 5399,
+        "translate": "祸星",
+        "damage": 5677,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1808,6 +1965,7 @@
         "time": 9803,
         "event": "Cast",
         "name": "Malefic III",
+        "translate": "祸星",
         "duration": 235,
         "resource": {
             "mp": 13800,
@@ -1818,7 +1976,8 @@
         "time": 9989,
         "event": "Damage",
         "name": "Auto Attack",
-        "damage": 108,
+        "translate": "自动攻击",
+        "damage": 111,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1830,7 +1989,8 @@
         "time": 10038,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 5844,
+        "translate": "祸星",
+        "damage": 5343,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1842,6 +2002,7 @@
         "time": 10038,
         "event": "Cast",
         "name": "Malefic III",
+        "translate": "祸星",
         "duration": 235,
         "resource": {
             "mp": 13200,
@@ -1851,8 +2012,9 @@
     {
         "time": 10050,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1214,
+        "name": "Combust II",
+        "translate": "灾星",
+        "damage": 1316,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1863,7 +2025,8 @@
         "time": 10273,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 5399,
+        "translate": "祸星",
+        "damage": 5454,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1875,6 +2038,7 @@
         "time": 10273,
         "event": "Cast",
         "name": "Malefic III",
+        "translate": "祸星",
         "duration": 235,
         "resource": {
             "mp": 13000,
@@ -1884,8 +2048,9 @@
     {
         "time": 10350,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1240,
+        "name": "Combust II",
+        "translate": "灾星",
+        "damage": 1278,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1896,7 +2061,8 @@
         "time": 10459,
         "event": "Damage",
         "name": "Auto Attack",
-        "damage": 104,
+        "translate": "自动攻击",
+        "damage": 109,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1908,7 +2074,8 @@
         "time": 10508,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 5399,
+        "translate": "祸星",
+        "damage": 5788,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1920,6 +2087,7 @@
         "time": 10508,
         "event": "Cast",
         "name": "Malefic III",
+        "translate": "祸星",
         "duration": 235,
         "resource": {
             "mp": 12800,
@@ -1929,8 +2097,9 @@
     {
         "time": 10650,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1291,
+        "name": "Combust II",
+        "translate": "灾星",
+        "damage": 1278,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1941,8 +2110,9 @@
         "time": 10743,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 8462,
-        "crit": true,
+        "translate": "祸星",
+        "damage": 5343,
+        "crit": false,
         "dh": false,
         "buff": [
             "cleric_stance",
@@ -1953,6 +2123,7 @@
         "time": 10743,
         "event": "Cast",
         "name": "Malefic III",
+        "translate": "祸星",
         "duration": 235,
         "resource": {
             "mp": 12600,
@@ -1963,7 +2134,8 @@
         "time": 10929,
         "event": "Damage",
         "name": "Auto Attack",
-        "damage": 103,
+        "translate": "自动攻击",
+        "damage": 104,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1973,9 +2145,10 @@
     {
         "time": 10950,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1887,
-        "crit": true,
+        "name": "Combust II",
+        "translate": "灾星",
+        "damage": 1265,
+        "crit": false,
         "dh": false,
         "buff": [
             "bard_aura"
@@ -1985,7 +2158,8 @@
         "time": 10978,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 5142,
+        "translate": "祸星",
+        "damage": 5408,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1996,6 +2170,7 @@
         "time": 10978,
         "event": "Cast",
         "name": "Malefic III",
+        "translate": "祸星",
         "duration": 235,
         "resource": {
             "mp": 12400,
@@ -2006,7 +2181,8 @@
         "time": 11213,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 5355,
+        "translate": "祸星",
+        "damage": 5195,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2017,6 +2193,7 @@
         "time": 11213,
         "event": "Cast",
         "name": "Malefic III",
+        "translate": "祸星",
         "duration": 235,
         "resource": {
             "mp": 11800,
@@ -2026,8 +2203,9 @@
     {
         "time": 11250,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1265,
+        "name": "Combust II",
+        "translate": "灾星",
+        "damage": 1329,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2038,7 +2216,8 @@
         "time": 11399,
         "event": "Damage",
         "name": "Auto Attack",
-        "damage": 106,
+        "translate": "自动攻击",
+        "damage": 96,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2049,7 +2228,8 @@
         "time": 11448,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 5089,
+        "translate": "祸星",
+        "damage": 5514,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2060,6 +2240,7 @@
         "time": 11448,
         "event": "Cast",
         "name": "Malefic III",
+        "translate": "祸星",
         "duration": 235,
         "resource": {
             "mp": 11600,
@@ -2069,8 +2250,9 @@
     {
         "time": 11550,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1316,
+        "name": "Combust II",
+        "translate": "灾星",
+        "damage": 1252,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2081,7 +2263,8 @@
         "time": 11683,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 5142,
+        "translate": "祸星",
+        "damage": 5408,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2092,6 +2275,7 @@
         "time": 11683,
         "event": "Cast",
         "name": "Malefic III",
+        "translate": "祸星",
         "duration": 235,
         "resource": {
             "mp": 11400,
@@ -2101,8 +2285,9 @@
     {
         "time": 11850,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1329,
+        "name": "Combust II",
+        "translate": "灾星",
+        "damage": 1316,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2113,8 +2298,9 @@
         "time": 11869,
         "event": "Damage",
         "name": "Auto Attack",
-        "damage": 150,
-        "crit": true,
+        "translate": "自动攻击",
+        "damage": 97,
+        "crit": false,
         "dh": false,
         "buff": [
             "bard_aura"
@@ -2124,7 +2310,8 @@
         "time": 11918,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 5142,
+        "translate": "祸星",
+        "damage": 5408,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2135,6 +2322,7 @@
         "time": 11918,
         "event": "Cast",
         "name": "Malefic III",
+        "translate": "祸星",
         "duration": 235,
         "resource": {
             "mp": 11200,
@@ -2145,13 +2333,15 @@
         "time": 12100,
         "event": "Party Buff Apply",
         "name": "Hypercharge",
+        "translate": "超荷",
         "duration": 2800
     },
     {
         "time": 12150,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1329,
+        "name": "Combust II",
+        "translate": "灾星",
+        "damage": 1240,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2162,7 +2352,8 @@
         "time": 12153,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 5343,
+        "translate": "祸星",
+        "damage": 5788,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2174,6 +2365,7 @@
         "time": 12153,
         "event": "Cast",
         "name": "Combust II",
+        "translate": "灾星",
         "duration": 0,
         "resource": {
             "mp": 11000,
@@ -2184,6 +2376,7 @@
         "time": 12189,
         "event": "Damage",
         "name": "Auto Attack",
+        "translate": "自动攻击",
         "damage": 104,
         "crit": false,
         "dh": false,
@@ -2196,13 +2389,15 @@
         "time": 12200,
         "event": "Party Buff Apply",
         "name": "Contagion",
+        "translate": "歪风",
         "duration": 1500
     },
     {
         "time": 12220,
         "event": "DOT Apply",
         "name": "Combust II",
-        "base_damage": 1475.52,
+        "translate": "灾星",
+        "base_damage": [],
         "duration": 3000,
         "buff": [
             "bard_aura",
@@ -2214,6 +2409,7 @@
         "time": 12388,
         "event": "Cast",
         "name": "Malefic III",
+        "translate": "祸星",
         "duration": 235,
         "resource": {
             "mp": 10400,
@@ -2224,13 +2420,15 @@
         "time": 12400,
         "event": "Party Buff Apply",
         "name": "Dragon Sight",
+        "translate": "龙视",
         "duration": 2000
     },
     {
         "time": 12450,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1549,
+        "name": "Combust II",
+        "translate": "灾星",
+        "damage": 1446,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2243,7 +2441,8 @@
         "time": 12574,
         "event": "Damage",
         "name": "Auto Attack",
-        "damage": 112,
+        "translate": "自动攻击",
+        "damage": 107,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2257,7 +2456,8 @@
         "time": 12623,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 6557,
+        "translate": "祸星",
+        "damage": 6364,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2271,6 +2471,7 @@
         "time": 12623,
         "event": "Cast",
         "name": "Malefic III",
+        "translate": "祸星",
         "duration": 235,
         "resource": {
             "mp": 10200,
@@ -2280,8 +2481,9 @@
     {
         "time": 12750,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1475,
+        "name": "Combust II",
+        "translate": "灾星",
+        "damage": 1534,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2294,7 +2496,8 @@
         "time": 12858,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 6429,
+        "translate": "祸星",
+        "damage": 6364,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2308,6 +2511,7 @@
         "time": 12858,
         "event": "Cast",
         "name": "Malefic III",
+        "translate": "祸星",
         "duration": 235,
         "resource": {
             "mp": 10000,
@@ -2318,7 +2522,8 @@
         "time": 13044,
         "event": "Damage",
         "name": "Auto Attack",
-        "damage": 113,
+        "translate": "自动攻击",
+        "damage": 115,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2331,9 +2536,10 @@
     {
         "time": 13050,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1431,
-        "crit": false,
+        "name": "Combust II",
+        "translate": "灾星",
+        "damage": 2049,
+        "crit": true,
         "dh": false,
         "buff": [
             "bard_aura",
@@ -2345,7 +2551,8 @@
         "time": 13093,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 6107,
+        "translate": "祸星",
+        "damage": 6493,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2359,6 +2566,7 @@
         "time": 13093,
         "event": "Cast",
         "name": "Malefic III",
+        "translate": "祸星",
         "duration": 235,
         "resource": {
             "mp": 9800,
@@ -2369,13 +2577,15 @@
         "time": 13100,
         "event": "Party Buff Apply",
         "name": "Trick Attack",
+        "translate": "背刺",
         "duration": 1500
     },
     {
         "time": 13328,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 7002,
+        "translate": "祸星",
+        "damage": 7073,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2390,6 +2600,7 @@
         "time": 13328,
         "event": "Cast",
         "name": "Malefic III",
+        "translate": "祸星",
         "duration": 235,
         "resource": {
             "mp": 9200,
@@ -2399,8 +2610,9 @@
     {
         "time": 13350,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1505,
+        "name": "Combust II",
+        "translate": "灾星",
+        "damage": 1446,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2413,13 +2625,32 @@
         "time": 13500,
         "event": "Party Buff Apply",
         "name": "Devotion",
+        "translate": "灵兽加护",
         "duration": 1500
     },
     {
         "time": 13514,
         "event": "Damage",
         "name": "Auto Attack",
-        "damage": 192,
+        "translate": "自动攻击",
+        "damage": 122,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "dragon_sight",
+            "bard_aura",
+            "trick_attack",
+            "contagion",
+            "hypercharge",
+            "devotion"
+        ]
+    },
+    {
+        "time": 13563,
+        "event": "Damage",
+        "name": "Malefic III",
+        "translate": "祸星",
+        "damage": 10126,
         "crit": true,
         "dh": false,
         "buff": [
@@ -2433,24 +2664,9 @@
     },
     {
         "time": 13563,
-        "event": "Damage",
-        "name": "Malefic III",
-        "damage": 7215,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "dragon_sight",
-            "bard_aura",
-            "trick_attack",
-            "contagion",
-            "hypercharge",
-            "devotion"
-        ]
-    },
-    {
-        "time": 13563,
         "event": "Cast",
         "name": "Malefic III",
+        "translate": "祸星",
         "duration": 235,
         "resource": {
             "mp": 9000,
@@ -2460,7 +2676,8 @@
     {
         "time": 13650,
         "event": "DOT Tick",
-        "name": "combust_ii",
+        "name": "Combust II",
+        "translate": "灾星",
         "damage": 1446,
         "crit": false,
         "dh": false,
@@ -2474,7 +2691,8 @@
         "time": 13798,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 6295,
+        "translate": "祸星",
+        "damage": 6558,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2489,6 +2707,7 @@
         "time": 13798,
         "event": "Cast",
         "name": "Malefic III",
+        "translate": "祸星",
         "duration": 235,
         "resource": {
             "mp": 8800,
@@ -2498,8 +2717,9 @@
     {
         "time": 13950,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1490,
+        "name": "Combust II",
+        "translate": "灾星",
+        "damage": 1431,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2512,7 +2732,8 @@
         "time": 13984,
         "event": "Damage",
         "name": "Auto Attack",
-        "damage": 125,
+        "translate": "自动攻击",
+        "damage": 123,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2527,7 +2748,8 @@
         "time": 14033,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 6885,
+        "translate": "祸星",
+        "damage": 6426,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2542,6 +2764,7 @@
         "time": 14033,
         "event": "Cast",
         "name": "Malefic III",
+        "translate": "祸星",
         "duration": 235,
         "resource": {
             "mp": 8600,
@@ -2551,8 +2774,9 @@
     {
         "time": 14250,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1505,
+        "name": "Combust II",
+        "translate": "灾星",
+        "damage": 1416,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2565,8 +2789,9 @@
         "time": 14268,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 10067,
-        "crit": true,
+        "translate": "祸星",
+        "damage": 6754,
+        "crit": false,
         "dh": false,
         "buff": [
             "dragon_sight",
@@ -2580,6 +2805,7 @@
         "time": 14268,
         "event": "Cast",
         "name": "Malefic III",
+        "translate": "祸星",
         "duration": 235,
         "resource": {
             "mp": 8400,
@@ -2590,7 +2816,8 @@
         "time": 14454,
         "event": "Damage",
         "name": "Auto Attack",
-        "damage": 122,
+        "translate": "自动攻击",
+        "damage": 123,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2604,8 +2831,9 @@
         "time": 14503,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 9222,
-        "crit": true,
+        "translate": "祸星",
+        "damage": 5933,
+        "crit": false,
         "dh": false,
         "buff": [
             "bard_aura",
@@ -2618,6 +2846,7 @@
         "time": 14503,
         "event": "Cast",
         "name": "Malefic III",
+        "translate": "祸星",
         "duration": 235,
         "resource": {
             "mp": 7800,
@@ -2627,8 +2856,9 @@
     {
         "time": 14550,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1446,
+        "name": "Combust II",
+        "translate": "灾星",
+        "damage": 1431,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2641,7 +2871,8 @@
         "time": 14738,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 5791,
+        "translate": "祸星",
+        "damage": 5961,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2654,6 +2885,7 @@
         "time": 14738,
         "event": "Cast",
         "name": "Malefic III",
+        "translate": "祸星",
         "duration": 235,
         "resource": {
             "mp": 7600,
@@ -2663,8 +2895,9 @@
     {
         "time": 14850,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1490,
+        "name": "Combust II",
+        "translate": "灾星",
+        "damage": 1431,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2677,8 +2910,9 @@
         "time": 14924,
         "event": "Damage",
         "name": "Auto Attack",
-        "damage": 147,
-        "crit": true,
+        "translate": "自动攻击",
+        "damage": 100,
+        "crit": false,
         "dh": false,
         "buff": [
             "bard_aura",
@@ -2689,8 +2923,9 @@
         "time": 14973,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 7827,
-        "crit": true,
+        "translate": "祸星",
+        "damage": 5408,
+        "crit": false,
         "dh": false,
         "buff": [
             "bard_aura",
@@ -2701,6 +2936,7 @@
         "time": 14973,
         "event": "Cast",
         "name": "Malefic III",
+        "translate": "祸星",
         "duration": 235,
         "resource": {
             "mp": 7400,
@@ -2710,8 +2946,9 @@
     {
         "time": 15150,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1490,
+        "name": "Combust II",
+        "translate": "灾星",
+        "damage": 1446,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2724,7 +2961,8 @@
         "time": 15208,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 5142,
+        "translate": "祸星",
+        "damage": 5302,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2735,6 +2973,7 @@
         "time": 15208,
         "event": "Cast",
         "name": "Combust II",
+        "translate": "灾星",
         "duration": 0,
         "resource": {
             "mp": 7200,
@@ -2745,7 +2984,8 @@
         "time": 15244,
         "event": "Damage",
         "name": "Auto Attack",
-        "damage": 105,
+        "translate": "自动攻击",
+        "damage": 97,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2756,7 +2996,8 @@
         "time": 15275,
         "event": "DOT Apply",
         "name": "Combust II",
-        "base_damage": 1278.3600000000001,
+        "translate": "灾星",
+        "base_damage": [],
         "duration": 3000,
         "buff": [
             "bard_aura"
@@ -2766,6 +3007,7 @@
         "time": 15275,
         "event": "Cast",
         "name": "Lucid Dreaming",
+        "translate": "醒梦",
         "duration": 0,
         "resource": {
             "mp": 7200,
@@ -2776,12 +3018,14 @@
         "time": 15342,
         "event": "Buff Apply",
         "name": "Lucid Dreaming",
+        "translate": "醒梦",
         "duration": 2100
     },
     {
         "time": 15443,
         "event": "Cast",
         "name": "Malefic III",
+        "translate": "祸星",
         "duration": 235,
         "resource": {
             "mp": 6600,
@@ -2791,7 +3035,8 @@
     {
         "time": 15450,
         "event": "DOT Tick",
-        "name": "combust_ii",
+        "name": "Combust II",
+        "translate": "灾星",
         "damage": 1227,
         "crit": false,
         "dh": false,
@@ -2803,7 +3048,8 @@
         "time": 15629,
         "event": "Damage",
         "name": "Auto Attack",
-        "damage": 103,
+        "translate": "自动攻击",
+        "damage": 99,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2815,7 +3061,8 @@
         "time": 15678,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 5302,
+        "translate": "祸星",
+        "damage": 5355,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2827,6 +3074,7 @@
         "time": 15678,
         "event": "Cast",
         "name": "Malefic III",
+        "translate": "祸星",
         "duration": 235,
         "resource": {
             "mp": 7360,
@@ -2836,8 +3084,9 @@
     {
         "time": 15750,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1291,
+        "name": "Combust II",
+        "translate": "灾星",
+        "damage": 1316,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2848,6 +3097,7 @@
         "time": 15913,
         "event": "Damage",
         "name": "Malefic III",
+        "translate": "祸星",
         "damage": 5089,
         "crit": false,
         "dh": false,
@@ -2860,6 +3110,7 @@
         "time": 15913,
         "event": "Cast",
         "name": "Malefic III",
+        "translate": "祸星",
         "duration": 235,
         "resource": {
             "mp": 8120,
@@ -2869,9 +3120,10 @@
     {
         "time": 16050,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1240,
-        "crit": false,
+        "name": "Combust II",
+        "translate": "灾星",
+        "damage": 1831,
+        "crit": true,
         "dh": false,
         "buff": [
             "bard_aura"
@@ -2881,7 +3133,8 @@
         "time": 16099,
         "event": "Damage",
         "name": "Auto Attack",
-        "damage": 103,
+        "translate": "自动攻击",
+        "damage": 99,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2893,7 +3146,8 @@
         "time": 16148,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 5089,
+        "translate": "祸星",
+        "damage": 5408,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2905,6 +3159,7 @@
         "time": 16148,
         "event": "Cast",
         "name": "Malefic III",
+        "translate": "祸星",
         "duration": 235,
         "resource": {
             "mp": 8880,
@@ -2914,8 +3169,9 @@
     {
         "time": 16350,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1278,
+        "name": "Combust II",
+        "translate": "灾星",
+        "damage": 1252,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2926,7 +3182,8 @@
         "time": 16383,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 5248,
+        "translate": "祸星",
+        "damage": 5461,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2938,6 +3195,7 @@
         "time": 16383,
         "event": "Cast",
         "name": "Malefic III",
+        "translate": "祸星",
         "duration": 235,
         "resource": {
             "mp": 9640,
@@ -2948,7 +3206,8 @@
         "time": 16569,
         "event": "Damage",
         "name": "Auto Attack",
-        "damage": 98,
+        "translate": "自动攻击",
+        "damage": 97,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2960,7 +3219,8 @@
         "time": 16618,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 5355,
+        "translate": "祸星",
+        "damage": 5302,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2972,6 +3232,7 @@
         "time": 16618,
         "event": "Cast",
         "name": "Malefic III",
+        "translate": "祸星",
         "duration": 235,
         "resource": {
             "mp": 9040,
@@ -2981,8 +3242,9 @@
     {
         "time": 16650,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1303,
+        "name": "Combust II",
+        "translate": "灾星",
+        "damage": 1214,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2993,7 +3255,8 @@
         "time": 16853,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 5567,
+        "translate": "祸星",
+        "damage": 5142,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3005,6 +3268,7 @@
         "time": 16853,
         "event": "Cast",
         "name": "Malefic III",
+        "translate": "祸星",
         "duration": 235,
         "resource": {
             "mp": 9800,
@@ -3014,8 +3278,9 @@
     {
         "time": 16950,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1227,
+        "name": "Combust II",
+        "translate": "灾星",
+        "damage": 1303,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3026,8 +3291,9 @@
         "time": 17039,
         "event": "Damage",
         "name": "Auto Attack",
-        "damage": 147,
-        "crit": true,
+        "translate": "自动攻击",
+        "damage": 97,
+        "crit": false,
         "dh": false,
         "buff": [
             "lucid_dreaming",
@@ -3038,8 +3304,9 @@
         "time": 17088,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 7363,
-        "crit": true,
+        "translate": "祸星",
+        "damage": 5461,
+        "crit": false,
         "dh": false,
         "buff": [
             "lucid_dreaming",
@@ -3050,6 +3317,7 @@
         "time": 17088,
         "event": "Cast",
         "name": "Malefic III",
+        "translate": "祸星",
         "duration": 235,
         "resource": {
             "mp": 10560,
@@ -3059,9 +3327,10 @@
     {
         "time": 17250,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1831,
-        "crit": true,
+        "name": "Combust II",
+        "translate": "灾星",
+        "damage": 1214,
+        "crit": false,
         "dh": false,
         "buff": [
             "bard_aura"
@@ -3071,7 +3340,8 @@
         "time": 17323,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 5036,
+        "translate": "祸星",
+        "damage": 5089,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3083,6 +3353,7 @@
         "time": 17323,
         "event": "Cast",
         "name": "Malefic III",
+        "translate": "祸星",
         "duration": 235,
         "resource": {
             "mp": 11320,
@@ -3093,7 +3364,8 @@
         "time": 17509,
         "event": "Damage",
         "name": "Auto Attack",
-        "damage": 105,
+        "translate": "自动攻击",
+        "damage": 100,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3103,8 +3375,9 @@
     {
         "time": 17550,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1278,
+        "name": "Combust II",
+        "translate": "灾星",
+        "damage": 1329,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3115,7 +3388,8 @@
         "time": 17558,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 5567,
+        "translate": "祸星",
+        "damage": 5248,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3126,6 +3400,7 @@
         "time": 17558,
         "event": "Cast",
         "name": "Malefic III",
+        "translate": "祸星",
         "duration": 235,
         "resource": {
             "mp": 11120,
@@ -3136,7 +3411,8 @@
         "time": 17793,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 5408,
+        "translate": "祸星",
+        "damage": 5514,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3147,6 +3423,7 @@
         "time": 17793,
         "event": "Cast",
         "name": "Malefic III",
+        "translate": "祸星",
         "duration": 235,
         "resource": {
             "mp": 10520,
@@ -3156,8 +3433,9 @@
     {
         "time": 17850,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1316,
+        "name": "Combust II",
+        "translate": "灾星",
+        "damage": 1214,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3168,7 +3446,8 @@
         "time": 17979,
         "event": "Damage",
         "name": "Auto Attack",
-        "damage": 104,
+        "translate": "自动攻击",
+        "damage": 105,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3179,8 +3458,9 @@
         "time": 18028,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 5302,
-        "crit": false,
+        "translate": "祸星",
+        "damage": 7518,
+        "crit": true,
         "dh": false,
         "buff": [
             "bard_aura"
@@ -3190,6 +3470,7 @@
         "time": 18028,
         "event": "Cast",
         "name": "Malefic III",
+        "translate": "祸星",
         "duration": 235,
         "resource": {
             "mp": 10320,
@@ -3199,9 +3480,10 @@
     {
         "time": 18150,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1887,
-        "crit": true,
+        "name": "Combust II",
+        "translate": "灾星",
+        "damage": 1252,
+        "crit": false,
         "dh": false,
         "buff": [
             "bard_aura"
@@ -3211,14 +3493,16 @@
         "time": 18200,
         "event": "Party Buff Apply",
         "name": "Contagion",
+        "translate": "歪风",
         "duration": 1500
     },
     {
         "time": 18263,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 8439,
-        "crit": true,
+        "translate": "祸星",
+        "damage": 5947,
+        "crit": false,
         "dh": false,
         "buff": [
             "bard_aura",
@@ -3229,6 +3513,7 @@
         "time": 18263,
         "event": "Cast",
         "name": "Combust II",
+        "translate": "灾星",
         "duration": 0,
         "resource": {
             "mp": 10120,
@@ -3239,7 +3524,8 @@
         "time": 18299,
         "event": "Damage",
         "name": "Auto Attack",
-        "damage": 103,
+        "translate": "自动攻击",
+        "damage": 106,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3251,19 +3537,22 @@
         "time": 18300,
         "event": "Party Buff Apply",
         "name": "Battle Litany",
+        "translate": "战斗连祷",
         "duration": 2000
     },
     {
         "time": 18300,
         "event": "Party Buff Apply",
         "name": "Foe Requiem",
+        "translate": "魔人歌",
         "duration": 3300
     },
     {
         "time": 18330,
         "event": "DOT Apply",
         "name": "Combust II",
-        "base_damage": 1447.96,
+        "translate": "灾星",
+        "base_damage": [],
         "duration": 3000,
         "buff": [
             "battle_litany",
@@ -3276,6 +3565,7 @@
         "time": 18330,
         "event": "Cast",
         "name": "Cleric Stance",
+        "translate": "战姿",
         "duration": 0,
         "resource": {
             "mp": 10120,
@@ -3286,21 +3576,24 @@
         "time": 18397,
         "event": "Buff Apply",
         "name": "Cleric Stance",
+        "translate": "战姿",
         "duration": 1500
     },
     {
         "time": 18400,
         "event": "Party Buff Apply",
         "name": "Battle Voice",
+        "translate": "战斗之声",
         "duration": 2000
     },
     {
         "time": 18450,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1791,
+        "name": "Combust II",
+        "translate": "灾星",
+        "damage": 1433,
         "crit": false,
-        "dh": true,
+        "dh": false,
         "buff": [
             "battle_litany",
             "foe_requiem",
@@ -3312,6 +3605,7 @@
         "time": 18498,
         "event": "Cast",
         "name": "Malefic III",
+        "translate": "祸星",
         "duration": 235,
         "resource": {
             "mp": 9920,
@@ -3322,9 +3616,10 @@
         "time": 18684,
         "event": "Damage",
         "name": "Auto Attack",
-        "damage": 193,
-        "crit": true,
-        "dh": true,
+        "translate": "自动攻击",
+        "damage": 106,
+        "crit": false,
+        "dh": false,
         "buff": [
             "cleric_stance",
             "battle_litany",
@@ -3338,9 +3633,10 @@
         "time": 18733,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 8277,
-        "crit": false,
-        "dh": true,
+        "translate": "祸星",
+        "damage": 9220,
+        "crit": true,
+        "dh": false,
         "buff": [
             "cleric_stance",
             "battle_litany",
@@ -3354,6 +3650,7 @@
         "time": 18733,
         "event": "Cast",
         "name": "Malefic III",
+        "translate": "祸星",
         "duration": 235,
         "resource": {
             "mp": 9320,
@@ -3363,8 +3660,9 @@
     {
         "time": 18750,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1375,
+        "name": "Combust II",
+        "translate": "灾星",
+        "damage": 1447,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3378,6 +3676,7 @@
         "time": 18968,
         "event": "Damage",
         "name": "Malefic III",
+        "translate": "祸星",
         "damage": 6622,
         "crit": false,
         "dh": false,
@@ -3394,6 +3693,7 @@
         "time": 18968,
         "event": "Cast",
         "name": "Malefic III",
+        "translate": "祸星",
         "duration": 235,
         "resource": {
             "mp": 9120,
@@ -3403,8 +3703,9 @@
     {
         "time": 19050,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1390,
+        "name": "Combust II",
+        "translate": "灾星",
+        "damage": 1491,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3418,13 +3719,15 @@
         "time": 19100,
         "event": "Party Buff Apply",
         "name": "Trick Attack",
+        "translate": "背刺",
         "duration": 1500
     },
     {
         "time": 19154,
         "event": "Damage",
         "name": "Auto Attack",
-        "damage": 125,
+        "translate": "自动攻击",
+        "damage": 122,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3441,7 +3744,8 @@
         "time": 19203,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 9839,
+        "translate": "祸星",
+        "damage": 10447,
         "crit": true,
         "dh": false,
         "buff": [
@@ -3458,6 +3762,7 @@
         "time": 19203,
         "event": "Cast",
         "name": "Malefic III",
+        "translate": "祸星",
         "duration": 235,
         "resource": {
             "mp": 8920,
@@ -3467,8 +3772,9 @@
     {
         "time": 19350,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1491,
+        "name": "Combust II",
+        "translate": "灾星",
+        "damage": 1375,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3482,9 +3788,10 @@
         "time": 19438,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 6591,
+        "translate": "祸星",
+        "damage": 8932,
         "crit": false,
-        "dh": false,
+        "dh": true,
         "buff": [
             "cleric_stance",
             "battle_litany",
@@ -3499,6 +3806,7 @@
         "time": 19438,
         "event": "Cast",
         "name": "Malefic III",
+        "translate": "祸星",
         "duration": 235,
         "resource": {
             "mp": 8720,
@@ -3509,7 +3817,8 @@
         "time": 19624,
         "event": "Damage",
         "name": "Auto Attack",
-        "damage": 122,
+        "translate": "自动攻击",
+        "damage": 123,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3525,9 +3834,10 @@
     {
         "time": 19650,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1447,
-        "crit": false,
+        "name": "Combust II",
+        "translate": "灾星",
+        "damage": 2095,
+        "crit": true,
         "dh": false,
         "buff": [
             "battle_litany",
@@ -3540,8 +3850,9 @@
         "time": 19673,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 7284,
-        "crit": false,
+        "translate": "祸星",
+        "damage": 10447,
+        "crit": true,
         "dh": false,
         "buff": [
             "cleric_stance",
@@ -3557,6 +3868,7 @@
         "time": 19673,
         "event": "Cast",
         "name": "Malefic III",
+        "translate": "祸星",
         "duration": 235,
         "resource": {
             "mp": 8520,
@@ -3567,7 +3879,8 @@
         "time": 19908,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 6622,
+        "translate": "祸星",
+        "damage": 6180,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3583,6 +3896,7 @@
         "time": 19908,
         "event": "Cast",
         "name": "Malefic III",
+        "translate": "祸星",
         "duration": 235,
         "resource": {
             "mp": 7920,
@@ -3592,9 +3906,10 @@
     {
         "time": 19950,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1520,
-        "crit": false,
+        "name": "Combust II",
+        "translate": "灾星",
+        "damage": 2222,
+        "crit": true,
         "dh": false,
         "buff": [
             "battle_litany",
@@ -3607,7 +3922,8 @@
         "time": 20094,
         "event": "Damage",
         "name": "Auto Attack",
-        "damage": 116,
+        "translate": "自动攻击",
+        "damage": 117,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3622,8 +3938,9 @@
         "time": 20143,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 8430,
-        "crit": true,
+        "translate": "祸星",
+        "damage": 5886,
+        "crit": false,
         "dh": false,
         "buff": [
             "battle_litany",
@@ -3637,6 +3954,7 @@
         "time": 20143,
         "event": "Cast",
         "name": "Malefic III",
+        "translate": "祸星",
         "duration": 235,
         "resource": {
             "mp": 7720,
@@ -3646,8 +3964,9 @@
     {
         "time": 20250,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 2116,
+        "name": "Combust II",
+        "translate": "灾星",
+        "damage": 2011,
         "crit": true,
         "dh": false,
         "buff": [
@@ -3661,7 +3980,8 @@
         "time": 20378,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 6007,
+        "translate": "祸星",
+        "damage": 6187,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3675,6 +3995,7 @@
         "time": 20378,
         "event": "Cast",
         "name": "Malefic III",
+        "translate": "祸星",
         "duration": 235,
         "resource": {
             "mp": 7520,
@@ -3684,8 +4005,9 @@
     {
         "time": 20550,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1447,
+        "name": "Combust II",
+        "translate": "灾星",
+        "damage": 1476,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3699,7 +4021,8 @@
         "time": 20564,
         "event": "Damage",
         "name": "Auto Attack",
-        "damage": 107,
+        "translate": "自动攻击",
+        "damage": 114,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3712,7 +4035,8 @@
         "time": 20613,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 5766,
+        "translate": "祸星",
+        "damage": 6247,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3725,6 +4049,7 @@
         "time": 20613,
         "event": "Cast",
         "name": "Malefic III",
+        "translate": "祸星",
         "duration": 235,
         "resource": {
             "mp": 7320,
@@ -3735,7 +4060,8 @@
         "time": 20848,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 5351,
+        "translate": "祸星",
+        "damage": 5570,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3747,6 +4073,7 @@
         "time": 20848,
         "event": "Cast",
         "name": "Malefic III",
+        "translate": "祸星",
         "duration": 235,
         "resource": {
             "mp": 6720,
@@ -3756,8 +4083,9 @@
     {
         "time": 20850,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1390,
+        "name": "Combust II",
+        "translate": "灾星",
+        "damage": 1419,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3771,7 +4099,8 @@
         "time": 21034,
         "event": "Damage",
         "name": "Auto Attack",
-        "damage": 145,
+        "translate": "自动攻击",
+        "damage": 154,
         "crit": true,
         "dh": false,
         "buff": [
@@ -3783,8 +4112,9 @@
         "time": 21083,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 7983,
-        "crit": true,
+        "translate": "祸星",
+        "damage": 5242,
+        "crit": false,
         "dh": false,
         "buff": [
             "foe_requiem",
@@ -3795,6 +4125,7 @@
         "time": 21083,
         "event": "Cast",
         "name": "Malefic III",
+        "translate": "祸星",
         "duration": 235,
         "resource": {
             "mp": 6520,
@@ -3804,8 +4135,9 @@
     {
         "time": 21150,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1476,
+        "name": "Combust II",
+        "translate": "灾星",
+        "damage": 1404,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3819,8 +4151,9 @@
         "time": 21318,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 8143,
-        "crit": true,
+        "translate": "祸星",
+        "damage": 5461,
+        "crit": false,
         "dh": false,
         "buff": [
             "foe_requiem",
@@ -3831,6 +4164,7 @@
         "time": 21318,
         "event": "Cast",
         "name": "Combust II",
+        "translate": "灾星",
         "duration": 0,
         "resource": {
             "mp": 6320,
@@ -3841,6 +4175,7 @@
         "time": 21354,
         "event": "Damage",
         "name": "Auto Attack",
+        "translate": "自动攻击",
         "damage": 102,
         "crit": false,
         "dh": false,
@@ -3853,7 +4188,14 @@
         "time": 21385,
         "event": "DOT Apply",
         "name": "Combust II",
-        "base_damage": 1315.46,
+        "translate": "灾星",
+        "base_damage": [
+            {
+                "damage": 1341,
+                "crit": false,
+                "dh": false
+            }
+        ],
         "duration": 3000,
         "buff": [
             "foe_requiem",
@@ -3863,8 +4205,9 @@
     {
         "time": 21450,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1302,
+        "name": "Combust II",
+        "translate": "灾星",
+        "damage": 1328,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3876,6 +4219,7 @@
         "time": 21553,
         "event": "Cast",
         "name": "Malefic III",
+        "translate": "祸星",
         "duration": 235,
         "resource": {
             "mp": 6120,
@@ -3886,8 +4230,9 @@
         "time": 21739,
         "event": "Damage",
         "name": "Auto Attack",
-        "damage": 150,
-        "crit": true,
+        "translate": "自动攻击",
+        "damage": 103,
+        "crit": false,
         "dh": false,
         "buff": [
             "bard_aura"
@@ -3896,9 +4241,10 @@
     {
         "time": 21750,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1302,
-        "crit": false,
+        "name": "Combust II",
+        "translate": "灾星",
+        "damage": 1846,
+        "crit": true,
         "dh": false,
         "buff": [
             "foe_requiem",
@@ -3909,6 +4255,7 @@
         "time": 21788,
         "event": "Damage",
         "name": "Malefic III",
+        "translate": "祸星",
         "damage": 5302,
         "crit": false,
         "dh": false,
@@ -3920,6 +4267,7 @@
         "time": 21788,
         "event": "Cast",
         "name": "Malefic III",
+        "translate": "祸星",
         "duration": 235,
         "resource": {
             "mp": 5920,
@@ -3930,7 +4278,8 @@
         "time": 22023,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 5461,
+        "translate": "祸星",
+        "damage": 5195,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3941,6 +4290,7 @@
         "time": 22023,
         "event": "Cast",
         "name": "Malefic III",
+        "translate": "祸星",
         "duration": 235,
         "resource": {
             "mp": 5320,
@@ -3950,8 +4300,9 @@
     {
         "time": 22050,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1289,
+        "name": "Combust II",
+        "translate": "灾星",
+        "damage": 1341,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3963,7 +4314,8 @@
         "time": 22209,
         "event": "Damage",
         "name": "Auto Attack",
-        "damage": 102,
+        "translate": "自动攻击",
+        "damage": 103,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3974,6 +4326,7 @@
         "time": 22258,
         "event": "Damage",
         "name": "Malefic III",
+        "translate": "祸星",
         "damage": 5142,
         "crit": false,
         "dh": false,
@@ -3985,6 +4338,7 @@
         "time": 22258,
         "event": "Cast",
         "name": "Malefic III",
+        "translate": "祸星",
         "duration": 235,
         "resource": {
             "mp": 5120,
@@ -3994,8 +4348,9 @@
     {
         "time": 22350,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1289,
+        "name": "Combust II",
+        "translate": "灾星",
+        "damage": 1249,
         "crit": false,
         "dh": false,
         "buff": [
@@ -4007,7 +4362,8 @@
         "time": 22493,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 5248,
+        "translate": "祸星",
+        "damage": 5355,
         "crit": false,
         "dh": false,
         "buff": [
@@ -4018,6 +4374,7 @@
         "time": 22493,
         "event": "Cast",
         "name": "Malefic III",
+        "translate": "祸星",
         "duration": 235,
         "resource": {
             "mp": 4920,
@@ -4027,8 +4384,9 @@
     {
         "time": 22650,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1315,
+        "name": "Combust II",
+        "translate": "灾星",
+        "damage": 1275,
         "crit": false,
         "dh": false,
         "buff": [
@@ -4040,7 +4398,8 @@
         "time": 22679,
         "event": "Damage",
         "name": "Auto Attack",
-        "damage": 101,
+        "translate": "自动攻击",
+        "damage": 99,
         "crit": false,
         "dh": false,
         "buff": [
@@ -4051,7 +4410,8 @@
         "time": 22728,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 5036,
+        "translate": "祸星",
+        "damage": 5514,
         "crit": false,
         "dh": false,
         "buff": [
@@ -4062,6 +4422,7 @@
         "time": 22728,
         "event": "Cast",
         "name": "Malefic III",
+        "translate": "祸星",
         "duration": 235,
         "resource": {
             "mp": 4720,
@@ -4071,8 +4432,9 @@
     {
         "time": 22950,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1275,
+        "name": "Combust II",
+        "translate": "灾星",
+        "damage": 1368,
         "crit": false,
         "dh": false,
         "buff": [
@@ -4084,7 +4446,8 @@
         "time": 22963,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 5195,
+        "translate": "祸星",
+        "damage": 5461,
         "crit": false,
         "dh": false,
         "buff": [
@@ -4095,6 +4458,7 @@
         "time": 22963,
         "event": "Cast",
         "name": "Malefic III",
+        "translate": "祸星",
         "duration": 235,
         "resource": {
             "mp": 4520,
@@ -4105,8 +4469,9 @@
         "time": 23149,
         "event": "Damage",
         "name": "Auto Attack",
-        "damage": 142,
-        "crit": true,
+        "translate": "自动攻击",
+        "damage": 99,
+        "crit": false,
         "dh": false,
         "buff": [
             "bard_aura"
@@ -4116,7 +4481,8 @@
         "time": 23198,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 5408,
+        "translate": "祸星",
+        "damage": 5567,
         "crit": false,
         "dh": false,
         "buff": [
@@ -4127,6 +4493,7 @@
         "time": 23198,
         "event": "Cast",
         "name": "Malefic III",
+        "translate": "祸星",
         "duration": 235,
         "resource": {
             "mp": 3920,
@@ -4136,8 +4503,9 @@
     {
         "time": 23250,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1368,
+        "name": "Combust II",
+        "translate": "灾星",
+        "damage": 1315,
         "crit": false,
         "dh": false,
         "buff": [
@@ -4149,7 +4517,8 @@
         "time": 23433,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 5302,
+        "translate": "祸星",
+        "damage": 5089,
         "crit": false,
         "dh": false,
         "buff": [
@@ -4160,6 +4529,7 @@
         "time": 23433,
         "event": "Cast",
         "name": "Malefic III",
+        "translate": "祸星",
         "duration": 235,
         "resource": {
             "mp": 3720,
@@ -4169,9 +4539,10 @@
     {
         "time": 23550,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 2000,
-        "crit": true,
+        "name": "Combust II",
+        "translate": "灾星",
+        "damage": 1354,
+        "crit": false,
         "dh": false,
         "buff": [
             "foe_requiem",
@@ -4182,7 +4553,8 @@
         "time": 23619,
         "event": "Damage",
         "name": "Auto Attack",
-        "damage": 96,
+        "translate": "自动攻击",
+        "damage": 97,
         "crit": false,
         "dh": false,
         "buff": [
@@ -4193,7 +4565,8 @@
         "time": 23668,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 5089,
+        "translate": "祸星",
+        "damage": 5248,
         "crit": false,
         "dh": false,
         "buff": [
@@ -4204,6 +4577,7 @@
         "time": 23668,
         "event": "Cast",
         "name": "Malefic III",
+        "translate": "祸星",
         "duration": 235,
         "resource": {
             "mp": 3520,
@@ -4213,8 +4587,9 @@
     {
         "time": 23850,
         "event": "DOT Tick",
-        "name": "combust_ii",
-        "damage": 1961,
+        "name": "Combust II",
+        "translate": "灾星",
+        "damage": 1865,
         "crit": true,
         "dh": false,
         "buff": [
@@ -4226,7 +4601,8 @@
         "time": 23903,
         "event": "Damage",
         "name": "Malefic III",
-        "damage": 5142,
+        "translate": "祸星",
+        "damage": 5195,
         "crit": false,
         "dh": false,
         "buff": [
@@ -4237,6 +4613,7 @@
         "time": 23903,
         "event": "Cast",
         "name": "Malefic III",
+        "translate": "祸星",
         "duration": 235,
         "resource": {
             "mp": 3320,

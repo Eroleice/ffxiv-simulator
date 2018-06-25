@@ -20,7 +20,9 @@ module.exports = {
         // DOT池初始化
         data.dot.combust_ii = {
             'time': 0,
-            'damage': 0,
+            'name': 'Combust II',
+            'translate': '灾星',
+            'damage': [],
             'buff': []
         };
 

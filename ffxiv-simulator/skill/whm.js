@@ -66,6 +66,7 @@ class skill {
             'time': this.setting.simulate.duration - this.battle.time,
             'event': 'Cast',
             'name': 'Stone IV',
+            'translate': '崩石',
             'duration': deepcopy(this.player.tick.cast),
             'resource': deepcopy(this.player.resource)
         });
@@ -82,6 +83,7 @@ class skill {
             'time': this.setting.simulate.duration - this.battle.time,
             'event': 'Cast',
             'name': 'Aero II',
+            'translate': '烈风',
             'duration': 0,
             'resource': deepcopy(this.player.resource)
         });
@@ -96,6 +98,7 @@ class skill {
             'time': this.setting.simulate.duration - this.battle.time,
             'event': 'Cast',
             'name': 'Aero III',
+            'translate': '暴风',
             'duration': deepcopy(this.player.tick.cast),
             'resource': deepcopy(this.player.resource)
         });
@@ -111,6 +114,7 @@ class skill {
             'time': this.setting.simulate.duration - this.battle.time,
             'event': 'Cast',
             'name': 'Assize',
+            'translate': '法令',
             'duration': 0,
             'resource': deepcopy(this.player.resource)
         });
@@ -126,6 +130,7 @@ class skill {
             'time': this.setting.simulate.duration - this.battle.time,
             'event': 'Cast',
             'name': 'Presence of Mind',
+            'translate': '神速咏唱',
             'duration': 0,
             'resource': deepcopy(this.player.resource)
         });
@@ -141,6 +146,7 @@ class skill {
             'time': this.setting.simulate.duration - this.battle.time,
             'event': 'Cast',
             'name': 'Potion',
+            'translate': '爆发药',
             'duration': 0,
             'resource': deepcopy(this.player.resource)
         });
@@ -156,6 +162,7 @@ class skill {
             'time': this.setting.simulate.duration - this.battle.time,
             'event': 'Cast',
             'name': 'Cleric Stance',
+            'translate': '战姿',
             'duration': 0,
             'resource': deepcopy(this.player.resource)
         });
@@ -171,6 +178,7 @@ class skill {
             'time': this.setting.simulate.duration - this.battle.time,
             'event': 'Cast',
             'name': 'Lucid Dreaming',
+            'translate': '醒梦',
             'duration': 0,
             'resource': deepcopy(this.player.resource)
         });
@@ -222,7 +230,10 @@ class effect {
     aero_ii_dot() {
         this.player.engage = true;
         var potency = 50;
-        var damage = calculate.dotBaseDamageCalculate(this, potency, 'magic');
+        var damage = [];
+        for (var i = 0; i < 6; i++) {
+            damage.push(calculate.dotDamageCalculate(this, potency, 'magic'));
+        }
         this.player.dot.aero_ii.time = 1800;
         this.player.dot.aero_ii.damage = damage;
         this.player.dot.aero_ii.buff = this.whatBuff();
@@ -254,7 +265,10 @@ class effect {
     aero_iii_dot() {
         this.player.engage = true;
         var potency = 40;
-        var damage = calculate.dotBaseDamageCalculate(this, potency, 'magic');
+        var damage = [];
+        for (var i = 0; i < 8; i++) {
+            damage.push(calculate.dotDamageCalculate(this, potency, 'magic'));
+        }
         this.player.dot.aero_iii.time = 2400;
         this.player.dot.aero_iii.damage = damage;
         this.player.dot.aero_iii.buff = this.whatBuff();

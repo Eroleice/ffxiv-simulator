@@ -66,6 +66,7 @@ class skill {
             'time': this.setting.simulate.duration - this.battle.time,
             'event': 'Cast',
             'name': 'Malefic III',
+            'translate': '祸星',
             'duration': deepcopy(this.player.tick.cast),
             'resource': deepcopy(this.player.resource)
         });
@@ -82,6 +83,7 @@ class skill {
             'time': this.setting.simulate.duration - this.battle.time,
             'event': 'Cast',
             'name': 'Combust II',
+            'translate': '灾星',
             'duration': 0,
             'resource': deepcopy(this.player.resource)
         });
@@ -97,6 +99,7 @@ class skill {
             'time': this.setting.simulate.duration - this.battle.time,
             'event': 'Cast',
             'name': 'Potion',
+            'translate': '爆发药',
             'duration': 0,
             'resource': deepcopy(this.player.resource)
         });
@@ -112,6 +115,7 @@ class skill {
             'time': this.setting.simulate.duration - this.battle.time,
             'event': 'Cast',
             'name': 'Cleric Stance',
+            'translate': '战姿',
             'duration': 0,
             'resource': deepcopy(this.player.resource)
         });
@@ -127,6 +131,7 @@ class skill {
             'time': this.setting.simulate.duration - this.battle.time,
             'event': 'Cast',
             'name': 'Lucid Dreaming',
+            'translate': '醒梦',
             'duration': 0,
             'resource': deepcopy(this.player.resource)
         });
@@ -153,6 +158,7 @@ class effect {
         this.battle.damageQue.push({
             'time': 50,
             'name': 'Malefic III',
+            'translate': '祸星',
             'damage': damage.damage,
             'crit': damage.crit,
             'dh': damage.dh,
@@ -162,7 +168,10 @@ class effect {
     combust_ii() {
         this.player.engage = true;
         var potency = 50;
-        var damage = calculate.dotBaseDamageCalculate(this,potency,'magic');
+        var damage = [];
+        for (var i = 0; i < 10; i++) {
+            damage.push(calculate.dotDamageCalculate(this, potency, 'magic'));
+        }
         this.player.dot.combust_ii.time = 3000;
         this.player.dot.combust_ii.damage = damage;
         this.player.dot.combust_ii.buff = this.whatBuff();
@@ -170,6 +179,7 @@ class effect {
             'time': this.setting.simulate.duration - this.battle.time,
             'event': 'DOT Apply',
             'name': 'Combust II',
+            'translate': '灾星',
             'base_damage': damage,
             'duration': 3000,
             'buff': this.whatBuff()
@@ -181,6 +191,7 @@ class effect {
             'time': this.setting.simulate.duration - this.battle.time,
             'event': 'Buff Apply',
             'name': 'Potion',
+            'translate': '爆发药',
             'duration': 3000
         });
     }
@@ -190,6 +201,7 @@ class effect {
             'time': this.setting.simulate.duration - this.battle.time,
             'event': 'Buff Apply',
             'name': 'Cleric Stance',
+            'translate': '战姿',
             'duration': 1500
         });
     }
@@ -199,6 +211,7 @@ class effect {
             'time': this.setting.simulate.duration - this.battle.time,
             'event': 'Buff Apply',
             'name': 'Lucid Dreaming',
+            'translate': '醒梦',
             'duration': 2100
         });
     }
@@ -267,6 +280,7 @@ class autoAttack {
         this.battle.damageQue.push({
             'time': 0,
             'name': 'Auto Attack',
+            'translate': '自动攻击',
             'damage': damage.damage,
             'crit': damage.crit,
             'dh': damage.dh,

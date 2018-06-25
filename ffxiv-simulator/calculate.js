@@ -214,19 +214,11 @@ module.exports = {
 
     },
 
-    'dotBaseDamageCalculate': function (data, potency, type) {
+    'dotDamageCalculate': function (data, potency, type) {
 
         var c = new calculate(data);
-        c.baseDamage(potency,type);
+        c.baseDamage(potency, type);
         c.dotMod();
-        return c.damage;
-
-    },
-
-    'dotDamageCalculate': function (data, baseDamage) {
-
-        var c = new calculate(data);
-        c.damage = baseDamage;
         c.critMod();
         c.dhMod();
         c.damageFloat();
@@ -236,5 +228,4 @@ module.exports = {
             'dh': c.dh
         }
     }
-
 };

@@ -11,7 +11,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>d6b2d769-32fd-46aa-bddd-f42d7805ab19</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>app.js</StartupFile>
+    <StartupFile>run.js</StartupFile>
     <StartWebBrowser>False</StartWebBrowser>
     <SearchPath>
     </SearchPath>
@@ -28,7 +28,6 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="app.js" />
     <Compile Include="calculate.js">
       <SubType>Code</SubType>
     </Compile>
@@ -47,10 +46,16 @@
     <Compile Include="rotation\ast.js">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="rotation\mnk.js">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="rotation\sch.js">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="rotation\whm.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="run.js">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="sim.js">
@@ -60,6 +65,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="skill\ast.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="skill\mnk.js">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="skill\sch.js">

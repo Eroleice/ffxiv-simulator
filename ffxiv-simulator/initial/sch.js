@@ -20,22 +20,30 @@ module.exports = {
         // DOT池初始化
         data.dot.bio_ii = {
             'time': 0,
-            'damage': 0,
+            'name': 'Bio II',
+            'translate': '猛毒菌',
+            'damage': [],
             'buff': []
         };
         data.dot.miasma = {
             'time': 0,
-            'damage': 0,
+            'name': 'Miasma',
+            'translate': '瘴气',
+            'damage': [],
             'buff': []
         };
         data.dot.miasma_ii = {
             'time': 0,
-            'damage': 0,
+            'name': 'Miasma II',
+            'translate': '瘴疠',
+            'damage': [],
             'buff': []
         };
         data.dot.shadow_flare = {
             'time': 0,
-            'damage': 0,
+            'name': 'Shadow Flare',
+            'translate': '暗影核爆',
+            'damage': [],
             'buff': []
         };
 

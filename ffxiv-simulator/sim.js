@@ -205,6 +205,7 @@ class Fight {
             'time': this.setting.simulate.duration - this.battle.time,
             'event': 'Damage',
             'name': data.name,
+            'translate': data.translate,
             'damage': data.damage,
             'crit': data.crit,
             'dh': data.dh,
@@ -219,17 +220,18 @@ class Fight {
             if (this.player.dot[k].time > 0) {
 
                 // 根据this.player.dot[k].damage储存的快照伤害进行伤害浮动模拟并处理DOT机制
-                var dotData = calculate.dotDamageCalculate(this, this.player.dot[k].damage);
                 this.log.push({
                     'time': this.setting.simulate.duration - this.battle.time,
                     'event': 'DOT Tick',
-                    'name': k,
-                    'damage': dotData.damage,
-                    'crit': dotData.crit,
-                    'dh': dotData.dh,
+                    'name': this.player.dot[k].name,
+                    'translate': this.player.dot[k].translate,
+                    'damage': this.player.dot[k].damage[0].damage,
+                    'crit': this.player.dot[k].damage[0].crit,
+                    'dh': this.player.dot[k].damage[0].dh,
                     'buff': this.player.dot[k].buff
                 });
-                this.battle.totalDamage += dotData.damage;
+                this.battle.totalDamage += this.player.dot[k].damage[0].damage;
+                this.player.dot[k].damage.shift();
             }
             
         }
@@ -241,32 +243,32 @@ class Fight {
         // 龙骑战斗祷告
         if (this.setting.simulate.partyMember.indexOf('drg') !== -1 && this.setting.job !== 'drg' && (this.setting.simulate.duration - this.battle.time) % 18000 == 300) {
             this.player.buff.battle_litany = 2000;
-            this.partyBuffLog('Battle Litany', 2000);
+            this.partyBuffLog('Battle Litany', '战斗连祷', 2000);
         }
         // 龙骑肠子
         if (this.setting.simulate.partyMember.indexOf('drg') !== -1 && this.setting.job !== 'drg' && (this.setting.simulate.duration - this.battle.time) % 12000 == 400) {
             this.player.buff.dragon_sight = 2000;
-            this.partyBuffLog('Dragon Sight', 2000);
+            this.partyBuffLog('Dragon Sight', '龙视', 2000);
         }
         // 学者连环计
         if (this.setting.simulate.partyMember.indexOf('sch') !== -1 && this.setting.job !== 'sch' && (this.setting.simulate.duration - this.battle.time) % 12000 == 900) {
             this.player.buff.chain_strategem = 1500;
-            this.partyBuffLog('Chain Strategem', 2000);
+            this.partyBuffLog('Chain Strategem', '连环计', 2000);
         }
         // 学者异想的流光
         if (this.setting.simulate.partyMember.indexOf('sch') !== -1 && (this.setting.simulate.duration - this.battle.time) % 6000 == 100) {
             this.player.buff.fey_wind = 1500;
-            this.partyBuffLog('Fey Wind', 2000);
+            this.partyBuffLog('Fey Wind', '异想的流光', 2000);
         }
         // 诗人战斗之声
         if (this.setting.simulate.partyMember.indexOf('brd') !== -1 && this.setting.job !== 'brd' && (this.setting.simulate.duration - this.battle.time) % 18000 == 400) {
             this.player.buff.battle_voice = 2000;
-            this.partyBuffLog('Battle Voice', 2000);
+            this.partyBuffLog('Battle Voice', '战斗之声', 2000);
         }
         // 诗人魔人歌
         if (this.setting.simulate.partyMember.indexOf('brd') !== -1 && this.setting.job !== 'brd' && (this.setting.simulate.duration - this.battle.time) % 18000 == 300) {
             this.player.buff.foe_requiem = 3300;
-            this.partyBuffLog('Foe Requiem', 3300);
+            this.partyBuffLog('Foe Requiem', '魔人歌', 3300);
         }
         // 诗人歌曲
         if (this.setting.simulate.partyMember.indexOf('brd') !== -1) {
@@ -275,27 +277,27 @@ class Fight {
         // 忍者背刺
         if (this.setting.simulate.partyMember.indexOf('nin') !== -1 && this.setting.job !== 'nin' && (this.setting.simulate.duration - this.battle.time) % 6000 == 1100) {
             this.player.buff.trick_attack = 1500;
-            this.partyBuffLog('Trick Attack', 1500);
+            this.partyBuffLog('Trick Attack', '背刺', 1500);
         }
         // 迦楼罗歪风
         if (this.setting.simulate.partyMember.indexOf('smn') !== -1 && this.setting.job !== 'smn' && (this.setting.simulate.duration - this.battle.time) % 6000 == 200) {
             this.player.buff.contagion = 1500;
-            this.partyBuffLog('Contagion', 1500);
+            this.partyBuffLog('Contagion', '歪风', 1500);
         }
         // 召唤灵兽加护
         if (this.setting.simulate.partyMember.indexOf('smn') !== -1 && this.setting.job !== 'smn' && (this.setting.simulate.duration - this.battle.time) % 12000 == 1500) {
             this.player.buff.devotion = 1500;
-            this.partyBuffLog('Devotion', 1500);
+            this.partyBuffLog('Devotion', '灵兽加护', 1500);
         }
         // 机工超荷
         if (this.setting.simulate.partyMember.indexOf('mch') !== -1 && this.setting.job !== 'mch' && (this.setting.simulate.duration - this.battle.time) % 12000 == 100) {
             this.player.buff.hypercharge = 2800;
-            this.partyBuffLog('Hypercharge', 2800);
+            this.partyBuffLog('Hypercharge', '超荷', 2800);
         }
         // 武僧义结金兰
         if (this.setting.simulate.partyMember.indexOf('mnk') !== -1 && this.setting.job !== 'mnk' && (this.setting.simulate.duration - this.battle.time) % 9000 == 1300) {
             this.player.buff.botherhood = 1500;
-            this.partyBuffLog('Botherhood', 1500);
+            this.partyBuffLog('Botherhood', '义结金兰', 1500);
         }
     }
 
@@ -321,6 +323,7 @@ class Fight {
         if (this.isBuff('lucid_dreaming')) {
             this.player.resource.mp = Math.min(this.player.resource.mp+960,this.setting.player.mp);
         }
+        this.player.resource.tp = Math.min(1000,this.player.resource.tp + 60); // 回TP顺手也写这了
     }
 
     // buff检测
@@ -332,11 +335,12 @@ class Fight {
         }
     }
 
-    partyBuffLog(name, duration) {
+    partyBuffLog(name, translate, duration) {
         this.log.push({
             'time': this.setting.simulate.duration - this.battle.time,
             'event': 'Party Buff Apply',
             'name': name,
+            'translate': translate,
             'duration': duration
         });
     }

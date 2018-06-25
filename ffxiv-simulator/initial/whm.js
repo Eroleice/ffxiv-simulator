@@ -20,12 +20,16 @@ module.exports = {
         // DOT池初始化
         data.dot.aero_ii = {
             'time': 0,
-            'damage': 0,
+            'name': 'Aero II',
+            'translate': '烈风',
+            'damage': [],
             'buff': []
         };
         data.dot.aero_iii = {
             'time': 0,
-            'damage': 0,
+            'name': 'Aero III',
+            'translate': '暴风',
+            'damage': [],
             'buff': []
         };
 

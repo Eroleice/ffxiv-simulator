@@ -56,17 +56,15 @@ class skill {
     /** 
      * 下面是技能释放代码
      * */
-    broil_ii() {
-        this.player.casting = 'broil_ii';
-        this.player.resource.mp -= 720;
+    bootshine() {
+        this.player.resource.tp -= 50;
         this.player.tick.animation = animationBlock;
         this.player.tick.gcd = this.calculateGCD();
-        this.player.tick.cast = this.calculateGCD();
         this.log.push({
             'time': this.setting.simulate.duration - this.battle.time,
             'event': 'Cast',
-            'name': 'Broil II',
-            'translate': '魔炎法',
+            'name': 'Bootshine',
+            'translate': '连击',
             'duration': deepcopy(this.player.tick.cast),
             'resource': deepcopy(this.player.resource)
         });
@@ -83,7 +81,6 @@ class skill {
             'time': this.setting.simulate.duration - this.battle.time,
             'event': 'Cast',
             'name': 'Bio II',
-            'translate': '猛毒菌',
             'duration': 0,
             'resource': deepcopy(this.player.resource)
         });
@@ -100,7 +97,6 @@ class skill {
             'time': this.setting.simulate.duration - this.battle.time,
             'event': 'Cast',
             'name': 'Ruin II',
-            'translate': '毁坏',
             'duration': 0,
             'resource': deepcopy(this.player.resource)
         });
@@ -115,7 +111,6 @@ class skill {
             'time': this.setting.simulate.duration - this.battle.time,
             'event': 'Cast',
             'name': 'Miasma',
-            'translate': '瘴气',
             'duration': deepcopy(this.player.tick.cast),
             'resource': deepcopy(this.player.resource)
         });
@@ -132,7 +127,6 @@ class skill {
             'time': this.setting.simulate.duration - this.battle.time,
             'event': 'Cast',
             'name': 'Miasma II',
-            'translate': '瘴疠',
             'duration': 0,
             'resource': deepcopy(this.player.resource)
         });
@@ -148,7 +142,6 @@ class skill {
             'time': this.setting.simulate.duration - this.battle.time,
             'event': 'Cast',
             'name': 'Shadow Flare',
-            'translate': '暗影核爆',
             'duration': 0,
             'resource': deepcopy(this.player.resource)
         });
@@ -164,7 +157,6 @@ class skill {
             'time': this.setting.simulate.duration - this.battle.time,
             'event': 'Cast',
             'name': 'Aether Flow',
-            'translate': '以太超流',
             'duration': 0,
             'resource': deepcopy(this.player.resource)
         });
@@ -181,7 +173,6 @@ class skill {
             'time': this.setting.simulate.duration - this.battle.time,
             'event': 'Cast',
             'name': 'Energy Drain',
-            'translate': '能量吸收',
             'duration': 0,
             'resource': deepcopy(this.player.resource)
         });
@@ -197,7 +188,6 @@ class skill {
             'time': this.setting.simulate.duration - this.battle.time,
             'event': 'Cast',
             'name': 'Chain Strategem',
-            'translate': '连环计',
             'duration': 0,
             'resource': deepcopy(this.player.resource)
         });
@@ -213,7 +203,6 @@ class skill {
             'time': this.setting.simulate.duration - this.battle.time,
             'event': 'Cast',
             'name': 'Potion',
-            'translate': '爆发药',
             'duration': 0,
             'resource': deepcopy(this.player.resource)
         });
@@ -229,7 +218,6 @@ class skill {
             'time': this.setting.simulate.duration - this.battle.time,
             'event': 'Cast',
             'name': 'Cleric Stance',
-            'translate': '战姿',
             'duration': 0,
             'resource': deepcopy(this.player.resource)
         });
@@ -245,7 +233,6 @@ class skill {
             'time': this.setting.simulate.duration - this.battle.time,
             'event': 'Cast',
             'name': 'Lucid Dreaming',
-            'translate': '醒梦',
             'duration': 0,
             'resource': deepcopy(this.player.resource)
         });
@@ -281,10 +268,7 @@ class effect {
     bio_ii() {
         this.player.engage = true;
         var potency = 35;
-        var damage = [];
-        for (var i = 0; i < 10; i++) {
-            damage.push(calculate.dotDamageCalculate(this, potency, 'magic'));
-        }
+        var damage = calculate.dotBaseDamageCalculate(this, potency, 'magic');
         this.player.dot.bio_ii.time = 3000;
         this.player.dot.bio_ii.damage = damage;
         this.player.dot.bio_ii.buff = this.whatBuff();
@@ -328,10 +312,7 @@ class effect {
     miasma_dot() {
         this.player.engage = true;
         var potency = 35;
-        var damage = [];
-        for (var i = 0; i < 8; i++) {
-            damage.push(calculate.dotDamageCalculate(this, potency, 'magic'));
-        }
+        var damage = calculate.dotBaseDamageCalculate(this, potency, 'magic');
         this.player.dot.miasma.time = 2400;
         this.player.dot.miasma.damage = damage;
         this.player.dot.miasma.buff = this.whatBuff();
@@ -363,10 +344,7 @@ class effect {
     miasma_ii_dot() {
         this.player.engage = true;
         var potency = 25;
-        var damage = [];
-        for (var i = 0; i < 4; i++) {
-            damage.push(calculate.dotDamageCalculate(this, potency, 'magic'));
-        }
+        var damage = calculate.dotBaseDamageCalculate(this, potency, 'magic');
         this.player.dot.miasma_ii.time = 1200;
         this.player.dot.miasma_ii.damage = damage;
         this.player.dot.miasma.buff = this.whatBuff();
@@ -382,10 +360,7 @@ class effect {
     shadow_flare() {
         this.player.engage = true;
         var potency = 50;
-        var damage = [];
-        for (var i = 0; i < 5; i++) {
-            damage.push(calculate.dotDamageCalculate(this, potency, 'magic'));
-        }
+        var damage = calculate.dotBaseDamageCalculate(this, potency, 'magic');
         this.player.dot.shadow_flare.time = 1500;
         this.player.dot.shadow_flare.damage = damage;
         this.player.dot.shadow_flare.buff = this.whatBuff();
@@ -400,7 +375,7 @@ class effect {
     }
     aetherflow() {
         this.player.job.aetherflow = 3;
-        this.player.resource.mp = Math.min(this.setting.player.mp , this.player.resource.mp + this.setting.player.mp * 0.1);
+        this.player.resource.mp = Math.min(this.setting.player.mp, this.player.resource.mp + this.setting.player.mp * 0.1);
     }
     energy_drain() {
         this.player.resource.mp = Math.min(this.setting.player.mp, this.player.resource.mp + 1200);
@@ -469,6 +444,42 @@ class effect {
         } else {
             return false;
         }
+    }
+}
+
+class autoAttack {
+
+    constructor(data) {
+        // 同步战斗数据
+        this.setting = data.setting;            // 初始化设定
+        this.player = data.player;              // 玩家动态属性
+        this.battle = data.battle;
+        this.log = data.log;
+    }
+
+    aa() {
+        var potency = 110;
+        var damage = calculate.autoAttackCalculate(this, potency);
+        this.battle.damageQue.push({
+            'time': 0,
+            'name': 'Auto Attack',
+            'translate': '自动攻击',
+            'damage': damage.damage,
+            'crit': damage.crit,
+            'dh': damage.dh,
+            'buff': this.whatBuff()
+        });
+    }
+
+    // 检测有哪些buff存在
+    whatBuff() {
+        var arr = [];
+        for (var k in this.player.buff) {
+            if (this.player.buff[k] > 0) {
+                arr.push(k);
+            }
+        }
+        return arr;
     }
 }
 
