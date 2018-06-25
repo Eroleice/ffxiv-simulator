@@ -193,7 +193,7 @@ class effect {
      * */
     stone_iv() {
         var potency = 250;
-        var damage = calculate.damageCalculate(this, potency);
+        var damage = calculate.damageCalculate(this, potency, 'magic');
         this.battle.damageQue.push({
             'time': 50,
             'name': 'Stone IV',
@@ -205,7 +205,7 @@ class effect {
     }
     aero_ii() {
         var potency = 50;
-        var damage = calculate.damageCalculate(this, potency);
+        var damage = calculate.damageCalculate(this, potency, 'magic');
         this.battle.skillEffectQue.push({
             'time': 0,
             'name': 'aero_ii_dot'
@@ -222,7 +222,7 @@ class effect {
     aero_ii_dot() {
         this.player.engage = true;
         var potency = 50;
-        var damage = calculate.dotBaseDamageCalculate(this, potency);
+        var damage = calculate.dotBaseDamageCalculate(this, potency, 'magic');
         this.player.dot.aero_ii.time = 1800;
         this.player.dot.aero_ii.damage = damage;
         this.player.dot.aero_ii.buff = this.whatBuff();
@@ -237,7 +237,7 @@ class effect {
     }
     aero_iii() {
         var potency = 50;
-        var damage = calculate.damageCalculate(this, potency);
+        var damage = calculate.damageCalculate(this, potency, 'magic');
         this.battle.skillEffectQue.push({
             'time': 0,
             'name': 'aero_iii_dot'
@@ -254,7 +254,7 @@ class effect {
     aero_iii_dot() {
         this.player.engage = true;
         var potency = 40;
-        var damage = calculate.dotBaseDamageCalculate(this, potency);
+        var damage = calculate.dotBaseDamageCalculate(this, potency, 'magic');
         this.player.dot.aero_iii.time = 2400;
         this.player.dot.aero_iii.damage = damage;
         this.player.dot.aero_iii.buff = this.whatBuff();
@@ -270,7 +270,7 @@ class effect {
     assize() {
         this.player.resource.mp = Math.min(this.setting.player.mp,this.player.resource.mp + 0.1 * this.setting.player.mp);
         var potency = 300;
-        var damage = calculate.damageCalculate(this, potency);
+        var damage = calculate.damageCalculate(this, potency, 'magic');
         this.battle.damageQue.push({
             'time': 0,
             'name': 'Assize',

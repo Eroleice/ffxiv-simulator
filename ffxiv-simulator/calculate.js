@@ -56,21 +56,74 @@
             }
         }
     }
+
     // 伤害计算公式
-    baseDamage(potency) {
+    baseDamage(potency,type) {
+        // buff检测 && buff强化系数叠乘
+        if (type == 'magic') {
+            var m = this.multiplier({
+                'trick_attack': 1.1,            // 忍者背刺
+                'dragon_sight': 1.05,           // 龙骑龙视
+                'cleric_stance': 1.05,          // 治疗战姿
+                'foe_requiem': 1.03,            // 诗人魔人歌
+                'contagion': 1.1,               // 迦楼罗歪风
+                'devotion': 1.02,               // 召唤灵兽加护
+                'hypercharge': 1.05             // 机工超荷
+            });
+        } else if (type == 'physic') {
+            var m = this.multiplier({
+                'trick_attack': 1.1,            // 忍者背刺
+                'dragon_sight': 1.05,           // 龙骑龙视
+                'cleric_stance': 1.05,          // 治疗战姿
+                'foe_requiem': 1.03,            // 诗人魔人歌
+                'contagion': 1.1,               // 迦楼罗歪风
+                'botherhood': 1.05,             // 武僧义结金兰
+                'hypercharge': 1.05             // 机工超荷
+            });
+        }
+        // 伤害公式mod计算
+        var apMod = Math.floor(100 * (this.player.status.ap - 58.4) / 233.6) / 100;
+        var wdMod = (this.player.status.wd + this.player.jobK) / 100;
+        var detMod = 1 + Math.floor(1000 * (this.player.status.det - 292) * 0.13 / 2170) / 1000;
+        var tenMod = 1 + Math.floor(1000 * (this.player.status.ten - 364) * 0.1 / 2170) / 1000;
+        var resistanceMod = (this.isBuff('resistance')) ? 1.1 : 1;
+        this.damage = Math.floor(Math.floor(Math.floor(Math.floor(Math.floor(Math.floor(Math.floor(potency * wdMod) * apMod) * detMod) * tenMod) * m) * resistanceMod) * this.player.jobTrial);
+        if (potency < 100) {
+            this.damage += 1; // 技能威力<100时,最终伤害需要+1
+        }
+    }
+
+    // 自动攻击伤害公式
+    autoDamage(potency) {
         // buff检测 && buff强化系数叠乘
         var m = this.multiplier({
             'trick_attack': 1.1,            // 忍者背刺
             'dragon_sight': 1.05,           // 龙骑龙视
             'cleric_stance': 1.05,          // 治疗战姿
             'foe_requiem': 1.03,            // 诗人魔人歌
-            'contagion': 1.1,               // 迦楼罗歪风
             'devotion': 1.02,               // 召唤灵兽加护
-            'hypercharge': 1.05             // 机工超荷
+            'hypercharge': 1.05,            // 机工超荷
+            'brotherhood': 1.05             // 武僧义结金兰
         });
+        var ap = 0;
+        if (this.setting.job == 'ast') {
+            ap = 145;
+        } else if (this.setting.job == 'sch') {
+            ap = 261;
+        } else if (this.setting.job == 'whm') {
+            ap = 159;
+        } else if (this.setting.job == 'blm') {
+            ap = 130;
+        } else if (this.setting.job == 'rdm') {
+            ap = 159;
+        } else if (this.setting.job == 'smn') {
+            ap = 261;
+        } else {
+            ap = this.player.status.ap;
+        }
         // 伤害公式mod计算
-        var apMod = Math.floor(100 * (this.player.status.ap - 58.4) / 233.6) / 100;
-        var wdMod = (this.player.status.wd + this.player.jobK) / 100;
+        var apMod = Math.floor(100 * (ap - 58.4) / 233.6) / 100;
+        var wdMod = (this.player.status.wd + this.player.jobK) * (this.player.status.aa_delay / 3) / 100;
         var detMod = 1 + Math.floor(1000 * (this.player.status.det - 292) * 0.13 / 2170) / 1000;
         var tenMod = 1 + Math.floor(1000 * (this.player.status.ten - 364) * 0.1 / 2170) / 1000;
         var resistanceMod = (this.isBuff('resistance')) ? 1.1 : 1;
@@ -130,10 +183,10 @@ function floor(num, d) {
 
 module.exports = {
 
-    'damageCalculate': function (data,potency) {
+    'damageCalculate': function (data,potency,type) {
 
         var c = new calculate(data);
-        c.baseDamage(potency);
+        c.baseDamage(potency,type);
         c.critMod();
         c.dhMod();
         c.damageFloat();
@@ -145,10 +198,26 @@ module.exports = {
 
     },
 
-    'dotBaseDamageCalculate': function (data, potency) {
+    'autoAttackCalculate': function (data, potency) {
 
         var c = new calculate(data);
-        c.baseDamage(potency);
+        c.autoDamage(potency);
+        c.critMod();
+        c.dhMod();
+        c.dotMod();
+        c.damageFloat();
+        return {
+            'damage': Math.floor(c.damage),
+            'crit': c.crit,
+            'dh': c.dh
+        };
+
+    },
+
+    'dotBaseDamageCalculate': function (data, potency, type) {
+
+        var c = new calculate(data);
+        c.baseDamage(potency,type);
         c.dotMod();
         return c.damage;
 

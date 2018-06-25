@@ -149,7 +149,7 @@ class effect {
      * */
     malefic_iii() {
         var potency = 220;
-        var damage = calculate.damageCalculate(this,potency);
+        var damage = calculate.damageCalculate(this, potency,'magic');
         this.battle.damageQue.push({
             'time': 50,
             'name': 'Malefic III',
@@ -162,7 +162,7 @@ class effect {
     combust_ii() {
         this.player.engage = true;
         var potency = 50;
-        var damage = calculate.dotBaseDamageCalculate(this,potency);
+        var damage = calculate.dotBaseDamageCalculate(this,potency,'magic');
         this.player.dot.combust_ii.time = 3000;
         this.player.dot.combust_ii.damage = damage;
         this.player.dot.combust_ii.buff = this.whatBuff();
@@ -251,6 +251,41 @@ class buff {
     }
 }
 
+class autoAttack {
+
+    constructor(data) {
+        // 同步战斗数据
+        this.setting = data.setting;            // 初始化设定
+        this.player = data.player;              // 玩家动态属性
+        this.battle = data.battle;
+        this.log = data.log;
+    }
+
+    aa() {
+        var potency = 110;
+        var damage = calculate.autoAttackCalculate(this, potency);
+        this.battle.damageQue.push({
+            'time': 0,
+            'name': 'Auto Attack',
+            'damage': damage.damage,
+            'crit': damage.crit,
+            'dh': damage.dh,
+            'buff': this.whatBuff()
+        });
+    }
+
+    // 检测有哪些buff存在
+    whatBuff() {
+        var arr = [];
+        for (var k in this.player.buff) {
+            if (this.player.buff[k] > 0) {
+                arr.push(k);
+            }
+        }
+        return arr;
+    }
+}
+
 module.exports = {
 
     'buffCheck': function (data) {
@@ -287,6 +322,11 @@ module.exports = {
             e.lucid_dreaming();
         }
         return e;
+    },
+    'aa': function (data) {
+        var a = new autoAttack(data);
+        a.aa();
+        return a;
     }
 
 };

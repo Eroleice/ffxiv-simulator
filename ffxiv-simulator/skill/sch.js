@@ -256,7 +256,7 @@ class effect {
      * */
     broil_ii() {
         var potency = 230;
-        var damage = calculate.damageCalculate(this, potency);
+        var damage = calculate.damageCalculate(this, potency, 'magic');
         this.battle.damageQue.push({
             'time': 50,
             'name': 'Broil II',
@@ -269,7 +269,7 @@ class effect {
     bio_ii() {
         this.player.engage = true;
         var potency = 35;
-        var damage = calculate.dotBaseDamageCalculate(this, potency);
+        var damage = calculate.dotBaseDamageCalculate(this, potency, 'magic');
         this.player.dot.bio_ii.time = 3000;
         this.player.dot.bio_ii.damage = damage;
         this.player.dot.bio_ii.buff = this.whatBuff();
@@ -284,7 +284,7 @@ class effect {
     }
     ruin_ii() {
         var potency = 100;
-        var damage = calculate.damageCalculate(this, potency);
+        var damage = calculate.damageCalculate(this, potency, 'magic');
         this.battle.damageQue.push({
             'time': 0,
             'name': 'Ruin II',
@@ -296,7 +296,7 @@ class effect {
     }
     miasma() {
         var potency = 20;
-        var damage = calculate.damageCalculate(this, potency);
+        var damage = calculate.damageCalculate(this, potency, 'magic');
         this.battle.skillEffectQue.push({
             'time': 0,
             'name': 'miasma_dot'
@@ -313,7 +313,7 @@ class effect {
     miasma_dot() {
         this.player.engage = true;
         var potency = 35;
-        var damage = calculate.dotBaseDamageCalculate(this, potency);
+        var damage = calculate.dotBaseDamageCalculate(this, potency, 'magic');
         this.player.dot.miasma.time = 2400;
         this.player.dot.miasma.damage = damage;
         this.player.dot.miasma.buff = this.whatBuff();
@@ -328,7 +328,7 @@ class effect {
     }
     miasma_ii() {
         var potency = 100;
-        var damage = calculate.damageCalculate(this, potency);
+        var damage = calculate.damageCalculate(this, potency, 'magic');
         this.battle.skillEffectQue.push({
             'time': 0,
             'name': 'miasma_ii_dot'
@@ -345,7 +345,7 @@ class effect {
     miasma_ii_dot() {
         this.player.engage = true;
         var potency = 25;
-        var damage = calculate.dotBaseDamageCalculate(this, potency);
+        var damage = calculate.dotBaseDamageCalculate(this, potency, 'magic');
         this.player.dot.miasma_ii.time = 1200;
         this.player.dot.miasma_ii.damage = damage;
         this.player.dot.miasma.buff = this.whatBuff();
@@ -361,7 +361,7 @@ class effect {
     shadow_flare() {
         this.player.engage = true;
         var potency = 50;
-        var damage = calculate.dotBaseDamageCalculate(this, potency);
+        var damage = calculate.dotBaseDamageCalculate(this, potency, 'magic');
         this.player.dot.shadow_flare.time = 1500;
         this.player.dot.shadow_flare.damage = damage;
         this.player.dot.shadow_flare.buff = this.whatBuff();
@@ -381,7 +381,7 @@ class effect {
     energy_drain() {
         this.player.resource.mp = Math.min(this.setting.player.mp, this.player.resource.mp + 1200);
         var potency = 150;
-        var damage = calculate.damageCalculate(this, potency);
+        var damage = calculate.damageCalculate(this, potency, 'magic');
         this.battle.damageQue.push({
             'time': 0,
             'name': 'Energy Drain',

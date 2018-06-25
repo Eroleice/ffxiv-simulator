@@ -79,7 +79,7 @@ class Fight {
 
                     /* 伤害计入统计 */
                     this.damageApply(this.battle.damageQue[i]);
-                    this.battle.damageQue.shift();
+                    this.battle.damageQue.splice(i,1);
 
                 }
             }
@@ -109,6 +109,11 @@ class Fight {
                 }
             }
 
+            // 如果没有在读条，进行自动攻击判定
+            if (this.setting.simulate.autoAttack && this.player.engage && this.player.casting == '' && this.player.tick.aa <= 0) {
+                this.doAA();
+            }
+
             // 最优技能判定
             this.battle.skillPriority = this.rotation.whichSkill(this);
 
@@ -116,7 +121,6 @@ class Fight {
             this.battle.abilityPriority = this.rotation.whichAbility(this);
             
             // 如果能使用技能就使用技能
-
             if (this.canSkill()) {
                 if (typeof this.player.opener[0] !== 'undefined' && this.isSkill(this.player.opener[0])) {
                     // 如果起手队列第一个是技能就使用它
@@ -158,7 +162,6 @@ class Fight {
 
     // 所有时间-1毫秒
     tick() {
-        this.battle.tick -= 1;
         this.battle.time -= 1;
         this.allTick(this.player.tick);
         this.allTick(this.player.buff);
@@ -187,6 +190,12 @@ class Fight {
         } else {
             return true;
         }
+    }
+
+    // 自动攻击
+    doAA() {
+        this.update(this.jobSkill.aa(this));
+        this.player.tick.aa = this.setting.player.aa_delay * 100;
     }
 
     // 伤害记录
@@ -244,7 +253,7 @@ class Fight {
             this.player.buff.chain_strategem = 1500;
             this.partyBuffLog('Chain Strategem', 2000);
         }
-        // 学者连环计
+        // 学者异想的流光
         if (this.setting.simulate.partyMember.indexOf('sch') !== -1 && (this.setting.simulate.duration - this.battle.time) % 6000 == 100) {
             this.player.buff.fey_wind = 1500;
             this.partyBuffLog('Fey Wind', 2000);
@@ -268,7 +277,7 @@ class Fight {
             this.player.buff.trick_attack = 1500;
             this.partyBuffLog('Trick Attack', 1500);
         }
-        // 召唤歪风
+        // 迦楼罗歪风
         if (this.setting.simulate.partyMember.indexOf('smn') !== -1 && this.setting.job !== 'smn' && (this.setting.simulate.duration - this.battle.time) % 6000 == 200) {
             this.player.buff.contagion = 1500;
             this.partyBuffLog('Contagion', 1500);
