@@ -18,24 +18,8 @@
     {
         "time": 0,
         "event": "Cast",
-        "name": "Cleric Stance",
+        "name": "Combust II",
         "duration": 0,
-        "resource": {
-            "mp": 20000,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 0,
-        "event": "Buff Apply",
-        "name": "Cleric Stance",
-        "duration": 1500
-    },
-    {
-        "time": 0,
-        "event": "Cast",
-        "name": "Miasma",
-        "duration": 235,
         "resource": {
             "mp": 19400,
             "tp": 1000
@@ -43,46 +27,12 @@
     },
     {
         "time": 0,
-        "event": "Cast",
-        "name": "Bio II",
-        "duration": 0,
-        "resource": {
-            "mp": 18680,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 0,
         "event": "DOT Apply",
-        "name": "Bio II",
-        "base_damage": 985.8000000000001,
-        "duration": 1800,
+        "name": "Combust II",
+        "base_damage": 1362.1000000000001,
+        "duration": 3000,
         "buff": [
             "potion",
-            "cleric_stance",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 0,
-        "event": "Cast",
-        "name": "Energy Drain",
-        "duration": 0,
-        "resource": {
-            "mp": 18680,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 68,
-        "event": "Damage",
-        "name": "Energy Drain",
-        "damage": 5861,
-        "crit": true,
-        "dh": false,
-        "buff": [
-            "potion",
-            "cleric_stance",
             "bard_aura"
         ]
     },
@@ -95,23 +45,22 @@
     {
         "time": 150,
         "event": "DOT Tick",
-        "name": "bio_ii",
-        "damage": 985,
+        "name": "combust_ii",
+        "damage": 1430,
         "crit": false,
         "dh": false,
         "buff": [
             "potion",
-            "cleric_stance",
             "bard_aura"
         ]
     },
     {
         "time": 168,
         "event": "Cast",
-        "name": "Miasma II",
-        "duration": 0,
+        "name": "Malefic III",
+        "duration": 235,
         "resource": {
-            "mp": 18320,
+            "mp": 19200,
             "tp": 1000
         }
     },
@@ -120,45 +69,6 @@
         "event": "Party Buff Apply",
         "name": "Contagion",
         "duration": 1500
-    },
-    {
-        "time": 235,
-        "event": "Cast",
-        "name": "Energy Drain",
-        "duration": 0,
-        "resource": {
-            "mp": 18320,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 236,
-        "event": "Damage",
-        "name": "Miasma II",
-        "damage": 3026,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "potion",
-            "cleric_stance",
-            "bard_aura",
-            "contagion",
-            "hypercharge"
-        ]
-    },
-    {
-        "time": 236,
-        "event": "DOT Apply",
-        "name": "Miasma II",
-        "base_damage": 824.6800000000001,
-        "duration": 1200,
-        "buff": [
-            "potion",
-            "cleric_stance",
-            "bard_aura",
-            "contagion",
-            "hypercharge"
-        ]
     },
     {
         "time": 300,
@@ -171,23 +81,6 @@
         "event": "Party Buff Apply",
         "name": "Foe Requiem",
         "duration": 3300
-    },
-    {
-        "time": 303,
-        "event": "Damage",
-        "name": "Energy Drain",
-        "damage": 5011,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "potion",
-            "cleric_stance",
-            "battle_litany",
-            "foe_requiem",
-            "bard_aura",
-            "contagion",
-            "hypercharge"
-        ]
     },
     {
         "time": 400,
@@ -203,56 +96,51 @@
     },
     {
         "time": 403,
+        "event": "Damage",
+        "name": "Malefic III",
+        "damage": 6722,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "potion",
+            "battle_litany",
+            "foe_requiem",
+            "bard_aura",
+            "contagion",
+            "hypercharge"
+        ]
+    },
+    {
+        "time": 403,
         "event": "Cast",
-        "name": "Miasma II",
-        "duration": 0,
+        "name": "Malefic III",
+        "duration": 235,
         "resource": {
-            "mp": 17840,
+            "mp": 18600,
             "tp": 1000
         }
     },
     {
         "time": 450,
         "event": "DOT Tick",
-        "name": "bio_ii",
-        "damage": 946,
+        "name": "combust_ii",
+        "damage": 1307,
         "crit": false,
         "dh": false,
         "buff": [
             "potion",
-            "cleric_stance",
             "bard_aura"
         ]
     },
     {
-        "time": 450,
-        "event": "DOT Tick",
-        "name": "miasma_ii",
-        "damage": 849,
-        "crit": false,
-        "dh": false,
-        "buff": []
-    },
-    {
-        "time": 470,
-        "event": "Cast",
-        "name": "Chain Strategem",
-        "duration": 0,
-        "resource": {
-            "mp": 18240,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 471,
+        "time": 638,
         "event": "Damage",
-        "name": "Miasma II",
-        "damage": 3339,
+        "name": "Malefic III",
+        "damage": 6915,
         "crit": false,
         "dh": false,
         "buff": [
             "potion",
-            "cleric_stance",
             "battle_litany",
             "dragon_sight",
             "battle_voice",
@@ -263,161 +151,36 @@
         ]
     },
     {
-        "time": 471,
-        "event": "DOT Apply",
-        "name": "Miasma II",
-        "base_damage": 891.46,
-        "duration": 1200,
-        "buff": [
-            "potion",
-            "cleric_stance",
-            "battle_litany",
-            "dragon_sight",
-            "battle_voice",
-            "foe_requiem",
-            "bard_aura",
-            "contagion",
-            "hypercharge"
-        ]
-    },
-    {
-        "time": 537,
-        "event": "Buff Apply",
-        "name": "Chain Strategem",
-        "duration": 1500
-    },
-    {
-        "time": 537,
+        "time": 638,
         "event": "Cast",
-        "name": "Shadow Flare",
-        "duration": 0,
-        "resource": {
-            "mp": 18240,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 604,
-        "event": "DOT Apply",
-        "name": "Shadow Flare",
-        "base_damage": 1787.16,
-        "duration": 1500,
-        "buff": [
-            "chain_strategem",
-            "potion",
-            "cleric_stance",
-            "battle_litany",
-            "dragon_sight",
-            "battle_voice",
-            "foe_requiem",
-            "bard_aura",
-            "contagion",
-            "hypercharge"
-        ]
-    },
-    {
-        "time": 605,
-        "event": "Cast",
-        "name": "Energy Drain",
-        "duration": 0,
-        "resource": {
-            "mp": 18240,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 672,
-        "event": "Cast",
-        "name": "Aether Flow",
-        "duration": 0,
-        "resource": {
-            "mp": 19440,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 673,
-        "event": "Damage",
-        "name": "Energy Drain",
-        "damage": 4806,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "chain_strategem",
-            "potion",
-            "cleric_stance",
-            "battle_litany",
-            "dragon_sight",
-            "battle_voice",
-            "foe_requiem",
-            "bard_aura",
-            "contagion",
-            "hypercharge"
-        ]
-    },
-    {
-        "time": 739,
-        "event": "Cast",
-        "name": "Broil II",
+        "name": "Malefic III",
         "duration": 235,
         "resource": {
-            "mp": 19280,
+            "mp": 18400,
             "tp": 1000
         }
     },
     {
         "time": 750,
         "event": "DOT Tick",
-        "name": "bio_ii",
-        "damage": 995,
-        "crit": false,
-        "dh": false,
+        "name": "combust_ii",
+        "damage": 2563,
+        "crit": true,
+        "dh": true,
         "buff": [
             "potion",
-            "cleric_stance",
             "bard_aura"
         ]
     },
     {
-        "time": 750,
-        "event": "DOT Tick",
-        "name": "miasma_ii",
-        "damage": 873,
-        "crit": false,
-        "dh": false,
-        "buff": []
-    },
-    {
-        "time": 750,
-        "event": "DOT Tick",
-        "name": "shadow_flare",
-        "damage": 1822,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "chain_strategem",
-            "potion",
-            "cleric_stance",
-            "battle_litany",
-            "dragon_sight",
-            "battle_voice",
-            "foe_requiem",
-            "bard_aura",
-            "contagion",
-            "hypercharge"
-        ]
-    },
-    {
-        "time": 974,
+        "time": 873,
         "event": "Damage",
-        "name": "Broil II",
-        "damage": 9591,
-        "crit": false,
+        "name": "Malefic III",
+        "damage": 12896,
+        "crit": true,
         "dh": true,
         "buff": [
-            "chain_strategem",
             "potion",
-            "cleric_stance",
             "battle_litany",
             "dragon_sight",
             "battle_voice",
@@ -428,85 +191,25 @@
         ]
     },
     {
-        "time": 974,
+        "time": 873,
         "event": "Cast",
-        "name": "Energy Drain",
-        "duration": 0,
-        "resource": {
-            "mp": 19680,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 1041,
-        "event": "Cast",
-        "name": "Broil II",
+        "name": "Malefic III",
         "duration": 235,
         "resource": {
-            "mp": 19280,
+            "mp": 18200,
             "tp": 1000
         }
     },
     {
-        "time": 1042,
-        "event": "Damage",
-        "name": "Energy Drain",
-        "damage": 7396,
+        "time": 1050,
+        "event": "DOT Tick",
+        "name": "combust_ii",
+        "damage": 2090,
         "crit": true,
         "dh": false,
         "buff": [
-            "chain_strategem",
             "potion",
-            "cleric_stance",
-            "battle_litany",
-            "dragon_sight",
-            "battle_voice",
-            "foe_requiem",
-            "bard_aura",
-            "contagion",
-            "hypercharge"
-        ]
-    },
-    {
-        "time": 1050,
-        "event": "DOT Tick",
-        "name": "bio_ii",
-        "damage": 975,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "potion",
-            "cleric_stance",
             "bard_aura"
-        ]
-    },
-    {
-        "time": 1050,
-        "event": "DOT Tick",
-        "name": "miasma_ii",
-        "damage": 1661,
-        "crit": true,
-        "dh": true,
-        "buff": []
-    },
-    {
-        "time": 1050,
-        "event": "DOT Tick",
-        "name": "shadow_flare",
-        "damage": 3429,
-        "crit": true,
-        "dh": true,
-        "buff": [
-            "chain_strategem",
-            "potion",
-            "cleric_stance",
-            "battle_litany",
-            "dragon_sight",
-            "battle_voice",
-            "foe_requiem",
-            "bard_aura",
-            "contagion",
-            "hypercharge"
         ]
     },
     {
@@ -516,14 +219,41 @@
         "duration": 1500
     },
     {
-        "time": 1276,
+        "time": 1108,
         "event": "Damage",
-        "name": "Broil II",
-        "damage": 7796,
+        "name": "Malefic III",
+        "damage": 7268,
         "crit": false,
         "dh": false,
         "buff": [
-            "chain_strategem",
+            "potion",
+            "battle_litany",
+            "dragon_sight",
+            "battle_voice",
+            "foe_requiem",
+            "bard_aura",
+            "contagion",
+            "hypercharge"
+        ]
+    },
+    {
+        "time": 1108,
+        "event": "Cast",
+        "name": "Malefic III",
+        "duration": 235,
+        "resource": {
+            "mp": 18000,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 1343,
+        "event": "Damage",
+        "name": "Malefic III",
+        "damage": 7685,
+        "crit": false,
+        "dh": false,
+        "buff": [
             "potion",
             "battle_litany",
             "dragon_sight",
@@ -536,55 +266,25 @@
         ]
     },
     {
-        "time": 1276,
+        "time": 1343,
         "event": "Cast",
-        "name": "Broil II",
+        "name": "Malefic III",
         "duration": 235,
         "resource": {
-            "mp": 18960,
+            "mp": 17400,
             "tp": 1000
         }
     },
     {
         "time": 1350,
         "event": "DOT Tick",
-        "name": "bio_ii",
-        "damage": 1470,
-        "crit": true,
-        "dh": false,
-        "buff": [
-            "potion",
-            "cleric_stance",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 1350,
-        "event": "DOT Tick",
-        "name": "miasma_ii",
-        "damage": 1368,
-        "crit": true,
-        "dh": false,
-        "buff": []
-    },
-    {
-        "time": 1350,
-        "event": "DOT Tick",
-        "name": "shadow_flare",
-        "damage": 1769,
+        "name": "combust_ii",
+        "damage": 1402,
         "crit": false,
         "dh": false,
         "buff": [
-            "chain_strategem",
             "potion",
-            "cleric_stance",
-            "battle_litany",
-            "dragon_sight",
-            "battle_voice",
-            "foe_requiem",
-            "bard_aura",
-            "contagion",
-            "hypercharge"
+            "bard_aura"
         ]
     },
     {
@@ -594,14 +294,13 @@
         "duration": 1500
     },
     {
-        "time": 1511,
+        "time": 1578,
         "event": "Damage",
-        "name": "Broil II",
-        "damage": 8527,
-        "crit": false,
+        "name": "Malefic III",
+        "damage": 11230,
+        "crit": true,
         "dh": false,
         "buff": [
-            "chain_strategem",
             "potion",
             "battle_litany",
             "dragon_sight",
@@ -610,195 +309,41 @@
             "bard_aura",
             "trick_attack",
             "contagion",
-            "hypercharge"
+            "hypercharge",
+            "devotion"
         ]
-    },
-    {
-        "time": 1511,
-        "event": "Cast",
-        "name": "Miasma II",
-        "duration": 0,
-        "resource": {
-            "mp": 17680,
-            "tp": 1000
-        }
     },
     {
         "time": 1578,
         "event": "Cast",
-        "name": "Energy Drain",
-        "duration": 0,
+        "name": "Malefic III",
+        "duration": 235,
         "resource": {
-            "mp": 17680,
+            "mp": 17200,
             "tp": 1000
         }
     },
     {
-        "time": 1579,
-        "event": "Damage",
-        "name": "Miasma II",
-        "damage": 3748,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "chain_strategem",
-            "potion",
-            "battle_litany",
-            "dragon_sight",
-            "battle_voice",
-            "foe_requiem",
-            "bard_aura",
-            "trick_attack",
-            "contagion",
-            "hypercharge",
-            "devotion"
-        ]
-    },
-    {
-        "time": 1579,
-        "event": "DOT Apply",
-        "name": "Miasma II",
-        "base_damage": 952.94,
-        "duration": 1200,
-        "buff": [
-            "chain_strategem",
-            "potion",
-            "battle_litany",
-            "dragon_sight",
-            "battle_voice",
-            "foe_requiem",
-            "bard_aura",
-            "trick_attack",
-            "contagion",
-            "hypercharge",
-            "devotion"
-        ]
-    },
-    {
-        "time": 1646,
-        "event": "Damage",
-        "name": "Energy Drain",
-        "damage": 5514,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "chain_strategem",
-            "potion",
-            "battle_litany",
-            "dragon_sight",
-            "battle_voice",
-            "foe_requiem",
-            "bard_aura",
-            "trick_attack",
-            "contagion",
-            "hypercharge",
-            "devotion"
-        ]
-    },
-    {
         "time": 1650,
         "event": "DOT Tick",
-        "name": "bio_ii",
-        "damage": 1170,
+        "name": "combust_ii",
+        "damage": 1293,
         "crit": false,
+        "dh": false,
+        "buff": [
+            "potion",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 1813,
+        "event": "Damage",
+        "name": "Malefic III",
+        "damage": 13550,
+        "crit": true,
         "dh": true,
         "buff": [
             "potion",
-            "cleric_stance",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 1650,
-        "event": "DOT Tick",
-        "name": "miasma_ii",
-        "damage": 1379,
-        "crit": true,
-        "dh": false,
-        "buff": []
-    },
-    {
-        "time": 1650,
-        "event": "DOT Tick",
-        "name": "shadow_flare",
-        "damage": 1858,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "chain_strategem",
-            "potion",
-            "cleric_stance",
-            "battle_litany",
-            "dragon_sight",
-            "battle_voice",
-            "foe_requiem",
-            "bard_aura",
-            "contagion",
-            "hypercharge"
-        ]
-    },
-    {
-        "time": 1746,
-        "event": "Cast",
-        "name": "Broil II",
-        "duration": 235,
-        "resource": {
-            "mp": 18560,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 1950,
-        "event": "DOT Tick",
-        "name": "bio_ii",
-        "damage": 975,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "potion",
-            "cleric_stance",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 1950,
-        "event": "DOT Tick",
-        "name": "miasma_ii",
-        "damage": 924,
-        "crit": false,
-        "dh": false,
-        "buff": []
-    },
-    {
-        "time": 1950,
-        "event": "DOT Tick",
-        "name": "shadow_flare",
-        "damage": 2508,
-        "crit": true,
-        "dh": false,
-        "buff": [
-            "chain_strategem",
-            "potion",
-            "cleric_stance",
-            "battle_litany",
-            "dragon_sight",
-            "battle_voice",
-            "foe_requiem",
-            "bard_aura",
-            "contagion",
-            "hypercharge"
-        ]
-    },
-    {
-        "time": 1981,
-        "event": "Damage",
-        "name": "Broil II",
-        "damage": 11559,
-        "crit": true,
-        "dh": false,
-        "buff": [
-            "chain_strategem",
-            "potion",
             "battle_litany",
             "dragon_sight",
             "battle_voice",
@@ -810,237 +355,179 @@
         ]
     },
     {
-        "time": 1981,
+        "time": 1813,
         "event": "Cast",
-        "name": "Miasma II",
-        "duration": 0,
+        "name": "Malefic III",
+        "duration": 235,
         "resource": {
-            "mp": 17280,
+            "mp": 17000,
             "tp": 1000
         }
+    },
+    {
+        "time": 1950,
+        "event": "DOT Tick",
+        "name": "combust_ii",
+        "damage": 1362,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "potion",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 2048,
+        "event": "Damage",
+        "name": "Malefic III",
+        "damage": 7127,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "potion",
+            "battle_litany",
+            "dragon_sight",
+            "battle_voice",
+            "foe_requiem",
+            "bard_aura",
+            "trick_attack",
+            "hypercharge",
+            "devotion"
+        ]
     },
     {
         "time": 2048,
         "event": "Cast",
-        "name": "Energy Drain",
-        "duration": 0,
-        "resource": {
-            "mp": 17280,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 2049,
-        "event": "Damage",
-        "name": "Miasma II",
-        "damage": 4886,
-        "crit": true,
-        "dh": false,
-        "buff": [
-            "potion",
-            "battle_litany",
-            "dragon_sight",
-            "battle_voice",
-            "foe_requiem",
-            "bard_aura",
-            "trick_attack",
-            "hypercharge",
-            "devotion"
-        ]
-    },
-    {
-        "time": 2049,
-        "event": "DOT Apply",
-        "name": "Miasma II",
-        "base_damage": 866.0200000000001,
-        "duration": 1200,
-        "buff": [
-            "potion",
-            "battle_litany",
-            "dragon_sight",
-            "battle_voice",
-            "foe_requiem",
-            "bard_aura",
-            "trick_attack",
-            "hypercharge",
-            "devotion"
-        ]
-    },
-    {
-        "time": 2116,
-        "event": "Damage",
-        "name": "Energy Drain",
-        "damage": 6898,
-        "crit": true,
-        "dh": false,
-        "buff": [
-            "potion",
-            "battle_litany",
-            "dragon_sight",
-            "battle_voice",
-            "foe_requiem",
-            "bard_aura",
-            "trick_attack",
-            "hypercharge",
-            "devotion"
-        ]
-    },
-    {
-        "time": 2216,
-        "event": "Cast",
-        "name": "Broil II",
+        "name": "Malefic III",
         "duration": 235,
-        "resource": {
-            "mp": 17760,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 2250,
-        "event": "DOT Tick",
-        "name": "bio_ii",
-        "damage": 1244,
-        "crit": false,
-        "dh": true,
-        "buff": [
-            "potion",
-            "cleric_stance",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 2250,
-        "event": "DOT Tick",
-        "name": "miasma_ii",
-        "damage": 1291,
-        "crit": true,
-        "dh": false,
-        "buff": []
-    },
-    {
-        "time": 2451,
-        "event": "Damage",
-        "name": "Broil II",
-        "damage": 7243,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "potion",
-            "foe_requiem",
-            "bard_aura",
-            "trick_attack",
-            "hypercharge",
-            "devotion"
-        ]
-    },
-    {
-        "time": 2451,
-        "event": "Cast",
-        "name": "Broil II",
-        "duration": 235,
-        "resource": {
-            "mp": 17440,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 2550,
-        "event": "DOT Tick",
-        "name": "bio_ii",
-        "damage": 985,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "potion",
-            "cleric_stance",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 2550,
-        "event": "DOT Tick",
-        "name": "miasma_ii",
-        "damage": 900,
-        "crit": false,
-        "dh": false,
-        "buff": []
-    },
-    {
-        "time": 2686,
-        "event": "Damage",
-        "name": "Broil II",
-        "damage": 6057,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "foe_requiem",
-            "bard_aura",
-            "hypercharge",
-            "devotion"
-        ]
-    },
-    {
-        "time": 2686,
-        "event": "Cast",
-        "name": "Broil II",
-        "duration": 235,
-        "resource": {
-            "mp": 17120,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 2850,
-        "event": "DOT Tick",
-        "name": "bio_ii",
-        "damage": 1484,
-        "crit": true,
-        "dh": false,
-        "buff": [
-            "potion",
-            "cleric_stance",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 2850,
-        "event": "DOT Tick",
-        "name": "miasma_ii",
-        "damage": 857,
-        "crit": false,
-        "dh": false,
-        "buff": []
-    },
-    {
-        "time": 2921,
-        "event": "Damage",
-        "name": "Broil II",
-        "damage": 6302,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "foe_requiem",
-            "bard_aura",
-            "hypercharge",
-            "devotion"
-        ]
-    },
-    {
-        "time": 2921,
-        "event": "Cast",
-        "name": "Bio II",
-        "duration": 0,
         "resource": {
             "mp": 16800,
             "tp": 1000
         }
     },
     {
+        "time": 2250,
+        "event": "DOT Tick",
+        "name": "combust_ii",
+        "damage": 1416,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "potion",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 2283,
+        "event": "Damage",
+        "name": "Malefic III",
+        "damage": 6839,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "potion",
+            "battle_litany",
+            "dragon_sight",
+            "battle_voice",
+            "foe_requiem",
+            "bard_aura",
+            "trick_attack",
+            "hypercharge",
+            "devotion"
+        ]
+    },
+    {
+        "time": 2283,
+        "event": "Cast",
+        "name": "Malefic III",
+        "duration": 235,
+        "resource": {
+            "mp": 16600,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 2518,
+        "event": "Damage",
+        "name": "Malefic III",
+        "damage": 10524,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "potion",
+            "foe_requiem",
+            "bard_aura",
+            "trick_attack",
+            "hypercharge",
+            "devotion"
+        ]
+    },
+    {
+        "time": 2518,
+        "event": "Cast",
+        "name": "Malefic III",
+        "duration": 235,
+        "resource": {
+            "mp": 16000,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 2550,
+        "event": "DOT Tick",
+        "name": "combust_ii",
+        "damage": 1402,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "potion",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 2753,
+        "event": "Damage",
+        "name": "Malefic III",
+        "damage": 8839,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "potion",
+            "foe_requiem",
+            "bard_aura",
+            "hypercharge",
+            "devotion"
+        ]
+    },
+    {
+        "time": 2753,
+        "event": "Cast",
+        "name": "Malefic III",
+        "duration": 235,
+        "resource": {
+            "mp": 15800,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 2850,
+        "event": "DOT Tick",
+        "name": "combust_ii",
+        "damage": 1430,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "potion",
+            "bard_aura"
+        ]
+    },
+    {
         "time": 2988,
-        "event": "DOT Apply",
-        "name": "Bio II",
-        "base_damage": 926.44,
-        "duration": 1800,
+        "event": "Damage",
+        "name": "Malefic III",
+        "damage": 8550,
+        "crit": true,
+        "dh": false,
         "buff": [
             "foe_requiem",
             "bard_aura",
@@ -1050,128 +537,282 @@
     {
         "time": 2988,
         "event": "Cast",
-        "name": "Lucid Dreaming",
+        "name": "Combust II",
         "duration": 0,
         "resource": {
-            "mp": 16800,
+            "mp": 15600,
             "tp": 1000
         }
     },
     {
         "time": 3055,
-        "event": "Buff Apply",
-        "name": "Lucid Dreaming",
-        "duration": 2100
-    },
-    {
-        "time": 3150,
-        "event": "DOT Tick",
-        "name": "bio_ii",
-        "damage": 935,
-        "crit": false,
-        "dh": false,
+        "event": "DOT Apply",
+        "name": "Combust II",
+        "base_damage": 1314.4,
+        "duration": 3000,
         "buff": [
-            "foe_requiem",
-            "bard_aura",
-            "devotion"
-        ]
-    },
-    {
-        "time": 3150,
-        "event": "DOT Tick",
-        "name": "miasma_ii",
-        "damage": 831,
-        "crit": false,
-        "dh": false,
-        "buff": []
-    },
-    {
-        "time": 3156,
-        "event": "Cast",
-        "name": "Broil II",
-        "duration": 235,
-        "resource": {
-            "mp": 17440,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 3391,
-        "event": "Damage",
-        "name": "Broil II",
-        "damage": 5827,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "lucid_dreaming",
             "foe_requiem",
             "bard_aura"
         ]
     },
     {
-        "time": 3391,
+        "time": 3055,
         "event": "Cast",
-        "name": "Broil II",
+        "name": "Cleric Stance",
+        "duration": 0,
+        "resource": {
+            "mp": 15600,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 3122,
+        "event": "Buff Apply",
+        "name": "Cleric Stance",
+        "duration": 1500
+    },
+    {
+        "time": 3122,
+        "event": "Cast",
+        "name": "Lucid Dreaming",
+        "duration": 0,
+        "resource": {
+            "mp": 15600,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 3150,
+        "event": "DOT Tick",
+        "name": "combust_ii",
+        "damage": 1314,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "foe_requiem",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 3189,
+        "event": "Buff Apply",
+        "name": "Lucid Dreaming",
+        "duration": 2100
+    },
+    {
+        "time": 3223,
+        "event": "Cast",
+        "name": "Malefic III",
         "duration": 235,
         "resource": {
-            "mp": 16720,
+            "mp": 15400,
             "tp": 1000
         }
     },
     {
         "time": 3450,
         "event": "DOT Tick",
-        "name": "bio_ii",
-        "damage": 1354,
-        "crit": true,
-        "dh": false,
-        "buff": [
-            "foe_requiem",
-            "bard_aura",
-            "devotion"
-        ]
-    },
-    {
-        "time": 3626,
-        "event": "Damage",
-        "name": "Broil II",
-        "damage": 5941,
+        "name": "combust_ii",
+        "damage": 1340,
         "crit": false,
         "dh": false,
         "buff": [
+            "foe_requiem",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 3458,
+        "event": "Damage",
+        "name": "Malefic III",
+        "damage": 6020,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "cleric_stance",
             "lucid_dreaming",
             "foe_requiem",
             "bard_aura"
         ]
     },
     {
-        "time": 3626,
+        "time": 3458,
         "event": "Cast",
-        "name": "Broil II",
+        "name": "Malefic III",
         "duration": 235,
         "resource": {
-            "mp": 17360,
+            "mp": 16160,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 3693,
+        "event": "Damage",
+        "name": "Malefic III",
+        "damage": 5788,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "cleric_stance",
+            "lucid_dreaming",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 3693,
+        "event": "Cast",
+        "name": "Malefic III",
+        "duration": 235,
+        "resource": {
+            "mp": 15560,
             "tp": 1000
         }
     },
     {
         "time": 3750,
         "event": "DOT Tick",
-        "name": "bio_ii",
-        "damage": 972,
+        "name": "combust_ii",
+        "damage": 1314,
         "crit": false,
         "dh": false,
         "buff": [
             "foe_requiem",
-            "bard_aura",
-            "devotion"
+            "bard_aura"
         ]
     },
     {
-        "time": 3861,
+        "time": 3928,
         "event": "Damage",
-        "name": "Broil II",
-        "damage": 5547,
+        "name": "Malefic III",
+        "damage": 5677,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "cleric_stance",
+            "lucid_dreaming",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 3928,
+        "event": "Cast",
+        "name": "Malefic III",
+        "duration": 235,
+        "resource": {
+            "mp": 16320,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 4050,
+        "event": "DOT Tick",
+        "name": "combust_ii",
+        "damage": 1353,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "foe_requiem",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 4163,
+        "event": "Damage",
+        "name": "Malefic III",
+        "damage": 5343,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "cleric_stance",
+            "lucid_dreaming",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 4163,
+        "event": "Cast",
+        "name": "Malefic III",
+        "duration": 235,
+        "resource": {
+            "mp": 17080,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 4350,
+        "event": "DOT Tick",
+        "name": "combust_ii",
+        "damage": 1301,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "foe_requiem",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 4398,
+        "event": "Damage",
+        "name": "Malefic III",
+        "damage": 5510,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "cleric_stance",
+            "lucid_dreaming",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 4398,
+        "event": "Cast",
+        "name": "Malefic III",
+        "duration": 235,
+        "resource": {
+            "mp": 17840,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 4633,
+        "event": "Damage",
+        "name": "Malefic III",
+        "damage": 5677,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "cleric_stance",
+            "lucid_dreaming",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 4633,
+        "event": "Cast",
+        "name": "Malefic III",
+        "duration": 235,
+        "resource": {
+            "mp": 17240,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 4650,
+        "event": "DOT Tick",
+        "name": "combust_ii",
+        "damage": 1261,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "foe_requiem",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 4868,
+        "event": "Damage",
+        "name": "Malefic III",
+        "damage": 5408,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1180,9 +821,9 @@
         ]
     },
     {
-        "time": 3861,
+        "time": 4868,
         "event": "Cast",
-        "name": "Broil II",
+        "name": "Malefic III",
         "duration": 235,
         "resource": {
             "mp": 18000,
@@ -1190,23 +831,22 @@
         }
     },
     {
-        "time": 4050,
+        "time": 4950,
         "event": "DOT Tick",
-        "name": "bio_ii",
-        "damage": 907,
+        "name": "combust_ii",
+        "damage": 1261,
         "crit": false,
         "dh": false,
         "buff": [
             "foe_requiem",
-            "bard_aura",
-            "devotion"
+            "bard_aura"
         ]
     },
     {
-        "time": 4096,
+        "time": 5103,
         "event": "Damage",
-        "name": "Broil II",
-        "damage": 5325,
+        "name": "Malefic III",
+        "damage": 5248,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1215,101 +855,76 @@
         ]
     },
     {
-        "time": 4096,
+        "time": 5103,
         "event": "Cast",
-        "name": "Broil II",
+        "name": "Malefic III",
         "duration": 235,
         "resource": {
-            "mp": 18640,
+            "mp": 18760,
             "tp": 1000
         }
     },
     {
-        "time": 4331,
-        "event": "Damage",
-        "name": "Broil II",
-        "damage": 5269,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "lucid_dreaming",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 4331,
-        "event": "Cast",
-        "name": "Broil II",
-        "duration": 235,
-        "resource": {
-            "mp": 17920,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 4350,
+        "time": 5250,
         "event": "DOT Tick",
-        "name": "bio_ii",
-        "damage": 898,
+        "name": "combust_ii",
+        "damage": 1960,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "foe_requiem",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 5338,
+        "event": "Damage",
+        "name": "Malefic III",
+        "damage": 5142,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "lucid_dreaming",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 5338,
+        "event": "Cast",
+        "name": "Malefic III",
+        "duration": 235,
+        "resource": {
+            "mp": 19400,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 5550,
+        "event": "DOT Tick",
+        "name": "combust_ii",
+        "damage": 1314,
         "crit": false,
         "dh": false,
         "buff": [
             "foe_requiem",
-            "bard_aura",
-            "devotion"
-        ]
-    },
-    {
-        "time": 4566,
-        "event": "Damage",
-        "name": "Broil II",
-        "damage": 5547,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "lucid_dreaming",
             "bard_aura"
         ]
     },
     {
-        "time": 4566,
-        "event": "Cast",
-        "name": "Broil II",
-        "duration": 235,
-        "resource": {
-            "mp": 18560,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 4650,
-        "event": "DOT Tick",
-        "name": "bio_ii",
-        "damage": 935,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "foe_requiem",
-            "bard_aura",
-            "devotion"
-        ]
-    },
-    {
-        "time": 4801,
+        "time": 5573,
         "event": "Damage",
-        "name": "Broil II",
-        "damage": 5491,
+        "name": "Malefic III",
+        "damage": 5302,
         "crit": false,
         "dh": false,
         "buff": [
-            "lucid_dreaming",
             "bard_aura"
         ]
     },
     {
-        "time": 4801,
+        "time": 5573,
         "event": "Cast",
-        "name": "Broil II",
+        "name": "Malefic III",
         "duration": 235,
         "resource": {
             "mp": 19200,
@@ -1317,58 +932,10 @@
         }
     },
     {
-        "time": 4950,
-        "event": "DOT Tick",
-        "name": "bio_ii",
-        "damage": 1313,
-        "crit": true,
-        "dh": false,
-        "buff": [
-            "foe_requiem",
-            "bard_aura",
-            "devotion"
-        ]
-    },
-    {
-        "time": 5036,
+        "time": 5808,
         "event": "Damage",
-        "name": "Broil II",
-        "damage": 5824,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "lucid_dreaming",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 5036,
-        "event": "Cast",
-        "name": "Broil II",
-        "duration": 235,
-        "resource": {
-            "mp": 19280,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 5250,
-        "event": "DOT Tick",
-        "name": "bio_ii",
-        "damage": 926,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "foe_requiem",
-            "bard_aura",
-            "devotion"
-        ]
-    },
-    {
-        "time": 5271,
-        "event": "Damage",
-        "name": "Broil II",
-        "damage": 5491,
+        "name": "Malefic III",
+        "damage": 5461,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1376,88 +943,32 @@
         ]
     },
     {
-        "time": 5271,
+        "time": 5808,
         "event": "Cast",
-        "name": "Broil II",
+        "name": "Malefic III",
         "duration": 235,
         "resource": {
-            "mp": 18960,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 5506,
-        "event": "Damage",
-        "name": "Broil II",
-        "damage": 5768,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 5506,
-        "event": "Cast",
-        "name": "Broil II",
-        "duration": 235,
-        "resource": {
-            "mp": 18240,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 5550,
-        "event": "DOT Tick",
-        "name": "bio_ii",
-        "damage": 1340,
-        "crit": true,
-        "dh": false,
-        "buff": [
-            "foe_requiem",
-            "bard_aura",
-            "devotion"
-        ]
-    },
-    {
-        "time": 5741,
-        "event": "Damage",
-        "name": "Broil II",
-        "damage": 5380,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 5741,
-        "event": "Cast",
-        "name": "Broil II",
-        "duration": 235,
-        "resource": {
-            "mp": 17920,
+            "mp": 18600,
             "tp": 1000
         }
     },
     {
         "time": 5850,
         "event": "DOT Tick",
-        "name": "bio_ii",
-        "damage": 880,
+        "name": "combust_ii",
+        "damage": 1314,
         "crit": false,
         "dh": false,
         "buff": [
             "foe_requiem",
-            "bard_aura",
-            "devotion"
+            "bard_aura"
         ]
     },
     {
-        "time": 5976,
+        "time": 6043,
         "event": "Damage",
-        "name": "Broil II",
-        "damage": 5657,
+        "name": "Malefic III",
+        "damage": 5302,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1465,21 +976,21 @@
         ]
     },
     {
-        "time": 5976,
+        "time": 6043,
         "event": "Cast",
-        "name": "Bio II",
+        "name": "Combust II",
         "duration": 0,
         "resource": {
-            "mp": 17600,
+            "mp": 18400,
             "tp": 1000
         }
     },
     {
-        "time": 6043,
+        "time": 6110,
         "event": "DOT Apply",
-        "name": "Bio II",
-        "base_damage": 882.98,
-        "duration": 1800,
+        "name": "Combust II",
+        "base_damage": 1277.3,
+        "duration": 3000,
         "buff": [
             "bard_aura"
         ]
@@ -1487,8 +998,8 @@
     {
         "time": 6150,
         "event": "DOT Tick",
-        "name": "bio_ii",
-        "damage": 927,
+        "name": "combust_ii",
+        "damage": 1341,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1502,53 +1013,53 @@
         "duration": 1500
     },
     {
-        "time": 6211,
+        "time": 6278,
         "event": "Cast",
-        "name": "Broil II",
+        "name": "Malefic III",
         "duration": 235,
         "resource": {
-            "mp": 17280,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 6446,
-        "event": "Damage",
-        "name": "Broil II",
-        "damage": 6039,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "contagion"
-        ]
-    },
-    {
-        "time": 6446,
-        "event": "Cast",
-        "name": "Broil II",
-        "duration": 235,
-        "resource": {
-            "mp": 16560,
+            "mp": 18200,
             "tp": 1000
         }
     },
     {
         "time": 6450,
         "event": "DOT Tick",
-        "name": "bio_ii",
-        "damage": 927,
-        "crit": false,
+        "name": "combust_ii",
+        "damage": 1830,
+        "crit": true,
         "dh": false,
         "buff": [
             "bard_aura"
         ]
     },
     {
-        "time": 6681,
+        "time": 6513,
         "event": "Damage",
-        "name": "Broil II",
-        "damage": 5978,
+        "name": "Malefic III",
+        "damage": 8354,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "bard_aura",
+            "contagion"
+        ]
+    },
+    {
+        "time": 6513,
+        "event": "Cast",
+        "name": "Malefic III",
+        "duration": 235,
+        "resource": {
+            "mp": 18000,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 6748,
+        "event": "Damage",
+        "name": "Malefic III",
+        "damage": 6005,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1557,20 +1068,20 @@
         ]
     },
     {
-        "time": 6681,
+        "time": 6748,
         "event": "Cast",
-        "name": "Broil II",
+        "name": "Malefic III",
         "duration": 235,
         "resource": {
-            "mp": 16240,
+            "mp": 17400,
             "tp": 1000
         }
     },
     {
         "time": 6750,
         "event": "DOT Tick",
-        "name": "bio_ii",
-        "damage": 856,
+        "name": "combust_ii",
+        "damage": 1226,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1578,10 +1089,10 @@
         ]
     },
     {
-        "time": 6916,
+        "time": 6983,
         "event": "Damage",
-        "name": "Broil II",
-        "damage": 6222,
+        "name": "Malefic III",
+        "damage": 6122,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1590,20 +1101,20 @@
         ]
     },
     {
-        "time": 6916,
+        "time": 6983,
         "event": "Cast",
-        "name": "Broil II",
+        "name": "Malefic III",
         "duration": 235,
         "resource": {
-            "mp": 15920,
+            "mp": 17200,
             "tp": 1000
         }
     },
     {
         "time": 7050,
         "event": "DOT Tick",
-        "name": "bio_ii",
-        "damage": 918,
+        "name": "combust_ii",
+        "damage": 1264,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1617,10 +1128,10 @@
         "duration": 1500
     },
     {
-        "time": 7151,
+        "time": 7218,
         "event": "Damage",
-        "name": "Broil II",
-        "damage": 6845,
+        "name": "Malefic III",
+        "damage": 6222,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1630,9 +1141,165 @@
         ]
     },
     {
-        "time": 7151,
+        "time": 7218,
         "event": "Cast",
-        "name": "Broil II",
+        "name": "Malefic III",
+        "duration": 235,
+        "resource": {
+            "mp": 17000,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 7350,
+        "event": "DOT Tick",
+        "name": "combust_ii",
+        "damage": 1238,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 7453,
+        "event": "Damage",
+        "name": "Malefic III",
+        "damage": 6222,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura",
+            "trick_attack",
+            "contagion"
+        ]
+    },
+    {
+        "time": 7453,
+        "event": "Cast",
+        "name": "Malefic III",
+        "duration": 235,
+        "resource": {
+            "mp": 16800,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 7650,
+        "event": "DOT Tick",
+        "name": "combust_ii",
+        "damage": 1226,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 7688,
+        "event": "Damage",
+        "name": "Malefic III",
+        "damage": 6286,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura",
+            "trick_attack",
+            "contagion"
+        ]
+    },
+    {
+        "time": 7688,
+        "event": "Cast",
+        "name": "Malefic III",
+        "duration": 235,
+        "resource": {
+            "mp": 16600,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 7923,
+        "event": "Damage",
+        "name": "Malefic III",
+        "damage": 8269,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "bard_aura",
+            "trick_attack"
+        ]
+    },
+    {
+        "time": 7923,
+        "event": "Cast",
+        "name": "Malefic III",
+        "duration": 235,
+        "resource": {
+            "mp": 16000,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 7950,
+        "event": "DOT Tick",
+        "name": "combust_ii",
+        "damage": 1315,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 8158,
+        "event": "Damage",
+        "name": "Malefic III",
+        "damage": 5889,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura",
+            "trick_attack"
+        ]
+    },
+    {
+        "time": 8158,
+        "event": "Cast",
+        "name": "Malefic III",
+        "duration": 235,
+        "resource": {
+            "mp": 15800,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 8250,
+        "event": "DOT Tick",
+        "name": "combust_ii",
+        "damage": 1264,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 8393,
+        "event": "Damage",
+        "name": "Malefic III",
+        "damage": 6064,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura",
+            "trick_attack"
+        ]
+    },
+    {
+        "time": 8393,
+        "event": "Cast",
+        "name": "Malefic III",
         "duration": 235,
         "resource": {
             "mp": 15600,
@@ -1640,166 +1307,10 @@
         }
     },
     {
-        "time": 7350,
-        "event": "DOT Tick",
-        "name": "bio_ii",
-        "damage": 927,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 7386,
-        "event": "Damage",
-        "name": "Broil II",
-        "damage": 6442,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "trick_attack",
-            "contagion"
-        ]
-    },
-    {
-        "time": 7386,
-        "event": "Cast",
-        "name": "Broil II",
-        "duration": 235,
-        "resource": {
-            "mp": 15280,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 7621,
-        "event": "Damage",
-        "name": "Broil II",
-        "damage": 7046,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "trick_attack",
-            "contagion"
-        ]
-    },
-    {
-        "time": 7621,
-        "event": "Cast",
-        "name": "Broil II",
-        "duration": 235,
-        "resource": {
-            "mp": 14560,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 7650,
-        "event": "DOT Tick",
-        "name": "bio_ii",
-        "damage": 927,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 7856,
-        "event": "Damage",
-        "name": "Broil II",
-        "damage": 5795,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "trick_attack"
-        ]
-    },
-    {
-        "time": 7856,
-        "event": "Cast",
-        "name": "Broil II",
-        "duration": 235,
-        "resource": {
-            "mp": 14240,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 7950,
-        "event": "DOT Tick",
-        "name": "bio_ii",
-        "damage": 918,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 8091,
-        "event": "Damage",
-        "name": "Broil II",
-        "damage": 6039,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "trick_attack"
-        ]
-    },
-    {
-        "time": 8091,
-        "event": "Cast",
-        "name": "Broil II",
-        "duration": 235,
-        "resource": {
-            "mp": 13920,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 8250,
-        "event": "DOT Tick",
-        "name": "bio_ii",
-        "damage": 891,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 8326,
-        "event": "Damage",
-        "name": "Broil II",
-        "damage": 9185,
-        "crit": true,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "trick_attack"
-        ]
-    },
-    {
-        "time": 8326,
-        "event": "Cast",
-        "name": "Broil II",
-        "duration": 235,
-        "resource": {
-            "mp": 13600,
-            "tp": 1000
-        }
-    },
-    {
         "time": 8550,
         "event": "DOT Tick",
-        "name": "bio_ii",
-        "damage": 856,
+        "name": "combust_ii",
+        "damage": 1264,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1807,11 +1318,11 @@
         ]
     },
     {
-        "time": 8561,
+        "time": 8628,
         "event": "Damage",
-        "name": "Broil II",
-        "damage": 9096,
-        "crit": true,
+        "name": "Malefic III",
+        "damage": 5597,
+        "crit": false,
         "dh": false,
         "buff": [
             "bard_aura",
@@ -1819,41 +1330,20 @@
         ]
     },
     {
-        "time": 8561,
+        "time": 8628,
         "event": "Cast",
-        "name": "Broil II",
+        "name": "Malefic III",
         "duration": 235,
         "resource": {
-            "mp": 13280,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 8796,
-        "event": "Damage",
-        "name": "Broil II",
-        "damage": 8028,
-        "crit": true,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 8796,
-        "event": "Cast",
-        "name": "Broil II",
-        "duration": 235,
-        "resource": {
-            "mp": 12560,
+            "mp": 15400,
             "tp": 1000
         }
     },
     {
         "time": 8850,
         "event": "DOT Tick",
-        "name": "bio_ii",
-        "damage": 856,
+        "name": "combust_ii",
+        "damage": 1264,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1861,10 +1351,10 @@
         ]
     },
     {
-        "time": 9031,
+        "time": 8863,
         "event": "Damage",
-        "name": "Broil II",
-        "damage": 5824,
+        "name": "Malefic III",
+        "damage": 5248,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1872,99 +1362,61 @@
         ]
     },
     {
-        "time": 9031,
+        "time": 8863,
         "event": "Cast",
-        "name": "Bio II",
-        "duration": 0,
-        "resource": {
-            "mp": 12240,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 9098,
-        "event": "DOT Apply",
-        "name": "Bio II",
-        "base_damage": 882.98,
-        "duration": 1800,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 9098,
-        "event": "Cast",
-        "name": "Cleric Stance",
-        "duration": 0,
-        "resource": {
-            "mp": 12240,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 9150,
-        "event": "DOT Tick",
-        "name": "bio_ii",
-        "damage": 918,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 9165,
-        "event": "Buff Apply",
-        "name": "Cleric Stance",
-        "duration": 1500
-    },
-    {
-        "time": 9165,
-        "event": "Cast",
-        "name": "Aether Flow",
-        "duration": 0,
-        "resource": {
-            "mp": 12640,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 9232,
-        "event": "Cast",
-        "name": "Energy Drain",
-        "duration": 0,
-        "resource": {
-            "mp": 14640,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 9299,
-        "event": "Cast",
-        "name": "Broil II",
+        "name": "Malefic III",
         "duration": 235,
         "resource": {
-            "mp": 15120,
+            "mp": 15200,
             "tp": 1000
         }
     },
     {
-        "time": 9300,
+        "time": 9098,
         "event": "Damage",
-        "name": "Energy Drain",
-        "damage": 3610,
+        "name": "Malefic III",
+        "damage": 5514,
         "crit": false,
         "dh": false,
         "buff": [
-            "cleric_stance",
             "bard_aura"
         ]
+    },
+    {
+        "time": 9098,
+        "event": "Cast",
+        "name": "Combust II",
+        "duration": 0,
+        "resource": {
+            "mp": 14600,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 9165,
+        "event": "DOT Apply",
+        "name": "Combust II",
+        "base_damage": 1277.3,
+        "duration": 3000,
+        "buff": [
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 9333,
+        "event": "Cast",
+        "name": "Malefic III",
+        "duration": 235,
+        "resource": {
+            "mp": 14400,
+            "tp": 1000
+        }
     },
     {
         "time": 9450,
         "event": "DOT Tick",
-        "name": "bio_ii",
-        "damage": 900,
+        "name": "combust_ii",
+        "damage": 1315,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1972,451 +1424,244 @@
         ]
     },
     {
-        "time": 9534,
+        "time": 9568,
         "event": "Damage",
-        "name": "Broil II",
-        "damage": 8940,
+        "name": "Malefic III",
+        "damage": 5408,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 9568,
+        "event": "Cast",
+        "name": "Malefic III",
+        "duration": 235,
+        "resource": {
+            "mp": 14200,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 9750,
+        "event": "DOT Tick",
+        "name": "combust_ii",
+        "damage": 1226,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 9803,
+        "event": "Damage",
+        "name": "Malefic III",
+        "damage": 5567,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 9803,
+        "event": "Cast",
+        "name": "Malefic III",
+        "duration": 235,
+        "resource": {
+            "mp": 14000,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 10038,
+        "event": "Damage",
+        "name": "Malefic III",
+        "damage": 5195,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 10038,
+        "event": "Cast",
+        "name": "Malefic III",
+        "duration": 235,
+        "resource": {
+            "mp": 13400,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 10050,
+        "event": "DOT Tick",
+        "name": "combust_ii",
+        "damage": 1328,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 10273,
+        "event": "Damage",
+        "name": "Malefic III",
+        "damage": 5089,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 10273,
+        "event": "Cast",
+        "name": "Malefic III",
+        "duration": 235,
+        "resource": {
+            "mp": 13200,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 10350,
+        "event": "DOT Tick",
+        "name": "combust_ii",
+        "damage": 1328,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 10508,
+        "event": "Damage",
+        "name": "Malefic III",
+        "damage": 5036,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 10508,
+        "event": "Cast",
+        "name": "Malefic III",
+        "duration": 235,
+        "resource": {
+            "mp": 13000,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 10650,
+        "event": "DOT Tick",
+        "name": "combust_ii",
+        "damage": 1238,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 10743,
+        "event": "Damage",
+        "name": "Malefic III",
+        "damage": 8139,
         "crit": true,
         "dh": false,
         "buff": [
-            "cleric_stance",
             "bard_aura"
         ]
     },
     {
-        "time": 9534,
+        "time": 10743,
         "event": "Cast",
-        "name": "Miasma II",
-        "duration": 0,
-        "resource": {
-            "mp": 13840,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 9601,
-        "event": "Cast",
-        "name": "Energy Drain",
-        "duration": 0,
-        "resource": {
-            "mp": 13840,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 9602,
-        "event": "Damage",
-        "name": "Miasma II",
-        "damage": 2582,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "cleric_stance",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 9602,
-        "event": "DOT Apply",
-        "name": "Miasma II",
-        "base_damage": 668.86,
-        "duration": 1200,
-        "buff": [
-            "cleric_stance",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 9668,
-        "event": "Cast",
-        "name": "Shadow Flare",
-        "duration": 0,
-        "resource": {
-            "mp": 15040,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 9669,
-        "event": "Damage",
-        "name": "Energy Drain",
-        "damage": 3839,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "cleric_stance",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 9735,
-        "event": "DOT Apply",
-        "name": "Shadow Flare",
-        "base_damage": 1339.8400000000001,
-        "duration": 1500,
-        "buff": [
-            "cleric_stance",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 9750,
-        "event": "DOT Tick",
-        "name": "bio_ii",
-        "damage": 838,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 9750,
-        "event": "DOT Tick",
-        "name": "miasma_ii",
-        "damage": 682,
-        "crit": false,
-        "dh": false,
-        "buff": []
-    },
-    {
-        "time": 9750,
-        "event": "DOT Tick",
-        "name": "shadow_flare",
-        "damage": 1366,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "cleric_stance",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 9769,
-        "event": "Cast",
-        "name": "Broil II",
+        "name": "Malefic III",
         "duration": 235,
         "resource": {
-            "mp": 14720,
+            "mp": 12800,
             "tp": 1000
         }
     },
     {
-        "time": 10004,
-        "event": "Damage",
-        "name": "Broil II",
-        "damage": 6056,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "cleric_stance",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 10004,
-        "event": "Cast",
-        "name": "Miasma II",
-        "duration": 0,
-        "resource": {
-            "mp": 13040,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 10050,
+        "time": 10950,
         "event": "DOT Tick",
-        "name": "bio_ii",
-        "damage": 847,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 10050,
-        "event": "DOT Tick",
-        "name": "miasma_ii",
-        "damage": 662,
-        "crit": false,
-        "dh": false,
-        "buff": []
-    },
-    {
-        "time": 10050,
-        "event": "DOT Tick",
-        "name": "shadow_flare",
-        "damage": 1326,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "cleric_stance",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 10071,
-        "event": "Cast",
-        "name": "Energy Drain",
-        "duration": 0,
-        "resource": {
-            "mp": 13440,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 10072,
-        "event": "Damage",
-        "name": "Miasma II",
-        "damage": 3775,
+        "name": "combust_ii",
+        "damage": 1830,
         "crit": true,
         "dh": false,
         "buff": [
-            "cleric_stance",
             "bard_aura"
         ]
     },
     {
-        "time": 10072,
-        "event": "DOT Apply",
-        "name": "Miasma II",
-        "base_damage": 668.86,
-        "duration": 1200,
-        "buff": [
-            "cleric_stance",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 10139,
+        "time": 10978,
         "event": "Damage",
-        "name": "Energy Drain",
-        "damage": 3991,
+        "name": "Malefic III",
+        "damage": 5567,
         "crit": false,
         "dh": false,
         "buff": [
-            "cleric_stance",
             "bard_aura"
         ]
     },
     {
-        "time": 10239,
+        "time": 10978,
         "event": "Cast",
-        "name": "Broil II",
+        "name": "Malefic III",
         "duration": 235,
         "resource": {
-            "mp": 13920,
+            "mp": 12600,
             "tp": 1000
         }
     },
     {
-        "time": 10350,
-        "event": "DOT Tick",
-        "name": "bio_ii",
-        "damage": 900,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 10350,
-        "event": "DOT Tick",
-        "name": "miasma_ii",
-        "damage": 702,
-        "crit": false,
-        "dh": false,
-        "buff": []
-    },
-    {
-        "time": 10350,
-        "event": "DOT Tick",
-        "name": "shadow_flare",
-        "damage": 1380,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "cleric_stance",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 10474,
+        "time": 11213,
         "event": "Damage",
-        "name": "Broil II",
-        "damage": 5591,
+        "name": "Malefic III",
+        "damage": 5514,
         "crit": false,
         "dh": false,
         "buff": [
-            "cleric_stance",
             "bard_aura"
         ]
     },
     {
-        "time": 10474,
+        "time": 11213,
         "event": "Cast",
-        "name": "Broil II",
+        "name": "Malefic III",
         "duration": 235,
         "resource": {
-            "mp": 13600,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 10650,
-        "event": "DOT Tick",
-        "name": "bio_ii",
-        "damage": 909,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 10650,
-        "event": "DOT Tick",
-        "name": "miasma_ii",
-        "damage": 675,
-        "crit": false,
-        "dh": false,
-        "buff": []
-    },
-    {
-        "time": 10650,
-        "event": "DOT Tick",
-        "name": "shadow_flare",
-        "damage": 1272,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "cleric_stance",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 10709,
-        "event": "Damage",
-        "name": "Broil II",
-        "damage": 5532,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "cleric_stance",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 10709,
-        "event": "Cast",
-        "name": "Broil II",
-        "duration": 235,
-        "resource": {
-            "mp": 13280,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 10944,
-        "event": "Damage",
-        "name": "Broil II",
-        "damage": 5491,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 10944,
-        "event": "Cast",
-        "name": "Broil II",
-        "duration": 235,
-        "resource": {
-            "mp": 12560,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 10950,
-        "event": "DOT Tick",
-        "name": "bio_ii",
-        "damage": 856,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 10950,
-        "event": "DOT Tick",
-        "name": "miasma_ii",
-        "damage": 642,
-        "crit": false,
-        "dh": false,
-        "buff": []
-    },
-    {
-        "time": 10950,
-        "event": "DOT Tick",
-        "name": "shadow_flare",
-        "damage": 1326,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "cleric_stance",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 11179,
-        "event": "Damage",
-        "name": "Broil II",
-        "damage": 5713,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 11179,
-        "event": "Cast",
-        "name": "Broil II",
-        "duration": 235,
-        "resource": {
-            "mp": 12240,
+            "mp": 12000,
             "tp": 1000
         }
     },
     {
         "time": 11250,
         "event": "DOT Tick",
-        "name": "bio_ii",
-        "damage": 1265,
-        "crit": true,
+        "name": "combust_ii",
+        "damage": 1315,
+        "crit": false,
         "dh": false,
         "buff": [
             "bard_aura"
         ]
     },
     {
-        "time": 11250,
-        "event": "DOT Tick",
-        "name": "miasma_ii",
-        "damage": 655,
-        "crit": false,
-        "dh": false,
-        "buff": []
-    },
-    {
-        "time": 11414,
+        "time": 11448,
         "event": "Damage",
-        "name": "Broil II",
-        "damage": 5713,
+        "name": "Malefic III",
+        "damage": 5036,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2424,20 +1669,20 @@
         ]
     },
     {
-        "time": 11414,
+        "time": 11448,
         "event": "Cast",
-        "name": "Broil II",
+        "name": "Malefic III",
         "duration": 235,
         "resource": {
-            "mp": 11920,
+            "mp": 11800,
             "tp": 1000
         }
     },
     {
         "time": 11550,
         "event": "DOT Tick",
-        "name": "bio_ii",
-        "damage": 1278,
+        "name": "combust_ii",
+        "damage": 1867,
         "crit": true,
         "dh": false,
         "buff": [
@@ -2445,10 +1690,10 @@
         ]
     },
     {
-        "time": 11649,
+        "time": 11683,
         "event": "Damage",
-        "name": "Broil II",
-        "damage": 5602,
+        "name": "Malefic III",
+        "damage": 5142,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2456,9 +1701,9 @@
         ]
     },
     {
-        "time": 11649,
+        "time": 11683,
         "event": "Cast",
-        "name": "Broil II",
+        "name": "Malefic III",
         "duration": 235,
         "resource": {
             "mp": 11600,
@@ -2468,8 +1713,8 @@
     {
         "time": 11850,
         "event": "DOT Tick",
-        "name": "bio_ii",
-        "damage": 847,
+        "name": "combust_ii",
+        "damage": 1264,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2477,10 +1722,10 @@
         ]
     },
     {
-        "time": 11884,
+        "time": 11918,
         "event": "Damage",
-        "name": "Broil II",
-        "damage": 5657,
+        "name": "Malefic III",
+        "damage": 5089,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2488,12 +1733,12 @@
         ]
     },
     {
-        "time": 11884,
+        "time": 11918,
         "event": "Cast",
-        "name": "Broil II",
+        "name": "Malefic III",
         "duration": 235,
         "resource": {
-            "mp": 11280,
+            "mp": 11400,
             "tp": 1000
         }
     },
@@ -2504,10 +1749,10 @@
         "duration": 2800
     },
     {
-        "time": 12119,
-        "event": "Damage",
-        "name": "Broil II",
-        "damage": 5380,
+        "time": 12150,
+        "event": "DOT Tick",
+        "name": "combust_ii",
+        "damage": 1341,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2515,25 +1760,26 @@
         ]
     },
     {
-        "time": 12119,
-        "event": "Cast",
-        "name": "Bio II",
-        "duration": 0,
-        "resource": {
-            "mp": 10560,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 12186,
-        "event": "DOT Apply",
-        "name": "Bio II",
-        "base_damage": 926.44,
-        "duration": 1800,
+        "time": 12153,
+        "event": "Damage",
+        "name": "Malefic III",
+        "damage": 5566,
+        "crit": false,
+        "dh": false,
         "buff": [
             "bard_aura",
             "hypercharge"
         ]
+    },
+    {
+        "time": 12153,
+        "event": "Cast",
+        "name": "Combust II",
+        "duration": 0,
+        "resource": {
+            "mp": 11200,
+            "tp": 1000
+        }
     },
     {
         "time": 12200,
@@ -2542,12 +1788,40 @@
         "duration": 1500
     },
     {
-        "time": 12354,
+        "time": 12220,
+        "event": "DOT Apply",
+        "name": "Combust II",
+        "base_damage": 1474.46,
+        "duration": 3000,
+        "buff": [
+            "bard_aura",
+            "contagion",
+            "hypercharge"
+        ]
+    },
+    {
+        "time": 12220,
         "event": "Cast",
-        "name": "Broil II",
+        "name": "Cleric Stance",
+        "duration": 0,
+        "resource": {
+            "mp": 11200,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 12287,
+        "event": "Buff Apply",
+        "name": "Cleric Stance",
+        "duration": 1500
+    },
+    {
+        "time": 12388,
+        "event": "Cast",
+        "name": "Malefic III",
         "duration": 235,
         "resource": {
-            "mp": 10240,
+            "mp": 10600,
             "tp": 1000
         }
     },
@@ -2560,23 +1834,25 @@
     {
         "time": 12450,
         "event": "DOT Tick",
-        "name": "bio_ii",
-        "damage": 935,
+        "name": "combust_ii",
+        "damage": 1489,
         "crit": false,
         "dh": false,
         "buff": [
             "bard_aura",
+            "contagion",
             "hypercharge"
         ]
     },
     {
-        "time": 12589,
+        "time": 12623,
         "event": "Damage",
-        "name": "Broil II",
-        "damage": 7062,
-        "crit": false,
+        "name": "Malefic III",
+        "damage": 9871,
+        "crit": true,
         "dh": false,
         "buff": [
+            "cleric_stance",
             "dragon_sight",
             "bard_aura",
             "contagion",
@@ -2584,35 +1860,37 @@
         ]
     },
     {
-        "time": 12589,
+        "time": 12623,
         "event": "Cast",
-        "name": "Broil II",
+        "name": "Malefic III",
         "duration": 235,
         "resource": {
-            "mp": 9920,
+            "mp": 10400,
             "tp": 1000
         }
     },
     {
         "time": 12750,
         "event": "DOT Tick",
-        "name": "bio_ii",
-        "damage": 889,
+        "name": "combust_ii",
+        "damage": 1503,
         "crit": false,
         "dh": false,
         "buff": [
             "bard_aura",
+            "contagion",
             "hypercharge"
         ]
     },
     {
-        "time": 12824,
+        "time": 12858,
         "event": "Damage",
-        "name": "Broil II",
-        "damage": 6793,
+        "name": "Malefic III",
+        "damage": 6887,
         "crit": false,
         "dh": false,
         "buff": [
+            "cleric_stance",
             "dragon_sight",
             "bard_aura",
             "contagion",
@@ -2620,35 +1898,37 @@
         ]
     },
     {
-        "time": 12824,
+        "time": 12858,
         "event": "Cast",
-        "name": "Broil II",
+        "name": "Malefic III",
         "duration": 235,
         "resource": {
-            "mp": 9600,
+            "mp": 10200,
             "tp": 1000
         }
     },
     {
         "time": 13050,
         "event": "DOT Tick",
-        "name": "bio_ii",
-        "damage": 917,
+        "name": "combust_ii",
+        "damage": 1444,
         "crit": false,
         "dh": false,
         "buff": [
             "bard_aura",
+            "contagion",
             "hypercharge"
         ]
     },
     {
-        "time": 13059,
+        "time": 13093,
         "event": "Damage",
-        "name": "Broil II",
-        "damage": 6456,
+        "name": "Malefic III",
+        "damage": 6684,
         "crit": false,
         "dh": false,
         "buff": [
+            "cleric_stance",
             "dragon_sight",
             "bard_aura",
             "contagion",
@@ -2656,12 +1936,12 @@
         ]
     },
     {
-        "time": 13059,
+        "time": 13093,
         "event": "Cast",
-        "name": "Broil II",
+        "name": "Malefic III",
         "duration": 235,
         "resource": {
-            "mp": 9280,
+            "mp": 10000,
             "tp": 1000
         }
     },
@@ -2672,13 +1952,14 @@
         "duration": 1500
     },
     {
-        "time": 13294,
+        "time": 13328,
         "event": "Damage",
-        "name": "Broil II",
-        "damage": 7399,
+        "name": "Malefic III",
+        "damage": 7426,
         "crit": false,
         "dh": false,
         "buff": [
+            "cleric_stance",
             "dragon_sight",
             "bard_aura",
             "trick_attack",
@@ -2687,24 +1968,25 @@
         ]
     },
     {
-        "time": 13294,
+        "time": 13328,
         "event": "Cast",
-        "name": "Broil II",
+        "name": "Malefic III",
         "duration": 235,
         "resource": {
-            "mp": 8560,
+            "mp": 9400,
             "tp": 1000
         }
     },
     {
         "time": 13350,
         "event": "DOT Tick",
-        "name": "bio_ii",
-        "damage": 889,
+        "name": "combust_ii",
+        "damage": 1533,
         "crit": false,
         "dh": false,
         "buff": [
             "bard_aura",
+            "contagion",
             "hypercharge"
         ]
     },
@@ -2715,620 +1997,26 @@
         "duration": 1500
     },
     {
-        "time": 13529,
+        "time": 13563,
         "event": "Damage",
-        "name": "Broil II",
-        "damage": 11250,
-        "crit": true,
+        "name": "Malefic III",
+        "damage": 7726,
+        "crit": false,
         "dh": false,
         "buff": [
+            "cleric_stance",
             "dragon_sight",
             "bard_aura",
             "trick_attack",
             "contagion",
-            "hypercharge"
-        ]
-    },
-    {
-        "time": 13529,
-        "event": "Cast",
-        "name": "Broil II",
-        "duration": 235,
-        "resource": {
-            "mp": 8240,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 13650,
-        "event": "DOT Tick",
-        "name": "bio_ii",
-        "damage": 944,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "hypercharge"
-        ]
-    },
-    {
-        "time": 13764,
-        "event": "Damage",
-        "name": "Broil II",
-        "damage": 6723,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "dragon_sight",
-            "bard_aura",
-            "trick_attack",
             "hypercharge",
             "devotion"
         ]
     },
     {
-        "time": 13764,
+        "time": 13563,
         "event": "Cast",
-        "name": "Broil II",
-        "duration": 235,
-        "resource": {
-            "mp": 7920,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 13950,
-        "event": "DOT Tick",
-        "name": "bio_ii",
-        "damage": 880,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "hypercharge"
-        ]
-    },
-    {
-        "time": 13999,
-        "event": "Damage",
-        "name": "Broil II",
-        "damage": 10331,
-        "crit": true,
-        "dh": false,
-        "buff": [
-            "dragon_sight",
-            "bard_aura",
-            "trick_attack",
-            "hypercharge",
-            "devotion"
-        ]
-    },
-    {
-        "time": 13999,
-        "event": "Cast",
-        "name": "Broil II",
-        "duration": 235,
-        "resource": {
-            "mp": 7600,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 14234,
-        "event": "Damage",
-        "name": "Broil II",
-        "damage": 7066,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "dragon_sight",
-            "bard_aura",
-            "trick_attack",
-            "hypercharge",
-            "devotion"
-        ]
-    },
-    {
-        "time": 14234,
-        "event": "Cast",
-        "name": "Broil II",
-        "duration": 235,
-        "resource": {
-            "mp": 6880,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 14250,
-        "event": "DOT Tick",
-        "name": "bio_ii",
-        "damage": 972,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "hypercharge"
-        ]
-    },
-    {
-        "time": 14469,
-        "event": "Damage",
-        "name": "Broil II",
-        "damage": 6598,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "trick_attack",
-            "hypercharge",
-            "devotion"
-        ]
-    },
-    {
-        "time": 14469,
-        "event": "Cast",
-        "name": "Broil II",
-        "duration": 235,
-        "resource": {
-            "mp": 6560,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 14550,
-        "event": "DOT Tick",
-        "name": "bio_ii",
-        "damage": 917,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "hypercharge"
-        ]
-    },
-    {
-        "time": 14704,
-        "event": "Damage",
-        "name": "Broil II",
-        "damage": 5642,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "hypercharge",
-            "devotion"
-        ]
-    },
-    {
-        "time": 14704,
-        "event": "Cast",
-        "name": "Broil II",
-        "duration": 235,
-        "resource": {
-            "mp": 6240,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 14850,
-        "event": "DOT Tick",
-        "name": "bio_ii",
-        "damage": 926,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "hypercharge"
-        ]
-    },
-    {
-        "time": 14939,
-        "event": "Damage",
-        "name": "Broil II",
-        "damage": 5939,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "hypercharge",
-            "devotion"
-        ]
-    },
-    {
-        "time": 14939,
-        "event": "Cast",
-        "name": "Broil II",
-        "duration": 235,
-        "resource": {
-            "mp": 5920,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 15150,
-        "event": "DOT Tick",
-        "name": "bio_ii",
-        "damage": 889,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "hypercharge"
-        ]
-    },
-    {
-        "time": 15174,
-        "event": "Damage",
-        "name": "Broil II",
-        "damage": 7785,
-        "crit": true,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 15174,
-        "event": "Cast",
-        "name": "Bio II",
-        "duration": 0,
-        "resource": {
-            "mp": 5600,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 15241,
-        "event": "DOT Apply",
-        "name": "Bio II",
-        "base_damage": 882.98,
-        "duration": 1800,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 15241,
-        "event": "Cast",
-        "name": "Chain Strategem",
-        "duration": 0,
-        "resource": {
-            "mp": 5600,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 15308,
-        "event": "Buff Apply",
-        "name": "Chain Strategem",
-        "duration": 1500
-    },
-    {
-        "time": 15308,
-        "event": "Cast",
-        "name": "Aether Flow",
-        "duration": 0,
-        "resource": {
-            "mp": 5600,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 15375,
-        "event": "Cast",
-        "name": "Energy Drain",
-        "duration": 0,
-        "resource": {
-            "mp": 7600,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 15442,
-        "event": "Cast",
-        "name": "Broil II",
-        "duration": 235,
-        "resource": {
-            "mp": 8080,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 15443,
-        "event": "Damage",
-        "name": "Energy Drain",
-        "damage": 5504,
-        "crit": true,
-        "dh": false,
-        "buff": [
-            "chain_strategem",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 15450,
-        "event": "DOT Tick",
-        "name": "bio_ii",
-        "damage": 1239,
-        "crit": true,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 15677,
-        "event": "Damage",
-        "name": "Broil II",
-        "damage": 5325,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "chain_strategem",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 15677,
-        "event": "Cast",
-        "name": "Miasma II",
-        "duration": 0,
-        "resource": {
-            "mp": 6800,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 15744,
-        "event": "Cast",
-        "name": "Energy Drain",
-        "duration": 0,
-        "resource": {
-            "mp": 6800,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 15745,
-        "event": "Damage",
-        "name": "Miasma II",
-        "damage": 3596,
-        "crit": true,
-        "dh": false,
-        "buff": [
-            "chain_strategem",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 15745,
-        "event": "DOT Apply",
-        "name": "Miasma II",
-        "base_damage": 637.0600000000001,
-        "duration": 1200,
-        "buff": [
-            "chain_strategem",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 15750,
-        "event": "DOT Tick",
-        "name": "bio_ii",
-        "damage": 856,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 15750,
-        "event": "DOT Tick",
-        "name": "miasma_ii",
-        "damage": 894,
-        "crit": true,
-        "dh": false,
-        "buff": []
-    },
-    {
-        "time": 15811,
-        "event": "Cast",
-        "name": "Shadow Flare",
-        "duration": 0,
-        "resource": {
-            "mp": 8400,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 15812,
-        "event": "Damage",
-        "name": "Energy Drain",
-        "damage": 3547,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "chain_strategem",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 15878,
-        "event": "DOT Apply",
-        "name": "Shadow Flare",
-        "base_damage": 1277.3,
-        "duration": 1500,
-        "buff": [
-            "chain_strategem",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 15878,
-        "event": "Cast",
-        "name": "Lucid Dreaming",
-        "duration": 0,
-        "resource": {
-            "mp": 8400,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 15945,
-        "event": "Buff Apply",
-        "name": "Lucid Dreaming",
-        "duration": 2100
-    },
-    {
-        "time": 15945,
-        "event": "Cast",
-        "name": "Broil II",
-        "duration": 235,
-        "resource": {
-            "mp": 7680,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 16050,
-        "event": "DOT Tick",
-        "name": "bio_ii",
-        "damage": 1290,
-        "crit": true,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 16050,
-        "event": "DOT Tick",
-        "name": "miasma_ii",
-        "damage": 643,
-        "crit": false,
-        "dh": false,
-        "buff": []
-    },
-    {
-        "time": 16050,
-        "event": "DOT Tick",
-        "name": "shadow_flare",
-        "damage": 1238,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "chain_strategem",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 16180,
-        "event": "Damage",
-        "name": "Broil II",
-        "damage": 5325,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "chain_strategem",
-            "lucid_dreaming",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 16180,
-        "event": "Cast",
-        "name": "Miasma II",
-        "duration": 0,
-        "resource": {
-            "mp": 7360,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 16247,
-        "event": "Cast",
-        "name": "Energy Drain",
-        "duration": 0,
-        "resource": {
-            "mp": 7360,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 16248,
-        "event": "Damage",
-        "name": "Miasma II",
-        "damage": 2436,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "chain_strategem",
-            "lucid_dreaming",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 16248,
-        "event": "DOT Apply",
-        "name": "Miasma II",
-        "base_damage": 637.0600000000001,
-        "duration": 1200,
-        "buff": [
-            "chain_strategem",
-            "lucid_dreaming",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 16315,
-        "event": "Damage",
-        "name": "Energy Drain",
-        "damage": 5133,
-        "crit": true,
-        "dh": false,
-        "buff": [
-            "chain_strategem",
-            "lucid_dreaming",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 16350,
-        "event": "DOT Tick",
-        "name": "bio_ii",
-        "damage": 1265,
-        "crit": true,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 16350,
-        "event": "DOT Tick",
-        "name": "miasma_ii",
-        "damage": 649,
-        "crit": false,
-        "dh": false,
-        "buff": []
-    },
-    {
-        "time": 16350,
-        "event": "DOT Tick",
-        "name": "shadow_flare",
-        "damage": 1886,
-        "crit": true,
-        "dh": false,
-        "buff": [
-            "chain_strategem",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 16415,
-        "event": "Cast",
-        "name": "Broil II",
+        "name": "Malefic III",
         "duration": 235,
         "resource": {
             "mp": 9200,
@@ -3336,10 +2024,233 @@
         }
     },
     {
-        "time": 16650,
+        "time": 13650,
         "event": "DOT Tick",
-        "name": "bio_ii",
-        "damage": 847,
+        "name": "combust_ii",
+        "damage": 1489,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura",
+            "contagion",
+            "hypercharge"
+        ]
+    },
+    {
+        "time": 13798,
+        "event": "Damage",
+        "name": "Malefic III",
+        "damage": 10169,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "cleric_stance",
+            "dragon_sight",
+            "bard_aura",
+            "trick_attack",
+            "hypercharge",
+            "devotion"
+        ]
+    },
+    {
+        "time": 13798,
+        "event": "Cast",
+        "name": "Malefic III",
+        "duration": 235,
+        "resource": {
+            "mp": 9000,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 13950,
+        "event": "DOT Tick",
+        "name": "combust_ii",
+        "damage": 2198,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "bard_aura",
+            "contagion",
+            "hypercharge"
+        ]
+    },
+    {
+        "time": 14033,
+        "event": "Damage",
+        "name": "Malefic III",
+        "damage": 6361,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "dragon_sight",
+            "bard_aura",
+            "trick_attack",
+            "hypercharge",
+            "devotion"
+        ]
+    },
+    {
+        "time": 14033,
+        "event": "Cast",
+        "name": "Malefic III",
+        "duration": 235,
+        "resource": {
+            "mp": 8800,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 14250,
+        "event": "DOT Tick",
+        "name": "combust_ii",
+        "damage": 1444,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura",
+            "contagion",
+            "hypercharge"
+        ]
+    },
+    {
+        "time": 14268,
+        "event": "Damage",
+        "name": "Malefic III",
+        "damage": 6689,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "dragon_sight",
+            "bard_aura",
+            "trick_attack",
+            "hypercharge",
+            "devotion"
+        ]
+    },
+    {
+        "time": 14268,
+        "event": "Cast",
+        "name": "Malefic III",
+        "duration": 235,
+        "resource": {
+            "mp": 8600,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 14503,
+        "event": "Damage",
+        "name": "Malefic III",
+        "damage": 6370,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura",
+            "trick_attack",
+            "hypercharge",
+            "devotion"
+        ]
+    },
+    {
+        "time": 14503,
+        "event": "Cast",
+        "name": "Malefic III",
+        "duration": 235,
+        "resource": {
+            "mp": 8000,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 14550,
+        "event": "DOT Tick",
+        "name": "combust_ii",
+        "damage": 1518,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura",
+            "contagion",
+            "hypercharge"
+        ]
+    },
+    {
+        "time": 14738,
+        "event": "Damage",
+        "name": "Malefic III",
+        "damage": 5507,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura",
+            "hypercharge",
+            "devotion"
+        ]
+    },
+    {
+        "time": 14738,
+        "event": "Cast",
+        "name": "Malefic III",
+        "duration": 235,
+        "resource": {
+            "mp": 7800,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 14850,
+        "event": "DOT Tick",
+        "name": "combust_ii",
+        "damage": 1503,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura",
+            "contagion",
+            "hypercharge"
+        ]
+    },
+    {
+        "time": 14973,
+        "event": "Damage",
+        "name": "Malefic III",
+        "damage": 5245,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura",
+            "devotion"
+        ]
+    },
+    {
+        "time": 14973,
+        "event": "Cast",
+        "name": "Malefic III",
+        "duration": 235,
+        "resource": {
+            "mp": 7600,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 15150,
+        "event": "DOT Tick",
+        "name": "combust_ii",
+        "damage": 1489,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura",
+            "contagion",
+            "hypercharge"
+        ]
+    },
+    {
+        "time": 15208,
+        "event": "Damage",
+        "name": "Malefic III",
+        "damage": 5036,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3347,43 +2258,177 @@
         ]
     },
     {
-        "time": 16650,
-        "event": "DOT Tick",
-        "name": "miasma_ii",
-        "damage": 959,
-        "crit": true,
-        "dh": false,
-        "buff": []
+        "time": 15208,
+        "event": "Cast",
+        "name": "Combust II",
+        "duration": 0,
+        "resource": {
+            "mp": 7400,
+            "tp": 1000
+        }
     },
     {
-        "time": 16650,
+        "time": 15275,
+        "event": "DOT Apply",
+        "name": "Combust II",
+        "base_damage": 1277.3,
+        "duration": 3000,
+        "buff": [
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 15275,
+        "event": "Cast",
+        "name": "Lucid Dreaming",
+        "duration": 0,
+        "resource": {
+            "mp": 7400,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 15342,
+        "event": "Buff Apply",
+        "name": "Lucid Dreaming",
+        "duration": 2100
+    },
+    {
+        "time": 15443,
+        "event": "Cast",
+        "name": "Malefic III",
+        "duration": 235,
+        "resource": {
+            "mp": 6800,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 15450,
         "event": "DOT Tick",
-        "name": "shadow_flare",
+        "name": "combust_ii",
         "damage": 1264,
         "crit": false,
         "dh": false,
         "buff": [
-            "chain_strategem",
             "bard_aura"
         ]
     },
     {
-        "time": 16650,
+        "time": 15678,
         "event": "Damage",
-        "name": "Broil II",
-        "damage": 7785,
-        "crit": true,
+        "name": "Malefic III",
+        "damage": 5355,
+        "crit": false,
         "dh": false,
         "buff": [
-            "chain_strategem",
             "lucid_dreaming",
             "bard_aura"
         ]
     },
     {
-        "time": 16650,
+        "time": 15678,
         "event": "Cast",
-        "name": "Broil II",
+        "name": "Malefic III",
+        "duration": 235,
+        "resource": {
+            "mp": 7560,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 15750,
+        "event": "DOT Tick",
+        "name": "combust_ii",
+        "damage": 1251,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 15913,
+        "event": "Damage",
+        "name": "Malefic III",
+        "damage": 5567,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "lucid_dreaming",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 15913,
+        "event": "Cast",
+        "name": "Malefic III",
+        "duration": 235,
+        "resource": {
+            "mp": 8320,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 16050,
+        "event": "DOT Tick",
+        "name": "combust_ii",
+        "damage": 1923,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 16148,
+        "event": "Damage",
+        "name": "Malefic III",
+        "damage": 5408,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "lucid_dreaming",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 16148,
+        "event": "Cast",
+        "name": "Malefic III",
+        "duration": 235,
+        "resource": {
+            "mp": 9080,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 16350,
+        "event": "DOT Tick",
+        "name": "combust_ii",
+        "damage": 1830,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 16383,
+        "event": "Damage",
+        "name": "Malefic III",
+        "damage": 5567,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "lucid_dreaming",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 16383,
+        "event": "Cast",
+        "name": "Malefic III",
         "duration": 235,
         "resource": {
             "mp": 9840,
@@ -3391,10 +2436,10 @@
         }
     },
     {
-        "time": 16885,
+        "time": 16618,
         "event": "Damage",
-        "name": "Broil II",
-        "damage": 5436,
+        "name": "Malefic III",
+        "damage": 5302,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3403,20 +2448,20 @@
         ]
     },
     {
-        "time": 16885,
+        "time": 16618,
         "event": "Cast",
-        "name": "Broil II",
+        "name": "Malefic III",
         "duration": 235,
         "resource": {
-            "mp": 9120,
+            "mp": 9240,
             "tp": 1000
         }
     },
     {
-        "time": 16950,
+        "time": 16650,
         "event": "DOT Tick",
-        "name": "bio_ii",
-        "damage": 882,
+        "name": "combust_ii",
+        "damage": 1277,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3424,31 +2469,76 @@
         ]
     },
     {
-        "time": 16950,
-        "event": "DOT Tick",
-        "name": "miasma_ii",
-        "damage": 617,
+        "time": 16853,
+        "event": "Damage",
+        "name": "Malefic III",
+        "damage": 5142,
         "crit": false,
         "dh": false,
-        "buff": []
+        "buff": [
+            "lucid_dreaming",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 16853,
+        "event": "Cast",
+        "name": "Malefic III",
+        "duration": 235,
+        "resource": {
+            "mp": 10000,
+            "tp": 1000
+        }
     },
     {
         "time": 16950,
         "event": "DOT Tick",
-        "name": "shadow_flare",
+        "name": "combust_ii",
+        "damage": 1315,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 17088,
+        "event": "Damage",
+        "name": "Malefic III",
+        "damage": 5142,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "lucid_dreaming",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 17088,
+        "event": "Cast",
+        "name": "Malefic III",
+        "duration": 235,
+        "resource": {
+            "mp": 10760,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 17250,
+        "event": "DOT Tick",
+        "name": "combust_ii",
         "damage": 1264,
         "crit": false,
         "dh": false,
         "buff": [
-            "chain_strategem",
             "bard_aura"
         ]
     },
     {
-        "time": 17120,
+        "time": 17323,
         "event": "Damage",
-        "name": "Broil II",
-        "damage": 5657,
+        "name": "Malefic III",
+        "damage": 5355,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3457,129 +2547,73 @@
         ]
     },
     {
-        "time": 17120,
+        "time": 17323,
         "event": "Cast",
-        "name": "Broil II",
+        "name": "Malefic III",
         "duration": 235,
         "resource": {
-            "mp": 9760,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 17250,
-        "event": "DOT Tick",
-        "name": "bio_ii",
-        "damage": 838,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 17250,
-        "event": "DOT Tick",
-        "name": "miasma_ii",
-        "damage": 662,
-        "crit": false,
-        "dh": false,
-        "buff": []
-    },
-    {
-        "time": 17250,
-        "event": "DOT Tick",
-        "name": "shadow_flare",
-        "damage": 1811,
-        "crit": true,
-        "dh": false,
-        "buff": [
-            "chain_strategem",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 17355,
-        "event": "Damage",
-        "name": "Broil II",
-        "damage": 5547,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "lucid_dreaming",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 17355,
-        "event": "Cast",
-        "name": "Broil II",
-        "duration": 235,
-        "resource": {
-            "mp": 10400,
+            "mp": 11520,
             "tp": 1000
         }
     },
     {
         "time": 17550,
         "event": "DOT Tick",
-        "name": "bio_ii",
-        "damage": 847,
-        "crit": false,
+        "name": "combust_ii",
+        "damage": 1848,
+        "crit": true,
         "dh": false,
         "buff": [
             "bard_aura"
         ]
     },
     {
-        "time": 17590,
+        "time": 17558,
         "event": "Damage",
-        "name": "Broil II",
-        "damage": 5547,
+        "name": "Malefic III",
+        "damage": 5142,
         "crit": false,
         "dh": false,
         "buff": [
-            "lucid_dreaming",
             "bard_aura"
         ]
     },
     {
-        "time": 17590,
+        "time": 17558,
         "event": "Cast",
-        "name": "Broil II",
+        "name": "Malefic III",
         "duration": 235,
         "resource": {
-            "mp": 11040,
+            "mp": 11320,
             "tp": 1000
         }
     },
     {
-        "time": 17825,
+        "time": 17793,
         "event": "Damage",
-        "name": "Broil II",
-        "damage": 5491,
+        "name": "Malefic III",
+        "damage": 5302,
         "crit": false,
         "dh": false,
         "buff": [
-            "lucid_dreaming",
             "bard_aura"
         ]
     },
     {
-        "time": 17825,
+        "time": 17793,
         "event": "Cast",
-        "name": "Broil II",
+        "name": "Malefic III",
         "duration": 235,
         "resource": {
-            "mp": 10320,
+            "mp": 10720,
             "tp": 1000
         }
     },
     {
         "time": 17850,
         "event": "DOT Tick",
-        "name": "bio_ii",
-        "damage": 865,
+        "name": "combust_ii",
+        "damage": 1328,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3587,32 +2621,31 @@
         ]
     },
     {
-        "time": 18060,
+        "time": 18028,
         "event": "Damage",
-        "name": "Broil II",
-        "damage": 8353,
-        "crit": true,
+        "name": "Malefic III",
+        "damage": 5248,
+        "crit": false,
         "dh": false,
         "buff": [
-            "lucid_dreaming",
             "bard_aura"
         ]
     },
     {
-        "time": 18060,
+        "time": 18028,
         "event": "Cast",
-        "name": "Broil II",
+        "name": "Malefic III",
         "duration": 235,
         "resource": {
-            "mp": 10960,
+            "mp": 10520,
             "tp": 1000
         }
     },
     {
         "time": 18150,
         "event": "DOT Tick",
-        "name": "bio_ii",
-        "damage": 847,
+        "name": "combust_ii",
+        "damage": 1341,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3626,11 +2659,11 @@
         "duration": 1500
     },
     {
-        "time": 18295,
+        "time": 18263,
         "event": "Damage",
-        "name": "Broil II",
-        "damage": 6039,
-        "crit": false,
+        "name": "Malefic III",
+        "damage": 8610,
+        "crit": true,
         "dh": false,
         "buff": [
             "bard_aura",
@@ -3638,12 +2671,12 @@
         ]
     },
     {
-        "time": 18295,
+        "time": 18263,
         "event": "Cast",
-        "name": "Bio II",
+        "name": "Combust II",
         "duration": 0,
         "resource": {
-            "mp": 10640,
+            "mp": 10320,
             "tp": 1000
         }
     },
@@ -3660,27 +2693,17 @@
         "duration": 3300
     },
     {
-        "time": 18362,
+        "time": 18330,
         "event": "DOT Apply",
-        "name": "Bio II",
-        "base_damage": 999.58,
-        "duration": 1800,
+        "name": "Combust II",
+        "base_damage": 1446.9,
+        "duration": 3000,
         "buff": [
             "battle_litany",
             "foe_requiem",
             "bard_aura",
             "contagion"
         ]
-    },
-    {
-        "time": 18362,
-        "event": "Cast",
-        "name": "Cleric Stance",
-        "duration": 0,
-        "resource": {
-            "mp": 10640,
-            "tp": 1000
-        }
     },
     {
         "time": 18400,
@@ -3689,16 +2712,10 @@
         "duration": 2000
     },
     {
-        "time": 18429,
-        "event": "Buff Apply",
-        "name": "Cleric Stance",
-        "duration": 1500
-    },
-    {
         "time": 18450,
         "event": "DOT Tick",
-        "name": "bio_ii",
-        "damage": 959,
+        "name": "combust_ii",
+        "damage": 1519,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3709,64 +2726,62 @@
         ]
     },
     {
-        "time": 18530,
+        "time": 18498,
         "event": "Cast",
-        "name": "Broil II",
+        "name": "Malefic III",
         "duration": 235,
         "resource": {
-            "mp": 10320,
+            "mp": 10120,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 18733,
+        "event": "Damage",
+        "name": "Malefic III",
+        "damage": 6127,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "battle_litany",
+            "battle_voice",
+            "foe_requiem",
+            "bard_aura",
+            "contagion"
+        ]
+    },
+    {
+        "time": 18733,
+        "event": "Cast",
+        "name": "Malefic III",
+        "duration": 235,
+        "resource": {
+            "mp": 9520,
             "tp": 1000
         }
     },
     {
         "time": 18750,
         "event": "DOT Tick",
-        "name": "bio_ii",
-        "damage": 1918,
-        "crit": true,
-        "dh": true,
-        "buff": [
-            "battle_litany",
-            "foe_requiem",
-            "bard_aura",
-            "contagion"
-        ]
-    },
-    {
-        "time": 18765,
-        "event": "Damage",
-        "name": "Broil II",
-        "damage": 6532,
+        "name": "combust_ii",
+        "damage": 1446,
         "crit": false,
         "dh": false,
         "buff": [
-            "cleric_stance",
             "battle_litany",
-            "battle_voice",
             "foe_requiem",
             "bard_aura",
             "contagion"
         ]
     },
     {
-        "time": 18765,
-        "event": "Cast",
-        "name": "Broil II",
-        "duration": 235,
-        "resource": {
-            "mp": 10000,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 19000,
+        "time": 18968,
         "event": "Damage",
-        "name": "Broil II",
-        "damage": 8165,
+        "name": "Malefic III",
+        "damage": 6307,
         "crit": false,
-        "dh": true,
+        "dh": false,
         "buff": [
-            "cleric_stance",
             "battle_litany",
             "battle_voice",
             "foe_requiem",
@@ -3775,21 +2790,21 @@
         ]
     },
     {
-        "time": 19000,
+        "time": 18968,
         "event": "Cast",
-        "name": "Broil II",
+        "name": "Malefic III",
         "duration": 235,
         "resource": {
-            "mp": 9280,
+            "mp": 9320,
             "tp": 1000
         }
     },
     {
         "time": 19050,
         "event": "DOT Tick",
-        "name": "bio_ii",
-        "damage": 999,
-        "crit": false,
+        "name": "combust_ii",
+        "damage": 2136,
+        "crit": true,
         "dh": false,
         "buff": [
             "battle_litany",
@@ -3805,14 +2820,13 @@
         "duration": 1500
     },
     {
-        "time": 19235,
+        "time": 19203,
         "event": "Damage",
-        "name": "Broil II",
-        "damage": 9524,
+        "name": "Malefic III",
+        "damage": 8093,
         "crit": false,
         "dh": true,
         "buff": [
-            "cleric_stance",
             "battle_litany",
             "battle_voice",
             "foe_requiem",
@@ -3822,22 +2836,22 @@
         ]
     },
     {
-        "time": 19235,
+        "time": 19203,
         "event": "Cast",
-        "name": "Broil II",
+        "name": "Malefic III",
         "duration": 235,
         "resource": {
-            "mp": 8960,
+            "mp": 9120,
             "tp": 1000
         }
     },
     {
         "time": 19350,
         "event": "DOT Tick",
-        "name": "bio_ii",
-        "damage": 1236,
+        "name": "combust_ii",
+        "damage": 1475,
         "crit": false,
-        "dh": true,
+        "dh": false,
         "buff": [
             "battle_litany",
             "foe_requiem",
@@ -3846,14 +2860,13 @@
         ]
     },
     {
-        "time": 19470,
+        "time": 19438,
         "event": "Damage",
-        "name": "Broil II",
-        "damage": 10185,
-        "crit": true,
+        "name": "Malefic III",
+        "damage": 6342,
+        "crit": false,
         "dh": false,
         "buff": [
-            "cleric_stance",
             "battle_litany",
             "battle_voice",
             "foe_requiem",
@@ -3863,22 +2876,22 @@
         ]
     },
     {
-        "time": 19470,
+        "time": 19438,
         "event": "Cast",
-        "name": "Broil II",
+        "name": "Malefic III",
         "duration": 235,
         "resource": {
-            "mp": 8640,
+            "mp": 8920,
             "tp": 1000
         }
     },
     {
         "time": 19650,
         "event": "DOT Tick",
-        "name": "bio_ii",
-        "damage": 1039,
+        "name": "combust_ii",
+        "damage": 1736,
         "crit": false,
-        "dh": false,
+        "dh": true,
         "buff": [
             "battle_litany",
             "foe_requiem",
@@ -3887,14 +2900,13 @@
         ]
     },
     {
-        "time": 19705,
+        "time": 19673,
         "event": "Damage",
-        "name": "Broil II",
-        "damage": 9434,
+        "name": "Malefic III",
+        "damage": 6607,
         "crit": false,
-        "dh": true,
+        "dh": false,
         "buff": [
-            "cleric_stance",
             "battle_litany",
             "battle_voice",
             "foe_requiem",
@@ -3904,24 +2916,23 @@
         ]
     },
     {
-        "time": 19705,
+        "time": 19673,
         "event": "Cast",
-        "name": "Broil II",
+        "name": "Malefic III",
         "duration": 235,
         "resource": {
-            "mp": 8320,
+            "mp": 8720,
             "tp": 1000
         }
     },
     {
-        "time": 19940,
+        "time": 19908,
         "event": "Damage",
-        "name": "Broil II",
-        "damage": 6927,
+        "name": "Malefic III",
+        "damage": 5766,
         "crit": false,
         "dh": false,
         "buff": [
-            "cleric_stance",
             "battle_litany",
             "battle_voice",
             "foe_requiem",
@@ -3930,21 +2941,21 @@
         ]
     },
     {
-        "time": 19940,
+        "time": 19908,
         "event": "Cast",
-        "name": "Broil II",
+        "name": "Malefic III",
         "duration": 235,
         "resource": {
-            "mp": 7600,
+            "mp": 8120,
             "tp": 1000
         }
     },
     {
         "time": 19950,
         "event": "DOT Tick",
-        "name": "bio_ii",
-        "damage": 1519,
-        "crit": true,
+        "name": "combust_ii",
+        "damage": 1403,
+        "crit": false,
         "dh": false,
         "buff": [
             "battle_litany",
@@ -3954,10 +2965,10 @@
         ]
     },
     {
-        "time": 20175,
+        "time": 20143,
         "event": "Damage",
-        "name": "Broil II",
-        "damage": 6535,
+        "name": "Malefic III",
+        "damage": 6067,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3969,21 +2980,21 @@
         ]
     },
     {
-        "time": 20175,
+        "time": 20143,
         "event": "Cast",
-        "name": "Broil II",
+        "name": "Malefic III",
         "duration": 235,
         "resource": {
-            "mp": 7280,
+            "mp": 7920,
             "tp": 1000
         }
     },
     {
         "time": 20250,
         "event": "DOT Tick",
-        "name": "bio_ii",
-        "damage": 999,
-        "crit": false,
+        "name": "combust_ii",
+        "damage": 2009,
+        "crit": true,
         "dh": false,
         "buff": [
             "battle_litany",
@@ -3993,10 +3004,10 @@
         ]
     },
     {
-        "time": 20410,
+        "time": 20378,
         "event": "Damage",
-        "name": "Broil II",
-        "damage": 6221,
+        "name": "Malefic III",
+        "damage": 6007,
         "crit": false,
         "dh": false,
         "buff": [
@@ -4007,20 +3018,20 @@
         ]
     },
     {
-        "time": 20410,
+        "time": 20378,
         "event": "Cast",
-        "name": "Broil II",
+        "name": "Malefic III",
         "duration": 235,
         "resource": {
-            "mp": 6960,
+            "mp": 7720,
             "tp": 1000
         }
     },
     {
         "time": 20550,
         "event": "DOT Tick",
-        "name": "bio_ii",
-        "damage": 999,
+        "name": "combust_ii",
+        "damage": 1446,
         "crit": false,
         "dh": false,
         "buff": [
@@ -4031,10 +3042,10 @@
         ]
     },
     {
-        "time": 20645,
+        "time": 20613,
         "event": "Damage",
-        "name": "Broil II",
-        "damage": 6346,
+        "name": "Malefic III",
+        "damage": 6007,
         "crit": false,
         "dh": false,
         "buff": [
@@ -4044,20 +3055,42 @@
         ]
     },
     {
-        "time": 20645,
+        "time": 20613,
         "event": "Cast",
-        "name": "Broil II",
+        "name": "Malefic III",
         "duration": 235,
         "resource": {
-            "mp": 6640,
+            "mp": 7520,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 20848,
+        "event": "Damage",
+        "name": "Malefic III",
+        "damage": 5297,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "foe_requiem",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 20848,
+        "event": "Cast",
+        "name": "Malefic III",
+        "duration": 235,
+        "resource": {
+            "mp": 6920,
             "tp": 1000
         }
     },
     {
         "time": 20850,
         "event": "DOT Tick",
-        "name": "bio_ii",
-        "damage": 1505,
+        "name": "combust_ii",
+        "damage": 2051,
         "crit": true,
         "dh": false,
         "buff": [
@@ -4068,11 +3101,11 @@
         ]
     },
     {
-        "time": 20880,
+        "time": 21083,
         "event": "Damage",
-        "name": "Broil II",
-        "damage": 5827,
-        "crit": false,
+        "name": "Malefic III",
+        "damage": 8303,
+        "crit": true,
         "dh": false,
         "buff": [
             "foe_requiem",
@@ -4080,42 +3113,20 @@
         ]
     },
     {
-        "time": 20880,
+        "time": 21083,
         "event": "Cast",
-        "name": "Broil II",
+        "name": "Malefic III",
         "duration": 235,
         "resource": {
-            "mp": 6320,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 21115,
-        "event": "Damage",
-        "name": "Broil II",
-        "damage": 5484,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "foe_requiem",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 21115,
-        "event": "Cast",
-        "name": "Broil II",
-        "duration": 235,
-        "resource": {
-            "mp": 5600,
+            "mp": 6720,
             "tp": 1000
         }
     },
     {
         "time": 21150,
         "event": "DOT Tick",
-        "name": "bio_ii",
-        "damage": 959,
+        "name": "combust_ii",
+        "damage": 1446,
         "crit": false,
         "dh": false,
         "buff": [
@@ -4126,10 +3137,10 @@
         ]
     },
     {
-        "time": 21350,
+        "time": 21318,
         "event": "Damage",
-        "name": "Broil II",
-        "damage": 5655,
+        "name": "Malefic III",
+        "damage": 5351,
         "crit": false,
         "dh": false,
         "buff": [
@@ -4138,41 +3149,41 @@
         ]
     },
     {
-        "time": 21350,
+        "time": 21318,
         "event": "Cast",
-        "name": "Bio II",
+        "name": "Combust II",
         "duration": 0,
         "resource": {
-            "mp": 5280,
+            "mp": 6520,
             "tp": 1000
         }
     },
     {
-        "time": 21417,
+        "time": 21385,
         "event": "DOT Apply",
-        "name": "Bio II",
-        "base_damage": 909.48,
-        "duration": 1800,
+        "name": "Combust II",
+        "base_damage": 1314.4,
+        "duration": 3000,
         "buff": [
             "foe_requiem",
             "bard_aura"
         ]
     },
     {
-        "time": 21417,
+        "time": 21385,
         "event": "Cast",
-        "name": "Aether Flow",
+        "name": "Cleric Stance",
         "duration": 0,
         "resource": {
-            "mp": 5280,
+            "mp": 6520,
             "tp": 1000
         }
     },
     {
         "time": 21450,
         "event": "DOT Tick",
-        "name": "bio_ii",
-        "damage": 936,
+        "name": "combust_ii",
+        "damage": 1314,
         "crit": false,
         "dh": false,
         "buff": [
@@ -4181,379 +3192,15 @@
         ]
     },
     {
-        "time": 21484,
+        "time": 21452,
+        "event": "Buff Apply",
+        "name": "Cleric Stance",
+        "duration": 1500
+    },
+    {
+        "time": 21553,
         "event": "Cast",
-        "name": "Energy Drain",
-        "duration": 0,
-        "resource": {
-            "mp": 7680,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 21552,
-        "event": "Damage",
-        "name": "Energy Drain",
-        "damage": 5668,
-        "crit": true,
-        "dh": false,
-        "buff": [
-            "foe_requiem",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 21585,
-        "event": "Cast",
-        "name": "Broil II",
-        "duration": 235,
-        "resource": {
-            "mp": 8160,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 21750,
-        "event": "DOT Tick",
-        "name": "bio_ii",
-        "damage": 945,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "foe_requiem",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 21820,
-        "event": "Damage",
-        "name": "Broil II",
-        "damage": 5380,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 21820,
-        "event": "Cast",
-        "name": "Miasma II",
-        "duration": 0,
-        "resource": {
-            "mp": 6880,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 21887,
-        "event": "Cast",
-        "name": "Energy Drain",
-        "duration": 0,
-        "resource": {
-            "mp": 6880,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 21888,
-        "event": "Damage",
-        "name": "Miasma II",
-        "damage": 2387,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 21888,
-        "event": "DOT Apply",
-        "name": "Miasma II",
-        "base_damage": 637.0600000000001,
-        "duration": 1200,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 21954,
-        "event": "Cast",
-        "name": "Shadow Flare",
-        "duration": 0,
-        "resource": {
-            "mp": 8080,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 21955,
-        "event": "Damage",
-        "name": "Energy Drain",
-        "damage": 3511,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 22021,
-        "event": "DOT Apply",
-        "name": "Shadow Flare",
-        "base_damage": 1277.3,
-        "duration": 1500,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 22050,
-        "event": "DOT Tick",
-        "name": "bio_ii",
-        "damage": 927,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "foe_requiem",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 22050,
-        "event": "DOT Tick",
-        "name": "miasma_ii",
-        "damage": 649,
-        "crit": false,
-        "dh": false,
-        "buff": []
-    },
-    {
-        "time": 22050,
-        "event": "DOT Tick",
-        "name": "shadow_flare",
-        "damage": 1213,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 22055,
-        "event": "Cast",
-        "name": "Broil II",
-        "duration": 235,
-        "resource": {
-            "mp": 7760,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 22290,
-        "event": "Damage",
-        "name": "Broil II",
-        "damage": 5768,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 22290,
-        "event": "Cast",
-        "name": "Miasma II",
-        "duration": 0,
-        "resource": {
-            "mp": 6080,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 22350,
-        "event": "DOT Tick",
-        "name": "bio_ii",
-        "damage": 945,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "foe_requiem",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 22350,
-        "event": "DOT Tick",
-        "name": "miasma_ii",
-        "damage": 668,
-        "crit": false,
-        "dh": false,
-        "buff": []
-    },
-    {
-        "time": 22350,
-        "event": "DOT Tick",
-        "name": "shadow_flare",
-        "damage": 1213,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 22357,
-        "event": "Cast",
-        "name": "Energy Drain",
-        "duration": 0,
-        "resource": {
-            "mp": 6480,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 22358,
-        "event": "Damage",
-        "name": "Miasma II",
-        "damage": 2387,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 22358,
-        "event": "DOT Apply",
-        "name": "Miasma II",
-        "base_damage": 637.0600000000001,
-        "duration": 1200,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 22425,
-        "event": "Damage",
-        "name": "Energy Drain",
-        "damage": 5557,
-        "crit": true,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 22525,
-        "event": "Cast",
-        "name": "Broil II",
-        "duration": 235,
-        "resource": {
-            "mp": 6960,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 22650,
-        "event": "DOT Tick",
-        "name": "bio_ii",
-        "damage": 936,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "foe_requiem",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 22650,
-        "event": "DOT Tick",
-        "name": "miasma_ii",
-        "damage": 637,
-        "crit": false,
-        "dh": false,
-        "buff": []
-    },
-    {
-        "time": 22650,
-        "event": "DOT Tick",
-        "name": "shadow_flare",
-        "damage": 1328,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 22760,
-        "event": "Damage",
-        "name": "Broil II",
-        "damage": 5657,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 22760,
-        "event": "Cast",
-        "name": "Broil II",
-        "duration": 235,
-        "resource": {
-            "mp": 6640,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 22950,
-        "event": "DOT Tick",
-        "name": "bio_ii",
-        "damage": 927,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "foe_requiem",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 22950,
-        "event": "DOT Tick",
-        "name": "miasma_ii",
-        "damage": 643,
-        "crit": false,
-        "dh": false,
-        "buff": []
-    },
-    {
-        "time": 22950,
-        "event": "DOT Tick",
-        "name": "shadow_flare",
-        "damage": 1251,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 22995,
-        "event": "Damage",
-        "name": "Broil II",
-        "damage": 5436,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 22995,
-        "event": "Cast",
-        "name": "Broil II",
+        "name": "Malefic III",
         "duration": 235,
         "resource": {
             "mp": 6320,
@@ -4561,31 +3208,10 @@
         }
     },
     {
-        "time": 23230,
-        "event": "Damage",
-        "name": "Broil II",
-        "damage": 5491,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 23230,
-        "event": "Cast",
-        "name": "Broil II",
-        "duration": 235,
-        "resource": {
-            "mp": 5600,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 23250,
+        "time": 21750,
         "event": "DOT Tick",
-        "name": "bio_ii",
-        "damage": 909,
+        "name": "combust_ii",
+        "damage": 1380,
         "crit": false,
         "dh": false,
         "buff": [
@@ -4594,51 +3220,54 @@
         ]
     },
     {
-        "time": 23250,
-        "event": "DOT Tick",
-        "name": "miasma_ii",
-        "damage": 624,
-        "crit": false,
-        "dh": false,
-        "buff": []
-    },
-    {
-        "time": 23250,
-        "event": "DOT Tick",
-        "name": "shadow_flare",
-        "damage": 1302,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 23465,
+        "time": 21788,
         "event": "Damage",
-        "name": "Broil II",
-        "damage": 8434,
-        "crit": true,
+        "name": "Malefic III",
+        "damage": 5399,
+        "crit": false,
         "dh": false,
         "buff": [
+            "cleric_stance",
             "bard_aura"
         ]
     },
     {
-        "time": 23465,
+        "time": 21788,
         "event": "Cast",
-        "name": "Broil II",
+        "name": "Malefic III",
         "duration": 235,
         "resource": {
-            "mp": 5280,
+            "mp": 6120,
             "tp": 1000
         }
     },
     {
-        "time": 23550,
+        "time": 22023,
+        "event": "Damage",
+        "name": "Malefic III",
+        "damage": 5454,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "cleric_stance",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 22023,
+        "event": "Cast",
+        "name": "Malefic III",
+        "duration": 235,
+        "resource": {
+            "mp": 5520,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 22050,
         "event": "DOT Tick",
-        "name": "bio_ii",
-        "damage": 954,
+        "name": "combust_ii",
+        "damage": 1366,
         "crit": false,
         "dh": false,
         "buff": [
@@ -4647,19 +3276,200 @@
         ]
     },
     {
-        "time": 23550,
-        "event": "DOT Tick",
-        "name": "miasma_ii",
-        "damage": 656,
+        "time": 22258,
+        "event": "Damage",
+        "name": "Malefic III",
+        "damage": 5399,
         "crit": false,
         "dh": false,
-        "buff": []
+        "buff": [
+            "cleric_stance",
+            "bard_aura"
+        ]
     },
     {
-        "time": 23700,
+        "time": 22258,
+        "event": "Cast",
+        "name": "Malefic III",
+        "duration": 235,
+        "resource": {
+            "mp": 5320,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 22350,
+        "event": "DOT Tick",
+        "name": "combust_ii",
+        "damage": 1825,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "foe_requiem",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 22493,
         "event": "Damage",
-        "name": "Broil II",
-        "damage": 7866,
+        "name": "Malefic III",
+        "damage": 5621,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "cleric_stance",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 22493,
+        "event": "Cast",
+        "name": "Malefic III",
+        "duration": 235,
+        "resource": {
+            "mp": 5120,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 22650,
+        "event": "DOT Tick",
+        "name": "combust_ii",
+        "damage": 1288,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "foe_requiem",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 22728,
+        "event": "Damage",
+        "name": "Malefic III",
+        "damage": 5732,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "cleric_stance",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 22728,
+        "event": "Cast",
+        "name": "Malefic III",
+        "duration": 235,
+        "resource": {
+            "mp": 4920,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 22950,
+        "event": "DOT Tick",
+        "name": "combust_ii",
+        "damage": 1301,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "foe_requiem",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 22963,
+        "event": "Damage",
+        "name": "Malefic III",
+        "damage": 5844,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "cleric_stance",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 22963,
+        "event": "Cast",
+        "name": "Malefic III",
+        "duration": 235,
+        "resource": {
+            "mp": 4720,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 23198,
+        "event": "Damage",
+        "name": "Malefic III",
+        "damage": 5408,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 23198,
+        "event": "Cast",
+        "name": "Malefic III",
+        "duration": 235,
+        "resource": {
+            "mp": 4120,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 23250,
+        "event": "DOT Tick",
+        "name": "combust_ii",
+        "damage": 1340,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "foe_requiem",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 23433,
+        "event": "Damage",
+        "name": "Malefic III",
+        "damage": 5408,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 23433,
+        "event": "Cast",
+        "name": "Malefic III",
+        "duration": 235,
+        "resource": {
+            "mp": 3920,
+            "tp": 1000
+        }
+    },
+    {
+        "time": 23550,
+        "event": "DOT Tick",
+        "name": "combust_ii",
+        "damage": 1327,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "foe_requiem",
+            "bard_aura"
+        ]
+    },
+    {
+        "time": 23668,
+        "event": "Damage",
+        "name": "Malefic III",
+        "damage": 8061,
         "crit": true,
         "dh": false,
         "buff": [
@@ -4667,20 +3477,20 @@
         ]
     },
     {
-        "time": 23700,
+        "time": 23668,
         "event": "Cast",
-        "name": "Broil II",
+        "name": "Malefic III",
         "duration": 235,
         "resource": {
-            "mp": 4960,
+            "mp": 3720,
             "tp": 1000
         }
     },
     {
         "time": 23850,
         "event": "DOT Tick",
-        "name": "bio_ii",
-        "damage": 873,
+        "name": "combust_ii",
+        "damage": 1327,
         "crit": false,
         "dh": false,
         "buff": [
@@ -4689,10 +3499,10 @@
         ]
     },
     {
-        "time": 23935,
+        "time": 23903,
         "event": "Damage",
-        "name": "Broil II",
-        "damage": 5602,
+        "name": "Malefic III",
+        "damage": 5195,
         "crit": false,
         "dh": false,
         "buff": [
@@ -4700,12 +3510,12 @@
         ]
     },
     {
-        "time": 23935,
+        "time": 23903,
         "event": "Cast",
-        "name": "Broil II",
+        "name": "Malefic III",
         "duration": 235,
         "resource": {
-            "mp": 4640,
+            "mp": 3520,
             "tp": 1000
         }
     }

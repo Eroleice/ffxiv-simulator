@@ -21,6 +21,7 @@ class Fight {
                 'tp': 1000                                       // 玩家TP
             },
             'job': [],                                           // 职业特殊内容
+            'opener': deepcopy(data.opener),                     // 开场队列
             'buff': [],                                          // 玩家buff && 目标debuff
             'dot': [],                                           // 玩家dot
             'cd': [],                                            // 玩家技能冷却
@@ -36,7 +37,6 @@ class Fight {
         };
         // 战斗参数，实时修改
         this.battle = {
-            'opener': deepcopy(data.opener),                     // 开场队列
             'time': deepcopy(data.simulate.duration),            // 战斗计时
             'skillPriority': '',                                 // 技能最高优先级
             'abilityPriority': '',                               // 能力最高优先级
@@ -118,22 +118,22 @@ class Fight {
             // 如果能使用技能就使用技能
 
             if (this.canSkill()) {
-                if (typeof this.battle.opener[0] !== 'undefined' && this.isSkill(this.battle.opener[0])) {
+                if (typeof this.player.opener[0] !== 'undefined' && this.isSkill(this.player.opener[0])) {
                     // 如果起手队列第一个是技能就使用它
-                    this.update(this.jobSkill.cast(this,this.battle.opener[0]));
-                    this.battle.opener.shift();
-                } else if (typeof this.battle.opener[0] == 'undefined') {
+                    this.update(this.jobSkill.cast(this,this.player.opener[0]));
+                    this.player.opener.shift();
+                } else if (typeof this.player.opener[0] == 'undefined') {
                     this.update(this.jobSkill.cast(this,this.battle.skillPriority));
                 }
             }
 
             // 如果能使用能力就使用能力
             if (this.canAbility()) {
-                if (typeof this.battle.opener[0] !== 'undefined' && !this.isSkill(this.battle.opener[0])) {
+                if (typeof this.player.opener[0] !== 'undefined' && !this.isSkill(this.player.opener[0])) {
                     // 如果起手队列第一个是能力技就使用它
-                    this.update(this.jobSkill.cast(this,this.battle.opener[0]));
-                    this.battle.opener.shift();
-                } else if (typeof this.battle.opener[0] == 'undefined') {
+                    this.update(this.jobSkill.cast(this,this.player.opener[0]));
+                    this.player.opener.shift();
+                } else if (typeof this.player.opener[0] == 'undefined') {
                     this.update(this.jobSkill.cast(this,this.battle.abilityPriority));
                 }
 
