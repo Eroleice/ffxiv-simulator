@@ -3,6 +3,8 @@
   "version": "0.0.0",
   "description": "ffxiv-simulator",
   "main": "app.js",
+  "repository": "",
+  "license": "MIT",
   "author": {
     "name": "yuhui"
   },

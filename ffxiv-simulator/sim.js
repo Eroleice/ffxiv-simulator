@@ -104,7 +104,7 @@ class Fight {
 
                     /* 技能生效 */
                     this.update(this.jobSkill.effect(this, this.battle.skillEffectQue[i].name));
-                    this.battle.skillEffectQue.shift();
+                    this.battle.skillEffectQue.splice(i,1);
 
                 }
             }
