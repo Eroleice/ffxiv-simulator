@@ -26,9 +26,9 @@
             pet: false                  // 宠物 (如果职业没有宠物请填写false，否则会报错)
         };
 
-        var opener = ['站姿', '爆发药', '灾星', '祸星'];     // 占星
-        // var opener = ['cleric_stance', 'presence_of_mind', 'potion', 'aero_iii', 'aero_ii']; // 白魔
-        // var opener = ['potion','cleric_stance','miasma','bio_ii','energy_drain','miasma_ii','energy_drain','miasma_ii','chain_strategem','shadow_flare','miasma_ii','energy_drain','aetherflow','broil_ii','energy_drain','broil_ii','broil_ii','miasma_ii','energy_drain']; // 学者
+        var opener = ['战姿', '爆发药', '灾星', '祸星'];     // 占星
+        // var opener = ['战姿', '神速咏唱', '爆发药', '暴风', '烈风']; // 白魔
+        // var opener = ['爆发药','战姿','瘴气','猛毒菌','能量吸收','瘴疠','能量吸收','瘴疠','连环计','暗影核爆','瘴疠','能量吸收','以太超流','魔炎法','能量吸收','魔炎法','魔炎法','瘴疠','能量吸收']; // 学者
         
         simulate.times = (simulate.battleLog === true) ? 1 : simulate.times;  // 输出战斗记录时仅进行单次模拟
 

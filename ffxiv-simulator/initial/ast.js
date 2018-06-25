@@ -40,7 +40,8 @@ module.exports = {
             '灾星': 'combust_ii',
             '战姿': 'cleric_stance',
             '爆发药': 'potion',
-            '即刻咏唱': 'swift_cast'
+            '即刻咏唱': 'swift_cast',
+            '醒梦': 'lucid_dreaming'
         };
         trans(data.opener,translation);
 
