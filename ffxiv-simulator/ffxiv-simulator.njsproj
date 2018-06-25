@@ -11,7 +11,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>d6b2d769-32fd-46aa-bddd-f42d7805ab19</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>run.js</StartupFile>
+    <StartupFile>app.js</StartupFile>
     <StartWebBrowser>False</StartWebBrowser>
     <SearchPath>
     </SearchPath>
@@ -55,7 +55,7 @@
     <Compile Include="rotation\whm.js">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="run.js">
+    <Compile Include="app.js">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="sim.js">
