@@ -659,7 +659,7 @@ class effect {
         });
     }
     tornado_kick() {
-        var potency = 330;
+        var potency = 420; // 垃圾SE暗改数据
         var damage = calculate.damageCalculate(this, potency, 'physic');
         this.battle.damageQue.push({
             'time': 0,
@@ -694,6 +694,7 @@ class effect {
     }
     fists_of_fire() {
         this.player.buff.fists_of_fire = this.battle.time;
+        this.player.buff.fists_of_wind = -1;
         this.player.job.fists = 'fire';
         this.log.push({
             'time': this.setting.simulate.duration - this.battle.time,
@@ -705,6 +706,7 @@ class effect {
     }
     fists_of_wind() {
         this.player.buff.fists_of_wind = this.battle.time;
+        this.player.buff.fists_of_fire = -1;
         this.player.job.fists = 'wind';
         this.log.push({
             'time': this.setting.simulate.duration - this.battle.time,
@@ -755,6 +757,11 @@ class effect {
     whatBuff() {
         var arr = [];
         for (var k in this.player.buff) {
+            if (this.player.buff[k] > 0) {
+                arr.push(k);
+            }
+        }
+        for (var k in this.player.debuff) {
             if (this.player.buff[k] > 0) {
                 arr.push(k);
             }
@@ -824,6 +831,11 @@ class autoAttack {
                 arr.push(k);
             }
         }
+        for (var k in this.player.debuff) {
+            if (this.player.buff[k] > 0) {
+                arr.push(k);
+            }
+        }
         return arr;
     }
 }
@@ -844,7 +856,7 @@ class buff {
         } else {
             this.player.status.ap = this.setting.player.ap;
         }
-        if (this.player.buff.riddle_of_fire > 0 && this.battle.time % 100 == 0) {
+        if (this.setting.simulate.partyBuff && this.player.buff.riddle_of_fire > 0 && this.battle.time % 100 == 0) {
             var test = Math.floor(Math.random() * 100);
             if (test < 66) {
                 this.player.job.chakra = Math.min(5,this.player.job.chakra + 1);

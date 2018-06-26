@@ -26,10 +26,12 @@
         "event": "Damage",
         "name": "Demolish",
         "translate": "破碎拳",
-        "damage": 1948,
+        "damage": 2532,
         "crit": true,
-        "dh": false,
-        "buff": []
+        "dh": true,
+        "buff": [
+            "fists_of_fire"
+        ]
     },
     {
         "time": 0,
@@ -38,23 +40,23 @@
         "translate": "破碎拳",
         "damage": [
             {
-                "damage": 1200,
-                "crit": false,
-                "dh": true
-            },
-            {
-                "damage": 979,
-                "crit": false,
-                "dh": false
-            },
-            {
-                "damage": 1493,
+                "damage": 1536,
                 "crit": true,
                 "dh": false
             },
             {
-                "damage": 922,
+                "damage": 1324,
                 "crit": false,
+                "dh": true
+            },
+            {
+                "damage": 1324,
+                "crit": false,
+                "dh": true
+            },
+            {
+                "damage": 1552,
+                "crit": true,
                 "dh": false
             },
             {
@@ -63,13 +65,14 @@
                 "dh": false
             },
             {
-                "damage": 1553,
-                "crit": true,
+                "damage": 999,
+                "crit": false,
                 "dh": false
             }
         ],
         "duration": 1800,
         "buff": [
+            "fists_of_fire",
             "greased_lightning_i"
         ]
     },
@@ -78,10 +81,11 @@
         "event": "Damage",
         "name": "Auto Attack",
         "translate": "自动攻击",
-        "damage": 1795,
+        "damage": 1789,
         "crit": false,
         "dh": false,
         "buff": [
+            "fists_of_fire",
             "greased_lightning_i"
         ]
     },
@@ -115,7 +119,7 @@
         "event": "Damage",
         "name": "Wind Tackle",
         "translate": "疾风罗刹冲",
-        "damage": 1168,
+        "damage": 1229,
         "crit": false,
         "dh": false,
         "buff": [
@@ -150,7 +154,7 @@
         "event": "Damage",
         "name": "Dragon Kick",
         "translate": "双龙脚",
-        "damage": 2495,
+        "damage": 2676,
         "crit": false,
         "dh": false,
         "buff": [
@@ -164,9 +168,9 @@
         "event": "Damage",
         "name": "Auto Attack",
         "translate": "自动攻击",
-        "damage": 1875,
-        "crit": false,
-        "dh": false,
+        "damage": 4029,
+        "crit": true,
+        "dh": true,
         "buff": [
             "fists_of_wind",
             "greased_lightning_i"
@@ -177,10 +181,11 @@
         "event": "DOT Tick",
         "name": "Demolish",
         "translate": "破碎拳",
-        "damage": 1200,
-        "crit": false,
-        "dh": true,
+        "damage": 1536,
+        "crit": true,
+        "dh": false,
         "buff": [
+            "fists_of_fire",
             "greased_lightning_i"
         ]
     },
@@ -200,8 +205,8 @@
         "event": "Damage",
         "name": "Riddle of Wind",
         "translate": "疾风极意",
-        "damage": 1258,
-        "crit": false,
+        "damage": 1997,
+        "crit": true,
         "dh": false,
         "buff": [
             "fists_of_wind",
@@ -242,7 +247,7 @@
         "event": "Damage",
         "name": "Twin Snakes",
         "translate": "双掌打",
-        "damage": 5945,
+        "damage": 6131,
         "crit": true,
         "dh": false,
         "buff": [
@@ -257,9 +262,9 @@
         "event": "Damage",
         "name": "Auto Attack",
         "translate": "自动攻击",
-        "damage": 5025,
-        "crit": true,
-        "dh": false,
+        "damage": 4082,
+        "crit": false,
+        "dh": true,
         "buff": [
             "riddle_of_fire",
             "fists_of_fire",
@@ -279,10 +284,11 @@
         "event": "DOT Tick",
         "name": "Demolish",
         "translate": "破碎拳",
-        "damage": 979,
+        "damage": 1324,
         "crit": false,
-        "dh": false,
+        "dh": true,
         "buff": [
+            "fists_of_fire",
             "greased_lightning_i"
         ]
     },
@@ -302,7 +308,7 @@
         "event": "Damage",
         "name": "Auto Attack",
         "translate": "自动攻击",
-        "damage": 3392,
+        "damage": 3494,
         "crit": false,
         "dh": false,
         "buff": [
@@ -329,9 +335,9 @@
         "event": "Damage",
         "name": "Snap Punch",
         "translate": "崩拳",
-        "damage": 7318,
-        "crit": false,
-        "dh": true,
+        "damage": 9855,
+        "crit": true,
+        "dh": false,
         "buff": [
             "potion",
             "riddle_of_fire",
@@ -363,10 +369,11 @@
         "event": "DOT Tick",
         "name": "Demolish",
         "translate": "破碎拳",
-        "damage": 1493,
-        "crit": true,
-        "dh": false,
+        "damage": 1324,
+        "crit": false,
+        "dh": true,
         "buff": [
+            "fists_of_fire",
             "greased_lightning_i"
         ]
     },
@@ -375,7 +382,7 @@
         "event": "Damage",
         "name": "The Forbidden Chakra",
         "translate": "阴阳斗气斩",
-        "damage": 12033,
+        "damage": 12154,
         "crit": false,
         "dh": true,
         "buff": [
@@ -403,9 +410,9 @@
         "event": "Damage",
         "name": "Auto Attack",
         "translate": "自动攻击",
-        "damage": 3785,
+        "damage": 4685,
         "crit": false,
-        "dh": false,
+        "dh": true,
         "buff": [
             "potion",
             "internal_release",
@@ -431,7 +438,7 @@
         "event": "Damage",
         "name": "Bootshine",
         "translate": "连击",
-        "damage": 8526,
+        "damage": 8441,
         "crit": true,
         "dh": false,
         "buff": [
@@ -466,10 +473,11 @@
         "event": "DOT Tick",
         "name": "Demolish",
         "translate": "破碎拳",
-        "damage": 922,
-        "crit": false,
+        "damage": 1552,
+        "crit": true,
         "dh": false,
         "buff": [
+            "fists_of_fire",
             "greased_lightning_i"
         ]
     },
@@ -478,9 +486,9 @@
         "event": "Damage",
         "name": "Auto Attack",
         "translate": "自动攻击",
-        "damage": 4014,
+        "damage": 4677,
         "crit": false,
-        "dh": false,
+        "dh": true,
         "buff": [
             "potion",
             "internal_release",
@@ -507,8 +515,8 @@
         "event": "Damage",
         "name": "True Strike",
         "translate": "正拳",
-        "damage": 11388,
-        "crit": true,
+        "damage": 7544,
+        "crit": false,
         "dh": false,
         "buff": [
             "potion",
@@ -536,9 +544,9 @@
         "event": "Damage",
         "name": "Elixir Field",
         "translate": "苍气炮",
-        "damage": 16921,
+        "damage": 13537,
         "crit": true,
-        "dh": true,
+        "dh": false,
         "buff": [
             "potion",
             "internal_release",
@@ -554,9 +562,9 @@
         "event": "Damage",
         "name": "Howling Fist",
         "translate": "空鸣拳",
-        "damage": 8810,
+        "damage": 11013,
         "crit": false,
-        "dh": false,
+        "dh": true,
         "buff": [
             "potion",
             "internal_release",
@@ -583,7 +591,7 @@
         "event": "Damage",
         "name": "Auto Attack",
         "translate": "自动攻击",
-        "damage": 3858,
+        "damage": 4014,
         "crit": false,
         "dh": false,
         "buff": [
@@ -612,8 +620,8 @@
         "event": "Damage",
         "name": "Demolish",
         "translate": "破碎拳",
-        "damage": 4345,
-        "crit": true,
+        "damage": 2767,
+        "crit": false,
         "dh": false,
         "buff": [
             "potion",
@@ -632,23 +640,23 @@
         "translate": "破碎拳",
         "damage": [
             {
-                "damage": 2004,
+                "damage": 2150,
                 "crit": false,
                 "dh": false
             },
             {
-                "damage": 2583,
+                "damage": 2129,
                 "crit": false,
-                "dh": true
+                "dh": false
             },
             {
-                "damage": 3244,
+                "damage": 2150,
+                "crit": false,
+                "dh": false
+            },
+            {
+                "damage": 4301,
                 "crit": true,
-                "dh": false
-            },
-            {
-                "damage": 2714,
-                "crit": false,
                 "dh": true
             },
             {
@@ -657,8 +665,8 @@
                 "dh": false
             },
             {
-                "damage": 3343,
-                "crit": true,
+                "damage": 2171,
+                "crit": false,
                 "dh": false
             }
         ],
@@ -678,7 +686,7 @@
         "event": "DOT Tick",
         "name": "Demolish",
         "translate": "破碎拳",
-        "damage": 2004,
+        "damage": 2150,
         "crit": false,
         "dh": false,
         "buff": [
@@ -696,9 +704,9 @@
         "event": "Damage",
         "name": "Steel Peak",
         "translate": "铁山靠",
-        "damage": 6066,
+        "damage": 7430,
         "crit": false,
-        "dh": false,
+        "dh": true,
         "buff": [
             "potion",
             "internal_release",
@@ -714,7 +722,7 @@
         "event": "Damage",
         "name": "Auto Attack",
         "translate": "自动攻击",
-        "damage": 4014,
+        "damage": 4053,
         "crit": false,
         "dh": false,
         "buff": [
@@ -743,7 +751,7 @@
         "event": "Damage",
         "name": "Dragon Kick",
         "translate": "双龙脚",
-        "damage": 7129,
+        "damage": 6705,
         "crit": false,
         "dh": true,
         "buff": [
@@ -761,9 +769,9 @@
         "event": "DOT Tick",
         "name": "Demolish",
         "translate": "破碎拳",
-        "damage": 2583,
+        "damage": 2129,
         "crit": false,
-        "dh": true,
+        "dh": false,
         "buff": [
             "potion",
             "internal_release",
@@ -779,7 +787,7 @@
         "event": "Damage",
         "name": "Auto Attack",
         "translate": "自动攻击",
-        "damage": 4053,
+        "damage": 3897,
         "crit": false,
         "dh": false,
         "buff": [
@@ -819,8 +827,8 @@
         "event": "Damage",
         "name": "Twin Snakes",
         "translate": "双掌打",
-        "damage": 7966,
-        "crit": true,
+        "damage": 5492,
+        "crit": false,
         "dh": false,
         "buff": [
             "potion",
@@ -837,9 +845,9 @@
         "event": "Damage",
         "name": "Tornado Kick",
         "translate": "斗魂旋风脚",
-        "damage": 20495,
-        "crit": true,
-        "dh": false,
+        "damage": 16484,
+        "crit": false,
+        "dh": true,
         "buff": [
             "potion",
             "internal_release",
@@ -855,7 +863,7 @@
         "event": "Damage",
         "name": "Auto Attack",
         "translate": "自动攻击",
-        "damage": 2877,
+        "damage": 2847,
         "crit": false,
         "dh": false,
         "buff": [
@@ -872,8 +880,8 @@
         "event": "DOT Tick",
         "name": "Demolish",
         "translate": "破碎拳",
-        "damage": 3244,
-        "crit": true,
+        "damage": 2150,
+        "crit": false,
         "dh": false,
         "buff": [
             "potion",
@@ -912,7 +920,7 @@
         "event": "Damage",
         "name": "Snap Punch",
         "translate": "崩拳",
-        "damage": 5387,
+        "damage": 5123,
         "crit": false,
         "dh": false,
         "buff": [
@@ -936,9 +944,9 @@
         "event": "Damage",
         "name": "Auto Attack",
         "translate": "自动攻击",
-        "damage": 4081,
-        "crit": false,
-        "dh": true,
+        "damage": 5023,
+        "crit": true,
+        "dh": false,
         "buff": [
             "potion",
             "perfect_balance",
@@ -954,8 +962,8 @@
         "event": "DOT Tick",
         "name": "Demolish",
         "translate": "破碎拳",
-        "damage": 2714,
-        "crit": false,
+        "damage": 4301,
+        "crit": true,
         "dh": true,
         "buff": [
             "potion",
@@ -983,9 +991,9 @@
         "event": "Damage",
         "name": "Snap Punch",
         "translate": "崩拳",
-        "damage": 4469,
-        "crit": false,
-        "dh": false,
+        "damage": 8858,
+        "crit": true,
+        "dh": true,
         "buff": [
             "potion",
             "perfect_balance",
@@ -1000,9 +1008,9 @@
         "event": "Damage",
         "name": "Auto Attack",
         "translate": "自动攻击",
-        "damage": 4171,
-        "crit": true,
-        "dh": false,
+        "damage": 3424,
+        "crit": false,
+        "dh": true,
         "buff": [
             "potion",
             "perfect_balance",
@@ -1046,8 +1054,8 @@
         "event": "Damage",
         "name": "Snap Punch",
         "translate": "崩拳",
-        "damage": 7070,
-        "crit": true,
+        "damage": 4410,
+        "crit": false,
         "dh": false,
         "buff": [
             "potion",
@@ -1062,8 +1070,8 @@
         "event": "Damage",
         "name": "Auto Attack",
         "translate": "自动攻击",
-        "damage": 3390,
-        "crit": false,
+        "damage": 5715,
+        "crit": true,
         "dh": true,
         "buff": [
             "potion",
@@ -1089,8 +1097,8 @@
         "event": "Damage",
         "name": "Dragon Kick",
         "translate": "双龙脚",
-        "damage": 8118,
-        "crit": true,
+        "damage": 5171,
+        "crit": false,
         "dh": true,
         "buff": [
             "potion",
@@ -1105,8 +1113,8 @@
         "event": "DOT Tick",
         "name": "Demolish",
         "translate": "破碎拳",
-        "damage": 3343,
-        "crit": true,
+        "damage": 2171,
+        "crit": false,
         "dh": false,
         "buff": [
             "potion",
@@ -1123,9 +1131,9 @@
         "event": "Damage",
         "name": "Auto Attack",
         "translate": "自动攻击",
-        "damage": 5827,
+        "damage": 4482,
         "crit": true,
-        "dh": true,
+        "dh": false,
         "buff": [
             "potion",
             "perfect_balance",
@@ -1161,9 +1169,9 @@
         "event": "Damage",
         "name": "Twin Snakes",
         "translate": "双掌打",
-        "damage": 3678,
+        "damage": 4742,
         "crit": false,
-        "dh": false,
+        "dh": true,
         "buff": [
             "potion",
             "perfect_balance",
@@ -1177,9 +1185,9 @@
         "event": "Damage",
         "name": "Tornado Kick",
         "translate": "斗魂旋风脚",
-        "damage": 12442,
-        "crit": false,
-        "dh": true,
+        "damage": 16087,
+        "crit": true,
+        "dh": false,
         "buff": [
             "potion",
             "perfect_balance",
@@ -1193,7 +1201,7 @@
         "event": "Damage",
         "name": "Auto Attack",
         "translate": "自动攻击",
-        "damage": 3551,
+        "damage": 3447,
         "crit": true,
         "dh": false,
         "buff": [
@@ -1230,7 +1238,7 @@
         "event": "Damage",
         "name": "Demolish",
         "translate": "破碎拳",
-        "damage": 1670,
+        "damage": 1638,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1246,12 +1254,17 @@
         "translate": "破碎拳",
         "damage": [
             {
-                "damage": 1280,
-                "crit": false,
+                "damage": 2010,
+                "crit": true,
                 "dh": false
             },
             {
-                "damage": 1697,
+                "damage": 2071,
+                "crit": true,
+                "dh": false
+            },
+            {
+                "damage": 1551,
                 "crit": false,
                 "dh": true
             },
@@ -1261,19 +1274,14 @@
                 "dh": false
             },
             {
-                "damage": 2050,
-                "crit": true,
-                "dh": false
-            },
-            {
-                "damage": 1697,
+                "damage": 1228,
                 "crit": false,
-                "dh": true
+                "dh": false
             },
             {
-                "damage": 1928,
+                "damage": 2563,
                 "crit": true,
-                "dh": false
+                "dh": true
             }
         ],
         "duration": 1800,
@@ -1314,12 +1322,11 @@
         "event": "Damage",
         "name": "Wind Tackle",
         "translate": "疾风罗刹冲",
-        "damage": 1654,
+        "damage": 1590,
         "crit": false,
         "dh": false,
         "buff": [
             "potion",
-            "fists_of_fire",
             "fists_of_wind",
             "greased_lightning_i",
             "twin_snakes"
@@ -1330,13 +1337,12 @@
         "event": "Damage",
         "name": "Auto Attack",
         "translate": "自动攻击",
-        "damage": 2463,
-        "crit": false,
-        "dh": false,
+        "damage": 4605,
+        "crit": true,
+        "dh": true,
         "buff": [
             "potion",
             "riddle_of_wind",
-            "fists_of_fire",
             "fists_of_wind",
             "greased_lightning_i",
             "twin_snakes"
@@ -1358,8 +1364,8 @@
         "event": "DOT Tick",
         "name": "Demolish",
         "translate": "破碎拳",
-        "damage": 1280,
-        "crit": false,
+        "damage": 2010,
+        "crit": true,
         "dh": false,
         "buff": [
             "potion",
@@ -1384,12 +1390,11 @@
         "event": "Damage",
         "name": "Bootshine",
         "translate": "连击",
-        "damage": 5028,
+        "damage": 5861,
         "crit": true,
-        "dh": false,
+        "dh": true,
         "buff": [
             "riddle_of_wind",
-            "fists_of_fire",
             "fists_of_wind",
             "greased_lightning_i",
             "twin_snakes"
@@ -1411,11 +1416,10 @@
         "event": "Damage",
         "name": "Riddle of Wind",
         "translate": "疾风极意",
-        "damage": 1546,
+        "damage": 1428,
         "crit": false,
         "dh": false,
         "buff": [
-            "fists_of_fire",
             "fists_of_wind",
             "greased_lightning_i",
             "twin_snakes"
@@ -1444,12 +1448,11 @@
         "event": "Damage",
         "name": "Auto Attack",
         "translate": "自动攻击",
-        "damage": 3201,
+        "damage": 2610,
         "crit": false,
-        "dh": true,
+        "dh": false,
         "buff": [
             "fists_of_fire",
-            "fists_of_wind",
             "greased_lightning_ii",
             "twin_snakes"
         ]
@@ -1470,12 +1473,11 @@
         "event": "Damage",
         "name": "The Forbidden Chakra",
         "translate": "阴阳斗气斩",
-        "damage": 6256,
-        "crit": false,
+        "damage": 9822,
+        "crit": true,
         "dh": false,
         "buff": [
             "fists_of_fire",
-            "fists_of_wind",
             "greased_lightning_ii",
             "twin_snakes"
         ]
@@ -1485,12 +1487,11 @@
         "event": "Damage",
         "name": "True Strike",
         "translate": "正拳",
-        "damage": 5494,
-        "crit": false,
-        "dh": true,
+        "damage": 7264,
+        "crit": true,
+        "dh": false,
         "buff": [
             "fists_of_fire",
-            "fists_of_wind",
             "greased_lightning_ii",
             "twin_snakes"
         ]
@@ -1500,9 +1501,9 @@
         "event": "DOT Tick",
         "name": "Demolish",
         "translate": "破碎拳",
-        "damage": 1697,
-        "crit": false,
-        "dh": true,
+        "damage": 2071,
+        "crit": true,
+        "dh": false,
         "buff": [
             "potion",
             "fists_of_fire",
@@ -1515,12 +1516,11 @@
         "event": "Damage",
         "name": "Auto Attack",
         "translate": "自动攻击",
-        "damage": 4733,
-        "crit": true,
+        "damage": 3232,
+        "crit": false,
         "dh": true,
         "buff": [
             "fists_of_fire",
-            "fists_of_wind",
             "greased_lightning_ii",
             "twin_snakes"
         ]

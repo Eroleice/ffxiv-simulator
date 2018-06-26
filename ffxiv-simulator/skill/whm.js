@@ -344,6 +344,11 @@ class effect {
                 arr.push(k);
             }
         }
+        for (var k in this.player.debuff) {
+            if (this.player.buff[k] > 0) {
+                arr.push(k);
+            }
+        }
         return arr;
     }
     // buff检测
@@ -383,6 +388,11 @@ class autoAttack {
     whatBuff() {
         var arr = [];
         for (var k in this.player.buff) {
+            if (this.player.buff[k] > 0) {
+                arr.push(k);
+            }
+        }
+        for (var k in this.player.debuff) {
             if (this.player.buff[k] > 0) {
                 arr.push(k);
             }
