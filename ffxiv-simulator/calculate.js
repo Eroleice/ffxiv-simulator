@@ -58,14 +58,13 @@
     }
 
     // 伤害计算公式
-    baseDamage(potency,type) {
+    baseDamage(potency) {
         // 伤害公式mod计算
         var apMod = Math.floor(100 * (this.player.status.ap - 58.4) / 233.6) / 100;
         var wdMod = (this.player.status.wd + this.player.jobK) / 100;
         var detMod = 1 + Math.floor(1000 * (this.player.status.det - 292) * 0.13 / 2170) / 1000;
         var tenMod = 1 + Math.floor(1000 * (this.player.status.ten - 364) * 0.1 / 2170) / 1000;
-        var resistanceMod = (this.isBuff('resistance')) ? 1.1 : 1;
-        this.damage = Math.floor(Math.floor(Math.floor(Math.floor(Math.floor(Math.floor(potency * wdMod) * apMod) * detMod) * tenMod) * resistanceMod) * this.player.jobTrial);
+        this.damage = Math.floor(Math.floor(Math.floor(Math.floor(Math.floor(potency * wdMod) * apMod) * detMod) * tenMod) * this.player.jobTrial);
         if (potency < 100) {
             this.damage += 1; // 技能威力<100时,最终伤害需要+1
         }
@@ -93,11 +92,10 @@
         }
         // 伤害公式mod计算
         var apMod = Math.floor(100 * (ap - 58.4) / 233.6) / 100;
-        var wdMod = (this.player.status.wd + this.player.jobK) * (this.player.status.aa_delay / 3) / 100;
+        var wdMod = (this.player.status.wd + this.player.jobK) * (this.setting.player.aa_delay / 3) / 100;
         var detMod = 1 + Math.floor(1000 * (this.player.status.det - 292) * 0.13 / 2170) / 1000;
         var tenMod = 1 + Math.floor(1000 * (this.player.status.ten - 364) * 0.1 / 2170) / 1000;
-        var resistanceMod = (this.isBuff('resistance')) ? 1.1 : 1;
-        this.damage = Math.floor(Math.floor(Math.floor(Math.floor(Math.floor(Math.floor(potency * wdMod) * apMod) * detMod) * tenMod) * resistanceMod) * this.player.jobTrial);
+        this.damage = Math.floor(Math.floor(Math.floor(Math.floor(Math.floor(potency * wdMod) * apMod) * detMod) * tenMod) * this.player.jobTrial);
     }
 
     // dot伤害加成
@@ -141,7 +139,13 @@
                 'dragon_sight': 1.05,           // 龙骑龙视
                 'cleric_stance': 1.05,          // 治疗战姿
                 'devotion': 1.02,               // 召唤灵兽加护
-                'brotherhood': 1.05             // 武僧义结金兰
+                'brotherhood': 1.05,            // 武僧义结金兰
+                'greased_lightning_i': 1.1,
+                'greased_lightning_ii': 1.2,
+                'greased_lightning_iii': 1.3,   // 武僧疾风迅雷
+                'fists_of_fire': 1.05,          // 武僧红莲体势
+                'twin_snakes': 1.1,             // 武僧双掌打
+                'riddle_of_fire': 1.3           // 武僧红莲极意
             });
             this.damage = Math.floor(this.damage * m);
         } else if (type == 'magic') {
@@ -159,7 +163,8 @@
             var m = this.multiplier({
                 'trick_attack': 1.1,            // 忍者背刺
                 'foe_requiem': 1.03,            // 诗人魔人歌
-                'hypercharge': 1.05             // 机工超荷
+                'hypercharge': 1.05,            // 机工超荷
+                'resistance': 1.1
             });
             this.damage = Math.floor(this.damage * m);
         } else if (type == 'magic') {
@@ -195,7 +200,7 @@ module.exports = {
     'damageCalculate': function (data,potency,type) {
 
         var c = new calculate(data);
-        c.baseDamage(potency, type);
+        c.baseDamage(potency);
         c.buffMod(type);
         c.debuffMod(type);
         c.critMod();
@@ -230,7 +235,7 @@ module.exports = {
     'dotDamageCalculate': function (data, potency, type) {
 
         var c = new calculate(data);
-        c.baseDamage(potency, type);
+        c.baseDamage(potency);
         c.buffMod(type);
         c.debuffMod(type);
         c.dotMod();
@@ -246,7 +251,7 @@ module.exports = {
 
     'circleBaseDamageCalculate': function (data, potency, type) {
         var c = new calculate(data);
-        c.baseDamage(potency, type);
+        c.baseDamage(potency);
         c.buffMod(type);
         c.dotMod();
         c.critMod();

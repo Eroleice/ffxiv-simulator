@@ -22,12 +22,7 @@ class skill {
     // 速度buff计算
     speedMod() {
         var mod = this.multiplier({
-            'presence_of_mind': 0.8,
-            'greased_lightning_i': 0.95,
-            'greased_lightning_ii': 0.9,
-            'greased_lightning_iii': 0.85,
-            'huton': 0.85,
-            'ley_lines': 0.85
+            'presence_of_mind': 0.8
         });
         mod = (this.isBuff('fey_wind')) ? (mod - 0.03) : mod;
         return mod;
@@ -294,7 +289,7 @@ class effect {
             'event': 'DOT Apply',
             'name': 'Bio II',
             'translate': '猛毒菌',
-            'damage': damage,
+            'damage': deepcopy(damage),
             'duration': 1800,
             'buff': this.whatBuff()
         });
@@ -344,7 +339,7 @@ class effect {
             'event': 'DOT Apply',
             'name': 'Miasma',
             'translate': '瘴气',
-            'damage': damage,
+            'damage': deepcopy(damage),
             'duration': 2400,
             'buff': this.whatBuff()
         });
@@ -381,7 +376,7 @@ class effect {
             'event': 'DOT Apply',
             'name': 'Miasma II',
             'translate': '瘴疠',
-            'damage': damage,
+            'damage': deepcopy(damage),
             'duration': 1200,
             'buff': this.whatBuff()
         });
@@ -401,7 +396,7 @@ class effect {
             'event': 'Circle Apply',
             'name': 'Shadow Flare',
             'translate': '暗影核爆',
-            'damage': damage,
+            'damage': deepcopy(damage),
             'duration': 1500,
             'buff': this.whatBuff()
         });
@@ -425,7 +420,7 @@ class effect {
         });
     }
     chain_strategem() {
-        this.player.buff.chain_strategem = 1500;
+        this.player.debuff.chain_strategem = 1500;
         this.log.push({
             'time': this.setting.simulate.duration - this.battle.time,
             'event': 'Buff Apply',

@@ -2,61 +2,75 @@
     {
         "time": 0,
         "event": "Cast",
-        "name": "Cleric Stance",
-        "translate": "战姿",
+        "name": "Demolish",
+        "translate": "破碎拳",
         "duration": 0,
         "resource": {
-            "mp": 20000,
-            "tp": 1000
+            "mp": 5160,
+            "tp": 960
         }
-    },
-    {
-        "time": 0,
-        "event": "Buff Apply",
-        "name": "Cleric Stance",
-        "translate": "战姿",
-        "duration": 1500
     },
     {
         "time": 0,
         "event": "Cast",
-        "name": "Potion",
-        "translate": "爆发药",
+        "name": "Fists of Wind",
+        "translate": "疾风体势",
         "duration": 0,
         "resource": {
-            "mp": 20000,
+            "mp": 5160,
             "tp": 1000
         }
     },
     {
         "time": 0,
-        "event": "Buff Apply",
-        "name": "Potion",
-        "translate": "爆发药",
-        "duration": 3000
-    },
-    {
-        "time": 0,
-        "event": "Cast",
-        "name": "Combust II",
-        "translate": "灾星",
-        "duration": 0,
-        "resource": {
-            "mp": 19400,
-            "tp": 1000
-        }
+        "event": "Damage",
+        "name": "Demolish",
+        "translate": "破碎拳",
+        "damage": 1948,
+        "crit": true,
+        "dh": false,
+        "buff": []
     },
     {
         "time": 0,
         "event": "DOT Apply",
-        "name": "Combust II",
-        "translate": "灾星",
-        "damage": [],
-        "duration": 3000,
+        "name": "Demolish",
+        "translate": "破碎拳",
+        "damage": [
+            {
+                "damage": 1200,
+                "crit": false,
+                "dh": true
+            },
+            {
+                "damage": 979,
+                "crit": false,
+                "dh": false
+            },
+            {
+                "damage": 1493,
+                "crit": true,
+                "dh": false
+            },
+            {
+                "damage": 922,
+                "crit": false,
+                "dh": false
+            },
+            {
+                "damage": 989,
+                "crit": false,
+                "dh": false
+            },
+            {
+                "damage": 1553,
+                "crit": true,
+                "dh": false
+            }
+        ],
+        "duration": 1800,
         "buff": [
-            "potion",
-            "cleric_stance",
-            "bard_aura"
+            "greased_lightning_i"
         ]
     },
     {
@@ -64,4560 +78,1462 @@
         "event": "Damage",
         "name": "Auto Attack",
         "translate": "自动攻击",
-        "damage": 100,
+        "damage": 1795,
         "crit": false,
         "dh": false,
         "buff": [
-            "potion",
-            "cleric_stance",
-            "bard_aura"
+            "greased_lightning_i"
         ]
     },
     {
-        "time": 100,
-        "event": "Party Buff Apply",
-        "name": "Hypercharge",
-        "translate": "超荷",
-        "duration": 2800
-    },
-    {
-        "time": 150,
-        "event": "DOT Tick",
-        "name": "Combust II",
-        "translate": "灾星",
-        "damage": 1473,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "potion",
-            "cleric_stance",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 168,
-        "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
-        "resource": {
-            "mp": 18800,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 200,
-        "event": "Party Buff Apply",
-        "name": "Contagion",
-        "translate": "歪风",
-        "duration": 1500
-    },
-    {
-        "time": 300,
-        "event": "Party Buff Apply",
-        "name": "Battle Litany",
-        "translate": "战斗连祷",
-        "duration": 2000
-    },
-    {
-        "time": 300,
-        "event": "Party Buff Apply",
-        "name": "Foe Requiem",
-        "translate": "魔人歌",
-        "duration": 3300
-    },
-    {
-        "time": 354,
-        "event": "Damage",
-        "name": "Auto Attack",
-        "translate": "自动攻击",
-        "damage": 113,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "potion",
-            "cleric_stance",
-            "battle_litany",
-            "bard_aura",
-            "foe_requiem",
-            "contagion",
-            "hypercharge"
-        ]
-    },
-    {
-        "time": 400,
-        "event": "Party Buff Apply",
-        "name": "Dragon Sight",
-        "translate": "龙视",
-        "duration": 2000
-    },
-    {
-        "time": 400,
-        "event": "Party Buff Apply",
-        "name": "Battle Voice",
-        "translate": "战斗之声",
-        "duration": 2000
-    },
-    {
-        "time": 403,
-        "event": "Damage",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "damage": 7340,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "potion",
-            "cleric_stance",
-            "battle_litany",
-            "bard_aura",
-            "foe_requiem",
-            "contagion",
-            "hypercharge"
-        ]
-    },
-    {
-        "time": 403,
-        "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
-        "resource": {
-            "mp": 18600,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 450,
-        "event": "DOT Tick",
-        "name": "Combust II",
-        "translate": "灾星",
-        "damage": 1416,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "potion",
-            "cleric_stance",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 638,
-        "event": "Damage",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "damage": 7485,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "potion",
-            "cleric_stance",
-            "battle_litany",
-            "dragon_sight",
-            "battle_voice",
-            "bard_aura",
-            "foe_requiem",
-            "contagion",
-            "hypercharge"
-        ]
-    },
-    {
-        "time": 638,
-        "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
-        "resource": {
-            "mp": 18400,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 750,
-        "event": "DOT Tick",
-        "name": "Combust II",
-        "translate": "灾星",
-        "damage": 2175,
-        "crit": true,
-        "dh": false,
-        "buff": [
-            "potion",
-            "cleric_stance",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 824,
-        "event": "Damage",
-        "name": "Auto Attack",
-        "translate": "自动攻击",
-        "damage": 114,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "potion",
-            "cleric_stance",
-            "battle_litany",
-            "dragon_sight",
-            "battle_voice",
-            "bard_aura",
-            "foe_requiem",
-            "contagion",
-            "hypercharge"
-        ]
-    },
-    {
-        "time": 873,
-        "event": "Damage",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "damage": 7114,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "potion",
-            "cleric_stance",
-            "battle_litany",
-            "dragon_sight",
-            "battle_voice",
-            "bard_aura",
-            "foe_requiem",
-            "contagion",
-            "hypercharge"
-        ]
-    },
-    {
-        "time": 873,
-        "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
-        "resource": {
-            "mp": 18200,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 1050,
-        "event": "DOT Tick",
-        "name": "Combust II",
-        "translate": "灾星",
-        "damage": 1445,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "potion",
-            "cleric_stance",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 1100,
-        "event": "Party Buff Apply",
-        "name": "Trick Attack",
-        "translate": "背刺",
-        "duration": 1500
-    },
-    {
-        "time": 1108,
-        "event": "Damage",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "damage": 9078,
-        "crit": false,
-        "dh": true,
-        "buff": [
-            "potion",
-            "cleric_stance",
-            "battle_litany",
-            "dragon_sight",
-            "battle_voice",
-            "bard_aura",
-            "foe_requiem",
-            "contagion",
-            "hypercharge"
-        ]
-    },
-    {
-        "time": 1108,
-        "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
-        "resource": {
-            "mp": 18000,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 1294,
-        "event": "Damage",
-        "name": "Auto Attack",
-        "translate": "自动攻击",
-        "damage": 135,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "potion",
-            "cleric_stance",
-            "battle_litany",
-            "dragon_sight",
-            "battle_voice",
-            "bard_aura",
-            "foe_requiem",
-            "trick_attack",
-            "contagion",
-            "hypercharge"
-        ]
-    },
-    {
-        "time": 1343,
-        "event": "Damage",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "damage": 11322,
-        "crit": true,
-        "dh": false,
-        "buff": [
-            "potion",
-            "cleric_stance",
-            "battle_litany",
-            "dragon_sight",
-            "battle_voice",
-            "bard_aura",
-            "foe_requiem",
-            "trick_attack",
-            "contagion",
-            "hypercharge"
-        ]
-    },
-    {
-        "time": 1343,
-        "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
-        "resource": {
-            "mp": 17400,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 1350,
-        "event": "DOT Tick",
-        "name": "Combust II",
-        "translate": "灾星",
-        "damage": 1445,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "potion",
-            "cleric_stance",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 1500,
-        "event": "Party Buff Apply",
-        "name": "Devotion",
-        "translate": "灵兽加护",
-        "duration": 1500
-    },
-    {
-        "time": 1578,
-        "event": "Damage",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "damage": 11693,
-        "crit": true,
-        "dh": false,
-        "buff": [
-            "potion",
-            "battle_litany",
-            "dragon_sight",
-            "battle_voice",
-            "bard_aura",
-            "foe_requiem",
-            "trick_attack",
-            "contagion",
-            "hypercharge",
-            "devotion"
-        ]
-    },
-    {
-        "time": 1578,
-        "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
-        "resource": {
-            "mp": 17200,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 1650,
-        "event": "DOT Tick",
-        "name": "Combust II",
-        "translate": "灾星",
-        "damage": 1402,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "potion",
-            "cleric_stance",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 1764,
-        "event": "Damage",
-        "name": "Auto Attack",
-        "translate": "自动攻击",
-        "damage": 133,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "potion",
-            "battle_litany",
-            "dragon_sight",
-            "battle_voice",
-            "bard_aura",
-            "foe_requiem",
-            "trick_attack",
-            "hypercharge",
-            "devotion"
-        ]
-    },
-    {
-        "time": 1813,
-        "event": "Damage",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "damage": 10945,
-        "crit": true,
-        "dh": false,
-        "buff": [
-            "potion",
-            "battle_litany",
-            "dragon_sight",
-            "battle_voice",
-            "bard_aura",
-            "foe_requiem",
-            "trick_attack",
-            "hypercharge",
-            "devotion"
-        ]
-    },
-    {
-        "time": 1813,
-        "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
-        "resource": {
-            "mp": 17000,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 1950,
-        "event": "DOT Tick",
-        "name": "Combust II",
-        "translate": "灾星",
-        "damage": 1431,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "potion",
-            "cleric_stance",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 2048,
-        "event": "Damage",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "damage": 11051,
-        "crit": true,
-        "dh": false,
-        "buff": [
-            "potion",
-            "battle_litany",
-            "dragon_sight",
-            "battle_voice",
-            "bard_aura",
-            "foe_requiem",
-            "trick_attack",
-            "hypercharge",
-            "devotion"
-        ]
-    },
-    {
-        "time": 2048,
-        "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
-        "resource": {
-            "mp": 16800,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 2234,
-        "event": "Damage",
-        "name": "Auto Attack",
-        "translate": "自动攻击",
-        "damage": 128,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "potion",
-            "battle_litany",
-            "dragon_sight",
-            "battle_voice",
-            "bard_aura",
-            "foe_requiem",
-            "trick_attack",
-            "hypercharge",
-            "devotion"
-        ]
-    },
-    {
-        "time": 2250,
-        "event": "DOT Tick",
-        "name": "Combust II",
-        "translate": "灾星",
-        "damage": 1388,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "potion",
-            "cleric_stance",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 2283,
-        "event": "Damage",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "damage": 6911,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "potion",
-            "battle_litany",
-            "dragon_sight",
-            "battle_voice",
-            "bard_aura",
-            "foe_requiem",
-            "trick_attack",
-            "hypercharge",
-            "devotion"
-        ]
-    },
-    {
-        "time": 2283,
-        "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
-        "resource": {
-            "mp": 16200,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 2518,
-        "event": "Damage",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "damage": 6925,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "potion",
-            "bard_aura",
-            "foe_requiem",
-            "trick_attack",
-            "hypercharge",
-            "devotion"
-        ]
-    },
-    {
-        "time": 2518,
-        "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
-        "resource": {
-            "mp": 16000,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 2550,
-        "event": "DOT Tick",
-        "name": "Combust II",
-        "translate": "灾星",
-        "damage": 1388,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "potion",
-            "cleric_stance",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 2704,
-        "event": "Damage",
-        "name": "Auto Attack",
-        "translate": "自动攻击",
-        "damage": 105,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "potion",
-            "bard_aura",
-            "foe_requiem",
-            "hypercharge",
-            "devotion"
-        ]
-    },
-    {
-        "time": 2753,
-        "event": "Damage",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "damage": 5921,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "potion",
-            "bard_aura",
-            "foe_requiem",
-            "hypercharge",
-            "devotion"
-        ]
-    },
-    {
-        "time": 2753,
-        "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
-        "resource": {
-            "mp": 15800,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 2850,
-        "event": "DOT Tick",
-        "name": "Combust II",
-        "translate": "灾星",
-        "damage": 1416,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "potion",
-            "cleric_stance",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 2988,
-        "event": "Damage",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "damage": 8306,
-        "crit": true,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "foe_requiem",
-            "devotion"
-        ]
-    },
-    {
-        "time": 2988,
-        "event": "Cast",
-        "name": "Combust II",
-        "translate": "灾星",
-        "duration": 0,
-        "resource": {
-            "mp": 15600,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 3024,
-        "event": "Damage",
-        "name": "Auto Attack",
-        "translate": "自动攻击",
-        "damage": 98,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "foe_requiem"
-        ]
-    },
-    {
-        "time": 3055,
-        "event": "DOT Apply",
-        "name": "Combust II",
-        "translate": "灾星",
-        "damage": [],
-        "duration": 3000,
-        "buff": [
-            "bard_aura",
-            "foe_requiem"
-        ]
-    },
-    {
-        "time": 3055,
-        "event": "Cast",
-        "name": "Lucid Dreaming",
-        "translate": "醒梦",
-        "duration": 0,
-        "resource": {
-            "mp": 15600,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 3122,
+        "time": 66,
         "event": "Buff Apply",
-        "name": "Lucid Dreaming",
-        "translate": "醒梦",
-        "duration": 2100
+        "name": "Fists of Wind",
+        "translate": "疾风体势",
+        "duration": 3934
     },
     {
-        "time": 3150,
-        "event": "DOT Tick",
-        "name": "Combust II",
-        "translate": "灾星",
-        "damage": 1356,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "foe_requiem"
-        ]
-    },
-    {
-        "time": 3223,
+        "time": 66,
         "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
-        "resource": {
-            "mp": 16360,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 3409,
-        "event": "Damage",
-        "name": "Auto Attack",
-        "translate": "自动攻击",
-        "damage": 103,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "lucid_dreaming",
-            "bard_aura",
-            "foe_requiem"
-        ]
-    },
-    {
-        "time": 3450,
-        "event": "DOT Tick",
-        "name": "Combust II",
-        "translate": "灾星",
-        "damage": 1303,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "foe_requiem"
-        ]
-    },
-    {
-        "time": 3458,
-        "event": "Damage",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "damage": 7744,
-        "crit": true,
-        "dh": false,
-        "buff": [
-            "lucid_dreaming",
-            "bard_aura",
-            "foe_requiem"
-        ]
-    },
-    {
-        "time": 3458,
-        "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
-        "resource": {
-            "mp": 15760,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 3693,
-        "event": "Damage",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "damage": 5514,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "lucid_dreaming",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 3693,
-        "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
-        "resource": {
-            "mp": 16520,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 3750,
-        "event": "DOT Tick",
-        "name": "Combust II",
-        "translate": "灾星",
-        "damage": 1369,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "foe_requiem"
-        ]
-    },
-    {
-        "time": 3879,
-        "event": "Damage",
-        "name": "Auto Attack",
-        "translate": "自动攻击",
-        "damage": 104,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "lucid_dreaming",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 3928,
-        "event": "Damage",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "damage": 5461,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "lucid_dreaming",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 3928,
-        "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
-        "resource": {
-            "mp": 17280,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 4050,
-        "event": "DOT Tick",
-        "name": "Combust II",
-        "translate": "灾星",
-        "damage": 1277,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "foe_requiem"
-        ]
-    },
-    {
-        "time": 4163,
-        "event": "Damage",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "damage": 5302,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "lucid_dreaming",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 4163,
-        "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
-        "resource": {
-            "mp": 18040,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 4349,
-        "event": "Damage",
-        "name": "Auto Attack",
-        "translate": "自动攻击",
-        "damage": 106,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "lucid_dreaming",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 4350,
-        "event": "DOT Tick",
-        "name": "Combust II",
-        "translate": "灾星",
-        "damage": 1356,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "foe_requiem"
-        ]
-    },
-    {
-        "time": 4398,
-        "event": "Damage",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "damage": 5302,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "lucid_dreaming",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 4398,
-        "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
-        "resource": {
-            "mp": 17440,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 4633,
-        "event": "Damage",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "damage": 5089,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "lucid_dreaming",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 4633,
-        "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
-        "resource": {
-            "mp": 18200,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 4650,
-        "event": "DOT Tick",
-        "name": "Combust II",
-        "translate": "灾星",
-        "damage": 1263,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "foe_requiem"
-        ]
-    },
-    {
-        "time": 4819,
-        "event": "Damage",
-        "name": "Auto Attack",
-        "translate": "自动攻击",
-        "damage": 96,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "lucid_dreaming",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 4868,
-        "event": "Damage",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "damage": 5514,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "lucid_dreaming",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 4868,
-        "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
-        "resource": {
-            "mp": 18960,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 4950,
-        "event": "DOT Tick",
-        "name": "Combust II",
-        "translate": "灾星",
-        "damage": 1263,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "foe_requiem"
-        ]
-    },
-    {
-        "time": 5103,
-        "event": "Damage",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "damage": 5036,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "lucid_dreaming",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 5103,
-        "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
-        "resource": {
-            "mp": 19400,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 5250,
-        "event": "DOT Tick",
-        "name": "Combust II",
-        "translate": "灾星",
-        "damage": 1250,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "foe_requiem"
-        ]
-    },
-    {
-        "time": 5289,
-        "event": "Damage",
-        "name": "Auto Attack",
-        "translate": "自动攻击",
-        "damage": 104,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 5338,
-        "event": "Damage",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "damage": 5036,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 5338,
-        "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
-        "resource": {
-            "mp": 19200,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 5550,
-        "event": "DOT Tick",
-        "name": "Combust II",
-        "translate": "灾星",
-        "damage": 1263,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "foe_requiem"
-        ]
-    },
-    {
-        "time": 5573,
-        "event": "Damage",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "damage": 5142,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 5573,
-        "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
-        "resource": {
-            "mp": 18600,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 5759,
-        "event": "Damage",
-        "name": "Auto Attack",
-        "translate": "自动攻击",
-        "damage": 104,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 5808,
-        "event": "Damage",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "damage": 7518,
-        "crit": true,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 5808,
-        "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
-        "resource": {
-            "mp": 18400,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 5850,
-        "event": "DOT Tick",
-        "name": "Combust II",
-        "translate": "灾星",
-        "damage": 1369,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "foe_requiem"
-        ]
-    },
-    {
-        "time": 6043,
-        "event": "Damage",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "damage": 5036,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 6043,
-        "event": "Cast",
-        "name": "Combust II",
-        "translate": "灾星",
+        "name": "Shoulder Tackle",
+        "translate": "罗刹冲",
         "duration": 0,
         "resource": {
-            "mp": 18200,
+            "mp": 5160,
             "tp": 1000
         }
     },
     {
-        "time": 6079,
-        "event": "Damage",
-        "name": "Auto Attack",
-        "translate": "自动攻击",
-        "damage": 103,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 6110,
-        "event": "DOT Apply",
-        "name": "Combust II",
-        "translate": "灾星",
-        "damage": [],
-        "duration": 3000,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 6150,
-        "event": "DOT Tick",
-        "name": "Combust II",
-        "translate": "灾星",
-        "damage": 1303,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 6200,
-        "event": "Party Buff Apply",
-        "name": "Contagion",
-        "translate": "歪风",
-        "duration": 1500
-    },
-    {
-        "time": 6278,
-        "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
-        "resource": {
-            "mp": 18000,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 6450,
-        "event": "DOT Tick",
-        "name": "Combust II",
-        "translate": "灾星",
-        "damage": 1316,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 6464,
-        "event": "Damage",
-        "name": "Auto Attack",
-        "translate": "自动攻击",
-        "damage": 97,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "contagion"
-        ]
-    },
-    {
-        "time": 6513,
-        "event": "Damage",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "damage": 5540,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "contagion"
-        ]
-    },
-    {
-        "time": 6513,
-        "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
-        "resource": {
-            "mp": 17800,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 6748,
-        "event": "Damage",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "damage": 6123,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "contagion"
-        ]
-    },
-    {
-        "time": 6748,
-        "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
-        "resource": {
-            "mp": 17200,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 6750,
-        "event": "DOT Tick",
-        "name": "Combust II",
-        "translate": "灾星",
-        "damage": 1278,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 6934,
-        "event": "Damage",
-        "name": "Auto Attack",
-        "translate": "自动攻击",
-        "damage": 101,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "contagion"
-        ]
-    },
-    {
-        "time": 6983,
-        "event": "Damage",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "damage": 6123,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "contagion"
-        ]
-    },
-    {
-        "time": 6983,
-        "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
-        "resource": {
-            "mp": 17000,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 7050,
-        "event": "DOT Tick",
-        "name": "Combust II",
-        "translate": "灾星",
-        "damage": 1265,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 7100,
-        "event": "Party Buff Apply",
-        "name": "Trick Attack",
-        "translate": "背刺",
-        "duration": 1500
-    },
-    {
-        "time": 7218,
-        "event": "Damage",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "damage": 6543,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "trick_attack",
-            "contagion"
-        ]
-    },
-    {
-        "time": 7218,
-        "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
-        "resource": {
-            "mp": 16800,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 7350,
-        "event": "DOT Tick",
-        "name": "Combust II",
-        "translate": "灾星",
-        "damage": 1303,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 7404,
-        "event": "Damage",
-        "name": "Auto Attack",
-        "translate": "自动攻击",
-        "damage": 113,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "trick_attack",
-            "contagion"
-        ]
-    },
-    {
-        "time": 7453,
-        "event": "Damage",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "damage": 6222,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "trick_attack",
-            "contagion"
-        ]
-    },
-    {
-        "time": 7453,
-        "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
-        "resource": {
-            "mp": 16600,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 7650,
-        "event": "DOT Tick",
-        "name": "Combust II",
-        "translate": "灾星",
-        "damage": 1227,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 7688,
-        "event": "Damage",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "damage": 6350,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "trick_attack",
-            "contagion"
-        ]
-    },
-    {
-        "time": 7688,
-        "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
-        "resource": {
-            "mp": 16000,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 7874,
-        "event": "Damage",
-        "name": "Auto Attack",
-        "translate": "自动攻击",
-        "damage": 115,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "trick_attack"
-        ]
-    },
-    {
-        "time": 7923,
-        "event": "Damage",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "damage": 6006,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "trick_attack"
-        ]
-    },
-    {
-        "time": 7923,
-        "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
-        "resource": {
-            "mp": 15800,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 7950,
-        "event": "DOT Tick",
-        "name": "Combust II",
-        "translate": "灾星",
-        "damage": 1329,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 8158,
-        "event": "Damage",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "damage": 6065,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "trick_attack"
-        ]
-    },
-    {
-        "time": 8158,
-        "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
-        "resource": {
-            "mp": 15600,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 8250,
-        "event": "DOT Tick",
-        "name": "Combust II",
-        "translate": "灾星",
-        "damage": 1252,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 8344,
-        "event": "Damage",
-        "name": "Auto Attack",
-        "translate": "自动攻击",
-        "damage": 109,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "trick_attack"
-        ]
-    },
-    {
-        "time": 8393,
-        "event": "Damage",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "damage": 5598,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "trick_attack"
-        ]
-    },
-    {
-        "time": 8393,
-        "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
-        "resource": {
-            "mp": 15400,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 8550,
-        "event": "DOT Tick",
-        "name": "Combust II",
-        "translate": "灾星",
-        "damage": 1303,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 8628,
-        "event": "Damage",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "damage": 5540,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "trick_attack"
-        ]
-    },
-    {
-        "time": 8628,
-        "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
-        "resource": {
-            "mp": 15200,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 8814,
-        "event": "Damage",
-        "name": "Auto Attack",
-        "translate": "自动攻击",
-        "damage": 100,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 8850,
-        "event": "DOT Tick",
-        "name": "Combust II",
-        "translate": "灾星",
-        "damage": 1342,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 8863,
-        "event": "Damage",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "damage": 5036,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 8863,
-        "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
-        "resource": {
-            "mp": 14600,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 9098,
-        "event": "Damage",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "damage": 5408,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 9098,
-        "event": "Cast",
-        "name": "Combust II",
-        "translate": "灾星",
-        "duration": 0,
-        "resource": {
-            "mp": 14400,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 9134,
-        "event": "Damage",
-        "name": "Auto Attack",
-        "translate": "自动攻击",
-        "damage": 105,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 9165,
-        "event": "DOT Apply",
-        "name": "Combust II",
-        "translate": "灾星",
-        "damage": [],
-        "duration": 3000,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 9165,
-        "event": "Cast",
-        "name": "Cleric Stance",
-        "translate": "战姿",
-        "duration": 0,
-        "resource": {
-            "mp": 14400,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 9232,
+        "time": 133,
         "event": "Buff Apply",
-        "name": "Cleric Stance",
-        "translate": "战姿",
-        "duration": 1500
+        "name": "Riddle of Wind",
+        "translate": "疾风极意",
+        "duration": 1000
     },
     {
-        "time": 9333,
+        "time": 134,
+        "event": "Damage",
+        "name": "Wind Tackle",
+        "translate": "疾风罗刹冲",
+        "damage": 1168,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "fists_of_wind",
+            "greased_lightning_i"
+        ]
+    },
+    {
+        "time": 173,
         "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
-        "resource": {
-            "mp": 14200,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 9450,
-        "event": "DOT Tick",
-        "name": "Combust II",
-        "translate": "灾星",
-        "damage": 1812,
-        "crit": true,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 9519,
-        "event": "Damage",
-        "name": "Auto Attack",
-        "translate": "自动攻击",
-        "damage": 101,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "cleric_stance",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 9568,
-        "event": "Damage",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "damage": 8545,
-        "crit": true,
-        "dh": false,
-        "buff": [
-            "cleric_stance",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 9568,
-        "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
-        "resource": {
-            "mp": 14000,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 9750,
-        "event": "DOT Tick",
-        "name": "Combust II",
-        "translate": "灾星",
-        "damage": 1316,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 9803,
-        "event": "Damage",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "damage": 5845,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "cleric_stance",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 9803,
-        "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
-        "resource": {
-            "mp": 13800,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 9989,
-        "event": "Damage",
-        "name": "Auto Attack",
-        "translate": "自动攻击",
-        "damage": 109,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "cleric_stance",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 10038,
-        "event": "Damage",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "damage": 5678,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "cleric_stance",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 10038,
-        "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
-        "resource": {
-            "mp": 13200,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 10050,
-        "event": "DOT Tick",
-        "name": "Combust II",
-        "translate": "灾星",
-        "damage": 1329,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 10273,
-        "event": "Damage",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "damage": 5734,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "cleric_stance",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 10273,
-        "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
-        "resource": {
-            "mp": 13000,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 10350,
-        "event": "DOT Tick",
-        "name": "Combust II",
-        "translate": "灾星",
-        "damage": 1265,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 10459,
-        "event": "Damage",
-        "name": "Auto Attack",
-        "translate": "自动攻击",
-        "damage": 102,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "cleric_stance",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 10508,
-        "event": "Damage",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "damage": 5344,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "cleric_stance",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 10508,
-        "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
-        "resource": {
-            "mp": 12800,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 10650,
-        "event": "DOT Tick",
-        "name": "Combust II",
-        "translate": "灾星",
-        "damage": 1342,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 10743,
-        "event": "Damage",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "damage": 5845,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "cleric_stance",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 10743,
-        "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
-        "resource": {
-            "mp": 12600,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 10929,
-        "event": "Damage",
-        "name": "Auto Attack",
-        "translate": "自动攻击",
-        "damage": 105,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 10950,
-        "event": "DOT Tick",
-        "name": "Combust II",
-        "translate": "灾星",
-        "damage": 1278,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 10978,
-        "event": "Damage",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "damage": 5248,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 10978,
-        "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
-        "resource": {
-            "mp": 12000,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 11213,
-        "event": "Damage",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "damage": 7984,
-        "crit": true,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 11213,
-        "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
-        "resource": {
-            "mp": 11800,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 11250,
-        "event": "DOT Tick",
-        "name": "Combust II",
-        "translate": "灾星",
-        "damage": 1278,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 11399,
-        "event": "Damage",
-        "name": "Auto Attack",
-        "translate": "自动攻击",
-        "damage": 98,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 11448,
-        "event": "Damage",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "damage": 5408,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 11448,
-        "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
-        "resource": {
-            "mp": 11600,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 11550,
-        "event": "DOT Tick",
-        "name": "Combust II",
-        "translate": "灾星",
-        "damage": 1252,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 11683,
-        "event": "Damage",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "damage": 5142,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 11683,
-        "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
-        "resource": {
-            "mp": 11400,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 11850,
-        "event": "DOT Tick",
-        "name": "Combust II",
-        "translate": "灾星",
-        "damage": 1278,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 11869,
-        "event": "Damage",
-        "name": "Auto Attack",
-        "translate": "自动攻击",
-        "damage": 103,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 11918,
-        "event": "Damage",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "damage": 5355,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 11918,
-        "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
-        "resource": {
-            "mp": 11200,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 12100,
-        "event": "Party Buff Apply",
-        "name": "Hypercharge",
-        "translate": "超荷",
-        "duration": 2800
-    },
-    {
-        "time": 12150,
-        "event": "DOT Tick",
-        "name": "Combust II",
-        "translate": "灾星",
-        "damage": 1214,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 12153,
-        "event": "Damage",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "damage": 5567,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "hypercharge"
-        ]
-    },
-    {
-        "time": 12153,
-        "event": "Cast",
-        "name": "Combust II",
-        "translate": "灾星",
+        "name": "Dragon Kick",
+        "translate": "双龙脚",
         "duration": 0,
         "resource": {
-            "mp": 10600,
-            "tp": 1000
+            "mp": 5160,
+            "tp": 950
         }
     },
     {
-        "time": 12189,
+        "time": 240,
+        "event": "Cast",
+        "name": "Shoulder Tackle",
+        "translate": "罗刹冲",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 950
+        }
+    },
+    {
+        "time": 241,
         "event": "Damage",
-        "name": "Auto Attack",
-        "translate": "自动攻击",
-        "damage": 110,
+        "name": "Dragon Kick",
+        "translate": "双龙脚",
+        "damage": 2495,
         "crit": false,
         "dh": false,
         "buff": [
-            "bard_aura",
-            "hypercharge"
+            "riddle_of_wind",
+            "fists_of_wind",
+            "greased_lightning_i"
         ]
     },
     {
-        "time": 12200,
-        "event": "Party Buff Apply",
-        "name": "Contagion",
-        "translate": "歪风",
-        "duration": 1500
-    },
-    {
-        "time": 12220,
-        "event": "DOT Apply",
-        "name": "Combust II",
-        "translate": "灾星",
-        "damage": [],
-        "duration": 3000,
+        "time": 245,
+        "event": "Damage",
+        "name": "Auto Attack",
+        "translate": "自动攻击",
+        "damage": 1875,
+        "crit": false,
+        "dh": false,
         "buff": [
-            "bard_aura",
-            "contagion",
-            "hypercharge"
+            "fists_of_wind",
+            "greased_lightning_i"
         ]
     },
     {
-        "time": 12388,
+        "time": 250,
+        "event": "DOT Tick",
+        "name": "Demolish",
+        "translate": "破碎拳",
+        "damage": 1200,
+        "crit": false,
+        "dh": true,
+        "buff": [
+            "greased_lightning_i"
+        ]
+    },
+    {
+        "time": 307,
         "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
+        "name": "Riddle of Fire",
+        "translate": "红莲极意",
+        "duration": 0,
         "resource": {
-            "mp": 10400,
+            "mp": 5160,
             "tp": 1000
         }
     },
     {
-        "time": 12400,
-        "event": "Party Buff Apply",
-        "name": "Dragon Sight",
-        "translate": "龙视",
+        "time": 308,
+        "event": "Damage",
+        "name": "Riddle of Wind",
+        "translate": "疾风极意",
+        "damage": 1258,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "fists_of_wind",
+            "greased_lightning_i"
+        ]
+    },
+    {
+        "time": 374,
+        "event": "Buff Apply",
+        "name": "Riddle of Fire",
+        "translate": "红莲极意",
         "duration": 2000
     },
     {
-        "time": 12450,
-        "event": "DOT Tick",
-        "name": "Combust II",
-        "translate": "灾星",
-        "damage": 1431,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "contagion",
-            "hypercharge"
-        ]
-    },
-    {
-        "time": 12574,
-        "event": "Damage",
-        "name": "Auto Attack",
-        "translate": "自动攻击",
-        "damage": 116,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "dragon_sight",
-            "bard_aura",
-            "contagion",
-            "hypercharge"
-        ]
-    },
-    {
-        "time": 12623,
-        "event": "Damage",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "damage": 6750,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "dragon_sight",
-            "bard_aura",
-            "contagion",
-            "hypercharge"
-        ]
-    },
-    {
-        "time": 12623,
+        "time": 402,
         "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
-        "resource": {
-            "mp": 10200,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 12750,
-        "event": "DOT Tick",
-        "name": "Combust II",
-        "translate": "灾星",
-        "damage": 1490,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "contagion",
-            "hypercharge"
-        ]
-    },
-    {
-        "time": 12858,
-        "event": "Damage",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "damage": 6364,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "dragon_sight",
-            "bard_aura",
-            "contagion",
-            "hypercharge"
-        ]
-    },
-    {
-        "time": 12858,
-        "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
-        "resource": {
-            "mp": 10000,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 13044,
-        "event": "Damage",
-        "name": "Auto Attack",
-        "translate": "自动攻击",
-        "damage": 144,
-        "crit": false,
-        "dh": true,
-        "buff": [
-            "dragon_sight",
-            "bard_aura",
-            "contagion",
-            "hypercharge"
-        ]
-    },
-    {
-        "time": 13050,
-        "event": "DOT Tick",
-        "name": "Combust II",
-        "translate": "灾星",
-        "damage": 1505,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "contagion",
-            "hypercharge"
-        ]
-    },
-    {
-        "time": 13093,
-        "event": "Damage",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "damage": 6107,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "dragon_sight",
-            "bard_aura",
-            "contagion",
-            "hypercharge"
-        ]
-    },
-    {
-        "time": 13093,
-        "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
-        "resource": {
-            "mp": 9400,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 13100,
-        "event": "Party Buff Apply",
-        "name": "Trick Attack",
-        "translate": "背刺",
-        "duration": 1500
-    },
-    {
-        "time": 13328,
-        "event": "Damage",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "damage": 7001,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "dragon_sight",
-            "bard_aura",
-            "trick_attack",
-            "contagion",
-            "hypercharge"
-        ]
-    },
-    {
-        "time": 13328,
-        "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
-        "resource": {
-            "mp": 9200,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 13350,
-        "event": "DOT Tick",
-        "name": "Combust II",
-        "translate": "灾星",
-        "damage": 1475,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "contagion",
-            "hypercharge"
-        ]
-    },
-    {
-        "time": 13500,
-        "event": "Party Buff Apply",
-        "name": "Devotion",
-        "translate": "灵兽加护",
-        "duration": 1500
-    },
-    {
-        "time": 13514,
-        "event": "Damage",
-        "name": "Auto Attack",
-        "translate": "自动攻击",
-        "damage": 127,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "dragon_sight",
-            "bard_aura",
-            "trick_attack",
-            "contagion",
-            "hypercharge",
-            "devotion"
-        ]
-    },
-    {
-        "time": 13563,
-        "event": "Damage",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "damage": 6924,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "dragon_sight",
-            "bard_aura",
-            "trick_attack",
-            "contagion",
-            "hypercharge",
-            "devotion"
-        ]
-    },
-    {
-        "time": 13563,
-        "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
-        "resource": {
-            "mp": 9000,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 13650,
-        "event": "DOT Tick",
-        "name": "Combust II",
-        "translate": "灾星",
-        "damage": 2092,
-        "crit": true,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "contagion",
-            "hypercharge"
-        ]
-    },
-    {
-        "time": 13798,
-        "event": "Damage",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "damage": 10067,
-        "crit": true,
-        "dh": false,
-        "buff": [
-            "dragon_sight",
-            "bard_aura",
-            "trick_attack",
-            "hypercharge",
-            "devotion"
-        ]
-    },
-    {
-        "time": 13798,
-        "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
-        "resource": {
-            "mp": 8800,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 13950,
-        "event": "DOT Tick",
-        "name": "Combust II",
-        "translate": "灾星",
-        "damage": 1534,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "contagion",
-            "hypercharge"
-        ]
-    },
-    {
-        "time": 13984,
-        "event": "Damage",
-        "name": "Auto Attack",
-        "translate": "自动攻击",
-        "damage": 126,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "dragon_sight",
-            "bard_aura",
-            "trick_attack",
-            "hypercharge",
-            "devotion"
-        ]
-    },
-    {
-        "time": 14033,
-        "event": "Damage",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "damage": 9204,
-        "crit": true,
-        "dh": false,
-        "buff": [
-            "dragon_sight",
-            "bard_aura",
-            "trick_attack",
-            "hypercharge",
-            "devotion"
-        ]
-    },
-    {
-        "time": 14033,
-        "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
-        "resource": {
-            "mp": 8600,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 14250,
-        "event": "DOT Tick",
-        "name": "Combust II",
-        "translate": "灾星",
-        "damage": 1505,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "contagion",
-            "hypercharge"
-        ]
-    },
-    {
-        "time": 14268,
-        "event": "Damage",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "damage": 6885,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "dragon_sight",
-            "bard_aura",
-            "trick_attack",
-            "hypercharge",
-            "devotion"
-        ]
-    },
-    {
-        "time": 14268,
-        "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
-        "resource": {
-            "mp": 8000,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 14454,
-        "event": "Damage",
-        "name": "Auto Attack",
-        "translate": "自动攻击",
-        "damage": 124,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "trick_attack",
-            "hypercharge",
-            "devotion"
-        ]
-    },
-    {
-        "time": 14503,
-        "event": "Damage",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "damage": 6433,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "trick_attack",
-            "hypercharge",
-            "devotion"
-        ]
-    },
-    {
-        "time": 14503,
-        "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
-        "resource": {
-            "mp": 7800,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 14550,
-        "event": "DOT Tick",
-        "name": "Combust II",
-        "translate": "灾星",
-        "damage": 1475,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "contagion",
-            "hypercharge"
-        ]
-    },
-    {
-        "time": 14738,
-        "event": "Damage",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "damage": 5734,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "hypercharge",
-            "devotion"
-        ]
-    },
-    {
-        "time": 14738,
-        "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
-        "resource": {
-            "mp": 7600,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 14850,
-        "event": "DOT Tick",
-        "name": "Combust II",
-        "translate": "灾星",
-        "damage": 1446,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "contagion",
-            "hypercharge"
-        ]
-    },
-    {
-        "time": 14924,
-        "event": "Damage",
-        "name": "Auto Attack",
-        "translate": "自动攻击",
-        "damage": 100,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "devotion"
-        ]
-    },
-    {
-        "time": 14973,
-        "event": "Damage",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "damage": 5353,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "devotion"
-        ]
-    },
-    {
-        "time": 14973,
-        "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
-        "resource": {
-            "mp": 7400,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 15150,
-        "event": "DOT Tick",
-        "name": "Combust II",
-        "translate": "灾星",
-        "damage": 1431,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "contagion",
-            "hypercharge"
-        ]
-    },
-    {
-        "time": 15208,
-        "event": "Damage",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "damage": 5036,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 15208,
-        "event": "Cast",
-        "name": "Combust II",
-        "translate": "灾星",
+        "name": "Twin Snakes",
+        "translate": "双掌打",
         "duration": 0,
         "resource": {
-            "mp": 7200,
-            "tp": 1000
+            "mp": 5160,
+            "tp": 950
         }
     },
     {
-        "time": 15244,
+        "time": 469,
+        "event": "Cast",
+        "name": "Potion",
+        "translate": "爆发药",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 950
+        }
+    },
+    {
+        "time": 470,
         "event": "Damage",
-        "name": "Auto Attack",
-        "translate": "自动攻击",
-        "damage": 150,
+        "name": "Twin Snakes",
+        "translate": "双掌打",
+        "damage": 5945,
         "crit": true,
         "dh": false,
         "buff": [
-            "bard_aura"
+            "riddle_of_fire",
+            "fists_of_fire",
+            "greased_lightning_ii",
+            "twin_snakes"
         ]
     },
     {
-        "time": 15275,
-        "event": "DOT Apply",
-        "name": "Combust II",
-        "translate": "灾星",
-        "damage": [],
-        "duration": 3000,
+        "time": 489,
+        "event": "Damage",
+        "name": "Auto Attack",
+        "translate": "自动攻击",
+        "damage": 5025,
+        "crit": true,
+        "dh": false,
         "buff": [
-            "bard_aura"
+            "riddle_of_fire",
+            "fists_of_fire",
+            "greased_lightning_ii",
+            "twin_snakes"
         ]
     },
     {
-        "time": 15275,
-        "event": "Cast",
-        "name": "Lucid Dreaming",
-        "translate": "醒梦",
-        "duration": 0,
-        "resource": {
-            "mp": 7200,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 15342,
+        "time": 536,
         "event": "Buff Apply",
-        "name": "Lucid Dreaming",
-        "translate": "醒梦",
-        "duration": 2100
+        "name": "Potion",
+        "translate": "爆发药",
+        "duration": 3000
     },
     {
-        "time": 15443,
-        "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
-        "resource": {
-            "mp": 6600,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 15450,
+        "time": 550,
         "event": "DOT Tick",
-        "name": "Combust II",
-        "translate": "灾星",
-        "damage": 1252,
+        "name": "Demolish",
+        "translate": "破碎拳",
+        "damage": 979,
         "crit": false,
         "dh": false,
         "buff": [
-            "bard_aura"
+            "greased_lightning_i"
         ]
     },
     {
-        "time": 15629,
-        "event": "Damage",
-        "name": "Auto Attack",
-        "translate": "自动攻击",
-        "damage": 96,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "lucid_dreaming",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 15678,
-        "event": "Damage",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "damage": 5514,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "lucid_dreaming",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 15678,
+        "time": 652,
         "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
-        "resource": {
-            "mp": 7360,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 15750,
-        "event": "DOT Tick",
-        "name": "Combust II",
-        "translate": "灾星",
-        "damage": 1291,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 15913,
-        "event": "Damage",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "damage": 5461,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "lucid_dreaming",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 15913,
-        "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
-        "resource": {
-            "mp": 8120,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 16050,
-        "event": "DOT Tick",
-        "name": "Combust II",
-        "translate": "灾星",
-        "damage": 1316,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 16099,
-        "event": "Damage",
-        "name": "Auto Attack",
-        "translate": "自动攻击",
-        "damage": 101,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "lucid_dreaming",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 16148,
-        "event": "Damage",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "damage": 5461,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "lucid_dreaming",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 16148,
-        "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
-        "resource": {
-            "mp": 8880,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 16350,
-        "event": "DOT Tick",
-        "name": "Combust II",
-        "translate": "灾星",
-        "damage": 1303,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 16383,
-        "event": "Damage",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "damage": 5355,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "lucid_dreaming",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 16383,
-        "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
-        "resource": {
-            "mp": 8280,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 16569,
-        "event": "Damage",
-        "name": "Auto Attack",
-        "translate": "自动攻击",
-        "damage": 103,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "lucid_dreaming",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 16618,
-        "event": "Damage",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "damage": 5514,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "lucid_dreaming",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 16618,
-        "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
-        "resource": {
-            "mp": 9040,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 16650,
-        "event": "DOT Tick",
-        "name": "Combust II",
-        "translate": "灾星",
-        "damage": 1303,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 16853,
-        "event": "Damage",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "damage": 5142,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "lucid_dreaming",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 16853,
-        "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
-        "resource": {
-            "mp": 9800,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 16950,
-        "event": "DOT Tick",
-        "name": "Combust II",
-        "translate": "灾星",
-        "damage": 1342,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 17039,
-        "event": "Damage",
-        "name": "Auto Attack",
-        "translate": "自动攻击",
-        "damage": 104,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "lucid_dreaming",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 17088,
-        "event": "Damage",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "damage": 5089,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "lucid_dreaming",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 17088,
-        "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
-        "resource": {
-            "mp": 10560,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 17250,
-        "event": "DOT Tick",
-        "name": "Combust II",
-        "translate": "灾星",
-        "damage": 1252,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 17323,
-        "event": "Damage",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "damage": 5514,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "lucid_dreaming",
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 17323,
-        "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
-        "resource": {
-            "mp": 11320,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 17509,
-        "event": "Damage",
-        "name": "Auto Attack",
-        "translate": "自动攻击",
-        "damage": 104,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 17550,
-        "event": "DOT Tick",
-        "name": "Combust II",
-        "translate": "灾星",
-        "damage": 1303,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 17558,
-        "event": "Damage",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "damage": 5036,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 17558,
-        "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
-        "resource": {
-            "mp": 10720,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 17793,
-        "event": "Damage",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "damage": 5142,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 17793,
-        "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
-        "resource": {
-            "mp": 10520,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 17850,
-        "event": "DOT Tick",
-        "name": "Combust II",
-        "translate": "灾星",
-        "damage": 1214,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 17979,
-        "event": "Damage",
-        "name": "Auto Attack",
-        "translate": "自动攻击",
-        "damage": 106,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 18028,
-        "event": "Damage",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "damage": 5355,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 18028,
-        "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
-        "resource": {
-            "mp": 10320,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 18150,
-        "event": "DOT Tick",
-        "name": "Combust II",
-        "translate": "灾星",
-        "damage": 1329,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 18200,
-        "event": "Party Buff Apply",
-        "name": "Contagion",
-        "translate": "歪风",
-        "duration": 1500
-    },
-    {
-        "time": 18263,
-        "event": "Damage",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "damage": 6006,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "contagion"
-        ]
-    },
-    {
-        "time": 18263,
-        "event": "Cast",
-        "name": "Combust II",
-        "translate": "灾星",
+        "name": "Snap Punch",
+        "translate": "崩拳",
         "duration": 0,
         "resource": {
-            "mp": 10120,
-            "tp": 1000
+            "mp": 5160,
+            "tp": 960
         }
     },
     {
-        "time": 18299,
+        "time": 719,
         "event": "Damage",
         "name": "Auto Attack",
         "translate": "自动攻击",
-        "damage": 151,
-        "crit": true,
+        "damage": 3392,
+        "crit": false,
         "dh": false,
         "buff": [
-            "bard_aura",
-            "contagion"
+            "potion",
+            "riddle_of_fire",
+            "fists_of_fire",
+            "greased_lightning_ii",
+            "twin_snakes"
         ]
     },
     {
-        "time": 18300,
-        "event": "Party Buff Apply",
-        "name": "Battle Litany",
-        "translate": "战斗连祷",
-        "duration": 2000
-    },
-    {
-        "time": 18300,
-        "event": "Party Buff Apply",
-        "name": "Foe Requiem",
-        "translate": "魔人歌",
-        "duration": 3300
-    },
-    {
-        "time": 18330,
-        "event": "DOT Apply",
-        "name": "Combust II",
-        "translate": "灾星",
-        "damage": [],
-        "duration": 3000,
-        "buff": [
-            "battle_litany",
-            "bard_aura",
-            "foe_requiem",
-            "contagion"
-        ]
-    },
-    {
-        "time": 18330,
+        "time": 719,
         "event": "Cast",
-        "name": "Cleric Stance",
-        "translate": "战姿",
+        "name": "Internal Release",
+        "translate": "内劲",
         "duration": 0,
         "resource": {
-            "mp": 10120,
-            "tp": 1000
+            "mp": 5160,
+            "tp": 960
         }
     },
     {
-        "time": 18397,
+        "time": 720,
+        "event": "Damage",
+        "name": "Snap Punch",
+        "translate": "崩拳",
+        "damage": 7318,
+        "crit": false,
+        "dh": true,
+        "buff": [
+            "potion",
+            "riddle_of_fire",
+            "fists_of_fire",
+            "greased_lightning_ii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 786,
         "event": "Buff Apply",
-        "name": "Cleric Stance",
-        "translate": "战姿",
+        "name": "Internal Release",
+        "translate": "内劲",
         "duration": 1500
     },
     {
-        "time": 18400,
-        "event": "Party Buff Apply",
-        "name": "Battle Voice",
-        "translate": "战斗之声",
-        "duration": 2000
-    },
-    {
-        "time": 18450,
-        "event": "DOT Tick",
-        "name": "Combust II",
-        "translate": "灾星",
-        "damage": 1390,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "battle_litany",
-            "bard_aura",
-            "foe_requiem",
-            "contagion"
-        ]
-    },
-    {
-        "time": 18498,
+        "time": 786,
         "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
-        "resource": {
-            "mp": 9520,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 18684,
-        "event": "Damage",
-        "name": "Auto Attack",
-        "translate": "自动攻击",
-        "damage": 132,
-        "crit": false,
-        "dh": true,
-        "buff": [
-            "cleric_stance",
-            "battle_litany",
-            "battle_voice",
-            "bard_aura",
-            "foe_requiem",
-            "contagion"
-        ]
-    },
-    {
-        "time": 18733,
-        "event": "Damage",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "damage": 6433,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "cleric_stance",
-            "battle_litany",
-            "battle_voice",
-            "bard_aura",
-            "foe_requiem",
-            "contagion"
-        ]
-    },
-    {
-        "time": 18733,
-        "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
-        "resource": {
-            "mp": 9320,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 18750,
-        "event": "DOT Tick",
-        "name": "Combust II",
-        "translate": "灾星",
-        "damage": 2011,
-        "crit": true,
-        "dh": false,
-        "buff": [
-            "battle_litany",
-            "bard_aura",
-            "foe_requiem",
-            "contagion"
-        ]
-    },
-    {
-        "time": 18968,
-        "event": "Damage",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "damage": 6433,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "cleric_stance",
-            "battle_litany",
-            "battle_voice",
-            "bard_aura",
-            "foe_requiem",
-            "contagion"
-        ]
-    },
-    {
-        "time": 18968,
-        "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
-        "resource": {
-            "mp": 9120,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 19050,
-        "event": "DOT Tick",
-        "name": "Combust II",
-        "translate": "灾星",
-        "damage": 2032,
-        "crit": true,
-        "dh": false,
-        "buff": [
-            "battle_litany",
-            "bard_aura",
-            "foe_requiem",
-            "contagion"
-        ]
-    },
-    {
-        "time": 19100,
-        "event": "Party Buff Apply",
-        "name": "Trick Attack",
-        "translate": "背刺",
-        "duration": 1500
-    },
-    {
-        "time": 19154,
-        "event": "Damage",
-        "name": "Auto Attack",
-        "translate": "自动攻击",
-        "damage": 116,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "cleric_stance",
-            "battle_litany",
-            "battle_voice",
-            "bard_aura",
-            "foe_requiem",
-            "trick_attack",
-            "contagion"
-        ]
-    },
-    {
-        "time": 19203,
-        "event": "Damage",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "damage": 8585,
-        "crit": false,
-        "dh": true,
-        "buff": [
-            "cleric_stance",
-            "battle_litany",
-            "battle_voice",
-            "bard_aura",
-            "foe_requiem",
-            "trick_attack",
-            "contagion"
-        ]
-    },
-    {
-        "time": 19203,
-        "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
-        "resource": {
-            "mp": 8920,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 19350,
-        "event": "DOT Tick",
-        "name": "Combust II",
-        "translate": "灾星",
-        "damage": 1404,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "battle_litany",
-            "bard_aura",
-            "foe_requiem",
-            "contagion"
-        ]
-    },
-    {
-        "time": 19438,
-        "event": "Damage",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "damage": 9636,
-        "crit": true,
-        "dh": false,
-        "buff": [
-            "cleric_stance",
-            "battle_litany",
-            "battle_voice",
-            "bard_aura",
-            "foe_requiem",
-            "trick_attack",
-            "contagion"
-        ]
-    },
-    {
-        "time": 19438,
-        "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
-        "resource": {
-            "mp": 8720,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 19624,
-        "event": "Damage",
-        "name": "Auto Attack",
-        "translate": "自动攻击",
-        "damage": 113,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "cleric_stance",
-            "battle_litany",
-            "battle_voice",
-            "bard_aura",
-            "foe_requiem",
-            "trick_attack",
-            "contagion"
-        ]
-    },
-    {
-        "time": 19650,
-        "event": "DOT Tick",
-        "name": "Combust II",
-        "translate": "灾星",
-        "damage": 1476,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "battle_litany",
-            "bard_aura",
-            "foe_requiem",
-            "contagion"
-        ]
-    },
-    {
-        "time": 19673,
-        "event": "Damage",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "damage": 8585,
-        "crit": false,
-        "dh": true,
-        "buff": [
-            "cleric_stance",
-            "battle_litany",
-            "battle_voice",
-            "bard_aura",
-            "foe_requiem",
-            "trick_attack",
-            "contagion"
-        ]
-    },
-    {
-        "time": 19673,
-        "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
-        "resource": {
-            "mp": 8120,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 19908,
-        "event": "Damage",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "damage": 6496,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "cleric_stance",
-            "battle_litany",
-            "battle_voice",
-            "bard_aura",
-            "foe_requiem",
-            "trick_attack"
-        ]
-    },
-    {
-        "time": 19908,
-        "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
-        "resource": {
-            "mp": 7920,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 19950,
-        "event": "DOT Tick",
-        "name": "Combust II",
-        "translate": "灾星",
-        "damage": 1419,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "battle_litany",
-            "bard_aura",
-            "foe_requiem",
-            "contagion"
-        ]
-    },
-    {
-        "time": 20094,
-        "event": "Damage",
-        "name": "Auto Attack",
-        "translate": "自动攻击",
-        "damage": 112,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "battle_litany",
-            "battle_voice",
-            "bard_aura",
-            "foe_requiem",
-            "trick_attack"
-        ]
-    },
-    {
-        "time": 20143,
-        "event": "Damage",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "damage": 8694,
-        "crit": true,
-        "dh": false,
-        "buff": [
-            "battle_litany",
-            "battle_voice",
-            "bard_aura",
-            "foe_requiem",
-            "trick_attack"
-        ]
-    },
-    {
-        "time": 20143,
-        "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
-        "resource": {
-            "mp": 7720,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 20250,
-        "event": "DOT Tick",
-        "name": "Combust II",
-        "translate": "灾星",
-        "damage": 1520,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "battle_litany",
-            "bard_aura",
-            "foe_requiem",
-            "contagion"
-        ]
-    },
-    {
-        "time": 20378,
-        "event": "Damage",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "damage": 5826,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "battle_voice",
-            "bard_aura",
-            "foe_requiem",
-            "trick_attack"
-        ]
-    },
-    {
-        "time": 20378,
-        "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
-        "resource": {
-            "mp": 7520,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 20550,
-        "event": "DOT Tick",
-        "name": "Combust II",
-        "translate": "灾星",
-        "damage": 1520,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "battle_litany",
-            "bard_aura",
-            "foe_requiem",
-            "contagion"
-        ]
-    },
-    {
-        "time": 20564,
-        "event": "Damage",
-        "name": "Auto Attack",
-        "translate": "自动攻击",
-        "damage": 108,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "foe_requiem",
-            "trick_attack"
-        ]
-    },
-    {
-        "time": 20613,
-        "event": "Damage",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "damage": 5766,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "foe_requiem",
-            "trick_attack"
-        ]
-    },
-    {
-        "time": 20613,
-        "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
-        "resource": {
-            "mp": 7320,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 20848,
-        "event": "Damage",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "damage": 5734,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "foe_requiem"
-        ]
-    },
-    {
-        "time": 20848,
-        "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
-        "resource": {
-            "mp": 6720,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 20850,
-        "event": "DOT Tick",
-        "name": "Combust II",
-        "translate": "灾星",
-        "damage": 1404,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "battle_litany",
-            "bard_aura",
-            "foe_requiem",
-            "contagion"
-        ]
-    },
-    {
-        "time": 21034,
-        "event": "Damage",
-        "name": "Auto Attack",
-        "translate": "自动攻击",
-        "damage": 156,
-        "crit": true,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "foe_requiem"
-        ]
-    },
-    {
-        "time": 21083,
-        "event": "Damage",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "damage": 5406,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "foe_requiem"
-        ]
-    },
-    {
-        "time": 21083,
-        "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
-        "resource": {
-            "mp": 6520,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 21150,
-        "event": "DOT Tick",
-        "name": "Combust II",
-        "translate": "灾星",
-        "damage": 1505,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "battle_litany",
-            "bard_aura",
-            "foe_requiem",
-            "contagion"
-        ]
-    },
-    {
-        "time": 21318,
-        "event": "Damage",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "damage": 5187,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "foe_requiem"
-        ]
-    },
-    {
-        "time": 21318,
-        "event": "Cast",
-        "name": "Combust II",
-        "translate": "灾星",
+        "name": "The Forbidden Chakra",
+        "translate": "阴阳斗气斩",
         "duration": 0,
         "resource": {
-            "mp": 6320,
-            "tp": 1000
+            "mp": 5160,
+            "tp": 960
         }
     },
     {
-        "time": 21354,
-        "event": "Damage",
-        "name": "Auto Attack",
-        "translate": "自动攻击",
-        "damage": 99,
-        "crit": false,
+        "time": 850,
+        "event": "DOT Tick",
+        "name": "Demolish",
+        "translate": "破碎拳",
+        "damage": 1493,
+        "crit": true,
         "dh": false,
         "buff": [
-            "bard_aura",
-            "foe_requiem"
+            "greased_lightning_i"
         ]
     },
     {
-        "time": 21385,
+        "time": 854,
+        "event": "Damage",
+        "name": "The Forbidden Chakra",
+        "translate": "阴阳斗气斩",
+        "damage": 12033,
+        "crit": false,
+        "dh": true,
+        "buff": [
+            "potion",
+            "internal_release",
+            "riddle_of_fire",
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 902,
+        "event": "Cast",
+        "name": "Bootshine",
+        "translate": "连击",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 950
+        }
+    },
+    {
+        "time": 949,
+        "event": "Damage",
+        "name": "Auto Attack",
+        "translate": "自动攻击",
+        "damage": 3785,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "potion",
+            "internal_release",
+            "riddle_of_fire",
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 969,
+        "event": "Cast",
+        "name": "Brotherhood",
+        "translate": "义结金兰",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 950
+        }
+    },
+    {
+        "time": 970,
+        "event": "Damage",
+        "name": "Bootshine",
+        "translate": "连击",
+        "damage": 8526,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "potion",
+            "internal_release",
+            "riddle_of_fire",
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 1036,
+        "event": "Buff Apply",
+        "name": "Brotherhood",
+        "translate": "义结金兰",
+        "duration": 1500
+    },
+    {
+        "time": 1138,
+        "event": "Cast",
+        "name": "True Strike",
+        "translate": "正拳",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 900
+        }
+    },
+    {
+        "time": 1150,
+        "event": "DOT Tick",
+        "name": "Demolish",
+        "translate": "破碎拳",
+        "damage": 922,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "greased_lightning_i"
+        ]
+    },
+    {
+        "time": 1166,
+        "event": "Damage",
+        "name": "Auto Attack",
+        "translate": "自动攻击",
+        "damage": 4014,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "potion",
+            "internal_release",
+            "riddle_of_fire",
+            "fists_of_fire",
+            "brotherhood",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 1205,
+        "event": "Cast",
+        "name": "Elixir Field",
+        "translate": "苍气炮",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 960
+        }
+    },
+    {
+        "time": 1206,
+        "event": "Damage",
+        "name": "True Strike",
+        "translate": "正拳",
+        "damage": 11388,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "potion",
+            "internal_release",
+            "riddle_of_fire",
+            "fists_of_fire",
+            "brotherhood",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 1272,
+        "event": "Cast",
+        "name": "Howling Fist",
+        "translate": "空鸣拳",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 960
+        }
+    },
+    {
+        "time": 1273,
+        "event": "Damage",
+        "name": "Elixir Field",
+        "translate": "苍气炮",
+        "damage": 16921,
+        "crit": true,
+        "dh": true,
+        "buff": [
+            "potion",
+            "internal_release",
+            "riddle_of_fire",
+            "fists_of_fire",
+            "brotherhood",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 1340,
+        "event": "Damage",
+        "name": "Howling Fist",
+        "translate": "空鸣拳",
+        "damage": 8810,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "potion",
+            "internal_release",
+            "riddle_of_fire",
+            "fists_of_fire",
+            "brotherhood",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 1374,
+        "event": "Cast",
+        "name": "Demolish",
+        "translate": "破碎拳",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 920
+        }
+    },
+    {
+        "time": 1383,
+        "event": "Damage",
+        "name": "Auto Attack",
+        "translate": "自动攻击",
+        "damage": 3858,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "potion",
+            "internal_release",
+            "riddle_of_fire",
+            "fists_of_fire",
+            "brotherhood",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 1441,
+        "event": "Cast",
+        "name": "Steel Peak",
+        "translate": "铁山靠",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 920
+        }
+    },
+    {
+        "time": 1442,
+        "event": "Damage",
+        "name": "Demolish",
+        "translate": "破碎拳",
+        "damage": 4345,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "potion",
+            "internal_release",
+            "riddle_of_fire",
+            "fists_of_fire",
+            "brotherhood",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 1442,
         "event": "DOT Apply",
-        "name": "Combust II",
-        "translate": "灾星",
+        "name": "Demolish",
+        "translate": "破碎拳",
         "damage": [
             {
-                "damage": 1847,
+                "damage": 2004,
+                "crit": false,
+                "dh": false
+            },
+            {
+                "damage": 2583,
+                "crit": false,
+                "dh": true
+            },
+            {
+                "damage": 3244,
+                "crit": true,
+                "dh": false
+            },
+            {
+                "damage": 2714,
+                "crit": false,
+                "dh": true
+            },
+            {
+                "damage": 2087,
+                "crit": false,
+                "dh": false
+            },
+            {
+                "damage": 3343,
                 "crit": true,
                 "dh": false
             }
         ],
-        "duration": 3000,
+        "duration": 1800,
         "buff": [
-            "bard_aura",
-            "foe_requiem"
+            "potion",
+            "internal_release",
+            "riddle_of_fire",
+            "fists_of_fire",
+            "brotherhood",
+            "greased_lightning_iii",
+            "twin_snakes"
         ]
     },
     {
-        "time": 21450,
+        "time": 1450,
         "event": "DOT Tick",
-        "name": "Combust II",
-        "translate": "灾星",
-        "damage": 1924,
-        "crit": true,
+        "name": "Demolish",
+        "translate": "破碎拳",
+        "damage": 2004,
+        "crit": false,
         "dh": false,
         "buff": [
-            "bard_aura",
-            "foe_requiem"
+            "potion",
+            "internal_release",
+            "riddle_of_fire",
+            "fists_of_fire",
+            "brotherhood",
+            "greased_lightning_iii",
+            "twin_snakes"
         ]
     },
     {
-        "time": 21553,
-        "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
-        "resource": {
-            "mp": 6120,
-            "tp": 1000
-        }
+        "time": 1509,
+        "event": "Damage",
+        "name": "Steel Peak",
+        "translate": "铁山靠",
+        "damage": 6066,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "potion",
+            "internal_release",
+            "riddle_of_fire",
+            "fists_of_fire",
+            "brotherhood",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
     },
     {
-        "time": 21739,
+        "time": 1600,
         "event": "Damage",
         "name": "Auto Attack",
         "translate": "自动攻击",
-        "damage": 147,
-        "crit": true,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 21750,
-        "event": "DOT Tick",
-        "name": "Combust II",
-        "translate": "灾星",
-        "damage": 1369,
+        "damage": 4014,
         "crit": false,
         "dh": false,
         "buff": [
-            "bard_aura",
-            "foe_requiem"
+            "potion",
+            "internal_release",
+            "riddle_of_fire",
+            "fists_of_fire",
+            "brotherhood",
+            "greased_lightning_iii",
+            "twin_snakes"
         ]
     },
     {
-        "time": 21788,
-        "event": "Damage",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "damage": 5461,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 21788,
+        "time": 1610,
         "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
+        "name": "Dragon Kick",
+        "translate": "双龙脚",
+        "duration": 0,
         "resource": {
-            "mp": 5520,
-            "tp": 1000
+            "mp": 5160,
+            "tp": 930
         }
     },
     {
-        "time": 22023,
+        "time": 1678,
         "event": "Damage",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "damage": 5408,
+        "name": "Dragon Kick",
+        "translate": "双龙脚",
+        "damage": 7129,
         "crit": false,
-        "dh": false,
+        "dh": true,
         "buff": [
-            "bard_aura"
+            "potion",
+            "internal_release",
+            "riddle_of_fire",
+            "fists_of_fire",
+            "brotherhood",
+            "greased_lightning_iii",
+            "twin_snakes"
         ]
     },
     {
-        "time": 22023,
-        "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
-        "resource": {
-            "mp": 5320,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 22050,
+        "time": 1750,
         "event": "DOT Tick",
-        "name": "Combust II",
-        "translate": "灾星",
-        "damage": 1369,
+        "name": "Demolish",
+        "translate": "破碎拳",
+        "damage": 2583,
         "crit": false,
-        "dh": false,
+        "dh": true,
         "buff": [
-            "bard_aura",
-            "foe_requiem"
+            "potion",
+            "internal_release",
+            "riddle_of_fire",
+            "fists_of_fire",
+            "brotherhood",
+            "greased_lightning_iii",
+            "twin_snakes"
         ]
     },
     {
-        "time": 22209,
+        "time": 1817,
         "event": "Damage",
         "name": "Auto Attack",
         "translate": "自动攻击",
-        "damage": 102,
+        "damage": 4053,
         "crit": false,
         "dh": false,
         "buff": [
-            "bard_aura"
+            "potion",
+            "internal_release",
+            "riddle_of_fire",
+            "fists_of_fire",
+            "brotherhood",
+            "greased_lightning_iii",
+            "twin_snakes"
         ]
     },
     {
-        "time": 22258,
-        "event": "Damage",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "damage": 5355,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 22258,
+        "time": 1846,
         "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
+        "name": "Twin Snakes",
+        "translate": "双掌打",
+        "duration": 0,
         "resource": {
-            "mp": 5120,
-            "tp": 1000
+            "mp": 5160,
+            "tp": 940
         }
     },
     {
-        "time": 22350,
-        "event": "DOT Tick",
-        "name": "Combust II",
-        "translate": "灾星",
-        "damage": 1382,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "foe_requiem"
-        ]
-    },
-    {
-        "time": 22493,
-        "event": "Damage",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "damage": 5408,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 22493,
+        "time": 1913,
         "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
+        "name": "Tornado Kick",
+        "translate": "斗魂旋风脚",
+        "duration": 0,
         "resource": {
-            "mp": 4920,
-            "tp": 1000
+            "mp": 5160,
+            "tp": 940
         }
     },
     {
-        "time": 22650,
-        "event": "DOT Tick",
-        "name": "Combust II",
-        "translate": "灾星",
-        "damage": 1329,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "foe_requiem"
-        ]
-    },
-    {
-        "time": 22679,
+        "time": 1914,
         "event": "Damage",
-        "name": "Auto Attack",
-        "translate": "自动攻击",
-        "damage": 148,
+        "name": "Twin Snakes",
+        "translate": "双掌打",
+        "damage": 7966,
         "crit": true,
         "dh": false,
         "buff": [
-            "bard_aura"
+            "potion",
+            "internal_release",
+            "riddle_of_fire",
+            "fists_of_fire",
+            "brotherhood",
+            "greased_lightning_iii",
+            "twin_snakes"
         ]
     },
     {
-        "time": 22728,
+        "time": 1981,
         "event": "Damage",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "damage": 5355,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 22728,
-        "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
-        "resource": {
-            "mp": 4720,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 22950,
-        "event": "DOT Tick",
-        "name": "Combust II",
-        "translate": "灾星",
-        "damage": 1867,
+        "name": "Tornado Kick",
+        "translate": "斗魂旋风脚",
+        "damage": 20495,
         "crit": true,
         "dh": false,
         "buff": [
-            "bard_aura",
-            "foe_requiem"
+            "potion",
+            "internal_release",
+            "riddle_of_fire",
+            "fists_of_fire",
+            "brotherhood",
+            "greased_lightning_iii",
+            "twin_snakes"
         ]
     },
     {
-        "time": 22963,
-        "event": "Damage",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "damage": 5036,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 22963,
-        "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
-        "resource": {
-            "mp": 4120,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 23149,
+        "time": 2034,
         "event": "Damage",
         "name": "Auto Attack",
         "translate": "自动攻击",
-        "damage": 104,
+        "damage": 2877,
         "crit": false,
         "dh": false,
         "buff": [
-            "bard_aura"
+            "potion",
+            "internal_release",
+            "riddle_of_fire",
+            "fists_of_fire",
+            "brotherhood",
+            "twin_snakes"
         ]
     },
     {
-        "time": 23198,
-        "event": "Damage",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "damage": 5514,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 23198,
-        "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
-        "resource": {
-            "mp": 3920,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 23250,
+        "time": 2050,
         "event": "DOT Tick",
-        "name": "Combust II",
-        "translate": "灾星",
-        "damage": 1290,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "foe_requiem"
-        ]
-    },
-    {
-        "time": 23433,
-        "event": "Damage",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "damage": 5195,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 23433,
-        "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
-        "resource": {
-            "mp": 3720,
-            "tp": 1000
-        }
-    },
-    {
-        "time": 23550,
-        "event": "DOT Tick",
-        "name": "Combust II",
-        "translate": "灾星",
-        "damage": 1369,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "foe_requiem"
-        ]
-    },
-    {
-        "time": 23619,
-        "event": "Damage",
-        "name": "Auto Attack",
-        "translate": "自动攻击",
-        "damage": 145,
+        "name": "Demolish",
+        "translate": "破碎拳",
+        "damage": 3244,
         "crit": true,
         "dh": false,
         "buff": [
-            "bard_aura"
+            "potion",
+            "internal_release",
+            "riddle_of_fire",
+            "fists_of_fire",
+            "brotherhood",
+            "greased_lightning_iii",
+            "twin_snakes"
         ]
     },
     {
-        "time": 23668,
-        "event": "Damage",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "damage": 5355,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 23668,
+        "time": 2082,
         "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
+        "name": "Snap Punch",
+        "translate": "崩拳",
+        "duration": 0,
         "resource": {
-            "mp": 3520,
-            "tp": 1000
+            "mp": 5160,
+            "tp": 900
         }
     },
     {
-        "time": 23850,
-        "event": "DOT Tick",
-        "name": "Combust II",
-        "translate": "灾星",
-        "damage": 1382,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura",
-            "foe_requiem"
-        ]
-    },
-    {
-        "time": 23903,
-        "event": "Damage",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "damage": 5302,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "bard_aura"
-        ]
-    },
-    {
-        "time": 23903,
+        "time": 2149,
         "event": "Cast",
-        "name": "Malefic III",
-        "translate": "祸星",
-        "duration": 235,
+        "name": "Perfect Balance",
+        "translate": "震脚",
+        "duration": 0,
         "resource": {
-            "mp": 3320,
-            "tp": 1000
+            "mp": 5160,
+            "tp": 960
+        }
+    },
+    {
+        "time": 2150,
+        "event": "Damage",
+        "name": "Snap Punch",
+        "translate": "崩拳",
+        "damage": 5387,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "potion",
+            "internal_release",
+            "riddle_of_fire",
+            "fists_of_fire",
+            "brotherhood",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 2216,
+        "event": "Buff Apply",
+        "name": "Perfect Balance",
+        "translate": "震脚",
+        "duration": 1500
+    },
+    {
+        "time": 2290,
+        "event": "Damage",
+        "name": "Auto Attack",
+        "translate": "自动攻击",
+        "damage": 4081,
+        "crit": false,
+        "dh": true,
+        "buff": [
+            "potion",
+            "perfect_balance",
+            "riddle_of_fire",
+            "fists_of_fire",
+            "brotherhood",
+            "greased_lightning_i",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 2350,
+        "event": "DOT Tick",
+        "name": "Demolish",
+        "translate": "破碎拳",
+        "damage": 2714,
+        "crit": false,
+        "dh": true,
+        "buff": [
+            "potion",
+            "internal_release",
+            "riddle_of_fire",
+            "fists_of_fire",
+            "brotherhood",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 2360,
+        "event": "Cast",
+        "name": "Snap Punch",
+        "translate": "崩拳",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 920
+        }
+    },
+    {
+        "time": 2428,
+        "event": "Damage",
+        "name": "Snap Punch",
+        "translate": "崩拳",
+        "damage": 4469,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "potion",
+            "perfect_balance",
+            "fists_of_fire",
+            "brotherhood",
+            "greased_lightning_i",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 2534,
+        "event": "Damage",
+        "name": "Auto Attack",
+        "translate": "自动攻击",
+        "damage": 4171,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "potion",
+            "perfect_balance",
+            "fists_of_fire",
+            "brotherhood",
+            "greased_lightning_ii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 2624,
+        "event": "Cast",
+        "name": "Snap Punch",
+        "translate": "崩拳",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 940
+        }
+    },
+    {
+        "time": 2650,
+        "event": "DOT Tick",
+        "name": "Demolish",
+        "translate": "破碎拳",
+        "damage": 2087,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "potion",
+            "internal_release",
+            "riddle_of_fire",
+            "fists_of_fire",
+            "brotherhood",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 2692,
+        "event": "Damage",
+        "name": "Snap Punch",
+        "translate": "崩拳",
+        "damage": 7070,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "potion",
+            "perfect_balance",
+            "fists_of_fire",
+            "greased_lightning_ii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 2764,
+        "event": "Damage",
+        "name": "Auto Attack",
+        "translate": "自动攻击",
+        "damage": 3390,
+        "crit": false,
+        "dh": true,
+        "buff": [
+            "potion",
+            "perfect_balance",
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 2841,
+        "event": "Cast",
+        "name": "Dragon Kick",
+        "translate": "双龙脚",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 950
+        }
+    },
+    {
+        "time": 2909,
+        "event": "Damage",
+        "name": "Dragon Kick",
+        "translate": "双龙脚",
+        "damage": 8118,
+        "crit": true,
+        "dh": true,
+        "buff": [
+            "potion",
+            "perfect_balance",
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 2950,
+        "event": "DOT Tick",
+        "name": "Demolish",
+        "translate": "破碎拳",
+        "damage": 3343,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "potion",
+            "internal_release",
+            "riddle_of_fire",
+            "fists_of_fire",
+            "brotherhood",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 2981,
+        "event": "Damage",
+        "name": "Auto Attack",
+        "translate": "自动攻击",
+        "damage": 5827,
+        "crit": true,
+        "dh": true,
+        "buff": [
+            "potion",
+            "perfect_balance",
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 3046,
+        "event": "Cast",
+        "name": "Twin Snakes",
+        "translate": "双掌打",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 950
+        }
+    },
+    {
+        "time": 3113,
+        "event": "Cast",
+        "name": "Tornado Kick",
+        "translate": "斗魂旋风脚",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 950
+        }
+    },
+    {
+        "time": 3114,
+        "event": "Damage",
+        "name": "Twin Snakes",
+        "translate": "双掌打",
+        "damage": 3678,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "potion",
+            "perfect_balance",
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 3181,
+        "event": "Damage",
+        "name": "Tornado Kick",
+        "translate": "斗魂旋风脚",
+        "damage": 12442,
+        "crit": false,
+        "dh": true,
+        "buff": [
+            "potion",
+            "perfect_balance",
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 3198,
+        "event": "Damage",
+        "name": "Auto Attack",
+        "translate": "自动攻击",
+        "damage": 3551,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "potion",
+            "perfect_balance",
+            "fists_of_fire",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 3251,
+        "event": "Cast",
+        "name": "Demolish",
+        "translate": "破碎拳",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 910
+        }
+    },
+    {
+        "time": 3318,
+        "event": "Cast",
+        "name": "Fists of Wind",
+        "translate": "疾风体势",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 970
+        }
+    },
+    {
+        "time": 3319,
+        "event": "Damage",
+        "name": "Demolish",
+        "translate": "破碎拳",
+        "damage": 1670,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "potion",
+            "fists_of_fire",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 3319,
+        "event": "DOT Apply",
+        "name": "Demolish",
+        "translate": "破碎拳",
+        "damage": [
+            {
+                "damage": 1280,
+                "crit": false,
+                "dh": false
+            },
+            {
+                "damage": 1697,
+                "crit": false,
+                "dh": true
+            },
+            {
+                "damage": 1306,
+                "crit": false,
+                "dh": false
+            },
+            {
+                "damage": 2050,
+                "crit": true,
+                "dh": false
+            },
+            {
+                "damage": 1697,
+                "crit": false,
+                "dh": true
+            },
+            {
+                "damage": 1928,
+                "crit": true,
+                "dh": false
+            }
+        ],
+        "duration": 1800,
+        "buff": [
+            "potion",
+            "fists_of_fire",
+            "greased_lightning_i",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 3385,
+        "event": "Buff Apply",
+        "name": "Fists of Wind",
+        "translate": "疾风体势",
+        "duration": 615
+    },
+    {
+        "time": 3385,
+        "event": "Cast",
+        "name": "Shoulder Tackle",
+        "translate": "罗刹冲",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 970
+        }
+    },
+    {
+        "time": 3452,
+        "event": "Buff Apply",
+        "name": "Riddle of Wind",
+        "translate": "疾风极意",
+        "duration": 1000
+    },
+    {
+        "time": 3453,
+        "event": "Damage",
+        "name": "Wind Tackle",
+        "translate": "疾风罗刹冲",
+        "damage": 1654,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "potion",
+            "fists_of_fire",
+            "fists_of_wind",
+            "greased_lightning_i",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 3454,
+        "event": "Damage",
+        "name": "Auto Attack",
+        "translate": "自动攻击",
+        "damage": 2463,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "potion",
+            "riddle_of_wind",
+            "fists_of_fire",
+            "fists_of_wind",
+            "greased_lightning_i",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 3492,
+        "event": "Cast",
+        "name": "Bootshine",
+        "translate": "连击",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 920
+        }
+    },
+    {
+        "time": 3550,
+        "event": "DOT Tick",
+        "name": "Demolish",
+        "translate": "破碎拳",
+        "damage": 1280,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "potion",
+            "fists_of_fire",
+            "greased_lightning_i",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 3559,
+        "event": "Cast",
+        "name": "Shoulder Tackle",
+        "translate": "罗刹冲",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 920
+        }
+    },
+    {
+        "time": 3560,
+        "event": "Damage",
+        "name": "Bootshine",
+        "translate": "连击",
+        "damage": 5028,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "riddle_of_wind",
+            "fists_of_fire",
+            "fists_of_wind",
+            "greased_lightning_i",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 3626,
+        "event": "Cast",
+        "name": "Fists of Fire",
+        "translate": "红莲体势",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 980
+        }
+    },
+    {
+        "time": 3627,
+        "event": "Damage",
+        "name": "Riddle of Wind",
+        "translate": "疾风极意",
+        "damage": 1546,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "fists_of_fire",
+            "fists_of_wind",
+            "greased_lightning_i",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 3693,
+        "event": "Buff Apply",
+        "name": "Fists of Fire",
+        "translate": "红莲体势",
+        "duration": 307
+    },
+    {
+        "time": 3693,
+        "event": "Cast",
+        "name": "The Forbidden Chakra",
+        "translate": "阴阳斗气斩",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 980
+        }
+    },
+    {
+        "time": 3698,
+        "event": "Damage",
+        "name": "Auto Attack",
+        "translate": "自动攻击",
+        "damage": 3201,
+        "crit": false,
+        "dh": true,
+        "buff": [
+            "fists_of_fire",
+            "fists_of_wind",
+            "greased_lightning_ii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 3760,
+        "event": "Cast",
+        "name": "True Strike",
+        "translate": "正拳",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 930
+        }
+    },
+    {
+        "time": 3761,
+        "event": "Damage",
+        "name": "The Forbidden Chakra",
+        "translate": "阴阳斗气斩",
+        "damage": 6256,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "fists_of_fire",
+            "fists_of_wind",
+            "greased_lightning_ii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 3828,
+        "event": "Damage",
+        "name": "True Strike",
+        "translate": "正拳",
+        "damage": 5494,
+        "crit": false,
+        "dh": true,
+        "buff": [
+            "fists_of_fire",
+            "fists_of_wind",
+            "greased_lightning_ii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 3850,
+        "event": "DOT Tick",
+        "name": "Demolish",
+        "translate": "破碎拳",
+        "damage": 1697,
+        "crit": false,
+        "dh": true,
+        "buff": [
+            "potion",
+            "fists_of_fire",
+            "greased_lightning_i",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 3928,
+        "event": "Damage",
+        "name": "Auto Attack",
+        "translate": "自动攻击",
+        "damage": 4733,
+        "crit": true,
+        "dh": true,
+        "buff": [
+            "fists_of_fire",
+            "fists_of_wind",
+            "greased_lightning_ii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 3977,
+        "event": "Cast",
+        "name": "Snap Punch",
+        "translate": "崩拳",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 950
         }
     }
 ]

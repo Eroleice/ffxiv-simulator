@@ -22,12 +22,7 @@ class skill {
     // 速度buff计算
     speedMod() {
         var mod = this.multiplier({
-            'presence_of_mind': 0.8,
-            'greased_lightning_i': 0.95,
-            'greased_lightning_ii': 0.9,
-            'greased_lightning_iii': 0.85,
-            'huton': 0.85,
-            'ley_lines': 0.85
+            'presence_of_mind': 0.8
         });
         mod = (this.isBuff('fey_wind')) ? (mod - 0.03) : mod;
         return mod;
@@ -244,7 +239,7 @@ class effect {
             'event': 'DOT Apply',
             'name': 'Aero II',
             'translate': '烈风',
-            'damage': damage,
+            'damage': deepcopy(damage),
             'duration': 1800,
             'buff': this.whatBuff()
         });
@@ -281,7 +276,7 @@ class effect {
             'event': 'DOT Apply',
             'name': 'Aero III',
             'translate': '暴风',
-            'damage': damage,
+            'damage': deepcopy(damage),
             'duration': 2400,
             'buff': this.whatBuff()
         });

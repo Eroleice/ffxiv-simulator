@@ -175,6 +175,7 @@ class Fight {
         this.battle.time -= 1;
         this.allTick(this.player.tick);
         this.allTick(this.player.buff);
+        this.allTick(this.player.debuff);
         this.allTick(this.player.cd);
         this.allTimeTick(this.player.dot);
         this.allTimeTick(this.player.circle);
@@ -206,7 +207,7 @@ class Fight {
     // 自动攻击
     doAA() {
         this.update(this.jobSkill.aa(this));
-        this.player.tick.aa = this.setting.player.aa_delay * 100;
+        this.player.tick.aa = this.player.status.aa_delay * 100;
     }
 
     // 伤害记录
@@ -282,7 +283,7 @@ class Fight {
         }
         // 学者连环计
         if (this.setting.simulate.partyMember.indexOf('sch') !== -1 && this.setting.job !== 'sch' && (this.setting.simulate.duration - this.battle.time) % 12000 == 900) {
-            this.player.buff.chain_strategem = 1500;
+            this.player.debuff.chain_strategem = 1500;
             this.partyBuffLog('Chain Strategem', '连环计', 2000);
         }
         // 学者异想的流光
@@ -297,7 +298,7 @@ class Fight {
         }
         // 诗人魔人歌
         if (this.setting.simulate.partyMember.indexOf('brd') !== -1 && this.setting.job !== 'brd' && (this.setting.simulate.duration - this.battle.time) % 18000 == 300) {
-            this.player.buff.foe_requiem = 3300;
+            this.player.debuff.foe_requiem = 3300;
             this.partyBuffLog('Foe Requiem', '魔人歌', 3300);
         }
         // 诗人歌曲
@@ -306,12 +307,12 @@ class Fight {
         }
         // 忍者背刺
         if (this.setting.simulate.partyMember.indexOf('nin') !== -1 && this.setting.job !== 'nin' && (this.setting.simulate.duration - this.battle.time) % 6000 == 1100) {
-            this.player.buff.trick_attack = 1500;
+            this.player.debuff.trick_attack = 1500;
             this.partyBuffLog('Trick Attack', '背刺', 1500);
         }
         // 迦楼罗歪风
         if (this.setting.simulate.partyMember.indexOf('smn') !== -1 && this.setting.job !== 'smn' && (this.setting.simulate.duration - this.battle.time) % 6000 == 200) {
-            this.player.buff.contagion = 1500;
+            this.player.debuff.contagion = 1500;
             this.partyBuffLog('Contagion', '歪风', 1500);
         }
         // 召唤灵兽加护
@@ -321,7 +322,7 @@ class Fight {
         }
         // 机工超荷
         if (this.setting.simulate.partyMember.indexOf('mch') !== -1 && this.setting.job !== 'mch' && (this.setting.simulate.duration - this.battle.time) % 12000 == 100) {
-            this.player.buff.hypercharge = 2800;
+            this.player.debuff.hypercharge = 2800;
             this.partyBuffLog('Hypercharge', '超荷', 2800);
         }
         // 武僧义结金兰

@@ -34,6 +34,9 @@
     <Compile Include="initial\ast.js">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="initial\mnk.js">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="initial\party.js">
       <SubType>Code</SubType>
     </Compile>
