@@ -51,7 +51,7 @@
         "event": "DOT Apply",
         "name": "Combust II",
         "translate": "灾星",
-        "base_damage": [],
+        "damage": [],
         "duration": 3000,
         "buff": [
             "potion",
@@ -64,7 +64,7 @@
         "event": "Damage",
         "name": "Auto Attack",
         "translate": "自动攻击",
-        "damage": 102,
+        "damage": 100,
         "crit": false,
         "dh": false,
         "buff": [
@@ -85,7 +85,7 @@
         "event": "DOT Tick",
         "name": "Combust II",
         "translate": "灾星",
-        "damage": 1416,
+        "damage": 1473,
         "crit": false,
         "dh": false,
         "buff": [
@@ -101,7 +101,7 @@
         "translate": "祸星",
         "duration": 235,
         "resource": {
-            "mp": 19200,
+            "mp": 18800,
             "tp": 1000
         }
     },
@@ -131,15 +131,15 @@
         "event": "Damage",
         "name": "Auto Attack",
         "translate": "自动攻击",
-        "damage": 114,
+        "damage": 113,
         "crit": false,
         "dh": false,
         "buff": [
             "potion",
             "cleric_stance",
             "battle_litany",
-            "foe_requiem",
             "bard_aura",
+            "foe_requiem",
             "contagion",
             "hypercharge"
         ]
@@ -163,15 +163,15 @@
         "event": "Damage",
         "name": "Malefic III",
         "translate": "祸星",
-        "damage": 7057,
+        "damage": 7340,
         "crit": false,
         "dh": false,
         "buff": [
             "potion",
             "cleric_stance",
             "battle_litany",
-            "foe_requiem",
             "bard_aura",
+            "foe_requiem",
             "contagion",
             "hypercharge"
         ]
@@ -192,7 +192,7 @@
         "event": "DOT Tick",
         "name": "Combust II",
         "translate": "灾星",
-        "damage": 1473,
+        "damage": 1416,
         "crit": false,
         "dh": false,
         "buff": [
@@ -206,7 +206,7 @@
         "event": "Damage",
         "name": "Malefic III",
         "translate": "祸星",
-        "damage": 7188,
+        "damage": 7485,
         "crit": false,
         "dh": false,
         "buff": [
@@ -215,8 +215,8 @@
             "battle_litany",
             "dragon_sight",
             "battle_voice",
-            "foe_requiem",
             "bard_aura",
+            "foe_requiem",
             "contagion",
             "hypercharge"
         ]
@@ -237,8 +237,8 @@
         "event": "DOT Tick",
         "name": "Combust II",
         "translate": "灾星",
-        "damage": 1473,
-        "crit": false,
+        "damage": 2175,
+        "crit": true,
         "dh": false,
         "buff": [
             "potion",
@@ -251,7 +251,7 @@
         "event": "Damage",
         "name": "Auto Attack",
         "translate": "自动攻击",
-        "damage": 117,
+        "damage": 114,
         "crit": false,
         "dh": false,
         "buff": [
@@ -260,8 +260,8 @@
             "battle_litany",
             "dragon_sight",
             "battle_voice",
-            "foe_requiem",
             "bard_aura",
+            "foe_requiem",
             "contagion",
             "hypercharge"
         ]
@@ -271,7 +271,7 @@
         "event": "Damage",
         "name": "Malefic III",
         "translate": "祸星",
-        "damage": 7485,
+        "damage": 7114,
         "crit": false,
         "dh": false,
         "buff": [
@@ -280,8 +280,8 @@
             "battle_litany",
             "dragon_sight",
             "battle_voice",
-            "foe_requiem",
             "bard_aura",
+            "foe_requiem",
             "contagion",
             "hypercharge"
         ]
@@ -323,17 +323,17 @@
         "event": "Damage",
         "name": "Malefic III",
         "translate": "祸星",
-        "damage": 11051,
-        "crit": true,
-        "dh": false,
+        "damage": 9078,
+        "crit": false,
+        "dh": true,
         "buff": [
             "potion",
             "cleric_stance",
             "battle_litany",
             "dragon_sight",
             "battle_voice",
-            "foe_requiem",
             "bard_aura",
+            "foe_requiem",
             "contagion",
             "hypercharge"
         ]
@@ -354,7 +354,7 @@
         "event": "Damage",
         "name": "Auto Attack",
         "translate": "自动攻击",
-        "damage": 132,
+        "damage": 135,
         "crit": false,
         "dh": false,
         "buff": [
@@ -363,8 +363,8 @@
             "battle_litany",
             "dragon_sight",
             "battle_voice",
-            "foe_requiem",
             "bard_aura",
+            "foe_requiem",
             "trick_attack",
             "contagion",
             "hypercharge"
@@ -375,8 +375,8 @@
         "event": "Damage",
         "name": "Malefic III",
         "translate": "祸星",
-        "damage": 8396,
-        "crit": false,
+        "damage": 11322,
+        "crit": true,
         "dh": false,
         "buff": [
             "potion",
@@ -384,8 +384,8 @@
             "battle_litany",
             "dragon_sight",
             "battle_voice",
-            "foe_requiem",
             "bard_aura",
+            "foe_requiem",
             "trick_attack",
             "contagion",
             "hypercharge"
@@ -407,7 +407,7 @@
         "event": "DOT Tick",
         "name": "Combust II",
         "translate": "灾星",
-        "damage": 1402,
+        "damage": 1445,
         "crit": false,
         "dh": false,
         "buff": [
@@ -428,16 +428,16 @@
         "event": "Damage",
         "name": "Malefic III",
         "translate": "祸星",
-        "damage": 7998,
-        "crit": false,
+        "damage": 11693,
+        "crit": true,
         "dh": false,
         "buff": [
             "potion",
             "battle_litany",
             "dragon_sight",
             "battle_voice",
-            "foe_requiem",
             "bard_aura",
+            "foe_requiem",
             "trick_attack",
             "contagion",
             "hypercharge",
@@ -460,7 +460,7 @@
         "event": "DOT Tick",
         "name": "Combust II",
         "translate": "灾星",
-        "damage": 1359,
+        "damage": 1402,
         "crit": false,
         "dh": false,
         "buff": [
@@ -474,16 +474,16 @@
         "event": "Damage",
         "name": "Auto Attack",
         "translate": "自动攻击",
-        "damage": 155,
+        "damage": 133,
         "crit": false,
-        "dh": true,
+        "dh": false,
         "buff": [
             "potion",
             "battle_litany",
             "dragon_sight",
             "battle_voice",
-            "foe_requiem",
             "bard_aura",
+            "foe_requiem",
             "trick_attack",
             "hypercharge",
             "devotion"
@@ -494,16 +494,16 @@
         "event": "Damage",
         "name": "Malefic III",
         "translate": "祸星",
-        "damage": 7127,
-        "crit": false,
+        "damage": 10945,
+        "crit": true,
         "dh": false,
         "buff": [
             "potion",
             "battle_litany",
             "dragon_sight",
             "battle_voice",
-            "foe_requiem",
             "bard_aura",
+            "foe_requiem",
             "trick_attack",
             "hypercharge",
             "devotion"
@@ -525,7 +525,7 @@
         "event": "DOT Tick",
         "name": "Combust II",
         "translate": "灾星",
-        "damage": 1373,
+        "damage": 1431,
         "crit": false,
         "dh": false,
         "buff": [
@@ -539,7 +539,7 @@
         "event": "Damage",
         "name": "Malefic III",
         "translate": "祸星",
-        "damage": 10209,
+        "damage": 11051,
         "crit": true,
         "dh": false,
         "buff": [
@@ -547,8 +547,8 @@
             "battle_litany",
             "dragon_sight",
             "battle_voice",
-            "foe_requiem",
             "bard_aura",
+            "foe_requiem",
             "trick_attack",
             "hypercharge",
             "devotion"
@@ -570,7 +570,7 @@
         "event": "Damage",
         "name": "Auto Attack",
         "translate": "自动攻击",
-        "damage": 131,
+        "damage": 128,
         "crit": false,
         "dh": false,
         "buff": [
@@ -578,8 +578,8 @@
             "battle_litany",
             "dragon_sight",
             "battle_voice",
-            "foe_requiem",
             "bard_aura",
+            "foe_requiem",
             "trick_attack",
             "hypercharge",
             "devotion"
@@ -590,7 +590,7 @@
         "event": "DOT Tick",
         "name": "Combust II",
         "translate": "灾星",
-        "damage": 1416,
+        "damage": 1388,
         "crit": false,
         "dh": false,
         "buff": [
@@ -604,16 +604,16 @@
         "event": "Damage",
         "name": "Malefic III",
         "translate": "祸星",
-        "damage": 10840,
-        "crit": true,
+        "damage": 6911,
+        "crit": false,
         "dh": false,
         "buff": [
             "potion",
             "battle_litany",
             "dragon_sight",
             "battle_voice",
-            "foe_requiem",
             "bard_aura",
+            "foe_requiem",
             "trick_attack",
             "hypercharge",
             "devotion"
@@ -626,7 +626,7 @@
         "translate": "祸星",
         "duration": 235,
         "resource": {
-            "mp": 16600,
+            "mp": 16200,
             "tp": 1000
         }
     },
@@ -635,13 +635,13 @@
         "event": "Damage",
         "name": "Malefic III",
         "translate": "祸星",
-        "damage": 6924,
+        "damage": 6925,
         "crit": false,
         "dh": false,
         "buff": [
             "potion",
-            "foe_requiem",
             "bard_aura",
+            "foe_requiem",
             "trick_attack",
             "hypercharge",
             "devotion"
@@ -663,7 +663,7 @@
         "event": "DOT Tick",
         "name": "Combust II",
         "translate": "灾星",
-        "damage": 1373,
+        "damage": 1388,
         "crit": false,
         "dh": false,
         "buff": [
@@ -677,13 +677,13 @@
         "event": "Damage",
         "name": "Auto Attack",
         "translate": "自动攻击",
-        "damage": 112,
+        "damage": 105,
         "crit": false,
         "dh": false,
         "buff": [
             "potion",
-            "foe_requiem",
             "bard_aura",
+            "foe_requiem",
             "hypercharge",
             "devotion"
         ]
@@ -693,13 +693,13 @@
         "event": "Damage",
         "name": "Malefic III",
         "translate": "祸星",
-        "damage": 6108,
+        "damage": 5921,
         "crit": false,
         "dh": false,
         "buff": [
             "potion",
-            "foe_requiem",
             "bard_aura",
+            "foe_requiem",
             "hypercharge",
             "devotion"
         ]
@@ -720,7 +720,7 @@
         "event": "DOT Tick",
         "name": "Combust II",
         "translate": "灾星",
-        "damage": 1473,
+        "damage": 1416,
         "crit": false,
         "dh": false,
         "buff": [
@@ -734,12 +734,12 @@
         "event": "Damage",
         "name": "Malefic III",
         "translate": "祸星",
-        "damage": 7817,
+        "damage": 8306,
         "crit": true,
         "dh": false,
         "buff": [
-            "foe_requiem",
             "bard_aura",
+            "foe_requiem",
             "devotion"
         ]
     },
@@ -759,12 +759,12 @@
         "event": "Damage",
         "name": "Auto Attack",
         "translate": "自动攻击",
-        "damage": 106,
+        "damage": 98,
         "crit": false,
         "dh": false,
         "buff": [
-            "foe_requiem",
-            "bard_aura"
+            "bard_aura",
+            "foe_requiem"
         ]
     },
     {
@@ -772,11 +772,11 @@
         "event": "DOT Apply",
         "name": "Combust II",
         "translate": "灾星",
-        "base_damage": [],
+        "damage": [],
         "duration": 3000,
         "buff": [
-            "foe_requiem",
-            "bard_aura"
+            "bard_aura",
+            "foe_requiem"
         ]
     },
     {
@@ -802,12 +802,12 @@
         "event": "DOT Tick",
         "name": "Combust II",
         "translate": "灾星",
-        "damage": 1354,
+        "damage": 1356,
         "crit": false,
         "dh": false,
         "buff": [
-            "foe_requiem",
-            "bard_aura"
+            "bard_aura",
+            "foe_requiem"
         ]
     },
     {
@@ -826,13 +826,13 @@
         "event": "Damage",
         "name": "Auto Attack",
         "translate": "自动攻击",
-        "damage": 100,
+        "damage": 103,
         "crit": false,
         "dh": false,
         "buff": [
             "lucid_dreaming",
-            "foe_requiem",
-            "bard_aura"
+            "bard_aura",
+            "foe_requiem"
         ]
     },
     {
@@ -840,12 +840,12 @@
         "event": "DOT Tick",
         "name": "Combust II",
         "translate": "灾星",
-        "damage": 1315,
+        "damage": 1303,
         "crit": false,
         "dh": false,
         "buff": [
-            "foe_requiem",
-            "bard_aura"
+            "bard_aura",
+            "foe_requiem"
         ]
     },
     {
@@ -853,13 +853,13 @@
         "event": "Damage",
         "name": "Malefic III",
         "translate": "祸星",
-        "damage": 5570,
-        "crit": false,
+        "damage": 7744,
+        "crit": true,
         "dh": false,
         "buff": [
             "lucid_dreaming",
-            "foe_requiem",
-            "bard_aura"
+            "bard_aura",
+            "foe_requiem"
         ]
     },
     {
@@ -869,7 +869,7 @@
         "translate": "祸星",
         "duration": 235,
         "resource": {
-            "mp": 17120,
+            "mp": 15760,
             "tp": 1000
         }
     },
@@ -878,7 +878,7 @@
         "event": "Damage",
         "name": "Malefic III",
         "translate": "祸星",
-        "damage": 5408,
+        "damage": 5514,
         "crit": false,
         "dh": false,
         "buff": [
@@ -902,12 +902,12 @@
         "event": "DOT Tick",
         "name": "Combust II",
         "translate": "灾星",
-        "damage": 1368,
+        "damage": 1369,
         "crit": false,
         "dh": false,
         "buff": [
-            "foe_requiem",
-            "bard_aura"
+            "bard_aura",
+            "foe_requiem"
         ]
     },
     {
@@ -915,7 +915,7 @@
         "event": "Damage",
         "name": "Auto Attack",
         "translate": "自动攻击",
-        "damage": 105,
+        "damage": 104,
         "crit": false,
         "dh": false,
         "buff": [
@@ -928,7 +928,7 @@
         "event": "Damage",
         "name": "Malefic III",
         "translate": "祸星",
-        "damage": 5302,
+        "damage": 5461,
         "crit": false,
         "dh": false,
         "buff": [
@@ -952,12 +952,12 @@
         "event": "DOT Tick",
         "name": "Combust II",
         "translate": "灾星",
-        "damage": 1328,
+        "damage": 1277,
         "crit": false,
         "dh": false,
         "buff": [
-            "foe_requiem",
-            "bard_aura"
+            "bard_aura",
+            "foe_requiem"
         ]
     },
     {
@@ -965,7 +965,7 @@
         "event": "Damage",
         "name": "Malefic III",
         "translate": "祸星",
-        "damage": 5142,
+        "damage": 5302,
         "crit": false,
         "dh": false,
         "buff": [
@@ -989,7 +989,7 @@
         "event": "Damage",
         "name": "Auto Attack",
         "translate": "自动攻击",
-        "damage": 102,
+        "damage": 106,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1002,12 +1002,12 @@
         "event": "DOT Tick",
         "name": "Combust II",
         "translate": "灾星",
-        "damage": 1302,
+        "damage": 1356,
         "crit": false,
         "dh": false,
         "buff": [
-            "foe_requiem",
-            "bard_aura"
+            "bard_aura",
+            "foe_requiem"
         ]
     },
     {
@@ -1015,7 +1015,7 @@
         "event": "Damage",
         "name": "Malefic III",
         "translate": "祸星",
-        "damage": 5142,
+        "damage": 5302,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1030,7 +1030,7 @@
         "translate": "祸星",
         "duration": 235,
         "resource": {
-            "mp": 18800,
+            "mp": 17440,
             "tp": 1000
         }
     },
@@ -1039,7 +1039,7 @@
         "event": "Damage",
         "name": "Malefic III",
         "translate": "祸星",
-        "damage": 5142,
+        "damage": 5089,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1063,12 +1063,12 @@
         "event": "DOT Tick",
         "name": "Combust II",
         "translate": "灾星",
-        "damage": 1289,
+        "damage": 1263,
         "crit": false,
         "dh": false,
         "buff": [
-            "foe_requiem",
-            "bard_aura"
+            "bard_aura",
+            "foe_requiem"
         ]
     },
     {
@@ -1076,7 +1076,7 @@
         "event": "Damage",
         "name": "Auto Attack",
         "translate": "自动攻击",
-        "damage": 106,
+        "damage": 96,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1089,7 +1089,7 @@
         "event": "Damage",
         "name": "Malefic III",
         "translate": "祸星",
-        "damage": 5461,
+        "damage": 5514,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1113,12 +1113,12 @@
         "event": "DOT Tick",
         "name": "Combust II",
         "translate": "灾星",
-        "damage": 1302,
+        "damage": 1263,
         "crit": false,
         "dh": false,
         "buff": [
-            "foe_requiem",
-            "bard_aura"
+            "bard_aura",
+            "foe_requiem"
         ]
     },
     {
@@ -1126,7 +1126,7 @@
         "event": "Damage",
         "name": "Malefic III",
         "translate": "祸星",
-        "damage": 5355,
+        "damage": 5036,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1150,12 +1150,12 @@
         "event": "DOT Tick",
         "name": "Combust II",
         "translate": "灾星",
-        "damage": 1275,
+        "damage": 1250,
         "crit": false,
         "dh": false,
         "buff": [
-            "foe_requiem",
-            "bard_aura"
+            "bard_aura",
+            "foe_requiem"
         ]
     },
     {
@@ -1163,7 +1163,7 @@
         "event": "Damage",
         "name": "Auto Attack",
         "translate": "自动攻击",
-        "damage": 99,
+        "damage": 104,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1175,7 +1175,7 @@
         "event": "Damage",
         "name": "Malefic III",
         "translate": "祸星",
-        "damage": 5355,
+        "damage": 5036,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1198,12 +1198,12 @@
         "event": "DOT Tick",
         "name": "Combust II",
         "translate": "灾星",
-        "damage": 1275,
+        "damage": 1263,
         "crit": false,
         "dh": false,
         "buff": [
-            "foe_requiem",
-            "bard_aura"
+            "bard_aura",
+            "foe_requiem"
         ]
     },
     {
@@ -1211,7 +1211,7 @@
         "event": "Damage",
         "name": "Malefic III",
         "translate": "祸星",
-        "damage": 5248,
+        "damage": 5142,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1225,7 +1225,7 @@
         "translate": "祸星",
         "duration": 235,
         "resource": {
-            "mp": 19000,
+            "mp": 18600,
             "tp": 1000
         }
     },
@@ -1234,8 +1234,8 @@
         "event": "Damage",
         "name": "Auto Attack",
         "translate": "自动攻击",
-        "damage": 148,
-        "crit": true,
+        "damage": 104,
+        "crit": false,
         "dh": false,
         "buff": [
             "bard_aura"
@@ -1269,12 +1269,12 @@
         "event": "DOT Tick",
         "name": "Combust II",
         "translate": "灾星",
-        "damage": 1262,
+        "damage": 1369,
         "crit": false,
         "dh": false,
         "buff": [
-            "foe_requiem",
-            "bard_aura"
+            "bard_aura",
+            "foe_requiem"
         ]
     },
     {
@@ -1282,7 +1282,7 @@
         "event": "Damage",
         "name": "Malefic III",
         "translate": "祸星",
-        "damage": 5142,
+        "damage": 5036,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1317,7 +1317,7 @@
         "event": "DOT Apply",
         "name": "Combust II",
         "translate": "灾星",
-        "base_damage": [],
+        "damage": [],
         "duration": 3000,
         "buff": [
             "bard_aura"
@@ -1328,7 +1328,7 @@
         "event": "DOT Tick",
         "name": "Combust II",
         "translate": "灾星",
-        "damage": 1214,
+        "damage": 1303,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1358,7 +1358,7 @@
         "event": "DOT Tick",
         "name": "Combust II",
         "translate": "灾星",
-        "damage": 1291,
+        "damage": 1316,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1370,8 +1370,8 @@
         "event": "Damage",
         "name": "Auto Attack",
         "translate": "自动攻击",
-        "damage": 147,
-        "crit": true,
+        "damage": 97,
+        "crit": false,
         "dh": false,
         "buff": [
             "bard_aura",
@@ -1383,7 +1383,7 @@
         "event": "Damage",
         "name": "Malefic III",
         "translate": "祸星",
-        "damage": 5889,
+        "damage": 5540,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1407,8 +1407,8 @@
         "event": "Damage",
         "name": "Malefic III",
         "translate": "祸星",
-        "damage": 8524,
-        "crit": true,
+        "damage": 6123,
+        "crit": false,
         "dh": false,
         "buff": [
             "bard_aura",
@@ -1443,7 +1443,7 @@
         "event": "Damage",
         "name": "Auto Attack",
         "translate": "自动攻击",
-        "damage": 96,
+        "damage": 101,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1456,7 +1456,7 @@
         "event": "Damage",
         "name": "Malefic III",
         "translate": "祸星",
-        "damage": 5772,
+        "damage": 6123,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1480,7 +1480,7 @@
         "event": "DOT Tick",
         "name": "Combust II",
         "translate": "灾星",
-        "damage": 1214,
+        "damage": 1265,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1499,7 +1499,7 @@
         "event": "Damage",
         "name": "Malefic III",
         "translate": "祸星",
-        "damage": 6607,
+        "damage": 6543,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1524,7 +1524,7 @@
         "event": "DOT Tick",
         "name": "Combust II",
         "translate": "灾星",
-        "damage": 1214,
+        "damage": 1303,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1536,8 +1536,8 @@
         "event": "Damage",
         "name": "Auto Attack",
         "translate": "自动攻击",
-        "damage": 156,
-        "crit": true,
+        "damage": 113,
+        "crit": false,
         "dh": false,
         "buff": [
             "bard_aura",
@@ -1550,7 +1550,7 @@
         "event": "Damage",
         "name": "Malefic III",
         "translate": "祸星",
-        "damage": 6415,
+        "damage": 6222,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1575,7 +1575,7 @@
         "event": "DOT Tick",
         "name": "Combust II",
         "translate": "灾星",
-        "damage": 1303,
+        "damage": 1227,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1587,7 +1587,7 @@
         "event": "Damage",
         "name": "Malefic III",
         "translate": "祸星",
-        "damage": 6158,
+        "damage": 6350,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1603,7 +1603,7 @@
         "translate": "祸星",
         "duration": 235,
         "resource": {
-            "mp": 16400,
+            "mp": 16000,
             "tp": 1000
         }
     },
@@ -1612,7 +1612,7 @@
         "event": "Damage",
         "name": "Auto Attack",
         "translate": "自动攻击",
-        "damage": 107,
+        "damage": 115,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1625,7 +1625,7 @@
         "event": "Damage",
         "name": "Malefic III",
         "translate": "祸星",
-        "damage": 5772,
+        "damage": 6006,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1649,8 +1649,8 @@
         "event": "DOT Tick",
         "name": "Combust II",
         "translate": "灾星",
-        "damage": 1812,
-        "crit": true,
+        "damage": 1329,
+        "crit": false,
         "dh": false,
         "buff": [
             "bard_aura"
@@ -1661,7 +1661,7 @@
         "event": "Damage",
         "name": "Malefic III",
         "translate": "祸星",
-        "damage": 5947,
+        "damage": 6065,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1685,7 +1685,7 @@
         "event": "DOT Tick",
         "name": "Combust II",
         "translate": "灾星",
-        "damage": 1303,
+        "damage": 1252,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1697,7 +1697,7 @@
         "event": "Damage",
         "name": "Auto Attack",
         "translate": "自动攻击",
-        "damage": 113,
+        "damage": 109,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1710,7 +1710,7 @@
         "event": "Damage",
         "name": "Malefic III",
         "translate": "祸星",
-        "damage": 6122,
+        "damage": 5598,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1734,7 +1734,7 @@
         "event": "DOT Tick",
         "name": "Combust II",
         "translate": "灾星",
-        "damage": 1265,
+        "damage": 1303,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1746,7 +1746,7 @@
         "event": "Damage",
         "name": "Malefic III",
         "translate": "祸星",
-        "damage": 5714,
+        "damage": 5540,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1770,7 +1770,7 @@
         "event": "Damage",
         "name": "Auto Attack",
         "translate": "自动攻击",
-        "damage": 96,
+        "damage": 100,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1782,8 +1782,8 @@
         "event": "DOT Tick",
         "name": "Combust II",
         "translate": "灾星",
-        "damage": 1868,
-        "crit": true,
+        "damage": 1342,
+        "crit": false,
         "dh": false,
         "buff": [
             "bard_aura"
@@ -1794,7 +1794,7 @@
         "event": "Damage",
         "name": "Malefic III",
         "translate": "祸星",
-        "damage": 5195,
+        "damage": 5036,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1808,7 +1808,7 @@
         "translate": "祸星",
         "duration": 235,
         "resource": {
-            "mp": 15000,
+            "mp": 14600,
             "tp": 1000
         }
     },
@@ -1817,7 +1817,7 @@
         "event": "Damage",
         "name": "Malefic III",
         "translate": "祸星",
-        "damage": 5248,
+        "damage": 5408,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1840,8 +1840,8 @@
         "event": "Damage",
         "name": "Auto Attack",
         "translate": "自动攻击",
-        "damage": 144,
-        "crit": true,
+        "damage": 105,
+        "crit": false,
         "dh": false,
         "buff": [
             "bard_aura"
@@ -1852,7 +1852,7 @@
         "event": "DOT Apply",
         "name": "Combust II",
         "translate": "灾星",
-        "base_damage": [],
+        "damage": [],
         "duration": 3000,
         "buff": [
             "bard_aura"
@@ -1865,7 +1865,7 @@
         "translate": "战姿",
         "duration": 0,
         "resource": {
-            "mp": 14800,
+            "mp": 14400,
             "tp": 1000
         }
     },
@@ -1892,7 +1892,7 @@
         "event": "DOT Tick",
         "name": "Combust II",
         "translate": "灾星",
-        "damage": 1943,
+        "damage": 1812,
         "crit": true,
         "dh": false,
         "buff": [
@@ -1904,7 +1904,7 @@
         "event": "Damage",
         "name": "Auto Attack",
         "translate": "自动攻击",
-        "damage": 109,
+        "damage": 101,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1917,8 +1917,8 @@
         "event": "Damage",
         "name": "Malefic III",
         "translate": "祸星",
-        "damage": 5343,
-        "crit": false,
+        "damage": 8545,
+        "crit": true,
         "dh": false,
         "buff": [
             "cleric_stance",
@@ -1941,7 +1941,7 @@
         "event": "DOT Tick",
         "name": "Combust II",
         "translate": "灾星",
-        "damage": 1291,
+        "damage": 1316,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1953,7 +1953,7 @@
         "event": "Damage",
         "name": "Malefic III",
         "translate": "祸星",
-        "damage": 5677,
+        "damage": 5845,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1977,7 +1977,7 @@
         "event": "Damage",
         "name": "Auto Attack",
         "translate": "自动攻击",
-        "damage": 111,
+        "damage": 109,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1990,7 +1990,7 @@
         "event": "Damage",
         "name": "Malefic III",
         "translate": "祸星",
-        "damage": 5343,
+        "damage": 5678,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2014,7 +2014,7 @@
         "event": "DOT Tick",
         "name": "Combust II",
         "translate": "灾星",
-        "damage": 1316,
+        "damage": 1329,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2026,7 +2026,7 @@
         "event": "Damage",
         "name": "Malefic III",
         "translate": "祸星",
-        "damage": 5454,
+        "damage": 5734,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2050,7 +2050,7 @@
         "event": "DOT Tick",
         "name": "Combust II",
         "translate": "灾星",
-        "damage": 1278,
+        "damage": 1265,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2062,7 +2062,7 @@
         "event": "Damage",
         "name": "Auto Attack",
         "translate": "自动攻击",
-        "damage": 109,
+        "damage": 102,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2075,7 +2075,7 @@
         "event": "Damage",
         "name": "Malefic III",
         "translate": "祸星",
-        "damage": 5788,
+        "damage": 5344,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2099,7 +2099,7 @@
         "event": "DOT Tick",
         "name": "Combust II",
         "translate": "灾星",
-        "damage": 1278,
+        "damage": 1342,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2111,7 +2111,7 @@
         "event": "Damage",
         "name": "Malefic III",
         "translate": "祸星",
-        "damage": 5343,
+        "damage": 5845,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2135,7 +2135,7 @@
         "event": "Damage",
         "name": "Auto Attack",
         "translate": "自动攻击",
-        "damage": 104,
+        "damage": 105,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2147,7 +2147,7 @@
         "event": "DOT Tick",
         "name": "Combust II",
         "translate": "灾星",
-        "damage": 1265,
+        "damage": 1278,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2159,7 +2159,7 @@
         "event": "Damage",
         "name": "Malefic III",
         "translate": "祸星",
-        "damage": 5408,
+        "damage": 5248,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2173,7 +2173,7 @@
         "translate": "祸星",
         "duration": 235,
         "resource": {
-            "mp": 12400,
+            "mp": 12000,
             "tp": 1000
         }
     },
@@ -2182,8 +2182,8 @@
         "event": "Damage",
         "name": "Malefic III",
         "translate": "祸星",
-        "damage": 5195,
-        "crit": false,
+        "damage": 7984,
+        "crit": true,
         "dh": false,
         "buff": [
             "bard_aura"
@@ -2205,7 +2205,7 @@
         "event": "DOT Tick",
         "name": "Combust II",
         "translate": "灾星",
-        "damage": 1329,
+        "damage": 1278,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2217,7 +2217,7 @@
         "event": "Damage",
         "name": "Auto Attack",
         "translate": "自动攻击",
-        "damage": 96,
+        "damage": 98,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2229,7 +2229,7 @@
         "event": "Damage",
         "name": "Malefic III",
         "translate": "祸星",
-        "damage": 5514,
+        "damage": 5408,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2264,7 +2264,7 @@
         "event": "Damage",
         "name": "Malefic III",
         "translate": "祸星",
-        "damage": 5408,
+        "damage": 5142,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2287,7 +2287,7 @@
         "event": "DOT Tick",
         "name": "Combust II",
         "translate": "灾星",
-        "damage": 1316,
+        "damage": 1278,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2299,7 +2299,7 @@
         "event": "Damage",
         "name": "Auto Attack",
         "translate": "自动攻击",
-        "damage": 97,
+        "damage": 103,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2311,7 +2311,7 @@
         "event": "Damage",
         "name": "Malefic III",
         "translate": "祸星",
-        "damage": 5408,
+        "damage": 5355,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2341,7 +2341,7 @@
         "event": "DOT Tick",
         "name": "Combust II",
         "translate": "灾星",
-        "damage": 1240,
+        "damage": 1214,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2353,7 +2353,7 @@
         "event": "Damage",
         "name": "Malefic III",
         "translate": "祸星",
-        "damage": 5788,
+        "damage": 5567,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2368,7 +2368,7 @@
         "translate": "灾星",
         "duration": 0,
         "resource": {
-            "mp": 11000,
+            "mp": 10600,
             "tp": 1000
         }
     },
@@ -2377,7 +2377,7 @@
         "event": "Damage",
         "name": "Auto Attack",
         "translate": "自动攻击",
-        "damage": 104,
+        "damage": 110,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2397,7 +2397,7 @@
         "event": "DOT Apply",
         "name": "Combust II",
         "translate": "灾星",
-        "base_damage": [],
+        "damage": [],
         "duration": 3000,
         "buff": [
             "bard_aura",
@@ -2428,7 +2428,7 @@
         "event": "DOT Tick",
         "name": "Combust II",
         "translate": "灾星",
-        "damage": 1446,
+        "damage": 1431,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2442,7 +2442,7 @@
         "event": "Damage",
         "name": "Auto Attack",
         "translate": "自动攻击",
-        "damage": 107,
+        "damage": 116,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2457,7 +2457,7 @@
         "event": "Damage",
         "name": "Malefic III",
         "translate": "祸星",
-        "damage": 6364,
+        "damage": 6750,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2483,7 +2483,7 @@
         "event": "DOT Tick",
         "name": "Combust II",
         "translate": "灾星",
-        "damage": 1534,
+        "damage": 1490,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2523,9 +2523,9 @@
         "event": "Damage",
         "name": "Auto Attack",
         "translate": "自动攻击",
-        "damage": 115,
+        "damage": 144,
         "crit": false,
-        "dh": false,
+        "dh": true,
         "buff": [
             "dragon_sight",
             "bard_aura",
@@ -2538,8 +2538,8 @@
         "event": "DOT Tick",
         "name": "Combust II",
         "translate": "灾星",
-        "damage": 2049,
-        "crit": true,
+        "damage": 1505,
+        "crit": false,
         "dh": false,
         "buff": [
             "bard_aura",
@@ -2552,7 +2552,7 @@
         "event": "Damage",
         "name": "Malefic III",
         "translate": "祸星",
-        "damage": 6493,
+        "damage": 6107,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2569,7 +2569,7 @@
         "translate": "祸星",
         "duration": 235,
         "resource": {
-            "mp": 9800,
+            "mp": 9400,
             "tp": 1000
         }
     },
@@ -2585,7 +2585,7 @@
         "event": "Damage",
         "name": "Malefic III",
         "translate": "祸星",
-        "damage": 7073,
+        "damage": 7001,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2612,7 +2612,7 @@
         "event": "DOT Tick",
         "name": "Combust II",
         "translate": "灾星",
-        "damage": 1446,
+        "damage": 1475,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2633,7 +2633,7 @@
         "event": "Damage",
         "name": "Auto Attack",
         "translate": "自动攻击",
-        "damage": 122,
+        "damage": 127,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2650,8 +2650,8 @@
         "event": "Damage",
         "name": "Malefic III",
         "translate": "祸星",
-        "damage": 10126,
-        "crit": true,
+        "damage": 6924,
+        "crit": false,
         "dh": false,
         "buff": [
             "dragon_sight",
@@ -2678,8 +2678,8 @@
         "event": "DOT Tick",
         "name": "Combust II",
         "translate": "灾星",
-        "damage": 1446,
-        "crit": false,
+        "damage": 2092,
+        "crit": true,
         "dh": false,
         "buff": [
             "bard_aura",
@@ -2692,8 +2692,8 @@
         "event": "Damage",
         "name": "Malefic III",
         "translate": "祸星",
-        "damage": 6558,
-        "crit": false,
+        "damage": 10067,
+        "crit": true,
         "dh": false,
         "buff": [
             "dragon_sight",
@@ -2719,7 +2719,7 @@
         "event": "DOT Tick",
         "name": "Combust II",
         "translate": "灾星",
-        "damage": 1431,
+        "damage": 1534,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2733,7 +2733,7 @@
         "event": "Damage",
         "name": "Auto Attack",
         "translate": "自动攻击",
-        "damage": 123,
+        "damage": 126,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2749,8 +2749,8 @@
         "event": "Damage",
         "name": "Malefic III",
         "translate": "祸星",
-        "damage": 6426,
-        "crit": false,
+        "damage": 9204,
+        "crit": true,
         "dh": false,
         "buff": [
             "dragon_sight",
@@ -2776,7 +2776,7 @@
         "event": "DOT Tick",
         "name": "Combust II",
         "translate": "灾星",
-        "damage": 1416,
+        "damage": 1505,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2790,7 +2790,7 @@
         "event": "Damage",
         "name": "Malefic III",
         "translate": "祸星",
-        "damage": 6754,
+        "damage": 6885,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2808,7 +2808,7 @@
         "translate": "祸星",
         "duration": 235,
         "resource": {
-            "mp": 8400,
+            "mp": 8000,
             "tp": 1000
         }
     },
@@ -2817,7 +2817,7 @@
         "event": "Damage",
         "name": "Auto Attack",
         "translate": "自动攻击",
-        "damage": 123,
+        "damage": 124,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2832,7 +2832,7 @@
         "event": "Damage",
         "name": "Malefic III",
         "translate": "祸星",
-        "damage": 5933,
+        "damage": 6433,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2858,7 +2858,7 @@
         "event": "DOT Tick",
         "name": "Combust II",
         "translate": "灾星",
-        "damage": 1431,
+        "damage": 1475,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2872,7 +2872,7 @@
         "event": "Damage",
         "name": "Malefic III",
         "translate": "祸星",
-        "damage": 5961,
+        "damage": 5734,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2897,7 +2897,7 @@
         "event": "DOT Tick",
         "name": "Combust II",
         "translate": "灾星",
-        "damage": 1431,
+        "damage": 1446,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2924,7 +2924,7 @@
         "event": "Damage",
         "name": "Malefic III",
         "translate": "祸星",
-        "damage": 5408,
+        "damage": 5353,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2948,7 +2948,7 @@
         "event": "DOT Tick",
         "name": "Combust II",
         "translate": "灾星",
-        "damage": 1446,
+        "damage": 1431,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2962,7 +2962,7 @@
         "event": "Damage",
         "name": "Malefic III",
         "translate": "祸星",
-        "damage": 5302,
+        "damage": 5036,
         "crit": false,
         "dh": false,
         "buff": [
@@ -2985,8 +2985,8 @@
         "event": "Damage",
         "name": "Auto Attack",
         "translate": "自动攻击",
-        "damage": 97,
-        "crit": false,
+        "damage": 150,
+        "crit": true,
         "dh": false,
         "buff": [
             "bard_aura"
@@ -2997,7 +2997,7 @@
         "event": "DOT Apply",
         "name": "Combust II",
         "translate": "灾星",
-        "base_damage": [],
+        "damage": [],
         "duration": 3000,
         "buff": [
             "bard_aura"
@@ -3037,7 +3037,7 @@
         "event": "DOT Tick",
         "name": "Combust II",
         "translate": "灾星",
-        "damage": 1227,
+        "damage": 1252,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3049,7 +3049,7 @@
         "event": "Damage",
         "name": "Auto Attack",
         "translate": "自动攻击",
-        "damage": 99,
+        "damage": 96,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3062,7 +3062,7 @@
         "event": "Damage",
         "name": "Malefic III",
         "translate": "祸星",
-        "damage": 5355,
+        "damage": 5514,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3086,7 +3086,7 @@
         "event": "DOT Tick",
         "name": "Combust II",
         "translate": "灾星",
-        "damage": 1316,
+        "damage": 1291,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3098,7 +3098,7 @@
         "event": "Damage",
         "name": "Malefic III",
         "translate": "祸星",
-        "damage": 5089,
+        "damage": 5461,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3122,8 +3122,8 @@
         "event": "DOT Tick",
         "name": "Combust II",
         "translate": "灾星",
-        "damage": 1831,
-        "crit": true,
+        "damage": 1316,
+        "crit": false,
         "dh": false,
         "buff": [
             "bard_aura"
@@ -3134,7 +3134,7 @@
         "event": "Damage",
         "name": "Auto Attack",
         "translate": "自动攻击",
-        "damage": 99,
+        "damage": 101,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3147,7 +3147,7 @@
         "event": "Damage",
         "name": "Malefic III",
         "translate": "祸星",
-        "damage": 5408,
+        "damage": 5461,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3171,7 +3171,7 @@
         "event": "DOT Tick",
         "name": "Combust II",
         "translate": "灾星",
-        "damage": 1252,
+        "damage": 1303,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3183,7 +3183,7 @@
         "event": "Damage",
         "name": "Malefic III",
         "translate": "祸星",
-        "damage": 5461,
+        "damage": 5355,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3198,7 +3198,7 @@
         "translate": "祸星",
         "duration": 235,
         "resource": {
-            "mp": 9640,
+            "mp": 8280,
             "tp": 1000
         }
     },
@@ -3207,7 +3207,7 @@
         "event": "Damage",
         "name": "Auto Attack",
         "translate": "自动攻击",
-        "damage": 97,
+        "damage": 103,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3220,7 +3220,7 @@
         "event": "Damage",
         "name": "Malefic III",
         "translate": "祸星",
-        "damage": 5302,
+        "damage": 5514,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3244,7 +3244,7 @@
         "event": "DOT Tick",
         "name": "Combust II",
         "translate": "灾星",
-        "damage": 1214,
+        "damage": 1303,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3280,7 +3280,7 @@
         "event": "DOT Tick",
         "name": "Combust II",
         "translate": "灾星",
-        "damage": 1303,
+        "damage": 1342,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3292,7 +3292,7 @@
         "event": "Damage",
         "name": "Auto Attack",
         "translate": "自动攻击",
-        "damage": 97,
+        "damage": 104,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3305,7 +3305,7 @@
         "event": "Damage",
         "name": "Malefic III",
         "translate": "祸星",
-        "damage": 5461,
+        "damage": 5089,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3329,7 +3329,7 @@
         "event": "DOT Tick",
         "name": "Combust II",
         "translate": "灾星",
-        "damage": 1214,
+        "damage": 1252,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3341,7 +3341,7 @@
         "event": "Damage",
         "name": "Malefic III",
         "translate": "祸星",
-        "damage": 5089,
+        "damage": 5514,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3365,7 +3365,7 @@
         "event": "Damage",
         "name": "Auto Attack",
         "translate": "自动攻击",
-        "damage": 100,
+        "damage": 104,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3377,7 +3377,7 @@
         "event": "DOT Tick",
         "name": "Combust II",
         "translate": "灾星",
-        "damage": 1329,
+        "damage": 1303,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3389,7 +3389,7 @@
         "event": "Damage",
         "name": "Malefic III",
         "translate": "祸星",
-        "damage": 5248,
+        "damage": 5036,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3403,7 +3403,7 @@
         "translate": "祸星",
         "duration": 235,
         "resource": {
-            "mp": 11120,
+            "mp": 10720,
             "tp": 1000
         }
     },
@@ -3412,7 +3412,7 @@
         "event": "Damage",
         "name": "Malefic III",
         "translate": "祸星",
-        "damage": 5514,
+        "damage": 5142,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3447,7 +3447,7 @@
         "event": "Damage",
         "name": "Auto Attack",
         "translate": "自动攻击",
-        "damage": 105,
+        "damage": 106,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3459,8 +3459,8 @@
         "event": "Damage",
         "name": "Malefic III",
         "translate": "祸星",
-        "damage": 7518,
-        "crit": true,
+        "damage": 5355,
+        "crit": false,
         "dh": false,
         "buff": [
             "bard_aura"
@@ -3482,7 +3482,7 @@
         "event": "DOT Tick",
         "name": "Combust II",
         "translate": "灾星",
-        "damage": 1252,
+        "damage": 1329,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3501,7 +3501,7 @@
         "event": "Damage",
         "name": "Malefic III",
         "translate": "祸星",
-        "damage": 5947,
+        "damage": 6006,
         "crit": false,
         "dh": false,
         "buff": [
@@ -3525,8 +3525,8 @@
         "event": "Damage",
         "name": "Auto Attack",
         "translate": "自动攻击",
-        "damage": 106,
-        "crit": false,
+        "damage": 151,
+        "crit": true,
         "dh": false,
         "buff": [
             "bard_aura",
@@ -3552,12 +3552,12 @@
         "event": "DOT Apply",
         "name": "Combust II",
         "translate": "灾星",
-        "base_damage": [],
+        "damage": [],
         "duration": 3000,
         "buff": [
             "battle_litany",
-            "foe_requiem",
             "bard_aura",
+            "foe_requiem",
             "contagion"
         ]
     },
@@ -3591,13 +3591,13 @@
         "event": "DOT Tick",
         "name": "Combust II",
         "translate": "灾星",
-        "damage": 1433,
+        "damage": 1390,
         "crit": false,
         "dh": false,
         "buff": [
             "battle_litany",
-            "foe_requiem",
             "bard_aura",
+            "foe_requiem",
             "contagion"
         ]
     },
@@ -3608,7 +3608,7 @@
         "translate": "祸星",
         "duration": 235,
         "resource": {
-            "mp": 9920,
+            "mp": 9520,
             "tp": 1000
         }
     },
@@ -3617,15 +3617,15 @@
         "event": "Damage",
         "name": "Auto Attack",
         "translate": "自动攻击",
-        "damage": 106,
+        "damage": 132,
         "crit": false,
-        "dh": false,
+        "dh": true,
         "buff": [
             "cleric_stance",
             "battle_litany",
             "battle_voice",
-            "foe_requiem",
             "bard_aura",
+            "foe_requiem",
             "contagion"
         ]
     },
@@ -3634,15 +3634,15 @@
         "event": "Damage",
         "name": "Malefic III",
         "translate": "祸星",
-        "damage": 9220,
-        "crit": true,
+        "damage": 6433,
+        "crit": false,
         "dh": false,
         "buff": [
             "cleric_stance",
             "battle_litany",
             "battle_voice",
-            "foe_requiem",
             "bard_aura",
+            "foe_requiem",
             "contagion"
         ]
     },
@@ -3662,13 +3662,13 @@
         "event": "DOT Tick",
         "name": "Combust II",
         "translate": "灾星",
-        "damage": 1447,
-        "crit": false,
+        "damage": 2011,
+        "crit": true,
         "dh": false,
         "buff": [
             "battle_litany",
-            "foe_requiem",
             "bard_aura",
+            "foe_requiem",
             "contagion"
         ]
     },
@@ -3677,15 +3677,15 @@
         "event": "Damage",
         "name": "Malefic III",
         "translate": "祸星",
-        "damage": 6622,
+        "damage": 6433,
         "crit": false,
         "dh": false,
         "buff": [
             "cleric_stance",
             "battle_litany",
             "battle_voice",
-            "foe_requiem",
             "bard_aura",
+            "foe_requiem",
             "contagion"
         ]
     },
@@ -3705,13 +3705,13 @@
         "event": "DOT Tick",
         "name": "Combust II",
         "translate": "灾星",
-        "damage": 1491,
-        "crit": false,
+        "damage": 2032,
+        "crit": true,
         "dh": false,
         "buff": [
             "battle_litany",
-            "foe_requiem",
             "bard_aura",
+            "foe_requiem",
             "contagion"
         ]
     },
@@ -3727,15 +3727,15 @@
         "event": "Damage",
         "name": "Auto Attack",
         "translate": "自动攻击",
-        "damage": 122,
+        "damage": 116,
         "crit": false,
         "dh": false,
         "buff": [
             "cleric_stance",
             "battle_litany",
             "battle_voice",
-            "foe_requiem",
             "bard_aura",
+            "foe_requiem",
             "trick_attack",
             "contagion"
         ]
@@ -3745,15 +3745,15 @@
         "event": "Damage",
         "name": "Malefic III",
         "translate": "祸星",
-        "damage": 10447,
-        "crit": true,
-        "dh": false,
+        "damage": 8585,
+        "crit": false,
+        "dh": true,
         "buff": [
             "cleric_stance",
             "battle_litany",
             "battle_voice",
-            "foe_requiem",
             "bard_aura",
+            "foe_requiem",
             "trick_attack",
             "contagion"
         ]
@@ -3774,13 +3774,13 @@
         "event": "DOT Tick",
         "name": "Combust II",
         "translate": "灾星",
-        "damage": 1375,
+        "damage": 1404,
         "crit": false,
         "dh": false,
         "buff": [
             "battle_litany",
-            "foe_requiem",
             "bard_aura",
+            "foe_requiem",
             "contagion"
         ]
     },
@@ -3789,15 +3789,15 @@
         "event": "Damage",
         "name": "Malefic III",
         "translate": "祸星",
-        "damage": 8932,
-        "crit": false,
-        "dh": true,
+        "damage": 9636,
+        "crit": true,
+        "dh": false,
         "buff": [
             "cleric_stance",
             "battle_litany",
             "battle_voice",
-            "foe_requiem",
             "bard_aura",
+            "foe_requiem",
             "trick_attack",
             "contagion"
         ]
@@ -3818,15 +3818,15 @@
         "event": "Damage",
         "name": "Auto Attack",
         "translate": "自动攻击",
-        "damage": 123,
+        "damage": 113,
         "crit": false,
         "dh": false,
         "buff": [
             "cleric_stance",
             "battle_litany",
             "battle_voice",
-            "foe_requiem",
             "bard_aura",
+            "foe_requiem",
             "trick_attack",
             "contagion"
         ]
@@ -3836,13 +3836,13 @@
         "event": "DOT Tick",
         "name": "Combust II",
         "translate": "灾星",
-        "damage": 2095,
-        "crit": true,
+        "damage": 1476,
+        "crit": false,
         "dh": false,
         "buff": [
             "battle_litany",
-            "foe_requiem",
             "bard_aura",
+            "foe_requiem",
             "contagion"
         ]
     },
@@ -3851,15 +3851,15 @@
         "event": "Damage",
         "name": "Malefic III",
         "translate": "祸星",
-        "damage": 10447,
-        "crit": true,
-        "dh": false,
+        "damage": 8585,
+        "crit": false,
+        "dh": true,
         "buff": [
             "cleric_stance",
             "battle_litany",
             "battle_voice",
-            "foe_requiem",
             "bard_aura",
+            "foe_requiem",
             "trick_attack",
             "contagion"
         ]
@@ -3871,7 +3871,7 @@
         "translate": "祸星",
         "duration": 235,
         "resource": {
-            "mp": 8520,
+            "mp": 8120,
             "tp": 1000
         }
     },
@@ -3880,15 +3880,15 @@
         "event": "Damage",
         "name": "Malefic III",
         "translate": "祸星",
-        "damage": 6180,
+        "damage": 6496,
         "crit": false,
         "dh": false,
         "buff": [
             "cleric_stance",
             "battle_litany",
             "battle_voice",
-            "foe_requiem",
             "bard_aura",
+            "foe_requiem",
             "trick_attack"
         ]
     },
@@ -3908,13 +3908,13 @@
         "event": "DOT Tick",
         "name": "Combust II",
         "translate": "灾星",
-        "damage": 2222,
-        "crit": true,
+        "damage": 1419,
+        "crit": false,
         "dh": false,
         "buff": [
             "battle_litany",
-            "foe_requiem",
             "bard_aura",
+            "foe_requiem",
             "contagion"
         ]
     },
@@ -3923,14 +3923,14 @@
         "event": "Damage",
         "name": "Auto Attack",
         "translate": "自动攻击",
-        "damage": 117,
+        "damage": 112,
         "crit": false,
         "dh": false,
         "buff": [
             "battle_litany",
             "battle_voice",
-            "foe_requiem",
             "bard_aura",
+            "foe_requiem",
             "trick_attack"
         ]
     },
@@ -3939,14 +3939,14 @@
         "event": "Damage",
         "name": "Malefic III",
         "translate": "祸星",
-        "damage": 5886,
-        "crit": false,
+        "damage": 8694,
+        "crit": true,
         "dh": false,
         "buff": [
             "battle_litany",
             "battle_voice",
-            "foe_requiem",
             "bard_aura",
+            "foe_requiem",
             "trick_attack"
         ]
     },
@@ -3966,13 +3966,13 @@
         "event": "DOT Tick",
         "name": "Combust II",
         "translate": "灾星",
-        "damage": 2011,
-        "crit": true,
+        "damage": 1520,
+        "crit": false,
         "dh": false,
         "buff": [
             "battle_litany",
-            "foe_requiem",
             "bard_aura",
+            "foe_requiem",
             "contagion"
         ]
     },
@@ -3981,13 +3981,13 @@
         "event": "Damage",
         "name": "Malefic III",
         "translate": "祸星",
-        "damage": 6187,
+        "damage": 5826,
         "crit": false,
         "dh": false,
         "buff": [
             "battle_voice",
-            "foe_requiem",
             "bard_aura",
+            "foe_requiem",
             "trick_attack"
         ]
     },
@@ -4007,13 +4007,13 @@
         "event": "DOT Tick",
         "name": "Combust II",
         "translate": "灾星",
-        "damage": 1476,
+        "damage": 1520,
         "crit": false,
         "dh": false,
         "buff": [
             "battle_litany",
-            "foe_requiem",
             "bard_aura",
+            "foe_requiem",
             "contagion"
         ]
     },
@@ -4022,12 +4022,12 @@
         "event": "Damage",
         "name": "Auto Attack",
         "translate": "自动攻击",
-        "damage": 114,
+        "damage": 108,
         "crit": false,
         "dh": false,
         "buff": [
-            "foe_requiem",
             "bard_aura",
+            "foe_requiem",
             "trick_attack"
         ]
     },
@@ -4036,12 +4036,12 @@
         "event": "Damage",
         "name": "Malefic III",
         "translate": "祸星",
-        "damage": 6247,
+        "damage": 5766,
         "crit": false,
         "dh": false,
         "buff": [
-            "foe_requiem",
             "bard_aura",
+            "foe_requiem",
             "trick_attack"
         ]
     },
@@ -4061,12 +4061,12 @@
         "event": "Damage",
         "name": "Malefic III",
         "translate": "祸星",
-        "damage": 5570,
+        "damage": 5734,
         "crit": false,
         "dh": false,
         "buff": [
-            "foe_requiem",
-            "bard_aura"
+            "bard_aura",
+            "foe_requiem"
         ]
     },
     {
@@ -4085,13 +4085,13 @@
         "event": "DOT Tick",
         "name": "Combust II",
         "translate": "灾星",
-        "damage": 1419,
+        "damage": 1404,
         "crit": false,
         "dh": false,
         "buff": [
             "battle_litany",
-            "foe_requiem",
             "bard_aura",
+            "foe_requiem",
             "contagion"
         ]
     },
@@ -4100,12 +4100,12 @@
         "event": "Damage",
         "name": "Auto Attack",
         "translate": "自动攻击",
-        "damage": 154,
+        "damage": 156,
         "crit": true,
         "dh": false,
         "buff": [
-            "foe_requiem",
-            "bard_aura"
+            "bard_aura",
+            "foe_requiem"
         ]
     },
     {
@@ -4113,12 +4113,12 @@
         "event": "Damage",
         "name": "Malefic III",
         "translate": "祸星",
-        "damage": 5242,
+        "damage": 5406,
         "crit": false,
         "dh": false,
         "buff": [
-            "foe_requiem",
-            "bard_aura"
+            "bard_aura",
+            "foe_requiem"
         ]
     },
     {
@@ -4137,13 +4137,13 @@
         "event": "DOT Tick",
         "name": "Combust II",
         "translate": "灾星",
-        "damage": 1404,
+        "damage": 1505,
         "crit": false,
         "dh": false,
         "buff": [
             "battle_litany",
-            "foe_requiem",
             "bard_aura",
+            "foe_requiem",
             "contagion"
         ]
     },
@@ -4152,12 +4152,12 @@
         "event": "Damage",
         "name": "Malefic III",
         "translate": "祸星",
-        "damage": 5461,
+        "damage": 5187,
         "crit": false,
         "dh": false,
         "buff": [
-            "foe_requiem",
-            "bard_aura"
+            "bard_aura",
+            "foe_requiem"
         ]
     },
     {
@@ -4176,12 +4176,12 @@
         "event": "Damage",
         "name": "Auto Attack",
         "translate": "自动攻击",
-        "damage": 102,
+        "damage": 99,
         "crit": false,
         "dh": false,
         "buff": [
-            "foe_requiem",
-            "bard_aura"
+            "bard_aura",
+            "foe_requiem"
         ]
     },
     {
@@ -4189,17 +4189,17 @@
         "event": "DOT Apply",
         "name": "Combust II",
         "translate": "灾星",
-        "base_damage": [
+        "damage": [
             {
-                "damage": 1341,
-                "crit": false,
+                "damage": 1847,
+                "crit": true,
                 "dh": false
             }
         ],
         "duration": 3000,
         "buff": [
-            "foe_requiem",
-            "bard_aura"
+            "bard_aura",
+            "foe_requiem"
         ]
     },
     {
@@ -4207,12 +4207,12 @@
         "event": "DOT Tick",
         "name": "Combust II",
         "translate": "灾星",
-        "damage": 1328,
-        "crit": false,
+        "damage": 1924,
+        "crit": true,
         "dh": false,
         "buff": [
-            "foe_requiem",
-            "bard_aura"
+            "bard_aura",
+            "foe_requiem"
         ]
     },
     {
@@ -4231,8 +4231,8 @@
         "event": "Damage",
         "name": "Auto Attack",
         "translate": "自动攻击",
-        "damage": 103,
-        "crit": false,
+        "damage": 147,
+        "crit": true,
         "dh": false,
         "buff": [
             "bard_aura"
@@ -4243,12 +4243,12 @@
         "event": "DOT Tick",
         "name": "Combust II",
         "translate": "灾星",
-        "damage": 1846,
-        "crit": true,
+        "damage": 1369,
+        "crit": false,
         "dh": false,
         "buff": [
-            "foe_requiem",
-            "bard_aura"
+            "bard_aura",
+            "foe_requiem"
         ]
     },
     {
@@ -4256,7 +4256,7 @@
         "event": "Damage",
         "name": "Malefic III",
         "translate": "祸星",
-        "damage": 5302,
+        "damage": 5461,
         "crit": false,
         "dh": false,
         "buff": [
@@ -4270,7 +4270,7 @@
         "translate": "祸星",
         "duration": 235,
         "resource": {
-            "mp": 5920,
+            "mp": 5520,
             "tp": 1000
         }
     },
@@ -4279,7 +4279,7 @@
         "event": "Damage",
         "name": "Malefic III",
         "translate": "祸星",
-        "damage": 5195,
+        "damage": 5408,
         "crit": false,
         "dh": false,
         "buff": [
@@ -4302,12 +4302,12 @@
         "event": "DOT Tick",
         "name": "Combust II",
         "translate": "灾星",
-        "damage": 1341,
+        "damage": 1369,
         "crit": false,
         "dh": false,
         "buff": [
-            "foe_requiem",
-            "bard_aura"
+            "bard_aura",
+            "foe_requiem"
         ]
     },
     {
@@ -4315,7 +4315,7 @@
         "event": "Damage",
         "name": "Auto Attack",
         "translate": "自动攻击",
-        "damage": 103,
+        "damage": 102,
         "crit": false,
         "dh": false,
         "buff": [
@@ -4327,7 +4327,7 @@
         "event": "Damage",
         "name": "Malefic III",
         "translate": "祸星",
-        "damage": 5142,
+        "damage": 5355,
         "crit": false,
         "dh": false,
         "buff": [
@@ -4350,12 +4350,12 @@
         "event": "DOT Tick",
         "name": "Combust II",
         "translate": "灾星",
-        "damage": 1249,
+        "damage": 1382,
         "crit": false,
         "dh": false,
         "buff": [
-            "foe_requiem",
-            "bard_aura"
+            "bard_aura",
+            "foe_requiem"
         ]
     },
     {
@@ -4363,7 +4363,7 @@
         "event": "Damage",
         "name": "Malefic III",
         "translate": "祸星",
-        "damage": 5355,
+        "damage": 5408,
         "crit": false,
         "dh": false,
         "buff": [
@@ -4386,12 +4386,12 @@
         "event": "DOT Tick",
         "name": "Combust II",
         "translate": "灾星",
-        "damage": 1275,
+        "damage": 1329,
         "crit": false,
         "dh": false,
         "buff": [
-            "foe_requiem",
-            "bard_aura"
+            "bard_aura",
+            "foe_requiem"
         ]
     },
     {
@@ -4399,8 +4399,8 @@
         "event": "Damage",
         "name": "Auto Attack",
         "translate": "自动攻击",
-        "damage": 99,
-        "crit": false,
+        "damage": 148,
+        "crit": true,
         "dh": false,
         "buff": [
             "bard_aura"
@@ -4411,7 +4411,7 @@
         "event": "Damage",
         "name": "Malefic III",
         "translate": "祸星",
-        "damage": 5514,
+        "damage": 5355,
         "crit": false,
         "dh": false,
         "buff": [
@@ -4434,12 +4434,12 @@
         "event": "DOT Tick",
         "name": "Combust II",
         "translate": "灾星",
-        "damage": 1368,
-        "crit": false,
+        "damage": 1867,
+        "crit": true,
         "dh": false,
         "buff": [
-            "foe_requiem",
-            "bard_aura"
+            "bard_aura",
+            "foe_requiem"
         ]
     },
     {
@@ -4447,7 +4447,7 @@
         "event": "Damage",
         "name": "Malefic III",
         "translate": "祸星",
-        "damage": 5461,
+        "damage": 5036,
         "crit": false,
         "dh": false,
         "buff": [
@@ -4461,7 +4461,7 @@
         "translate": "祸星",
         "duration": 235,
         "resource": {
-            "mp": 4520,
+            "mp": 4120,
             "tp": 1000
         }
     },
@@ -4470,7 +4470,7 @@
         "event": "Damage",
         "name": "Auto Attack",
         "translate": "自动攻击",
-        "damage": 99,
+        "damage": 104,
         "crit": false,
         "dh": false,
         "buff": [
@@ -4482,7 +4482,7 @@
         "event": "Damage",
         "name": "Malefic III",
         "translate": "祸星",
-        "damage": 5567,
+        "damage": 5514,
         "crit": false,
         "dh": false,
         "buff": [
@@ -4505,12 +4505,12 @@
         "event": "DOT Tick",
         "name": "Combust II",
         "translate": "灾星",
-        "damage": 1315,
+        "damage": 1290,
         "crit": false,
         "dh": false,
         "buff": [
-            "foe_requiem",
-            "bard_aura"
+            "bard_aura",
+            "foe_requiem"
         ]
     },
     {
@@ -4518,7 +4518,7 @@
         "event": "Damage",
         "name": "Malefic III",
         "translate": "祸星",
-        "damage": 5089,
+        "damage": 5195,
         "crit": false,
         "dh": false,
         "buff": [
@@ -4541,12 +4541,12 @@
         "event": "DOT Tick",
         "name": "Combust II",
         "translate": "灾星",
-        "damage": 1354,
+        "damage": 1369,
         "crit": false,
         "dh": false,
         "buff": [
-            "foe_requiem",
-            "bard_aura"
+            "bard_aura",
+            "foe_requiem"
         ]
     },
     {
@@ -4554,8 +4554,8 @@
         "event": "Damage",
         "name": "Auto Attack",
         "translate": "自动攻击",
-        "damage": 97,
-        "crit": false,
+        "damage": 145,
+        "crit": true,
         "dh": false,
         "buff": [
             "bard_aura"
@@ -4566,7 +4566,7 @@
         "event": "Damage",
         "name": "Malefic III",
         "translate": "祸星",
-        "damage": 5248,
+        "damage": 5355,
         "crit": false,
         "dh": false,
         "buff": [
@@ -4589,12 +4589,12 @@
         "event": "DOT Tick",
         "name": "Combust II",
         "translate": "灾星",
-        "damage": 1865,
-        "crit": true,
+        "damage": 1382,
+        "crit": false,
         "dh": false,
         "buff": [
-            "foe_requiem",
-            "bard_aura"
+            "bard_aura",
+            "foe_requiem"
         ]
     },
     {
@@ -4602,7 +4602,7 @@
         "event": "Damage",
         "name": "Malefic III",
         "translate": "祸星",
-        "damage": 5195,
+        "damage": 5302,
         "crit": false,
         "dh": false,
         "buff": [

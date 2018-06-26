@@ -22,8 +22,10 @@ class Fight {
             },
             'job': [],                                           // 职业特殊内容
             'opener': deepcopy(data.opener),                     // 开场队列
-            'buff': [],                                          // 玩家buff && 目标debuff
+            'buff': [],                                          // 玩家buff
+            'debuff': [],                                        // 目标debuff
             'dot': [],                                           // 玩家dot
+            'circle': [],                                        // 地板技能
             'cd': [],                                            // 玩家技能冷却
             'stance': [],                                        // 玩家姿态
             'tick': {
@@ -67,11 +69,19 @@ class Fight {
         
         while (this.battle.time > 0) {
 
-            // 如果有DOT就结算 && 回蓝结算
+            // 服务器3秒Tick结算
             if (this.battle.time % 300 == 150) {
+                // DOT结算
                 this.dotHit();
+            } else if (this.battle.time % 300 == 100) {
+                // 回蓝/TP结算
                 this.manaRegen();
+            } else if (this.battle.time % 300 == 200) {
+                this.doCircle();
             }
+
+            // 回蓝结算
+
 
             // 如果伤害判定触发，进行计算
             for (var i = 0; i < this.battle.damageQue.length; i++) {
@@ -167,6 +177,7 @@ class Fight {
         this.allTick(this.player.buff);
         this.allTick(this.player.cd);
         this.allTimeTick(this.player.dot);
+        this.allTimeTick(this.player.circle);
         this.allTimeTick(this.battle.skillEffectQue);
         this.allTimeTick(this.battle.damageQue);
     }
@@ -218,8 +229,7 @@ class Fight {
     dotHit() {
         for (var k in this.player.dot) {
             if (this.player.dot[k].time > 0) {
-
-                // 根据this.player.dot[k].damage储存的快照伤害进行伤害浮动模拟并处理DOT机制
+                // 根据this.player.dot[k].damage储存的快照伤害输出数据
                 this.log.push({
                     'time': this.setting.simulate.duration - this.battle.time,
                     'event': 'DOT Tick',
@@ -233,7 +243,27 @@ class Fight {
                 this.battle.totalDamage += this.player.dot[k].damage[0].damage;
                 this.player.dot[k].damage.shift();
             }
-            
+        }
+    }
+
+    // circle伤害
+    doCircle() {
+        for (var k in this.player.circle) {
+            if (this.player.circle[k].time > 0) {
+                // 根据this.player.circle[k].damage储存的快照伤害乘以当前目标身上debuff的伤害系数
+                this.log.push({
+                    'time': this.setting.simulate.duration - this.battle.time,
+                    'event': 'Circle Tick',
+                    'name': this.player.circle[k].name,
+                    'translate': this.player.circle[k].translate,
+                    'damage': calculate.circleDamageCalculate(this,this.player.circle[k].damage[0].damage,this.player.circle[k].type),
+                    'crit': this.player.circle[k].damage[0].crit,
+                    'dh': this.player.circle[k].damage[0].dh,
+                    'buff': this.player.circle[k].buff
+                });
+                this.battle.totalDamage += this.player.circle[k].damage[0].damage;
+                this.player.circle[k].damage.shift();
+            }
         }
     }
 

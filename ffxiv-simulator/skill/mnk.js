@@ -60,88 +60,172 @@ class skill {
         this.player.resource.tp -= 50;
         this.player.tick.animation = animationBlock;
         this.player.tick.gcd = this.calculateGCD();
+        this.battle.skillEffectQue.push({
+            'time': 67,
+            'name': 'bootshine'
+        });
         this.log.push({
             'time': this.setting.simulate.duration - this.battle.time,
             'event': 'Cast',
             'name': 'Bootshine',
             'translate': '连击',
-            'duration': deepcopy(this.player.tick.cast),
-            'resource': deepcopy(this.player.resource)
-        });
-    }
-    bio_ii() {
-        this.player.resource.mp -= 720;
-        this.player.tick.animation = animationBlock;
-        this.player.tick.gcd = this.calculateGCD();
-        this.battle.skillEffectQue.push({
-            'time': 67,
-            'name': 'bio_ii'
-        });
-        this.log.push({
-            'time': this.setting.simulate.duration - this.battle.time,
-            'event': 'Cast',
-            'name': 'Bio II',
             'duration': 0,
             'resource': deepcopy(this.player.resource)
         });
     }
-    ruin_ii() {
-        this.player.resource.mp -= 480;
+    true_strike() {
+        this.player.resource.tp -= 50;
         this.player.tick.animation = animationBlock;
         this.player.tick.gcd = this.calculateGCD();
         this.battle.skillEffectQue.push({
             'time': 67,
-            'name': 'ruin_ii'
+            'name': 'true_strike'
         });
         this.log.push({
             'time': this.setting.simulate.duration - this.battle.time,
             'event': 'Cast',
-            'name': 'Ruin II',
+            'name': 'True Strike',
+            'translate': '正拳',
             'duration': 0,
             'resource': deepcopy(this.player.resource)
         });
     }
-    miasma() {
-        this.player.casting = 'Miasma';
-        this.player.resource.mp -= 600;
-        this.player.tick.animation = animationBlock;
-        this.player.tick.gcd = this.calculateGCD();
-        this.player.tick.cast = this.calculateGCD();
-        this.log.push({
-            'time': this.setting.simulate.duration - this.battle.time,
-            'event': 'Cast',
-            'name': 'Miasma',
-            'duration': deepcopy(this.player.tick.cast),
-            'resource': deepcopy(this.player.resource)
-        });
-    }
-    miasma_ii() {
-        this.player.resource.mp -= 1680;
+    snap_punch() {
+        this.player.resource.tp -= 40;
         this.player.tick.animation = animationBlock;
         this.player.tick.gcd = this.calculateGCD();
         this.battle.skillEffectQue.push({
             'time': 67,
-            'name': 'miasma_ii'
+            'name': 'snap_punch'
         });
         this.log.push({
             'time': this.setting.simulate.duration - this.battle.time,
             'event': 'Cast',
-            'name': 'Miasma II',
+            'name': 'Snap Punch',
+            'translate': '崩拳',
             'duration': 0,
             'resource': deepcopy(this.player.resource)
         });
     }
-    shadow_flare() {
+    dragon_kick() {
+        this.player.resource.tp -= 50;
         this.player.tick.animation = animationBlock;
-        this.player.cd.shadow_flare = 6000;
+        this.player.tick.gcd = this.calculateGCD();
         this.battle.skillEffectQue.push({
             'time': 67,
-            'name': 'shadow_flare'
+            'name': 'dragon_kick'
         });
         this.log.push({
             'time': this.setting.simulate.duration - this.battle.time,
             'event': 'Cast',
-            'name': 'Shadow Flare',
+            'name': 'Dragon Kick',
+            'translate': '双龙脚',
+            'duration': 0,
+            'resource': deepcopy(this.player.resource)
+        });
+    }
+    twin_snakes() {
+        this.player.resource.tp -= 50;
+        this.player.tick.animation = animationBlock;
+        this.player.tick.gcd = this.calculateGCD();
+        this.battle.skillEffectQue.push({
+            'time': 67,
+            'name': 'twin_snakes'
+        });
+        this.log.push({
+            'time': this.setting.simulate.duration - this.battle.time,
+            'event': 'Cast',
+            'name': 'Twin Snakes',
+            'translate': '双掌打',
+            'duration': 0,
+            'resource': deepcopy(this.player.resource)
+        });
+    }
+    demolish() {
+        this.player.resource.tp -= 40;
+        this.player.tick.animation = animationBlock;
+        this.player.tick.gcd = this.calculateGCD();
+        this.battle.skillEffectQue.push({
+            'time': 67,
+            'name': 'demolish'
+        });
+        this.log.push({
+            'time': this.setting.simulate.duration - this.battle.time,
+            'event': 'Cast',
+            'name': 'Demolish',
+            'translate': '破碎拳',
+            'duration': 0,
+            'resource': deepcopy(this.player.resource)
+        });
+    }
+    shoulder_tackle() {
+        this.player.tick.animation = animationBlock;
+        this.player.cd.fire_tackle = 3000;
+        var name = '';
+        if (this.player.job.fists == 'fire') {
+            name = 'fire_tackle';
+        } else if (this.player.job.fists == 'wind') {
+            name = 'wind_tackle';
+        } else if (this.player.job.fists == 'earth') {
+            name = 'earth._tackle';
+        }
+        this.battle.skillEffectQue.push({
+            'time': 67,
+            'name': name
+        });
+        this.log.push({
+            'time': this.setting.simulate.duration - this.battle.time,
+            'event': 'Cast',
+            'name': 'Fire Tackle',
+            'translate': '红莲罗刹冲',
+            'duration': 0,
+            'resource': deepcopy(this.player.resource)
+        });
+    }
+    steel_peak() {
+        this.player.tick.animation = animationBlock;
+        this.player.cd.steel_peak = 4000;
+        this.battle.skillEffectQue.push({
+            'time': 67,
+            'name': 'steal_peak'
+        });
+        this.log.push({
+            'time': this.setting.simulate.duration - this.battle.time,
+            'event': 'Cast',
+            'name': 'Steel Peak',
+            'translate': '铁山靠',
+            'duration': 0,
+            'resource': deepcopy(this.player.resource)
+        });
+    }
+    howling_fist() {
+        this.player.tick.animation = animationBlock;
+        this.player.cd.howling_fist = 6000;
+        this.battle.skillEffectQue.push({
+            'time': 67,
+            'name': 'howling_fist'
+        });
+        this.log.push({
+            'time': this.setting.simulate.duration - this.battle.time,
+            'event': 'Cast',
+            'name': 'Howling Fist',
+            'translate': '空鸣拳',
+            'duration': 0,
+            'resource': deepcopy(this.player.resource)
+        });
+    }
+    elixir_field() {
+        this.player.tick.animation = animationBlock;
+        this.player.cd.elixir_field = 3000;
+        this.battle.skillEffectQue.push({
+            'time': 67,
+            'name': 'elixir_field'
+        });
+        this.log.push({
+            'time': this.setting.simulate.duration - this.battle.time,
+            'event': 'Cast',
+            'name': 'Elixir Field',
+            'translate': '苍气炮',
             'duration': 0,
             'resource': deepcopy(this.player.resource)
         });
@@ -157,22 +241,6 @@ class skill {
             'time': this.setting.simulate.duration - this.battle.time,
             'event': 'Cast',
             'name': 'Aether Flow',
-            'duration': 0,
-            'resource': deepcopy(this.player.resource)
-        });
-    }
-    energy_drain() {
-        this.player.tick.animation = animationBlock;
-        this.player.job.aetherflow -= 1;
-        this.player.cd.energy_drain = 300;
-        this.battle.skillEffectQue.push({
-            'time': 67,
-            'name': 'energy_drain'
-        });
-        this.log.push({
-            'time': this.setting.simulate.duration - this.battle.time,
-            'event': 'Cast',
-            'name': 'Energy Drain',
             'duration': 0,
             'resource': deepcopy(this.player.resource)
         });
@@ -203,21 +271,6 @@ class skill {
             'time': this.setting.simulate.duration - this.battle.time,
             'event': 'Cast',
             'name': 'Potion',
-            'duration': 0,
-            'resource': deepcopy(this.player.resource)
-        });
-    }
-    cleric_stance() {
-        this.player.tick.animation = animationBlock;
-        this.player.cd.cleric_stance = 9000;
-        this.battle.skillEffectQue.push({
-            'time': 67,
-            'name': 'cleric_stance'
-        });
-        this.log.push({
-            'time': this.setting.simulate.duration - this.battle.time,
-            'event': 'Cast',
-            'name': 'Cleric Stance',
             'duration': 0,
             'resource': deepcopy(this.player.resource)
         });
@@ -253,123 +306,216 @@ class effect {
     /** 
      * 下面是技能生效代码
      * */
-    broil_ii() {
-        var potency = 230;
-        var damage = calculate.damageCalculate(this, potency, 'magic');
-        this.battle.damageQue.push({
-            'time': 50,
-            'name': 'Broil II',
-            'damage': damage.damage,
-            'crit': damage.crit,
-            'dh': damage.dh,
-            'buff': this.whatBuff()
-        });
-    }
-    bio_ii() {
-        this.player.engage = true;
-        var potency = 35;
-        var damage = calculate.dotBaseDamageCalculate(this, potency, 'magic');
-        this.player.dot.bio_ii.time = 3000;
-        this.player.dot.bio_ii.damage = damage;
-        this.player.dot.bio_ii.buff = this.whatBuff();
-        this.log.push({
-            'time': this.setting.simulate.duration - this.battle.time,
-            'event': 'DOT Apply',
-            'name': 'Bio II',
-            'base_damage': damage,
-            'duration': 1800,
-            'buff': this.whatBuff()
-        });
-    }
-    ruin_ii() {
-        var potency = 100;
-        var damage = calculate.damageCalculate(this, potency, 'magic');
+    bootshine() {
+        var potency = 140;
+        var damage = calculate.damageCalculate(this, potency, 'physic');
+        if (player.job.form == 'opo_opo') {
+            while (!damage.crit) {
+                damage = calculate.damageCalculate(this, potency, 'physic');
+            }
+        }
+        if (damage.crit) {
+            this.isChakra();
+        }
+        this.player.job.form = 'raptor';
         this.battle.damageQue.push({
             'time': 0,
-            'name': 'Ruin II',
+            'name': 'Bootshine',
+            'translate': '连击',
             'damage': damage.damage,
             'crit': damage.crit,
             'dh': damage.dh,
             'buff': this.whatBuff()
         });
     }
-    miasma() {
-        var potency = 20;
-        var damage = calculate.damageCalculate(this, potency, 'magic');
+    true_strike() {
+        var potency = 180;
+        var damage = calculate.damageCalculate(this, potency, 'physic');
+        if (damage.crit) {
+            this.isChakra();
+        }
+        this.player.job.form = 'coeurl';
+        this.battle.damageQue.push({
+            'time': 0,
+            'name': 'True Strike',
+            'translate': '正拳',
+            'damage': damage.damage,
+            'crit': damage.crit,
+            'dh': damage.dh,
+            'buff': this.whatBuff()
+        });
+    }
+    snap_punch() {
+        var potency = 170;
+        var damage = calculate.damageCalculate(this, potency, 'physic');
+        if (damage.crit) {
+            this.isChakra();
+        }
+        this.isGreasedLightning();
+        this.player.job.form = 'opo_opo';
+        this.battle.damageQue.push({
+            'time': 0,
+            'name': 'Snap Punch',
+            'translate': '崩拳',
+            'damage': damage.damage,
+            'crit': damage.crit,
+            'dh': damage.dh,
+            'buff': this.whatBuff()
+        });
+    }
+    dragon_kick() {
+        var potency = 140;
+        var damage = calculate.damageCalculate(this, potency, 'physic');
+        if (this.player.job.form == 'opo_opo') {
+            this.player.job.form = 'raptor';
+            this.player.buff.resistence = 1500;
+        }
+        this.battle.damageQue.push({
+            'time': 0,
+            'name': 'Dragon Kick',
+            'translate': '双龙脚',
+            'damage': damage.damage,
+            'crit': damage.crit,
+            'dh': damage.dh,
+            'buff': this.whatBuff()
+        });
+    }
+    twin_snakes() {
+        var potency = 130;
+        var damage = calculate.damageCalculate(this, potency, 'physic');
+        this.player.job.form = 'coeurl';
+        this.player.buff.twin_snakes = 1500;
+        this.battle.damageQue.push({
+            'time': 0,
+            'name': 'Twin Snakes',
+            'translate': '双掌打',
+            'damage': damage.damage,
+            'crit': damage.crit,
+            'dh': damage.dh,
+            'buff': this.whatBuff()
+        });
+    }
+    demolish() {
+        var potency = 70;
+        var damage = calculate.damageCalculate(this, potency, 'physic');
+        this.player.job.form = 'opo_opo';
+        this.isGreasedLightning();
         this.battle.skillEffectQue.push({
             'time': 0,
-            'name': 'miasma_dot'
+            'name': 'demolish_dot'
         });
         this.battle.damageQue.push({
-            'time': 50,
-            'name': 'Miasma',
+            'time': 0,
+            'name': 'Demolish',
+            'translate': '破碎拳',
             'damage': damage.damage,
             'crit': damage.crit,
             'dh': damage.dh,
             'buff': this.whatBuff()
         });
     }
-    miasma_dot() {
+    demolish_dot() {
         this.player.engage = true;
-        var potency = 35;
-        var damage = calculate.dotBaseDamageCalculate(this, potency, 'magic');
-        this.player.dot.miasma.time = 2400;
-        this.player.dot.miasma.damage = damage;
-        this.player.dot.miasma.buff = this.whatBuff();
+        var potency = 50;
+        for (var i = 0; i < 6; i++) {
+            damage.push(calculate.dotDamageCalculate(this, potency, 'physic'));
+        }
+        this.player.dot.demolish.time = 1800;
+        this.player.dot.demolish.damage = damage;
+        this.player.dot.demolish.buff = this.whatBuff();
         this.log.push({
             'time': this.setting.simulate.duration - this.battle.time,
             'event': 'DOT Apply',
-            'name': 'Miasma',
-            'base_damage': damage,
+            'name': 'Demolish',
+            'translate': '破碎拳',
+            'damage': damage,
             'duration': 2400,
             'buff': this.whatBuff()
         });
     }
-    miasma_ii() {
-        var potency = 100;
-        var damage = calculate.damageCalculate(this, potency, 'magic');
-        this.battle.skillEffectQue.push({
-            'time': 0,
-            'name': 'miasma_ii_dot'
-        });
+    fire_tackle() {
+        var potency = 130;
+        var damage = calculate.damageCalculate(this, potency, 'physic');
         this.battle.damageQue.push({
             'time': 0,
-            'name': 'Miasma II',
+            'name': 'Fire Tackle',
+            'translate': '红莲罗刹冲',
             'damage': damage.damage,
             'crit': damage.crit,
             'dh': damage.dh,
             'buff': this.whatBuff()
         });
     }
-    miasma_ii_dot() {
-        this.player.engage = true;
-        var potency = 25;
-        var damage = calculate.dotBaseDamageCalculate(this, potency, 'magic');
-        this.player.dot.miasma_ii.time = 1200;
-        this.player.dot.miasma_ii.damage = damage;
-        this.player.dot.miasma.buff = this.whatBuff();
+    wind_tackle() {
+        var potency = 65;
+        var damage = calculate.damageCalculate(this, potency, 'physic');
+        this.battle.damageQue.push({
+            'time': 0,
+            'name': 'Wind Tackle',
+            'translate': '疾风罗刹冲',
+            'damage': damage.damage,
+            'crit': damage.crit,
+            'dh': damage.dh,
+            'buff': this.whatBuff()
+        });
+        this.player.buff.riddle_of_wind = 1000;
         this.log.push({
             'time': this.setting.simulate.duration - this.battle.time,
-            'event': 'DOT Apply',
-            'name': 'Miasma II',
-            'base_damage': damage,
-            'duration': 1200,
+            'event': 'Buff Apply',
+            'name': 'Riddle of Wind',
+            'translate': '疾风极意',
+            'duration': 1000
+        });
+    }
+    earth_tackle() {
+        var potency = 100;
+        var damage = calculate.damageCalculate(this, potency, 'physic');
+        this.battle.damageQue.push({
+            'time': 0,
+            'name': 'Earth Tackle',
+            'translate': '金刚罗刹冲',
+            'damage': damage.damage,
+            'crit': damage.crit,
+            'dh': damage.dh,
             'buff': this.whatBuff()
         });
     }
-    shadow_flare() {
-        this.player.engage = true;
-        var potency = 50;
-        var damage = calculate.dotBaseDamageCalculate(this, potency, 'magic');
-        this.player.dot.shadow_flare.time = 1500;
-        this.player.dot.shadow_flare.damage = damage;
-        this.player.dot.shadow_flare.buff = this.whatBuff();
-        this.log.push({
-            'time': this.setting.simulate.duration - this.battle.time,
-            'event': 'DOT Apply',
-            'name': 'Shadow Flare',
-            'base_damage': damage,
-            'duration': 1500,
+    steel_peak() {
+        var potency = 150;
+        var damage = calculate.damageCalculate(this, potency, 'physic');
+        this.battle.damageQue.push({
+            'time': 0,
+            'name': 'Steel Peak',
+            'translate': '铁山靠',
+            'damage': damage.damage,
+            'crit': damage.crit,
+            'dh': damage.dh,
+            'buff': this.whatBuff()
+        });
+    }
+    howling_fist() {
+        var potency = 210;
+        var damage = calculate.damageCalculate(this, potency, 'physic');
+        this.battle.damageQue.push({
+            'time': 0,
+            'name': 'Howling Fist',
+            'translate': '空鸣拳',
+            'damage': damage.damage,
+            'crit': damage.crit,
+            'dh': damage.dh,
+            'buff': this.whatBuff()
+        });
+    }
+    elixir_field() {
+        var potency = 220;
+        var damage = calculate.damageCalculate(this, potency, 'physic');
+        this.battle.damageQue.push({
+            'time': 0,
+            'name': 'Elixir Field',
+            'translate': '苍气炮',
+            'damage': damage.damage,
+            'crit': damage.crit,
+            'dh': damage.dh,
             'buff': this.whatBuff()
         });
     }
@@ -443,6 +589,25 @@ class effect {
             return true;
         } else {
             return false;
+        }
+    }
+    // 积攒查克拉
+    isChakra() {
+        var t = Math.floor(Math.random() * 2);
+        if (t == 0) {
+            this.player.job.chakra = Math.min(5, this.player.job.chakra + 1);
+        }
+    }
+    // 疾风迅雷
+    isGreasedLightning() {
+        if (this.player.buff.greased_lightning_i < 0 && this.player.buff.greased_lightning_ii < 0 && this.player.buff.greased_lightning_iii >= 0) {
+            this.player.buff.greased_lightning_iii = 1600;
+        } else if (this.player.buff.greased_lightning_i < 0 && this.player.buff.greased_lightning_ii >= 0 && this.player.buff.greased_lightning_iii < 0) {
+            this.player.buff.greased_lightning_iii = 1600;
+        } else if (this.player.buff.greased_lightning_i >= 0 && this.player.buff.greased_lightning_ii < 0 && this.player.buff.greased_lightning_iii < 0) {
+            this.player.buff.greased_lightning_ii = 1600;
+        } else {
+            this.player.buff.greased_lightning_i = 1600;
         }
     }
 }
@@ -615,6 +780,11 @@ module.exports = {
             e.lucid_dreaming();
         }
         return e;
+    },
+    'aa': function (data) {
+        var a = new autoAttack(data);
+        a.aa();
+        return a;
     }
 
 };

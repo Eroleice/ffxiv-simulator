@@ -39,19 +39,24 @@ module.exports = {
             'damage': [],
             'buff': []
         };
-        data.dot.shadow_flare = {
+
+        // 地板技能初始化
+        data.circle.shadow_flare = {
             'time': 0,
             'name': 'Shadow Flare',
             'translate': '暗影核爆',
+            'type': 'magic',
             'damage': [],
             'buff': []
         };
 
         // buff初始化
-        data.buff.chain_strategem = 0;
         data.buff.potion = 0;
         data.buff.cleric_stance = 0;
         data.buff.lucid_dreaming = 0;
+
+        //debuff初始化
+        data.debuff.chain_strategem = 0;
 
         // cd初始化
         data.cd.shadow_flare = 0;

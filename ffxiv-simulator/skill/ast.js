@@ -180,7 +180,7 @@ class effect {
             'event': 'DOT Apply',
             'name': 'Combust II',
             'translate': '灾星',
-            'base_damage': damage,
+            'damage': damage,
             'duration': 3000,
             'buff': this.whatBuff()
         });

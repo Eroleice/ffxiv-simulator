@@ -38,8 +38,8 @@ module.exports = {
             return 'howling_fist';
         } else if (data.player.cd.steel_peak <= 0) {
             return 'steel_peak';
-        } else if (data.player.cd.shoulder_trackle <= 0) {
-            return 'shoulder_trackle';
+        } else if (data.player.cd.fire_trackle <= 0) {
+            return 'fire_trackle';
         } else if (data.player.cd.invigorate <= 0 && data.player.resource.tp <= 560) {
             return 'invigorate';
         } else {

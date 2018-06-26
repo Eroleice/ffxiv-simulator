@@ -205,6 +205,7 @@ class effect {
         this.battle.damageQue.push({
             'time': 50,
             'name': 'Stone IV',
+            'translate': '崩石',
             'damage': damage.damage,
             'crit': damage.crit,
             'dh': damage.dh,
@@ -221,6 +222,7 @@ class effect {
         this.battle.damageQue.push({
             'time': 0,
             'name': 'Aero II',
+            'translate': '烈风',
             'damage': damage.damage,
             'crit': damage.crit,
             'dh': damage.dh,
@@ -241,7 +243,8 @@ class effect {
             'time': this.setting.simulate.duration - this.battle.time,
             'event': 'DOT Apply',
             'name': 'Aero II',
-            'base_damage': damage,
+            'translate': '烈风',
+            'damage': damage,
             'duration': 1800,
             'buff': this.whatBuff()
         });
@@ -256,6 +259,7 @@ class effect {
         this.battle.damageQue.push({
             'time': 50,
             'name': 'Aero III',
+            'translate': '暴风',
             'damage': damage.damage,
             'crit': damage.crit,
             'dh': damage.dh,
@@ -276,7 +280,8 @@ class effect {
             'time': this.setting.simulate.duration - this.battle.time,
             'event': 'DOT Apply',
             'name': 'Aero III',
-            'base_damage': damage,
+            'translate': '暴风',
+            'damage': damage,
             'duration': 2400,
             'buff': this.whatBuff()
         });
@@ -288,6 +293,7 @@ class effect {
         this.battle.damageQue.push({
             'time': 0,
             'name': 'Assize',
+            'translate': '法令',
             'damage': damage.damage,
             'crit': damage.crit,
             'dh': damage.dh,
@@ -300,6 +306,7 @@ class effect {
             'time': this.setting.simulate.duration - this.battle.time,
             'event': 'Buff Apply',
             'name': 'Presence of Mind',
+            'translate': '神速咏唱',
             'duration': 1500
         });
     }
@@ -309,6 +316,7 @@ class effect {
             'time': this.setting.simulate.duration - this.battle.time,
             'event': 'Buff Apply',
             'name': 'Potion',
+            'translate': '爆发药',
             'duration': 3000
         });
     }
@@ -318,6 +326,7 @@ class effect {
             'time': this.setting.simulate.duration - this.battle.time,
             'event': 'Buff Apply',
             'name': 'Cleric Stance',
+            'translate': '战姿',
             'duration': 1500
         });
     }
@@ -327,6 +336,7 @@ class effect {
             'time': this.setting.simulate.duration - this.battle.time,
             'event': 'Buff Apply',
             'name': 'Lucid Dreaming',
+            'translate': '醒梦',
             'duration': 2100
         });
     }
@@ -350,7 +360,41 @@ class effect {
         }
     }
 }
+class autoAttack {
 
+    constructor(data) {
+        // 同步战斗数据
+        this.setting = data.setting;            // 初始化设定
+        this.player = data.player;              // 玩家动态属性
+        this.battle = data.battle;
+        this.log = data.log;
+    }
+
+    aa() {
+        var potency = 110;
+        var damage = calculate.autoAttackCalculate(this, potency);
+        this.battle.damageQue.push({
+            'time': 0,
+            'name': 'Auto Attack',
+            'translate': '自动攻击',
+            'damage': damage.damage,
+            'crit': damage.crit,
+            'dh': damage.dh,
+            'buff': this.whatBuff()
+        });
+    }
+
+    // 检测有哪些buff存在
+    whatBuff() {
+        var arr = [];
+        for (var k in this.player.buff) {
+            if (this.player.buff[k] > 0) {
+                arr.push(k);
+            }
+        }
+        return arr;
+    }
+}
 class buff {
 
     constructor(data) {
@@ -431,6 +475,11 @@ module.exports = {
             e.lucid_dreaming();
         }
         return e;
+    },
+    'aa': function (data) {
+        var a = new autoAttack(data);
+        a.aa();
+        return a;
     }
 
 };

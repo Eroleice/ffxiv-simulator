@@ -59,35 +59,13 @@
 
     // 伤害计算公式
     baseDamage(potency,type) {
-        // buff检测 && buff强化系数叠乘
-        if (type == 'magic') {
-            var m = this.multiplier({
-                'trick_attack': 1.1,            // 忍者背刺
-                'dragon_sight': 1.05,           // 龙骑龙视
-                'cleric_stance': 1.05,          // 治疗战姿
-                'foe_requiem': 1.03,            // 诗人魔人歌
-                'contagion': 1.1,               // 迦楼罗歪风
-                'devotion': 1.02,               // 召唤灵兽加护
-                'hypercharge': 1.05             // 机工超荷
-            });
-        } else if (type == 'physic') {
-            var m = this.multiplier({
-                'trick_attack': 1.1,            // 忍者背刺
-                'dragon_sight': 1.05,           // 龙骑龙视
-                'cleric_stance': 1.05,          // 治疗战姿
-                'foe_requiem': 1.03,            // 诗人魔人歌
-                'contagion': 1.1,               // 迦楼罗歪风
-                'botherhood': 1.05,             // 武僧义结金兰
-                'hypercharge': 1.05             // 机工超荷
-            });
-        }
         // 伤害公式mod计算
         var apMod = Math.floor(100 * (this.player.status.ap - 58.4) / 233.6) / 100;
         var wdMod = (this.player.status.wd + this.player.jobK) / 100;
         var detMod = 1 + Math.floor(1000 * (this.player.status.det - 292) * 0.13 / 2170) / 1000;
         var tenMod = 1 + Math.floor(1000 * (this.player.status.ten - 364) * 0.1 / 2170) / 1000;
         var resistanceMod = (this.isBuff('resistance')) ? 1.1 : 1;
-        this.damage = Math.floor(Math.floor(Math.floor(Math.floor(Math.floor(Math.floor(Math.floor(potency * wdMod) * apMod) * detMod) * tenMod) * m) * resistanceMod) * this.player.jobTrial);
+        this.damage = Math.floor(Math.floor(Math.floor(Math.floor(Math.floor(Math.floor(potency * wdMod) * apMod) * detMod) * tenMod) * resistanceMod) * this.player.jobTrial);
         if (potency < 100) {
             this.damage += 1; // 技能威力<100时,最终伤害需要+1
         }
@@ -96,15 +74,7 @@
     // 自动攻击伤害公式
     autoDamage(potency) {
         // buff检测 && buff强化系数叠乘
-        var m = this.multiplier({
-            'trick_attack': 1.1,            // 忍者背刺
-            'dragon_sight': 1.05,           // 龙骑龙视
-            'cleric_stance': 1.05,          // 治疗战姿
-            'foe_requiem': 1.03,            // 诗人魔人歌
-            'devotion': 1.02,               // 召唤灵兽加护
-            'hypercharge': 1.05,            // 机工超荷
-            'brotherhood': 1.05             // 武僧义结金兰
-        });
+        
         var ap = 0;
         if (this.setting.job == 'ast') {
             ap = 145;
@@ -127,7 +97,7 @@
         var detMod = 1 + Math.floor(1000 * (this.player.status.det - 292) * 0.13 / 2170) / 1000;
         var tenMod = 1 + Math.floor(1000 * (this.player.status.ten - 364) * 0.1 / 2170) / 1000;
         var resistanceMod = (this.isBuff('resistance')) ? 1.1 : 1;
-        this.damage = Math.floor(Math.floor(Math.floor(Math.floor(Math.floor(Math.floor(Math.floor(potency * wdMod) * apMod) * detMod) * tenMod) * m) * resistanceMod) * this.player.jobTrial);
+        this.damage = Math.floor(Math.floor(Math.floor(Math.floor(Math.floor(Math.floor(potency * wdMod) * apMod) * detMod) * tenMod) * resistanceMod) * this.player.jobTrial);
     }
 
     // dot伤害加成
@@ -164,9 +134,48 @@
         return m;
     }
 
-    // buff检测
+    // buff加成系数
+    buffMod(type) {
+        if (type == 'physic') {
+            var m = this.multiplier({
+                'dragon_sight': 1.05,           // 龙骑龙视
+                'cleric_stance': 1.05,          // 治疗战姿
+                'devotion': 1.02,               // 召唤灵兽加护
+                'brotherhood': 1.05             // 武僧义结金兰
+            });
+            this.damage = Math.floor(this.damage * m);
+        } else if (type == 'magic') {
+            var m = this.multiplier({
+                'dragon_sight': 1.05,           // 龙骑龙视
+                'cleric_stance': 1.05,          // 治疗战姿
+                'devotion': 1.02                // 召唤灵兽加护
+            });
+            this.damage = Math.floor(this.damage * m);
+        }
+    }
+    // debuff加成系数
+    debuffMod(type) {
+        if (type == 'physic') {
+            var m = this.multiplier({
+                'trick_attack': 1.1,            // 忍者背刺
+                'foe_requiem': 1.03,            // 诗人魔人歌
+                'hypercharge': 1.05             // 机工超荷
+            });
+            this.damage = Math.floor(this.damage * m);
+        } else if (type == 'magic') {
+            var m = this.multiplier({
+                'trick_attack': 1.1,            // 忍者背刺
+                'foe_requiem': 1.03,            // 诗人魔人歌
+                'contagion': 1.1,               // 迦楼罗歪风
+                'hypercharge': 1.05             // 机工超荷
+            });
+            this.damage = Math.floor(this.damage * m);
+        }
+    }
+
+    // buff&debuff检测
     isBuff(name) {
-        if (typeof this.player.buff[name] !== 'undefined' && this.player.buff[name] > 0) {
+        if ((typeof this.player.buff[name] !== 'undefined' && this.player.buff[name] > 0) || (typeof this.player.debuff[name] !== 'undefined' && this.player.debuff[name] > 0)) {
             return true;
         } else {
             return false;
@@ -186,7 +195,9 @@ module.exports = {
     'damageCalculate': function (data,potency,type) {
 
         var c = new calculate(data);
-        c.baseDamage(potency,type);
+        c.baseDamage(potency, type);
+        c.buffMod(type);
+        c.debuffMod(type);
         c.critMod();
         c.dhMod();
         c.damageFloat();
@@ -202,6 +213,8 @@ module.exports = {
 
         var c = new calculate(data);
         c.autoDamage(potency);
+        c.buffMod('physic');
+        c.debuffMod('physic');
         c.critMod();
         c.dhMod();
         c.dotMod();
@@ -218,6 +231,8 @@ module.exports = {
 
         var c = new calculate(data);
         c.baseDamage(potency, type);
+        c.buffMod(type);
+        c.debuffMod(type);
         c.dotMod();
         c.critMod();
         c.dhMod();
@@ -227,5 +242,27 @@ module.exports = {
             'crit': c.crit,
             'dh': c.dh
         }
+    },
+
+    'circleBaseDamageCalculate': function (data, potency, type) {
+        var c = new calculate(data);
+        c.baseDamage(potency, type);
+        c.buffMod(type);
+        c.dotMod();
+        c.critMod();
+        c.dhMod();
+        c.damageFloat();
+        return {
+            'damage': Math.floor(c.damage),
+            'crit': c.crit,
+            'dh': c.dh
+        }
+    },
+
+    'circleDamageCalculate': function (data, damage, type) {
+        var c = new calculate(data);
+        c.damage = damage;
+        c.debuffMod(type);
+        return c.damage;
     }
 };

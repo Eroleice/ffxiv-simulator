@@ -272,6 +272,7 @@ class effect {
         this.battle.damageQue.push({
             'time': 50,
             'name': 'Broil II',
+            'translate': '魔炎法',
             'damage': damage.damage,
             'crit': damage.crit,
             'dh': damage.dh,
@@ -292,7 +293,8 @@ class effect {
             'time': this.setting.simulate.duration - this.battle.time,
             'event': 'DOT Apply',
             'name': 'Bio II',
-            'base_damage': damage,
+            'translate': '猛毒菌',
+            'damage': damage,
             'duration': 1800,
             'buff': this.whatBuff()
         });
@@ -303,6 +305,7 @@ class effect {
         this.battle.damageQue.push({
             'time': 0,
             'name': 'Ruin II',
+            'translate': '毁坏',
             'damage': damage.damage,
             'crit': damage.crit,
             'dh': damage.dh,
@@ -319,6 +322,7 @@ class effect {
         this.battle.damageQue.push({
             'time': 50,
             'name': 'Miasma',
+            'translate': '瘴气',
             'damage': damage.damage,
             'crit': damage.crit,
             'dh': damage.dh,
@@ -339,7 +343,8 @@ class effect {
             'time': this.setting.simulate.duration - this.battle.time,
             'event': 'DOT Apply',
             'name': 'Miasma',
-            'base_damage': damage,
+            'translate': '瘴气',
+            'damage': damage,
             'duration': 2400,
             'buff': this.whatBuff()
         });
@@ -354,6 +359,7 @@ class effect {
         this.battle.damageQue.push({
             'time': 0,
             'name': 'Miasma II',
+            'translate': '瘴疠',
             'damage': damage.damage,
             'crit': damage.crit,
             'dh': damage.dh,
@@ -374,7 +380,8 @@ class effect {
             'time': this.setting.simulate.duration - this.battle.time,
             'event': 'DOT Apply',
             'name': 'Miasma II',
-            'base_damage': damage,
+            'translate': '瘴疠',
+            'damage': damage,
             'duration': 1200,
             'buff': this.whatBuff()
         });
@@ -384,16 +391,17 @@ class effect {
         var potency = 50;
         var damage = [];
         for (var i = 0; i < 5; i++) {
-            damage.push(calculate.dotDamageCalculate(this, potency, 'magic'));
+            damage.push(calculate.circleBaseDamageCalculate(this, potency, 'magic'));
         }
-        this.player.dot.shadow_flare.time = 1500;
-        this.player.dot.shadow_flare.damage = damage;
-        this.player.dot.shadow_flare.buff = this.whatBuff();
+        this.player.circle.shadow_flare.time = 1500;
+        this.player.circle.shadow_flare.damage = damage;
+        this.player.circle.shadow_flare.buff = this.whatBuff();
         this.log.push({
             'time': this.setting.simulate.duration - this.battle.time,
-            'event': 'DOT Apply',
+            'event': 'Circle Apply',
             'name': 'Shadow Flare',
-            'base_damage': damage,
+            'translate': '暗影核爆',
+            'damage': damage,
             'duration': 1500,
             'buff': this.whatBuff()
         });
@@ -409,6 +417,7 @@ class effect {
         this.battle.damageQue.push({
             'time': 0,
             'name': 'Energy Drain',
+            'translate': '能量吸收',
             'damage': damage.damage,
             'crit': damage.crit,
             'dh': damage.dh,
@@ -421,6 +430,7 @@ class effect {
             'time': this.setting.simulate.duration - this.battle.time,
             'event': 'Buff Apply',
             'name': 'Chain Strategem',
+            'translate': '连环计',
             'duration': 1500
         });
     }
@@ -430,6 +440,7 @@ class effect {
             'time': this.setting.simulate.duration - this.battle.time,
             'event': 'Buff Apply',
             'name': 'Potion',
+            'translate': '爆发药',
             'duration': 3000
         });
     }
@@ -439,6 +450,7 @@ class effect {
             'time': this.setting.simulate.duration - this.battle.time,
             'event': 'Buff Apply',
             'name': 'Cleric Stance',
+            'translate': '战姿',
             'duration': 1500
         });
     }
@@ -448,6 +460,7 @@ class effect {
             'time': this.setting.simulate.duration - this.battle.time,
             'event': 'Buff Apply',
             'name': 'Lucid Dreaming',
+            'translate': '醒梦',
             'duration': 2100
         });
     }
@@ -604,6 +617,11 @@ module.exports = {
             e.lucid_dreaming();
         }
         return e;
+    },
+    'aa': function (data) {
+        var a = new autoAttack(data);
+        a.aa();
+        return a;
     }
 
 };
