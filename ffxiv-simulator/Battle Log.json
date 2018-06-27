@@ -18,7 +18,7 @@
         "duration": 0,
         "resource": {
             "mp": 5160,
-            "tp": 1000
+            "tp": 960
         }
     },
     {
@@ -26,9 +26,9 @@
         "event": "Damage",
         "name": "Demolish",
         "translate": "破碎拳",
-        "damage": 2532,
-        "crit": true,
-        "dh": true,
+        "damage": 1203,
+        "crit": false,
+        "dh": false,
         "buff": [
             "fists_of_fire"
         ]
@@ -40,12 +40,27 @@
         "translate": "破碎拳",
         "damage": [
             {
-                "damage": 1536,
+                "damage": 1223,
+                "crit": false,
+                "dh": true
+            },
+            {
+                "damage": 1029,
+                "crit": false,
+                "dh": false
+            },
+            {
+                "damage": 1019,
+                "crit": false,
+                "dh": false
+            },
+            {
+                "damage": 1584,
                 "crit": true,
                 "dh": false
             },
             {
-                "damage": 1324,
+                "damage": 1312,
                 "crit": false,
                 "dh": true
             },
@@ -53,21 +68,6 @@
                 "damage": 1324,
                 "crit": false,
                 "dh": true
-            },
-            {
-                "damage": 1552,
-                "crit": true,
-                "dh": false
-            },
-            {
-                "damage": 989,
-                "crit": false,
-                "dh": false
-            },
-            {
-                "damage": 999,
-                "crit": false,
-                "dh": false
             }
         ],
         "duration": 1800,
@@ -81,7 +81,7 @@
         "event": "Damage",
         "name": "Auto Attack",
         "translate": "自动攻击",
-        "damage": 1789,
+        "damage": 1959,
         "crit": false,
         "dh": false,
         "buff": [
@@ -94,7 +94,7 @@
         "event": "Buff Apply",
         "name": "Fists of Wind",
         "translate": "疾风体势",
-        "duration": 3934
+        "duration": 17934
     },
     {
         "time": 66,
@@ -104,7 +104,7 @@
         "duration": 0,
         "resource": {
             "mp": 5160,
-            "tp": 1000
+            "tp": 960
         }
     },
     {
@@ -119,11 +119,24 @@
         "event": "Damage",
         "name": "Wind Tackle",
         "translate": "疾风罗刹冲",
-        "damage": 1229,
-        "crit": false,
-        "dh": false,
+        "damage": 2341,
+        "crit": true,
+        "dh": true,
         "buff": [
             "fists_of_wind",
+            "greased_lightning_i"
+        ]
+    },
+    {
+        "time": 150,
+        "event": "DOT Tick",
+        "name": "Demolish",
+        "translate": "破碎拳",
+        "damage": 1223,
+        "crit": false,
+        "dh": true,
+        "buff": [
+            "fists_of_fire",
             "greased_lightning_i"
         ]
     },
@@ -135,7 +148,7 @@
         "duration": 0,
         "resource": {
             "mp": 5160,
-            "tp": 950
+            "tp": 910
         }
     },
     {
@@ -146,7 +159,7 @@
         "duration": 0,
         "resource": {
             "mp": 5160,
-            "tp": 950
+            "tp": 970
         }
     },
     {
@@ -154,9 +167,9 @@
         "event": "Damage",
         "name": "Dragon Kick",
         "translate": "双龙脚",
-        "damage": 2676,
-        "crit": false,
-        "dh": false,
+        "damage": 4947,
+        "crit": true,
+        "dh": true,
         "buff": [
             "riddle_of_wind",
             "fists_of_wind",
@@ -168,24 +181,11 @@
         "event": "Damage",
         "name": "Auto Attack",
         "translate": "自动攻击",
-        "damage": 4029,
+        "damage": 3912,
         "crit": true,
         "dh": true,
         "buff": [
             "fists_of_wind",
-            "greased_lightning_i"
-        ]
-    },
-    {
-        "time": 250,
-        "event": "DOT Tick",
-        "name": "Demolish",
-        "translate": "破碎拳",
-        "damage": 1536,
-        "crit": true,
-        "dh": false,
-        "buff": [
-            "fists_of_fire",
             "greased_lightning_i"
         ]
     },
@@ -197,7 +197,7 @@
         "duration": 0,
         "resource": {
             "mp": 5160,
-            "tp": 1000
+            "tp": 970
         }
     },
     {
@@ -205,9 +205,9 @@
         "event": "Damage",
         "name": "Riddle of Wind",
         "translate": "疾风极意",
-        "damage": 1997,
-        "crit": true,
-        "dh": false,
+        "damage": 1606,
+        "crit": false,
+        "dh": true,
         "buff": [
             "fists_of_wind",
             "greased_lightning_i"
@@ -228,8 +228,21 @@
         "duration": 0,
         "resource": {
             "mp": 5160,
-            "tp": 950
+            "tp": 920
         }
+    },
+    {
+        "time": 450,
+        "event": "DOT Tick",
+        "name": "Demolish",
+        "translate": "破碎拳",
+        "damage": 1029,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_i"
+        ]
     },
     {
         "time": 469,
@@ -239,7 +252,7 @@
         "duration": 0,
         "resource": {
             "mp": 5160,
-            "tp": 950
+            "tp": 920
         }
     },
     {
@@ -247,8 +260,8 @@
         "event": "Damage",
         "name": "Twin Snakes",
         "translate": "双掌打",
-        "damage": 6131,
-        "crit": true,
+        "damage": 3984,
+        "crit": false,
         "dh": false,
         "buff": [
             "riddle_of_fire",
@@ -262,9 +275,9 @@
         "event": "Damage",
         "name": "Auto Attack",
         "translate": "自动攻击",
-        "damage": 4082,
+        "damage": 3136,
         "crit": false,
-        "dh": true,
+        "dh": false,
         "buff": [
             "riddle_of_fire",
             "fists_of_fire",
@@ -280,19 +293,6 @@
         "duration": 3000
     },
     {
-        "time": 550,
-        "event": "DOT Tick",
-        "name": "Demolish",
-        "translate": "破碎拳",
-        "damage": 1324,
-        "crit": false,
-        "dh": true,
-        "buff": [
-            "fists_of_fire",
-            "greased_lightning_i"
-        ]
-    },
-    {
         "time": 652,
         "event": "Cast",
         "name": "Snap Punch",
@@ -300,7 +300,7 @@
         "duration": 0,
         "resource": {
             "mp": 5160,
-            "tp": 960
+            "tp": 940
         }
     },
     {
@@ -308,7 +308,7 @@
         "event": "Damage",
         "name": "Auto Attack",
         "translate": "自动攻击",
-        "damage": 3494,
+        "damage": 3597,
         "crit": false,
         "dh": false,
         "buff": [
@@ -327,7 +327,7 @@
         "duration": 0,
         "resource": {
             "mp": 5160,
-            "tp": 960
+            "tp": 940
         }
     },
     {
@@ -335,8 +335,8 @@
         "event": "Damage",
         "name": "Snap Punch",
         "translate": "崩拳",
-        "damage": 9855,
-        "crit": true,
+        "damage": 6277,
+        "crit": false,
         "dh": false,
         "buff": [
             "potion",
@@ -344,6 +344,19 @@
             "fists_of_fire",
             "greased_lightning_ii",
             "twin_snakes"
+        ]
+    },
+    {
+        "time": 750,
+        "event": "DOT Tick",
+        "name": "Demolish",
+        "translate": "破碎拳",
+        "damage": 1019,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_i"
         ]
     },
     {
@@ -361,28 +374,15 @@
         "duration": 0,
         "resource": {
             "mp": 5160,
-            "tp": 960
+            "tp": 940
         }
-    },
-    {
-        "time": 850,
-        "event": "DOT Tick",
-        "name": "Demolish",
-        "translate": "破碎拳",
-        "damage": 1324,
-        "crit": false,
-        "dh": true,
-        "buff": [
-            "fists_of_fire",
-            "greased_lightning_i"
-        ]
     },
     {
         "time": 854,
         "event": "Damage",
         "name": "The Forbidden Chakra",
         "translate": "阴阳斗气斩",
-        "damage": 12154,
+        "damage": 12274,
         "crit": false,
         "dh": true,
         "buff": [
@@ -410,9 +410,9 @@
         "event": "Damage",
         "name": "Auto Attack",
         "translate": "自动攻击",
-        "damage": 4685,
+        "damage": 3600,
         "crit": false,
-        "dh": true,
+        "dh": false,
         "buff": [
             "potion",
             "internal_release",
@@ -438,7 +438,7 @@
         "event": "Damage",
         "name": "Bootshine",
         "translate": "连击",
-        "damage": 8441,
+        "damage": 8610,
         "crit": true,
         "dh": false,
         "buff": [
@@ -458,22 +458,11 @@
         "duration": 1500
     },
     {
-        "time": 1138,
-        "event": "Cast",
-        "name": "True Strike",
-        "translate": "正拳",
-        "duration": 0,
-        "resource": {
-            "mp": 5160,
-            "tp": 900
-        }
-    },
-    {
-        "time": 1150,
+        "time": 1050,
         "event": "DOT Tick",
         "name": "Demolish",
         "translate": "破碎拳",
-        "damage": 1552,
+        "damage": 1584,
         "crit": true,
         "dh": false,
         "buff": [
@@ -482,13 +471,24 @@
         ]
     },
     {
+        "time": 1138,
+        "event": "Cast",
+        "name": "True Strike",
+        "translate": "正拳",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 950
+        }
+    },
+    {
         "time": 1166,
         "event": "Damage",
         "name": "Auto Attack",
         "translate": "自动攻击",
-        "damage": 4677,
+        "damage": 3975,
         "crit": false,
-        "dh": true,
+        "dh": false,
         "buff": [
             "potion",
             "internal_release",
@@ -507,7 +507,7 @@
         "duration": 0,
         "resource": {
             "mp": 5160,
-            "tp": 960
+            "tp": 950
         }
     },
     {
@@ -515,9 +515,9 @@
         "event": "Damage",
         "name": "True Strike",
         "translate": "正拳",
-        "damage": 7544,
-        "crit": false,
-        "dh": false,
+        "damage": 14093,
+        "crit": true,
+        "dh": true,
         "buff": [
             "potion",
             "internal_release",
@@ -536,7 +536,7 @@
         "duration": 0,
         "resource": {
             "mp": 5160,
-            "tp": 960
+            "tp": 950
         }
     },
     {
@@ -544,7 +544,7 @@
         "event": "Damage",
         "name": "Elixir Field",
         "translate": "苍气炮",
-        "damage": 13537,
+        "damage": 13816,
         "crit": true,
         "dh": false,
         "buff": [
@@ -562,7 +562,7 @@
         "event": "Damage",
         "name": "Howling Fist",
         "translate": "空鸣拳",
-        "damage": 11013,
+        "damage": 10166,
         "crit": false,
         "dh": true,
         "buff": [
@@ -576,6 +576,19 @@
         ]
     },
     {
+        "time": 1350,
+        "event": "DOT Tick",
+        "name": "Demolish",
+        "translate": "破碎拳",
+        "damage": 1312,
+        "crit": false,
+        "dh": true,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_i"
+        ]
+    },
+    {
         "time": 1374,
         "event": "Cast",
         "name": "Demolish",
@@ -583,7 +596,7 @@
         "duration": 0,
         "resource": {
             "mp": 5160,
-            "tp": 920
+            "tp": 910
         }
     },
     {
@@ -591,9 +604,9 @@
         "event": "Damage",
         "name": "Auto Attack",
         "translate": "自动攻击",
-        "damage": 4014,
+        "damage": 4774,
         "crit": false,
-        "dh": false,
+        "dh": true,
         "buff": [
             "potion",
             "internal_release",
@@ -612,7 +625,7 @@
         "duration": 0,
         "resource": {
             "mp": 5160,
-            "tp": 920
+            "tp": 970
         }
     },
     {
@@ -620,9 +633,9 @@
         "event": "Damage",
         "name": "Demolish",
         "translate": "破碎拳",
-        "damage": 2767,
+        "damage": 3706,
         "crit": false,
-        "dh": false,
+        "dh": true,
         "buff": [
             "potion",
             "internal_release",
@@ -640,9 +653,9 @@
         "translate": "破碎拳",
         "damage": [
             {
-                "damage": 2150,
+                "damage": 2687,
                 "crit": false,
-                "dh": false
+                "dh": true
             },
             {
                 "damage": 2129,
@@ -655,17 +668,17 @@
                 "dh": false
             },
             {
-                "damage": 4301,
-                "crit": true,
-                "dh": true
-            },
-            {
-                "damage": 2087,
+                "damage": 1983,
                 "crit": false,
                 "dh": false
             },
             {
                 "damage": 2171,
+                "crit": false,
+                "dh": false
+            },
+            {
+                "damage": 2108,
                 "crit": false,
                 "dh": false
             }
@@ -682,31 +695,13 @@
         ]
     },
     {
-        "time": 1450,
-        "event": "DOT Tick",
-        "name": "Demolish",
-        "translate": "破碎拳",
-        "damage": 2150,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "potion",
-            "internal_release",
-            "riddle_of_fire",
-            "fists_of_fire",
-            "brotherhood",
-            "greased_lightning_iii",
-            "twin_snakes"
-        ]
-    },
-    {
         "time": 1509,
         "event": "Damage",
         "name": "Steel Peak",
         "translate": "铁山靠",
-        "damage": 7430,
+        "damage": 5944,
         "crit": false,
-        "dh": true,
+        "dh": false,
         "buff": [
             "potion",
             "internal_release",
@@ -722,7 +717,7 @@
         "event": "Damage",
         "name": "Auto Attack",
         "translate": "自动攻击",
-        "damage": 4053,
+        "damage": 4014,
         "crit": false,
         "dh": false,
         "buff": [
@@ -743,15 +738,15 @@
         "duration": 0,
         "resource": {
             "mp": 5160,
-            "tp": 930
+            "tp": 920
         }
     },
     {
-        "time": 1678,
-        "event": "Damage",
-        "name": "Dragon Kick",
-        "translate": "双龙脚",
-        "damage": 6705,
+        "time": 1650,
+        "event": "DOT Tick",
+        "name": "Demolish",
+        "translate": "破碎拳",
+        "damage": 2687,
         "crit": false,
         "dh": true,
         "buff": [
@@ -765,13 +760,13 @@
         ]
     },
     {
-        "time": 1750,
-        "event": "DOT Tick",
-        "name": "Demolish",
-        "translate": "破碎拳",
-        "damage": 2129,
+        "time": 1678,
+        "event": "Damage",
+        "name": "Dragon Kick",
+        "translate": "双龙脚",
+        "damage": 7199,
         "crit": false,
-        "dh": false,
+        "dh": true,
         "buff": [
             "potion",
             "internal_release",
@@ -787,9 +782,9 @@
         "event": "Damage",
         "name": "Auto Attack",
         "translate": "自动攻击",
-        "damage": 3897,
+        "damage": 4871,
         "crit": false,
-        "dh": false,
+        "dh": true,
         "buff": [
             "potion",
             "internal_release",
@@ -808,7 +803,7 @@
         "duration": 0,
         "resource": {
             "mp": 5160,
-            "tp": 940
+            "tp": 930
         }
     },
     {
@@ -819,7 +814,7 @@
         "duration": 0,
         "resource": {
             "mp": 5160,
-            "tp": 940
+            "tp": 930
         }
     },
     {
@@ -827,7 +822,25 @@
         "event": "Damage",
         "name": "Twin Snakes",
         "translate": "双掌打",
-        "damage": 5492,
+        "damage": 6342,
+        "crit": false,
+        "dh": true,
+        "buff": [
+            "potion",
+            "internal_release",
+            "riddle_of_fire",
+            "fists_of_fire",
+            "brotherhood",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 1950,
+        "event": "DOT Tick",
+        "name": "Demolish",
+        "translate": "破碎拳",
+        "damage": 2129,
         "crit": false,
         "dh": false,
         "buff": [
@@ -845,7 +858,7 @@
         "event": "Damage",
         "name": "Tornado Kick",
         "translate": "斗魂旋风脚",
-        "damage": 16484,
+        "damage": 20620,
         "crit": false,
         "dh": true,
         "buff": [
@@ -863,8 +876,8 @@
         "event": "Damage",
         "name": "Auto Attack",
         "translate": "自动攻击",
-        "damage": 2847,
-        "crit": false,
+        "damage": 4659,
+        "crit": true,
         "dh": false,
         "buff": [
             "potion",
@@ -872,24 +885,6 @@
             "riddle_of_fire",
             "fists_of_fire",
             "brotherhood",
-            "twin_snakes"
-        ]
-    },
-    {
-        "time": 2050,
-        "event": "DOT Tick",
-        "name": "Demolish",
-        "translate": "破碎拳",
-        "damage": 2150,
-        "crit": false,
-        "dh": false,
-        "buff": [
-            "potion",
-            "internal_release",
-            "riddle_of_fire",
-            "fists_of_fire",
-            "brotherhood",
-            "greased_lightning_iii",
             "twin_snakes"
         ]
     },
@@ -901,7 +896,7 @@
         "duration": 0,
         "resource": {
             "mp": 5160,
-            "tp": 900
+            "tp": 950
         }
     },
     {
@@ -912,7 +907,7 @@
         "duration": 0,
         "resource": {
             "mp": 5160,
-            "tp": 960
+            "tp": 950
         }
     },
     {
@@ -920,9 +915,9 @@
         "event": "Damage",
         "name": "Snap Punch",
         "translate": "崩拳",
-        "damage": 5123,
+        "damage": 6866,
         "crit": false,
-        "dh": false,
+        "dh": true,
         "buff": [
             "potion",
             "internal_release",
@@ -940,12 +935,30 @@
         "duration": 1500
     },
     {
+        "time": 2250,
+        "event": "DOT Tick",
+        "name": "Demolish",
+        "translate": "破碎拳",
+        "damage": 2150,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "potion",
+            "internal_release",
+            "riddle_of_fire",
+            "fists_of_fire",
+            "brotherhood",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
         "time": 2290,
         "event": "Damage",
         "name": "Auto Attack",
         "translate": "自动攻击",
-        "damage": 5023,
-        "crit": true,
+        "damage": 3331,
+        "crit": false,
         "dh": false,
         "buff": [
             "potion",
@@ -958,24 +971,6 @@
         ]
     },
     {
-        "time": 2350,
-        "event": "DOT Tick",
-        "name": "Demolish",
-        "translate": "破碎拳",
-        "damage": 4301,
-        "crit": true,
-        "dh": true,
-        "buff": [
-            "potion",
-            "internal_release",
-            "riddle_of_fire",
-            "fists_of_fire",
-            "brotherhood",
-            "greased_lightning_iii",
-            "twin_snakes"
-        ]
-    },
-    {
         "time": 2360,
         "event": "Cast",
         "name": "Snap Punch",
@@ -983,7 +978,7 @@
         "duration": 0,
         "resource": {
             "mp": 5160,
-            "tp": 920
+            "tp": 960
         }
     },
     {
@@ -991,9 +986,9 @@
         "event": "Damage",
         "name": "Snap Punch",
         "translate": "崩拳",
-        "damage": 8858,
-        "crit": true,
-        "dh": true,
+        "damage": 4647,
+        "crit": false,
+        "dh": false,
         "buff": [
             "potion",
             "perfect_balance",
@@ -1008,9 +1003,9 @@
         "event": "Damage",
         "name": "Auto Attack",
         "translate": "自动攻击",
-        "damage": 3424,
+        "damage": 2878,
         "crit": false,
-        "dh": true,
+        "dh": false,
         "buff": [
             "potion",
             "perfect_balance",
@@ -1021,22 +1016,11 @@
         ]
     },
     {
-        "time": 2624,
-        "event": "Cast",
-        "name": "Snap Punch",
-        "translate": "崩拳",
-        "duration": 0,
-        "resource": {
-            "mp": 5160,
-            "tp": 940
-        }
-    },
-    {
-        "time": 2650,
+        "time": 2550,
         "event": "DOT Tick",
         "name": "Demolish",
         "translate": "破碎拳",
-        "damage": 2087,
+        "damage": 1983,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1050,11 +1034,22 @@
         ]
     },
     {
+        "time": 2624,
+        "event": "Cast",
+        "name": "Snap Punch",
+        "translate": "崩拳",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 960
+        }
+    },
+    {
         "time": 2692,
         "event": "Damage",
         "name": "Snap Punch",
         "translate": "崩拳",
-        "damage": 4410,
+        "damage": 4596,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1070,9 +1065,9 @@
         "event": "Damage",
         "name": "Auto Attack",
         "translate": "自动攻击",
-        "damage": 5715,
-        "crit": true,
-        "dh": true,
+        "damage": 2855,
+        "crit": false,
+        "dh": false,
         "buff": [
             "potion",
             "perfect_balance",
@@ -1089,27 +1084,11 @@
         "duration": 0,
         "resource": {
             "mp": 5160,
-            "tp": 950
+            "tp": 910
         }
     },
     {
-        "time": 2909,
-        "event": "Damage",
-        "name": "Dragon Kick",
-        "translate": "双龙脚",
-        "damage": 5171,
-        "crit": false,
-        "dh": true,
-        "buff": [
-            "potion",
-            "perfect_balance",
-            "fists_of_fire",
-            "greased_lightning_iii",
-            "twin_snakes"
-        ]
-    },
-    {
-        "time": 2950,
+        "time": 2850,
         "event": "DOT Tick",
         "name": "Demolish",
         "translate": "破碎拳",
@@ -1127,11 +1106,27 @@
         ]
     },
     {
+        "time": 2909,
+        "event": "Damage",
+        "name": "Dragon Kick",
+        "translate": "双龙脚",
+        "damage": 4054,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "potion",
+            "perfect_balance",
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
         "time": 2981,
         "event": "Damage",
         "name": "Auto Attack",
         "translate": "自动攻击",
-        "damage": 4482,
+        "damage": 4437,
         "crit": true,
         "dh": false,
         "buff": [
@@ -1150,7 +1145,7 @@
         "duration": 0,
         "resource": {
             "mp": 5160,
-            "tp": 950
+            "tp": 920
         }
     },
     {
@@ -1161,7 +1156,7 @@
         "duration": 0,
         "resource": {
             "mp": 5160,
-            "tp": 950
+            "tp": 920
         }
     },
     {
@@ -1169,7 +1164,7 @@
         "event": "Damage",
         "name": "Twin Snakes",
         "translate": "双掌打",
-        "damage": 4742,
+        "damage": 4837,
         "crit": false,
         "dh": true,
         "buff": [
@@ -1181,13 +1176,31 @@
         ]
     },
     {
+        "time": 3150,
+        "event": "DOT Tick",
+        "name": "Demolish",
+        "translate": "破碎拳",
+        "damage": 2108,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "potion",
+            "internal_release",
+            "riddle_of_fire",
+            "fists_of_fire",
+            "brotherhood",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
         "time": 3181,
         "event": "Damage",
         "name": "Tornado Kick",
         "translate": "斗魂旋风脚",
-        "damage": 16087,
-        "crit": true,
-        "dh": false,
+        "damage": 16697,
+        "crit": false,
+        "dh": true,
         "buff": [
             "potion",
             "perfect_balance",
@@ -1201,8 +1214,8 @@
         "event": "Damage",
         "name": "Auto Attack",
         "translate": "自动攻击",
-        "damage": 3447,
-        "crit": true,
+        "damage": 2240,
+        "crit": false,
         "dh": false,
         "buff": [
             "potion",
@@ -1219,7 +1232,7 @@
         "duration": 0,
         "resource": {
             "mp": 5160,
-            "tp": 910
+            "tp": 940
         }
     },
     {
@@ -1230,7 +1243,7 @@
         "duration": 0,
         "resource": {
             "mp": 5160,
-            "tp": 970
+            "tp": 940
         }
     },
     {
@@ -1238,7 +1251,7 @@
         "event": "Damage",
         "name": "Demolish",
         "translate": "破碎拳",
-        "damage": 1638,
+        "damage": 1606,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1254,14 +1267,24 @@
         "translate": "破碎拳",
         "damage": [
             {
-                "damage": 2010,
-                "crit": true,
+                "damage": 1228,
+                "crit": false,
                 "dh": false
             },
             {
-                "damage": 2071,
+                "damage": 2665,
                 "crit": true,
+                "dh": true
+            },
+            {
+                "damage": 1319,
+                "crit": false,
                 "dh": false
+            },
+            {
+                "damage": 2512,
+                "crit": true,
+                "dh": true
             },
             {
                 "damage": 1551,
@@ -1269,19 +1292,9 @@
                 "dh": true
             },
             {
-                "damage": 1306,
+                "damage": 1319,
                 "crit": false,
                 "dh": false
-            },
-            {
-                "damage": 1228,
-                "crit": false,
-                "dh": false
-            },
-            {
-                "damage": 2563,
-                "crit": true,
-                "dh": true
             }
         ],
         "duration": 1800,
@@ -1297,7 +1310,7 @@
         "event": "Buff Apply",
         "name": "Fists of Wind",
         "translate": "疾风体势",
-        "duration": 615
+        "duration": 14615
     },
     {
         "time": 3385,
@@ -1307,8 +1320,23 @@
         "duration": 0,
         "resource": {
             "mp": 5160,
-            "tp": 970
+            "tp": 940
         }
+    },
+    {
+        "time": 3450,
+        "event": "DOT Tick",
+        "name": "Demolish",
+        "translate": "破碎拳",
+        "damage": 1228,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "potion",
+            "fists_of_fire",
+            "greased_lightning_i",
+            "twin_snakes"
+        ]
     },
     {
         "time": 3452,
@@ -1322,9 +1350,9 @@
         "event": "Damage",
         "name": "Wind Tackle",
         "translate": "疾风罗刹冲",
-        "damage": 1590,
-        "crit": false,
-        "dh": false,
+        "damage": 2939,
+        "crit": true,
+        "dh": true,
         "buff": [
             "potion",
             "fists_of_wind",
@@ -1337,8 +1365,8 @@
         "event": "Damage",
         "name": "Auto Attack",
         "translate": "自动攻击",
-        "damage": 4605,
-        "crit": true,
+        "damage": 2990,
+        "crit": false,
         "dh": true,
         "buff": [
             "potion",
@@ -1356,23 +1384,8 @@
         "duration": 0,
         "resource": {
             "mp": 5160,
-            "tp": 920
+            "tp": 890
         }
-    },
-    {
-        "time": 3550,
-        "event": "DOT Tick",
-        "name": "Demolish",
-        "translate": "破碎拳",
-        "damage": 2010,
-        "crit": true,
-        "dh": false,
-        "buff": [
-            "potion",
-            "fists_of_fire",
-            "greased_lightning_i",
-            "twin_snakes"
-        ]
     },
     {
         "time": 3559,
@@ -1382,7 +1395,7 @@
         "duration": 0,
         "resource": {
             "mp": 5160,
-            "tp": 920
+            "tp": 950
         }
     },
     {
@@ -1390,7 +1403,7 @@
         "event": "Damage",
         "name": "Bootshine",
         "translate": "连击",
-        "damage": 5861,
+        "damage": 6108,
         "crit": true,
         "dh": true,
         "buff": [
@@ -1408,7 +1421,7 @@
         "duration": 0,
         "resource": {
             "mp": 5160,
-            "tp": 980
+            "tp": 950
         }
     },
     {
@@ -1416,7 +1429,7 @@
         "event": "Damage",
         "name": "Riddle of Wind",
         "translate": "疾风极意",
-        "damage": 1428,
+        "damage": 1385,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1430,25 +1443,14 @@
         "event": "Buff Apply",
         "name": "Fists of Fire",
         "translate": "红莲体势",
-        "duration": 307
-    },
-    {
-        "time": 3693,
-        "event": "Cast",
-        "name": "The Forbidden Chakra",
-        "translate": "阴阳斗气斩",
-        "duration": 0,
-        "resource": {
-            "mp": 5160,
-            "tp": 980
-        }
+        "duration": 14307
     },
     {
         "time": 3698,
         "event": "Damage",
         "name": "Auto Attack",
         "translate": "自动攻击",
-        "damage": 2610,
+        "damage": 2561,
         "crit": false,
         "dh": false,
         "buff": [
@@ -1458,52 +1460,24 @@
         ]
     },
     {
-        "time": 3760,
+        "time": 3721,
         "event": "Cast",
         "name": "True Strike",
         "translate": "正拳",
         "duration": 0,
         "resource": {
             "mp": 5160,
-            "tp": 930
+            "tp": 900
         }
     },
     {
-        "time": 3761,
-        "event": "Damage",
-        "name": "The Forbidden Chakra",
-        "translate": "阴阳斗气斩",
-        "damage": 9822,
-        "crit": true,
-        "dh": false,
-        "buff": [
-            "fists_of_fire",
-            "greased_lightning_ii",
-            "twin_snakes"
-        ]
-    },
-    {
-        "time": 3828,
-        "event": "Damage",
-        "name": "True Strike",
-        "translate": "正拳",
-        "damage": 7264,
-        "crit": true,
-        "dh": false,
-        "buff": [
-            "fists_of_fire",
-            "greased_lightning_ii",
-            "twin_snakes"
-        ]
-    },
-    {
-        "time": 3850,
+        "time": 3750,
         "event": "DOT Tick",
         "name": "Demolish",
         "translate": "破碎拳",
-        "damage": 2071,
+        "damage": 2665,
         "crit": true,
-        "dh": false,
+        "dh": true,
         "buff": [
             "potion",
             "fists_of_fire",
@@ -1512,11 +1486,11 @@
         ]
     },
     {
-        "time": 3928,
+        "time": 3789,
         "event": "Damage",
-        "name": "Auto Attack",
-        "translate": "自动攻击",
-        "damage": 3232,
+        "name": "True Strike",
+        "translate": "正拳",
+        "damage": 6072,
         "crit": false,
         "dh": true,
         "buff": [
@@ -1526,14 +1500,4395 @@
         ]
     },
     {
-        "time": 3977,
+        "time": 3928,
+        "event": "Damage",
+        "name": "Auto Attack",
+        "translate": "自动攻击",
+        "damage": 3786,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_ii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 3938,
         "event": "Cast",
         "name": "Snap Punch",
         "translate": "崩拳",
         "duration": 0,
         "resource": {
             "mp": 5160,
-            "tp": 950
+            "tp": 920
         }
+    },
+    {
+        "time": 4006,
+        "event": "Damage",
+        "name": "Snap Punch",
+        "translate": "崩拳",
+        "damage": 4556,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_ii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 4050,
+        "event": "DOT Tick",
+        "name": "Demolish",
+        "translate": "破碎拳",
+        "damage": 1319,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "potion",
+            "fists_of_fire",
+            "greased_lightning_i",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 4155,
+        "event": "Cast",
+        "name": "Dragon Kick",
+        "translate": "双龙脚",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 930
+        }
+    },
+    {
+        "time": 4158,
+        "event": "Damage",
+        "name": "Auto Attack",
+        "translate": "自动攻击",
+        "damage": 5236,
+        "crit": true,
+        "dh": true,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 4222,
+        "event": "Cast",
+        "name": "Elixir Field",
+        "translate": "苍气炮",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 930
+        }
+    },
+    {
+        "time": 4223,
+        "event": "Damage",
+        "name": "Dragon Kick",
+        "translate": "双龙脚",
+        "damage": 4877,
+        "crit": false,
+        "dh": true,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 4290,
+        "event": "Damage",
+        "name": "Elixir Field",
+        "translate": "苍气炮",
+        "damage": 6388,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 4350,
+        "event": "DOT Tick",
+        "name": "Demolish",
+        "translate": "破碎拳",
+        "damage": 2512,
+        "crit": true,
+        "dh": true,
+        "buff": [
+            "potion",
+            "fists_of_fire",
+            "greased_lightning_i",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 4360,
+        "event": "Cast",
+        "name": "Twin Snakes",
+        "translate": "双掌打",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 880
+        }
+    },
+    {
+        "time": 4375,
+        "event": "Damage",
+        "name": "Auto Attack",
+        "translate": "自动攻击",
+        "damage": 4231,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 4428,
+        "event": "Damage",
+        "name": "Twin Snakes",
+        "translate": "双掌打",
+        "damage": 3688,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 4565,
+        "event": "Cast",
+        "name": "Snap Punch",
+        "translate": "崩拳",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 900
+        }
+    },
+    {
+        "time": 4592,
+        "event": "Damage",
+        "name": "Auto Attack",
+        "translate": "自动攻击",
+        "damage": 3469,
+        "crit": false,
+        "dh": true,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 4633,
+        "event": "Damage",
+        "name": "Snap Punch",
+        "translate": "崩拳",
+        "damage": 5932,
+        "crit": false,
+        "dh": true,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 4650,
+        "event": "DOT Tick",
+        "name": "Demolish",
+        "translate": "破碎拳",
+        "damage": 1551,
+        "crit": false,
+        "dh": true,
+        "buff": [
+            "potion",
+            "fists_of_fire",
+            "greased_lightning_i",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 4770,
+        "event": "Cast",
+        "name": "Bootshine",
+        "translate": "连击",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 910
+        }
+    },
+    {
+        "time": 4809,
+        "event": "Damage",
+        "name": "Auto Attack",
+        "translate": "自动攻击",
+        "damage": 4019,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 4838,
+        "event": "Damage",
+        "name": "Bootshine",
+        "translate": "连击",
+        "damage": 7810,
+        "crit": true,
+        "dh": true,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 4950,
+        "event": "DOT Tick",
+        "name": "Demolish",
+        "translate": "破碎拳",
+        "damage": 1319,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "potion",
+            "fists_of_fire",
+            "greased_lightning_i",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 4975,
+        "event": "Cast",
+        "name": "True Strike",
+        "translate": "正拳",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 860
+        }
+    },
+    {
+        "time": 5026,
+        "event": "Damage",
+        "name": "Auto Attack",
+        "translate": "自动攻击",
+        "damage": 2614,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 5043,
+        "event": "Damage",
+        "name": "True Strike",
+        "translate": "正拳",
+        "damage": 4812,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 5180,
+        "event": "Cast",
+        "name": "Demolish",
+        "translate": "破碎拳",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 880
+        }
+    },
+    {
+        "time": 5243,
+        "event": "Damage",
+        "name": "Auto Attack",
+        "translate": "自动攻击",
+        "damage": 4231,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 5248,
+        "event": "Damage",
+        "name": "Demolish",
+        "translate": "破碎拳",
+        "damage": 2940,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 5248,
+        "event": "DOT Apply",
+        "name": "Demolish",
+        "translate": "破碎拳",
+        "damage": [
+            {
+                "damage": 1767,
+                "crit": false,
+                "dh": true
+            },
+            {
+                "damage": 1414,
+                "crit": false,
+                "dh": false
+            },
+            {
+                "damage": 1385,
+                "crit": false,
+                "dh": false
+            },
+            {
+                "damage": 1839,
+                "crit": false,
+                "dh": true
+            },
+            {
+                "damage": 1486,
+                "crit": false,
+                "dh": false
+            },
+            {
+                "damage": 2747,
+                "crit": true,
+                "dh": true
+            }
+        ],
+        "duration": 1800,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 5250,
+        "event": "DOT Tick",
+        "name": "Demolish",
+        "translate": "破碎拳",
+        "damage": 1767,
+        "crit": false,
+        "dh": true,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 5385,
+        "event": "Cast",
+        "name": "Dragon Kick",
+        "translate": "双龙脚",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 890
+        }
+    },
+    {
+        "time": 5452,
+        "event": "Cast",
+        "name": "Steel Peak",
+        "translate": "铁山靠",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 890
+        }
+    },
+    {
+        "time": 5453,
+        "event": "Damage",
+        "name": "Dragon Kick",
+        "translate": "双龙脚",
+        "damage": 4097,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 5460,
+        "event": "Damage",
+        "name": "Auto Attack",
+        "translate": "自动攻击",
+        "damage": 2829,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 5520,
+        "event": "Damage",
+        "name": "Steel Peak",
+        "translate": "铁山靠",
+        "damage": 4191,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 5550,
+        "event": "DOT Tick",
+        "name": "Demolish",
+        "translate": "破碎拳",
+        "damage": 1414,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 5590,
+        "event": "Cast",
+        "name": "Twin Snakes",
+        "translate": "双掌打",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 840
+        }
+    },
+    {
+        "time": 5658,
+        "event": "Damage",
+        "name": "Twin Snakes",
+        "translate": "双掌打",
+        "damage": 7167,
+        "crit": true,
+        "dh": true,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 5677,
+        "event": "Damage",
+        "name": "Auto Attack",
+        "translate": "自动攻击",
+        "damage": 4104,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 5795,
+        "event": "Cast",
+        "name": "Snap Punch",
+        "translate": "崩拳",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 860
+        }
+    },
+    {
+        "time": 5850,
+        "event": "DOT Tick",
+        "name": "Demolish",
+        "translate": "破碎拳",
+        "damage": 1385,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 5862,
+        "event": "Cast",
+        "name": "The Forbidden Chakra",
+        "translate": "阴阳斗气斩",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 860
+        }
+    },
+    {
+        "time": 5863,
+        "event": "Damage",
+        "name": "Snap Punch",
+        "translate": "崩拳",
+        "damage": 7302,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 5894,
+        "event": "Damage",
+        "name": "Auto Attack",
+        "translate": "自动攻击",
+        "damage": 2722,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 5930,
+        "event": "Damage",
+        "name": "The Forbidden Chakra",
+        "translate": "阴阳斗气斩",
+        "damage": 6987,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 6000,
+        "event": "Cast",
+        "name": "Bootshine",
+        "translate": "连击",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 870
+        }
+    },
+    {
+        "time": 6068,
+        "event": "Damage",
+        "name": "Bootshine",
+        "translate": "连击",
+        "damage": 7427,
+        "crit": true,
+        "dh": true,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 6111,
+        "event": "Damage",
+        "name": "Auto Attack",
+        "translate": "自动攻击",
+        "damage": 3503,
+        "crit": false,
+        "dh": true,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 6150,
+        "event": "DOT Tick",
+        "name": "Demolish",
+        "translate": "破碎拳",
+        "damage": 1839,
+        "crit": false,
+        "dh": true,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 6205,
+        "event": "Cast",
+        "name": "True Strike",
+        "translate": "正拳",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 880
+        }
+    },
+    {
+        "time": 6273,
+        "event": "Damage",
+        "name": "True Strike",
+        "translate": "正拳",
+        "damage": 7713,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 6309,
+        "event": "Cast",
+        "name": "Tornado Kick",
+        "translate": "斗魂旋风脚",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 880
+        }
+    },
+    {
+        "time": 6328,
+        "event": "Damage",
+        "name": "Auto Attack",
+        "translate": "自动攻击",
+        "damage": 3301,
+        "crit": false,
+        "dh": true,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 6377,
+        "event": "Damage",
+        "name": "Tornado Kick",
+        "translate": "斗魂旋风脚",
+        "damage": 11641,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 6410,
+        "event": "Cast",
+        "name": "Snap Punch",
+        "translate": "崩拳",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 840
+        }
+    },
+    {
+        "time": 6450,
+        "event": "DOT Tick",
+        "name": "Demolish",
+        "translate": "破碎拳",
+        "damage": 1486,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 6477,
+        "event": "Cast",
+        "name": "Fists of Wind",
+        "translate": "疾风体势",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 840
+        }
+    },
+    {
+        "time": 6478,
+        "event": "Damage",
+        "name": "Snap Punch",
+        "translate": "崩拳",
+        "damage": 3577,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "fists_of_fire",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 6544,
+        "event": "Buff Apply",
+        "name": "Fists of Wind",
+        "translate": "疾风体势",
+        "duration": 11456
+    },
+    {
+        "time": 6545,
+        "event": "Damage",
+        "name": "Auto Attack",
+        "translate": "自动攻击",
+        "damage": 2849,
+        "crit": false,
+        "dh": true,
+        "buff": [
+            "fists_of_wind",
+            "greased_lightning_i",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 6559,
+        "event": "Cast",
+        "name": "Shoulder Tackle",
+        "translate": "罗刹冲",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 900
+        }
+    },
+    {
+        "time": 6626,
+        "event": "Buff Apply",
+        "name": "Riddle of Wind",
+        "translate": "疾风极意",
+        "duration": 1000
+    },
+    {
+        "time": 6626,
+        "event": "Cast",
+        "name": "Shoulder Tackle",
+        "translate": "罗刹冲",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 900
+        }
+    },
+    {
+        "time": 6627,
+        "event": "Damage",
+        "name": "Wind Tackle",
+        "translate": "疾风罗刹冲",
+        "damage": 1385,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "fists_of_wind",
+            "greased_lightning_i",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 6693,
+        "event": "Cast",
+        "name": "Dragon Kick",
+        "translate": "双龙脚",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 850
+        }
+    },
+    {
+        "time": 6694,
+        "event": "Damage",
+        "name": "Riddle of Wind",
+        "translate": "疾风极意",
+        "damage": 1443,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "fists_of_wind",
+            "greased_lightning_i",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 6750,
+        "event": "DOT Tick",
+        "name": "Demolish",
+        "translate": "破碎拳",
+        "damage": 2747,
+        "crit": true,
+        "dh": true,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 6760,
+        "event": "Cast",
+        "name": "Fists of Fire",
+        "translate": "红莲体势",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 850
+        }
+    },
+    {
+        "time": 6761,
+        "event": "Damage",
+        "name": "Dragon Kick",
+        "translate": "双龙脚",
+        "damage": 3292,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "fists_of_wind",
+            "greased_lightning_ii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 6789,
+        "event": "Damage",
+        "name": "Auto Attack",
+        "translate": "自动攻击",
+        "damage": 2439,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "fists_of_wind",
+            "greased_lightning_ii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 6827,
+        "event": "Buff Apply",
+        "name": "Fists of Fire",
+        "translate": "红莲体势",
+        "duration": 11173
+    },
+    {
+        "time": 6827,
+        "event": "Cast",
+        "name": "Internal Release",
+        "translate": "内劲",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 910
+        }
+    },
+    {
+        "time": 6894,
+        "event": "Buff Apply",
+        "name": "Internal Release",
+        "translate": "内劲",
+        "duration": 1500
+    },
+    {
+        "time": 6910,
+        "event": "Cast",
+        "name": "Twin Snakes",
+        "translate": "双掌打",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 860
+        }
+    },
+    {
+        "time": 6978,
+        "event": "Damage",
+        "name": "Twin Snakes",
+        "translate": "双掌打",
+        "damage": 3237,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "internal_release",
+            "fists_of_fire",
+            "greased_lightning_ii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 7019,
+        "event": "Damage",
+        "name": "Auto Attack",
+        "translate": "自动攻击",
+        "damage": 3170,
+        "crit": false,
+        "dh": true,
+        "buff": [
+            "internal_release",
+            "fists_of_fire",
+            "greased_lightning_ii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 7127,
+        "event": "Cast",
+        "name": "Demolish",
+        "translate": "破碎拳",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 880
+        }
+    },
+    {
+        "time": 7195,
+        "event": "Damage",
+        "name": "Demolish",
+        "translate": "破碎拳",
+        "damage": 1819,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "internal_release",
+            "fists_of_fire",
+            "greased_lightning_ii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 7195,
+        "event": "DOT Apply",
+        "name": "Demolish",
+        "translate": "破碎拳",
+        "damage": [
+            {
+                "damage": 1443,
+                "crit": false,
+                "dh": false
+            },
+            {
+                "damage": 1857,
+                "crit": false,
+                "dh": true
+            },
+            {
+                "damage": 1876,
+                "crit": false,
+                "dh": true
+            },
+            {
+                "damage": 1894,
+                "crit": false,
+                "dh": true
+            },
+            {
+                "damage": 1500,
+                "crit": false,
+                "dh": false
+            },
+            {
+                "damage": 1839,
+                "crit": false,
+                "dh": true
+            }
+        ],
+        "duration": 1800,
+        "buff": [
+            "internal_release",
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 7222,
+        "event": "Cast",
+        "name": "Elixir Field",
+        "translate": "苍气炮",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 880
+        }
+    },
+    {
+        "time": 7249,
+        "event": "Damage",
+        "name": "Auto Attack",
+        "translate": "自动攻击",
+        "damage": 5394,
+        "crit": true,
+        "dh": true,
+        "buff": [
+            "internal_release",
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 7289,
+        "event": "Cast",
+        "name": "Howling Fist",
+        "translate": "空鸣拳",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 880
+        }
+    },
+    {
+        "time": 7290,
+        "event": "Damage",
+        "name": "Elixir Field",
+        "translate": "苍气炮",
+        "damage": 6020,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "internal_release",
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 7350,
+        "event": "DOT Tick",
+        "name": "Demolish",
+        "translate": "破碎拳",
+        "damage": 1443,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "internal_release",
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 7356,
+        "event": "Cast",
+        "name": "Bootshine",
+        "translate": "连击",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 830
+        }
+    },
+    {
+        "time": 7357,
+        "event": "Damage",
+        "name": "Howling Fist",
+        "translate": "空鸣拳",
+        "damage": 5914,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "internal_release",
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 7424,
+        "event": "Damage",
+        "name": "Bootshine",
+        "translate": "连击",
+        "damage": 7504,
+        "crit": true,
+        "dh": true,
+        "buff": [
+            "internal_release",
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 7466,
+        "event": "Damage",
+        "name": "Auto Attack",
+        "translate": "自动攻击",
+        "damage": 4400,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "internal_release",
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 7561,
+        "event": "Cast",
+        "name": "True Strike",
+        "translate": "正拳",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 840
+        }
+    },
+    {
+        "time": 7629,
+        "event": "Damage",
+        "name": "True Strike",
+        "translate": "正拳",
+        "damage": 7634,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "internal_release",
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 7650,
+        "event": "DOT Tick",
+        "name": "Demolish",
+        "translate": "破碎拳",
+        "damage": 1857,
+        "crit": false,
+        "dh": true,
+        "buff": [
+            "internal_release",
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 7683,
+        "event": "Damage",
+        "name": "Auto Attack",
+        "translate": "自动攻击",
+        "damage": 2614,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "internal_release",
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 7766,
+        "event": "Cast",
+        "name": "Snap Punch",
+        "translate": "崩拳",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 860
+        }
+    },
+    {
+        "time": 7834,
+        "event": "Damage",
+        "name": "Snap Punch",
+        "translate": "崩拳",
+        "damage": 4840,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "internal_release",
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 7900,
+        "event": "Damage",
+        "name": "Auto Attack",
+        "translate": "自动攻击",
+        "damage": 4104,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "internal_release",
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 7950,
+        "event": "DOT Tick",
+        "name": "Demolish",
+        "translate": "破碎拳",
+        "damage": 1876,
+        "crit": false,
+        "dh": true,
+        "buff": [
+            "internal_release",
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 7971,
+        "event": "Cast",
+        "name": "Dragon Kick",
+        "translate": "双龙脚",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 810
+        }
+    },
+    {
+        "time": 8039,
+        "event": "Damage",
+        "name": "Dragon Kick",
+        "translate": "双龙脚",
+        "damage": 7657,
+        "crit": true,
+        "dh": true,
+        "buff": [
+            "internal_release",
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 8117,
+        "event": "Damage",
+        "name": "Auto Attack",
+        "translate": "自动攻击",
+        "damage": 4019,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "internal_release",
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 8176,
+        "event": "Cast",
+        "name": "Twin Snakes",
+        "translate": "双掌打",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 820
+        }
+    },
+    {
+        "time": 8244,
+        "event": "Damage",
+        "name": "Twin Snakes",
+        "translate": "双掌打",
+        "damage": 3616,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "internal_release",
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 8250,
+        "event": "DOT Tick",
+        "name": "Demolish",
+        "translate": "破碎拳",
+        "damage": 1894,
+        "crit": false,
+        "dh": true,
+        "buff": [
+            "internal_release",
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 8334,
+        "event": "Damage",
+        "name": "Auto Attack",
+        "translate": "自动攻击",
+        "damage": 2722,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "internal_release",
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 8381,
+        "event": "Cast",
+        "name": "Snap Punch",
+        "translate": "崩拳",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 840
+        }
+    },
+    {
+        "time": 8449,
+        "event": "Damage",
+        "name": "Snap Punch",
+        "translate": "崩拳",
+        "damage": 8941,
+        "crit": true,
+        "dh": true,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 8550,
+        "event": "DOT Tick",
+        "name": "Demolish",
+        "translate": "破碎拳",
+        "damage": 1500,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "internal_release",
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 8551,
+        "event": "Damage",
+        "name": "Auto Attack",
+        "translate": "自动攻击",
+        "damage": 3436,
+        "crit": false,
+        "dh": true,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 8586,
+        "event": "Cast",
+        "name": "Bootshine",
+        "translate": "连击",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 790
+        }
+    },
+    {
+        "time": 8654,
+        "event": "Damage",
+        "name": "Bootshine",
+        "translate": "连击",
+        "damage": 5942,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 8768,
+        "event": "Damage",
+        "name": "Auto Attack",
+        "translate": "自动攻击",
+        "damage": 2614,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 8791,
+        "event": "Cast",
+        "name": "True Strike",
+        "translate": "正拳",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 800
+        }
+    },
+    {
+        "time": 8850,
+        "event": "DOT Tick",
+        "name": "Demolish",
+        "translate": "破碎拳",
+        "damage": 1839,
+        "crit": false,
+        "dh": true,
+        "buff": [
+            "internal_release",
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 8859,
+        "event": "Damage",
+        "name": "True Strike",
+        "translate": "正拳",
+        "damage": 9739,
+        "crit": true,
+        "dh": true,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 8985,
+        "event": "Damage",
+        "name": "Auto Attack",
+        "translate": "自动攻击",
+        "damage": 2614,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 8996,
+        "event": "Cast",
+        "name": "Demolish",
+        "translate": "破碎拳",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 820
+        }
+    },
+    {
+        "time": 9064,
+        "event": "Damage",
+        "name": "Demolish",
+        "translate": "破碎拳",
+        "damage": 2511,
+        "crit": false,
+        "dh": true,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 9064,
+        "event": "DOT Apply",
+        "name": "Demolish",
+        "translate": "破碎拳",
+        "damage": [
+            {
+                "damage": 1428,
+                "crit": false,
+                "dh": false
+            },
+            {
+                "damage": 1803,
+                "crit": false,
+                "dh": true
+            },
+            {
+                "damage": 1894,
+                "crit": false,
+                "dh": true
+            },
+            {
+                "damage": 1857,
+                "crit": false,
+                "dh": true
+            },
+            {
+                "damage": 1471,
+                "crit": false,
+                "dh": false
+            },
+            {
+                "damage": 1385,
+                "crit": false,
+                "dh": false
+            }
+        ],
+        "duration": 1800,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 9150,
+        "event": "DOT Tick",
+        "name": "Demolish",
+        "translate": "破碎拳",
+        "damage": 1428,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 9201,
+        "event": "Cast",
+        "name": "Dragon Kick",
+        "translate": "双龙脚",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 830
+        }
+    },
+    {
+        "time": 9202,
+        "event": "Damage",
+        "name": "Auto Attack",
+        "translate": "自动攻击",
+        "damage": 2560,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 9269,
+        "event": "Damage",
+        "name": "Dragon Kick",
+        "translate": "双龙脚",
+        "damage": 3941,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 9307,
+        "event": "Cast",
+        "name": "Riddle of Fire",
+        "translate": "红莲极意",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 830
+        }
+    },
+    {
+        "time": 9374,
+        "event": "Buff Apply",
+        "name": "Riddle of Fire",
+        "translate": "红莲极意",
+        "duration": 2000
+    },
+    {
+        "time": 9406,
+        "event": "Cast",
+        "name": "Twin Snakes",
+        "translate": "双掌打",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 780
+        }
+    },
+    {
+        "time": 9419,
+        "event": "Damage",
+        "name": "Auto Attack",
+        "translate": "自动攻击",
+        "damage": 3468,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "riddle_of_fire",
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 9450,
+        "event": "DOT Tick",
+        "name": "Demolish",
+        "translate": "破碎拳",
+        "damage": 1803,
+        "crit": false,
+        "dh": true,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 9473,
+        "event": "Cast",
+        "name": "Steel Peak",
+        "translate": "铁山靠",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 780
+        }
+    },
+    {
+        "time": 9474,
+        "event": "Damage",
+        "name": "Twin Snakes",
+        "translate": "双掌打",
+        "damage": 4842,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "riddle_of_fire",
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 9541,
+        "event": "Damage",
+        "name": "Steel Peak",
+        "translate": "铁山靠",
+        "damage": 5721,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "riddle_of_fire",
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 9636,
+        "event": "Damage",
+        "name": "Auto Attack",
+        "translate": "自动攻击",
+        "damage": 4555,
+        "crit": false,
+        "dh": true,
+        "buff": [
+            "riddle_of_fire",
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 9642,
+        "event": "Cast",
+        "name": "Snap Punch",
+        "translate": "崩拳",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 800
+        }
+    },
+    {
+        "time": 9710,
+        "event": "Damage",
+        "name": "Snap Punch",
+        "translate": "崩拳",
+        "damage": 6415,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "riddle_of_fire",
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 9750,
+        "event": "DOT Tick",
+        "name": "Demolish",
+        "translate": "破碎拳",
+        "damage": 1894,
+        "crit": false,
+        "dh": true,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 9853,
+        "event": "Damage",
+        "name": "Auto Attack",
+        "translate": "自动攻击",
+        "damage": 5611,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "riddle_of_fire",
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 9878,
+        "event": "Cast",
+        "name": "Bootshine",
+        "translate": "连击",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 810
+        }
+    },
+    {
+        "time": 9946,
+        "event": "Damage",
+        "name": "Bootshine",
+        "translate": "连击",
+        "damage": 9557,
+        "crit": true,
+        "dh": true,
+        "buff": [
+            "riddle_of_fire",
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 9969,
+        "event": "Cast",
+        "name": "Brotherhood",
+        "translate": "义结金兰",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 810
+        }
+    },
+    {
+        "time": 10036,
+        "event": "Buff Apply",
+        "name": "Brotherhood",
+        "translate": "义结金兰",
+        "duration": 1500
+    },
+    {
+        "time": 10036,
+        "event": "Cast",
+        "name": "Shoulder Tackle",
+        "translate": "罗刹冲",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 810
+        }
+    },
+    {
+        "time": 10050,
+        "event": "DOT Tick",
+        "name": "Demolish",
+        "translate": "破碎拳",
+        "damage": 1857,
+        "crit": false,
+        "dh": true,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 10070,
+        "event": "Damage",
+        "name": "Auto Attack",
+        "translate": "自动攻击",
+        "damage": 4368,
+        "crit": false,
+        "dh": true,
+        "buff": [
+            "riddle_of_fire",
+            "fists_of_fire",
+            "brotherhood",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 10104,
+        "event": "Damage",
+        "name": "Fire Tackle",
+        "translate": "红莲罗刹冲",
+        "damage": 5084,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "riddle_of_fire",
+            "fists_of_fire",
+            "brotherhood",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 10114,
+        "event": "Cast",
+        "name": "True Strike",
+        "translate": "正拳",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 820
+        }
+    },
+    {
+        "time": 10182,
+        "event": "Damage",
+        "name": "True Strike",
+        "translate": "正拳",
+        "damage": 6775,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "riddle_of_fire",
+            "fists_of_fire",
+            "brotherhood",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 10222,
+        "event": "Cast",
+        "name": "Elixir Field",
+        "translate": "苍气炮",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 820
+        }
+    },
+    {
+        "time": 10287,
+        "event": "Damage",
+        "name": "Auto Attack",
+        "translate": "自动攻击",
+        "damage": 3531,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "riddle_of_fire",
+            "fists_of_fire",
+            "brotherhood",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 10290,
+        "event": "Damage",
+        "name": "Elixir Field",
+        "translate": "苍气炮",
+        "damage": 12639,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "riddle_of_fire",
+            "fists_of_fire",
+            "brotherhood",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 10350,
+        "event": "DOT Tick",
+        "name": "Demolish",
+        "translate": "破碎拳",
+        "damage": 1471,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 10350,
+        "event": "Cast",
+        "name": "Demolish",
+        "translate": "破碎拳",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 780
+        }
+    },
+    {
+        "time": 10418,
+        "event": "Damage",
+        "name": "Demolish",
+        "translate": "破碎拳",
+        "damage": 5437,
+        "crit": true,
+        "dh": true,
+        "buff": [
+            "riddle_of_fire",
+            "fists_of_fire",
+            "brotherhood",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 10418,
+        "event": "DOT Apply",
+        "name": "Demolish",
+        "translate": "破碎拳",
+        "damage": [
+            {
+                "damage": 4018,
+                "crit": true,
+                "dh": true
+            },
+            {
+                "damage": 3091,
+                "crit": true,
+                "dh": false
+            },
+            {
+                "damage": 2067,
+                "crit": false,
+                "dh": false
+            },
+            {
+                "damage": 3245,
+                "crit": true,
+                "dh": false
+            },
+            {
+                "damage": 2559,
+                "crit": false,
+                "dh": true
+            },
+            {
+                "damage": 2338,
+                "crit": false,
+                "dh": true
+            }
+        ],
+        "duration": 1800,
+        "buff": [
+            "riddle_of_fire",
+            "fists_of_fire",
+            "brotherhood",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 10504,
+        "event": "Damage",
+        "name": "Auto Attack",
+        "translate": "自动攻击",
+        "damage": 4460,
+        "crit": false,
+        "dh": true,
+        "buff": [
+            "riddle_of_fire",
+            "fists_of_fire",
+            "brotherhood",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 10586,
+        "event": "Cast",
+        "name": "Dragon Kick",
+        "translate": "双龙脚",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 790
+        }
+    },
+    {
+        "time": 10650,
+        "event": "DOT Tick",
+        "name": "Demolish",
+        "translate": "破碎拳",
+        "damage": 4018,
+        "crit": true,
+        "dh": true,
+        "buff": [
+            "riddle_of_fire",
+            "fists_of_fire",
+            "brotherhood",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 10653,
+        "event": "Cast",
+        "name": "The Forbidden Chakra",
+        "translate": "阴阳斗气斩",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 790
+        }
+    },
+    {
+        "time": 10654,
+        "event": "Damage",
+        "name": "Dragon Kick",
+        "translate": "双龙脚",
+        "damage": 10872,
+        "crit": true,
+        "dh": true,
+        "buff": [
+            "riddle_of_fire",
+            "fists_of_fire",
+            "brotherhood",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 10721,
+        "event": "Damage",
+        "name": "The Forbidden Chakra",
+        "translate": "阴阳斗气斩",
+        "damage": 11326,
+        "crit": false,
+        "dh": true,
+        "buff": [
+            "riddle_of_fire",
+            "fists_of_fire",
+            "brotherhood",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 10722,
+        "event": "Damage",
+        "name": "Auto Attack",
+        "translate": "自动攻击",
+        "damage": 4736,
+        "crit": false,
+        "dh": true,
+        "buff": [
+            "riddle_of_fire",
+            "fists_of_fire",
+            "brotherhood",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 10822,
+        "event": "Cast",
+        "name": "Twin Snakes",
+        "translate": "双掌打",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 800
+        }
+    },
+    {
+        "time": 10889,
+        "event": "Cast",
+        "name": "Tornado Kick",
+        "translate": "斗魂旋风脚",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 800
+        }
+    },
+    {
+        "time": 10890,
+        "event": "Damage",
+        "name": "Twin Snakes",
+        "translate": "双掌打",
+        "damage": 5133,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "riddle_of_fire",
+            "fists_of_fire",
+            "brotherhood",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 10938,
+        "event": "Damage",
+        "name": "Auto Attack",
+        "translate": "自动攻击",
+        "damage": 4644,
+        "crit": false,
+        "dh": true,
+        "buff": [
+            "riddle_of_fire",
+            "fists_of_fire",
+            "brotherhood",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 10950,
+        "event": "DOT Tick",
+        "name": "Demolish",
+        "translate": "破碎拳",
+        "damage": 3091,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "riddle_of_fire",
+            "fists_of_fire",
+            "brotherhood",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 10957,
+        "event": "Damage",
+        "name": "Tornado Kick",
+        "translate": "斗魂旋风脚",
+        "damage": 19454,
+        "crit": false,
+        "dh": true,
+        "buff": [
+            "riddle_of_fire",
+            "fists_of_fire",
+            "brotherhood",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 11058,
+        "event": "Cast",
+        "name": "Snap Punch",
+        "translate": "崩拳",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 820
+        }
+    },
+    {
+        "time": 11126,
+        "event": "Damage",
+        "name": "Snap Punch",
+        "translate": "崩拳",
+        "damage": 7668,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "riddle_of_fire",
+            "fists_of_fire",
+            "brotherhood",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 11155,
+        "event": "Damage",
+        "name": "Auto Attack",
+        "translate": "自动攻击",
+        "damage": 3775,
+        "crit": false,
+        "dh": true,
+        "buff": [
+            "riddle_of_fire",
+            "fists_of_fire",
+            "brotherhood",
+            "greased_lightning_i",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 11236,
+        "event": "Cast",
+        "name": "Perfect Balance",
+        "translate": "震脚",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 820
+        }
+    },
+    {
+        "time": 11250,
+        "event": "DOT Tick",
+        "name": "Demolish",
+        "translate": "破碎拳",
+        "damage": 2067,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "riddle_of_fire",
+            "fists_of_fire",
+            "brotherhood",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 11303,
+        "event": "Buff Apply",
+        "name": "Perfect Balance",
+        "translate": "震脚",
+        "duration": 1500
+    },
+    {
+        "time": 11336,
+        "event": "Cast",
+        "name": "Snap Punch",
+        "translate": "崩拳",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 840
+        }
+    },
+    {
+        "time": 11399,
+        "event": "Damage",
+        "name": "Auto Attack",
+        "translate": "自动攻击",
+        "damage": 3569,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "perfect_balance",
+            "fists_of_fire",
+            "brotherhood",
+            "greased_lightning_i",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 11404,
+        "event": "Damage",
+        "name": "Snap Punch",
+        "translate": "崩拳",
+        "damage": 5375,
+        "crit": false,
+        "dh": true,
+        "buff": [
+            "perfect_balance",
+            "fists_of_fire",
+            "brotherhood",
+            "greased_lightning_i",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 11550,
+        "event": "DOT Tick",
+        "name": "Demolish",
+        "translate": "破碎拳",
+        "damage": 3245,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "riddle_of_fire",
+            "fists_of_fire",
+            "brotherhood",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 11600,
+        "event": "Cast",
+        "name": "Snap Punch",
+        "translate": "崩拳",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 860
+        }
+    },
+    {
+        "time": 11643,
+        "event": "Damage",
+        "name": "Auto Attack",
+        "translate": "自动攻击",
+        "damage": 5123,
+        "crit": true,
+        "dh": true,
+        "buff": [
+            "perfect_balance",
+            "fists_of_fire",
+            "greased_lightning_ii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 11668,
+        "event": "Damage",
+        "name": "Snap Punch",
+        "translate": "崩拳",
+        "damage": 4600,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "perfect_balance",
+            "fists_of_fire",
+            "greased_lightning_ii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 11817,
+        "event": "Cast",
+        "name": "Dragon Kick",
+        "translate": "双龙脚",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 810
+        }
+    },
+    {
+        "time": 11850,
+        "event": "DOT Tick",
+        "name": "Demolish",
+        "translate": "破碎拳",
+        "damage": 2559,
+        "crit": false,
+        "dh": true,
+        "buff": [
+            "riddle_of_fire",
+            "fists_of_fire",
+            "brotherhood",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 11873,
+        "event": "Damage",
+        "name": "Auto Attack",
+        "translate": "自动攻击",
+        "damage": 3301,
+        "crit": false,
+        "dh": true,
+        "buff": [
+            "perfect_balance",
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 11885,
+        "event": "Damage",
+        "name": "Dragon Kick",
+        "translate": "双龙脚",
+        "damage": 6248,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "perfect_balance",
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 12022,
+        "event": "Cast",
+        "name": "Twin Snakes",
+        "translate": "双掌打",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 820
+        }
+    },
+    {
+        "time": 12090,
+        "event": "Damage",
+        "name": "Twin Snakes",
+        "translate": "双掌打",
+        "damage": 7167,
+        "crit": true,
+        "dh": true,
+        "buff": [
+            "perfect_balance",
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 12091,
+        "event": "Damage",
+        "name": "Auto Attack",
+        "translate": "自动攻击",
+        "damage": 4104,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "perfect_balance",
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 12150,
+        "event": "DOT Tick",
+        "name": "Demolish",
+        "translate": "破碎拳",
+        "damage": 2338,
+        "crit": false,
+        "dh": true,
+        "buff": [
+            "riddle_of_fire",
+            "fists_of_fire",
+            "brotherhood",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 12227,
+        "event": "Cast",
+        "name": "Demolish",
+        "translate": "破碎拳",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 840
+        }
+    },
+    {
+        "time": 12295,
+        "event": "Damage",
+        "name": "Demolish",
+        "translate": "破碎拳",
+        "damage": 1872,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "perfect_balance",
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 12295,
+        "event": "DOT Apply",
+        "name": "Demolish",
+        "translate": "破碎拳",
+        "damage": [
+            {
+                "damage": 1428,
+                "crit": false,
+                "dh": false
+            },
+            {
+                "damage": 1471,
+                "crit": false,
+                "dh": false
+            },
+            {
+                "damage": 1471,
+                "crit": false,
+                "dh": false
+            },
+            {
+                "damage": 2718,
+                "crit": true,
+                "dh": true
+            },
+            {
+                "damage": 2378,
+                "crit": true,
+                "dh": false
+            },
+            {
+                "damage": 1803,
+                "crit": false,
+                "dh": true
+            }
+        ],
+        "duration": 1800,
+        "buff": [
+            "perfect_balance",
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 12307,
+        "event": "Damage",
+        "name": "Auto Attack",
+        "translate": "自动攻击",
+        "damage": 2802,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 12432,
+        "event": "Cast",
+        "name": "Bootshine",
+        "translate": "连击",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 790
+        }
+    },
+    {
+        "time": 12450,
+        "event": "DOT Tick",
+        "name": "Demolish",
+        "translate": "破碎拳",
+        "damage": 1428,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "perfect_balance",
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 12499,
+        "event": "Cast",
+        "name": "The Forbidden Chakra",
+        "translate": "阴阳斗气斩",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 790
+        }
+    },
+    {
+        "time": 12500,
+        "event": "Damage",
+        "name": "Bootshine",
+        "translate": "连击",
+        "damage": 6064,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 12524,
+        "event": "Damage",
+        "name": "Auto Attack",
+        "translate": "自动攻击",
+        "damage": 2802,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 12567,
+        "event": "Damage",
+        "name": "The Forbidden Chakra",
+        "translate": "阴阳斗气斩",
+        "damage": 6917,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 12637,
+        "event": "Cast",
+        "name": "True Strike",
+        "translate": "正拳",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 800
+        }
+    },
+    {
+        "time": 12705,
+        "event": "Damage",
+        "name": "True Strike",
+        "translate": "正拳",
+        "damage": 6454,
+        "crit": false,
+        "dh": true,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 12741,
+        "event": "Damage",
+        "name": "Auto Attack",
+        "translate": "自动攻击",
+        "damage": 2695,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 12750,
+        "event": "DOT Tick",
+        "name": "Demolish",
+        "translate": "破碎拳",
+        "damage": 1471,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "perfect_balance",
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 12827,
+        "event": "Cast",
+        "name": "Internal Release",
+        "translate": "内劲",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 860
+        }
+    },
+    {
+        "time": 12894,
+        "event": "Buff Apply",
+        "name": "Internal Release",
+        "translate": "内劲",
+        "duration": 1500
+    },
+    {
+        "time": 12894,
+        "event": "Cast",
+        "name": "Snap Punch",
+        "translate": "崩拳",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 820
+        }
+    },
+    {
+        "time": 12958,
+        "event": "Damage",
+        "name": "Auto Attack",
+        "translate": "自动攻击",
+        "damage": 3301,
+        "crit": false,
+        "dh": true,
+        "buff": [
+            "internal_release",
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 12962,
+        "event": "Damage",
+        "name": "Snap Punch",
+        "translate": "崩拳",
+        "damage": 4651,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "internal_release",
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 13050,
+        "event": "DOT Tick",
+        "name": "Demolish",
+        "translate": "破碎拳",
+        "damage": 1471,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "perfect_balance",
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 13099,
+        "event": "Cast",
+        "name": "Dragon Kick",
+        "translate": "双龙脚",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 770
+        }
+    },
+    {
+        "time": 13167,
+        "event": "Damage",
+        "name": "Dragon Kick",
+        "translate": "双龙脚",
+        "damage": 4019,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "internal_release",
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 13175,
+        "event": "Damage",
+        "name": "Auto Attack",
+        "translate": "自动攻击",
+        "damage": 3402,
+        "crit": false,
+        "dh": true,
+        "buff": [
+            "internal_release",
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 13222,
+        "event": "Cast",
+        "name": "Elixir Field",
+        "translate": "苍气炮",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 830
+        }
+    },
+    {
+        "time": 13289,
+        "event": "Cast",
+        "name": "Howling Fist",
+        "translate": "空鸣拳",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 830
+        }
+    },
+    {
+        "time": 13290,
+        "event": "Damage",
+        "name": "Elixir Field",
+        "translate": "苍气炮",
+        "damage": 6143,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "internal_release",
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 13350,
+        "event": "DOT Tick",
+        "name": "Demolish",
+        "translate": "破碎拳",
+        "damage": 2718,
+        "crit": true,
+        "dh": true,
+        "buff": [
+            "perfect_balance",
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 13356,
+        "event": "Cast",
+        "name": "Twin Snakes",
+        "translate": "双掌打",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 780
+        }
+    },
+    {
+        "time": 13357,
+        "event": "Damage",
+        "name": "Howling Fist",
+        "translate": "空鸣拳",
+        "damage": 5914,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "internal_release",
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 13392,
+        "event": "Damage",
+        "name": "Auto Attack",
+        "translate": "自动攻击",
+        "damage": 3200,
+        "crit": false,
+        "dh": true,
+        "buff": [
+            "internal_release",
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 13424,
+        "event": "Damage",
+        "name": "Twin Snakes",
+        "translate": "双掌打",
+        "damage": 4339,
+        "crit": false,
+        "dh": true,
+        "buff": [
+            "internal_release",
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 13473,
+        "event": "Cast",
+        "name": "Steel Peak",
+        "translate": "铁山靠",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 840
+        }
+    },
+    {
+        "time": 13540,
+        "event": "Cast",
+        "name": "Tornado Kick",
+        "translate": "斗魂旋风脚",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 840
+        }
+    },
+    {
+        "time": 13541,
+        "event": "Damage",
+        "name": "Steel Peak",
+        "translate": "铁山靠",
+        "damage": 5343,
+        "crit": false,
+        "dh": true,
+        "buff": [
+            "internal_release",
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 13607,
+        "event": "Cast",
+        "name": "Snap Punch",
+        "translate": "崩拳",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 800
+        }
+    },
+    {
+        "time": 13608,
+        "event": "Damage",
+        "name": "Tornado Kick",
+        "translate": "斗魂旋风脚",
+        "damage": 15002,
+        "crit": false,
+        "dh": true,
+        "buff": [
+            "internal_release",
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 13609,
+        "event": "Damage",
+        "name": "Auto Attack",
+        "translate": "自动攻击",
+        "damage": 3090,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "internal_release",
+            "fists_of_fire",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 13650,
+        "event": "DOT Tick",
+        "name": "Demolish",
+        "translate": "破碎拳",
+        "damage": 2378,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "perfect_balance",
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 13674,
+        "event": "Cast",
+        "name": "Fists of Wind",
+        "translate": "疾风体势",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 800
+        }
+    },
+    {
+        "time": 13675,
+        "event": "Damage",
+        "name": "Snap Punch",
+        "translate": "崩拳",
+        "damage": 4334,
+        "crit": false,
+        "dh": true,
+        "buff": [
+            "internal_release",
+            "fists_of_fire",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 13741,
+        "event": "Buff Apply",
+        "name": "Fists of Wind",
+        "translate": "疾风体势",
+        "duration": 4259
+    },
+    {
+        "time": 13741,
+        "event": "Cast",
+        "name": "Shoulder Tackle",
+        "translate": "罗刹冲",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 860
+        }
+    },
+    {
+        "time": 13808,
+        "event": "Buff Apply",
+        "name": "Riddle of Wind",
+        "translate": "疾风极意",
+        "duration": 1000
+    },
+    {
+        "time": 13808,
+        "event": "Cast",
+        "name": "Shoulder Tackle",
+        "translate": "罗刹冲",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 860
+        }
+    },
+    {
+        "time": 13809,
+        "event": "Damage",
+        "name": "Wind Tackle",
+        "translate": "疾风罗刹冲",
+        "damage": 1530,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "internal_release",
+            "fists_of_wind",
+            "greased_lightning_i",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 13865,
+        "event": "Damage",
+        "name": "Auto Attack",
+        "translate": "自动攻击",
+        "damage": 2741,
+        "crit": false,
+        "dh": true,
+        "buff": [
+            "internal_release",
+            "fists_of_wind",
+            "greased_lightning_i",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 13875,
+        "event": "Cast",
+        "name": "Bootshine",
+        "translate": "连击",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 810
+        }
+    },
+    {
+        "time": 13876,
+        "event": "Damage",
+        "name": "Riddle of Wind",
+        "translate": "疾风极意",
+        "damage": 1385,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "internal_release",
+            "fists_of_wind",
+            "greased_lightning_i",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 13942,
+        "event": "Cast",
+        "name": "Fists of Fire",
+        "translate": "红莲体势",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 810
+        }
+    },
+    {
+        "time": 13943,
+        "event": "Damage",
+        "name": "Bootshine",
+        "translate": "连击",
+        "damage": 6798,
+        "crit": true,
+        "dh": true,
+        "buff": [
+            "internal_release",
+            "fists_of_wind",
+            "greased_lightning_ii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 13950,
+        "event": "DOT Tick",
+        "name": "Demolish",
+        "translate": "破碎拳",
+        "damage": 1803,
+        "crit": false,
+        "dh": true,
+        "buff": [
+            "perfect_balance",
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 14009,
+        "event": "Buff Apply",
+        "name": "Fists of Fire",
+        "translate": "红莲体势",
+        "duration": 3991
+    },
+    {
+        "time": 14092,
+        "event": "Cast",
+        "name": "True Strike",
+        "translate": "正拳",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 820
+        }
+    },
+    {
+        "time": 14109,
+        "event": "Damage",
+        "name": "Auto Attack",
+        "translate": "自动攻击",
+        "damage": 2436,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "internal_release",
+            "fists_of_fire",
+            "greased_lightning_ii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 14160,
+        "event": "Damage",
+        "name": "True Strike",
+        "translate": "正拳",
+        "damage": 5610,
+        "crit": false,
+        "dh": true,
+        "buff": [
+            "internal_release",
+            "fists_of_fire",
+            "greased_lightning_ii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 14309,
+        "event": "Cast",
+        "name": "Demolish",
+        "translate": "破碎拳",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 840
+        }
+    },
+    {
+        "time": 14339,
+        "event": "Damage",
+        "name": "Auto Attack",
+        "translate": "自动攻击",
+        "damage": 3045,
+        "crit": false,
+        "dh": true,
+        "buff": [
+            "internal_release",
+            "fists_of_fire",
+            "greased_lightning_ii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 14377,
+        "event": "Damage",
+        "name": "Demolish",
+        "translate": "破碎拳",
+        "damage": 3463,
+        "crit": true,
+        "dh": true,
+        "buff": [
+            "internal_release",
+            "fists_of_fire",
+            "greased_lightning_ii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 14377,
+        "event": "DOT Apply",
+        "name": "Demolish",
+        "translate": "破碎拳",
+        "damage": [
+            {
+                "damage": 1457,
+                "crit": false,
+                "dh": false
+            },
+            {
+                "damage": 1457,
+                "crit": false,
+                "dh": false
+            },
+            {
+                "damage": 1457,
+                "crit": false,
+                "dh": false
+            },
+            {
+                "damage": 1471,
+                "crit": false,
+                "dh": false
+            },
+            {
+                "damage": 1399,
+                "crit": false,
+                "dh": false
+            },
+            {
+                "damage": 2243,
+                "crit": true,
+                "dh": false
+            }
+        ],
+        "duration": 1800,
+        "buff": [
+            "internal_release",
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 14526,
+        "event": "Cast",
+        "name": "Dragon Kick",
+        "translate": "双龙脚",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 790
+        }
+    },
+    {
+        "time": 14550,
+        "event": "DOT Tick",
+        "name": "Demolish",
+        "translate": "破碎拳",
+        "damage": 1457,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "internal_release",
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 14569,
+        "event": "Damage",
+        "name": "Auto Attack",
+        "translate": "自动攻击",
+        "damage": 2722,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 14594,
+        "event": "Damage",
+        "name": "Dragon Kick",
+        "translate": "双龙脚",
+        "damage": 7351,
+        "crit": true,
+        "dh": true,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 14731,
+        "event": "Cast",
+        "name": "Twin Snakes",
+        "translate": "双掌打",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 800
+        }
+    },
+    {
+        "time": 14786,
+        "event": "Damage",
+        "name": "Auto Attack",
+        "translate": "自动攻击",
+        "damage": 2560,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 14799,
+        "event": "Damage",
+        "name": "Twin Snakes",
+        "translate": "双掌打",
+        "damage": 4474,
+        "crit": false,
+        "dh": true,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 14850,
+        "event": "DOT Tick",
+        "name": "Demolish",
+        "translate": "破碎拳",
+        "damage": 1457,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "internal_release",
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 14936,
+        "event": "Cast",
+        "name": "Snap Punch",
+        "translate": "崩拳",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 820
+        }
+    },
+    {
+        "time": 15003,
+        "event": "Damage",
+        "name": "Auto Attack",
+        "translate": "自动攻击",
+        "damage": 3503,
+        "crit": false,
+        "dh": true,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 15004,
+        "event": "Damage",
+        "name": "Snap Punch",
+        "translate": "崩拳",
+        "damage": 4508,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 15141,
+        "event": "Cast",
+        "name": "Bootshine",
+        "translate": "连击",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 770
+        }
+    },
+    {
+        "time": 15150,
+        "event": "DOT Tick",
+        "name": "Demolish",
+        "translate": "破碎拳",
+        "damage": 1457,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "internal_release",
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 15209,
+        "event": "Damage",
+        "name": "Bootshine",
+        "translate": "连击",
+        "damage": 7504,
+        "crit": true,
+        "dh": true,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 15220,
+        "event": "Damage",
+        "name": "Auto Attack",
+        "translate": "自动攻击",
+        "damage": 2560,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 15346,
+        "event": "Cast",
+        "name": "True Strike",
+        "translate": "正拳",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 780
+        }
+    },
+    {
+        "time": 15414,
+        "event": "Damage",
+        "name": "True Strike",
+        "translate": "正拳",
+        "damage": 4862,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 15437,
+        "event": "Damage",
+        "name": "Auto Attack",
+        "translate": "自动攻击",
+        "damage": 2775,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 15450,
+        "event": "DOT Tick",
+        "name": "Demolish",
+        "translate": "破碎拳",
+        "damage": 1471,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "internal_release",
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 15551,
+        "event": "Cast",
+        "name": "Snap Punch",
+        "translate": "崩拳",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 800
+        }
+    },
+    {
+        "time": 15619,
+        "event": "Damage",
+        "name": "Snap Punch",
+        "translate": "崩拳",
+        "damage": 4888,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 15654,
+        "event": "Damage",
+        "name": "Auto Attack",
+        "translate": "自动攻击",
+        "damage": 2775,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 15750,
+        "event": "DOT Tick",
+        "name": "Demolish",
+        "translate": "破碎拳",
+        "damage": 1399,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "internal_release",
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 15756,
+        "event": "Cast",
+        "name": "Dragon Kick",
+        "translate": "双龙脚",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 750
+        }
+    },
+    {
+        "time": 15824,
+        "event": "Damage",
+        "name": "Dragon Kick",
+        "translate": "双龙脚",
+        "damage": 5881,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 15871,
+        "event": "Damage",
+        "name": "Auto Attack",
+        "translate": "自动攻击",
+        "damage": 2641,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 15961,
+        "event": "Cast",
+        "name": "Twin Snakes",
+        "translate": "双掌打",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 760
+        }
+    },
+    {
+        "time": 16029,
+        "event": "Damage",
+        "name": "Twin Snakes",
+        "translate": "双掌打",
+        "damage": 3688,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 16050,
+        "event": "DOT Tick",
+        "name": "Demolish",
+        "translate": "破碎拳",
+        "damage": 2243,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "internal_release",
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 16088,
+        "event": "Damage",
+        "name": "Auto Attack",
+        "translate": "自动攻击",
+        "damage": 4400,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 16166,
+        "event": "Cast",
+        "name": "Snap Punch",
+        "translate": "崩拳",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 780
+        }
+    },
+    {
+        "time": 16233,
+        "event": "Cast",
+        "name": "Elixir Field",
+        "translate": "苍气炮",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 780
+        }
+    },
+    {
+        "time": 16234,
+        "event": "Damage",
+        "name": "Snap Punch",
+        "translate": "崩拳",
+        "damage": 4888,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 16301,
+        "event": "Damage",
+        "name": "Elixir Field",
+        "translate": "苍气炮",
+        "damage": 6450,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 16305,
+        "event": "Damage",
+        "name": "Auto Attack",
+        "translate": "自动攻击",
+        "damage": 3469,
+        "crit": false,
+        "dh": true,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 16371,
+        "event": "Cast",
+        "name": "Bootshine",
+        "translate": "连击",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 730
+        }
+    },
+    {
+        "time": 16438,
+        "event": "Cast",
+        "name": "The Forbidden Chakra",
+        "translate": "阴阳斗气斩",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 790
+        }
+    },
+    {
+        "time": 16439,
+        "event": "Damage",
+        "name": "Bootshine",
+        "translate": "连击",
+        "damage": 6187,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 16506,
+        "event": "Damage",
+        "name": "The Forbidden Chakra",
+        "translate": "阴阳斗气斩",
+        "damage": 7056,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 16522,
+        "event": "Damage",
+        "name": "Auto Attack",
+        "translate": "自动攻击",
+        "damage": 2802,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 16576,
+        "event": "Cast",
+        "name": "True Strike",
+        "translate": "正拳",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 740
+        }
+    },
+    {
+        "time": 16643,
+        "event": "Cast",
+        "name": "Tornado Kick",
+        "translate": "斗魂旋风脚",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 740
+        }
+    },
+    {
+        "time": 16644,
+        "event": "Damage",
+        "name": "True Strike",
+        "translate": "正拳",
+        "damage": 5013,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 16711,
+        "event": "Damage",
+        "name": "Tornado Kick",
+        "translate": "斗魂旋风脚",
+        "damage": 12482,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 16739,
+        "event": "Damage",
+        "name": "Auto Attack",
+        "translate": "自动攻击",
+        "damage": 2616,
+        "crit": false,
+        "dh": true,
+        "buff": [
+            "fists_of_fire",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 16781,
+        "event": "Cast",
+        "name": "Demolish",
+        "translate": "破碎拳",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 760
+        }
+    },
+    {
+        "time": 16848,
+        "event": "Cast",
+        "name": "Fists of Wind",
+        "translate": "疾风体势",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 760
+        }
+    },
+    {
+        "time": 16849,
+        "event": "Damage",
+        "name": "Demolish",
+        "translate": "破碎拳",
+        "damage": 1501,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "fists_of_fire",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 16849,
+        "event": "DOT Apply",
+        "name": "Demolish",
+        "translate": "破碎拳",
+        "damage": [
+            {
+                "damage": 1268,
+                "crit": false,
+                "dh": false
+            },
+            {
+                "damage": 1934,
+                "crit": true,
+                "dh": false
+            },
+            {
+                "damage": 1448,
+                "crit": false,
+                "dh": true
+            },
+            {
+                "damage": 1540,
+                "crit": false,
+                "dh": true
+            },
+            {
+                "damage": 1207,
+                "crit": false,
+                "dh": false
+            },
+            {
+                "damage": 1877,
+                "crit": true,
+                "dh": false
+            }
+        ],
+        "duration": 1800,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_i",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 16915,
+        "event": "Buff Apply",
+        "name": "Fists of Wind",
+        "translate": "疾风体势",
+        "duration": 1085
+    },
+    {
+        "time": 16915,
+        "event": "Cast",
+        "name": "Shoulder Tackle",
+        "translate": "罗刹冲",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 760
+        }
+    },
+    {
+        "time": 16950,
+        "event": "DOT Tick",
+        "name": "Demolish",
+        "translate": "破碎拳",
+        "damage": 1268,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_i",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 16982,
+        "event": "Buff Apply",
+        "name": "Riddle of Wind",
+        "translate": "疾风极意",
+        "duration": 1000
+    },
+    {
+        "time": 16982,
+        "event": "Cast",
+        "name": "Shoulder Tackle",
+        "translate": "罗刹冲",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 760
+        }
+    },
+    {
+        "time": 16983,
+        "event": "Damage",
+        "name": "Wind Tackle",
+        "translate": "疾风罗刹冲",
+        "damage": 1530,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "fists_of_wind",
+            "greased_lightning_i",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 16995,
+        "event": "Damage",
+        "name": "Auto Attack",
+        "translate": "自动攻击",
+        "damage": 2687,
+        "crit": false,
+        "dh": true,
+        "buff": [
+            "fists_of_wind",
+            "greased_lightning_i",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 17049,
+        "event": "Cast",
+        "name": "Dragon Kick",
+        "translate": "双龙脚",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 770
+        }
+    },
+    {
+        "time": 17050,
+        "event": "Damage",
+        "name": "Riddle of Wind",
+        "translate": "疾风极意",
+        "damage": 1501,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "fists_of_wind",
+            "greased_lightning_i",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 17116,
+        "event": "Cast",
+        "name": "Fists of Fire",
+        "translate": "红莲体势",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 770
+        }
+    },
+    {
+        "time": 17117,
+        "event": "Damage",
+        "name": "Dragon Kick",
+        "translate": "双龙脚",
+        "damage": 3498,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "fists_of_wind",
+            "greased_lightning_ii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 17183,
+        "event": "Buff Apply",
+        "name": "Fists of Fire",
+        "translate": "红莲体势",
+        "duration": 817
+    },
+    {
+        "time": 17239,
+        "event": "Damage",
+        "name": "Auto Attack",
+        "translate": "自动攻击",
+        "damage": 4782,
+        "crit": true,
+        "dh": true,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_ii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 17250,
+        "event": "DOT Tick",
+        "name": "Demolish",
+        "translate": "破碎拳",
+        "damage": 1934,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_i",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 17266,
+        "event": "Cast",
+        "name": "Twin Snakes",
+        "translate": "双掌打",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 720
+        }
+    },
+    {
+        "time": 17334,
+        "event": "Damage",
+        "name": "Twin Snakes",
+        "translate": "双掌打",
+        "damage": 3504,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_ii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 17469,
+        "event": "Damage",
+        "name": "Auto Attack",
+        "translate": "自动攻击",
+        "damage": 2536,
+        "crit": false,
+        "dh": false,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_ii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 17483,
+        "event": "Cast",
+        "name": "Snap Punch",
+        "translate": "崩拳",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 740
+        }
+    },
+    {
+        "time": 17550,
+        "event": "DOT Tick",
+        "name": "Demolish",
+        "translate": "破碎拳",
+        "damage": 1448,
+        "crit": false,
+        "dh": true,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_i",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 17551,
+        "event": "Damage",
+        "name": "Snap Punch",
+        "translate": "崩拳",
+        "damage": 5421,
+        "crit": false,
+        "dh": true,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_ii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 17699,
+        "event": "Damage",
+        "name": "Auto Attack",
+        "translate": "自动攻击",
+        "damage": 3402,
+        "crit": false,
+        "dh": true,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 17700,
+        "event": "Cast",
+        "name": "Bootshine",
+        "translate": "连击",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 750
+        }
+    },
+    {
+        "time": 17768,
+        "event": "Damage",
+        "name": "Bootshine",
+        "translate": "连击",
+        "damage": 5819,
+        "crit": true,
+        "dh": false,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 17850,
+        "event": "DOT Tick",
+        "name": "Demolish",
+        "translate": "破碎拳",
+        "damage": 1540,
+        "crit": false,
+        "dh": true,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_i",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 17905,
+        "event": "Cast",
+        "name": "True Strike",
+        "translate": "正拳",
+        "duration": 0,
+        "resource": {
+            "mp": 5160,
+            "tp": 760
+        }
+    },
+    {
+        "time": 17916,
+        "event": "Damage",
+        "name": "Auto Attack",
+        "translate": "自动攻击",
+        "damage": 3234,
+        "crit": false,
+        "dh": true,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
+    },
+    {
+        "time": 17973,
+        "event": "Damage",
+        "name": "True Strike",
+        "translate": "正拳",
+        "damage": 6579,
+        "crit": false,
+        "dh": true,
+        "buff": [
+            "fists_of_fire",
+            "greased_lightning_iii",
+            "twin_snakes"
+        ]
     }
 ]

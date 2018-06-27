@@ -100,7 +100,7 @@
 
     // dot伤害加成
     dotMod() {
-        this.damage *= floor(1 + (((this.player.status.ss - 364) / 167)) / 100, 3);
+        this.damage *= floor((1 + ((this.player.status.ss - 364) * 0.13 / 2170)), 3);
     }
 
     // 伤害浮动

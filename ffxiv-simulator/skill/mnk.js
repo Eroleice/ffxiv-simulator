@@ -160,15 +160,16 @@ class skill {
         this.player.tick.animation = animationBlock;
         this.player.cd.shoulder_tackle = 3000;
         var name = '';
-        if (this.player.job.fists == 'fire') {
+        if (this.player.buff.fists_of_fire >= 0 ) {
             name = 'fire_tackle';
-        } else if (this.player.job.fists == 'earth') {
+        } else if (this.player.buff.fists_of_earth >= 0) {
             name = 'earth_tackle';
-        } else if (this.player.job.fists == 'wind' && this.player.buff.riddle_of_wind > 0) {
+        } else if (this.player.buff.fists_of_wind >= 0 && this.player.buff.riddle_of_wind > 0) {
             name = 'riddle_of_wind';
             this.player.buff.riddle_of_wind = -1;
-        } else if (this.player.job.fists == 'wind') {
+        } else if (this.player.buff.fists_of_wind >= 0) {
             name = 'wind_tackle';
+            this.player.cd.shoulder_tackle = -1;
         }
         this.battle.skillEffectQue.push({
             'time': 67,
@@ -419,7 +420,12 @@ class effect {
         if (damage.crit) {
             this.isChakra();
         }
-        this.player.job.form = 'raptor';
+        if (this.player.buff.perfect_balance < 0) {
+            this.player.job.form = 'raptor';
+        }
+        if (this.player.buff.brotherhood >= 0) {
+            this.selfBrotherhood();
+        }
         this.battle.damageQue.push({
             'time': 0,
             'name': 'Bootshine',
@@ -436,7 +442,12 @@ class effect {
         if (damage.crit) {
             this.isChakra();
         }
-        this.player.job.form = 'coeurl';
+        if (this.player.buff.perfect_balance < 0) {
+            this.player.job.form = 'coeurl';
+        }
+        if (this.player.buff.brotherhood >= 0) {
+            this.selfBrotherhood();
+        }
         this.battle.damageQue.push({
             'time': 0,
             'name': 'True Strike',
@@ -453,7 +464,12 @@ class effect {
         if (damage.crit) {
             this.isChakra();
         }
-        this.player.job.form = 'opo_opo';
+        if (this.player.buff.perfect_balance < 0) {
+            this.player.job.form = 'opo_opo';
+        }
+        if (this.player.buff.brotherhood >= 0) {
+            this.selfBrotherhood();
+        }
         this.battle.damageQue.push({
             'time': 0,
             'name': 'Snap Punch',
@@ -468,13 +484,18 @@ class effect {
     dragon_kick() {
         var potency = 140;
         var damage = calculate.damageCalculate(this, potency, 'physic');
-        if (this.player.job.form == 'opo_opo') {
+        if (this.player.job.form == 'opo_opo' || this.player.buff.perfect_balance >= 0) {
             this.player.debuff.resistance = 1500;
         }
         if (damage.crit) {
             this.isChakra();
         }
-        this.player.job.form = 'raptor';
+        if (this.player.buff.perfect_balance < 0) {
+            this.player.job.form = 'raptor';
+        }
+        if (this.player.buff.brotherhood >= 0) {
+            this.selfBrotherhood();
+        }
         this.battle.damageQue.push({
             'time': 0,
             'name': 'Dragon Kick',
@@ -491,7 +512,12 @@ class effect {
         if (damage.crit) {
             this.isChakra();
         }
-        this.player.job.form = 'coeurl';
+        if (this.player.buff.perfect_balance < 0) {
+            this.player.job.form = 'coeurl';
+        }
+        if (this.player.buff.brotherhood >= 0) {
+            this.selfBrotherhood();
+        }
         this.player.buff.twin_snakes = 1500;
         this.battle.damageQue.push({
             'time': 0,
@@ -509,7 +535,12 @@ class effect {
         if (damage.crit) {
             this.isChakra();
         }
-        this.player.job.form = 'opo_opo';
+        if (this.player.buff.perfect_balance < 0) {
+            this.player.job.form = 'opo_opo';
+        }
+        if (this.player.buff.brotherhood >= 0) {
+            this.selfBrotherhood();
+        }
         this.battle.skillEffectQue.push({
             'time': 0,
             'name': 'demolish_dot'
@@ -659,7 +690,7 @@ class effect {
         });
     }
     tornado_kick() {
-        var potency = 420; // 垃圾SE暗改数据
+        var potency = 430; // 垃圾SE暗改数据 http://bbs.nga.cn/read.php?pid=283271262
         var damage = calculate.damageCalculate(this, potency, 'physic');
         this.battle.damageQue.push({
             'time': 0,
@@ -684,6 +715,7 @@ class effect {
     }
     perfect_balance() {
         this.player.buff.perfect_balance = 1000;
+        this.player.job.form == 'perfect_balance';
         this.log.push({
             'time': this.setting.simulate.duration - this.battle.time,
             'event': 'Buff Apply',
@@ -695,7 +727,6 @@ class effect {
     fists_of_fire() {
         this.player.buff.fists_of_fire = this.battle.time;
         this.player.buff.fists_of_wind = -1;
-        this.player.job.fists = 'fire';
         this.log.push({
             'time': this.setting.simulate.duration - this.battle.time,
             'event': 'Buff Apply',
@@ -707,7 +738,6 @@ class effect {
     fists_of_wind() {
         this.player.buff.fists_of_wind = this.battle.time;
         this.player.buff.fists_of_fire = -1;
-        this.player.job.fists = 'wind';
         this.log.push({
             'time': this.setting.simulate.duration - this.battle.time,
             'event': 'Buff Apply',
@@ -718,7 +748,6 @@ class effect {
     }
     riddle_of_fire() {
         this.player.buff.riddle_of_fire = 2000;
-        this.player.job.fists = 'fire';
         this.player.buff.fists_of_wind = -1;
         this.player.buff.fists_of_fire = this.battle.time;
         this.log.push({
@@ -780,6 +809,13 @@ class effect {
     isChakra() {
         var t = Math.floor(Math.random() * 2);
         if (t == 0) {
+            this.player.job.chakra = Math.min(5, this.player.job.chakra + 1);
+        }
+    }
+    // 自己的义结金兰
+    selfBrotherhood() {
+        var t = Math.floor(Math.random() * 100 + 1);
+        if (t < 30) {
             this.player.job.chakra = Math.min(5, this.player.job.chakra + 1);
         }
     }

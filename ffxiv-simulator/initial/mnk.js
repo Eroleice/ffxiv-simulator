@@ -15,7 +15,6 @@ module.exports = {
         data.jobTrial = 1;
         data.jobK = 32;
         data.skillList = ['bootshine', 'true_strike', 'snap_punch', 'dragon_kick', 'twin_snakes', 'demolish'];
-        data.job.fists = 'fire';     // 红莲体势起手
         data.job.form = 'coeurl';    // 魔猿起手
         data.job.chakra = 5;         // 5查克拉起手
 
@@ -36,6 +35,7 @@ module.exports = {
         data.buff.riddle_of_wind = 0;
         data.buff.fists_of_fire = 10000; // 起手红莲
         data.buff.fists_of_wind = 0;
+        data.buff.fists_of_earth = 0;
         data.buff.brotherhood = 0;
         data.buff.greased_lightning_iii = 0;
         data.buff.greased_lightning_ii = 0;
