@@ -5,6 +5,11 @@ const fs = require('fs');
 var log = [], dps = [], sum = 0, totalDamage = 0;
 var input = set.set();
 
+//var times = 0;
+var dmgT = 0;
+var crit = 0;
+var dh = 0;
+
 if (input.simulate.battleLog) {
     // 生成 Battle Log.json
     var data = sim.run(input);
@@ -13,28 +18,37 @@ if (input.simulate.battleLog) {
             var m = '';
             if (data.log[i].dh) {
                 m += '(直)';
+                dh += 1;
             }
             if (data.log[i].crit) {
                 m += '(暴)';
+                crit += 1;
             }
+            dmgT += 1;
             console.log('[' + (data.log[i].time / 100).toFixed(2) + '] ' + data.log[i].translate + '造成了' + data.log[i].damage + m + '点伤害.');
         } else if (data.log[i].event == 'DOT Tick') {
             var m = '';
             if (data.log[i].dh) {
                 m += '(直)';
+                dh += 1;
             }
             if (data.log[i].crit) {
                 m += '(暴)';
+                crit += 1;
             }
+            dmgT += 1;
             console.log('[' + (data.log[i].time / 100).toFixed(2) + '] ' + data.log[i].translate + '造成了' + data.log[i].damage + m + '点DOT伤害.');
         } else if (data.log[i].event == 'Circle Tick') {
             var m = '';
             if (data.log[i].dh) {
                 m += '(直)';
+                dh += 1;
             }
             if (data.log[i].crit) {
                 m += '(暴)';
+                crit += 1;
             }
+            dmgT += 1;
             console.log('[' + (data.log[i].time / 100).toFixed(2) + '] ' + data.log[i].translate + '造成了' + data.log[i].damage + m + '点地板伤害.');
         } else if (data.log[i].event == 'Cast') {
             console.log('[' + (data.log[i].time / 100).toFixed(2) + '] 开始使用' + data.log[i].translate + '.');
@@ -49,6 +63,8 @@ if (input.simulate.battleLog) {
         }
     }
     console.log('DPS: ' + data.dps);
+    console.log('暴击率: ' + Math.floor(10000 * crit / dmgT) / 100 + '%.');
+    console.log('直击率: ' + Math.floor(10000 * dh / dmgT) / 100 + '%.');
     var json = JSON.stringify(data.log, null, 4);
     fs.writeFile('Battle Log.json', json, 'utf8', function () {
         console.log('Battle Log.json complete!');
@@ -63,12 +79,16 @@ if (input.simulate.battleLog) {
         var data = sim.run(input);
         statistic.push(data.dps);
         totalDps += data.dps;
+        /*if (data.dps > 5502) {
+            times += 1;
+        }*/
     }
     var endTime = Date.parse(new Date()) / 1000;
     console.log('Simulate of ' + input.job + ' finished, ' + input.simulate.times + ' times in total! Total time used: ' + Math.floor(endTime - startTime) + ' seconds!');
     console.log('Max dps: ' + Math.max.apply(Math, statistic));
     console.log('Min dps: ' + Math.min.apply(Math, statistic));
     console.log('Average dps: ' + Math.floor(100 * totalDps / input.simulate.times) / 100);
+    //console.log('打爆木桩' + times + '次.');
 
 }
 

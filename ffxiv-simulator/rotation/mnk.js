@@ -34,6 +34,8 @@ module.exports = {
         /* 能力技循环优先级逻辑 */
         if (data.player.cd.potion <= 0) {
             return 'potion';
+        } else if (data.player.buff.greased_lightning_iii >= 0 && data.battle.time <= 150) {
+            return 'tornado_kick';
         } else if (data.player.buff.greased_lightning_i >= 0 && data.player.buff.fists_of_wind < 0 && data.player.cd.shoulder_tackle <= 200) {
             return 'fists_of_wind';
         } else if (data.player.buff.fists_of_fire < 0 && data.player.cd.shoulder_tackle > 1000 && data.player.buff.riddle_of_wind < 0) {

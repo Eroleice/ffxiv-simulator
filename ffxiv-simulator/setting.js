@@ -5,13 +5,13 @@
         var job = 'mnk';		        // 职业
 
         var status = {
-            'wd': 104,			        // 武器性能
+            'wd': 102,			        // 武器性能
             'aa_delay': 2.56,           // 武器自动攻击间隔
-            'ap': 2823,		        	// 攻击力or魔法攻击力
-            'crt': 2212,	          	// 暴击率
-            'det': 1172,		        // 信念
-            'ss': 919,		        	// 技能速度or咏唱速度
-            'dh': 1747,		        	// 直击
+            'ap': 2637,		        	// 攻击力or魔法攻击力
+            'crt': 2321,	          	// 暴击率
+            'det': 983, 		        // 信念
+            'ss': 1159,		        	// 技能速度or咏唱速度
+            'dh': 2026,		        	// 直击
             'ten': 364,		        	// 韧性
             'mp': 5160                  // 蓝量
         };
@@ -20,7 +20,7 @@
             duration: 18000,	        // 模拟木桩时间，单位10毫秒 (秒数x100)
             times: 1000,	    	    // 模拟次数
             expectMode: false,	        // 期望值模式
-            battleLog: false,	        // 输出战斗记录，开启情况下只能进行单次模拟
+            battleLog: true,	        // 输出战斗记录，开启情况下只能进行单次模拟
             partyBuff: false,           // 团队辅助buff
             partyMember: ['brd','mch','nin','drg','smn'],     // 队伍内其他职业构成
             autoAttack: true,           // 自动攻击
